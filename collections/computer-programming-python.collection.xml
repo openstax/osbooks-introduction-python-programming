@@ -11,6 +11,7 @@
     <col:subcollection>
       <md:title>Statements</md:title>
       <col:content>
+        <col:module document="m00008"/>
         <col:module document="m00002"/>
         <col:module document="m00003"/>
         <col:module document="m00004"/>
