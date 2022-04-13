@@ -6,5 +6,55 @@
     <md:uuid>20191cb4-67ac-44d6-a4e4-12baca3edc6a</md:uuid>
   </metadata>
   <content>
+    <section id="sect-00001">
+      <title>About this book</title>
+      <para id="para-00001">The OpenStax Introduction to programming with Python book is an interactive textbook that teaches basic programming concepts, problem solving skills, and Python programming with hands-on activities. The content is organized in chapters, with each chapter containing 7-9 sections, and each section containing 2-4 subsections. Each subsection follows the pattern:</para>
+      <list id="list-00001">
+        <item>Concise text</item>
+        <item>Video-based animations</item>
+        <item>Interactive learning questions</item>
+      </list>
+      <para id="para-00002">Each section will end with 1-2 practice programs to provide the reader an opportunity to practice the Python concepts learned in the section.</para>
+      <para id="para-00003">This textbook will also have learning objectives at the chapter level and at the section level to enable one to understand the outcomes of each chapter and section.</para>
+
+      <section id="sect-00002">
+        <title>Concise text and video-based animations.</title>
+        <para id="para-00004">Each subsection starts with concise text to introduce the new concept being taught, define key terms, and provide context. That new concept is then explained in detail using video-based animations and formative learning questions. The video-based animations use a step-by-step approach to provide an exceptionally intuitive explanation of the dynamic execution of Python code. The step-by-step explanations therein are used extensively to describe Python syntax, show how fundamental programming concepts and constructs can be used, illustrate how variables are assigned and updated, show how code executes line by line, applying problem solving to create programs, and more.</para>
+        <para id="para-00005">Here's an example of a video-based animation.</para>
+        <note class="video-based" id="note-00001">
+          <media alt="variables_and_assignments">
+            <iframe width="660" height="371.4" src="https://youtu.be/dqNuJ75QfO0"/>
+          </media>
+        </note>
+      </section>
+      <section id="sect-00003">
+        <title>Interactive learning questions</title>
+        <para id="para-00006">After introducing a new concept with concise text and explaining the new concepts via a video-based animation, each subsection includes interactive reading in the form of learning questions. These questions reinforce the concepts taught, explain concepts in more depth, directly address misconceptions and errors commonly made by new programmers, and teach related concepts.</para>
+        <para id="para-00007"> Explanations are provided for both correct and incorrect answer choices. Correct answers' explanations will explain why the answer is correct and how to reach the answer. Similarly, incorrect answers' explanations will directly state why the answer is incorrect and help guide the reader to the correct answer.</para>
+        <para id="para-00008">Incorrect answer choices typically represent a common misconception or are the result of making a common error. Even if the correct answer is achieved, readers are encouraged to explore the explanations to gain awareness of these common misconceptions.</para>
+        <section class="learning-questions participation-activity" id="sect-00004">
+          <title>Practice Exercises</title>
+          <exercise id="exer-00001">
+            <problem id="prob-00001">
+              <para id="para-00009"><link class="os-embed" url="#exercise/Nickname"/></para>
+            </problem>
+         </exercise>
+         <exercise id="exer-00002">
+          <problem id="prob-00002">
+            <para id="para-00010"><link class="os-embed" url="#exercise/Nickname"/></para>
+          </problem>
+         </exercise>
+        </section>
+      </section>
+      <section id="sect-00005">
+        <title>Practice programs.</title>
+        <para id="para-00011">This textbook also includes an integrated programming environment and code runner that allow readers to write and test their own programs within the textbook. Each section has 1 or 2 practice programs. The tool requires the reader to pre-enter the input before running a program.</para>
+        <note class="participation-activity practice-program" id="note-00002">
+          <media alt="weekly-pay">
+            <iframe width="660" height="371.4" src="https://zytools.zybooks.com/zyBooks2/open-stax-python-code-runner/index.html?parameters=%7B%22files%22%3A%5B%7B%22contents%22%3A%22%23%20Get%20hourly%20wage%20from%20user%5Cnhourly_wage%20%3D%20int(input())%20%20%5Cn%5Cn%23%20Calculate%20weekly%20pay%20for%20a%2040-hour%20work%20week%5Cnweekly_pay%20%3D%2040%20*%20hourly_wage%5Cn%5Cn%23%20Output%20the%20weekly%20pay%5Cnprint(weekly_pay)%22%2C%22name%22%3A%22main.py%22%2C%22solution%22%3A%22hourly_wage%20%3D%20int(input())%5Cn%5Cnweekly_pay%20%3D%2040%20*%20hourly_wage%5Cn%5Cnprint(weekly_pay)%22%7D%5D%2C%22input%22%3A%2240%22%2C%22showSolution%22%3Atrue%7D"/>
+          </media>
+        </note>
+      </section>
+    </section>
   </content>
 </document>
