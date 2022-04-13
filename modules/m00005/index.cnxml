@@ -6,5 +6,6 @@
     <md:uuid>9a60b8a4-4fde-4459-8f23-6aadf57e5d77</md:uuid>
   </metadata>
   <content>
+    <para id="para-00001">hello</para>
   </content>
 </document>
