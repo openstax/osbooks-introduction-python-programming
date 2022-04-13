@@ -36,12 +36,12 @@
           <title>Practice Exercises</title>
           <exercise id="exer-00001">
             <problem id="prob-00001">
-              <para id="para-00009"><link class="os-embed" url="#exercise/Nickname"/></para>
+              <para id="para-00009"><link class="os-embed" url="#exercise/prog-py-001"/></para>
             </problem>
          </exercise>
          <exercise id="exer-00002">
           <problem id="prob-00002">
-            <para id="para-00010"><link class="os-embed" url="#exercise/Nickname"/></para>
+            <para id="para-00010"><link class="os-embed" url="#exercise/prog-py-002"/></para>
           </problem>
          </exercise>
         </section>
