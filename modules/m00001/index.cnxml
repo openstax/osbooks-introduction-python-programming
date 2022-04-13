@@ -16,7 +16,6 @@
       </list>
       <para id="para-00002">Each section will end with 1-2 practice programs to provide the reader an opportunity to practice the Python concepts learned in the section.</para>
       <para id="para-00003">This textbook will also have learning objectives at the chapter level and at the section level to enable one to understand the outcomes of each chapter and section.</para>
-
       <section id="sect-00002">
         <title>Concise text and video-based animations.</title>
         <para id="para-00004">Each subsection starts with concise text to introduce the new concept being taught, define key terms, and provide context. That new concept is then explained in detail using video-based animations and formative learning questions. The video-based animations use a step-by-step approach to provide an exceptionally intuitive explanation of the dynamic execution of Python code. The step-by-step explanations therein are used extensively to describe Python syntax, show how fundamental programming concepts and constructs can be used, illustrate how variables are assigned and updated, show how code executes line by line, applying problem solving to create programs, and more.</para>
@@ -32,19 +31,19 @@
         <para id="para-00006">After introducing a new concept with concise text and explaining the new concepts via a video-based animation, each subsection includes interactive reading in the form of learning questions. These questions reinforce the concepts taught, explain concepts in more depth, directly address misconceptions and errors commonly made by new programmers, and teach related concepts.</para>
         <para id="para-00007"> Explanations are provided for both correct and incorrect answer choices. Correct answers' explanations will explain why the answer is correct and how to reach the answer. Similarly, incorrect answers' explanations will directly state why the answer is incorrect and help guide the reader to the correct answer.</para>
         <para id="para-00008">Incorrect answer choices typically represent a common misconception or are the result of making a common error. Even if the correct answer is achieved, readers are encouraged to explore the explanations to gain awareness of these common misconceptions.</para>
-        <section class="learning-questions participation-activity" id="sect-00004">
-          <title>Practice Exercises</title>
-          <exercise id="exer-00001">
-            <problem id="prob-00001">
-              <para id="para-00009"><link class="os-embed" url="#exercise/prog-py-001"/></para>
-            </problem>
-         </exercise>
-         <exercise id="exer-00002">
-          <problem id="prob-00002">
-            <para id="para-00010"><link class="os-embed" url="#exercise/prog-py-002"/></para>
+      </section>
+      <section id="sect-00004">
+        <title>Practice Exercises</title>
+        <exercise id="exer-00001">
+          <problem id="prob-00001">
+            <para id="para-00009"><link class="os-embed" url="#exercise/prog-py-001"/></para>
           </problem>
-         </exercise>
-        </section>
+        </exercise>
+        <exercise id="exer-00002">
+        <problem id="prob-00002">
+          <para id="para-00010"><link class="os-embed" url="#exercise/prog-py-002"/></para>
+        </problem>
+        </exercise>
       </section>
       <section id="sect-00005">
         <title>Practice programs.</title>
