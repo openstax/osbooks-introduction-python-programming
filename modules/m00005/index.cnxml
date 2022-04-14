@@ -24,11 +24,11 @@
       </list>
       <para id="para-00003"> Ex: Typing <code class="python">print "Hello!"</code> without parentheses is a syntax error. The <code class="python">syntax</code> of a language defines how code must be structured. In Python, parentheses are required to use <code class="python">print</code>. When attempting to run <code class="python">print "Hello!"</code>, Python displays the following error: </para>
       <code display="block" class="python">
-        Traceback (most recent call last):
-          File "/home/student/Desktop/example.py", line 1
-            print "Hello"
-                ^
-        SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
+Traceback (most recent call last):
+  File "/home/student/Desktop/example.py", line 1
+    print "Hello"
+        ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
       </code>
       <para id="para-00004"> Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
 
