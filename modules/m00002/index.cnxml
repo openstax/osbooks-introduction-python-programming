@@ -16,13 +16,13 @@
     </section>
     <section id="sect-00002">
       <title>Basic output</title>
-      <para id="para-00002"> The purpose for producing output is to observe what occurs when a program runs. In Python, output is produced with <code>print(data)</code>. Ex. <code>print("Today is Monday")</code> will print "Today is Monday" to the screen. </para>
-      <para id="para-00003"> Two or more data items separated by commas produce a single line of output. Ex. <code>print("The time is",  "8 AM")</code> will print "The time is 8 AM" to the screen on a single line.</para>
+      <para id="para-00002"> The purpose for producing output is to observe what occurs when a program runs. In Python, output is produced with <code class="python">print(data)</code>. Ex. <code class="python">print("Today is Monday")</code> will print "Today is Monday" to the screen. </para>
+      <para id="para-00003"> Two or more data items separated by commas produce a single line of output. Ex. <code class="python">print("The time is",  "8 AM")</code> will print "The time is 8 AM" to the screen on a single line.</para>
       <para id="para-00004">
-        By default, <code>print(data)</code> introduces a new line after the output. <code>end=</code> is used to avoid a new line after the output. <newline/>
+        By default, <code class="python">print(data)</code> introduces a new line after the output. <code class="python">end=</code> is used to avoid a new line after the output. <newline/>
         Ex. "The weather for today is sunny!" is printed to the screen on a single line by the following: <newline/>
-        <code>print("The weather for today is", end=" ")</code> <newline/>
-        <code>print("sunny!")</code>
+        <code class="python">print("The weather for today is", end=" ")</code> <newline/>
+        <code class="python">print("sunny!")</code>
       </para>
       <section class="guided-slides participation-activity" id="sect-00003">
         <media alt="basic_output_slides">
@@ -50,7 +50,7 @@
     </section>
     <section id="sect-00005">
       <title>Basic input</title>
-      <para id="para-00008"> When a computer program runs, it often requests input data from a user. In Python, input data is obtained with <code>named_item = input()</code>, where named_item stores the input entered by a user. Ex. <code>name = input()</code> stores the input entered by a user into name.</para>
+      <para id="para-00008"> When a computer program runs, it often requests input data from a user. In Python, input data is obtained with <code class="python">named_item = input()</code>, where named_item stores the input entered by a user. Ex. <code class="python">name = input()</code> stores the input entered by a user into name.</para>
       <section class="particpation-activity guided-slides" id="sect-00006">
         <media alt="basic_output_slides">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
