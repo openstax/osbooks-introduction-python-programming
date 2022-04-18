@@ -38,7 +38,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
         </media>
       </section>
       <section class="participation-activity learning-questions" id="sect-00004">
-        <title>Basic output</title>
+        <title>How to read errors</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
             <para id="para-00005"><link class="os-embed" url="#exercise/prog-py-024"/></para>
@@ -103,7 +103,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
         </tgroup>
         </table>
         <section class="participation-activity learning-questions" id="sect-00006">
-          <title>Basic output</title>
+          <title>Common types of errors</title>
           <exercise id="exer-00004">
             <problem id="prob-00004">
               <para id="para-00009"><link class="os-embed" url="#exercise/prog-py-027"/></para>

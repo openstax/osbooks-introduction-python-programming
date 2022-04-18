@@ -25,7 +25,7 @@
         </media>
       </section>
       <section class="participation-activity learning-questions" id="sect-00004">
-        <title>Basic output</title>
+        <title>Variables and assignments</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
             <para id="para-00004"><link class="os-embed" url="#exercise/prog-py-009"/></para>

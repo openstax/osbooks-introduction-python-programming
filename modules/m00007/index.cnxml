@@ -71,7 +71,7 @@ print(  name,"should visit"  , place+  "!")</code>
         </tgroup>
         </table>
         <section class="participation-activity learning-questions" id="sect-00003">
-          <title>Basic output</title>
+          <title>Recommended spacing</title>
           <exercise id="exer-00001">
             <problem id="prob-00001">
               <para id="para-00006"><link class="os-embed" url="#exercise/prog-py-039"/></para>
@@ -112,7 +112,7 @@ print("The unanimous Declaration of the thirteen united States of "
         </media>
       </section>
       <section class="participation-activity learning-questions" id="sect-00006">
-        <title>Basic output</title>
+        <title>Automatic concatenation</title>
         <exercise id="exer-00004">
           <problem id="prob-00004">
             <para id="para-00012"><link class="os-embed" url="#exercise/prog-py-042"/></para>

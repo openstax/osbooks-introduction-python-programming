@@ -40,7 +40,7 @@ item2 = input("Item #2: ")
         </code>
       </example>
       <section class="participation-activity learning-questions" id="sect-00003">
-        <title>Basic output</title>
+        <title>Comments</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
             <para id="para-00003"><link class="os-embed" url="#exercise/prog-py-030"/></para>
@@ -72,7 +72,7 @@ item2 = input("Item #2: ")
         </media>
       </section>
       <section class="participation-activity learning-questions" id="sect-00006">
-        <title>Basic output</title>
+        <title>Code quality</title>
         <exercise id="exer-00004">
           <problem id="prob-00004">
             <para id="para-00008"><link class="os-embed" url="#exercise/prog-py-033"/></para>
@@ -100,7 +100,7 @@ item2 = input("Item #2: ")
         </media>
       </section>
       <section class="participation-activity learning-questions" id="sect-00009">
-        <title>Basic output</title>
+        <title>Documentation</title>
         <exercise id="exer-00007">
           <problem id="prob-00007">
             <para id="para-00014"><link class="os-embed" url="#exercise/prog-py-036"/></para>
