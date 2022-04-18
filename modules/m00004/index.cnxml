@@ -54,7 +54,7 @@
         <caption/>
         </table>
       <section class="participation-activity learning-questions" id="sect-00003">
-        <title>String basics</title>
+        <title>Basic output</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
             <para id="para-00004"><link class="os-embed" url="#exercise/prog-py-013"/></para>
@@ -87,7 +87,7 @@
         </media>
       </section>
       <section class="participation-activity learning-questions" id="sect-00006">
-        <title>Concatenation</title>
+        <title>Basic output</title>
         <exercise id="exer-00005">
           <problem id="prob-00005">
             <para id="para-00009"><link class="os-embed" url="#exercise/prog-py-017"/></para>
@@ -159,7 +159,7 @@
         </tgroup>
         </table>
         <section class="participation-activity learning-questions" id="sect-00008">
-          <title>Escape sequences</title>
+          <title>Basic output</title>
           <exercise id="exer-00009">
             <problem id="prob-00009">
               <para id="para-00014"><link class="os-embed" url="#exercise/prog-py-021"/></para>
