@@ -6,6 +6,152 @@
     <md:uuid>e2f6f1ca-d0f3-4d44-8dde-c94f54baef08</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001">hello</para>
-  </content>
+    <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001">By the end of this section, you will be able to:</para>
+        <list id="list-00001">
+          <item>Understand where to put spaces when using print and input.</item>
+          <item>Write multi-line statements using implicit line joining</item>
+        </list>
+    </section>
+    <section id="sect-00002">
+      <title>Recommended spacing</title>
+      <para id="para-00002">Most spaces in Python code are ignored when running programs. The following two programs are equivalent:</para>
+      <list id="list-00002">
+        <item>Good spacing:
+<code class="python" display="block">
+name = input("Enter someone's name: ")
+place = input("Enter a famous place: ")
+print(name, "should visit", place + "!")</code>
+          </item>
+          <item>Poor spacing: 
+<code class="python" display="block">
+Enter someone's name: "  )
+place  =input("Enter a famous place: ")
+print(  name,"should visit"  , place+  "!")</code>
+          </item>
+      </list>
+      <para id="para-00003">One might argue that missing or extra spaces do not matter. After all, the two programs above run exactly the same way. However, the "poor spacing" version is more difficult to read. Code like <code class="python">name=input</code> and <code class="python">place+</code> might lead to confusion.</para>
+      <para id="para-00004">Good programmers write code that is as easy to read as possible. That way, other programmers are more likely to understand the code. To encourage consistency, the Python community has a set of guidelines about where to put spaces and blank lines, what to name variables, how to break up long lines, and other important topics.</para>
+      <note id="note-00001">
+        <title>Python style guide</title>
+        <para id="para-00005"><link url="https://peps.python.org/pep-0008/">PEP 8</link> is the official style guide for Python. <term id="term-00001">PEP</term> stands for Python Enhancement Proposal. Members of the Python community write PEPs to document best practices and propose new features. The table below is based on several guidelines from PEP 8.</para>
+      </note>
+      <table summary=" " id="table-00001">
+        <tgroup cols="3">
+        <thead>
+          <row>
+            <entry>Guideline</entry>
+            <entry>Example</entry>
+            <entry>Common Mistakes</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Parentheses: no space before or after.</entry>
+            <entry><code class="python">print("Go team!")</code></entry>
+            <entry><code class="python">print<span class="highlight"> </span>("Go team!")</code><newline/><code class="python">print(<span class="highlight"> </span>"Go team!"<span class="highlight"> </span>)</code></entry>
+          </row>
+          <row>
+            <entry>Commas: no space before, one space after.</entry>
+            <entry><code class="python">print("Hello", name)</code></entry>
+            <entry><code class="python">print("Hello"<span class="highlight"> </span>, name)</code><newline/><code class="python">print("Hello"<span class="highlight">,</span>name)</code></entry>
+          </row>
+          <row>
+            <entry>Assignment: one space before and after the =.</entry>
+            <entry><code class="python">name = input("Your name? ")</code></entry>
+            <entry><code class="python">name<span class="highlight">=</span>input("Your name? ")</code><newline/><code class="python">name<span class="highlight">=</span> input("Your name? ")</code><newline/><code class="python">name <span class="highlight">=</span>input("Your name? ")</code></entry>
+          </row>
+          <row>
+            <entry>Concatenation: one space before and after the +.</entry>
+            <entry><code class="python">print("Hi", name + "!")</code></entry>
+            <entry><code class="python">print("Hi", name<span class="highlight">+</span>"!")</code><newline/><code class="python">print("Hi", name<span class="highlight">+</span> "!")</code><newline/><code class="python">print("Hi", name <span class="highlight">+</span>"!")</code></entry>
+          </row>
+        </tbody>
+        </tgroup>
+        </table>
+        <section class="participation-activity learning-questions" id="sect-00003">
+          <title>Basic output</title>
+          <exercise id="exer-00001">
+            <problem id="prob-00001">
+              <para id="para-00006"><link class="os-embed" url="#exercise/prog-py-039"/></para>
+            </problem>
+          </exercise>
+          <exercise id="exer-00002">
+            <problem id="prob-00002">
+              <para id="para-00007"><link class="os-embed" url="#exercise/prog-py-040"/></para>
+            </problem>
+          </exercise>
+          <exercise id="exer-00003">
+            <problem id="prob-00003">
+              <para id="para-00008"><link class="os-embed" url="#exercise/prog-py-041"/></para>
+            </problem>
+          </exercise>
+        </section>
+    </section>
+    <section id="sect-00004">
+      <title>Automatic concatenation</title>
+      <para id="para-00009">Long strings make Python programs difficult to read. Ex: This program prints the first sentence of the <link url="https://www.archives.gov/founding-docs/declaration-transcript">US Declaration of Independence</link>:</para>
+      <code class="python" display="block">
+print("The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.")</code>
+      <para id="para-00010">PEP 8 recommends that each line of code be less than 80 characters long. That way, programmers won't need to scroll horizontally to read the code. The above program can be rewritten by breaking up the original string:</para>
+      <code class="python" display="block">
+print("The unanimous Declaration of the thirteen united States of "
+      "America, When in the Course of human events, it becomes "
+      "necessary for one people to dissolve the political bands "
+      "which have connected them with another, and to assume among "
+      "the powers of the earth, the separate and equal station to "
+      "which the Laws of Nature and of Nature's God entitle them, a "
+      "decent respect to the opinions of mankind requires that they "
+      "should declare the causes which impel them to the separation.")
+      </code>
+      <para id="para-00011">For convenience, Python automatically concatenates multiple strings. The + operator is not required in this situation.</para>
+      <section class="guided-slides participation-activity" id="sect-00005">
+        <media alt="vacations_docstring">
+          <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
+        </media>
+      </section>
+      <section class="participation-activity learning-questions" id="sect-00006">
+        <title>Basic output</title>
+        <exercise id="exer-00004">
+          <problem id="prob-00004">
+            <para id="para-00012"><link class="os-embed" url="#exercise/prog-py-042"/></para>
+          </problem>
+        </exercise>
+        <exercise id="exer-00005">
+          <problem id="prob-00005">
+            <para id="para-00013"><link class="os-embed" url="#exercise/prog-py-043"/></para>
+          </problem>
+        </exercise>
+        <exercise id="exer-00006">
+          <problem id="prob-00006">
+            <para id="para-00014"><link class="os-embed" url="#exercise/prog-py-044"/></para>
+          </problem>
+        </exercise>
+      </section>
+    </section>
+    <section id="sect-00007">
+      <title>Multi-line statements</title>
+      <para id="para-00015">Most statements in a Python program need only one line of code. But occasionally, longer statements need to span multiple lines. Python provides two ways to write multi-line statements:</para>
+      <list id="list-00003">
+        <item>
+          Explicit line joining, using \ characters:<newline/>
+<code class="python" display="block">
+decl = "The unanimous Declaration of the thirteen united States of " \<newline/>
+       "America, When in the Course of human events, it becomes " \<newline/>
+       "necessary for one people to dissolve the political bands..."
+</code>
+        </item>
+        <item>
+          Implicit line joining, using parentheses:<newline/>
+<code class="python" display="block">
+decl = ("The unanimous Declaration of the thirteen united States of "<newline/>
+        "America, When in the Course of human events, it becomes "<newline/>
+        "necessary for one people to dissolve the political bands...")
+</code>
+        </item>
+      </list>
+      <para id="para-00016">Implicit line joining is more common, since many statements use parentheses anyway. PEP 8 recommends avoiding the use of explicit line joining whenever possible.</para>
+    </section>
+</content>
 </document>
