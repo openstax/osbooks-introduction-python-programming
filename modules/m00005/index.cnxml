@@ -104,6 +104,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
         </table>
         <section class="participation-activity learning-questions" id="sect-00006">
           <title>Common types of errors</title>
+          <para id="para-00014">For each program below, what type of error will occur?</para>
           <exercise id="exer-00004">
             <problem id="prob-00004">
               <para id="para-00009"><link class="os-embed" url="#exercise/prog-py-027"/></para>
