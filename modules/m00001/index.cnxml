@@ -9,7 +9,7 @@
     <section id="sect-00001">
       <title>About this book</title>
       <para id="para-00001">The OpenStax Introduction to programming with Python book is an interactive textbook that teaches basic programming concepts, problem solving skills, and Python programming with hands-on activities. The content is organized in chapters, with each chapter containing 7-9 sections, and each section containing 2-4 subsections. Each subsection follows the pattern:</para>
-      <list id="list-00001" list-type="bulleted">
+      <list id="list-00001">
         <item>Concise text</item>
         <item>Video-based animations</item>
         <item>Interactive learning questions</item>
