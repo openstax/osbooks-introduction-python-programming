@@ -30,7 +30,7 @@ Traceback (most recent call last):
         ^
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
       </code>
-      <para id="para-00004"> Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
+      <para id="para-00004">Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
 
       <section class="guided-slides participation-activity" id="sect-00003">
         <media alt="concatination_slides">
@@ -38,7 +38,15 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
         </media>
       </section>
       <section class="participation-activity learning-questions" id="sect-00004">
-        <title>How to read errors</title>
+        <title>Parts of an error</title>
+        <para id="para-00015">Given the following error message:</para>
+          <code display="block" class="python">
+Traceback (most recent call last):
+  File "/home/student/Desktop/example.py", line 2
+    print "test"
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
+        </code>
         <exercise id="exer-00001">
           <problem id="prob-00001">
             <para id="para-00005"><link class="os-embed" url="#exercise/prog-py-024"/></para>
@@ -103,7 +111,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
         </tgroup>
         </table>
         <section class="participation-activity learning-questions" id="sect-00006">
-          <title>Common types of errors</title>
+          <title>Types of errors</title>
           <para id="para-00014">For each program below, what type of error will occur?</para>
           <exercise id="exer-00004">
             <problem id="prob-00004">
