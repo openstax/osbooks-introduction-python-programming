@@ -18,16 +18,16 @@
       <title>Recommended spacing</title>
       <para id="para-00002">Most spaces in Python code are ignored when running programs. The following two programs are equivalent:</para>
       <list id="list-00002">
-        <item>Good spacing:
+        <item>Good spacing:<newline/>
 <code class="python" display="block">
-name = input("Enter someone's name: ")
-place = input("Enter a famous place: ")
+name = input("Enter someone's name: ")<newline/>
+place = input("Enter a famous place: ")<newline/>
 print(name, "should visit", place + "!")</code>
           </item>
-          <item>Poor spacing: 
+          <item>Poor spacing: <newline/>
 <code class="python" display="block">
-Enter someone's name: "  )
-place  =input("Enter a famous place: ")
+Enter someone's name: "  )<newline/>
+place  =input("Enter a famous place: ")<newline/>
 print(  name,"should visit"  , place+  "!")</code>
           </item>
       </list>

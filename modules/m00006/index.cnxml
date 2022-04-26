@@ -36,8 +36,7 @@ print()  # end of menu
 
 # get the user's preferences
 item1 = input("Item #1: ")
-item2 = input("Item #2: ")
-        </code>
+item2 = input("Item #2: ")</code>
       </example>
       <section class="participation-activity learning-questions" id="sect-00003">
         <title>Comments</title>

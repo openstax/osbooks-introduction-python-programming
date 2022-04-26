@@ -68,6 +68,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
       <title>Common types of errors</title>
       <para id="para-00008"> Different types of errors may occur when running Python programs. When an error occurs, knowing the type of error gives insight about how to correct the error. The following table shows examples of mistakes that anyone could make when programming.</para>
       <table summary=" " id="table-00001">
+        <title>Simple mistakes</title>
         <tgroup cols="3">
         <thead>
           <row>
