@@ -38,6 +38,7 @@ print(  name,"should visit"  , place+  "!")</code>
         <para id="para-00005"><link url="https://peps.python.org/pep-0008/">PEP 8</link> is the official style guide for Python. <term id="term-00001">PEP</term> stands for Python Enhancement Proposal. Members of the Python community write PEPs to document best practices and propose new features. The table below is based on several guidelines from PEP 8.</para>
       </note>
       <table summary=" " id="table-00001">
+        <title>Guidelines for spaces</title>
         <tgroup cols="3">
         <thead>
           <row>
