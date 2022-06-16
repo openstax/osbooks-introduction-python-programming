@@ -2,94 +2,150 @@ window.addEventListener('load', async() => {
     // Hide page while code runner loads.
     document.body.style.visibility = 'hidden';
 
+    const filePath = window.filePath ?? '..';
+
     // Load styles and DOM.
-    document.body.innerHTML = `<link rel="stylesheet" data-name="vs/editor/editor.main" href="../coderunner_dependencies/monaco/min/vs/editor/editor.main.css" />
-<style>
-    #container {
-        width: 600px;
+    document.body.innerHTML = `<style>
+    body {
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
-    #editors > div {
-        border: 1px solid #cfd8dc;
-        height: 200px;
+    .editors-container {
+        display: flex;
+        flex-grow: 1;
+        min-height: 200px;
     }
 
-    #input {
-        border: 1px solid #cfd8dc;
-        box-sizing: border-box;
-        margin-top: 5px;
-        padding: 4px;
-        resize: none;
+    .editors-container > div {
+        border: thin solid #D5D5D5;
+        border-radius: 3px;
+        margin-top: -1px;
         width: 100%;
     }
 
-    #run {
-        align-items: center;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: #f57c00;
-        border: 1px solid transparent;
-        border-radius: 2px;
-        color: #fff;
-        cursor: pointer;
-        font-family: Roboto,sans-serif;
-        font-size: 1rem;
-        font-weight: 700;
-        height: 36px;
-        margin: 0 0 5px 0;
-        padding: 0 8px;
-        transition: background-color .25s ease-out,color .25s ease-out;
+    #input {
+        border-radius: 3px;
+        flex: initial;
+        margin-top: 15px;
+        resize: none;
     }
 
-    #run:hover {
-        color: #37474f;
-        background-color: #d95d00;
+    #button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
     }
 
     #output {
-        background-color: #f5f5f5;
+        background-color: #F1F1F1;
         border: 1px solid rgba(189,189,189,.5);
         border-radius: 2px;
-        color: #37474f;
+        color: #37474F;
         display: block;
         font-family: "Courier New",monospace;
-        max-height: 260px;
-        min-height: 60px;
+        height: 60px;
+        margin-top: 15px;
         overflow-x: auto;
         padding: 4px 10px;
         white-space: pre-wrap;
     }
 
-    details {
-        margin-top: 25px;
+    #reset, #toggle-solution {
+        background-color: white;
+        box-shadow: none;
+        color: #0288D1;
+        margin-bottom: 5px;
+        margin-top: 15px;
+        padding: 0;
     }
 
-    code {
-        white-space: pre;
+    #reset:hover, #toggle-solution:hover {
+        color: #37474F;
+    }
+
+    #solution-files.hidden {
+        filter: blur(5px);
+        pointer-events: none;
+    }
+
+    [type=radio] {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 0;
+        margin: 0;
+    }
+
+    [type="radio"]+label.btn {
+        background-color: initial;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    label.btn:hover {
+        background-color: initial;
+    }
+
+    .selector-container {
+        display: flex;
+    }
+
+    .selector-container > div {
+        background-color: #E8E8E8;
+        border: 0.1rem solid #D5D5D5;
+        border-bottom: 1px solid #FFFFFF;
+        border-radius: 0.5rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        flex: 1 1 0;
+        overflow: hidden;
+        padding: 0 2rem;
+        position: relative;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .selector-container > div:hover {
+        background-color: #F1F1F1;
+        cursor: pointer;
+    }
+
+    .selector-container > div:not(:first-of-type) {
+        margin-left: -1px;
+    }
+
+    .selector-container > div.selected {
+        background-color: #FFFFFF;
+        z-index: 1;
     }
 </style>
-<div id="container">
-    <div id="selector-container">
-        <label>
-            Current file:
-            <select></select>
-        </label>
+<div id="user-selector-container" class="selector-container"></div>
+<div id="editors" class="editors-container"></div>
+<textarea id="input" rows="3" aria-label="Input to the program"></textarea>
+<div id='button-container'>
+    <button class="primary medium" onclick="run()">Run</button>
+    <button id="reset" class="secondary small" onclick="reset()">Reset code</button>
+</div>
+<output id="output" aria-label="Output of the program"></output>
+<div id="solution-container">
+    <button id="toggle-solution" class="secondary small" onclick="toggleSolution()" aria-label="View solution"></button>
+    <div id="solution-files">
+        <div id="solution-selector-container" class="selector-container"></div>
+        <div id="solution-editors" class="editors-container"></div>
     </div>
-    <div id="editors"></div>
-    <textarea id="input" rows="3" aria-label="Input to the program"></textarea>
-    <button id="run" onclick="run()">Run</button>
-    <output id="output" aria-label="Output of the program"></output>
-    <details>
-        <summary>View solution</summary>
-    </details>
 </div>`;
 
     // Global variables for the code runner.
     let editors = null;
-    const input = document.getElementById('input');
-    const output = document.getElementById('output');
     let inputLines = null;
+    let solutionEditors = null;
+    const [ input, output, solutionSelectorContainer, userSelectorContainer ] = [
+        'input', 'output', 'solution-selector-container', 'user-selector-container',
+    ].map(id => document.getElementById(id));
 
     /**
         Run the code and show output.
@@ -109,8 +165,36 @@ window.addEventListener('load', async() => {
             });
     }
 
+    /**
+        Reset the code to the default template.
+        @function reset
+        @return {void}
+    */
+    window.reset = function() {
+        if (window.confirm('You will lose your changes.')) {
+            editors.forEach((editor, index) => editor.setValue(originalFileContents[index]));
+        }
+    }
+
+    /**
+        Toggle whether the solution is shown.
+        @function toggleSolution
+        @return {void}
+    */
+    window.toggleSolution = function() {
+        const solutionClassList = document.getElementById('solution-files').classList;
+
+        solutionClassList.toggle('hidden');
+
+        const button = document.getElementById('toggle-solution');
+        const isHidden = solutionClassList.contains('hidden');
+
+        button.textContent = isHidden ? 'View solution' : 'Hide solution';
+        button.setAttribute('aria-pressed', String(!isHidden));
+    }
+
     // Tells monaco's loader where to find the language-specific files.
-    window.require = { paths: { vs: '../coderunner_dependencies/monaco/min/vs' } };
+    window.require = { paths: { vs: `${filePath}/coderunner_dependencies/monaco/min/vs` } };
 
     /**
         Load a script file at the given url. Resolve once loaded.
@@ -131,10 +215,10 @@ window.addEventListener('load', async() => {
     }
 
     // Load each script file sequentially.
-    const scriptUrls = [ 'skulpt/skulpt.min.js', 'skulpt/skulpt-stdlib.js', 'showdownjs/dist/showdown.min.js', 'monaco/min/vs/loader.js', 'monaco/min/vs/editor/editor.main.nls.js', 'monaco/min/vs/editor/editor.main.js' ];
+    const scriptUrls = [ 'monaco/min/vs/loader.js', 'monaco/min/vs/editor/editor.main.nls.js', 'monaco/min/vs/editor/editor.main.js' ];
 
     for (let i = 0; i < scriptUrls.length; i++) {
-        await loadScript(`../coderunner_dependencies/${scriptUrls[i]}`);
+        await loadScript(`${filePath}/coderunner_dependencies/${scriptUrls[i]}`);
     }
 
     // Set parameters
@@ -145,83 +229,175 @@ window.addEventListener('load', async() => {
         input: '',
     };
     const { files } = parameters;
+    const originalFileContents = files.map(({ contents }) => contents);
 
     // Set input.
     input.value = parameters.input;
 
-    // Set solution if one exists.
-    const hasSolution = files.some(({ solution }) => solution);
-    const solutionArea = document.getElementsByTagName('details')[0];
-
-    if (hasSolution) {
-        files.forEach(({ name, solution }) => {
-            if (files.length > 1) {
-                const h4 = document.createElement('h4');
-
-                h4.textContent = name;
-                solutionArea.appendChild(h4);
-            }
-
-            const code = document.createElement('code');
-
-            code.textContent = solution;
-            solutionArea.appendChild(code);
-        });
-    }
-    else {
-        solutionArea.remove();
-    }
-
     // Start file selector if needed.
-    const selectorContainer = document.getElementById('selector-container');
-    const selector = selectorContainer.getElementsByTagName('select')[0];
-
     if (files.length > 1) {
-        files.map(({ name }) => {
-            const option = document.createElement('option');
+        /**
+            Make a selector for each given name.
+            @function makeSelectors
+            @param {Element} container Add selectors to this container.
+            @param {Function} getEditorDivs Returns the DIV of each editor.
+            @param {String[]} names The name of each selector.
+            @param {String} unique A unique identifier for each group of selectors.
+            @return {void}
+        */
+        function makeSelectors({ container, getEditorDivs, names, unique }) {
+            names.forEach((name, index) => {
+                const div = document.createElement('div');
 
-            option.text = name;
-            selector.appendChild(option);
-        });
+                div.setAttribute('title', name);
+                div.addEventListener('click', () => {
+                    radio.checked = true;
+                    radio.dispatchEvent(new Event('change'));
+                });
+                container.appendChild(div);
 
-        selector.addEventListener('change', () => {
-            const all = document.querySelectorAll('#editors > div');
-            const index = files.findIndex(({ name }) => name === selector.value);
-            const selected = all[index];
+                const radio = document.createElement('input');
 
-            // Hide all editors, except the selected editor.
-            all.forEach(editor => {
-                editor.style.display = editor === selected ? 'block' : 'none';
+                radio.setAttribute('type', 'radio');
+                radio.setAttribute('id', `${name}-${unique}`);
+                radio.setAttribute('name', `files-${unique}`);
+                radio.setAttribute('value', name);
+                radio.addEventListener('change', () => {
+                    // Set the radio's parent as selected.
+                    const selectors = container.querySelectorAll('div');
+
+                    selectors.forEach(selector => selector.classList.remove('selected'));
+                    div.classList.add('selected');
+
+                    // Hide all editors, except the selected editor.
+                    const editorDivs = getEditorDivs();
+                    const selected = editorDivs[index];
+
+                    editorDivs.forEach(editorDiv => {
+                        editorDiv.style.display = editorDiv === selected ? 'block' : 'none';
+                    });
+                });
+                div.appendChild(radio);
+
+                const label = document.createElement('label');
+
+                label.setAttribute('for', `${name}-${unique}`);
+                label.textContent = name;
+                label.classList.add('btn');
+                label.classList.add('small');
+                div.appendChild(label);
             });
+        }
+
+        const names = files.map(({ name }) => name);
+
+        makeSelectors({
+            container: userSelectorContainer,
+            getEditorDivs: () => document.querySelectorAll('#editors > div'),
+            names,
+            unique: 'user',
         });
+        makeSelectors({
+            container: solutionSelectorContainer,
+            getEditorDivs: () => document.querySelectorAll('#solution-editors > div'),
+            names,
+            unique: 'solution',
+        });
+
+        const labels = userSelectorContainer.querySelectorAll('label');
+        const largestContentWidth = Math.max(...Array.from(labels).map(file => file.getBoundingClientRect().width));
+        const containerWidths = [
+            'padding-left', 'padding-right', 'margin-left', 'margin-right', 'border-left-width', 'border-right-width'
+            ].flatMap(
+                style => Array.from(userSelectorContainer.querySelectorAll('div')).map(div => parseInt(window.getComputedStyle(div, null).getPropertyValue(style), 10)),
+            ).reduce((sum, value) => sum + value, 0);
+        const neededWidth = (largestContentWidth * files.length) + containerWidths;
+
+        function resizeFileSelectors() {
+            const width = neededWidth < window.innerWidth ? `${neededWidth}px` : 'initial';
+
+            userSelectorContainer.style.width = width;
+            solutionSelectorContainer.style.width = width;
+        }
+
+        window.onresize = resizeFileSelectors;
+        resizeFileSelectors();
     }
     else {
-        selectorContainer.remove();
+        userSelectorContainer.remove();
+    }
+
+    /**
+        Make an editor for each file.
+        @function makeEditors
+        @param {Element} container Add editors to this container.
+        @param {String[]} codes The code for each editor.
+        @param {Boolean} readOnly True if the file cannot be edited.
+        @return {void}
+    */
+    function makeEditors({ container, codes, readOnly }) {
+        return codes.map((code, index) => {
+            const div = document.createElement('div');
+
+            container.appendChild(div);
+
+            const editor = monaco.editor.create(div, {
+                automaticLayout: true,
+                language: 'python',
+                minimap: { enabled: false },
+                readOnly,
+                value: code,
+            });
+
+            return editor;
+        });
     }
 
     // Start code editors.
-    editors = files.map((file, index) => {
-        const div = document.createElement('div');
-
-        document.getElementById('editors').appendChild(div);
-
-        const editor = monaco.editor.create(div, {
-            language: 'python',
-            minimap: { enabled: false },
-            value: file.contents,
-        });
-
-        editor.onDidChangeModelContent(() => {
-            file.contents = editor.getValue();
-        })
-
-        // Hide all but the first editor initially.
-        if (index) {
-            div.style.display = 'none';
-        }
-
-        return editor;
+    editors = makeEditors({
+        container: document.getElementById('editors'),
+        codes: files.map(({ contents }) => contents),
+        readOnly: false,
     });
+
+    // Update file contents when user edits code.
+    editors.forEach((editor, index) => {
+        editor.onDidChangeModelContent(() => {
+            files[index].contents = editor.getValue();
+        });
+    });
+
+    // Set solution if one exists.
+    const hasSolution = files.some(({ solution }) => solution);
+    const solutionContainer = document.getElementById('solution-container');
+
+    if (hasSolution) {
+        solutionEditors = makeEditors({
+            container: solutionContainer.querySelector('.editors-container'),
+            codes: files.map(({ solution }) => solution),
+            readOnly: true,
+        });
+        toggleSolution();
+    }
+    else {
+        solutionContainer.remove();
+    }
+
+    // Select first file for user and solution.
+    if (files.length > 1) {
+        const selectFirst = container => {
+            const firstSelector = container.querySelector('input');
+
+            firstSelector.checked = true;
+            firstSelector.dispatchEvent(new Event('change'));
+        };
+
+        selectFirst(userSelectorContainer);
+
+        if (hasSolution) {
+            selectFirst(solutionSelectorContainer);
+        }
+    }
 
     // Configure Python runner.
     Sk.configure({
