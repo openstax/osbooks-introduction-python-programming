@@ -6,6 +6,7 @@
     <md:uuid>7b7ef29e-1090-432d-a885-59e10520d9a7</md:uuid>
   </metadata>
   <content class="introduction">
+    <figure class="splash" id="fig-00001"><title>Splash image title test.</title><media alt=" "><image mime-type="image/jpg" src="../../media/OSX_Acct_F01_00_Accountant.jpg"/></media><caption>I am a splash image.</caption></figure>
     <para id="para-00001">Hello I am a fake introduction. Need a splash image up in here. Goodbye.</para>
   </content>
 </document>
