@@ -24,12 +24,12 @@
         <code class="python">print("The weather for today is", end=" ")</code> <newline/>
         <code class="python">print("sunny!")</code>
       </para>
-      <section class="guided-slides participation-activity" id="sect-00003">
+      <note class="guided-slides participation-activity" id="sect-00003">
         <media alt="basic_output_slides">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
         </media>
-      </section>
-      <section class="participation-activity learning-questions" id="sect-00004">
+      </note>
+      <note class="participation-activity learning-questions" id="sect-00004">
         <title>Basic output</title>
         <exercise id="exer-00003">
           <problem id="prob-00001">
@@ -46,17 +46,17 @@
             <para id="para-00007"><link class="os-embed" url="#exercise/prog-py-005"/></para>
           </problem>
         </exercise>
-      </section>
+      </note>
     </section>
     <section id="sect-00005">
       <title>Basic input</title>
       <para id="para-00008"> When a computer program runs, it often requests input data from a user. In Python, input data is obtained with <code class="python">named_item = input()</code>, where named_item stores the input entered by a user. Ex. <code class="python">name = input()</code> stores the input entered by a user into name.</para>
-      <section class="particpation-activity guided-slides" id="sect-00006">
+      <note class="particpation-activity guided-slides" id="sect-00006">
         <media alt="basic_output_slides">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
         </media>   
-      </section>
-      <section class="participation-activity learning-questions" id="sect-00007">
+      </note>
+      <note class="participation-activity learning-questions" id="sect-00007">
         <title>Basic input</title>
         <exercise id="exer-00006">
           <problem id="prob-00004">
@@ -73,11 +73,9 @@
             <para id="para-00011"><link class="os-embed" url="#exercise/prog-py-008"/></para>
           </problem>
         </exercise>
-      </section>
+      </note>
     </section>
-    <section class="practice-programs participation-activity" id="sect-00008">
-      <title>Practice programs</title>
-      <section class="participation-activity practice-program" id="sect-00009">
+      <note class="participation-activity practice-program" id="sect-00009">
         <title>Produce multiple lines of output</title>
         <para id="para-00012">Write a Python computer program that uses multiple print() statements to produce the following:</para>
         <code display="block">
@@ -90,8 +88,8 @@ And that has made all the difference.
         <media alt="multi-line">
           <iframe width="660" height="371.4" src="https://zytools.zybooks.com/zyBooks2/open-stax-python-code-runner/index.html?parameters=%7B%22files%22%3A%5B%7B%22contents%22%3A%22%23%20Type%20your%20code%20after%20this%20comment%5Cn%22%2C%22name%22%3A%22main.py%22%2C%22solution%22%3A%22print(%5C%22I%20shall%20be%20telling%20this%20with%20a%20sigh%5C%22)%5Cnprint(%5C%22Somewhere%20ages%20and%20ages%20hence%3A%5C%22)%5Cnprint(%5C%22Two%20roads%20diverged%20in%20a%20wood%2C%20and%20I--%5C%22)%5Cnprint(%5C%22I%20took%20the%20one%20less%20traveled%20by%2C%5C%22)%5Cnprint(%5C%22And%20that%20has%20made%20all%20the%20difference.%5C%22)%22%7D%5D%2C%22input%22%3A%22%22%2C%22showSolution%22%3Atrue%7D"/>
         </media>
-      </section>
-      <section class="participation-activity practice-program" id="sect-00010">
+      </note>
+      <note class="participation-activity practice-program" id="sect-00010">
         <title>Obtaining user input</title>
         <para id="para-00013">Write a Python computer program that</para>
         <list id="list-00002">
@@ -105,7 +103,6 @@ And that has made all the difference.
         <media alt="user_input">
           <iframe width="660" height="371.4" src="https://zytools.zybooks.com/zyBooks2/open-stax-python-code-runner/index.html?parameters=%7B%22files%22%3A%5B%7B%22contents%22%3A%22%23%20Type%20your%20code%20after%20this%20comment%5Cn%22%2C%22name%22%3A%22main.py%22%2C%22solution%22%3A%22print(%5C%22What%20is%20your%20name%3F%20%5C%22)%5Cnname%20%3D%20input()%5Cnprint(%5C%22What%20do%20you%20like%3F%20%5C%22)%5Cnlike%20%3D%20input()%5Cnprint()%5Cnprint(name%2C%20%5C%22likes%5C%22%2C%20like)%5Cn%22%7D%5D%2C%22input%22%3A%22%22%2C%22showSolution%22%3Atrue%7D"/>
         </media>
-      </section>
-    </section>
+      </note>
   </content>
 </document>

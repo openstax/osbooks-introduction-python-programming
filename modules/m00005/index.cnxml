@@ -32,12 +32,12 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
       </code>
       <para id="para-00004">Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
 
-      <section class="guided-slides participation-activity" id="sect-00003">
+      <note class="guided-slides participation-activity" id="sect-00003">
         <media alt="concatination_slides">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
         </media>
-      </section>
-      <section class="participation-activity learning-questions" id="sect-00004">
+      </note>
+      <note class="participation-activity learning-questions" id="sect-00004">
         <title>Parts of an error</title>
         <para id="para-00015">Given the following error message:</para>
           <code display="block" class="python">
@@ -62,7 +62,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
             <para id="para-00007"><link class="os-embed" url="#exercise/prog-py-026"/></para>
           </problem>
         </exercise>
-      </section>
+      </note>
     </section>
     <section id="sect-00005">
       <title>Common types of errors</title>
@@ -111,7 +111,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
         </tbody>
         </tgroup>
         </table>
-        <section class="participation-activity learning-questions" id="sect-00006">
+        <note class="participation-activity learning-questions" id="sect-00006">
           <title>Types of errors</title>
           <para id="para-00014">For each program below, what type of error will occur?</para>
           <exercise id="exer-00004">
@@ -129,26 +129,21 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
               <para id="para-00011"><link class="os-embed" url="#exercise/prog-py-029"/></para>
             </problem>
           </exercise>
-        </section>
+        </note>
     </section>
-    <section id="sect-00007">
-      <title>Practice programs</title>
-      <section id="sect-00008">
-        <section class="participation-activity practice-program" id="sect-00009">
+        <note class="participation-activity practice-program" id="sect-00009">
           <title>Three errors</title>
           <para id="para-00012">The following program has three errors. Run the program to find the first error, and correct the corresponding line of code. Then run the program again to find and correct the second error. Keep running and correcting the program until no errors are found.</para>
           <media alt="three_errors">
             <iframe width="660" height="371.4" src="https://zytools.zybooks.com/zyBooks2/open-stax-python-code-runner/index.html?parameters=%7B%22files%22%3A%5B%7B%22contents%22%3A%22word%20%3D%20input(%5C%22What%20is%20your%20favorite%20word%3F%20%27)%5Cnprint()%5Cnprint(%5C%22You%20said%3A%5C%22%2C%20Word)%5Cn%20print(%5C%22That%27s%20all%2C%20Folks!%5C%22)%5Cn%22%2C%22name%22%3A%22main.py%22%2C%22solution%22%3A%22word%20%3D%20input(%5C%22What%20is%20your%20favorite%20word%3F%20%5C%22)%5Cnprint()%5Cnprint(%5C%22You%20said%3A%5C%22%2C%20word)%5Cnprint(%5C%22That%27s%20all%2C%20Folks!%5C%22)%5Cn%22%7D%5D%2C%22input%22%3A%22solidarity%22%2C%22showSolution%22%3Atrue%7D"/>
           </media>
-        </section>
-        <section class="participation-activity practice-program" id="sect-00010">
+        </note>
+        <note class="participation-activity practice-program" id="sect-00010">
           <title>Wrong symbols</title>
           <para id="para-00013">This code is based on an earlier example, but the code contains several mistakes. One line is missing required punctuation, and another line uses incorrect symbols. Run the program to find the first error, and correct the corresponding line of code. Keep running and correcting the program until no errors are found.</para>
           <media alt="wrong_symbols">
             <iframe width="660" height="371.4" src="https://zytools.zybooks.com/zyBooks2/open-stax-python-code-runner/index.html?parameters=%7B%22files%22%3A%5B%7B%22contents%22%3A%22team1%20%3D%20%5C%22Liverpool%5C%22%5Cnscore1%20%3D%20%5C%224%5C%22%5Cnteam2%20%3D%20%5C%22Chelsea%5C%22%5Cnscore2%20%3D%20%5C%223%5C%22%5Cn%5Cnprint(team1%20%5C%22versus%5C%22%20team2)%5Cnprint%5B%5C%22Final%20score%3A%5C%22%20score1%20%5C%22to%5C%22%20score2%5D%5Cn%22%2C%22name%22%3A%22main.py%22%2C%22solution%22%3A%22team1%20%3D%20%5C%22Liverpool%5C%22%5Cnscore1%20%3D%20%5C%224%5C%22%5Cnteam2%20%3D%20%5C%22Chelsea%5C%22%5Cnscore2%20%3D%20%5C%223%5C%22%5Cn%5Cnprint(team1%2C%20%5C%22versus%5C%22%2C%20team2)%5Cnprint(%5C%22Final%20score%3A%5C%22%20score1%20%5C%22to%5C%22%20score2)%5Cn%22%7D%5D%2C%22input%22%3A%22%22%2C%22showSolution%22%3Atrue%7D"/>
           </media>
-        </section>
-      </section>
-    </section>
+        </note>
 </content>
 </document>
