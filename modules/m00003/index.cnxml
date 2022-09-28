@@ -19,12 +19,12 @@
       <title>Variables and assignments</title>
       <para id="para-00002">A <term id="term-00001">variable</term> is a named container for storing data, like <code class="python">name</code> for a person's name or <code class="python">age</code> for a person's age. Variable names are commonly written in snake-case, which is all lowercase with underscores in between each word, such as <code class="python">first_name</code> or <code class="python">first_name</code>.</para>
       <para id="para-00003">An <code class="python">assignment</code> sets a variable to a value using the <code class="python">assignment operator (=)</code>. In an assignment, the left side of the assignment operator is a variable, and the right side is the data with which the variable is assigned. The data may be a single value, another variable, or an expression. For example, an assignment may be <code class="python">age = 6</code> or <code class="python">name = Hema</code>.</para>
-      <section class="guided-slides participation-activity" id="sect-00003">
+      <note class="guided-slides participation-activity" id="sect-00003">
         <media alt="vaiables_slides">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
         </media>
-      </section>
-      <section class="participation-activity learning-questions" id="sect-00004">
+      </note>
+      <note class="participation-activity learning-questions" id="sect-00004">
         <title>Variables</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
@@ -46,13 +46,9 @@
             <para id="para-00007"><link class="os-embed" url="#exercise/prog-py-012"/></para>
           </problem>
         </exercise>
-      </section>
+      </note>
     </section>
-
-    <section id="sect-00005">
-      <title>Practice Programs</title>
-      <section id="sect-00006">
-        <section class="participation-activity practice-program" id="sect-00007">
+        <note class="participation-activity practice-program" id="sect-00007">
           <title>Assign and print variables</title>
           <list id="list-00002">
             <item>creates a variable, team1, assigned with the value, "Liverpool"</item>
@@ -65,8 +61,6 @@
           <media alt="user_input">
             <iframe width="660" height="371.4" src="https://zytools.zybooks.com/zyBooks2/open-stax-python-code-runner/index.html?parameters=%7B%22files%22%3A%5B%7B%22contents%22%3A%22%23%20Type%20your%20code%20after%20this%20comment%5Cn%22%2C%22name%22%3A%22main.py%22%2C%22solution%22%3A%22team1%20%3D%20%5C%22Liverpool%5C%22%5Cnscore1%20%3D%204%5Cnteam2%20%3D%20%5C%22Chelsea%5C%22%5Cnscore2%20%3D%203%5Cn%5Cnprint(team1%2C%20%5C%22versus%5C%22%2C%20team2)%5Cnprint(%5C%22Final%20score%3A%5C%22%2C%20score1%2C%20%5C%22to%5C%22%2C%20score2)%5Cn%22%7D%5D%2C%22input%22%3A%22%22%2C%22showSolution%22%3Atrue%7D"/>
           </media>
-        </section>
-      </section>
-    </section>
+        </note>
 </content>
 </document>
