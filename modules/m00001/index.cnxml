@@ -20,7 +20,7 @@
         <title>Concise text and video-based animations.</title>
         <para id="para-00004">Each subsection starts with concise text to introduce the new concept being taught, define key terms, and provide context. That new concept is then explained in detail using video-based animations and formative learning questions. The video-based animations use a step-by-step approach to provide an exceptionally intuitive explanation of the dynamic execution of Python code. The step-by-step explanations therein are used extensively to describe Python syntax, show how fundamental programming concepts and constructs can be used, illustrate how variables are assigned and updated, show how code executes line by line, applying problem solving to create programs, and more.</para>
         <para id="para-00005">Here's an example of a video-based animation.</para>
-        <note class="video-based" id="sect-00006">
+        <note class="guided-slides" id="sect-00006">
           <media alt="variables_and_assignments">
             <iframe width="660" height="371.4" src="https://www.youtube.com/embed/dqNuJ75QfO0"/>
           </media>
