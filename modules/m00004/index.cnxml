@@ -126,33 +126,33 @@
         </thead>
         <tbody>
           <row>
-            <entry><code class="python">"\n" </code></entry>
+            <entry><code class="python" lang="python">"\n" </code></entry>
             <entry>Prints a new line.</entry>
-            <entry><code class="python">print("Escape\nsequence!") </code></entry>
+            <entry><code class="python" lang="python">print("Escape\nsequence!") </code></entry>
             <entry>Escape  sequence!</entry>
           </row>
           <row>
-            <entry><code class="python">"\t" </code></entry>
+            <entry><code class="python" lang="python">"\t" </code></entry>
             <entry>Prints a tab.</entry>
-            <entry><code class="python">print("Escape\tsequence!") </code></entry>
+            <entry><code class="python" lang="python">print("Escape\tsequence!") </code></entry>
             <entry>Escape     sequence!</entry>
           </row>
           <row>
-            <entry><code class="python">"\'" </code></entry>
+            <entry><code class="python" lang="python">"\'" </code></entry>
             <entry>Prints a single quote, an alternative to enclosed double quotes.</entry>
-            <entry><code class="python">print('I\'ll give it a try!') </code></entry>
+            <entry><code class="python" lang="python">print('I\'ll give it a try!') </code></entry>
             <entry>I'll give it a try</entry>
           </row>
           <row>
-            <entry><code class="python">"\"" </code></entry>
+            <entry><code class="python" lang="python">"\"" </code></entry>
             <entry>Prints a double quote, an alternative to enclosed single quotes.</entry>
-            <entry><code class="python">print("I heard you said \"Yes\"") </code></entry>
+            <entry><code class="python" lang="python">print("I heard you said \"Yes\"") </code></entry>
             <entry>I heard you said "Yes"</entry>
           </row>
           <row>
-            <entry><code class="python">"\\" </code></entry>
+            <entry><code class="python" lang="python">"\\" </code></entry>
             <entry>Prints a backslash (\).</entry>
-            <entry><code class="python">print("This prints a \\") </code></entry>
+            <entry><code class="python" lang="python">print("This prints a \\") </code></entry>
             <entry>This prints a \</entry>
           </row>
         </tbody>
