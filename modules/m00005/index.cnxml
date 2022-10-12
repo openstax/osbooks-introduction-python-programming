@@ -22,8 +22,8 @@
         <item>The type of error (Ex: SyntaxError).</item>
         <item>Additional details about the error.</item>
       </list>
-      <para id="para-00003"> Ex: Typing <code class="python">print "Hello!"</code> without parentheses is a syntax error. The <code class="python">syntax</code> of a language defines how code must be structured. In Python, parentheses are required to use <code class="python">print</code>. When attempting to run <code class="python">print "Hello!"</code>, Python displays the following error: </para>
-      <code display="block" class="python">
+      <para id="para-00003"> Ex: Typing <code class="python" lang="python">print "Hello!"</code> without parentheses is a syntax error. The <code class="python" lang="python">syntax</code> of a language defines how code must be structured. In Python, parentheses are required to use <code class="python" lang="python">print</code>. When attempting to run <code class="python" lang="python">print "Hello!"</code>, Python displays the following error: </para>
+      <code display="block" class="python" lang="python">
 Traceback (most recent call last):
   File "/home/student/Desktop/example.py", line 1
     print "Hello"
@@ -40,7 +40,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
       <note class="participation-activity learning-questions" id="sect-00004">
         <title>Parts of an error</title>
         <para id="para-00015">Given the following error message:</para>
-          <code display="block" class="python">
+          <code display="block" class="python" lang="python">
 Traceback (most recent call last):
   File "/home/student/Desktop/example.py", line 2
     print "test"
@@ -79,32 +79,32 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
         </thead>
         <tbody>
           <row>
-            <entry><code class="python">print("Have a nice day!"<span class="highlight"> </span></code></entry>
+            <entry><code class="python" lang="python">print("Have a nice day!"<span class="highlight"> </span></code></entry>
             <entry>SyntaxError: unexpected EOF while parsing</entry>
             <entry>The closing parenthesis is missing. Python is surprised to reach the end of file (EOF) before this line is complete.</entry>
           </row>
           <row>
-            <entry><code class="python">word = input("Type a word: <span class="highlight">)</span></code></entry>
+            <entry><code class="python" lang="python">word = input("Type a word: <span class="highlight">)</span></code></entry>
             <entry>SyntaxError: EOL while scanning string literal</entry>
             <entry>The quote marks are missing. As a result, the string does not terminate before the end of line (EOL).</entry>
           </row>
           <row>
-            <entry><code class="python">print("You typed:", w<span class="highlight">i</span>rd)</code></entry>
+            <entry><code class="python" lang="python">print("You typed:", w<span class="highlight">i</span>rd)</code></entry>
             <entry>NameError: name 'wird' is not defined</entry>
             <entry>The spelling of word is incorrect. The programmer accidentally typed the wrong key.</entry>
           </row>
           <row>
-            <entry><code class="python">print<span class="highlight">s</span>("You typed:", word)</code></entry>
+            <entry><code class="python" lang="python">print<span class="highlight">s</span>("You typed:", word)</code></entry>
             <entry>NameError: name 'prints' is not defined</entry>
             <entry>The spelling of print is incorrect. The programmer accidentally typed an extra letter.</entry>
           </row>
           <row>
-            <entry><code class="python"><span class="highlight"> </span>print("Hello")</code></entry>
+            <entry><code class="python" lang="python"><span class="highlight"> </span>print("Hello")</code></entry>
             <entry>IndentationError: unexpected indent</entry>
             <entry>The programmer accidentally typed a space at the start of the line.</entry>
           </row>
           <row>
-            <entry><code class="python"><span class="highlight">    </span>print("Goodbye")</code></entry>
+            <entry><code class="python" lang="python"><span class="highlight">    </span>print("Goodbye")</code></entry>
             <entry>IndentationError: unexpected indent</entry>
             <entry>The programmer accidentally pressed the Tab key at the start of the line.</entry>
           </row>

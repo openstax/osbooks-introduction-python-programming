@@ -17,13 +17,13 @@
     </section>
     <section id="sect-00002">
       <title>Comments</title>
-      <para id="para-00002"><term id="term-00001">Comments</term> are short phrases that explain what the code is doing. Ex: Lines 1, 9, and 11 in the following program contain comments. Each comment begins with a hash character (#). All text from the hash character to the end of the line is ignored when running the program. In contrast, hash characters inside of strings are treated as regular text. Ex: The string <code class="python">Item #1: "</code> does not contain a comment.</para>
+      <para id="para-00002"><term id="term-00001">Comments</term> are short phrases that explain what the code is doing. Ex: Lines 1, 9, and 11 in the following program contain comments. Each comment begins with a hash character (#). All text from the hash character to the end of the line is ignored when running the program. In contrast, hash characters inside of strings are treated as regular text. Ex: The string <code class="python" lang="python">Item #1: "</code> does not contain a comment.</para>
       <list id="list-00002">
-        <item>The # character should be followed by a single space. Ex: <code class="python"># end of menu</code> is easier to read than <code class="python">#end of menu</code>.</item>
+        <item>The # character should be followed by a single space. Ex: <code class="python" lang="python"># end of menu</code> is easier to read than <code class="python" lang="python">#end of menu</code>.</item>
         <item>Comments should explain the purpose of the code, not just repeat the code itself. Ex: # get the user's preferences is more descriptive than # input item1 and item2.</item>
       </list>
       <example id="exam-00001">
-        <code class="python" display="block">
+        <code class="python" lang="python" display="block">
 # display the menu options
 print("----------")
 print("Lunch Menu")
