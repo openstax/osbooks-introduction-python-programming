@@ -23,36 +23,26 @@
           </preformat>
         </item>
         <item>
-        <code class="python" lang="python">print("sunny!")</code>
-        <preformat>
-        <list id="list-00004">
-          <item>
-            <code class="python" lang="python">print("preformat wrapped around the entire nested list", end=" ")</code>
-          </item>
-          <item>
-            <code class="python" lang="python">print("sunny!")</code>
-          </item>
-        </list>
-      </preformat>
+        <preformat><code class="python" lang="python">print("sunny!")</code></preformat>
         </item>
       </list>
     </section>
     <section id="sect-00011">
       <title>Preformat test with para</title>
-      <preformat>
+
         <para id="para-00014">
-          para with preformat. Hello here's some text bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla <code class="python" lang="python">print("no display specified", end=" ")</code> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla <code display="block" class="python" lang="python">print("display="block", end=" ")</code> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+          para with preformat. Hello here's some text bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla <preformat><code class="python" lang="python">print("no display specified", end=" ")</code></preformat> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla <preformat><code display="block" class="python" lang="python">print("display="block", end=" ")</code></preformat> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
         </para>
-      </preformat>
+
       <preformat>
-        <code class="python" lang="python">print("With preformat and no display type specified", end=" ")</code>
+        <code class="python" lang="python">print("With preformat and no display type specified", end=" ")</code> </preformat>
         <code class="python" lang="python">print("sunny!")</code>
-      </preformat>
+
       <para id="para-00015">
         para without preformat. Hello here's some text bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla <preformat><code class="python" lang="python">print("preformat on code, no display specified", end=" ")</code></preformat> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla <code display="block" class="python" lang="python">print("display="block", end=" ")</code> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
       </para>
       <para id="para-00016">
-        <code display="block" class="python" lang="python">print("without preformat inside a para with display block", end=" ")</code> 
+        <code display="block" class="python" lang="python">print("without preformat inside a para with display block", end=" ")</code>
         <code class="python" lang="python">print("without preformat inside the same para with no display specified")</code>
       </para>
     </section>
