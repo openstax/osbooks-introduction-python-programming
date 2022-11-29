@@ -18,8 +18,8 @@
       <title>Preformat test with a nested list</title>
       <list id="list-00003">
         <item>
-          <preformat>
-            <code class="python" lang="python">print("preformat on on just the code tag", end=" ")</code>
+          <preformat class="python inline-code">
+            print("preformat on on just the code tag", end=" ")
           </preformat>
         </item>
         <item>
