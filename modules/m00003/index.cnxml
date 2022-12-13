@@ -19,12 +19,12 @@
       <title>Variables and assignments</title>
       <para id="para-00002">A <term id="term-00001">variable</term> is a named container for storing data, like <code class="python" lang="python">name</code> for a person's name or <code class="python" lang="python">age</code> for a person's age. Variable names are commonly written in snake-case, which is all lowercase with underscores in between each word, such as <code class="python" lang="python">first_name</code> or <code class="python" lang="python">first_name</code>.</para>
       <para id="para-00003">An <code class="python" lang="python">assignment</code> sets a variable to a value using the <code class="python" lang="python">assignment operator (=)</code>. In an assignment, the left side of the assignment operator is a variable, and the right side is the data with which the variable is assigned. The data may be a single value, another variable, or an expression. For example, an assignment may be <code class="python" lang="python">age = 6</code> or <code class="python" lang="python">name = Hema</code>.</para>
-      <note class="guided-slides participation-activity" id="sect-00003">
+      <note class="guided-slides" id="sect-00003">
         <media alt="vaiables_slides">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
         </media>
       </note>
-      <note class="participation-activity learning-questions" id="sect-00004">
+      <note class="learning-questions" id="sect-00004">
         <title>Variables</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
@@ -48,7 +48,7 @@
         </exercise>
       </note>
     </section>
-        <note class="participation-activity practice-program" id="sect-00007">
+        <note class="practice-program" id="sect-00007">
           <title>Assign and print variables</title>
           <list id="list-00002">
             <item>creates a variable, team1, assigned with the value, "Liverpool"</item>
