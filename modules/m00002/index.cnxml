@@ -47,6 +47,7 @@
         By default, <code class="python" lang="python">print(data)</code> introduces a new line after the output. <code class="python" lang="python">end=</code> is used to avoid a new line after the output. <newline/>
       </para>
       <example id="exam-00001">
+        <title>Fun with print()</title>
         <para id="para-00014">Ex. "The weather for today is sunny!" is printed to the screen on a single line by the following:</para>
         <code class="python" lang="python">print("The weather for today is", end=" ")</code> 
         <code class="python" lang="python">print("sunny!")</code>
