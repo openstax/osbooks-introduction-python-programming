@@ -20,10 +20,12 @@
       <para id="para-00003"> Two or more data items separated by commas produce a single line of output. Ex. <code class="python" lang="python">print("The time is",  "8 AM")</code> will print "The time is 8 AM" to the screen on a single line.</para>
       <para id="para-00004">
         By default, <code class="python" lang="python">print(data)</code> introduces a new line after the output. <code class="python" lang="python">end=</code> is used to avoid a new line after the output. <newline/>
-        Ex. "The weather for today is sunny!" is printed to the screen on a single line by the following: <newline/>
-        <code class="python" lang="python">print("The weather for today is", end=" ")</code> <newline/>
-        <code class="python" lang="python">print("sunny!")</code>
       </para>
+      <example id="exam-00001">
+        <para id="para-00014">Ex. "The weather for today is sunny!" is printed to the screen on a single line by the following:</para>
+        <code class="python" lang="python">print("The weather for today is", end=" ")</code> 
+        <code class="python" lang="python">print("sunny!")</code>
+      </example>
       <note class="guided-slides participation-activity" id="sect-00003">
         <media alt="basic_output_slides">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
