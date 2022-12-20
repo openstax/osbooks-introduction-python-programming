@@ -32,7 +32,7 @@
         <para id="para-00007"> Explanations are provided for both correct and incorrect answer choices. Correct answers' explanations will explain why the answer is correct and how to reach the answer. Similarly, incorrect answers' explanations will directly state why the answer is incorrect and help guide the reader to the correct answer.</para>
         <para id="para-00008">Incorrect answer choices typically represent a common misconception or are the result of making a common error. Even if the correct answer is achieved, readers are encouraged to explore the explanations to gain awareness of these common misconceptions.</para>
       </section>
-      <note id="sect-00004" class="participation-activity learning-questions">
+      <note id="sect-00004" class="learning-questions">
         <title>Participation Activity</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
@@ -46,7 +46,7 @@
         </exercise>
       </note>
         <para id="para-00011">This textbook also includes an integrated programming environment and code runner that allow readers to write and test their own programs within the textbook. Each section has 1 or 2 practice programs. The tool requires the reader to pre-enter the input before running a program.</para>
-        <note class="participation-activity practice-program" id="sect-00007">
+        <note class="practice-program" id="sect-00007">
           <title>Practice programs</title>
           <para id="para-00012">The following program will read an hourly pay from the user input, calculate the weekly pay based on a 40-hour work week, and output the result. The user input has been prepopulated with the value 40. Click the "Run" button to execute the program. The program reads the value 40 from the pre-entered input. Change the user input value to 50, and re-run the program.</para>
           <media alt="weekly-pay">

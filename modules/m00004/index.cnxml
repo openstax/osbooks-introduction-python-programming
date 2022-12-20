@@ -53,7 +53,7 @@
         </tgroup>
         <caption/>
         </table>
-      <note class="participation-activity learning-questions" id="sect-00003">
+      <note class="learning-questions" id="sect-00003">
         <title>String basics</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
@@ -81,12 +81,12 @@
     <section id="sect-00004">
       <title>Concatenation</title>
       <para id="para-00008"> Concatenation is an operation that combines two or more strings sequentially[g][h] with the concatenation operator (+). Ex. "A" + "part" produces the string "Apart". </para>
-      <note class="guided-slides participation-activity" id="sect-00005">
+      <note class="guided-slides" id="sect-00005">
         <media alt="concatination_slides">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
         </media>
       </note>
-      <note class="participation-activity learning-questions" id="sect-00006">
+      <note class="learning-questions" id="sect-00006">
         <title>Concatenation</title>
         <exercise id="exer-00005">
           <problem id="prob-00005">
@@ -158,7 +158,7 @@
         </tbody>
         </tgroup>
         </table>
-        <note class="participation-activity learning-questions" id="sect-00008">
+        <note class="learning-questions" id="sect-00008">
           <title>Escape sequences</title>
           <exercise id="exer-00009">
             <problem id="prob-00009">
@@ -177,7 +177,7 @@
           </exercise>
         </note>
     </section>
-        <note class="participation-activity practice-program" id="sect-00011">
+        <note class="practice-program" id="sect-00011">
           <title>Concatination</title>
           <para id="para-00017">Write a Python computer program that</para>
           <list id="list-00002">
@@ -190,7 +190,7 @@
             <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/Concatenation.html"/>
           </media>
         </note>
-        <note class="participation-activity practice-program" id="sect-00012">
+        <note class="practice-program" id="sect-00012">
           <title>Escape sequences</title>
           <para id="para-00018">Write a Python computer program that prints the following, where the last line is indented with a tab escape sequence</para>
           <code display="block">

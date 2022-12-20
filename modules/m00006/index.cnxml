@@ -38,7 +38,7 @@ print()  # end of menu
 item1 = input("Item #1: ")
 item2 = input("Item #2: ")</code>
       </example>
-      <note class="participation-activity learning-questions" id="sect-00003">
+      <note class="learning-questions" id="sect-00003">
         <title>Comments</title>
         <exercise id="exer-00001">
           <problem id="prob-00001">
@@ -65,12 +65,12 @@ item2 = input("Item #2: ")</code>
         <item>Write a comment before each step.</item>
       </list>
       <para id="para-00007">Ex: The program in the previous subsection had two steps: (1) display the menu options, and (2) get the user's preferences. Together, the blank lines and comments show the overall structure of the program. Not every line needs to be commented.</para>
-      <note class="guided-slides participation-activity" id="sect-00005">
+      <note class="guided-slides" id="sect-00005">
         <media alt="comments_in_program">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
         </media>
       </note>
-      <note class="participation-activity learning-questions" id="sect-00006">
+      <note class="learning-questions" id="sect-00006">
         <title>Code quality</title>
         <exercise id="exer-00004">
           <problem id="prob-00004">
@@ -93,12 +93,12 @@ item2 = input("Item #2: ")</code>
       <title>Documentation</title>
       <para id="para-00011">Python programs may optionally begin with a string known as a <term id="term-00002">docstring</term>. A docstring is documentation written for others who will use the program but not necessarily read the source code. Most of the official documentation at <link url="https://docs.python.org/">docs.python.org</link> is generated from docstrings.</para>
       <para id="para-00013">Because of their length, docstrings are generally written as multi-line strings ("""). Common elements of a docstring include a one-line summary, a blank line, and a longer description.</para>
-      <note class="guided-slides participation-activity" id="sect-00008">
+      <note class="guided-slides" id="sect-00008">
         <media alt="vacations_docstring">
           <iframe width="660" height="371.4" src="https://www.OS-placeholder.com/index.html"/>
         </media>
       </note>
-      <note class="participation-activity learning-questions" id="sect-00009">
+      <note class="learning-questions" id="sect-00009">
         <title>Documentation</title>
         <exercise id="exer-00007">
           <problem id="prob-00007">
@@ -122,13 +122,13 @@ item2 = input("Item #2: ")</code>
           <item>Are your comments longer or shorter? Why?</item>
           <item>Is the formatting of your comments correct?</item>
         </list>
-        <note class="participation-activity practice-program" id="sect-00012">
+        <note class="practice-program" id="sect-00012">
           <title>Whose birthday</title>
           <media alt="whos_birthday">
             <iframe width="660" height="371.4" src="https://zytools.zybooks.com/zyBooks2/open-stax-python-code-runner/index.html?parameters=%7B%22files%22%3A%5B%7B%22contents%22%3A%22name%20%3D%20input(%5C%22Whose%20birthday%20is%20today%3F%20%5C%22)%5Cnname%20%3D%20name%20%2B%20%5C%22!%5C%22%5Cnprint()%5Cnprint(%5C%22Happy%20birthday%20to%5C%22%2C%20name)%3B%5Cnprint(%5C%22Everyone%20cheer%20for%5C%22%2C%20name)%3B%5Cn%22%2C%22name%22%3A%22main.py%22%2C%22solution%22%3A%22%23%20get%20the%20person%27s%20name%5Cnname%20%3D%20input(%5C%22Whose%20birthday%20is%20today%3F%20%5C%22)%5Cnname%20%3D%20name%20%2B%20%5C%22!%5C%22%5Cn%5Cn%23%20print%20a%20birthday%20message%5Cnprint()%5Cnprint(%5C%22Happy%20birthday%20to%5C%22%2C%20name)%3B%5Cnprint(%5C%22Everyone%20cheer%20for%5C%22%2C%20name)%3B%5Cn%22%7D%5D%2C%22input%22%3A%22Eduardo%22%2C%22showSolution%22%3Atrue%7D"/>
           </media>
         </note>
-        <note class="participation-activity practice-program" id="sect-00013">
+        <note class="practice-program" id="sect-00013">
           <title>Personalized greeting</title>
           <para id="para-00017">Write a docstring for the following program. The first line of the docstring should explain, in one short sentence, what the program is. The second line of the docstring should be blank. The third line should include a longer explanation of what the program does.</para>
           <media alt="personalized_greeting">
