@@ -1,7 +1,7 @@
 <col:collection xmlns:col="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns="http://cnx.rice.edu/collxml">
   <col:metadata>
-    <md:title>Computer Programming with Python</md:title>
-    <md:slug>computer-programming-python</md:slug>
+    <md:title>Introduction to Python Programming</md:title>
+    <md:slug>introduction-python-programming</md:slug>
     <md:language>en</md:language>
     <md:uuid>8d08a72f-5463-4856-b05c-58b0d65f5e61</md:uuid>
     <md:license url="http://creativecommons.org/licenses/by/4.0/"/>
