@@ -15,55 +15,68 @@ window.addEventListener('load', async() => {
 
     .editors-container {
         display: flex;
-        flex-grow: 1;
-        min-height: 200px;
+        height: 12em;
+        min-height: 3.7em;
+        overflow: hidden;
+        resize: vertical;
     }
 
     .editors-container > div {
         border: thin solid #D5D5D5;
         border-radius: 3px;
-        margin-top: -1px;
         width: 100%;
+    }
+
+    label {
+        margin-top: 1em;
     }
 
     #input {
         border-radius: 3px;
+        color: #37474F;
         flex: initial;
-        margin-top: 15px;
-        resize: none;
+        height: 5.3em;
+        min-height: 2.2em;
+        padding: 4px 10px;
+        resize: vertical;
     }
 
     #button-container {
         display: flex;
         justify-content: space-between;
-        margin-top: 15px;
+        margin-top: 1em;
     }
 
     #output {
-        background-color: #F1F1F1;
-        border: 1px solid rgba(189,189,189,.5);
-        border-radius: 2px;
+        background-color: #F3F3F3;
+        border: thin solid #D5D5D5;
+        border-radius: 3px;
+        box-sizing: border-box;
         color: #37474F;
         display: block;
-        font-family: "Courier New",monospace;
-        height: 60px;
-        margin-top: 15px;
+        font-family: monospace;
+        height: 5.3em;
+        min-height: 2.2em;
         overflow-x: auto;
         padding: 4px 10px;
+        resize: vertical;
         white-space: pre-wrap;
     }
 
-    #reset, #toggle-solution {
+    #fullscreen, #reset, #toggle-solution {
         background-color: white;
         box-shadow: none;
         color: #0288D1;
-        margin-bottom: 5px;
-        margin-top: 15px;
-        padding: 0;
+        margin-top: auto;
+        padding: 0 1ex 0 0;
     }
 
-    #reset:hover, #toggle-solution:hover {
+    #fullscreen:hover, #reset:hover, #toggle-solution:hover {
         color: #37474F;
+    }
+
+    #solution-container {
+        margin-top: 1em;
     }
 
     #solution-files.hidden {
@@ -95,8 +108,7 @@ window.addEventListener('load', async() => {
 
     .selector-container > div {
         background-color: #E8E8E8;
-        border: 0.1rem solid #D5D5D5;
-        border-bottom: 1px solid #FFFFFF;
+        border: thin solid #D5D5D5;
         border-radius: 0.5rem;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
@@ -110,7 +122,7 @@ window.addEventListener('load', async() => {
     }
 
     .selector-container > div:hover {
-        background-color: #F1F1F1;
+        background-color: #F3F3F3;
         cursor: pointer;
     }
 
@@ -122,22 +134,31 @@ window.addEventListener('load', async() => {
         background-color: #FFFFFF;
         z-index: 1;
     }
+
+    .monaco-editor .line-numbers {
+        background-color: #F3F3F3;
+        padding-right: 1ex;
+    }
 </style>
 <div id="user-selector-container" class="selector-container"></div>
 <div id="editors" class="editors-container"></div>
-<textarea id="input" rows="3" aria-label="Input to the program"></textarea>
+<label for="input">Input</label>
+<textarea id="input"></textarea>
 <div id='button-container'>
     <button class="primary medium" onclick="run()">Run</button>
-    <button id="reset" class="secondary small" onclick="reset()">Reset code</button>
+    <button id="fullscreen" class="secondary small" onclick="fullscreen()">Full screen</button>
+    <button id="reset" class="secondary small" onclick="reset()">Reset all</button>
 </div>
-<output id="output" aria-label="Output of the program"></output>
+<label for="output">Output</label>
+<output id="output"></output>
 <div id="solution-container">
     <button id="toggle-solution" class="secondary small" onclick="toggleSolution()" aria-label="View solution"></button>
     <div id="solution-files">
         <div id="solution-selector-container" class="selector-container"></div>
         <div id="solution-editors" class="editors-container"></div>
     </div>
-</div>`;
+</div>
+<div id="skulpt-read-files" style="display: none;"></div>`;
 
     // Global variables for the code runner.
     let editors = null;
@@ -155,6 +176,11 @@ window.addEventListener('load', async() => {
     window.run = function() {
         output.value = '';
 
+        // Skulpt opens and reads a file from DOM.
+        const doms = files.map(({ name }, index) => `<div id="${name}">${editors[index].getValue()}</div>`);
+
+        document.getElementById('skulpt-read-files').innerHTML = doms.join('');
+
         // Python input() works by reading until a newline.
         inputLines = input.value.split('\n');
 
@@ -166,13 +192,53 @@ window.addEventListener('load', async() => {
     }
 
     /**
+        Toggle fullscreen mode.
+        @function fullscreen
+        @return {void}
+    */
+    window.fullscreen = function() {
+        if (parent.document.fullscreenElement) {
+            parent.document.exitFullscreen();
+        } else {
+            window.frameElement.requestFullscreen();
+        }
+    }
+
+    // Add padding when in fullscreen mode.
+    parent.document.addEventListener("fullscreenchange", function() {
+        document.body.style.padding = parent.document.fullscreenElement ? '1em' : '';
+    });
+
+    // Remember original height of resizable elements.
+    const heights = [
+        document.getElementById('editors').offsetHeight,
+        input.offsetHeight,
+        output.offsetHeight,
+        document.getElementById('solution-editors').offsetHeight,
+        window.frameElement.clientHeight,
+        window.frameElement.clientWidth,
+    ].map(height => `${height}px`);
+
+    /**
         Reset the code to the default template.
         @function reset
         @return {void}
     */
     window.reset = function() {
         if (window.confirm('You will lose your changes.')) {
+            // reset contents
             editors.forEach((editor, index) => editor.setValue(originalFileContents[index]));
+            input.value = parameters.input;
+            output.value = '';
+            // reset heights
+            document.getElementById('editors').style.height = heights[0];
+            input.style.height = heights[1];
+            output.style.height = heights[2];
+            if (heights[3]) {
+                document.getElementById('solution-editors').style.height = heights[3];
+            }
+            window.frameElement.style.height = heights[4];
+            window.frameElement.style.width = heights[5];
         }
     }
 
@@ -221,7 +287,7 @@ window.addEventListener('load', async() => {
         await loadScript(`${filePath}/coderunner_dependencies/${scriptUrls[i]}`);
     }
 
-    // Set parameters
+    // Set parameters.
     const parameters = window.parameters ?? {
         files: [
             { contents: '', name: 'main.py', solution: '' },
@@ -231,8 +297,12 @@ window.addEventListener('load', async() => {
     const { files } = parameters;
     const originalFileContents = files.map(({ contents }) => contents);
 
-    // Set input.
+    // Set input (shrink textarea if blank).
     input.value = parameters.input;
+    if (!input.value) {
+        input.style.height = '0';  // set to min-height
+        heights[1] = input.offsetHeight + 'px';
+    }
 
     // Start file selector if needed.
     if (files.length > 1) {
@@ -344,8 +414,10 @@ window.addEventListener('load', async() => {
             const editor = monaco.editor.create(div, {
                 automaticLayout: true,
                 language: 'python',
+                matchBrackets: 'near',
                 minimap: { enabled: false },
-                readOnly,
+                renderLineHighlight: 'none',
+                scrollBeyondLastLine: false,
                 value: code,
             });
 
@@ -381,6 +453,7 @@ window.addEventListener('load', async() => {
     }
     else {
         solutionContainer.remove();
+        heights[3] = null;
     }
 
     // Select first file for user and solution.
@@ -403,6 +476,7 @@ window.addEventListener('load', async() => {
     Sk.configure({
         execLimit: 5000,
         inputfun: () => new Promise(resolve => resolve(inputLines.shift())),
+        nonreadopen: true,
         output: text => {
             output.value += text.replace(/</g, '&lt;');
         },
@@ -415,6 +489,18 @@ window.addEventListener('load', async() => {
             }
 
             return file;
+        },
+        filewrite: (skFile, change) => {
+            const index = files.findIndex(({ name }) => name === skFile.name);
+            let contents = change.v;
+
+            if (skFile.mode.v === 'a') {
+                contents = files[index].contents + change.v;
+            }
+
+            // Update file contents back into file.
+            files[index].contents = contents;
+            editors[index].setValue(contents);
         },
         __future__: Sk.python3,
     });
