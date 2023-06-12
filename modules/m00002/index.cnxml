@@ -20,6 +20,35 @@
 <para id="para-00003">The goal of this book is to teach introductory programming and problem solving. Writing programs is a creative activity, inherently useful, and rewarding!
 No prior background in mathematics or computer science is necessary to read this book. Many different types of programs exist, as shown in the illustration below.
 This book will focus on general purpose programs that typically run "behind the scenes."</para>
+<note class="guided-slides" id="note-00001">
+<title>Online music streaming</title>
+<media alt="atoms_isotopes">
+<iframe width="660" height="371.4" src="https://www.openstax.org/r/music-streaming"/>
+</media>
+</note>
+<note class="learning-questions" id="note-00002">
+<title>Computers and programs</title>
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch01-m01-p01"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch01-m01-p02"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch01-m01-p03"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch01-m01-p04"/></para>
+</problem>
+</exercise>
+</note>
 </section>
 </content>
 </document>
