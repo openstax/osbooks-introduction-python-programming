@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "punctuation.py", "contents": "# Type your code after this comment\n", "solution": "\nname = \"Freda\"\nfeel = \"happy\"\nprint(\"Hi,\", name + \"!\")\nprint(\"I'm glad you feel\", feel + \".\")\n"}], "input": null, "showSolution": true};

@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "meters_feet.py", "contents": null, "solution": "meters = 10\nmeter2feet = 3.28\nfeet = meters * meter2feet\nprint(feet)"}], "input": null, "showSolution": true};

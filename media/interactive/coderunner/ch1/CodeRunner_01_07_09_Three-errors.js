@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "three_errors.py", "contents": "word = input(\"What is your favorite word? ')\nprint()\nprint(\"You said:\", Word)\n print(\"That's all, Folks!\")\n", "solution": "word = input(\"What is your favorite word? \")\nprint()\nprint(\"You said:\", word)\nprint(\"That's all, Folks!\")\n"}], "input": "solidarity", "showSolution": true};

@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "name_length.py", "contents": null, "solution": "first = input(\"What is your first name? \")\nlast = input(\"What is your last name? \")\nprint(\"Your first name is\", len(first), \"letters long\")\nprint(\"Your last name is\", len(last), \"letters long\")\n"}], "input": "Alan\nTuring\n", "showSolution": true};
