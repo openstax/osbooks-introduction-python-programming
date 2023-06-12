@@ -11,6 +11,14 @@
       <md:title>Statements</md:title>
       <col:content>
         <col:module document="m00001"/>
+        <col:module document="m00002"/>
+        <col:module document="m00003"/>
+        <col:module document="m00004"/>
+        <col:module document="m00005"/>
+        <col:module document="m00006"/>
+        <col:module document="m00007"/>
+        <col:module document="m00008"/>
+        <col:module document="m00009"/>
       </col:content>
     </col:subcollection>
   </col:content>
