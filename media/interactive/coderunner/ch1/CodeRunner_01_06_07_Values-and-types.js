@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "values_types.py", "contents": null, "solution": "int_a = 10\nfloat_a = 10.0\nstring_a = \"10\"\n\nprint(int_a, type(int_a))\nprint(float_a, type(float_a))\nprint(string_a, type(string_a))"}], "input": null, "showSolution": true};

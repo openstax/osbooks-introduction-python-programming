@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "final_score.py", "contents": "# Type your code after this comment\n", "solution": "team1 = \"Liverpool\"\nscore1 = 4\nteam2 = \"Chelsea\"\nscore2 = 3\n\nprint(team1, \"versus\", team2)\nprint(\"Final score:\", score1, \"to\", score2)\n"}], "input": null, "showSolution": true};
