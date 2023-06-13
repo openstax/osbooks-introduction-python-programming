@@ -6,5 +6,201 @@
     <md:uuid>f60a5f74-d8c0-4637-beea-f5b3aca54605</md:uuid>
   </metadata>
   <content>
-  </content>
+<section id="sect-00001">
+<title>Learning objectives</title>
+<list id="list-00001">
+<item>Concatenate string literals and variables using the + operator.</item>
+<item>Identify escape sequences for representing special characters.</item>
+</list>
+</section>
+<section id="sect-00002">
+<title>String basics</title>
+<para id="para-00001">A string is a sequence of characters enclosed by matching single (') or double (") quotes. Ex. "Happy birthday!" and '21' are both strings.</para>
+<para id="para-00002">To include a single quote (') in a string, enclose the string with matching double quotes ("). Ex. "Won't this work?" To include a double quote ("), enclose the string with matching single quotes ('). Ex. 'They said "Try it!", so I did'.</para>
+<table summary=" " id="table-00001">
+<title>Rules for strings</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Valid string</entry>
+<entry>Invalid string</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>"17" or '17'</entry>
+<entry>17</entry>
+</row>
+<row>
+<entry>"seventeen" or 'seventeen'</entry>
+<entry>seventeen</entry>
+</row>
+<row>
+<entry>"Where?" or 'Where?'</entry>
+<entry>"Where?'</entry>
+</row>
+<row>
+<entry>"I hope you aren't sad."</entry>
+<entry>'I hope you aren't sad.'</entry>
+</row>
+<row>
+<entry>'The teacher said "Correct!" '</entry>
+<entry>"The teacher said "Correct!" "</entry>
+</row>
+</tbody>
+</tgroup>
+<caption/>
+</table>
+<note class="learning-questions" id="note-00001">
+<title>Valid and invalid strings</title>
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch01-m04-p01"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch01-m04-p02"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch01-m04-p03"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch01-m04-p04"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00003">
+<title>Concatenation</title>
+<para id="para-00007">Concatenation is an operation that combines two or more strings sequentially with the concatenation operator (+). Ex. "A" + "part" produces the string "Apart".</para>
+<note class="guided-slides" id="note-00002">
+<title>Concatenating multiple strings</title>
+<media alt="concatenating_strings_slides">
+<iframe width="660" height="371.4" src="https://www.openstax.org/r/concatenating-strings"/>
+</media>
+</note>
+<note class="learning-questions" id="note-00003">
+<title>String concatenation</title>
+<exercise id="exer-00005">
+<problem id="prob-00005">
+<para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch01-m04-p05"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00006">
+<problem id="prob-00006">
+<para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch01-m04-p06"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00007">
+<problem id="prob-00007">
+<para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch01-m04-p07"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00008">
+<problem id="prob-00008">
+<para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch01-m04-p08"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00004">
+<title>Escape sequences</title>
+<para id="para-00012">An escape sequence is two characters that cause a specific action to occur within a string. The first character is the backslash (\), which identifies the escape sequence. The second character indicates the specific action.</para>
+<table summary=" " id="table-00002">
+<title>Common escape sequences</title>
+<tgroup cols="4">
+<thead>
+<row>
+<entry>Escape sequence</entry>
+<entry>Action</entry>
+<entry>Example</entry>
+<entry>Screen output</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><code class="python" lang="python">"\n"</code></entry>
+<entry>Prints a new line.</entry>
+<entry><code class="python" lang="python">print("Escape\nsequence!")</code></entry>
+<entry><para id="para-00013">Escape</para><para id="para-00014">sequence!</para></entry>
+</row>
+<row>
+<entry><code class="python" lang="python">"\t"</code></entry>
+<entry>Prints a tab.</entry>
+<entry><code class="python" lang="python">print("Escape\tsequence!")</code></entry>
+<entry>Escape    sequence!</entry>
+</row>
+<row>
+<entry><code class="python" lang="python">"\'"</code></entry>
+<entry>Prints a single quote, an alternative to enclosed double quotes.</entry>
+<entry><code class="python" lang="python">print('I\'ll give it a try!')</code></entry>
+<entry>I'll give it a try</entry>
+</row>
+<row>
+<entry><code class="python" lang="python">"\""</code></entry>
+<entry>Prints a double quote, an alternative to enclosed single quotes.</entry>
+<entry><code class="python" lang="python">print("I heard you said \"Yes\"")</code></entry>
+<entry>I heard you said "Yes"</entry>
+</row>
+<row>
+<entry><code class="python" lang="python">"\\"</code></entry>
+<entry>Prints a backslash (\).</entry>
+<entry><code class="python" lang="python">print("This prints a \\")</code></entry>
+<entry>This prints a \</entry>
+</row>
+</tbody>
+</tgroup>
+<caption/>
+</table>
+<note class="learning-questions" id="note-00004">
+<title>Escape sequences</title>
+<exercise id="exer-00009">
+<problem id="prob-00009">
+<para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch01-m04-p09"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00010">
+<problem id="prob-00010">
+<para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch01-m04-p10"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00011">
+<problem id="prob-00011">
+<para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch01-m04-p11"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00005">
+<title>Programming practice</title>
+<note class="practice-program" id="note-00005">
+<title>Punctuation</title>
+<para id="para-00018">Write a Python computer program that
+<list id="list-00002">
+<item>assigns the string "Freda" to a variable, name</item>
+<item>assigns the string "happy" to a variable, feel</item>
+<item>prints the string "Hi Freda!" with a single print() function using the variable, name</item>
+<item>prints the string "I'm glad you feel happy." with a single print() function using the variable, feel</item>
+</list></para>
+<media alt="punctuation_program">
+<iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_05_05_Punctuation.html"/>
+</media>
+</note>
+<note class="practice-program" id="note-00006">
+<title>Hopper quote</title>
+<para id="para-00019">Write a Python computer program that prints the following, where the last line is indented with a tab escape sequence.</para>
+<para id="para-00020">"To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge."      - Grace Hopper</para>
+<media alt="hopper_quote_program">
+<!--<iframe width="660" height="371.4"
+   src="../../media/interactive/coderunner/ch1/CodeRunner_01_05_05_hopper-quote.html"/>-->
+<iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_05_06_Name-length.html"/>
+</media>
+</note>
+</section>
+</content>
 </document>

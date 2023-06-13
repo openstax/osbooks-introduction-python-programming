@@ -19,7 +19,7 @@
 <para id="para-00002">An <term id="term-00002">assignment</term> sets a variable to a value using the <term id="term-00003">assignment operator</term> (<term id="term-00006">=</term>). The left side of the assignment <span class="purple-code">statement</span> is a variable, and the right side is the <span class="purple-code">value</span> with which the variable is assigned. Ex: An assignment may be <code class="python inline-code">age = 6</code> or <code class="python inline-code">name = "Hema"</code>.</para>
 <note class="guided-slides" id="note-00001">
 <title>Assigning and using variables</title>
-<media alt="atoms_isotopes">
+<media alt="using_variables_slides">
 <iframe width="660" height="371.4" src="https://www.openstax.org/r/using-variables"/>
 </media>
 </note>
