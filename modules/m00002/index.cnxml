@@ -22,8 +22,8 @@ No prior background in mathematics or computer science is necessary to read this
 This book will focus on general purpose programs that typically run "behind the scenes."</para>
 <note class="guided-slides" id="note-00001">
 <title>Online music streaming</title>
-<media alt="atoms_isotopes">
-<iframe width="660" height="371.4" src="https://openstax.org/r/music-streaming"/>
+<media alt="music_streaming_slides">
+<iframe width="660" height="371.4" src="https://www.openstax.org/r/music-streaming"/>
 </media>
 </note>
 <note class="learning-questions" id="note-00002">
@@ -74,7 +74,7 @@ System.out.println("Hello, World!");
 </example>
 <note class="guided-slides" id="note-00004">
 <title>Counting lines in a file</title>
-<media alt="atoms_isotopes">
+<media alt="counting_lines_slides">
 <iframe width="660" height="371.4" src="https://www.openstax.org/r/counting-lines"/>
 </media>
 </note>
@@ -108,7 +108,7 @@ print("Cool! I like", song, "too.")
 <item>The modified program reads two lines of input: name and song. Add your favorite song to the Input box below your name, and run the program again.</item>
 <item>The next section of the book will explain how <code class="python inline-code">print()</code> and <code class="python inline-code">input()</code> work. Feel free to experiment with this code until you are ready to move on.</item>
 </list>
-<media alt=" ... ">
+<media alt="favorite_song_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_02_01_Favorite-song.html"/>
 </media>
 </note>
