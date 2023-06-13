@@ -22,7 +22,7 @@ print("sunny!")
 </preformat></para>
 <note class="guided-slides" id="note-00001">
 <title>Displaying output to the user</title>
-<media alt="atoms_isotopes">
+<media alt="displaying_output_slides">
 <iframe width="660" height="371.4" src="https://www.openstax.org/r/displaying-output"/>
 </media>
 </note>
@@ -50,7 +50,7 @@ print("sunny!")
 <para id="para-00007">When a computer program runs, it often requests input data from a user. In Python, input data is obtained with named_item = input(), where named_item stores the input entered by a user. Ex. name = input() stores the input entered by a user into name.</para>
 <note class="guided-slides" id="note-00003">
 <title>Obtaining input from the user</title>
-<media alt="atoms_isotopes">
+<media alt="obtaining_input_slides">
 <iframe width="660" height="371.4" src="https://www.openstax.org/r/obtaining-input"/>
 </media>
 </note>
@@ -85,7 +85,7 @@ print("sunny!")
 <item>I took the one less traveled by,</item>
 <item>And that has made all the difference.</item>
 </list></para>
-<media alt=" ... ">
+<media alt="frost_poem_program">
 <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_02_Frost-poem.html"/>
 </media>
 </note>
@@ -100,7 +100,7 @@ print("sunny!")
 <item>prints a blank line of output</item>
 <item>prints the variable name, "likes", followed by the variable like as a single line of output</item>
 </list></para>
-<media alt=" ... ">
+<media alt="name_likes_program">
 <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_03_Name-likes.html"/>
 </media>
 </note>

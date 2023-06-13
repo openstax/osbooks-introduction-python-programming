@@ -6,5 +6,150 @@
     <md:uuid>b420edbd-6d6c-4928-a0f0-9b7c99c3a542</md:uuid>
   </metadata>
   <content>
-  </content>
+<section id="sect-00001">
+<title>Learning objectives</title>
+<list id="list-00001">
+<item>Assign variables and print variables.</item>
+<item>Explain rules for naming variables.</item>
+</list>
+</section>
+<section id="sect-00002">
+<title>Assignment statement</title>
+<para id="para-00001"><span class="purple-code">A <term id="term-00001">variable</term> refers to a value stored in memory. Ex: <code class="python inline-code">name</code> refers to a person's name, and <code class="python inline-code">age</code> refers to a person's age. Variables allow programs to refer to values using names rather than memory locations.</span></para>
+<para id="para-00002">An <term id="term-00002">assignment</term> sets a variable to a value using the <term id="term-00003">assignment operator</term> (_=_). The left side of the assignment <span class="purple-code">statement</span> is a variable, and the right side is the <span class="purple-code">value</span> with which the variable is assigned. Ex: An assignment may be <code class="python inline-code">age = 6</code> or <code class="python inline-code">name = "Hema"</code>.</para>
+<note class="guided-slides" id="note-00001">
+<title>Assigning and using variables</title>
+<media alt="atoms_isotopes">
+<iframe width="660" height="371.4" src="https://www.openstax.org/r/using-variables"/>
+</media>
+</note>
+<note class="learning-questions" id="note-00002">
+<title>Assigning and using variables</title>
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch01-m03-p01"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch01-m03-p02"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch01-m03-p03"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch01-m03-p04"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00003">
+<title>Variable naming rules</title>
+<para id="para-00007">A variable name can consist of letters, digits, and underscores and be of any length. The name cannot start with a digit. Ex: <code class="python inline-code">101class</code> is invalid. Also letter case matters. Ex: <code class="python inline-code">Sum</code> is different from <code class="python inline-code">sum</code>. <span class="purple-code">The PEP8 style guide recommends writing variable names</span> in <term id="term-00004">snake case</term>, which is all lowercase with underscores in between each word, such as <code class="python inline-code">first_name</code> or <code class="python inline-code">total_price</code>.</para>
+<para id="para-00008">A name should be short and descriptive, so words are preferred over single characters in programs for readability. Ex: A variable named <code class="python inline-code">count</code> indicates the variable's purpose better than a variable named <code class="python inline-code">c</code>.</para>
+<para id="para-00009">Python has reserved words, known as <term id="term-00005">keywords</term>, that have special functions and cannot be used as names for variables (or other objects).</para>
+<table summary=" " id="table-00001">
+<title>Keywords</title>
+<tgroup cols="5">
+<tbody>
+<row>
+<entry>False</entry>
+<entry>await</entry>
+<entry>else</entry>
+<entry>import</entry>
+<entry>pass</entry>
+</row>
+<row>
+<entry>None</entry>
+<entry>break</entry>
+<entry>except</entry>
+<entry>in</entry>
+<entry>raise</entry>
+</row>
+<row>
+<entry>True</entry>
+<entry>class</entry>
+<entry>finally</entry>
+<entry>is</entry>
+<entry>return</entry>
+</row>
+<row>
+<entry>and</entry>
+<entry>continue</entry>
+<entry>for</entry>
+<entry>lambda</entry>
+<entry>try</entry>
+</row>
+<row>
+<entry>as</entry>
+<entry>def</entry>
+<entry>from</entry>
+<entry>nonlocal</entry>
+<entry>while</entry>
+</row>
+<row>
+<entry>assert</entry>
+<entry>del</entry>
+<entry>global</entry>
+<entry>not</entry>
+<entry>with</entry>
+</row>
+<row>
+<entry>asynch</entry>
+<entry>elif</entry>
+<entry>if</entry>
+<entry>or</entry>
+<entry>yield</entry>
+</row>
+</tbody>
+</tgroup>
+<caption/>
+</table>
+<note class="learning-questions" id="note-00003">
+<title>Valid variable names</title>
+<exercise id="exer-00005">
+<problem id="prob-00005">
+<para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch01-m03-p05"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00006">
+<problem id="prob-00006">
+<para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch01-m03-p06"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00007">
+<problem id="prob-00007">
+<para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch01-m03-p07"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00008">
+<problem id="prob-00008">
+<para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch01-m03-p08"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00004">
+<title>Programming practice</title>
+<note class="practice-program" id="note-00004">
+<title>Final score</title>
+<para id="para-00014">Write a Python computer program that
+<list id="list-00002">
+<item>creates a variable, team1, assigned with the value, "Liverpool"</item>
+<item>creates a variable, team2, assigned with the value, "Chelsea"</item>
+<item>creates a variable, score1, assigned with the value, 4</item>
+<item>creates a variable, score2, assigned with the value, 3</item>
+<item>prints team1, "versus", and team2 as a single line of output</item>
+<item>prints "Final score: ", score1, "to", score2 as a single line of output</item>
+</list></para>
+<media alt="final_score_program">
+<iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_04_04_Final-score.html"/>
+</media>
+</note>
+</section>
+</content>
 </document>
