@@ -16,7 +16,7 @@
 <section id="sect-00002">
 <title>Assignment statement</title>
 <para id="para-00001"><span class="purple-code">A <term id="term-00001">variable</term> refers to a value stored in memory. Ex: <code class="python inline-code">name</code> refers to a person's name, and <code class="python inline-code">age</code> refers to a person's age. Variables allow programs to refer to values using names rather than memory locations.</span></para>
-<para id="para-00002">An <term id="term-00002">assignment</term> sets a variable to a value using the <term id="term-00003">assignment operator</term> (_=_). The left side of the assignment <span class="purple-code">statement</span> is a variable, and the right side is the <span class="purple-code">value</span> with which the variable is assigned. Ex: An assignment may be <code class="python inline-code">age = 6</code> or <code class="python inline-code">name = "Hema"</code>.</para>
+<para id="para-00002">An <term id="term-00002">assignment</term> sets a variable to a value using the <term id="term-00003">assignment operator</term> (<term id="term-00006">=</term>). The left side of the assignment <span class="purple-code">statement</span> is a variable, and the right side is the <span class="purple-code">value</span> with which the variable is assigned. Ex: An assignment may be <code class="python inline-code">age = 6</code> or <code class="python inline-code">name = "Hema"</code>.</para>
 <note class="guided-slides" id="note-00001">
 <title>Assigning and using variables</title>
 <media alt="atoms_isotopes">
