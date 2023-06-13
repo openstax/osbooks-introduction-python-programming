@@ -179,7 +179,7 @@
 <item>Prints the value of each of the three variables along with their type.</item>
 </list></para>
 <media alt="values_and_types_program">
-<iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_06_07_Values-and-types.html"/>
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_06_07_Values-and-types.html"/>
 </media>
 </note>
 <note class="practice-program" id="note-00008">
@@ -192,7 +192,7 @@
 <item>Prints the content of variable feet in the output.</item>
 </list></para>
 <media alt="meters_to_feet_program">
-<iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_06_08_Meters-to-feet.html"/>
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_06_08_Meters-to-feet.html"/>
 </media>
 </note>
 </section>
