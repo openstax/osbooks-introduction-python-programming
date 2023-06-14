@@ -27,17 +27,17 @@ Ex: <code class="python inline-code"># Get the user's preferences</code> is more
 <example id="exam-00001">
 <title>Program with three comments</title>
 <para id="para-00004"><code class="python">
-# Display the menu options
-print("Lunch Menu")
-print("----------")
-print("Burrito")
-print("Enchilada")
-print("Taco")
-print("Salad")
-print() # End of menu
-# Get the user's preferences
-item1 = input("Item #1: ")
-item2 = input("Item #2: ")
+# Display the menu options<newline/>
+print("Lunch Menu")<newline/>
+print("----------")<newline/>
+print("Burrito")<newline/>
+print("Enchilada")<newline/>
+print("Taco")<newline/>
+print("Salad")<newline/>
+print() # End of menu<newline/>
+# Get the user's preferences<newline/>
+item1 = input("Item #1: ")<newline/>
+item2 = input("Item #2: ")<newline/>
 </code></para>
 </example>
 <note class="learning-questions" id="note-00001">
