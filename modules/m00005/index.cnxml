@@ -8,6 +8,7 @@
   <content>
 <section id="sect-00001">
 <title>Learning objectives</title>
+<para id="para-00021">By the end of this section you should be able to</para>
 <list id="list-00001">
 <item>Concatenate string literals and variables using the + operator.</item>
 <item>Identify escape sequences for representing special characters.</item>
