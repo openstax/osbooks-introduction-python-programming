@@ -6,5 +6,169 @@
     <md:uuid>29cdb6e6-f3cf-4c63-a8a9-a2991e7eb2c4</md:uuid>
   </metadata>
   <content>
-  </content>
+<section id="sect-00001">
+<title>Learning objectives</title>
+<para id="para-00001">By the end of this section you should be able to</para>
+<list id="list-00001">
+<item>Identify the error type and line number in error messages.</item>
+<item>Correct syntax errors, name errors, and indentation errors.</item>
+</list>
+</section>
+<section id="sect-00002">
+<title>How to read errors</title>
+<para id="para-00002">A natural part of programming is making mistakes. Even experienced programmers make mistakes when writing code. Errors may result when mistakes are made when writing code. The computer requires very specific instructions telling the computer what to do. If the instructions are not clear then the computer does not know what to do and gives back an error.</para>
+<para id="para-00003">When an error occurs, Python displays a message with the following information:</para>
+<list list-type="enumerated" id="list-00002">
+<item>The line number of the error.</item>
+<item>The type of error (Ex: SyntaxError).</item>
+<item>Additional details about the error.</item>
+</list>
+<para id="para-00004">Ex: Typing <code class="python inline-code">print "Hello!"</code> without parentheses is a syntax error. In Python, parentheses are required to use <code class="python inline-code">print</code>. When attempting to run <code class="python inline-code">print "Hello!"</code>, Python displays the following error:</para>
+<preformat class="python inline-code">Traceback (most recent call last):
+File "/home/student/Desktop/example.py", line 1
+print "Hello"
+^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
+</preformat>
+<para id="para-00005">The caret character (<code>^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown, because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
+<para id="para-00006">Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
+<note class="guided-slides" id="note-00001">
+<title>Incorrect variable name</title>
+<media alt="incorrect_variable_name_slides">
+<iframe width="660" height="371.4" src="https://www.openstax.org/r/incorrect-variable-name"/>
+</media>
+</note>
+<note class="learning-questions" id="note-00002">
+<title>Parts of an error</title>
+<para id="para-00007">Given the following error message:</para>
+<preformat class="python inline-code">Traceback (most recent call last):
+File "/home/student/Desktop/example.py", line 2
+print "test"
+^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?</preformat>
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch01-m06-p01"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch01-m06-p02"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch01-m06-p03"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00003">
+<title>Common types of errors</title>
+<para id="para-00011">Different types of errors may occur when running Python programs. When an error occurs, knowing the type of error gives insight about how to correct the error. The following table shows examples of mistakes that anyone could make when programming.</para>
+<table summary=" " id="table-00001">
+<title>Simple mistakes</title>
+<tgroup cols="3">
+<thead>
+<row>
+<entry>Mistake</entry>
+<entry>Error message</entry>
+<entry>Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><code class="python inline-code">
+print("Have a nice day!"&lt;mark>&lt;strong> &lt;/strong>&lt;/mark>
+</code></entry>
+<entry>SyntaxError: unexpected EOF while parsing</entry>
+<entry>The closing parenthesis is missing. Python is surprised to reach the end of file (EOF) before this line is complete.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">
+word = input("Type a word: &lt;mark>&lt;strong>)&lt;/strong>&lt;/mark>
+</code></entry>
+<entry>SyntaxError: EOL while scanning string literal</entry>
+<entry>The quote marks are missing. As a result, the string does not terminate before the end of line (EOL).</entry>
+</row>
+<row>
+<entry><code class="python inline-code">
+print("You typed:", w&lt;mark>&lt;strong>i&lt;/strong>&lt;/mark>rd)
+</code></entry>
+<entry>NameError: name 'wird' is not defined</entry>
+<entry>The spelling of <code class="python inline-code">word</code> is incorrect. The programmer accidentally typed the wrong key.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">
+print&lt;mark>&lt;strong>s&lt;/strong>&lt;/mark>("You typed:", word)
+</code></entry>
+<entry>NameError: name 'prints' is not defined</entry>
+<entry>The spelling of <code class="python inline-code">print</code> is incorrect. The programmer accidentally typed an extra letter.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">
+&lt;mark>&lt;strong> &lt;/strong>&lt;/mark>print("Hello")
+</code></entry>
+<entry>IndentationError: unexpected indent</entry>
+<entry>The programmer accidentally typed a space at the start of the line.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">
+&lt;mark>&lt;strong>    &lt;/strong>&lt;/mark>print("Goodbye")
+</code></entry>
+<entry>IndentationError: unexpected indent</entry>
+<entry>The programmer accidentally pressed the &lt;kbd>Tab&lt;/kbd> key at the start of the line.</entry>
+</row>
+</tbody>
+</tgroup>
+<caption/>
+</table>
+<note class="learning-questions" id="note-00003">
+<title>Types of errors</title>
+<para id="para-00012">For each program below, what type of error will occur?</para>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch01-m06-p04"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00005">
+<problem id="prob-00005">
+<para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch01-m06-p05"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00006">
+<problem id="prob-00006">
+<para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch01-m06-p06"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00004">
+<title>Programming practice</title>
+<note class="practice-program" id="note-00004">
+<title>Three errors</title>
+<para id="para-00016">The following program has three errors.</para>
+<list id="list-00003">
+<item>Run the program to find the first error, and correct the corresponding line of code.</item>
+<item>Then run the program again to find and correct the second error.</item>
+<item>Keep running and correcting the program until no errors are found.</item>
+</list>
+<media alt="three_errors_program">
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_07_09_Three-errors.html"/>
+</media>
+</note>
+<note class="practice-program" id="note-00005">
+<title>Wrong symbols</title>
+<para id="para-00017">This code is based on an earlier example, but the code contains several mistakes.</para>
+<list id="list-00004">
+<item>One line is missing required punctuation, and another line uses incorrect symbols.</item>
+<item>Run the program to find the first error, and correct the corresponding line of code.</item>
+<item>Keep running and correcting the program until no errors are found.</item>
+</list>
+<media alt="wrong_symbols_program">
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_07_10_Wrong-symbols.html"/>
+</media>
+</note>
+</section>
+</content>
 </document>
