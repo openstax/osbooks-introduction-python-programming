@@ -6,5 +6,141 @@
     <md:uuid>2523338f-adff-4fe2-b8fa-59a2e8e76429</md:uuid>
   </metadata>
   <content>
-  </content>
+<section id="sect-00001">
+<title>Learning objectives</title>
+<para id="para-00001">By the end of this section you should be able to</para>
+<list id="list-00001">
+<item>Write concise, meaningful comments that explain intended functionality of the code.</item>
+<item>Write a docstring (more verbose comment) that describes the program functionality.</item>
+</list>
+</section>
+<section id="sect-00002">
+<title>The hash character</title>
+<para id="para-00002"><term id="term-00001">Comments</term> are short phrases that explain what the code is doing. Ex: Lines 1, 8, and 10 in the following program contain comments. Each comment begins with a hash character (<code class="python inline-code">#</code>). All text from the hash character to the end of the line is ignored when running the program. In contrast, hash characters inside of strings are treated as regular text. Ex: The string <code class="python inline-code">"Item #1: "</code> does not contain a comment.</para>
+<para id="para-00003">When writing comments:</para>
+<list id="list-00002">
+<item>The <code>#</code> character should be followed by a single space.
+Ex: <code class="python inline-code"># End of menu</code> is easier to read than <code class="python inline-code">#End of menu</code>.</item>
+<item>Comments should explain the purpose of the code, not just repeat the code itself.
+Ex: <code class="python inline-code"># Get the user's preferences</code> is more descriptive than <code class="python inline-code"># Input item1 and item2</code>.</item>
+</list>
+<example id="exam-00001">
+<title>Program with three comments</title>
+<para id="para-00004"><code class="python">
+# Display the menu options
+print("Lunch Menu")
+print("----------")
+print("Burrito")
+print("Enchilada")
+print("Taco")
+print("Salad")
+print() # End of menu
+# Get the user's preferences
+item1 = input("Item #1: ")
+item2 = input("Item #2: ")
+</code></para>
+</example>
+<note class="learning-questions" id="note-00001">
+<title>Simple comments</title>
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch01-m07-p01"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch01-m07-p02"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch01-m07-p03"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00003">
+<title>Code quality</title>
+<para id="para-00008">The example program above had two parts: (1) display the menu options, and (2) get the user's preferences. Together, the blank lines and comments show the overall structure of the program.</para>
+<para id="para-00009">Programmers spend more time reading code than writing code. Therefore, making code easier for others to read and understand is important. Two ways to improve code quality include:</para>
+<list id="list-00003">
+<item>Separate each part (lines that have a similar purpose) with a blank line.</item>
+<item>Write a comment before each part. Not every line needs a comment.</item>
+</list>
+<note class="guided-slides" id="note-00002">
+<title>Comments in a program</title>
+<media alt="comments_slides">
+<iframe width="660" height="371.4" src="https://www.openstax.org/r/comments"/>
+</media>
+</note>
+<note class="learning-questions" id="note-00003">
+<title>Code quality</title>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch01-m07-p04"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00005">
+<problem id="prob-00005">
+<para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch01-m07-p05"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00006">
+<problem id="prob-00006">
+<para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch01-m07-p06"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00004">
+<title>Documentation</title>
+<para id="para-00013">Python programs may optionally begin with a string known as a docstring. A <term id="term-00002">docstring</term> is documentation written for others who will use the program but not necessarily read the source code. Most of the official documentation at <link url="https://docs.python.org/">docs.python.org</link> is generated from docstrings.</para>
+<para id="para-00014">Documentation can be long, so docstrings are generally written as multi-line strings (<code class="python inline-code">"""</code>). Common elements of a docstring include a one-line summary, a blank line, and a longer description.</para>
+<note class="guided-slides" id="note-00004">
+<title>Vacations docstring</title>
+<media alt="docstring_slides">
+<iframe width="660" height="371.4" src="https://www.openstax.org/r/docstring"/>
+</media>
+</note>
+<note class="learning-questions" id="note-00005">
+<title>Documentation</title>
+<exercise id="exer-00007">
+<problem id="prob-00007">
+<para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch01-m07-p07"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00008">
+<problem id="prob-00008">
+<para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch01-m07-p08"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00009">
+<problem id="prob-00009">
+<para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch01-m07-p09"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00005">
+<title>Programming practice</title>
+<note class="practice-program" id="note-00006">
+<title>Whose birthday</title>
+<para id="para-00018">Add two comments to the following program: one for the input, and one for the output. Separate the input and output with a blank line. Then compare your comments with the sample solution, and ask yourself the following questions:</para>
+<list id="list-00004">
+<item>Are your comments longer or shorter? Why?</item>
+<item>Is the formatting of your comments correct?</item>
+</list>
+<media alt="whose_birthday_program">
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_08_11_Whose-birthday.html"/>
+</media>
+</note>
+<note class="practice-program" id="note-00007">
+<title>Gravity calculation</title>
+<para id="para-00019">Write a docstring for the following program. The first line of the docstring should explain, in one short sentence, what the program is. The second line of the docstring should be blank. The third and subsequent lines should include a longer explanation of what the program does. At the end of the docstring, add a line that says "Author: " followed by your name.</para>
+<media alt="gravity_calculation_program">
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_08_12_Gravity-calculation.html"/>
+</media>
+</note>
+</section>
+</content>
 </document>
