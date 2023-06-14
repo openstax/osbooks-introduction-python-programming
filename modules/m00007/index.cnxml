@@ -106,7 +106,7 @@ print&lt;mark>&lt;strong>s&lt;/strong>&lt;/mark>("You typed:", word)
 <entry>The spelling of <code class="python inline-code">print</code> is incorrect. The programmer accidentally typed an extra letter.</entry>
 </row>
 <row>
-<entry><code>
+<entry><code class="python inline-code">
 &lt;mark>&lt;strong> &lt;/strong>&lt;/mark>print("Hello")
 </code></entry>
 <entry>IndentationError: unexpected indent</entry>
