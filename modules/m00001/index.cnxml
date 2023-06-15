@@ -8,7 +8,7 @@
   <content class="introduction">
   <figure class="splash" id="fig-00001">
   <media alt="Photo of green grass field at sunrise">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+  <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
   </media>
   <caption><link url="https://unsplash.com/photos/4miBe6zg5r0 ">Photo</link> by <link url="https://unsplash.com/@aleskrivec">Ales Krivec</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
 </figure>

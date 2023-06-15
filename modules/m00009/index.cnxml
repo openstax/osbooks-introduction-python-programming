@@ -6,5 +6,233 @@
     <md:uuid>e3b02fed-2d4e-4826-9b09-4d7e03c4ec97</md:uuid>
   </metadata>
   <content>
-  </content>
+<section id="sect-00001">
+<title>Learning objectives</title>
+<para id="para-00001">By the end of this section you should be able to</para>
+<list id="list-00001">
+<item>Name two historical facts about how Python was first created.</item>
+<item>Describe two ways Python is considered a popular language.</item>
+</list>
+</section>
+<section id="sect-00002">
+<title>Historical background</title>
+<para id="para-00002">Python has an interesting history. In 1982, <link url="https://gvanrossum.github.io/">Guido van Rossum</link>, the creator of Python, started working at <link url="https://www.cwi.nl/">CWI</link>, a Dutch national research institute. He joined a team that was designing a new programming language, named ABC, for teaching and prototyping. ABC's simplicity was ideal for beginners, but the language lacked features required to write advanced programs.</para>
+<para id="para-00003">Several years later, van Rossum joined a different team at CWI working on an operating system. The team needed an easier way to write programs for monitoring computers and analyzing data. Languages common in the 1980's were (and still are) difficult to use for these kinds of programs. van Rossum envisioned a new language that would have a simple syntax, like ABC, but also provide advanced features that professionals would need.</para>
+<para id="para-00004">At first, van Rossum started working on this new language as a hobby during his free time. He named the language Python, because he was a fan of the British comedy group <link url="https://www.montypython.com/">Monty Python</link>. Over the next year, he and his colleagues successfully used Python many times for real work. van Rossum eventually decided to share Python with the broader programming community online. He freely shared Python's entire source code, so that anyone could write and run Python programs.</para>
+<para id="para-00005">Python's first release, known as Version 0.9.0, appeared in 1991, about six years after C++ and four years before Java. van Rossum's decisions to make the language simple yet advanced, suitable for everyday tasks, and freely available online contributed to Python's long-term success.</para>
+<note class="guided-slides" id="note-00001">
+<title>Key decisions</title>
+<media alt="comments_slides">
+<iframe width="660" height="371.4" src="https://www.openstax.org/r/"/>
+</media>
+</note>
+<note class="learning-questions" id="note-00002">
+<title>Python history</title>
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch01-m08-p01"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch01-m08-p02"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch01-m08-p03"/></para>
+</problem>
+</exercise>
+</note>
+<note id="note-00003">
+<title>Exploring further</title>
+<para id="para-00009">For more details about Python's history, see <link url="https://exyte.com/blog/a-brief-history-of-python">A brief history of Python</link> by Vasilisa Sheromova and <link url="https://python-course.eu/python-tutorial/history-and-philosophy-of-python.php">History and Philosophy of Python</link> by Bernd Klein.</para>
+</note>
+</section>
+<section id="sect-00003">
+<title>Popularity of Python</title>
+<para id="para-00010">Over the years, Python has become a nonprofit organization with a thriving community. Millions of programmers around the world use Python for all kinds of interesting projects. Hundreds of thousands of Python libraries have been released as open source software. The Python community is very active and supportive online, answering questions and sharing code.</para>
+<para id="para-00011">One way to see Python's popularity is the <link url="https://www.tiobe.com/tiobe-index/">TIOBE index</link>. TIOBE is a Dutch company that provides products and services for measuring software code quality. Since 2001, TIOBE has tracked the popularity of programming languages and posted the results online. Figure <link target-id="fig-00001"/> shows the TIOBE index over time for five of the most popular languages.</para>
+<para id="para-00012">The TIOBE index is based on the number of search engine results for each language. The percentage refers to how many results belong to that language. Python has been among the top 10 languages every year since 2004. In October 2021, Python became the #1 language on the TIOBE index. No other language but C and Java had been #1 for the previous 20 years.</para>
+<para id="para-00013">Another way to see Python's popularity is to analyze how frequently Python is discussed online. <link url="https://stackoverflow.com/">Stack Overflow</link> is a question and answer website for programmers. Figure <link target-id="fig-00002"/> shows the number of questions asked each month that were tagged with Python, JavaScript, and so forth. In recent years, Python has become the most asked about language in programming forums.</para>
+<figure id="fig-00001">
+<media alt="Scatterplot with five lines representing the popularity of Python, JavaScript, Java, C++, and C. The x-axis spans the years 2015 to 2022. The y-axis ranges from 0% to 20% and represents the percentage of search engine results. The line for JavaScript is mostly flat and hovers around 2% to 4%. The line for C++ is also relatively flat and ranges from 4% to 8%. The line for C starts around 18%, drops to 8% in mid 2017, rises back to 17% in 2021, but then falls to 12% by 2022. The line for Java starts at 15%, climbs to 22% in 2016, falls to 12% in 2018, and remains on top until mid 2020. The line for Python hovers around 2% from 2015 to 2018, but then steadily increases to 16% by 2022.">
+<image mime-type="image/jpg" src="../../media/FPO1.jpg"/>
+</media>
+<caption><emphasis effect="bold">TIOBE programming community index</emphasis>. Source: <link url="https://www.tiobe.com/tiobe-index/">www.tiobe.com</link></caption>
+</figure>
+<figure id="fig-00002">
+<media alt="Scatterplot with five lines representing the popularity of Python, JavaScript, Java, C++, and C. The x-axis spans the years 2015 to 2022. The y-axis ranges from 0% to 20% and represents the percentage of questions asked. C and C++ are on bottom, hovering around 2% and 4% respectively. Java starts around 10% but steadily decreases to about 5% in 2022. JavaScript hovers around 10% to 12% and is the top language until Python crosses in 2018. Python starts at 6% and climbs steadily and ends 16%.">
+<image mime-type="image/jpg" src="../../media/FPO1.jpg"/>
+</media>
+<caption><emphasis effect="bold">Stack Overflow questions per month</emphasis>. Source: <link url="https://data.stackexchange.com/">data.stackexchange.com</link></caption>
+</figure>
+<note class="learning-questions" id="note-00004">
+<title>Python popularity</title>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch01-m08-p04"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00005">
+<problem id="prob-00005">
+<para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch01-m08-p05"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00006">
+<problem id="prob-00006">
+<para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch01-m08-p06"/></para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00004">
+<title>Chapter summary</title>
+<para id="para-00017">This chapter introduced the basics of programming in Python, including:</para>
+<list id="list-00002">
+<item><code class="python inline-code">print()</code> and <code class="python inline-code">input()</code></item>
+<item>Variables and assignment</item>
+<item>Strings, integers, and floats</item>
+<item>Arithmetic, concatenation</item>
+<item>Common error messages</item>
+<item>Comments and docstrings</item>
+</list>
+<para id="para-00018">At this point, you should be able to write programs that ask for input, perform simple calculations, and output the results. The programming practice below ties together most topics presented in the chapter.</para>
+<table summary=" " id="table-00001">
+<title>Chapter 1 reference</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Function</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>print(values)</entry>
+<entry>Outputs one or more values, each separated by a space, to the user.</entry>
+</row>
+<row>
+<entry>input(prompt)</entry>
+<entry>If present, <code class="python inline-code">prompt</code> is output to the user. The function then reads a line of input from the user.</entry>
+</row>
+<row>
+<entry>len(string)</entry>
+<entry>Returns the length (the number of characters) of a string.</entry>
+</row>
+<row>
+<entry>type(value)</entry>
+<entry>Returns the type (or class) of a value. Ex: <code class="python inline-code">type(123)</code> is <code class="python inline-code">&lt;class 'int'></code>.</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Operator</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><code class="python inline-code">=</code><newline/>
+(assignment)</entry>
+<entry>Assigns (or updates) the value of a variable. In Python, variables begin to exist when assigned for the first time.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">+</code><newline/>
+(concatenation)</entry>
+<entry>Appends the contents of two strings, resulting in a new string.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">+</code><newline/>
+(addition)</entry>
+<entry>Adds the values of two numbers.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">-</code><newline/>
+(subtraction)</entry>
+<entry>Subtracts the value of one number from another.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">*</code><newline/>
+(multiplication)</entry>
+<entry>Multiplies the values of two numbers.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">/</code><newline/>
+(division)</entry>
+<entry>Divides the value of one number from another.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">**</code><newline/>
+(exponentiation)</entry>
+<entry>Raises a number to a power. Ex: <code class="python inline-code">3**2</code> is three squared.</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Syntax</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><code class="python inline-code">#</code><newline/>
+(comment)</entry>
+<entry>All text is ignored from the # symbol to the end of the line.</entry>
+</row>
+<row>
+<entry><code class="python inline-code">'</code> or <code class="python inline-code">"</code><newline/>
+(string)</entry>
+<entry>Strings may be written using either kind of quote. Ex: <code class="python inline-code">'A'</code> and <code class="python inline-code">"A"</code> represent the same string. By convention, this book uses double quotes (<code class="python inline-code">"</code>) for most strings.</entry>
+</row>
+</tbody>
+</tgroup>
+<caption/>
+</table>
+</section>
+<section id="sect-00005">
+<title>Programming practice</title>
+<note class="practice-program" id="note-00005">
+<title>Fun facts</title>
+<para id="para-00019">Write a program that assigns a variable named &lt;tt>number&lt;/tt> to any integer of your choice. Ex: <code class="python inline-code">number = 74</code>. Then use this variable to calculate and output the following results:</para>
+<preformat class="output">
+74 squared is 5476
+74 cubed is 405224
+One tenth of 74 is 7.4
+74 plus 123 is 197
+74 minus 456 is -382
+</preformat>
+<para id="para-00020">Run the program multiple times, using a different integer each time. Your output should be mathematically correct for any integer that you choose.</para>
+<para id="para-00021">The point of this exercise is to perform basic arithmetic within a print statement. Do not use any other variables besides <code class="python inline-code">number</code>. Your program should have only one assignment statement (at the beginning).</para>
+<media alt="fun_facts_program">
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_10_13_Fun-facts.html"/>
+</media>
+</note>
+<note class="practice-program" id="note-00006">
+<title>Mad lib</title>
+<para id="para-00022">A mad lib is a word game in which one person asks others for words to substitute into a pre-written story. The story is then read aloud with the goal of making people laugh.</para>
+<para id="para-00023">This exercise is based the <link url="https://www.madlibs.com/wp-content/uploads/2016/04/VacationFun_ML_2009_pg15.pdf">Vacations Mad Lib</link> available on the <link url="https://www.madlibs.com/printables/">Printables</link> section of MadLibs.com. Write a program that asks the user to input two adjectives and two nouns (user input in bold):</para>
+<preformat class="output">
+Adjective: <emphasis effect="bold">tranquil</emphasis>
+Adjective: <emphasis effect="bold">scandalous</emphasis>
+Noun: <emphasis effect="bold">pancake</emphasis>
+Noun: <emphasis effect="bold">field</emphasis>
+</preformat>
+<para id="para-00024">Use <code class="python inline-code">input()</code> to display each prompt exactly as shown. The user's input should be on the same line as the prompt. Each colon must be followed by exactly one space. After reading the input, the program should output the following three lines:</para>
+<preformat class="output">
+A vacation is when you take a trip to some <emphasis effect="bold">tranquil</emphasis> place with your <emphasis effect="bold">scandalous</emphasis> family.
+Usually you go to some place that is near a/an <emphasis effect="bold">pancake</emphasis> or up on a/an <emphasis effect="bold">field</emphasis>.
+</preformat>
+<para id="para-00025">Notice that the first line should be completely blank.  Replace the bold words (from the above example) with the actual words input by the user.</para>
+<para id="para-00026">Your final program should have four input statements, three print statements, and at least two comments. For completeness, write an appropriate docstring at the top of the program.</para>
+<media alt="mad_lib_program">
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_10_14_Mad-lib.html"/>
+</media>
+</note>
+</section>
+</content>
 </document>
