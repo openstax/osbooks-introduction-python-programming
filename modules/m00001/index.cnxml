@@ -7,10 +7,10 @@
   </metadata>
   <content class="introduction">
   <figure class="splash" id="fig-00001">
-  <media alt="Photo of green grass field at sunrise">
-  <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+  <media alt="Alt text">
+  <image mime-type="image/jpg" src="../../media/CPL_01_00_000.jpg"/>
   </media>
-  <caption><link url="https://unsplash.com/photos/4miBe6zg5r0 ">Photo</link> by <link url="https://unsplash.com/@aleskrivec">Ales Krivec</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+  <caption>credit: Larissa Chu, CC BY 4.0</caption>
 </figure>
 <para id="para-00001">Computers and programs are everywhere in today's world. Programs affect many aspects of daily life and society as a whole. People depend on programs for communication, shopping, entertainment, health care, and countless other needs. Learning how to program computers opens the door to many careers and opportunities for building a better world.</para>
 <para id="para-00002">Programs consist of statements to be run one after the other. A <term id="term-00001">statement</term> describes some action to be carried out.</para>
