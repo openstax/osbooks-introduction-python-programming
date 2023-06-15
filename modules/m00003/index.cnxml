@@ -16,11 +16,12 @@
 </section>
 <section id="sect-00002">
 <title>Basic output</title>
-<para id="para-00001">The purpose for producing output is to observe what occurs when a program runs. In Python, output is produced with <code class="python inline-code">print(data)</code>. Ex. <code class="python inline-code">print("Today is Monday")</code> will print "Today is Monday" to the screen.</para><para id="para-00002">Two or more data items separated by commas produce a single line of output. Ex. <code class="python inline-code">print("The time is", "8 AM")</code> will print "The time is 8 AM" to the screen on a single line.</para>
-<para id="para-00003">By default, <code class="python inline-code">print(data)</code> introduces a new line after the output. <code class="python inline-code">end=</code> is used to avoid a new line after the output. Ex. "The weather for today is sunny!" is printed to the screen on a single line by the following:
-<preformat class="python inline-code">print("The weather for today is", end=" ")
+<para id="para-00001"><span class="red-code">The purpose for producing output is to observe what occurs when a program runs</span>. In Python, output is produced with <code class="python inline-code">print(data)</code>. Ex. <code class="python inline-code">print("Today is Monday")</code> <span class="magenta-code">will print "Today is Monday" to the screen</span>.</para>
+<para id="para-00002"><span class="magenta-code">T</span>wo or more <span class="red-code">data items separated by commas</span> produce <span class="red-code">a single line of</span> output. <span class="red-code">Ex.</span> <code class="python inline-code">print("The time is", "8 AM")</code> <span class="red-code">will print "The time is 8 AM" to the screen on a single line.</span></para>
+<para id="para-00003"><span class="red-code">By default</span>, <code class="python inline-code">print(data)</code> <span class="magenta-code">introduces a</span> <span class="red-code">new line after</span> <span class="magenta-code">the output</span>. <code class="python inline-code">end=</code> <span class="red-code">is used to</span> <span class="magenat-code">avoid a new line</span> <span class="red-code">after</span> the output. <span class="magenta-code">Ex.</span> <span class="red-code">"The weather for today is sunny!" is printed to the screen</span> <span class="magenta-code">on a single line</span> <span class="red-code">by the following:</span>
+<code class="python inline-code">print("The weather for today is", end=" ")<newline/>
 print("sunny!")
-</preformat></para>
+</code></para>
 <note class="guided-slides" id="note-00001">
 <title>Displaying output to the user</title>
 <media alt="displaying_output_slides">
@@ -48,7 +49,7 @@ print("sunny!")
 </section>
 <section id="sect-00003">
 <title>Basic input</title>
-<para id="para-00007">When a computer program runs, it often requests input data from a user. In Python, input data is obtained with named_item = input(), where named_item stores the input entered by a user. Ex. name = input() stores the input entered by a user into name.</para>
+<para id="para-00007"><span class="red-code">When a computer program runs, it often requests input data from</span> a <span class="red-code">user</span>. In Python, input data is obtained with named_item = input(), where named_item <span class="magenta-code">stores the input entered by a user.</span> Ex. name = input() <span class="magenta-code">stores the input entered by a user into name</span>.</para>
 <note class="guided-slides" id="note-00003">
 <title>Obtaining input from the user</title>
 <media alt="obtaining_input_slides">
@@ -98,8 +99,8 @@ print("sunny!")
 <item>assigns their response to a variable, name</item>
 <item>asks the user what they like</item>
 <item>assigns their response to a variable, like</item>
-<item>prints a blank line of output</item>
-<item>prints the variable name, "likes", followed by the variable like as a single line of output</item>
+<item><span class="magenta-code">prints</span> a blank line of output</item>
+<item><span class="magenta-code">prints the variable</span> name, "likes", <span class="magenta-code">followed by the variable</span> like as a single line of output</item>
 </list></para>
 <media alt="name_likes_program">
 <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_03_Name-likes.html"/>
