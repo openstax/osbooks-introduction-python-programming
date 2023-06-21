@@ -193,9 +193,13 @@ window.addEventListener('load', async() => {
 
     // The parent.document may not be available due to CORS restrictions
     let parentDoc = null;
+    let windowFrameElement = null;
     try {
         parentDoc = parent.document;
-    } catch (err) { }
+        windowFrameElement = window.frameElement;
+    } catch (err) {
+        console.log('Some features are disabled because of CORS');
+    }
 
     /**
         Toggle fullscreen mode.
@@ -206,7 +210,7 @@ window.addEventListener('load', async() => {
         if (parentDoc?.fullscreenElement) {
             parentDoc?.exitFullscreen();
         } else {
-            window.frameElement.requestFullscreen();
+            windowFrameElement?.requestFullscreen();
         }
     }
 
@@ -221,8 +225,8 @@ window.addEventListener('load', async() => {
         input.offsetHeight,
         output.offsetHeight,
         document.getElementById('solution-editors').offsetHeight,
-        window.frameElement.clientHeight,
-        window.frameElement.clientWidth,
+        windowFrameElement?.clientHeight,
+        windowFrameElement?.clientWidth,
     ].map(height => `${height}px`);
 
     /**
@@ -243,8 +247,8 @@ window.addEventListener('load', async() => {
             if (heights[3]) {
                 document.getElementById('solution-editors').style.height = heights[3];
             }
-            window.frameElement.style.height = heights[4];
-            window.frameElement.style.width = heights[5];
+            windowFrameElement?.style.height = heights[4];
+            windowFrameElement?.style.width = heights[5];
         }
     }
 
