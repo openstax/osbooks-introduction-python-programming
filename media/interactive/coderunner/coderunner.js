@@ -191,22 +191,28 @@ window.addEventListener('load', async() => {
             });
     }
 
+    // The parent.document may not be available due to CORS restrictions
+    let parentDoc = null;
+    try {
+        parentDoc = parent.document;
+    } catch (err) { }
+
     /**
         Toggle fullscreen mode.
         @function fullscreen
         @return {void}
     */
     window.fullscreen = function() {
-        if (parent.document.fullscreenElement) {
-            parent.document.exitFullscreen();
+        if (parentDoc?.fullscreenElement) {
+            parentDoc?.exitFullscreen();
         } else {
             window.frameElement.requestFullscreen();
         }
     }
 
     // Add padding when in fullscreen mode.
-    parent.document.addEventListener("fullscreenchange", function() {
-        document.body.style.padding = parent.document.fullscreenElement ? '1em' : '';
+    parentDoc?.addEventListener("fullscreenchange", function() {
+        document.body.style.padding = parentDoc.fullscreenElement ? '1em' : '';
     });
 
     // Remember original height of resizable elements.
