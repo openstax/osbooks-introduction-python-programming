@@ -247,8 +247,10 @@ window.addEventListener('load', async() => {
             if (heights[3]) {
                 document.getElementById('solution-editors').style.height = heights[3];
             }
-            windowFrameElement?.style.height = heights[4];
-            windowFrameElement?.style.width = heights[5];
+            if (windowFrameElement) {
+                windowFrameElement.style.height = heights[4];
+                windowFrameElement.style.width = heights[5];
+            }
         }
     }
 
