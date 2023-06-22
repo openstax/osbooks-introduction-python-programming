@@ -191,22 +191,32 @@ window.addEventListener('load', async() => {
             });
     }
 
+    // The parent.document may not be available due to CORS restrictions
+    let parentDoc = null;
+    let windowFrameElement = null;
+    try {
+        parentDoc = parent.document;
+        windowFrameElement = window.frameElement;
+    } catch (err) {
+        console.log('Some features are disabled because of CORS');
+    }
+
     /**
         Toggle fullscreen mode.
         @function fullscreen
         @return {void}
     */
     window.fullscreen = function() {
-        if (parent.document.fullscreenElement) {
-            parent.document.exitFullscreen();
+        if (parentDoc?.fullscreenElement) {
+            parentDoc?.exitFullscreen();
         } else {
-            window.frameElement.requestFullscreen();
+            windowFrameElement?.requestFullscreen();
         }
     }
 
     // Add padding when in fullscreen mode.
-    parent.document.addEventListener("fullscreenchange", function() {
-        document.body.style.padding = parent.document.fullscreenElement ? '1em' : '';
+    parentDoc?.addEventListener("fullscreenchange", function() {
+        document.body.style.padding = parentDoc.fullscreenElement ? '1em' : '';
     });
 
     // Remember original height of resizable elements.
@@ -215,8 +225,8 @@ window.addEventListener('load', async() => {
         input.offsetHeight,
         output.offsetHeight,
         document.getElementById('solution-editors').offsetHeight,
-        window.frameElement.clientHeight,
-        window.frameElement.clientWidth,
+        windowFrameElement?.clientHeight,
+        windowFrameElement?.clientWidth,
     ].map(height => `${height}px`);
 
     /**
@@ -237,8 +247,10 @@ window.addEventListener('load', async() => {
             if (heights[3]) {
                 document.getElementById('solution-editors').style.height = heights[3];
             }
-            window.frameElement.style.height = heights[4];
-            window.frameElement.style.width = heights[5];
+            if (windowFrameElement) {
+                windowFrameElement.style.height = heights[4];
+                windowFrameElement.style.width = heights[5];
+            }
         }
     }
 
