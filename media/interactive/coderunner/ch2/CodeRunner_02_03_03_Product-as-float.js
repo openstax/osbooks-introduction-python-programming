@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "product_float.py", "contents": "x = input()\ny = input()", "solution": "x = input()\ny = input()\n\nproduct = int(x) * int(y)\nprint(float(product))\n"}], "input": "6\n4", "showSolution": true};

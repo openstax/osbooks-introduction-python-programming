@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "inaccurate_tips.py", "contents": "bill = 15\ntip_ratio = 0.1 \ntip_amount = tip_ratio * bill\n\nprint(\"Tip =\", tip_amount)", "solution": null}], "input": null, "showSolution": true};

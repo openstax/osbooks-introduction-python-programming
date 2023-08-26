@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "print_ntimes.py", "contents": null, "solution": "str1 = input()\nstr2 = input()\ncount = int(input())\n\nresult = str1 + \" \" + str2 + \"\\n\"\nprint(result * count)\n"}], "input": "Quoth the Raven:\n\"Nevermore\"\n3", "showSolution": true};
