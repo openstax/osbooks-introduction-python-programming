@@ -1,0 +1,128 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>The Python shell</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>The Python shell</md:title>
+    <md:content-id>m00011</md:content-id>
+    <md:uuid>98ffa5ed-ae0d-45d8-8eb7-c08b7753122c</md:uuid>
+  </metadata>
+  <content>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use a Python shell to run statements and expressions interactively.</item>
+    <item>Explain the function of the up and down arrow keyboard shortcuts.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>The interpreter</title>
+    <para id="para-00002">Python is a high-level language, meaning that the source code is intended for humans to understand. Computers, on the other hand, understand only low-level machine code made up of 1s and 0s. Programs written in high-level languages must be translated into machine code to run. This translation process can happen all at once or a little at a time, depending on the language.</para>
+    <para id="para-00003">Python is an interpreted language: the source code is translated one line at a time, while the program is running. The Python <term id="term-00001">interpreter</term> translates source code into machine code and runs the resulting program. If and when an error occurs, the interpreter stops translating the source code and displays an error message.</para>
+    <para id="para-00004">Most development environments include a Python shell for experimenting with code interactively. A <term id="term-00002">shell</term>, also called a console or terminal, is a program that allows direct interaction with an interpreter. The interpreter usually runs an entire program all at once. But the interpreter can run one line of code at a time within a Python shell.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Running a Python shell</title>
+    <media alt="python_shell_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/python-shell"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Using a Python shell</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch02-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch02-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch02-m01-p02"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>The arrow keys</title>
+    <para id="para-00008">A Python shell is convenient for exploring and troubleshooting code. The user can try something, look at the results, and then try something else. When an error occurs, an error message is displayed, but the program keeps running. That way, the user can edit the previous line and correct the error interactively.</para>
+    <para id="para-00009">The acronym REPL (pronounced "rep ul") is often used when referring to a shell. <term id="term-00003">REPL</term> stands for "read-eval-print loop," which describes the repetitive nature of a shell:</para>
+    <list list-type="enumerated" id="list-00002">
+    <item><emphasis effect="bold">R</emphasis>ead/input some code</item>
+    <item><emphasis effect="bold">E</emphasis>valuate/run the code</item>
+    <item><emphasis effect="bold">P</emphasis>rint any results</item>
+    <item><emphasis effect="bold">L</emphasis>oop back to step 1</item>
+    </list>
+    <para id="para-00010">Most shells maintain a history of every line of code the user types. Pressing the up or down arrow key on the keyboard displays the history. The <emphasis effect="bold">up arrow</emphasis> displays the previous line; the <emphasis effect="bold">down arrow</emphasis> displays the next line. That way, the user can repeat a line without having to type the line again.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Correcting a typo</title>
+    <media alt="correcting_typo_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/correcting-typo"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Using the arrow keys</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch02-m01-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch02-m01-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Exploring the shell</title>
+    <para id="para-00013">Running code interactively is a great way to learn how Python works. Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Then enter any Python code, one line at a time, to see the result. Here are a few expressions to try:</para>
+    <list id="list-00003">
+    <item>x = 5</item>
+    <item>3*x - 5</item>
+    <item>3 * (x-5)</item>
+    <item>x</item>
+    <item>type(1)</item>
+    <item>type('1')</item>
+    <item>str(1)</item>
+    <item>int('1')</item>
+    <item>abs(-5)</item>
+    <item>abs(5)</item>
+    <item>len("Yo")</item>
+    <item>len("HoHo")</item>
+    <item>round(9.49)</item>
+    <item>round(9.50)</item>
+    </list>
+    <para id="para-00014">Note: These functions (type, str, int, abs, len, and round) will be explored in more detail later in the chapter. You can read more about the <link url="https://docs.python.org/3/library/functions.html">built-in functions</link> in the Python documentation.</para>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Correcting mistakes</title>
+    <para id="para-00015">Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Run the following two statements in the shell:</para>
+    <list id="list-00004">
+    <item>x = 123</item>
+    <item>y = 456</item>
+    </list>
+    <para id="para-00016">Making mistakes is common while typing in a shell. The following lines include typos and other errors. For each line: (1) run the line in a shell to see the result; (2) press the up arrow to repeat the line; and (3) edit the line to get the correct result.</para>
+    <list id="list-00005">
+    <item>print("Easy as", X)</item>
+    <item>print("y divided by 2 is", y / 0)</item>
+    <item>name = intput("What is your name? ")</item>
+    <item>print(name, "is", int(name), "letters long.")</item>
+    <item>print("That's all folks!)</item>
+    </list>
+    <para id="para-00017">The expected output, after correcting typos, should look like:</para>
+    <list id="list-00006">
+    <item>Easy as 123</item>
+    <item>y divided by 2 is 228.0</item>
+    <item>(no error/output)</item>
+    <item>Stacie is 6 letters long.</item>
+    <item>That's all folks!</item>
+    </list>
+    </note>
+    </section>
+    </content>
+   
+</document>
