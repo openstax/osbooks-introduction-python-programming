@@ -26,6 +26,7 @@
       <col:content>
         <col:module document="m00010"/>
         <col:module document="m00011"/>
+        <col:module document="m00012"/>
       </col:content>
     </col:subcollection>
   </col:content>
