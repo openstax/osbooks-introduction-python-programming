@@ -21,5 +21,11 @@
         <col:module document="m00009"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 2: Expressions</md:title>
+      <col:content>
+        <col:module document="m00010"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>
