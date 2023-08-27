@@ -6,5 +6,141 @@
     <md:uuid>db6d20a8-c640-4ea7-81ab-bea13792a4f0</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Explain numerical inaccuracies related to floating-point representation.</item>
+    <item>Use the <code class="python inline-code">round()</code> function to mitigate floating-point errors in output.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Floating-point errors</title>
+    <para id="para-00002">Floating-point values are stored as binary values by Python. The conversion of a floating point number to the underlying binary results in specific types of floating-point errors.</para>
+    <para id="para-00003">A <term id="term-00001">round-off error</term> occurs when floating-point values are stored erroneously as an approximation. The difference between an approximation of a value used in computation and the correct (true) value is called a round-off error. </para>
+    <para id="para-00004">Ex: Storing the float \((0.1)_{10}\) results in binary values that actually produce \((0.1000000000000000055511151231257827021181583404541015625)_{10}\) when converted back, which is not exactly equal to \((0.1)_{10}\).</para>
+    <table summary=" " id="table-00001">
+    <title>Round-off error.</title>
+    <tgroup cols="1">
+    <tbody>
+    <row>
+    <entry><code class="python" lang="python">
+    # Print floats with 30 decimal places
+    print(f'{0.1:.30f}') # prints 0.1
+    print(f'{0.2:.30f}') # prints 0.2
+    print(f'{0.4:.30f}') # prints 0.4
+    </code></entry>
+    <entry>
+    0.100000000000000005551115123126
+    0.200000000000000011102230246252
+    0.400000000000000022204460492503
+    </entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00005">An <term id="term-00002">overflow error</term> occurs when a value is too large to be stored. The maximum and minimum floating-point values that can be represented are <!--<zyLatexEquation inline="true">-->1.8 \times 10^{308}<!--</zyLatexEquation>--> and <!--<zyLatexEquation inline="true">-->-1.8 \times 10^{308}<!--</zyLatexEquation>-->, respectively. Attempting to store a floating-point value outside the range <!--<zyLatexEquation inline="true">-->(-1.8 \times 10^{308}, 1.8 \times 10^{308})<!--</zyLatexEquation>--> leads to an overflow error.</para>
+    <para id="para-00006">Below, <!---<zyLatexEquation inline="true">-->3.0^{256}<!--</zyLatexEquation>--> and <!--<zyLatexEquation inline="true">-->3.0^{512}<!--</zyLatexEquation>--> can be represented, but <!--<zyLatexEquation inline="true">-->3.0^{1024}<!--</zyLatexEquation>--> is too large and causes an overflow error.</para>
+    <table summary=" " id="table-00002">
+    <title>Overflow error.</title>
+    <tgroup cols="1">
+    <tbody>
+    <row>
+    <entry><code class="python" lang="python">
+    print('3.0 to the power of 256 =', 3.0**256)
+    print('3.0 to the power of 512 = ', 3.0**512)
+    print('3.0 to the power of 1024 = ', 3.0**1024)
+    </code></entry>
+    <entry>
+    3.0 to the power of 256 = 1.3900845237714473e+122
+    3.0 to the power of 512 = 1.9323349832288915e+244
+    3.0 to the power of 1024 =
+    Traceback (most recent call last):
+    File "&lt;stdin>", line 3, in &lt;module>
+    print('3.0 to the power of 1024 = ', 3.0**1024)
+    OverflowError: (34, 'Numerical result out of range')</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00001">
+    <title>Floating-point errors</title>
+    <para id="para-00007">For each situation, which error occurs?</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch02-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch02-m04-p02"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Floating point round() function</title>
+    <para id="para-00010">Python's <term id="term-00003">round()</term> function is used to round a floating-point number to a given number of decimal places. The function requires two arguments. The first argument is the number to be rounded. The second argument decides the number of decimal places to which the number is rounded. If the second argument is not provided, the number will be rounded to the closest whole number. The round() function can be used to mitigate floating-point errors.</para>
+    <para id="para-00011">Ex:</para>
+    <list id="list-00002">
+    <item><code class="python inline-code">round(2.451, 2) = 2.45</code></item>
+    <item><code class="python inline-code">round(2.451) = 2</code></item>
+    </list>
+    <note class="guided-slides" id="note-00002">
+    <title>Examples of round() function</title>
+    <media alt="round_function_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/round-function"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>Examples of round() function</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch02-m04-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch02-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch02-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch02-m04-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Inaccurate tips</title>
+    <para id="para-00016">The following code calculates the tip amount, given a bill amount and the tip ratio. Experiment with the following bill amount and tip ratios and see if any inaccuracies may result in calculating the tip amount.</para>
+    <list id="list-00003">
+    <item>bill amount: 22.70 and 33.33</item>
+    <item>tip ratio: 0.15, 0.18, and 0.20</item>
+    </list>
+    <media alt="inaccurate_tips_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_05_06_Inaccurate-tips.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Area of a triangle</title>
+    <para id="para-00017">Complete the following steps to calculate a triangle's area, and print the result of each step. The area of a triangle is \(\dfrac{bh}{2}\), where \(b\) is the base and \(h\) is the height.</para>
+    <list list-type="enumerated" id="list-00004">
+    <item>Calculate the area of a triangle with base = 7 and height = 3.5.</item>
+    <item>Round the triangle's area to one decimal place.</item>
+    <item>Round the triangle's area to the nearest integer value.</item>
+    </list>
+    <media alt="area_of_a_triangle_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_05_07_Area-of-a-triangle.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
