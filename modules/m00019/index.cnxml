@@ -1,10 +1,133 @@
 <document xmlns="http://cnx.rice.edu/cnxml">
   <title>Chapter summary</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-    <md:title>Python careers</md:title>
+    <md:title>Chapter summary</md:title>
     <md:content-id>m00019</md:content-id>
     <md:uuid>c42cb137-8ae1-4293-a1db-f161d8b7a64d</md:uuid>
   </metadata>
   <content>
-  </content>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Expressions and statements can be run interactively using a shell.</item>
+    <item>Input strings can be converted to other types. Ex: <code class="python inline-code">int(input())</code></item>
+    <item>Strings can be concatenated with other types. Ex: <code class="python inline-code">"$" + str(cost)</code></item>
+    <item>Floats are subject to round-off and overflow errors.</item>
+    <item>Integers can be divided exactly using <code class="python inline-code">//</code> and <code class="python inline-code">%</code>.</item>
+    <item>Modules like <code class="python inline-code">math</code> provide many useful functions.</item>
+    <item>Formatting long lines helps improve readability.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write programs that ask for input of mixed types, perform mathematical calculations, and output results with better formatting. The programming practice below ties together most topics presented in the chapter.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 2 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>abs(x)</entry>
+    <entry>Returns the absolute value of <code class="python inline-code">x</code>.</entry>
+    </row>
+    <row>
+    <entry>int(x)</entry>
+    <entry>Converts <code class="python inline-code">x</code> (a string or float) to an integer.</entry>
+    </row>
+    <row>
+    <entry>float(x)</entry>
+    <entry>Converts <code class="python inline-code">x</code> (a string or integer) to a float.</entry>
+    </row>
+    <row>
+    <entry>str(x)</entry>
+    <entry>Converts <code class="python inline-code">x</code> (a float or integer) to a string.</entry>
+    </row>
+    <row>
+    <entry>round(x, ndigits)</entry>
+    <entry>Rounds <code class="python inline-code">x</code> to <code class="python inline-code">ndigits</code> places after the decimal point. If <code class="python inline-code">ndigits</code> is omitted, returns the nearest integer to <code class="python inline-code">x</code>.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Operator</emphasis></entry>
+    <entry><emphasis effect="bold">Description</emphasis></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">s * n</code><newline/>
+    (repetition)</entry>
+    <entry>Creates a string with <code class="python inline-code">n</code> copies of <code class="python inline-code">s</code>.
+    Ex: <code class="python inline-code">"Ha" * 3</code> is <code class="python inline-code">"HaHaHa"</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x / y</code><newline/>
+    (real division)</entry>
+    <entry>Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the entire result as a float.
+    Ex: <code class="python inline-code">7 / 4</code> is <code class="python inline-code">1.75</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x // y</code><newline/>
+    (floor division)</entry>
+    <entry>Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the quotient as an integer.
+    Ex: <code class="python inline-code">7 // 4</code> is <code class="python inline-code">1</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x % y</code><newline/>
+    (modulo)</entry>
+    <entry>Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the remainder as an integer.
+    Ex: <code class="python inline-code">7 % 4</code> is <code class="python inline-code">3</code>.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <section id="sect-00001">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00001">
+    <title>Baking bread</title>
+    <para id="para-00003">The holidays are approaching, and you need to buy ingredients for baking many loaves of bread. According to a <link url="https://www.kingarthurflour.com/recipes/basic-sourdough-bread-recipe">recipe by King Arthur Flour</link>, you will need the following ingredients for each loaf:</para>
+    <list id="list-00002">
+    <item>1 1/2 teaspoons instant yeast</item>
+    <item>1 1/2 teaspoons salt</item>
+    <item>1 1/2 teaspoons sugar</item>
+    <item>2 1/2 cups all-purpose flour</item>
+    <item>2 cups sourdough starter</item>
+    <item>1/2 cup lukewarm water</item>
+    </list>
+    <para id="para-00004">Write a program that inputs the following variables: <code class="python inline-code">bread_weight</code> (float), <code class="python inline-code">serving_size</code> (float), and <code class="python inline-code">num_guests</code> (int). The output will look like the following:</para>
+    <preformat class="output">
+    For 25 people, you will need 3.90625 loaves of bread:
+    5.859375 teaspoons instant yeast
+    5.859375 teaspoons salt
+    5.859375 teaspoons sugar
+    9.765625 cups all-purpose flour
+    7.8125 cups sourdough starter
+    1.953125 cups lukewarm water
+    </preformat>
+    <para id="para-00005">In the above output, <code class="python inline-code">bread_weight</code> is 16.0 ounces, <code class="python inline-code">serving_size</code> is 2.5 ounces, and <code class="python inline-code">num_guests</code> is 25 people. Use these three variables to calculate the number of loaves needed.</para>
+    <para id="para-00006">Make sure your output matches the above example exactly. Notice that each line of the ingredients begins with two spaces.</para>
+    <media alt="baking_bread_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_10_14_Baking-bread.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00002">
+    <title>Tip calculator</title>
+    <para id="para-00007">Google has a variety of <link url="https://mashtips.com/google-search-tricks/">search tricks</link> that present users with instant results. If you search on Google for <link url="https://www.google.com/search?q=tip+calculator">tip calculator</link>, an interactive tool is included at the top of the results. The goal of this exercise is to implement a similar tip calculator.</para>
+    <para id="para-00008">Begin by prompting the user to input the following values (user input in bold):</para>
+    <preformat class="output">
+    Enter bill amount: &lt;b>43.21&lt;/b>
+    Percentage to tip: &lt;b>18&lt;/b>
+    Number of people: &lt;b>2&lt;/b>
+    </preformat>
+    <para id="para-00009">Then calculate the tip amount and total amount for the bill, based on the user input. Output the results using this format:</para>
+    <preformat class="output">
+    Tip amount: $7.78
+    Total amount: $50.99
+    Tip per person: $3.89
+    Total per person: $25.49
+    </preformat>
+    <para id="para-00010">Your program should output all dollar amounts rounded to two decimal places. The output should be exactly six lines, as shown above. Notice the blank line before each section of the output. Notice also the space before but not after the dollar sign.</para>
+    <media alt="tip_calculator_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_10_15_Tip-calculator.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
