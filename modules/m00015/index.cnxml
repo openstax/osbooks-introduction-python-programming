@@ -1,0 +1,132 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Dividing integers</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Dividing integers</md:title>
+    <md:content-id>m00015</md:content-id>
+    <md:uuid>552c7654-2bb3-498f-9635-9624c37d3b79</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Evaluate expressions that involve floor division and modulo.</item>
+    <item>Use the modulo operator to convert between units of measure.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Division and modulo</title>
+    <para id="para-00002">Python provides two ways to divide numbers:</para>
+    <list id="list-00002">
+    <item><term id="term-00001">True division</term> (<code class="python inline-code">/</code>) converts numbers to floats before dividing. Ex: <code class="python inline-code">7 / 4</code> becomes <code class="python inline-code">7.0 / 4.0</code>, resulting in <code class="python inline-code">1.75</code>.</item>
+    <item><term id="term-00002">Floor division</term> (<code class="python inline-code">//</code>) computes the quotient, or the number of times divided. Ex: <code class="python inline-code">7 // 4</code> is <code class="python inline-code">1</code>, because 4 goes into 7 one time, remainder 3. The <term id="term-00003">modulo operator</term> (<code class="python inline-code">%</code>) computes the remainder. Ex: <code class="python inline-code">7 % 4</code> is <code class="python inline-code">3</code>.</item>
+    </list>
+    <para id="para-00003">Note: The <code class="python inline-code">%</code> operator is traditionally pronounced "mod" (short for "modulo"). Ex: When reading <code class="python inline-code">7 % 4</code> out loud, a programmer would say "seven mod four."</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Quotient and remainder</title>
+    <media alt="quotient_remainder_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/quotient-remainder"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Division and modulo</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch02-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch02-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch02-m05-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch02-m05-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Unit conversions</title>
+    <para id="para-00008">Division is useful for converting from one unit of measure to another. To convert from centimeters to meters, a variable is divided by 100. Ex: 300 centimeters, divided by 100, is 3 meters.</para>
+    <para id="para-00009">Amounts often do not divide evenly as integers. 193 centimeters is 1.93 meters, or 1 meter and 93 centimeters. A program can use floor division and modulo to separate the units:</para>
+    <list id="list-00003">
+    <item>The quotient, 1 meter, is <code class="python inline-code">193 // 100</code>.</item>
+    <item>The remainder, 93 centimeters, is <code class="python inline-code">193 % 100</code>.</item>
+    </list>
+    <para id="para-00010">Programs often use floor division and modulo together. If one line of code floor divides by <code class="python inline-code">m</code>, the next line will likely modulo by <code class="python inline-code">m</code>. The unit <code class="python inline-code">m</code> by which an amount is divided is called the <term id="term-00004">modulus</term>. Ex: When converting centimeters to meters, the modulus is 100.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Money and time</title>
+    <media alt="money_time_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/money-time"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Unit conversions</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch02-m05-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch02-m05-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Arrival time</title>
+    <para id="para-00013">Having a mobile device can be a lifesaver on long road trips. Programs like Google Maps find the shortest route and estimate the time of arrival. The time of arrival is based on the current time plus how long the trip will take.</para>
+    <para id="para-00014">Write a program that (1) inputs the current time and estimated length of a trip, (2) calculates the time of arrival, and (3) outputs the results in hours and minutes. Your program should use the following prompts (user input in bold):</para>
+    <preformat class="output">
+    Current hour (0-23)? &lt;b>13&lt;/b>
+    Current minute (0-59)? &lt;b>25&lt;/b>
+    Trip time (in minutes)? &lt;b>340&lt;/b>
+    </preformat>
+    <para id="para-00015">In this example, the current time is 13:25 (1:25pm). The trip time is 340 minutes (5 hours and 40 minutes). 340 minutes after 13:25 is 19:05 (7:05pm). Your program should output the result in this format:</para>
+    <preformat class="output">
+    Arrival hour is 19
+    Arrival minute is 5
+    </preformat>
+    <para id="para-00016">The arrival hour must be between 0 and 23. Ex: Adding 120 minutes to 23:00 should be 1:00, not 25:00. The arrival minute must be between 0 and 59. Ex: Adding 20 minutes to 8:55 should be 9:15, not 8:75.</para>
+    <para id="para-00017">Hint: Multiply the current hour by 60 to convert from hours to minutes. Then calculate the arrival time, in total minutes, as an integer.</para>
+    <para id="para-00018">Your code must not use Python keywords from later chapters, such as <code class="python inline-code">if</code> or <code class="python inline-code">while</code>. The solution requires only addition, multiplication, division, and modulo.</para>
+    <media alt="arrival_time_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_06_09_Arrival-time.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Change machine</title>
+    <para id="para-00019">Self-checkout aisles are becoming increasingly popular at grocery stores. Customers scan their own items, and a computer determines the total purchase amount. Customers who pay in cash insert dollar bills, and a machine automatically dispenses change in coins.</para>
+    <para id="para-00020">That's where this program comes into the story. Your task is to calculate how many of each coin to dispense. Your program should use the following prompts (user input in bold):</para>
+    <preformat class="output">
+    Total amount? &lt;b>18.76&lt;/b>
+    Cash payment? &lt;b>20&lt;/b>
+    </preformat>
+    <para id="para-00021">You may assume that the cash paid will always be a whole number (representing dollar bills) that is greater than or equal to the total amount. The program should calculate and output the amount of change due and how many dollars, quarters, dimes, nickels, and pennies should be dispensed:</para>
+    <preformat class="output">
+    Change Due $1.24
+    Dollars: 1
+    Quarters: 0
+    Dimes: 2
+    Nickels: 0
+    Pennies: 4
+    </preformat>
+    <para id="para-00022">Hint: Calculate the total change, in cents, as an integer. Use the <code class="python inline-code">round()</code> function to avoid floating-point errors.</para>
+    <para id="para-00023">Your code must not use Python keywords from later chapters, such as <code class="python inline-code">if</code> or <code class="python inline-code">while</code>. The solution requires only subtraction, multiplication, division, and modulo.</para>
+    <media alt="change_machine_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_06_08_Change-machine.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>
