@@ -1,0 +1,214 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Formatting code</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Formatting code</md:title>
+    <md:content-id>m00017</md:content-id>
+    <md:uuid>fcea481d-ff2f-472b-afd5-564e25bcef4a</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify good spacing for expressions and statements.</item>
+    <item>Write multi-line statements using implicit line joining.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Recommended spacing</title>
+    <para id="para-00002">Most spaces in Python code are ignored when running programs. The following two programs are equivalent:</para>
+    <list id="list-00002">
+    <item>Good spacing:<newline/>
+    <code class="python" lang="python">
+    name = input("Enter someone's name: ")
+    place = input("Enter a famous place: ")
+    print(name, "should visit", place + "!")
+    </code></item>
+    <item>Poor spacing: <newline/>
+    <code class="python" lang="python">
+    name=input ("Enter someone's name: " )
+    place =input("Enter a famous place: ")
+    print( name,"should visit" , place+ "!")
+    </code></item>
+    </list>
+    <para id="para-00003">One might argue that missing or extra spaces do not matter. After all, the two programs above run exactly the same way. However, the "poor spacing" version is more difficult to read. Code like <code class="python inline-code">name=input</code> and <code class="python inline-code">place+</code> might lead to confusion.</para>
+    <para id="para-00004">Good programmers write code that is as easy to read as possible. That way, other programmers are more likely to understand the code. To encourage consistency, the Python community has a set of guidelines about where to put spaces and blank lines, what to name variables, how to break up long lines, and other important topics.</para>
+    <note id="note-00001">
+    <title>Python style guide</title>
+    <para id="para-00005"><link url="https://peps.python.org/pep-0008/">PEP 8</link> is the official style guide for Python. <term id="term-00001">PEP</term> stands for Python Enhancement Proposal. Members of the Python community write PEPs to document best practices and propose new features. The table below is based on guidelines from PEP 8 under the heading <link url="https://peps.python.org/pep-0008/#whitespace-in-expressions-and-statements">Whitespace in Expressions and Statements</link>.</para>
+    </note>
+    <table summary=" " id="table-00001">
+    <title>Guidelines for spaces</title>
+    <tgroup cols="3">
+    <thead>
+    <row>
+    <entry>Guideline</entry>
+    <entry>Example</entry>
+    <entry>Common Mistakes</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>Parentheses: no space before or after.</entry>
+    <entry><code>print("Go team!")</code></entry>
+    <entry><code>print<!--<mark>--> <!--</mark>-->("Go team!")</code><newline/>
+    <code>print(<!--<mark>--> <!--</mark>-->"Go team!"<!--<mark>--> <!--</mark>-->)</code></entry>
+    </row>
+    <row>
+    <entry>Commas: no space before, one space after.</entry>
+    <entry><code>print("Hello", name)</code></entry>
+    <entry><code>print("Hello"<!--<mark>--> <!--</mark>-->, name)</code><newline/>
+    <code>print("Hello"<!--<mark>-->,<!--</mark>-->name)</code></entry>
+    </row>
+    <row>
+    <entry>Assignment: one space before and after the <code>=</code>.</entry>
+    <entry><code>name = input("Your name? ")</code></entry>
+    <entry><code>name<!--<mark>-->=<!--</mark>-->input("Your name? ")</code><newline/>
+    <code>name<!--<mark>-->=<!--</mark>--> input("Your name? ")</code><newline/>
+    <code>name <!--<mark>-->=<!--</mark>-->input("Your name? ")</code></entry>
+    </row>
+    <row>
+    <entry>Concatenation: one space before and after the <code>+</code>.</entry>
+    <entry><code>print("Hi", name + "!")</code></entry>
+    <entry><code>print("Hi", name<!--<mark>-->+<!--</mark>-->"!")</code><newline/>
+    <code>print("Hi", name<!--<mark>-->+<!--</mark>--> "!")</code><newline/>
+    <code>print("Hi", name <!--<mark>-->+<!--</mark>-->"!")</code></entry>
+    </row>
+    <row>
+    <entry>Arithmetic: use space to show lower precedence.</entry>
+    <entry><code>x**2 + 5*x - 8</code></entry>
+    <entry><code>x<!--<mark>--> <!--</mark>-->**<!--<mark>--> <!--</mark>-->2 + 5<!--<mark>--> <!--</mark>-->*<!--<mark>--> <!--</mark>-->x - 8</code><newline/>
+    <code>x ** 2<!--<mark>-->+<!--</mark>-->5 * x<!--<mark>-->-<!--</mark>-->8</code><newline/>
+    <code>x**2<!--<mark>-->+<!--</mark>-->5*x<!--<mark>-->-<!--</mark>-->8</code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00002">
+    <title>Recommended spacing</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch02-m07-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch02-m07-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch02-m07-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch02-m07-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Automatic concatenation</title>
+    <para id="para-00010">Long strings make Python programs difficult to read. Ex: This program prints the first sentence of the <link url="https://www.archives.gov/founding-docs/declaration-transcript">US Declaration of Independence</link>:</para>
+    <para id="para-00011"><emphasis class="centered-text">print("The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.")</emphasis></para>
+    <para id="para-00012">PEP 8 recommends that each line of code be less than 80 characters long. That way, programmers won't need to scroll horizontally to read the code. The above program can be rewritten by breaking up the original string:</para>
+    <para id="para-00013"><emphasis class="centered-text">
+    print("The unanimous Declaration of the thirteen united States of "
+    "America, When in the Course of human events, it becomes "
+    "necessary for one people to dissolve the political bands "
+    "which have connected them with another, and to assume among "
+    "the powers of the earth, the separate and equal station to "
+    "which the Laws of Nature and of Nature's God entitle them, a "
+    "decent respect to the opinions of mankind requires that they "
+    "should declare the causes which impel them to the separation.")
+    </emphasis></para>
+    <para id="para-00014">For convenience, Python automatically concatenates multiple strings. The <code>+</code> operator is not required in this situation.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>String concatenation</title>
+    <media alt="string_concat_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/string-concat"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>String literal concatenation</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch02-m07-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch02-m07-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch02-m07-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Multi-line statements</title>
+    <para id="para-00018">Most statements in a Python program need only one line of code. But occasionally, longer statements need to span multiple lines. Python provides two ways to write multi-line statements:</para>
+    <list id="list-00003">
+    <item><para id="para-00019">Explicit line joining, using <code class="python inline-code">\</code> characters:</para>
+    <code class="python" lang="python">
+    decl = "The unanimous Declaration of the thirteen united States of " \
+    "America, When in the Course of human events, it becomes " \
+    "necessary for one people to dissolve the political bands..."
+    </code></item>
+    <item><para id="para-00020">Implicit line joining, using parentheses:</para>
+    <code class="python" lang="python">
+    decl = ("The unanimous Declaration of the thirteen united States of "
+    "America, When in the Course of human events, it becomes "
+    "necessary for one people to dissolve the political bands...")
+    </code></item>
+    </list>
+    <para id="para-00021">Implicit line joining is more common, since many statements and expressions use parentheses anyway. PEP 8 recommends avoiding the use of explicit line joining whenever possible.</para>
+    <note class="learning-questions" id="note-00005">
+    <title>Multi-line statements</title>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00022"><link class="os-embed" url="#exercise/CPL-ch02-m07-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00023"><link class="os-embed" url="#exercise/CPL-ch02-m07-p09"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00024"><link class="os-embed" url="#exercise/CPL-ch02-m07-p10"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00006">
+    <title>Spaced out</title>
+    <para id="para-00025">The following code works correctly but is formatted poorly. In particular, the code does not include spaces recommended by PEP 8. Furthermore, two of the lines are about 90 characters long. Reformat the code to follow the guidelines in this section. Be careful not to change the behavior of the code itself.</para>
+    <media alt="spaced_out_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_08_13_Spaced-out.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00007">
+    <title>Five quotes</title>
+    <para id="para-00026">Write a program that prints the following five quotes (source: <link url="https://www.brainyquote.com/authors/guido-van-rossum-quotes">BrainyQuote</link>) from Guido van Rossum, the creator of Python. Your program should have exactly five print statements, one for each quote:</para>
+    <preformat class="output">1. "If you're talking about Java in particular, Python is about the best fit you can get amongst all the other languages. Yet the funny thing is, from a language point of view, JavaScript has a lot in common with Python, but it is sort of a restricted subset."
+    2. "The second stream of material that is going to come out of this project is a programming environment and a set of programming tools where we really want to focus again on the needs of the newbie. This environment is going to have to be extremely user-friendly."
+    3. "I have this hope that there is a better way. Higher-level tools that actually let you see the structure of the software more clearly will be of tremendous value."
+    4. "Now, it's my belief that Python is a lot easier than to teach to students programming and teach them C or C++ or Java at the same time because all the details of the languages are so much harder. Other scripting languages really don't work very well there either."
+    5. "I would guess that the decision to create a small special purpose language or use an existing general purpose language is one of the toughest decisions that anyone facing the need for a new language must make."
+    </preformat>
+    <para id="para-00027">Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format the code using multi-line statements and escape sequences as necessary.</para>
+    <media alt="five_quotes_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_08_12_Five-quotes.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>
