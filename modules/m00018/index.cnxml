@@ -6,5 +6,107 @@
     <md:uuid>68a103f9-381a-4b80-a169-e06d7ad0b262</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Summarize how Python is used in fields other than CS and IT.</item>
+    <item>Describe two different kinds of applications made with Python.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Fields and applications</title>
+    <para id="para-00002">Learning Python opens the door to many programming-related careers. Example job titles include software engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer science (CS), information technology (IT), or a related field. However, programming is not limited to these fields and careers.</para>
+    <para id="para-00003">Many professionals use Python to support the work they do. Python programs can automate tasks and solve problems quickly. Table <link target-id="table-00001"/> shows a few examples of Python outside of computing fields. Knowing how to program is a useful skill that can enhance any career.</para>
+    <para id="para-00004">Python is a versatile language that supports many kinds of applications. Table <link target-id="table-00002"/> shows a few examples of programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language to learn. A supportive community of professionals and enthusiasts is ready to help.</para>
+    <table summary=" " id="table-00001">
+    <title>Python outside of CS and IT</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Field</entry>
+    <entry>Example use of Python</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Business</emphasis></entry>
+    <entry>An accountant writes a Python program to generate custom sales reports.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Education</emphasis></entry>
+    <entry>A teacher writes a Python program to organize homework submissions.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Fine arts</emphasis></entry>
+    <entry>An artist writes a Python program to operate an interactive art display.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Humanities</emphasis></entry>
+    <entry>A linguist writes a Python program to analyze changes in slang word usage.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Science</emphasis></entry>
+    <entry>A biologist writes a Python program to analyze DNA sequences for cancer.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <table summary=" " id="table-00002">
+    <title>Applications built with Python</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Application</entry>
+    <entry>Example use of Python</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Artificial intelligence</emphasis></entry>
+    <entry>An engineer develops models to support image and voice recognition. Ex: TensorFlow library.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Data visualization</emphasis></entry>
+    <entry>A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">General purpose</emphasis></entry>
+    <entry>Most programs in this book are general. Ex: Read inputs, perform calculations, print results.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Scientific computing</emphasis></entry>
+    <entry>Python is very useful for conducting experiments and analyzing data. Ex: The SciPy project.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Web development</emphasis></entry>
+    <entry>Python can run interactive websites. Ex: Instagram is built with Django, a Python framework.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00001">
+    <title>Fields and applications</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch02-m08-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch02-m08-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch02-m08-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00002">
+    <title>Exploring further</title>
+    <para id="para-00008">For more examples of applications that can be built with Python, see <link url="https://www.upgrad.com/blog/python-applications-in-real-world/"> Top 12 Fascinating Python Applications in Real-World</link> by Rohit Sharma. For more information about Python related careers, see <link url="https://brainstation.io/career-guides/what-does-a-python-developer-do"> What Does a Python Developer Do?</link> in BrainStation's career guide.</para>
+    </note>
+    </section>
+    </content>
 </document>
