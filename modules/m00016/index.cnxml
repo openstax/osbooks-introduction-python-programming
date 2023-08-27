@@ -1,0 +1,333 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>The math module</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>The math module</md:title>
+    <md:content-id>m00016</md:content-id>
+    <md:uuid>75ea8629-0c7c-48cb-99e8-5c29b9ff15eb</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Distinguish between built-in functions and math functions.</item>
+    <item>Use functions and constants defined in the math module.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Importing modules</title>
+    <para id="para-00002">Python comes with an extensive <link url="https://docs.python.org/3/library/">standard library</link> of modules. A <term id="term-00001">module</term> is previously written code that can be imported in a program. The <term id="term-00002">import statement</term> defines a variable for accessing code in a module. Import statements often appear at the beginning of a program.</para>
+    <para id="para-00003">The standard library also defines built-in functions such as <code class="python inline-code">print()</code>, <code class="python inline-code">input()</code>, and <code class="python inline-code">float()</code>. A <term id="term-00003">built-in function</term> is always available and does not need to be imported. The complete <link url="https://docs.python.org/3/library/functions.html">list of built-in functions</link> is available in Python's official documentation.</para>
+    <para id="para-00004">A commonly used module in the standard library is the <link url="https://docs.python.org/3/library/math.html">math module</link>. This module defines functions such as <code class="python inline-code">sqrt()</code> (square root). To call <code class="python inline-code">sqrt()</code>, a program must <code class="python inline-code">import math</code> and use the resulting <code class="python inline-code">math</code> variable followed by a dot. Ex: <code class="python inline-code">math.sqrt(25)</code> evaluates to <code class="python inline-code">5.0</code>.</para>
+    <para id="para-00005">The following program imports and uses the math module, and uses built-in functions for input and output.</para>
+    <example id="exam-00001">
+    <title>Calculating the distance between two points</title>
+<code class="python" lang="python">
+    import math
+    x1 = float(input("Enter x1: "))
+    y1 = float(input("Enter y1: "))
+    x2 = float(input("Enter x2: "))
+    y2 = float(input("Enter y2: "))
+    distance = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+    print("The distance is", distance)
+    </code>
+    </example>
+    <note class="guided-slides" id="note-00001">
+    <title>Importing math in a Python shell</title>
+    <media alt="importing_math_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/importing-math"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Built-in functions and math module</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch02-m06-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch02-m06-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch02-m06-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Mathematical functions</title>
+    <para id="para-00009">Commonly used math functions and constants are shown below. The complete <link url="https://docs.python.org/3/library/math.html">math module listing</link> is available in Python's official documentation.</para>
+    <table summary=" " id="table-00001">
+    <title>Example constants in the math module</title>
+    <tgroup cols="3">
+    <thead>
+    <row>
+    <entry>Constant</entry>
+    <entry>Value</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code class="python inline-code">math.e</code></entry>
+    <entry>\( e = 2.71828\ldots \)</entry>
+    <entry>Euler's number; the base of the natural logarithm.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.pi</code></entry>
+    <entry>\( \pi = 3.14159\ldots \)</entry>
+    <entry>The ratio of the circumference to the diameter of a circle.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.tau</code></entry>
+    <entry>\( \tau = 6.28318\ldots \)</entry>
+    <entry>The ratio of the circumference to the radius of a circle.
+    Tau is equal to \( 2\pi \).</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <table summary=" " id="table-00002">
+    <title>Example functions in the math module</title>
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Description</entry>
+    <entry>Examples</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry namest="c1" nameend="c3"><emphasis effect="bold">Number-theoretic</emphasis></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.ceil(x)</code></entry>
+    <entry>The ceiling of x: the smallest integer greater than or equal to x.</entry>
+    <entry><code class="python inline-code">math.ceil(7.4)</code> \(~\rightarrow~\) <code class="python inline-code">8</code><newline/>
+    <code class="python inline-code">math.ceil(-7.4)</code> \(~\rightarrow~\) <code class="python inline-code">-7</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.floor(x)</code></entry>
+    <entry>The floor of x: the largest integer less than or equal to x.</entry>
+    <entry><code class="python inline-code">math.floor(7.4)</code> \(~\rightarrow~\) <code class="python inline-code">7</code><newline/>
+    <code class="python inline-code">math.floor(-7.4)</code> \(~\rightarrow~\) <code class="python inline-code">-8</code></entry>
+    </row>
+    <row>
+    <entry namest="c1" nameend="c3"><emphasis effect="bold">Power and logarithmic</emphasis></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.log(x)</code></entry>
+    <entry>The natural logarithm of x (to base e).</entry>
+    <entry><code class="python inline-code">math.log(math.e)</code> \(~\rightarrow~\) <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.log(0)</code> \(~\rightarrow~\) <code class="python inline-code">ValueError: math domain error</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.log(x, base)</code></entry>
+    <entry>The logarithm of x to the given base.</entry>
+    <entry><code class="python inline-code">math.log(8, 2)</code> \(~\rightarrow~\) <code class="python inline-code">3.0</code><newline/>
+    <code class="python inline-code">math.log(10000, 10)</code> \(~\rightarrow~\) <code class="python inline-code">4.0</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.pow(x, y)</code></entry>
+    <entry>x raised to the power y. Unlike the <code class="python inline-code">**</code> operator, <code class="python inline-code">math.pow()</code> converts x and y to type float.</entry>
+    <entry><code class="python inline-code">math.pow(3, 0)</code> \(~\rightarrow~\) <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.pow(3, 3)</code> \(~\rightarrow~\) <code class="python inline-code">27.0</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.sqrt(x)</code></entry>
+    <entry>The square root of x.</entry>
+    <entry><code class="python inline-code">math.sqrt(9)</code> \(~\rightarrow~\) <code class="python inline-code">3.0</code><newline/>
+    <code class="python inline-code">math.sqrt(-9)</code> \(~\rightarrow~\) <code class="python inline-code">ValueError: math domain error</code></entry>
+    </row>
+    <row>
+    <entry namest="c1" nameend="c3"><emphasis effect="bold">Trigonometric</emphasis></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.cos(x)</code></entry>
+    <entry>The cosine of x radians.</entry>
+    <entry><code class="python inline-code">math.cos(0)</code> \(~\rightarrow~\) <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.cos(math.pi)</code> \(~\rightarrow~\) <code class="python inline-code">-1.0</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.sin(x)</code></entry>
+    <entry>The sine of x radians.</entry>
+    <entry><code class="python inline-code">math.sin(0)</code> \(~\rightarrow~\) <code class="python inline-code">0.0</code><newline/>
+    <code class="python inline-code">math.sin(math.pi/2)</code> \(~\rightarrow~\) <code class="python inline-code">1.0</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">math.tan(x)</code></entry>
+    <entry>The tangent of x radians.</entry>
+    <entry><code class="python inline-code">math.tan(0)</code> \(~\rightarrow~\) <code class="python inline-code">0.0</code><newline/>
+    <code class="python inline-code">math.tan(math.pi/4)</code> \(~\rightarrow~\) <code class="python inline-code">0.999</code><newline/>
+    (Round-off error; the result should be 1.0.)</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00003">
+    <title>Using math functions and constants</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch02-m06-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch02-m06-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch02-m06-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch02-m06-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Quadratic formula</title>
+    <para id="para-00014">In algebra, a quadratic equation is written as \(ax^2 + bx + c = 0\). The coefficients \(a\), \(b\), and \(c\) are known values. The variable \(x\) represents an unknown value. Ex: \(2x^2 + 3x - 5 = 0\) has the coefficients \(a=2\), \(b=3\), and \(c=-5\). The quadratic formula provides a quick and easy way to solve a quadratic equation for \(x\):<newline/>
+    \[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]<newline/>
+    The plus-minus symbol indicates the equation has two solutions. However, Python does not have a plus-minus operator. To use this formula in Python, the formula must be separated:<newline/>
+    \[ x_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a} \]<newline/>
+    \[ x_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a} \]<newline/>
+    Write the code for the quadratic formula in the program below. Test your program using the following values for \(a\), \(b\), and \(c\):</para>
+    <table summary=" " id="table-00003">
+    <tgroup cols="5">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <colspec colnum="4" colname="c4"/>
+    <colspec colnum="5" colname="c5"/>
+    <thead>
+    <row>
+    <entry namest="c1" nameend="c3">Provided input</entry>
+    <entry namest="c4" nameend="c5">Expected output</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>a</entry>
+    <entry>b</entry>
+    <entry>c</entry>
+    <entry>x1</entry>
+    <entry>x2</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>-4</entry>
+    <entry>2.0</entry>
+    <entry>-2.0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>-3</entry>
+    <entry>1.0</entry>
+    <entry>-3.0</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>1</entry>
+    <entry>-1</entry>
+    <entry>0.5</entry>
+    <entry>-1.0</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry namest="c4" nameend="c5">division by zero</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry namest="c4" nameend="c5">math domain error</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <media alt="quadratic_formula_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_07_10_Quadratic-formula.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Cylinder formulas</title>
+    <para id="para-00015">In geometry, the surface area and volume of a right circular cylinder can be computed as follows:<newline/>
+    \[ A = 2\pi r h + 2\pi r^2 \]<newline/>
+    \[ V = \pi r^2 h \]<newline/>
+    Write the code for these two formulas in the program below. Hint: Your solution should use both <code class="python inline-code">math.pi</code> and <code class="python inline-code">math.tau</code>. Test your program using the following values for \(r\) and \(h\):</para>
+    <table summary=" " id="table-00004">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <colspec colnum="4" colname="c4"/>
+    <thead>
+    <row>
+    <entry namest="c1" nameend="c2">Provided input</entry>
+    <entry namest="c3" nameend="c4">Expected output</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>r</entry>
+    <entry>h</entry>
+    <entry>area</entry>
+    <entry>volume</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0.0</entry>
+    <entry>0.0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>12.57</entry>
+    <entry>3.14</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>18.85</entry>
+    <entry>6.28</entry>
+    </row>
+    <row>
+    <entry>2.5</entry>
+    <entry>4.8</entry>
+    <entry>114.67</entry>
+    <entry>94.25</entry>
+    </row>
+    <row>
+    <entry>3.1</entry>
+    <entry>7.0</entry>
+    <entry>196.73</entry>
+    <entry>211.33</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <media alt="cylinder_formulas_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_07_11_Cylinder-formulas.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>
