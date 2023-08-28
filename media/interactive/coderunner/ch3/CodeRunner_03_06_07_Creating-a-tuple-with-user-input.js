@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "# Read input and create my_data\n\nprint(f'my_data: {my_data}')\n", "solution": "str_1 = input()\nstr_2 = input()\nnum_1 = int(input())\nnum_2 = int(input())\n\nmy_data = (str_1, str_2, num_1, num_2)\nprint(f'my_data: {my_data}')\n"}], "input": "ft\nin\n4\n11\n", "showSolution": true};

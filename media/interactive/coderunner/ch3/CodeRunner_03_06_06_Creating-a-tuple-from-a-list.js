@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "grades = [68, 77, 81, 73]\ngrades[0] += 5\n\nprint(f'final_grades: {final_grades} is a {type(final_grades)}')", "solution": "grades = [68, 77, 81, 73]\ngrades[0] += 5\n\nfinal_grades = tuple(grades)\nprint(f'final_grades: {final_grades} is a {type(final_grades)}')\n"}], "input": "\n", "showSolution": true};

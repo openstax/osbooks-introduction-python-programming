@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "shift_cipher.py", "contents": null, "solution": "word = input(\"Enter a 3-letter word: \")\nshift = int(input(\"Shift by how many letters? \"))\n\na = chr(ord(word[0]) + shift)\nb = chr(ord(word[1]) + shift)\nc = chr(ord(word[2]) + shift)\n\nprint(\"The secret message is:\", a + b + c)\n"}], "input": "CAT\n3\n", "showSolution": true};

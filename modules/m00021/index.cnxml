@@ -1,0 +1,288 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Strings revisited</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Strings revisited</md:title>
+    <md:content-id>m00021</md:content-id>
+    <md:uuid>4b3cbffc-cb04-4272-9a5a-9a89d6b7b802</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Extract a specific character from a string using an index.</item>
+    <item>Use escape sequences to represent special characters.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Indexes</title>
+    <para id="para-00002">A string is a sequence of zero or more characters. Each character has an index that refers to the character's position. Indexes are numbered from left to right, starting at 0. Indexes are also numbered from right to left, starting at -1.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>String indexes</title>
+    <media alt="string_indexes_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/string-indexes"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>String indexes</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch03-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch03-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch03-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Unicode</title>
+    <para id="para-00006">Python uses <term id="term-00001">Unicode</term>, the international standard for representing text on computers. Unicode defines a unique number, called a <term id="term-00002">code point</term>, for each possible character. Ex: <code>'P'</code> has the code point 80, and <code>'!'</code> has the code point 33.</para>
+    <para id="para-00007">The built-in <code>ord()</code> function converts a character to a code point. Ex: <code>ord('P')</code> returns the integer 80. Similarly, the built-in <code>chr()</code> function converts a code point to a character. Ex: <code>chr(33)</code> returns the string <code>'!'</code>.</para>
+    <para id="para-00008">Unicode is an extension of <term id="term-00003">ASCII</term>, the American Standard Code for Information Interchange. Originally, ASCII defined only 128 code points, enough to support the English language. Unicode defines over one million code points and supports most of the world's written languages.</para>
+    <table summary=" " id="table-00001">
+    <title>Character values</title>
+    <tgroup cols="1">
+    <tbody>
+    <row>
+    <entry><preformat class="output">
+    32  (space)  
+    33  !
+    34  "
+    35  #
+    36  $
+    37  %
+    38  &amp;
+    39  '
+    40  (
+    41  )
+    42  *
+    43  +
+    44  ,
+    45  -
+    46  .
+    47  /
+    48  0
+    49  1
+    50  2
+    51  3
+    52  4
+    53  5
+    54  6
+    55  7
+    56  8
+    57  9
+    58  :
+    59  ;
+    60  &lt;
+    61  =
+    62  >
+    63  ?
+    </preformat></entry>
+    </row>
+    <row>
+    <entry>
+    <preformat class="output">
+    64  @        
+    65  A
+    66  B
+    67  C
+    68  D
+    69  E
+    70  F
+    71  G
+    72  H
+    73  I
+    74  J
+    75  K
+    76  L
+    77  M
+    78  N
+    79  O
+    80  P
+    81  Q
+    82  R
+    83  S
+    84  T
+    85  U
+    86  V
+    87  W
+    88  X
+    89  Y
+    90  Z
+    91  [
+    92  \
+    93  ]
+    94  ^
+    95  _
+    </preformat></entry>
+    </row>
+    <row>
+    <entry>
+    <preformat class="output">
+    96  `
+    97  a
+    98  b
+    99  c
+    100  d
+    101  e
+    102  f
+    103  g
+    104  h
+    105  i
+    106  j
+    107  k
+    108  l
+    109  m
+    110  n
+    111  o
+    112  p
+    113  q
+    114  r
+    115  s
+    116  t
+    117  u
+    118  v
+    119  w
+    120  x
+    121  y
+    122  z
+    123  {
+    124  |
+    125  }
+    126  ~
+    127  (delete)
+    </preformat></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    <caption>The following table shows code points 32 to 127 as defined by ASCII and Unicode. Code points 0 to 31 are non-printable characters that were used for telecommunications.</caption>
+    </table>
+    <note class="learning-questions" id="note-00003">
+    <title>ord() and chr()</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch03-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch03-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch03-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Special characters</title>
+    <para id="para-00012">An <term id="term-00004">escape sequence</term> uses a backslash (\) to represent a special character within a string.</para>
+    <table summary=" " id="table-00002">
+    <title>Common escape sequences</title>
+    <tgroup cols="4">
+    <thead>
+    <row>
+    <entry>Escape sequence</entry>
+    <entry>Meaning</entry>
+    <entry>Example</entry>
+    <entry>Screen output</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code class="python" lang="python">\n</code></entry>
+    <entry>A newline character that indicates the end of a line of text.</entry>
+    <entry><code class="python" lang="python">print("Escape\nsequence!")</code></entry>
+    <entry>Escape<newline/>sequence!</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">\t</code></entry>
+    <entry>A tab character; useful for indenting paragraphs or aligning text on multiple lines.</entry>
+    <entry><code class="python" lang="python">print("Escape\tsequence!")</code></entry>
+    <entry>Escape    sequence!</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">\'</code></entry>
+    <entry>A single quote; an alternative to enclosing the string in double quotes.</entry>
+    <entry><code class="python" lang="python">print('I\'ll try my best!')</code></entry>
+    <entry>I'll try my best</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">\"</code></entry>
+    <entry>A double quote; an alternative to enclosing the string in single quotes.</entry>
+    <entry><code class="python" lang="python">print("I heard you said \"Yes\"")</code></entry>
+    <entry>I heard you said "Yes"</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">\\</code></entry>
+    <entry>A backslash character.</entry>
+    <entry><code class="python" lang="python">print("This prints a \\")</code></entry>
+    <entry>This prints a \</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00004">
+    <title>Tabs and newlines</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch03-m01-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch03-m01-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch03-m01-p09"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Hopper quote</title>
+    <para id="para-00016"><link url="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</link> (1906–1992) was a famous computer scientist (and rear admiral in the US Navy!) who came up with the idea of machine-independent programming languages. She envisioned a programming language based on English and made many contributions that paved the way for modern programming languages, including Python.</para>
+    <para id="para-00017">Write a program that prints the following text. Your program may not use single quotes (') anywhere in the code. The last line must be indented with a tab character.</para>
+    <preformat class="output">
+    "To me programming is more than an important practical art.
+    It is also a gigantic undertaking in the foundations of knowledge."
+    	-- Grace Hopper
+    </preformat>
+    <media alt="hopper_quote_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_01_Hopper-quote.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Shift cipher</title>
+    <para id="para-00018">During the Roman Empire, Julius Caesar (100–44 BCE) used a simple technique to encrypt private messages. Each letter of the message was replaced with the third next letter of the alphabet. Ex: If the message was CAT, the C became F, the A became D, and the T became W, resulting in the message FDW. This technique is known as a shift cipher, because each letter is shifted by some amount. In Caesar's case, the amount was 3, but other amounts (besides 0) would work too.</para>
+    <para id="para-00019">Write a program that prompts the user to input the following two values (example input in bold):</para>
+    <preformat class="output">
+    Enter a 3-letter word: &lt;kbd>CAT&lt;/kbd>
+    Shift by how many letters? &lt;kbd>3&lt;/kbd>
+    </preformat>
+    <para id="para-00020">The program should then shift each letter of the word by the desired amount. Based on the example above, the output would be:</para>
+    <preformat class="output">
+    The secret message is: FDW
+    </preformat>
+    <para id="para-00021">Hint: Use the <code>ord()</code> function to convert each letter to an integer, add the shift amount to each integer, use the <code>chr()</code> function to convert each integer to a character, and concatenate the resulting characters.</para>
+    <media alt="shift_cipher_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_02_Shift-cipher.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

@@ -36,5 +36,12 @@
         <col:module document="m00019"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 3: Objects</md:title>
+      <col:content>
+        <col:module document="m00020"/>
+        <col:module document="m00021"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>
