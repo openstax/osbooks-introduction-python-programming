@@ -48,5 +48,11 @@
         <col:module document="m00026"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 4: Decisions</md:title>
+      <col:content>
+        <col:module document="m00027"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>
