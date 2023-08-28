@@ -1,0 +1,81 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Chapter summary</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Chapter summary</md:title>
+    <md:content-id>m00026</md:content-id>
+    <md:uuid>19da843c-955f-43d2-8213-85d07d984cf8</md:uuid>
+  </metadata>
+  <content>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>A <term id="term-00001">string</term> is a sequence of values that represents Unicode code points.</item>
+    <item>An <term id="term-00002">index</term> refers to the position of a value in a sequence (string, list, tuple).</item>
+    <item>Positive indexes range from 0 to length–1. Negative indexes range from –1 to –length.</item>
+    <item>F-strings are a convenient way to print multiple outputs and format integers and floats.</item>
+    <item>Variables refer to objects. Memory diagrams are useful for drawing variables and objects.</item>
+    <item>A list object can be used to refer to multiple objects, by index, using the same variable.</item>
+    <item>A tuple is similar to a list, but uses parentheses and cannot be changed once created.</item>
+    </list>
+    <table summary=" " id="table-00001">
+    <title>Chapter 3 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Code</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>ord(c)</entry>
+    <entry>Gets an integer representing the Unicode code point of a character.</entry>
+    </row>
+    <row>
+    <entry>chr(i)</entry>
+    <entry>Converts a Unicode code point (integer) into a 1-character string.</entry>
+    </row>
+    <row>
+    <entry>'\n'</entry>
+    <entry>Escape sequence for the newline character.</entry>
+    </row>
+    <row>
+    <entry>'\t'</entry>
+    <entry>Escape sequence for the tab character.</entry>
+    </row>
+    <row>
+    <entry>f"{number:.02d}"</entry>
+    <entry>Creates a string by formatting an integer to be at least two digits.</entry>
+    </row>
+    <row>
+    <entry>f"{number:.2f}"</entry>
+    <entry>Creates a string by formatting a float to have two decimal places.</entry>
+    </row>
+    <row>
+    <entry>id(object)</entry>
+    <entry>Gets the identity (memory location) of an object.</entry>
+    </row>
+    <row>
+    <entry>type(object)</entry>
+    <entry>Gets the type (class name) of an object.</entry>
+    </row>
+    <row>
+    <entry>my_list = ["a", "b", "c"]</entry>
+    <entry>Creates a list of three strings.</entry>
+    </row>
+    <row>
+    <entry>my_tuple = ("a", "b", "c")</entry>
+    <entry>Creates a tuple of three strings.</entry>
+    </row>
+    <row>
+    <entry>my_list[0]</entry>
+    <entry>Gets the first element ("a") of my_tuple.</entry>
+    </row>
+    <row>
+    <entry>my_tuple[-1]</entry>
+    <entry>Gets the last element ("c") of my_tuple.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </content>
+</document>
