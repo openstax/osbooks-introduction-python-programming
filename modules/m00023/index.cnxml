@@ -1,0 +1,147 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Variables revisited</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Variables revisited</md:title>
+    <md:content-id>m00023</md:content-id>
+    <md:uuid>a87c3239-1b2c-4d0c-a618-45aedbd87e8d</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Distinguish between variables, objects, and references.</item>
+    <item>Draw memory diagrams with integers, floats, and strings.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>References to objects</title>
+    <para id="para-00002">In Python, every variable refers to an object. The assignment statement <code>message = "Hello"</code> makes the variable <code>message</code> refer to the object <code>"Hello"</code>. Multiple variables may refer to the same object. Ex: <code>greeting = message</code> makes <code>greeting</code> refer to the same object as <code>message</code>. A <term id="term-00001">memory diagram</term> shows the relationship between variables and objects.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Example memory diagram</title>
+    <media alt="memory_diagram_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/memory-diagram"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Variables and objects</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch03-m03-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch03-m03-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch03-m03-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00003">
+    <title>Exploring further</title>
+    <para id="para-00006"><link url="https://pythontutor.com/">Python Tutor</link> is a free online tool for visualizing code execution. A user can enter any Python code, click Visualize Execution, and then click the Next button to run the code one line at a time. Here is the <link url="https://pythontutor.com/visualize.html#code=rating%20%3D%2010%0Ascore%20%3D%20rating%0Arating%20%3D%209.7&amp;heapPrimitives=true&amp;mode=edit">rating and score example</link> from the animation above.</para>
+    <para id="para-00007">Python Tutor is also useful for drawing memory diagrams similar to the ones in this book. Before clicking Visualize Execution, change the middle option from "inline primitives, don't nest objects [default]" to "render all objects on the heap (Python/Java)" as shown in the following screenshot:</para>
+    <figure id="fig-00001">
+    <media alt="Screenshot of Python tutor settings, with the middle dropdown list open to the last setting.">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption/>
+    </figure>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Properties of objects</title>
+    <para id="para-00008">Every object has an identity, a type, and a value:</para>
+    <list id="list-00002">
+    <item><para id="para-00009">An object's <term id="term-00002">identity</term> is a unique integer associated with the object. Generally, this integer refers to the memory location where the object is stored. Once created, an object's identity never changes. The built-in <code>id()</code> function returns the object's identity.</para></item>
+    <item><para id="para-00010">An object's <term id="term-00003">type</term> determines the possible values and operations of an object. Ex: Integers and floats can be "divided" using the <code>/</code> operator, but strings cannot. The built-in <code>type()</code> function returns the object's type.</para></item>
+    <item><para id="para-00011">An object's <term id="term-00004">value</term> represents the current state of the object. Many objects, such as numbers and strings, cannot be modified once created. Some objects, such as lists (introduced later), are designed to be modified.</para></item>
+    </list>
+    <note class="guided-slides" id="note-00004">
+    <title>Identity, type, and value</title>
+    <media alt="identity_type_value_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/identity-type-value"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00005">
+    <title>id() and type()</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch03-m03-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch03-m03-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch03-m03-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00006">
+    <title>Exploring further</title>
+    <para id="para-00015">As shown in a memory diagram, variables and objects are two separate ideas. Calling a function like id() or type() returns information about an object, not a variable. In fact, a variable doesn't have an identity or a type, as shown in this example:</para>
+    <code class="python" lang="python">
+    >>> rating = 10 # Integer object somewhere in memory.
+    >>> type(rating)
+    &lt;class 'int'>
+    >>> id(rating)
+    9793344
+    >>> rating = "ten" # String object somewhere else in memory.
+    >>> type(rating)
+    &lt;class 'str'>
+    >>> id(rating)
+    140690967388272
+    </code>
+    <para id="para-00016">One might incorrectly think that the rating variable's type or identity changes. However, the only thing that changes is which object the rating variable refers to.</para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="Three variables" id="note-00007">
+    <list list-type="enumerated" id="list-00003">
+    <item>Draw a memory diagram for the following code:
+    <code class="python" lang="python">
+    a = 1
+    b = 2
+    c = b
+    b = a
+    a = c
+    </code></item>
+    <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
+    <item>Based on your diagram, answer these questions:
+    <list id="list-00004">
+    <item>What is the final value of <code>a</code>, <code>b</code>, and <code>c</code>?</item>
+    <item>How many integer objects are created?</item>
+    </list></item>
+    </list>
+    </note>
+    <note class="Different types" id="note-00008">
+    <list list-type="enumerated" id="list-00005">
+    <item>Draw a memory diagram for the following code.
+    <code class="python" lang="python">
+    name = "Chocolate"
+    length = len(name)
+    price = 1.99
+    lower = min(length, price)
+    product = name
+    name = name * 2
+    </code></item>
+    <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
+    <item>Based on your diagram, answer these questions:
+    <list id="list-00006">
+    <item>What is the type and value of each object?</item>
+    <item>Which object does each variable reference?</item>
+    </list></item>
+    </list>
+    </note>
+    </section>
+    </content>
+</document>
