@@ -1,0 +1,128 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Tuple basics</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Tuple basics</md:title>
+    <md:content-id>m00025</md:content-id>
+    <md:uuid>7d554cfa-b3f4-4a06-b6d8-5af7d34a2277</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Describe the features and benefits of a tuple.</item>
+    <item>Develop a program that creates and uses a tuple successfully.</item>
+    <item>Identify and discuss the mutability of a tuple.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Creating tuples and accessing elements</title>
+    <para id="para-00002">A <term id="term-00001">tuple</term> is a sequence of comma separated values that can contain elements of different types. A tuple must be created with commas between values, and conventionally the sequence is surrounded by parentheses. Each element is accessed by index, starting with the first element at index 0.</para>
+    
+    <table summary=" " id="table-00001">
+    <title>Example tuples</title>
+    <tgroup cols="1">
+    <tbody>
+    <row>
+    <entry>
+    <code class="python" lang="python">
+    tuple_1 = (2, 3, 4)
+    print(f'tuple_1: {tuple_1}')
+    print(tuple_1[1])
+    print()
+    data_13 = ('Aimee Perry', 96, [94, 100, 97, 93])
+    print(f'data_13: {data_13}')
+    print(data_13[2])
+    </code>
+    </entry>
+    <entry>
+    tuple_1: (2, 3, 4)
+    3
+    data_13: ('Aimee Perry', 96, [94, 100, 97, 93])
+    [94, 100, 97, 93]
+    </entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00001">
+    <title>Creating tuples and accessing elements</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch03-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch03-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch03-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Tuple properties</title>
+    <para id="para-00006">How do tuples compare to lists? Tuples are ordered and allow duplicates, like lists, but have different mutability. An <term id="term-00002">immutable</term> object cannot be modified after creation. A <term id="term-00003">mutable</term> object can be modified after creation. Tuples are immutable, whereas lists are mutable.</para>
+    <note class="guided-slides" id="note-00002">
+    <title>Mutability of a tuple vs. a list</title>
+    <media alt="mutability_tuple_list_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/mutability-tuple-list"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>Using tuples</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch03-m05-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch03-m05-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch03-m05-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00004">
+    <title>Mutability and performance</title>
+    <para id="para-00010">Tuples are immutable and have a fixed size, so tuples use less memory. Overall, tuples are faster to create and access, resulting in better performance that can be noticeable with large amounts of data.</para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Creating a tuple from a list</title>
+    <media alt="creating_a_tuple_from_a_list_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_06_06_Creating-a-tuple-from-a-list.html"/>
+    </media>
+    <para id="para-00011">Suppose a programmer wants to create a tuple from a list to prevent future changes. The tuple() function creates a tuple from an object like a list. Ex: my_tuple = tuple(my_list) creates a tuple from the list my_list. Update the program below to create a tuple final_grades from the list grades.</para>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Creating a tuple with user input</title>
+    <para id="para-00012">Write a program that reads in two strings and two integers from input and creates a tuple, my_data, with the four values.</para>
+    <para id="para-00013">Given input:</para>
+    <preformat class="output">
+    x
+    y
+    15
+    20
+    </preformat>
+    <para id="para-00014">The output is:</para>
+    <preformat class="output">
+    my_data: ('x', 'y', 15, 20)
+    </preformat>
+    <media alt="creating_a_tuple_with_user_input_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_06_07_Creating-a-tuple-with-user-input.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>
