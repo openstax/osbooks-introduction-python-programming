@@ -1,0 +1,172 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Formatted strings</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Formatted strings</md:title>
+    <md:content-id>m00022</md:content-id>
+    <md:uuid>5f54b128-c2f4-4467-9e02-9475d867bdc8</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use f-strings to simplify output with multiple values.</item>
+    <item>Format numbers with leading zeros and fixed precision.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>F-strings</title>
+    <para id="para-00002">A <term id="term-00001">formatted string literal</term> (or <term id="term-00002">f-string</term>) is a string literal that is prefixed with 'f' or 'F'. A <term id="term-00003">replacement field</term> is an expression in curly braces (<code>{}</code>) inside an f-string. Ex: The string <code>f"Good morning, {first} {last}!"</code> has two replacement fields: one for a first name, and one for a last name. F-strings provide a convenient way to combine multiple values into one string.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Printing an f-string</title>
+    <media alt="printing_f_string_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/printing-f-string"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Basic f-strings</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch03-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch03-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch03-m02-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Formatting numbers</title>
+    <para id="para-00006">Programs often need to display numbers in a specific format. Ex: When displaying the time, minutes are formatted as two-digit integers. If the hour is 9 and the minute is 5, then the time is "9:05" (not "9:5").</para>
+    <para id="para-00007">In an f-string, a replacement field may include a format specifier introduced by a colon. A <term id="term-00004">format specifier</term> defines how a value should be formatted for display. Ex: In the string <code>f"{hour}:{minute:02d}"</code>, the format specifier for <code>minute</code> is <code>02d</code>.</para>
+    <table summary=" " id="table-00001">
+    <title>Example format specifiers</title>
+    <tgroup cols="4">
+    <thead>
+    <row>
+    <entry>Format</entry>
+    <entry>Description</entry>
+    <entry>Example</entry>
+    <entry>Result</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code>d</code></entry>
+    <entry>Decimal integer (default integer format)</entry>
+    <entry><code>f"{12345678:d}"</code></entry>
+    <entry><code>'12345678'</code></entry>
+    </row>
+    <row>
+    <entry><code>,d</code></entry>
+    <entry>Decimal integer, with comma separators</entry>
+    <entry><code>f"{12345678:,d}"</code></entry>
+    <entry><code>'12<!--<mark>-->,<!--</mark>-->345<!--<mark>-->,<!--</mark>-->678'</code></entry>
+    </row>
+    <row>
+    <entry><code>10d</code></entry>
+    <entry>Decimal integer, at least 10 characters wide</entry>
+    <entry><code>f"{12345678:10d}"</code></entry>
+    <entry><code>'<!--<mark>-->  <!--</mark>-->12345678'</code></entry>
+    </row>
+    <row>
+    <entry><code>010d</code></entry>
+    <entry>Decimal integer, at least 10 characters wide, with leading zeros</entry>
+    <entry><code>f"{12345678:010d}"</code></entry>
+    <entry><code>'<!--<mark>-->00<!--</mark>-->12345678'</code></entry>
+    </row>
+    <row>
+    <entry><code>f</code></entry>
+    <entry>Fixed-point (default is 6 decimal places)</entry>
+    <entry><code>f"{math.pi:f}"</code></entry>
+    <entry><code>'3.141593'</code></entry>
+    </row>
+    <row>
+    <entry><code>.4f</code></entry>
+    <entry>Fixed-point, rounded to 4 decimal places</entry>
+    <entry><code>f"{math.pi:.4f}"</code></entry>
+    <entry><code>'3.141<!--<mark>-->6<!--</mark>-->'</code></entry>
+    </row>
+    <row>
+    <entry><code>8.4f</code></entry>
+    <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide</entry>
+    <entry><code>f"{math.pi:8.4f}"</code></entry>
+    <entry><code>'<!--<mark>-->  <!--</mark>-->3.1416'</code></entry>
+    </row>
+    <row>
+    <entry><code>08.4f</code></entry>
+    <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide, with leading zeros</entry>
+    <entry><code>f"{math.pi:08.4f}"</code></entry>
+    <entry><code>'<!--<mark>-->00<!--</mark>-->3.1416'</code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    <caption>The following table shows common ways that numbers can be formatted. Many more formatting options are available and described in Python's <link url="https://docs.python.org/3/library/string.html#formatspec">Format Specification Mini-Language</link>.</caption>
+    </table>
+    <note class="learning-questions" id="note-00003">
+    <title>Formatting numbers</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch03-m02-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch03-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch03-m02-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Mad lib (f-string)</title>
+    <para id="para-00011">A "<link url="https://en.wikipedia.org/wiki/Mad_Libs">mad lib</link>" is a funny story that uses words provided by a user. The following mad lib is based on four words (user input in bold):</para>
+    <preformat class="output">
+    Enter a name: &lt;kbd>Buster&lt;/kbd>
+    Enter a noun: &lt;kbd>dog&lt;/kbd>
+    Enter an adjective: &lt;kbd>super&lt;/kbd>
+    Verb ending in -ing: &lt;kbd>swimming&lt;/kbd>
+    Buster, the super dog, likes to go swimming.
+    </preformat>
+    <para id="para-00012">Most of the code for this mad lib is already written. Complete the code below by writing the f-string.</para>
+    <media alt="Mad_lib_(f_string)_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_03_03_Mad-lib-(f-string).html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Wage calculator</title>
+    <para id="para-00013">You just landed a part-time job and would like to calculate how much money you will earn. Write a program that inputs the time you start working, the time you stop working, and your hourly pay rate (example input in bold):</para>
+    <preformat class="output">
+    Starting hour: &lt;kbd>9&lt;/kbd>
+    Starting minute: &lt;kbd>30&lt;/kbd>
+    Stopping hour: &lt;kbd>11&lt;/kbd>
+    Stopping minute: &lt;kbd>0&lt;/kbd>
+    Hourly rate: &lt;kbd>15&lt;/kbd>
+    </preformat>
+    <para id="para-00014">Based on the user input, your program should calculate and display the following results:</para>
+    <preformat class="output">
+    Worked 9:30 to 11:00
+    Total hours: 1.5
+    Payment: $22.50
+    </preformat>
+    <para id="para-00015">For this exercise, you need to write code that (1) calculates the total payment and (2) formats the three output lines. Use f-strings and format specifiers to display 2-digit minutes, 1 decimal place for hours, and 2 decimal places for payment. The input code has been provided as a starting point.</para>
+    <media alt="wage_calculator_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_03_04_Wage-calculator.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>
