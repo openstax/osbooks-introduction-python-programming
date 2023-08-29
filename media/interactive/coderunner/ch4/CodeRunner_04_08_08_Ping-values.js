@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": null, "solution": "ping = int(input())\nping_report = \"low to average\" if ping < 150 else \"too high\"\n\nprint(\"Ping is\", ping_report)\n"}], "input": "150", "showSolution": true};

@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "usr_in = input()\n\n# TODO: counting the number of space characters in usr_in", "solution": "usr_in = input()\n\ncount = 0\nfor c in usr_in:\n    if c == ' ':\n        count += 1\n        \nprint(count)"}], "input": "This is the input", "showSolution": true};

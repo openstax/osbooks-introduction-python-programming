@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "num = int(input())\nden = int(input())\n\nresult = num / den\nprint(result)", "solution": "num = int(input())\nden = int(input())\n\nif den == 0:\n    den = int(input())\n\nresult = num / den\nprint(result)"}], "input": "10\n0\n5\n", "showSolution": true};

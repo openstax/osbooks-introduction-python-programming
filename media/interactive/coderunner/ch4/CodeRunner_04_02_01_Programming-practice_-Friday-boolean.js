@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "# Read in day \n\nin_love = # Compute boolean\nprint(\"It's\", day, \"I'm in love?\", in_love)", "solution": "day = input()\n\nin_love = (day == \"Friday\")\nprint(\"It's\", day, \"I'm in love?\", in_love)"}], "input": "Friday", "showSolution": true};

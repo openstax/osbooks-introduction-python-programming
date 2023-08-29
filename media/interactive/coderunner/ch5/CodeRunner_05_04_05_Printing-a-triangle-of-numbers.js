@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": null, "solution": "i = 9\n\nwhile i >= 1:\n    j = 1\n    while j <= i:\n        print(j, end = \" \")\n        j += 1\n    i -= 1\n    print()"}], "input": null, "showSolution": true};

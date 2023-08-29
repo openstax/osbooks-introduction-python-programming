@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": null, "solution": "speed = int(input())\n\nif (speed >= 45) and (speed <= 70):\n    print(\"Good driving\")\nelse:\n    print(\"Follow the speed limits\")"}], "input": "65\n", "showSolution": true};

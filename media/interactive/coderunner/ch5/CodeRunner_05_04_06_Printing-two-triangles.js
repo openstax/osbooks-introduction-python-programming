@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": null, "solution": "character = ''\nfor c in range(2):\n    if c == 0:\n        character = '*'\n    else:\n        character = '+'\n    i = 4\n    while i >= 1:\n        print(i * character)\n        i -= 1"}], "input": null, "showSolution": true};
