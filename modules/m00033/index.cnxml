@@ -6,5 +6,108 @@
     <md:uuid>ede0df99-ea83-46b0-9c02-990d3aed1bab</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Describe the execution paths of programs with nested if-else statements</item>
+    <item>Implement a program with nested if-else statements</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Nested decision statements</title>
+    <para id="para-00002">Suppose a programmer is writing a program that reads in a game ID and player count and prints if the user has the right number of players for the game.</para>
+    <para id="para-00003">The programmer may start with:</para>
+    <code class="python" lang="python">
+    if game == 1 and players &lt; 2:
+    print("Not enough players")
+    if game == 1 and players > 4:
+    print("Too many players")
+    if game == 1 and (2 &lt;= players &lt;= 4):
+    print("Ready to start")
+    if game == 2 and players &lt; 3:
+    print("Not enough players")
+    if game == 2 and players > 6:
+    print("Too many players")
+    if game == 2 and (3 &lt;= players &lt;= 6):
+    print("Ready to start")
+    </code>
+    <para id="para-00004">The programmer realizes the code is redundant. What if the programmer could decide the game ID first and then make a decision about players? Nesting allows a decision statement to be inside another decision statement, and is indicated by an indentation level.</para>
+    <para id="para-00005">An improved program:</para>
+    <code class="python" lang="python">
+    if game == 1:
+    if players &lt; 2:
+    print("Not enough players")
+    elif players > 4:
+    print("Too many players")
+    else:
+    print("Ready to start")
+    if game == 2:
+    if players &lt; 3:
+    print("Not enough players")
+    elif players > 6:
+    print("Too many players")
+    else:
+    print("Ready to start")
+    # Test game IDs 3-end
+    </code>
+    <note class="guided-slides" id="note-00001">
+    <title>Example: Poisonous plant identification</title>
+    <media alt="plant_identification_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/plant-identification"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Using nested if-else statements</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch04-m06-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch04-m06-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch04-m06-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch04-m06-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00003">
+    <title>Programming practice: Meal orders</title>
+    <para id="para-00010">Write a program that reads in a string, "lunch" or "dinner", representing the menu choice and an integer, 1, 2, or 3, representing the user's meal choice. The program then prints the user's meal choice.</para>
+    <para id="para-00011">Lunch Meal Options</para>
+    <list id="list-00002">
+    <item>1: Caesar salad</item>
+    <item>2: Spicy chicken wrap</item>
+    <item>3: Butternut squash soup</item>
+    </list>
+    <para id="para-00012">Dinner Meal Options</para>
+    <list id="list-00003">
+    <item>1: Baked salmon</item>
+    <item>2: Turkey burger</item>
+    <item>3: Mushroom risotto</item>
+    </list>
+    <para id="para-00013">Ex: If the input is: <newline/>
+    lunch <newline/>
+    3 <newline/>
+    </para>
+    <para id="para-00014">The output is:<newline/>
+    Your order: Butternut squash soup</para>
+    <media alt="programming_practice_-Meal-orders_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_07_07_Programming-practice_-Meal-orders.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

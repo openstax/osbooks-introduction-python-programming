@@ -6,5 +6,145 @@
     <md:uuid>dc8cade9-2a57-4ce1-9603-1bdb92f933a0</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title/>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Booleans represent a value of True or False.</item>
+    <item>Comparison operators compare values and produce True or False.</item>
+    <item>Logical operators take condition operand(s) and produce True or False.</item>
+    <item>Operators are evaluated in order according to precedence and associativity.</item>
+    <item>Conditions are expressions that evaluate to True or False.</item>
+    <item>Decision statements allow different paths of execution (branches) through code based on conditions.</item>
+    <item>Decision statements can be nested inside other decision statements.</item>
+    <item>Conditional expressions are single-line versions of if-else statements.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write programs that evaluate conditions and execute code statements accordingly with the correct order of operations. The programming practice below ties together most topics presented in the chapter.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 4 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>bool(x)</entry>
+    <entry>Converts <code class="python inline-code">x</code> to a boolean value, either True or False.</entry>
+    </row>
+    <row>
+    <entry>Operator</entry>
+    <entry>Description</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x == y</code><newline/>
+    (equality)</entry>
+    <entry>Compares the values of x and y and returns True if the values are equal and False otherwise.
+    Ex: <code class="python inline-code">10 == 10</code> is <code class="python inline-code">True</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x != y</code><newline/>
+    (inequality)</entry>
+    <entry>Compares the values of x and y and returns True if the values are inequal and False otherwise. Ex: <code class="python inline-code">7 != 4</code> is <code class="python inline-code">True</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x > y</code><newline/>
+    (greater than)</entry>
+    <entry>Compares the values of x and y and returns True if the x is greater than y and False otherwise. Ex: <code class="python inline-code">9 > 3</code> is <code class="python inline-code">True</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x &lt; y</code><newline/>
+    (less than)</entry>
+    <entry>Compares the values of x and y and returns True if the x is less than y and False otherwise. Ex: <code class="python inline-code">9 &lt; 8</code> is <code class="python inline-code">False</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x >= y</code><newline/>
+    (greater than or equal)</entry>
+    <entry>Compares the values of x and y and returns True if the x is greater than or equal to y and False otherwise. Ex: <code class="python inline-code">2 >= 2</code> is <code class="python inline-code">True</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x &lt;= y</code><newline/>
+    (less than or equal)</entry>
+    <entry>Compares the values of x and y and returns True if the x is less than or equal to y and False otherwise. Ex: <code class="python inline-code">8 &lt;= 7</code> is <code class="python inline-code">False</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x and y</code><newline/>
+    (logical)</entry>
+    <entry>Evaluates the boolean values of x and y and returns True if both are True. Ex: <code class="python inline-code">True and False</code> is <code class="python inline-code">False</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">x or y</code><newline/>
+    (logical)</entry>
+    <entry>Evaluates the boolean values of x and y and returns True if either is True. Ex: <code class="python inline-code">True or False</code> is <code class="python inline-code">True</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">not x</code><newline/>
+    (logical)</entry>
+    <entry>Evaluates the boolean value of x and returns True if the value is False and False if the value is True. Ex: <code class="python inline-code">not True</code> is <code class="python inline-code">False</code>.</entry>
+    </row>
+    <row>
+    <entry>Decision statement</entry>
+    <entry>Description</entry>
+    </row>
+    <row>
+    <entry><span class="blue-code">if statement</span></entry>
+    <entry><code class="python inline-code">
+    # Statements before
+    if condition:
+    # Body
+    # Statements after
+    </code></entry>
+    </row>
+    <row>
+    <entry><span class="blue-code">else statement</span></entry>
+    <entry><code class="python inline-code">
+    # Statements before
+    <span class="purple-code">if</span> condition:
+    # Body
+    else:
+    # Body
+    # Statements after
+    </code></entry>
+    </row>
+    <row>
+    <entry>elif statement</entry>
+    <entry><code class="python inline-code">
+    # Statements before
+    <span class="purple-code">if</span> condition:
+    # Body
+    elif condition:
+    # Body
+    else:
+    # Body
+    # Statements after
+    </code></entry>
+    </row>
+    <row>
+    <entry>nested if statement</entry>
+    <entry><code class="python inline-code">
+    # Statements before
+    if condition:
+    if condition:
+    # Body
+    else:
+    # Body
+    else:
+    if condition:
+    # Body
+    else:
+    # Body
+    # Statements after
+    </code></entry>
+    </row>
+    <row>
+    <entry><span class="blue-code">conditional expression</span></entry>
+    <entry><code class="python inline-code"><span class="blue-code">expression_if_true</span> <span class="purple-code">if</span> <span class="blue-code">condition</span> <span class="purple-code">else</span> <span class="blue-code">expression_if_false</span></code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </section>
+    </content>
 </document>

@@ -6,5 +6,152 @@
     <md:uuid>ed38c860-c4aa-430c-a340-b4cccf1df153</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify the branches taken in an if-elif and if-elif-else statement</item>
+    <item>Create a chained decision statement to evaluate multiple conditions</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>elif</title>
+    <para id="para-00002"><span class="red-code">Sometimes,</span> a complicated decision is based on more than a single condition. Ex: A travel planning site reviews the layovers on an itinerary. If a layover is greater than 24 hours, the site should suggest accommodations. <emphasis effect="italics">Else if</emphasis> the layover is less than 1 hour, the site should alert for a possible missed connection.</para>
+    <para id="para-00003">Two separate if statements <span class="red-code">do not</span> guarantee that only one branch is taken <span class="red-code">and might result in both branches being taken</span>. Ex: The program below attempts to add a curve based on the input test score. If the input is 60, both if statements are incorrectly executed, and the resulting score is 75.</para>
+    <code class="python" lang="python">
+    score = int(input())
+    if score &lt; 70:
+    score += 10
+    # Wrong:
+    if 70 &lt;= score &lt; 85:
+    score += 5
+    </code>
+    <para id="para-00004">Chaining decision statements with elif allows the programmer to check for multiple conditions. An <term id="term-00001">elif</term>, short for else if, statement, checks a condition when the prior decision statement's condition is false. An elif statement is part of a chain and must follow an if (or elif) statement.</para>
+    <figure id="fig-00001">
+    <media alt="">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption>if-elif statement template
+    <code class="python" lang="python">
+    # Statements before
+    if condition:
+    # Body
+    elif condition:
+    # Body
+    # Statements after
+    </code></caption>
+    </figure>
+    <note class="guided-slides" id="note-00001">
+    <title>Example: Livestream features</title>
+    <media alt="livestream_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/livestream"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Using elif</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch04-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch04-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch04-m05-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch04-m05-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch04-m05-p05"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>if-elif-else statements</title>
+    <para id="para-00010">Elifs can be chained with an if-else statement to create a more complex decision statement. Ex: A program shows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or two) places. Else if the piece is a bishop, show diagonal moves. Else if...(finish for the rest of the pieces).</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Example: Possible chess moves</title>
+    <media alt="chess_moves_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/chess-moves"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Using elif within if-elif-else statements</title>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch04-m05-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch04-m05-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch04-m05-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch04-m05-p09"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Crochet hook size conversion</title>
+    <para id="para-00015">Write a program that reads in a crochet hook's US size and computes the metric diameter in millimeters. (A subset of sizes is used.) If the input does not match B-G, the diameter should be assigned with -1.0. Ex: If the input is D, the output is "3.25 mm".</para>
+    <para id="para-00016">Size conversions for US size: mm</para>
+    <list id="list-00002">
+    <item>B : 2.25</item>
+    <item>C : 2.75</item>
+    <item>D : 3.25</item>
+    <item>E : 3.5</item>
+    <item>F : 3.75</item>
+    <item>G : 4.0</item>
+    </list>
+    <media alt="crochet_hook_size_conversion_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_06_06_Crochet-hook-size-conversion.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Color wavelengths</title>
+    <para id="para-00017">Write a program that reads in an integer representing a visible light wavelength in nanometers. Print the corresponding color using the following inclusive ranges:</para>
+    <list id="list-00003">
+    <item>'Violet': 380–449</item>
+    <item>'Blue': 450–484</item>
+    <item>'Cyan': 485–499</item>
+    <item>'Green': 500–564</item>
+    <item>'Yellow': 565–589</item>
+    <item>'Orange': 590–624</item>
+    <item>'Red': 625–750</item>
+    </list>
+    <para id="para-00018">Assume the input is within the visible light spectrum, 380-750 inclusive.</para>
+    <para id="para-00019">Given input:</para>
+    <preformat class="output">
+    550
+    </preformat>
+    <para id="para-00020">The output is:</para>
+    <preformat class="output">
+    Green
+    </preformat>
+    <!--<media alt="*_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/*"/>
+    </media>-->
+    </note>
+    </section>
+    </content>
 </document>
