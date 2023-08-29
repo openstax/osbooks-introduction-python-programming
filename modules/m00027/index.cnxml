@@ -1,10 +1,18 @@
-<document xmlns="http://cnx.rice.edu/cnxml">
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
   <title>Introduction</title>
-  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <metadata xmlns:md="http://cnx.rice.edu/mdml">
     <md:title>Introduction</md:title>
     <md:content-id>m00027</md:content-id>
     <md:uuid>8f6f6eed-99bd-4cff-b4a1-42b3b9c96bfd</md:uuid>
   </metadata>
-  <content>
-  </content>
+  <content class="introduction">
+    <figure class="splash" id="fig-00001">
+    <media alt="A dirt path in the woods splits into separate paths">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://unsplash.com/photos/u0vgcIOQG08">Photo</link> by <link url="https://unsplash.com/@madebyjens">Jens Lelie</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+    </figure>
+    <para id="para-00001">The Python interpreter follows a single path of execution when executing a program. What if a programmer wants to define multiple possible paths? Ex: Instead of always taking the right path, a program <span class="purple-code">uses the path width to</span> decide which path to take. If the left path is wider, take the right path. Else, take the left path.</para>
+    <para id="para-00002">A <term id="term-00001">branch</term> is a group of statements that execute based on a condition. Chapter 2 introduced expressions. Chapter 4 explores how expressions can be used as conditions to make decisions in programs.</para>
+    </content>
 </document>
