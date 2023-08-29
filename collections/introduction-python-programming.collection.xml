@@ -62,5 +62,17 @@
         <col:module document="m00035"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 5: Loops</md:title>
+      <col:content>
+        <col:module document="m00036"/>
+        <col:module document="m00037"/>
+        <col:module document="m00038"/>
+        <col:module document="m00039"/>
+        <col:module document="m00040"/>
+        <col:module document="m00041"/>
+        <col:module document="m00042"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>
