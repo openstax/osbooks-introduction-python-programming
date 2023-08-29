@@ -6,5 +6,203 @@
     <md:uuid>9bbc37ee-8593-417d-ad47-90e41daaad08</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Explain a boolean value</item>
+    <item>Use bool variables to store boolean values</item>
+    <item>Demonstrate converting integers, floats, and strings to booleans</item>
+    <item>Demonstrate converting booleans to integers, floats, and strings</item>
+    <item>Use comparison operators to compare integers, floats, and strings</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>bool data type</title>
+    <para id="para-00002">People often ask true/false questions or binary questions. Ex: True or False: I like pineapple on pizza. The response is a boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for boolean, represents a binary value of either True or False. <code class="python inline-code">True</code> and <code class="python inline-code">False</code> are keywords, and capitalization <span class="purple-code">is required</span>.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Example: Crosswalk sign</title>
+    <media alt="crosswalk_sign_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/crosswalk-sign"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Using boolean variables</title>
+    <para id="para-00003">Consider the following code:
+    <code class="python" lang="python">
+    is_fruit = "True"
+    is_vegetable = 0
+    is_dessert = False
+    </code></para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch04-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch04-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch04-m01-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch04-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch04-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch04-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Type conversion with bool()</title>
+    <para id="para-00010">Deciding whether a value is True or False is helpful when writing programs/statements based on decisions. Converting data types to booleans can seem unintuitive at first. Ex: Is "ice cream" True? But the conversion is actually simple.</para>
+    <para id="para-00011"><term id="term-00002">bool()</term> converts a value to a boolean value, True or False.
+    <list id="list-00002">
+    <item><code class="python inline-code">True</code>: any non-zero number, any non-empty string</item>
+    <item><code class="python inline-code">False</code>: 0, empty string</item>
+    </list></para>
+    <note class="guided-slides" id="note-00003">
+    <title>Converting integers, floats, and strings using bool()</title>
+    <media alt="converting_using_bool_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/converting-using-bool"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Converting numeric types and strings to booleans</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch04-m01-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch04-m01-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch04-m01-p09"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch04-m01-p10"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch04-m01-p11"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="learning-questions" id="note-00005">
+    <title>Converting booleans to numeric types and strings</title>
+    <para id="para-00017">Given <code class="python inline-code">is_on = True</code>, what is the value of each expression?</para>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch04-m01-p12"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch04-m01-p13"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CPL-ch04-m01-p14"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Comparison operators</title>
+    <para id="para-00021"><span class="red-code">Programmers often have to answer questions like "</span>Is the current user the admin?<span class="red-code">"</span> A programmer may want to compare a string variable, user, to the string, "admin". <term id="term-00003">Comparison operators</term> are used to compare values, and the result is either True or False. Ex: is_admin = (user == "admin"). user is compared with "admin" using the == operator, which tests for equality. The boolean variable, is_admin, is assigned with the boolean result.</para>
+    <para id="para-00022">The 6 comparison operators:
+    <list id="list-00003">
+    <item><term id="term-00004">==</term> : equal to</item>
+    <item><term id="term-00005">!=</term> : not equal to</item>
+    <item><term id="term-00006">></term> : greater than</item>
+    <item><term id="term-00007">&lt;</term> : less than</item>
+    <item><term id="term-00008">>=</term> : greater than or equal to</item>
+    <item><term id="term-00009">&lt;=</term> : less than or equal to</item>
+    </list></para>
+    <note class="guided-slides" id="note-00006">
+    <title>Example: Rolling a d20 in a tabletop game</title>
+    <media alt="rolling_d20_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/rolling-d20"/>
+    </media>
+    </note>
+    <note class="trueorfalse" id="note-00007">
+    <title>Comparing values</title>
+    <para id="para-00023">For each new variable, what is the value of compare_result?</para>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00024"><link class="os-embed" url="#exercise/CPL-ch04-m01-p15"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00025"><link class="os-embed" url="#exercise/CPL-ch04-m01-p16"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00026"><link class="os-embed" url="#exercise/CPL-ch04-m01-p17"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00027"><link class="os-embed" url="#exercise/CPL-ch04-m01-p18"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00028"><link class="os-embed" url="#exercise/CPL-ch04-m01-p19"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00029"><link class="os-embed" url="#exercise/CPL-ch04-m01-p20"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00008">
+    <title>= vs ==</title>
+    <para id="para-00030">A common mistake is using '=' for comparison instead of '=='. Ex: <code class="python inline-code">is_zero = num=0</code> will always assign is_zero and num with 0, regardless of num's original value. '=' performs assignment and will modify the variable. '==' performs comparison, does not modify the variable, and produces True or False.</para>
+    </note>
+    <para id="para-00031"><emphasis>Exploring further:</emphasis></para>
+    <list id="list-00004">
+    <item><link url="https://www.unicode.org/charts/PDF/U0000.pdf">Unicode Basic Latin Chart</link></item>
+    </list>
+    <note class="practice-program" id="note-00009">
+    <title>Programming practice: Friday boolean</title>
+    <para id="para-00032">"It's Friday, I'm in love" -- <span class="purple-code">from Friday I'm in Love, a song released by the Cure in 1992.</span></para>
+    <para id="para-00033">Write a program that reads in the day of the week. Assign the boolean variable, in_love, with the result of whether the day is Friday or not.</para>
+    <media alt="programming_practice_-Friday_boolean_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_01_Programming-practice_-Friday-boolean.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00010">
+    <title>Programming practice: Even numbers</title>
+    <para id="para-00034">Write a program that reads in an integer and prints whether the integer is even or not. Remember, a number is even if number % 2 == 0. Ex: If the input is 6, the output is "6 is even: True".</para>
+    <media alt="programming_practice_-Even_numbers_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_02_Programming-practice_-Even-numbers.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

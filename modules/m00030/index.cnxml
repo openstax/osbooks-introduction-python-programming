@@ -6,5 +6,206 @@
     <md:uuid>5c67f6aa-4df2-4221-84be-df60c7fb2756</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Explain the purpose of logical operators</item>
+    <item>Describe the truth tables for and, or, and not</item>
+    <item>Create expressions with logical operators</item>
+    <item>Interpret if-else statements with conditions using logical operators</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Logical operator: and</title>
+    <para id="para-00002">Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that hour >= 9 and hour &lt; 17. A <term id="term-00001">logical operator</term> takes condition operand(s) and produces True or False.</para>
+    <para id="para-00003">Python has 3 logical operators: <emphasis effect="italics">and</emphasis>, <emphasis effect="italics">or</emphasis>, and <emphasis effect="italics">not</emphasis>. The <term id="term-00002">and</term> operator takes 2 condition operands and returns True if both conditions are True.</para>
+    <table summary=" " id="table-00001">
+    <title>Truth table: p and q</title>
+    <tgroup cols="3">
+    <thead>
+    <row>
+    <entry>p</entry>
+    <entry>q</entry>
+    <entry>p and q</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>True</entry>
+    <entry>True</entry>
+    <entry>True</entry>
+    </row>
+    <row>
+    <entry>True</entry>
+    <entry>False</entry>
+    <entry>False</entry>
+    </row>
+    <row>
+    <entry>False</entry>
+    <entry>True</entry>
+    <entry>False</entry>
+    </row>
+    <row>
+    <entry>False</entry>
+    <entry>False</entry>
+    <entry>False</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="guided-slides" id="note-00001">
+    <title>Example: Museum entry</title>
+    <media alt="museum_entry_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/museum-entry"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Using the and operator</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch04-m03-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch04-m03-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch04-m03-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch04-m03-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Logical operator: or</title>
+    <para id="para-00008">Sometimes a decision only requires one condition to be true. Ex: If a student is in the band or choir, they will perform in the spring concert. The <term id="term-00003">or</term> operator takes 2 condition operands and returns True if either condition is True.</para>
+    <table summary=" " id="table-00002">
+    <title>Truth table: p or q</title>
+    <tgroup cols="3">
+    <thead>
+    <row>
+    <entry>p</entry>
+    <entry>q</entry>
+    <entry>p or q</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>True</entry>
+    <entry>True</entry>
+    <entry>True</entry>
+    </row>
+    <row>
+    <entry>True</entry>
+    <entry>False</entry>
+    <entry>True</entry>
+    </row>
+    <row>
+    <entry>False</entry>
+    <entry>True</entry>
+    <entry>True</entry>
+    </row>
+    <row>
+    <entry>False</entry>
+    <entry>False</entry>
+    <entry>False</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="guided-slides" id="note-00003">
+    <title>Example: Streaming prompt</title>
+    <media alt="streaming_prompt_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/streaming-prompt"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Using the or operator</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch04-m03-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch04-m03-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch04-m03-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Logical operator: not</title>
+    <para id="para-00012">If the computer is not on, press the power button. The <term id="term-00004">not</term> operator takes 1 condition operand and returns True when the operand is False and returns False when the operand is True.</para>
+    <para id="para-00013"><emphasis effect="italics">not</emphasis> is a useful operator that can make a condition more readable and can be used to toggle a boolean's value. Ex: is_on = not is_on.</para>
+    <table summary=" " id="table-00003">
+    <title>Truth table: not p</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>p</entry>
+    <entry>not p</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>True</entry>
+    <entry>False</entry>
+    </row>
+    <row>
+    <entry>False</entry>
+    <entry>True</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="guided-slides" id="note-00005">
+    <title>Example: Diving warning</title>
+    <media alt="diving_warning_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/diving-warning"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00006">
+    <title>Using the not operator</title>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch04-m03-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch04-m03-p09"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch04-m03-p10"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00007">
+    <title>Speed limits</title>
+    <para id="para-00017">Write a program that reads in a car's speed as an integer and checks if the car's speed is within the freeway limits. A car's speed must be at least 45 mph but no greater than 70 mph on the freeway.</para>
+    <para id="para-00018">If the speed is within the limits, print "Good driving". Else, print "Follow the speed limits"</para>
+    <media alt="speed_limits_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_04_05_Speed-limits.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
