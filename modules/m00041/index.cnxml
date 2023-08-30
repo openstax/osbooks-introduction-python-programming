@@ -6,5 +6,88 @@
     <md:uuid>4795a066-016c-4f0d-aa1b-9385e45c5351</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use loop <code class="python inline-code">else</code> statement to identify when the loop execution is interrupted using a <code class="python inline-code">break</code> statement.</item>
+    <item>Implement a loop <code class="python inline-code">else</code> statement with a <code class="python inline-code">for</code> or a <code class="python inline-code">while</code> loop.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Loop else</title>
+    <para id="para-00002">A <term id="term-00001">loop else</term> statement runs after the loop's execution is completed without being interrupted by a break statement. A loop <code class="python inline-code">else</code> is used to identify if the loop is terminated normally or the execution is interrupted by a <code class="python inline-code">break</code> statement.</para>
+    <para id="para-00003">Ex: <span class="blue-code">A</span> for loop that iterates over a list of numbers to find if the value 10 is in the list. In each iteration, if 10 is observed, the statement "Found 10!" is printed and the execution can terminate using a break statement. If 10 is not in the list, the loop terminates when all integers in the list are evaluated, and hence the else statement will run and print "10 is not in the list." Alternatively, a boolean variable can be used to track whether number 10 is found after loop's execution terminates.</para>
+    <example id="exam-00001">
+    <title>Finding 10!</title>
+    <para id="para-00004">In the code examples below, the code on the left prints "Found 10!" if the variable <code class="python inline-code">i</code>'s value is 10. If the value 10 is not in the list, the code prints "10 is not in the list." The code on the right uses the <code class="python inline-code">seen</code> boolean variable to track if the value 10 is in the list. After loop's execution, if <code class="python inline-code">seen</code>'s value is still false, the code prints "10 is not in the list."</para>
+    <table summary=" " id="table-00001">
+      <tgroup cols="1">
+    <tbody>
+    <row>
+    <entry>
+    <preformat class="python inline-code">
+    <code class="python" lang="python">
+    numbers = [2, 5, 7, 11, 12]
+    for i in numbers:
+    if i == 10:
+    print("Found 10!")
+    break
+    else:
+    print("10 is not in the list.")
+    </code>
+    </preformat></entry>
+    <entry><preformat class="python inline-code">
+    <code class="python" lang="python">
+    numbers = [2, 5, 7, 11, 12]
+    seen = False
+    for i in numbers:
+    if i == 10:
+    print("Found 10!")
+    seen = True
+    if seen == False:
+    print("10 is not in the list.")
+    </code>
+    </preformat></entry>
+    </row>
+    </tbody>
+      </tgroup>  
+  </table>
+    </example>
+    <note class="guided-slides" id="note-00001">
+    <title>Loop else template</title>
+    <media alt="loop_else_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/loop-else"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Loop else practices</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch05-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch05-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch05-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00003">
+    <title>Sum of values less than 10</title>
+    <para id="para-00008">Write a program that given a list calculates the sum of all integer values less than 10. If a value greater than or equal to 10 is in the list, no output should be printed. Test the code for different values in the list.</para>
+    <media alt="sum_of_values_less_than_10_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_06_09_Sum-of-values-less-than-10.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

@@ -6,5 +6,125 @@
     <md:uuid>a26181ec-84d5-4729-bd51-7ee5b1047f90</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item><span class="red-code">Explain the</span> loop construct in Python.</item>
+    <item><span class="red-code">Use a</span> <code class="python inline-code">while</code> loop to implement <span class="red-code">repeating</span> tasks.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>While loop</title>
+    <para id="para-00002"><span class="red-code">A</span> <term id="term-00001"><span class="red-code">w</span>hile loop</term> is a code construct that run<span class="red-code">s</span> a set of statements<span class="red-code">,</span> known as <span class="red-code">the</span> loop body<span class="red-code">,</span> while a given condition<span class="red-code">,</span> known as <span class="red-code">the</span> loop expression<span class="red-code">,</span> is true. At each iteration, once the loop statement is executed, the loop expression is evaluated again.</para>
+    <list id="list-00002">
+    <item>If true, the loop body will execute at least one more time (also called looping or iterating one more time).</item>
+    <item>If false, the loop's execution will terminate and the next statement after the loop body will execute.</item>
+    </list>
+    <note class="guided-slides" id="note-00001">
+    <title>While loop</title>
+    <media alt="while_loop_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/while-loop"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>While loop example</title>
+    <para id="para-00003">Fibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The Fibonacci sequence starts with two ones: 1, 1, 2, 3, …. Consider the following code that prints all Fibonacci numbers less than 20, and answer the following questions.
+    <code class="python" lang="python">
+    # <span class="blue-code">I</span>nitializing the first two Fibonacci numbers
+    f = 1
+    g = 1
+    print (f, end = ' ')
+    # <span class="blue-code">R</span>unning the loop while the last Fibonacci number is less than 20
+    while g &lt; 20:
+    print(g, end = ' ')
+    # <span class="blue-code">C</span>alculating the next Fibonacci number and updating the last two sequence numbers
+    temp = f
+    f = g
+    g = temp + g
+    </code></para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch05-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch05-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch05-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Counting with a while loop</title>
+    <para id="para-00007">A <code>while</code> loop <span class="purple-code">can be used</span> to count up or down. <span class="purple-code">The counter can be used in the loop expression to determine the number of iterations executed</span>. Ex: <span class="blue-code">A</span> programmer may want <span class="blue-code">to print all even numbers between 1 and 20. The task can be done by using a counter initialized with 1. In each iteration the counter's value is increased by one, and a condition can check whether the counter's value is an even number or not. The change in the counter's value in each iteration is called</span> <span class="purple-code">the</span> <span class="blue-code"><term id="term-00002">step size</term></span>. The step size can be any positive or negative value. If the step size is a positive number, the coun<span class="red-code">ter counts in ascending order</span>, and if the step size is a negative number, the <span class="red-code">counter counts in descending order</span>.</para>
+    <example id="exam-00001">
+    <title>A program printing all <span class="blue-code">odd</span> numbers between 1 and 10.</title>
+    <code class="python" lang="python">
+    # <span class="blue-code">I</span>nitialization
+    counter = 1
+    # <span class="blue-code">W</span>hile loop condition
+    while counter &lt;= 10:
+    if counter % 2 == 1:
+    print(counter)
+    # <span class="blue-code">C</span>ounting up and increasing counter's value by 1 in each iteration
+    counter += 1
+    </code>
+    </example>
+    <note class="guided-slides" id="note-00003">
+    <title>Counting with while loop</title>
+    <media alt="counting_with_while_loop_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/counting-with-while-loop"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>while loop counting examples</title>
+    <para id="para-00008">Given the code, please answer the following questions.</para>
+    <code class="python" lang="python">
+    n = 4
+    while n > 0:
+    print(n)
+    n = n - 1
+    print("value of n after the loop is", n)
+    </code>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch05-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch05-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch05-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming Practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Reading inputs in a while loop.</title>
+    <para id="para-00012">Write a program that takes user inputs in a while loop until the user enters 'begin'. Test the code with the given input values to check that the loop does not terminate until the input is 'begin'. Once the input 'begin' is received, print "The while loop condition has been met." Enter different input words to see when the while loop condition is met.</para>
+    <media alt="reading_inputs_in_a_while_loop_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_02_01_Reading-inputs-in-a-while-loop.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Sum of odd numbers.</title>
+    <para id="para-00013">Write a program that reads two integer values, n1 and n2. Use a while loop to calculate the sum of odd numbers between n1 and n2 (inclusive of n1 and n2). Remember, a number is odd if number % 2 != 0.</para>
+    <media alt="sum_of_odd_numbers_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_02_02_Sum-of-odd-numbers.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

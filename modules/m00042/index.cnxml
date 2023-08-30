@@ -6,5 +6,131 @@
     <md:uuid>9e91a2ed-8b5b-4a33-84cf-5ccc67a76651</md:uuid>
   </metadata>
   <content>
-  </content>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>A <code class="python inline-code">while</code> loop runs a set of statements, known as the loop body, while a given condition, known as the loop expression, is true.</item>
+    <item>A <code class="python inline-code">for</code> loop can be used to iterate over elements of a container object.</item>
+    <item>A <code class="python inline-code">range()</code> function generates a sequence of integers between the two numbers given a step size. </item>
+    <item>A nested loop has one or more loops within the body of another loop.</item>
+    <item>A <code class="python inline-code">break</code> statement is used within a <code class="python inline-code">for</code> or a <code class="python inline-code">while</code> loop to allow the program execution to exit the loop once a given condition is triggered.</item>
+    <item>A <code class="python inline-code">continue</code> statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely.</item>
+    <item>A loop <code class="python inline-code">else</code> statement runs after the loop's execution is completed without being interrupted by a <code class="python inline-code">break</code> statement.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write programs with loop constructs. The programming practice below ties together most topics presented in the chapter.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 5 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code class="python inline-code">range(end)</code></entry>
+    <entry>Generates a sequence beginning at 0 until end with step size of 1.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">range(start, end)</code></entry>
+    <entry>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with step size of 1.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">range(start, end, s)</code></entry>
+    <entry>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with the step size of <code class="python inline-code">s</code>.</entry>
+    </row>
+    <row>
+    <entry>Loop constructs</entry>
+    <entry>Description</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">while</code> loop</entry>
+    <entry><code class="python" lang="python">
+    # initialization
+    while expression:
+    # loop body
+    # statements after the loop
+    </code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">for</code> loop</entry>
+    <entry><code class="python" lang="python">
+    # initialization
+    for loop_variable in container:
+    # loop body
+    # statements after the loop
+    </code></entry>
+    </row>
+    <row>
+    <entry>Nested <code class="python inline-code">while</code> loop</entry>
+    <entry><code class="python" lang="python">
+    while outer_loop_expression:
+    # outer loop body (1)
+    while inner_loop_expression:
+    # inner loop body
+    # outer loop body (2)
+    # statements after the loop
+    </code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">break</code> statement</entry>
+    <entry><code class="python" lang="python">
+    # initialization
+    while loop_expression:
+    # loop body
+    if break_condition:
+    break
+    # remaining body of loop
+    # statements after the loop
+    </code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">continue</code> statement</entry>
+    <entry><code class="python" lang="python">
+    # initialization
+    while loop_expression:
+    # loop body
+    if continue_condition:
+    continue
+    # remaining body of loop
+    # statements after the loop
+    </code></entry>
+    </row>
+    <row>
+    <entry>Loop <code class="python inline-code">else</code> statement</entry>
+    <entry><code class="python" lang="python">
+    # initialization
+    for loop_expression:
+    # loop body
+    if break_condition:
+    break
+    # remaining body of loop
+    else:
+    # loop else statement
+    # statements after the loop
+    </code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <section id="sect-00001">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00001">
+    <title>Prime numbers</title>
+    <para id="para-00003">Write a program that takes in a positive integer number (N) and prints out the first N prime numbers on separate lines. Note: a prime number is a number that is not divisible by any positive number larger than 1. To check if a number is prime, the condition of number % i != 0 can be checked for i greater than 1 and less than number.</para>
+    <para id="para-00004">Ex: if N = 6, the output is:</para>
+    <preformat class="python inline-code">
+    2
+    3
+    5
+    7
+    11
+    13
+    </preformat>
+    <media alt="prime_numbers_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_07_10_Prime-numbers.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
