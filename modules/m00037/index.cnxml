@@ -29,7 +29,7 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>While loop example</title>
-    <para id="para-00003">Fibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The Fibonacci sequence starts with two ones: 1, 1, 2, 3, …. Consider the following code that prints all Fibonacci numbers less than 20, and answer the following questions.
+    <para id="para-00003">Fibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The Fibonacci sequence starts with two ones: 1, 1, 2, 3, …. Consider the following code that prints all Fibonacci numbers less than 20, and answer the following questions.</para>
     <code class="python" lang="python">
     # <span class="blue-code">I</span>nitializing the first two Fibonacci numbers
     f = 1
@@ -42,7 +42,7 @@
     temp = f
     f = g
     g = temp + g
-    </code></para>
+    </code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch05-m01-p01"/></para>
