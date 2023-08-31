@@ -28,12 +28,12 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using boolean variables</title>
-    <para id="para-00003">Consider the following code:
+    <para id="para-00003">Consider the following code:</para>
     <code class="python" lang="python">
     is_fruit = "True"
     is_vegetable = 0
     is_dessert = False
-    </code></para>
+    </code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch04-m01-p01"/></para>
