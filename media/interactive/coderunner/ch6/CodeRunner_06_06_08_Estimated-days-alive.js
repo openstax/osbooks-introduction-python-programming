@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": null, "solution": "def days_alive(age):\n    return round(age * 365.24)\n\nuser_age = int(input())\ndays = days_alive(user_age)\nprint(\"You have been alive about\", days, \"days.\")"}], "input": "21", "showSolution": true};

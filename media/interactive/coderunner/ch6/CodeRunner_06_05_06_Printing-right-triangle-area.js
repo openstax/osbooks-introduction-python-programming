@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "# Define print_area()\n\nbase = float(input())\nheight = float(input())\nprint_area(base, height)", "solution": "def print_area(b, h):\n    area = (b * h) / 2.0\n    print(\"Triangle area:\", area)\n\nbase = float(input())\nheight = float(input())\nprint_area(base, height)"}], "input": "3\n4", "showSolution": true};
