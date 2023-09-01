@@ -59,6 +59,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title><span class="purple-code">Functions calling</span> functions</title>
+    <para id="para-00017">Consider the book club example above.</para>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch06-m02-p05"/></para>
