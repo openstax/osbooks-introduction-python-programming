@@ -6,5 +6,112 @@
     <md:uuid>d19246f9-6a62-4353-9d1e-b6b4620c5012</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify the control flow of a program.</item>
+    <item>Describe how control flow moves between statements and function calls.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Control flow and functions</title>
+    <para id="para-00002"><term id="term-00001">Control flow</term> is the sequence of program execution. A program's control flow <span class="purple-code">begins at the main program but</span> rarely follows a strict sequence. Ex: Control flow skips over lines when a conditional statement isn't executed.</para>
+    <para id="para-00003">When execution reaches a function call, control flow moves to where the function is defined and executes the function statements. Then, control flow moves back to where the function was called and continues the sequence.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Calling a brunch menu function</title>
+    <media alt="brunch_menu_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/brunch-menu"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Following the control flow</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch06-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch06-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch06-m02-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch06-m02-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title><span class="purple-code">Functions calling</span> functions</title>
+    <para id="para-00008">Functions frequently call other functions to keep the modularity of each function performing one task. Ex: A function that calculates an order total may call a function that calculates sales tax. When a function <span class="purple-code">called from another function</span> finishes execution, control flow returns to the calling function.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Example: Book club email messages</title>
+    <media alt="email_messages_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/email-messages"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title><span class="purple-code">Functions calling</span> functions</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch06-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch06-m02-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Updated terms and conditions prompt</title>
+    <para id="para-00011">Write an updated function terms() that asks the user to accept the terms and conditions, reads in Y/N, and outputs a response by calling accepted() or rejected().  accepted() prints "Thank you for accepting the terms." rejected() prints "You have rejected the terms. Thank you."</para>
+    <para id="para-00012">Given inputs <span class="purple-code">2, "Y" and "N"</span>, the output is:</para>
+    <preformat class="python inline-code">
+    Do you accept the terms and conditions?
+    Y
+    Thank you for accepting the terms.
+    </preformat>
+    <para id="para-00013">Given a function call to terms() and input "N", the output is:</para>
+    <preformat class="python inline-code">
+    Do you accept the terms and conditions?
+    N
+    You have rejected the terms. Thank you.
+    </preformat>
+    <media alt="updated_terms_and_conditions_prompt_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_03_03_Updated-terms-and-conditions-prompt.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Laundromat information</title>
+    <para id="para-00014">Write a program that uses 3 functions to print information about a laundromat, <span class="purple-code">Liam's Laundry</span>:</para>
+    <list id="list-00002">
+    <item>laundromat_info(): Prints the name, <span class="purple-code">Liam's Laundry</span>, and hours of operation, <span class="purple-code">7a - 11p</span>,  and calls washers_open() and dryers_open()</item>
+    <item>washers_open(): <span class="purple-code">Reads an integer</span>, assigns washer_count with <span class="purple-code">the value</span>, and prints washer_count</item>
+    <item>dryers_open(): <span class="purple-code">Reads an integer</span>, assigns dryer_count with <span class="purple-code">the value</span>, and prints dryer_count</item>
+    </list>
+    <para id="para-00015">The main program should just call laundromat_info().</para>
+    <para id="para-00016"><span class="purple-code">Given inputs 50 and 40</span>, the output is:</para>
+    <preformat class="python inline-code">
+    Liam's Laundry
+    7a - 11p
+      Open washers: 50
+      Open dryers: 40
+    </preformat>
+    <media alt="laundromat_information_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_03_04_Laundromat-information.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
