@@ -1,10 +1,18 @@
-<document xmlns="http://cnx.rice.edu/cnxml">
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
   <title>Introduction</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
     <md:title>Introduction</md:title>
     <md:content-id>m00043</md:content-id>
     <md:uuid>90dfadac-e0d9-44b4-9cc3-5300fa166d24</md:uuid>
   </metadata>
-  <content>
-  </content>
+  <content class="introduction">
+    <figure class="splash" id="fig-00001">
+    <media alt="A row of arcade games">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://unsplash.com/photos/jbIsTd7rdd8">Photo</link> by <link url="https://unsplash.com/@spideyjoey">Joey kwok</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+    </figure>
+    <para id="para-00001">Functions are the next step towards creating optimized code as a software developer. If the same block of code is reused repeatedly, a function allows the programmer to write the block of code once, name the block, and use the code as many times as needed by calling the <span class="red-code">block by</span> name. Functions can read in values and return values to perform tasks including complex calculations.</para>
+    <para id="para-00002">Like branching statements discussed in Chapter <span class="blue-code">4</span>, functions allow different paths of execution through a program, and Chapter <span class="blue-code">6</span> discusses control flow and the scope of variables in more detail.</para>
+    </content>
 </document>
