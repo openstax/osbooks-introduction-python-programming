@@ -27,10 +27,10 @@
     <title>For loop over a string container</title>
     <para id="para-00003">A string variable can be considered as a container of multiple characters, and hence can be iterated on. Given the following code, please answer the questions.</para>
     <code class="python" lang="python">
-    str_var = "A string"
+    str_var = "A string"<newline />
     count = 0
     for c in str_var:
-    count += 1
+    &#160;&#160;count += 1<newline />
     print(count)
     </code>
     <exercise id="exer-00001">
