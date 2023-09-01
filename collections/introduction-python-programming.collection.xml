@@ -74,5 +74,18 @@
         <col:module document="m00042"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 6: Functions</md:title>
+      <col:content>
+        <col:module document="m00043"/>
+        <col:module document="m00044"/>
+        <col:module document="m00045"/>
+        <col:module document="m00046"/>
+        <col:module document="m00047"/>
+        <col:module document="m00048"/>
+        <col:module document="m00049"/>
+        <col:module document="m00050"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>
