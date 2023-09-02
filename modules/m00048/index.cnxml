@@ -6,5 +6,136 @@
     <md:uuid>9ddb31b9-4793-47ef-890a-09cb61644fcc</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify a function's return value.</item>
+    <item>Employ return statements in functions to return values.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Returning from a function</title>
+    <para id="para-00002">When a function finishes, the function returns and provides a result to the calling code. A <term id="term-00001">return statement</term> finishes the function execution and can specify a value to return to the function's caller. Functions introduced so far have not had a return statement, which is the same as returning <code class="python inline-code">None</code>, <span class="purple-code">representing no value</span>.</para>
+    <note class="guided-slides" id="note-00001">
+    <title><span class="purple-code">Returning a value from</span> a function</title>
+    <media alt="returning_value_from_function_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/returning-value-from-function"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Using return statements</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch06-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch06-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch06-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Using multiple return statements</title>
+    <para id="para-00006">Functions that have multiple execution paths may use multiple return statements. Ex: A function with an if-else statement may have two return statements for each branch. Return statements always end the function and return control flow to the calling code.</para>
+    <para id="para-00007"><span class="purple-code">In the figure below, calc_mpg() takes in miles driven and gallons of gas used and calculates a car's miles per gallon. calc_mpg() checks if gallons is 0 (to avoid division by 0) and if so returns -1, a value often used to indicate a problem.</span></para>
+    <table summary=" " id="table-00001">
+    <title>Calculating miles-per-gallon and checking for division by zero</title>
+    <tgroup cols="1">
+    <tbody>
+      <row>
+    <entry>
+    <code class="python" lang="python">
+    <span class="blue-code">def</span> calc_mpg(miles, gallons):
+      <span class="green-code">if gallons > 0:</span>
+        mpg = miles/gallons
+        <span class="blue-code">return</span> mpg
+      else:
+        print("Gallons can't be 0")
+        return -1<newline/>
+    car_1_mpg = calc_mpg(448, 16)
+    print("Car 1's mpg is", car_1_mpg)
+    car_2_mpg = calc_mpg(300, 0)
+    print("Car 2's mpg is", car_2_mpg)
+    </code></entry>
+    <entry><code class="python" lang="python">
+    Car 1's mpg is 28.0
+    Gallons can't be 0
+    Car 2's mpg is -1
+    </code></entry>
+  </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00003">
+    <title>Multiple return statements</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch06-m05-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch06-m05-p05"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Using functions as values</title>
+    <para id="para-00010">Functions are objects that evaluate to values, so function calls can be used in expressions. A function call can be combined with other function calls, variables, and literals as long as the return value is compatible with the operation.</para>
+    <note class="guided-slides" id="note-00004">
+    <title>Using function calls in expressions</title>
+    <media alt="function_calls_in_expressions_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/function-calls-in-expressions"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00005">
+    <title>Using function values</title>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch06-m05-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch06-m05-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00006">
+    <title>Estimated days alive</title>
+    <para id="para-00013">Write a function days_alive() that takes in an age in years and outputs the estimated days the user has been alive as an integer. Assume each year has 365.24 days. Use round(), which takes a number and returns the nearest whole number.</para>
+    <para id="para-00014">Then write a main program that reads in a user's age and outputs the result of days_alive().</para>
+    <para id="para-00015">Given input:</para>
+    <preformat class="python inline-code">
+    21
+    </preformat>
+    <para id="para-00016">The output is:</para>
+    <preformat class="python inline-code">
+    You have been alive about 7670 days.
+    </preformat>
+    <media alt="estimated_days_alive_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_06_08_Estimated-days-alive.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00007">
+    <title>Averaging lists</title>
+    <para id="para-00017">Write a function avg_list() that takes in a list and returns the average of the list values.</para>
+    <media alt="averaging_lists_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_06_09_Averaging-lists.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

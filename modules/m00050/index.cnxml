@@ -6,5 +6,90 @@
     <md:uuid>b6fa09c9-9410-43ee-8f26-e9cce9399e96</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title/>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Functions are named blocks of code that perform tasks when called and make programs more organized and optimized.</item>
+    <item>Control flow is the sequence of program execution. Control flow moves between calling code and function code when a function is called.</item>
+    <item>Variable scope refers to where a variable can be accessed. Global variables can be accessed anywhere in a program. Local variables are limited in scope, such as to a function.</item>
+    <item>Parameters are function inputs defined with the function. Arguments are values passed to the function as input by the calling code. Parameters are assigned with the arguments' values.</item>
+    <item>Function calls can use positional arguments to map values to parameters in order.</item>
+    <item>Function calls can use keyword arguments to map values using parameter names in any order.</item>
+    <item>Functions can define default parameter values to allow for optional arguments in function calls.</item>
+    <item>Python uses a pass-by-object-reference system to assign parameters with the object values referenced by the arguments.</item>
+    <item>Functions can use return statements to return values back to the calling code.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write functions that have any number of parameters and return a value and programs that call functions using keyword arguments and optional arguments.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter <span class="blue-code">6</span> reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Construct</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>Function definition</entry>
+    <entry><code class="python" lang="python">
+    def function_name():
+      """Docstring"""
+      # Function body
+    </code></entry>
+    </row>
+    <row>
+    <entry>Parameter</entry>
+    <entry><code class="python" lang="python">
+    def function_name(parameter_1):
+      # Function body
+    </code></entry>
+    </row>
+    <row>
+    <entry>Argument</entry>
+    <entry><code class="python" lang="python">
+    def function_name(parameter_1):
+      # Function body<newline/>
+    function_name(argument_1)
+    </code></entry>
+    </row>
+    <row>
+    <entry>Return statement</entry>
+    <entry><code class="python" lang="python">
+    def function_name():
+      # Function body
+      return result # Returns the value of result to the caller
+    </code></entry>
+    </row>
+    <row>
+    <entry>Variables (scope)</entry>
+    <entry><code class="python" lang="python">
+    def function_name(parameter_1):
+      # Function body
+      local_var = parameter_1 * 5
+      return local_var<newline/>
+    global_var = function_name(arg_1)
+    </code></entry>
+    </row>
+    <row>
+    <entry>Keyword arguments</entry>
+    <entry><code class="python" lang="python">
+    def function_name(parameter_1, parameter_2):
+      # Function body<newline/>
+    function_name(parameter_2 = 5, parameter_1 = 2)
+    </code></entry>
+    </row>
+    <row>
+    <entry>Default parameter value</entry>
+    <entry><code class="python" lang="python">
+    def function_name(parameter_1 = 100):
+      # Function body
+    </code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </section>
+    </content>
 </document>

@@ -6,5 +6,195 @@
     <md:uuid>ec2a63f8-99bb-4956-b1eb-0636fec30463</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify a function's arguments and parameters</item>
+    <item>Describe how mutability affects how a function can modify arguments</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Arguments and parameters</title>
+    <para id="para-00002">What if a programmer wants to write a function that prints the contents of a list? Good practice is to pass values directly to a function rather than relying on global variables. A function <term id="term-00001">argument</term> is a value passed as input during a function call. A function <term id="term-00002">parameter</term> is a variable representing the input in the function definition. Note: The terms are sometimes used interchangeably in conversation and documentation.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Global and local variables in a program with a function</title>
+    <media alt="more_global_and_local_variables_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/more-global-and-local-variables"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Arguments and parameters</title>
+    <para id="para-00003">Consider the following:
+    <code class="python" lang="python">
+    def print_welcome(name):
+      print(f"Welcome {name}!")<newline/>
+    username = int(input("Enter new username: "))
+    print_welcome(username)
+    </code></para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch06-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch06-m04-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch06-m04-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch06-m04-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Multiple arguments and parameters</title>
+    <para id="para-00008">Functions can have multiple parameters. Ex: A function uses two parameters, length and width, to compute the square footage of a room. Function calls must use the correct order and number of arguments to avoid undesired behavior and errors (unless using optional or keyword arguments discussed later).</para>
+    <example id="exam-00001">
+    <title>Using multiple arguments in a function call</title>
+    <code class="python" lang="python">
+    def print_div(op_1, op_2):
+      """ Prints division operation """
+      print(f"{op_1}/{op_2} = {op_1/op_2}")<newline/>
+    num_1 = 6
+    num_2 = 3
+    print_div(num_1, num_2) # Prints "6/3 = 2.0"
+    print_div(num_2, num_1) # Prints "3/6 = 0.5"
+    print_div(num_1) # Error: Missing argument: op_2
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00003">
+    <title>Multiple arguments and parameters</title>
+    <para id="para-00009">Consider the following:
+    <code class="python" lang="python">
+    def calc_distance(x1, y1, x2, y2):
+      dist = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+      print(dist)<newline/>
+    p1_x =int(input("Enter point 1's x: "))
+    p1_y =int(input("Enter point 1's y: "))
+    p2_x =int(input("Enter point 2's x: "))
+    p2_y =int(input("Enter point 2's y: "))
+    calc_distance(p1_x, p1_y, p2_x, p2_y)
+    </code></para>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch06-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch06-m04-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch06-m04-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Modifying arguments and mutability</title>
+    <para id="para-00013">In Python, a variable is a name that refers to an object stored in memory, aka an object reference, so Python uses a <term id="term-00003">pass-by-object-reference</term> system. If an argument is changed in a function, the changes are kept or lost depending on the object's mutability. A <term id="term-00004">mutable</term> object can be modified after creation. A function's changes to the object then appear outside the function. An <term id="term-00005">immutable</term> object cannot be modified after creation. So a function must make a local copy to modify, and the local copy's changes don't appear outside the function.</para>
+    <para id="para-00014">Programmers should be cautious of modifying function arguments, as these side effects can make programs difficult to debug and maintain.</para>
+    <example id="exam-00002">
+    <title>Converting temperatures</title>
+    <para id="para-00015"><span class="purple-code">W</span>hat are the values of weekend_temps and type after convert_temps() finishes?</para>
+    <code class="python" lang="python">
+    def convert_temps(temps, unit):
+      if unit == "F":
+        for i in range(len(temps)):
+          temps[i] = (temps[i]-32) * 5/9
+        unit = "C"
+      else:
+        for i in range(len(temps)):
+          temps[i] = (temps[i]*9/5) + 32
+        unit = "F"<newline/><newline/>
+    # Weekend temperatures in Fahrenheit.
+    wknd_temps = [49.0, 51.0, 44.0]
+    deg_sign = u"\N{DEGREE SIGN}" # Unicode
+    metric = "F"<newline/>
+    # Convert from Fahrenheit to Celsius.
+    convert_temps(wknd_temps, metric)
+    for temp in wknd_temps:
+      print(f"{temp:.2f}{deg_sign}{metric}", end=" ")
+    </code>
+    <para id="para-00016">The output is <code class="python inline-code">9.44°F 10.56°F 6.67°F</code>. type was changed to "C" in the function but didn't keep the change outside of the function. Why is the list argument change kept and not the string argument change? (Hint: A list is mutable. A string is immutable.)</para>
+    </example>
+    <note class="guided-slides" id="note-00004">
+    <title>Exploring a faulty function</title>
+    <media alt="faulty_function_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/faulty-function"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00005">
+    <title>Mutability and function arguments</title>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch06-m04-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch06-m04-p09"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch06-m04-p10"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CPL-ch06-m04-p11"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00006">
+    <title>Printing right triangle area</title>
+    <para id="para-00021">Write a function, print_area(), that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is \(\dfrac{bh}{2}\), where \(b\) is the base and \(h\) is the height.</para><newline/>
+    <para id="para-00022">Given input:</para>
+    <preformat class="python inline-code">
+    3
+    4
+    </preformat>
+    <para id="para-00023">The output is:</para>
+    <preformat class="python inline-code">
+    Triangle area: 6.0
+    </preformat>
+    <media alt="printing_right_triangle_area_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_05_06_Printing-right-triangle-area.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00007">
+    <title>Curving scores</title>
+    <para id="para-00024">Write a function, print_scores(), that takes in a list of test scores and a number representing <span class="purple-code">how many points to add</span>. For each score, print the original score and the sum of the score and <span class="purple-code">bonus</span>. Make sure not to change the list.</para><newline/>
+    <para id="para-00025">Given function call:</para>
+    <preformat class="python inline-code">
+    print_scores([67, 68, 72, 71, 69], 10)
+    </preformat>
+    <para id="para-00026">The output is:</para>
+    <preformat class="python inline-code">
+    67 would be updated to 77
+    68 would be updated to 78
+    72 would be updated to 82
+    71 would be updated to 81
+    69 would be updated to 79
+    </preformat>
+    <media alt="curving_scores_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_05_07_Curving-scores.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

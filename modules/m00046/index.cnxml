@@ -6,5 +6,143 @@
     <md:uuid>5f58a98d-8463-4115-be23-8f032fde21be</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify the scope of a program's variables</item>
+    <item>Discuss the impact of a variable's scope</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Global scope</title>
+    <para id="para-00002">A variable's <term id="term-00001">scope</term> is the part of a program where the variable can be accessed. A variable created outside of a function has <term id="term-00002">global scope</term> and can be accessed anywhere in the program. A Python program begins in the global scope, and the global scope lasts for the entire program execution.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Global variables in a program with a function</title>
+    <media alt="global_variables_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/global-variables"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Global variables</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch06-m03-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch06-m03-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch06-m03-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Local scope</title>
+    <para id="para-00006">A variable created within a function has <term id="term-00003">local scope</term> and only exists within the function. A local variable cannot be accessed outside of the function <span class="purple-code">in which the variable was created</span>. After a function finishes executing, the function's local variables no longer exist. </para>
+    <note class="guided-slides" id="note-00003">
+    <title>Global and local variables in a program with a function</title>
+    <media alt="global_and_local_variables_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/global-and-local-variables"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Local variables</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch06-m03-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch06-m03-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch06-m03-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Using local and global variables together</title>
+    <para id="para-00010">Python allows global and local variables to have the same name, which can lead to <span class="purple-code">unexpected</span> program behavior. A function treats a variable edited within the function as a local variable unless told otherwise. <span class="purple-code">To edit a global variable inside a function, the variable must be declared with the global keyword</span>.</para>
+    <note class="guided-slides" id="note-00005">
+    <title>Editing global variables in a program with a function</title>
+    <media alt="editing_global_variables_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/editing-global-variables"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00006">
+    <title>Using both local and global variables</title>
+    <para id="para-00011">Consider the following variations on the example program with the input, 9.</para>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch06-m03-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch06-m03-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch06-m03-p09"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00007">
+    <title>Benefits of limiting scope</title>
+    <para id="para-00015">A programmer might ask, "Why not just make all variables global variables to avoid access errors?" Making every variable global can make a program messy. Ex: A programmer debugging a large program discovers a variable has the wrong value. If the whole program can modify the variable, then the bug could be anywhere in the large program. Limiting a variable's scope to only what's necessary <span class="purple-code">and restricting global variable use</span> make a program easier to debug, maintain, and update.</para></note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00008">
+    <title>Battle royale game launch</title>
+    <para id="para-00016">Write a program that reads in a selected game mode and calls one of two functions to launch the game. If the input is "br", call battle_royale(). Otherwise, call practice().</para><newline/>
+    <para id="para-00017">battle_royale():</para>
+    <list id="list-00002">
+    <item>Reads in the number of players.</item>
+    <item>Computes the number of teammates still needed. A full team is 3 players.</item>
+    <item>Calls <span class="purple-code">the function</span> find_teammates() with the <span class="purple-code">calculated</span> number.</item>
+    <item>Prints "Match starting..."</item>
+    </list>
+    <para id="para-00018">practice():</para>
+    <list id="list-00003">
+    <item>Reads in a string representing the desired map.</item>
+    <item>Prints "Launching <span class="blue-code">practice</span> on [desired map]"</item>
+    </list>
+    <para id="para-00019">Note find_teammates() is provided and does not need to be edited.</para>
+    <para id="para-00020">Given input:</para>
+    <preformat class="python inline-code">
+    br
+    1
+    </preformat>
+    <para id="para-00021">The output is:</para>
+    <preformat class="python inline-code">
+    Finding 2 players...
+    <span class="purple-code">Match starting</span>...
+    </preformat>
+    <para id="para-00022">Given input:</para>
+    <preformat class="python inline-code">
+    p
+    Queen's Canyon
+    </preformat>
+    <para id="para-00023">The output is:</para>
+    <preformat class="python inline-code">
+    Launching practice on Queen's Canyon
+    </preformat>
+    <media alt="battle_royale_game_launch_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_04_05_Battle-royale-game-launch.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
