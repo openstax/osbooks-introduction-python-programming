@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": null, "solution": "greeting = \"Hello my fellow classmates\"\nprint(greeting[:5])\nprint(\"Hi\" + greeting[5:])"}], "input": null, "showSolution": true};

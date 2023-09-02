@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "\n", "solution": "my_info = {'first name': 'Parham', 'last name': 'Aarabi', 'age': 46}\n\nprint(my_info)"}], "input": null, "showSolution": true};

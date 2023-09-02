@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "numbers = [10, 10.0, 1, 12.5]\n", "solution": "numbers = [10, 10.0, 1, 12.5]\nfor i in numbers:\n  print(\"{:06.2f}\".format(i))"}], "input": null, "showSolution": true};

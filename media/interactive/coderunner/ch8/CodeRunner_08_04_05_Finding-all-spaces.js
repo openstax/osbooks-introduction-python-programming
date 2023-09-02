@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "s = \"This is great\"\n\n", "solution": "s = \"This is great\"\n\nprint(s.count(\" \"))\noutput = \"\"\nfor c in s:\n    if c != \" \":\n        output += c\n\nprint(output)"}], "input": null, "showSolution": true};

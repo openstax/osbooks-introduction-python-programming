@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "s = \"happy,happy,face\"\n", "solution": "s = \"happy,happy,face\"\nwords = s.split(\",\")\nfor i in words:\n    print(i)  "}], "input": null, "showSolution": true};

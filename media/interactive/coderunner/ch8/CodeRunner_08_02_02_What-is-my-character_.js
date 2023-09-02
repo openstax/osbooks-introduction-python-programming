@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "s_input = \"B\"", "solution": "s_input = \"B\"\nif s_input.lower() >= 'a' and s_input.lower() <= 't':\n    print(\"True\")\nelse:\n    print(\"False\")"}], "input": null, "showSolution": true};

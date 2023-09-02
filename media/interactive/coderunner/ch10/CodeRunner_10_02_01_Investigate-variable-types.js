@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "var_1 = [\"a1\", \"b2\", \"c3\"]\n\nvar_2 = {\"a\": 1, \"b\": 2, \"c\": 3}\n\n", "solution": "var_1 = [\"a1\", \"b2\", \"c3\"]\n\nvar_2 = {\"a\": 1, \"b\": 2, \"c\": 3}\n\nprint(type(var_1))\n\nprint(type(var_2))"}], "input": null, "showSolution": true};
