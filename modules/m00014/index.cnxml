@@ -1,4 +1,4 @@
-<document xmlns="http://cnx.rice.edu/cnxml">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>Floating-point errors</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
     <md:title>Floating-point errors</md:title>
@@ -39,8 +39,9 @@
     </tbody>
     </tgroup>
     </table>
-    <para id="para-00005">An <term id="term-00002">overflow error</term> occurs when a value is too large to be stored. The maximum and minimum floating-point values that can be represented are <!--<zyLatexEquation inline="true">-->1.8 \times 10^{308}<!--</zyLatexEquation>--> and <!--<zyLatexEquation inline="true">-->-1.8 \times 10^{308}<!--</zyLatexEquation>-->, respectively. Attempting to store a floating-point value outside the range <!--<zyLatexEquation inline="true">-->(-1.8 \times 10^{308}, 1.8 \times 10^{308})<!--</zyLatexEquation>--> leads to an overflow error.</para>
-    <para id="para-00006">Below, <!---<zyLatexEquation inline="true">-->3.0^{256}<!--</zyLatexEquation>--> and <!--<zyLatexEquation inline="true">-->3.0^{512}<!--</zyLatexEquation>--> can be represented, but <!--<zyLatexEquation inline="true">-->3.0^{1024}<!--</zyLatexEquation>--> is too large and causes an overflow error.</para>
+    <para id="para-00005">An <term id="term-00002">overflow error</term> occurs when a value is too large to be stored. The maximum and minimum floating-point values that can be represented are <m:math><m:mrow><m:mtext>1</m:mtext><m:mtext>.8</m:mtext><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">1.8 \times 10^{308}</zyLatexEquation>--> and <m:math><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">-1.8 \times 10^{308}</zyLatexEquation>-->, respectively. Attempting to store a floating-point value outside the range <m:math><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math>
+      <!--<zyLatexEquation inline="true">(-1.8 \times 10^{308}, 1.8 \times 10^{308})</zyLatexEquation>--> leads to an overflow error.</para>
+    <para id="para-00006">Below, <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>256</m:mn></m:mrow></m:msup></m:mrow></m:math><!---<zyLatexEquation inline="true">3.0^{256}</zyLatexEquation>--> and <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>512</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">3.0^{512}</zyLatexEquation>--> can be represented, but <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>1024</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">3.0^{1024}</zyLatexEquation>--> is too large and causes an overflow error.</para>
     <table summary=" " id="table-00002">
     <title>Overflow error.</title>
     <tgroup cols="1">
