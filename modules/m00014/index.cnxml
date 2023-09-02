@@ -39,7 +39,7 @@
     </tbody>
     </tgroup>
     </table>
-    <para id="para-00005">An <term id="term-00002">overflow error</term> occurs when a value is too large to be stored. The maximum and minimum floating-point values that can be represented are <m:math><m:mrow><m:mtext>1</m:mtext><m:mtext>.8</m:mtext><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">1.8 \times 10^{308}</zyLatexEquation>--> and <m:math><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">-1.8 \times 10^{308}</zyLatexEquation>-->, respectively. Attempting to store a floating-point value outside the range <m:math><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math>
+    <para id="para-00005">An <term id="term-00002">overflow error</term> occurs when a value is too large to be stored. The maximum and minimum floating-point values that can be represented are <m:math><m:mrow><m:mtext>1</m:mtext><m:mtext>.8</m:mtext><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">1.8 \times 10^{308}</zyLatexEquation>--> and <m:math><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">-1.8 \times 10^{308}</zyLatexEquation>-->, respectively. Attempting to store a floating-point value outside the range <m:math><m:mrow><m:mo>(</m:mo><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>)</m:mo></m:mrow></m:math>
       <!--<zyLatexEquation inline="true">(-1.8 \times 10^{308}, 1.8 \times 10^{308})</zyLatexEquation>--> leads to an overflow error.</para>
     <para id="para-00006">Below, <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>256</m:mn></m:mrow></m:msup></m:mrow></m:math><!---<zyLatexEquation inline="true">3.0^{256}</zyLatexEquation>--> and <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>512</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">3.0^{512}</zyLatexEquation>--> can be represented, but <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>1024</m:mn></m:mrow></m:msup></m:mrow></m:math><!--<zyLatexEquation inline="true">3.0^{1024}</zyLatexEquation>--> is too large and causes an overflow error.</para>
     <table summary=" " id="table-00002">
@@ -53,13 +53,15 @@
     print('3.0 to the power of 1024 = ', 3.0**1024)
     </code></entry>
     <entry>
+      <code class="python" lang="python">
     3.0 to the power of 256 = 1.3900845237714473e+122
     3.0 to the power of 512 = 1.9323349832288915e+244
     3.0 to the power of 1024 =
     Traceback (most recent call last):
     File "&lt;stdin>", line 3, in &lt;module>
     print('3.0 to the power of 1024 = ', 3.0**1024)
-    OverflowError: (34, 'Numerical result out of range')</entry>
+    OverflowError: (34, 'Numerical result out of range')
+    </code></entry>
     </row>
     </tbody>
     </tgroup>
