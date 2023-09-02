@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": "x = int(input())\ny = int(input())\n\n# TODO: power() function definition\n\nprint(power(x, y))", "solution": "x = int(input())\ny = int(input())\n\ndef power(x, y):\n    if y == 0:\n        return 1\n    else: \n        return x * power(x, y-1)\n\nprint(power(x, y))"}], "input": "3\n4", "showSolution": true};

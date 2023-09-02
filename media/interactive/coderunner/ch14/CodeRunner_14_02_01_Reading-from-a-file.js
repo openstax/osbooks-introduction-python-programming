@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "main.py", "contents": null, "solution": "myfile = open('test.txt')\n\nprint(myfile.read())\n\nmyfile.close()\n\n"}, {"name": "test.txt", "contents": "Hello, this is the first file that you opened. \nWelcome!", "solution": null}], "input": null, "showSolution": true};
