@@ -51,35 +51,35 @@
     <row>
     <entry>Parentheses: no space before or after.</entry>
     <entry><code>print("Go team!")</code></entry>
-    <entry><code>print<!--<mark>--> <!--</mark>-->("Go team!")</code><newline/>
-    <code>print(<!--<mark>--> <!--</mark>-->"Go team!"<!--<mark>--> <!--</mark>-->)</code></entry>
+    <entry><code>print ("Go team!")</code><newline/>
+    <code>print( "Go team!" )</code></entry>
     </row>
     <row>
     <entry>Commas: no space before, one space after.</entry>
     <entry><code>print("Hello", name)</code></entry>
-    <entry><code>print("Hello"<!--<mark>--> <!--</mark>-->, name)</code><newline/>
-    <code>print("Hello"<!--<mark>-->,<!--</mark>-->name)</code></entry>
+    <entry><code>print("Hello" , name)</code><newline/>
+    <code>print("Hello",name)</code></entry>
     </row>
     <row>
     <entry>Assignment: one space before and after the <code>=</code>.</entry>
     <entry><code>name = input("Your name? ")</code></entry>
-    <entry><code>name<!--<mark>-->=<!--</mark>-->input("Your name? ")</code><newline/>
-    <code>name<!--<mark>-->=<!--</mark>--> input("Your name? ")</code><newline/>
-    <code>name <!--<mark>-->=<!--</mark>-->input("Your name? ")</code></entry>
+    <entry><code>name=input("Your name? ")</code><newline/>
+    <code>name= input("Your name? ")</code><newline/>
+    <code>name =input("Your name? ")</code></entry>
     </row>
     <row>
     <entry>Concatenation: one space before and after the <code>+</code>.</entry>
     <entry><code>print("Hi", name + "!")</code></entry>
-    <entry><code>print("Hi", name<!--<mark>-->+<!--</mark>-->"!")</code><newline/>
-    <code>print("Hi", name<!--<mark>-->+<!--</mark>--> "!")</code><newline/>
-    <code>print("Hi", name <!--<mark>-->+<!--</mark>-->"!")</code></entry>
+    <entry><code>print("Hi", name+"!")</code><newline/>
+    <code>print("Hi", name+ "!")</code><newline/>
+    <code>print("Hi", name +"!")</code></entry>
     </row>
     <row>
     <entry>Arithmetic: use space to show lower precedence.</entry>
     <entry><code>x**2 + 5*x - 8</code></entry>
-    <entry><code>x<!--<mark>--> <!--</mark>-->**<!--<mark>--> <!--</mark>-->2 + 5<!--<mark>--> <!--</mark>-->*<!--<mark>--> <!--</mark>-->x - 8</code><newline/>
-    <code>x ** 2<!--<mark>-->+<!--</mark>-->5 * x<!--<mark>-->-<!--</mark>-->8</code><newline/>
-    <code>x**2<!--<mark>-->+<!--</mark>-->5*x<!--<mark>-->-<!--</mark>-->8</code></entry>
+    <entry><code>x ** 2 + 5 * x - 8</code><newline/>
+    <code>x ** 2+5 * x-8</code><newline/>
+    <code>x**2+5*x-8</code></entry>
     </row>
     </tbody>
     </tgroup>

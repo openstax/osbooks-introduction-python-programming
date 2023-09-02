@@ -68,19 +68,19 @@
     <entry><code>,d</code></entry>
     <entry>Decimal integer, with comma separators</entry>
     <entry><code>f"{12345678:,d}"</code></entry>
-    <entry><code>'12<!--<mark>-->,<!--</mark>-->345<!--<mark>-->,<!--</mark>-->678'</code></entry>
+    <entry><code>'12,345,678'</code></entry>
     </row>
     <row>
     <entry><code>10d</code></entry>
     <entry>Decimal integer, at least 10 characters wide</entry>
     <entry><code>f"{12345678:10d}"</code></entry>
-    <entry><code>'<!--<mark>-->  <!--</mark>-->12345678'</code></entry>
+    <entry><code>'  12345678'</code></entry>
     </row>
     <row>
     <entry><code>010d</code></entry>
     <entry>Decimal integer, at least 10 characters wide, with leading zeros</entry>
     <entry><code>f"{12345678:010d}"</code></entry>
-    <entry><code>'<!--<mark>-->00<!--</mark>-->12345678'</code></entry>
+    <entry><code>'0012345678'</code></entry>
     </row>
     <row>
     <entry><code>f</code></entry>
@@ -92,19 +92,19 @@
     <entry><code>.4f</code></entry>
     <entry>Fixed-point, rounded to 4 decimal places</entry>
     <entry><code>f"{math.pi:.4f}"</code></entry>
-    <entry><code>'3.141<!--<mark>-->6<!--</mark>-->'</code></entry>
+    <entry><code>'3.1416'</code></entry>
     </row>
     <row>
     <entry><code>8.4f</code></entry>
     <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide</entry>
     <entry><code>f"{math.pi:8.4f}"</code></entry>
-    <entry><code>'<!--<mark>-->  <!--</mark>-->3.1416'</code></entry>
+    <entry><code>'  3.1416'</code></entry>
     </row>
     <row>
     <entry><code>08.4f</code></entry>
     <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide, with leading zeros</entry>
     <entry><code>f"{math.pi:08.4f}"</code></entry>
-    <entry><code>'<!--<mark>-->00<!--</mark>-->3.1416'</code></entry>
+    <entry><code>'003.1416'</code></entry>
     </row>
     </tbody>
     </tgroup>
