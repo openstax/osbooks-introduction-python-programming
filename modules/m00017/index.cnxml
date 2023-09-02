@@ -111,10 +111,10 @@
     <section id="sect-00003">
     <title>Automatic concatenation</title>
     <para id="para-00010">Long strings make Python programs difficult to read. Ex: This program prints the first sentence of the <link url="https://www.archives.gov/founding-docs/declaration-transcript">US Declaration of Independence</link>:</para>
-    <para id="para-00011"><emphasis class="centered-text">print("The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.")</emphasis></para>
+    <para id="para-00011" class="centered-text">print("The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.")</para>
     <para id="para-00012">PEP 8 recommends that each line of code be less than 80 characters long. That way, programmers won't need to scroll horizontally to read the code. The above program can be rewritten by breaking up the original string:</para>
-    <para id="para-00013"><emphasis class="centered-text">
-    print("The unanimous Declaration of the thirteen united States of "
+    <para id="para-00013" class="centered-text"><code class="python" lang="python">
+     print("The unanimous Declaration of the thirteen united States of "
     "America, When in the Course of human events, it becomes "
     "necessary for one people to dissolve the political bands "
     "which have connected them with another, and to assume among "
@@ -122,7 +122,7 @@
     "which the Laws of Nature and of Nature's God entitle them, a "
     "decent respect to the opinions of mankind requires that they "
     "should declare the causes which impel them to the separation.")
-    </emphasis></para>
+    </code></para>
     <para id="para-00014">For convenience, Python automatically concatenates multiple strings. The <code>+</code> operator is not required in this situation.</para>
     <note class="guided-slides" id="note-00003">
     <title>String concatenation</title>
