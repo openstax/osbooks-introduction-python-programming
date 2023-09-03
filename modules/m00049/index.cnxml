@@ -105,13 +105,13 @@
     <item>msg: donor's message, default value: ""</item>
     </list></para>
     <para id="para-00016">Given:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     donate(10, "gg")
-    </preformat>
+    </code>
     <para id="para-00017">The output is:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     Anonymous donated 10 credits: gg
-    </preformat>
+    </code>
     <para id="para-00018">Write function calls that use the default values along with positional and keyword arguments.</para>
     <media alt="stream_donations_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_07_10_Stream-donations.html"/>

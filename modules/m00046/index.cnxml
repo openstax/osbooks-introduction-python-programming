@@ -121,24 +121,24 @@
     </list>
     <para id="para-00019">Note find_teammates() is provided and does not need to be edited.</para>
     <para id="para-00020">Given input:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     br
     1
-    </preformat>
+    </code>
     <para id="para-00021">The output is:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     Finding 2 players...
     <span class="purple-code">Match starting</span>...
-    </preformat>
+    </code>
     <para id="para-00022">Given input:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     p
     Queen's Canyon
-    </preformat>
+    </code>
     <para id="para-00023">The output is:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     Launching practice on Queen's Canyon
-    </preformat>
+    </code>
     <media alt="battle_royale_game_launch_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_04_05_Battle-royale-game-launch.html"/>
     </media>

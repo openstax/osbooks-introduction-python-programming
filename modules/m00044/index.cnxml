@@ -106,16 +106,16 @@
     <title>Cinema concession stand</title>
     <para id="para-00015">Write a function, concessions(), that prints the food and drink options at a cinema.</para>
     <para id="para-00016">Given:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     concessions()
-    </preformat>
+    </code>
     <para id="para-00017">The output is:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     Food/Drink Options:
     Popcorn: $8-10
     Candy: $3-5
     Soft drink: $5-7
-    </preformat>
+    </code>
     <media alt="cinema_concession_stand_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_02_01_Cinema-concession-stand.html"/>
     </media>
@@ -124,20 +124,20 @@
     <title>Terms and conditions prompt</title>
     <para id="para-00018">Write a function terms() that asks the user to accept the terms and conditions, reads in Y/N, and outputs a response. In the main program, read in the number of users and call terms() for each user.</para>
     <para id="para-00019">Given <span class="purple-code">inputs 1 and "Y"</span>, the output is:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     Do you accept the terms and conditions?
     Y
     Thank you for accepting.
-    </preformat>
+    </code>
     <para id="para-00020">Given <span class="purple-code">inputs 2, "N", and "Y"</span>, the output is:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     Do you accept the terms and conditions?
     N
     Have a good day.
     Do you accept the terms and conditions?
     Y
     Thank you for accepting.
-    </preformat>
+    </code>
     <media alt="terms_and_conditions_prompt_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_02_02_Terms-and-conditions-prompt.html"/>
     </media>
