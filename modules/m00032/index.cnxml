@@ -141,13 +141,13 @@
     </list>
     <para id="para-00018">Assume the input is within the visible light spectrum, 380-750 inclusive.</para>
     <para id="para-00019">Given input:</para>
-    <preformat class="output">
+    <code class="python" lang="python">
     550
-    </preformat>
+    </code>
     <para id="para-00020">The output is:</para>
-    <preformat class="output">
+    <code class="python" lang="python">
     Green
-    </preformat>
+    </code>
     <!--<media alt="*_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/*"/>
     </media>-->
