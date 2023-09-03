@@ -17,14 +17,12 @@
     <section id="sect-00002">
     <title>Combining integers and floats</title>
     <para id="para-00002">Programmers often need to combine numbers of different data types. Ex: A program computes the total for an online shopping order:
-    <preformat class="python inline-code">
     <code class="python" lang="python">
     quantity = int(input())
     price = float(input())
     total = quantity * price
     print(total)</code>
-    </preformat>
-    <code>quantity</code> is an integer, and <code>price</code> is a float. So what is the data type of <code>total</code>? For input 3 and 5.0, <code>total</code> is a float, and the program prints 15.0. </para>
+    <code>quantity</code> is an integer, and <code>price</code> is a float. So what is the data type of <code>total</code>? For input 3 and 5.0, <code>total</code> is a float, and the program prints 15.0.</para>
     <para id="para-00003">Combining an integer and a float produces a float. A float is by default printed with at least one decimal point and has many decimal places as needed to represent the value. Note: Division using the <code>/</code> operator always produces a float.</para>
     <note class="guided-slides" id="note-00001">
     <title>Operations combining integers and floats</title>
