@@ -92,15 +92,15 @@
     <item>1/2 cup lukewarm water</item>
     </list>
     <para id="para-00004">Write a program that inputs the following variables: <code class="python inline-code">bread_weight</code> (float), <code class="python inline-code">serving_size</code> (float), and <code class="python inline-code">num_guests</code> (int). The output will look like the following:</para>
-    <preformat class="output">
-    For 25 people, you will need 3.90625 loaves of bread:
-    5.859375 teaspoons instant yeast
-    5.859375 teaspoons salt
-    5.859375 teaspoons sugar
-    9.765625 cups all-purpose flour
-    7.8125 cups sourdough starter
-    1.953125 cups lukewarm water
-    </preformat>
+    <code class="python" lang="python">
+    For 25 people, you will need 3.90625 loaves of bread:<newline/>
+    &#160;&#160;5.859375 teaspoons instant yeast
+    &#160;&#160;5.859375 teaspoons salt
+    &#160;&#160;5.859375 teaspoons sugar
+    &#160;&#160;9.765625 cups all-purpose flour
+    &#160;&#160;7.8125 cups sourdough starter
+    &#160;&#160;1.953125 cups lukewarm water
+    </code>
     <para id="para-00005">In the above output, <code class="python inline-code">bread_weight</code> is 16.0 ounces, <code class="python inline-code">serving_size</code> is 2.5 ounces, and <code class="python inline-code">num_guests</code> is 25 people. Use these three variables to calculate the number of loaves needed.</para>
     <para id="para-00006">Make sure your output matches the above example exactly. Notice that each line of the ingredients begins with two spaces.</para>
     <media alt="baking_bread_program">
@@ -111,18 +111,18 @@
     <title>Tip calculator</title>
     <para id="para-00007">Google has a variety of <link url="https://mashtips.com/google-search-tricks/">search tricks</link> that present users with instant results. If you search on Google for <link url="https://www.google.com/search?q=tip+calculator">tip calculator</link>, an interactive tool is included at the top of the results. The goal of this exercise is to implement a similar tip calculator.</para>
     <para id="para-00008">Begin by prompting the user to input the following values (user input in bold):</para>
-    <preformat class="output">
-    Enter bill amount: &lt;b>43.21&lt;/b>
-    Percentage to tip: &lt;b>18&lt;/b>
-    Number of people: &lt;b>2&lt;/b>
-    </preformat>
+    <code class="python" lang="python">
+    Enter bill amount: <emphasis effect="bold">43.21</emphasis>
+    Percentage to tip: <emphasis effect="bold">18</emphasis>
+    Number of people: <emphasis effect="bold">2</emphasis>
+    </code>
     <para id="para-00009">Then calculate the tip amount and total amount for the bill, based on the user input. Output the results using this format:</para>
-    <preformat class="output">
+    <code class="python" lang="python"><newline/>
     Tip amount: $7.78
-    Total amount: $50.99
+    Total amount: $50.99<newline/>
     Tip per person: $3.89
     Total per person: $25.49
-    </preformat>
+    </code>
     <para id="para-00010">Your program should output all dollar amounts rounded to two decimal places. The output should be exactly six lines, as shown above. Notice the blank line before each section of the output. Notice also the space before but not after the dollar sign.</para>
     <media alt="tip_calculator_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_10_15_Tip-calculator.html"/>
