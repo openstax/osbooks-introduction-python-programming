@@ -6,5 +6,105 @@
     <md:uuid>b89130e9-6c8f-4c47-96a5-2cb592bf96b1</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use indexes to access individual elements in a list.</item>
+    <item>Use indexes to modify individual elements in a list.</item>
+    <item>Use <code>len()</code> function to find the length of a list.</item>
+    <item>Demonstrate that lists can be changed after creation.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Lists</title>
+    <para id="para-00002">A list object can be used to bundle elements together in Python. A list is defined by using square brackets <code>[]</code> with comma separated values within the square brackets. Ex: <code>list_1 = [1, 2, 4]</code>. </para>
+    <para id="para-00003">Empty lists can be defined in two ways:
+    <list id="list-00002">
+    <item><code>list_1 = []</code></item>
+    <item><code>list_1 = List()</code></item>
+    </list></para>
+    <para id="para-00004">Lists can be made of elements of any type. Lists can contain integers, strings, floats, or any other type. Lists can also contain a combination of types. Ex: <code>[2, "Hello", 2.5]</code> is a valid list.</para>
+    <para id="para-00005"><span class="purple-code">Python lists allow programmers to change the contents of the list in various ways.</span></para>
+    <note class="guided-slides" id="note-00001">
+    <title>Lists</title>
+    <media alt="lists_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/lists"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Lists</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch03-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch03-m04-p02"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Using indexes</title>
+    <para id="para-00008">Individual list elements can be accessed directly using an index. Indexes begin at 0 and end at one less than the length of the sequence. Ex: For a sequence of 50 <span class="blue-code">elements</span>, the first position is 0, and the last position is 49.</para>
+    <para id="para-00009">The index number is put in square brackets <code>[]</code> and attached to the end of the name of the list to access the required element. Ex: <code>new_list[3]</code> accesses the 4th element in <code>new_list</code>. An expression that evaluates to an integer number can also be used as an index. Similar to strings, negative indexing can also be used to address individual elements. Ex: Index -1 refers to the last <span class="blue-code">element</span> and -2 the second last element.</para>
+    <para id="para-00010">The <code>len()</code> function, when called on a list, returns the length of the list.</para>
+    <example id="exam-00001">
+    <title>List indexes and len() function</title>
+    <para id="para-00011">The following code demonstrates the use of list indexes and the <code>len()</code> function. Line 6 shows the use of the <code>len()</code> function to get the length of the list. Line <span class="blue-code">10</span> shows how to access an element using an index. Line <span class="blue-code">14</span> shows how to modify a list element using an index.</para>
+    <code class="python" lang="python">
+    # Setup a list of numbers
+    num_list = [2, 3, 5, 9, 11]
+    print(num_list)
+    # Print the length of the list
+    print("Length: ", len(num_list))
+    # Print the 4th element in the list
+    # The number 3 is used to refer to the 4th element
+    print("4th element:", num_list[3])
+    # The desired value of the 4th element is actually 7
+    # Update the value of the 4th element to 7
+    num_list[3] = 7
+    # The list of the first 5 prime numbers
+    print(num_list)
+    </code>
+    <para id="para-00012">The above code's output is:</para>
+    <code class="python" lang="python">
+    [2, 3, 5, 9, 11]
+    Length: 5
+    4th element: 9
+    [2, 3, 5, 7, 11]
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00003">
+    <title>List indexes and the len() function</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch03-m04-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch03-m04-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>List basics</title>
+    <para id="para-00015">Write a program to complete the following:
+    <list list-type="enumerated" id="list-00003">
+    <item>Create a list with the following <span class="blue-code">elements</span>: 2, 23, 39, 6, -5. </item>
+    <item>Change the third <span class="blue-code">element</span> of the list (index 2) to 35. </item>
+    <item>Print the resulting list and the list's length.</item>
+    </list></para>
+    <media alt="list_basics_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_05_05_List-basics.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

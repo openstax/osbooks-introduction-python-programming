@@ -52,114 +52,114 @@
     <tgroup cols="1">
     <tbody>
     <row>
-    <entry><preformat class="output">
-    32  (space)  
-    33  !
-    34  "
-    35  #
-    36  $
-    37  %
-    38  &amp;
-    39  '
-    40  (
-    41  )
-    42  *
-    43  +
-    44  ,
-    45  -
-    46  .
-    47  /
-    48  0
-    49  1
-    50  2
-    51  3
-    52  4
-    53  5
-    54  6
-    55  7
-    56  8
-    57  9
-    58  :
-    59  ;
-    60  &lt;
-    61  =
-    62  >
-    63  ?
-    </preformat></entry>
+    <entry><code class="python" lang="python">
+      32&#38;nbsp;&#38;nbsp;(space)&#38;nbsp;&#38;nbsp;
+      33&#38;nbsp;&#38;nbsp;!
+      34&#38;nbsp;&#38;nbsp;&quot;
+      35&#38;nbsp;&#38;nbsp;#
+      36&#38;nbsp;&#38;nbsp;$
+      37&#38;nbsp;&#38;nbsp;%
+      38&#38;nbsp;&#38;nbsp;&amp;
+      39&#38;nbsp;&#38;nbsp;&#x27;
+      40&#38;nbsp;&#38;nbsp;(
+      41&#38;nbsp;&#38;nbsp;)
+      42&#38;nbsp;&#38;nbsp;*
+      43&#38;nbsp;&#38;nbsp;+
+      44&#38;nbsp;&#38;nbsp;,
+      45&#38;nbsp;&#38;nbsp;-
+      46&#38;nbsp;&#38;nbsp;.
+      47&#38;nbsp;&#38;nbsp;/
+      48&#38;nbsp;&#38;nbsp;0
+      49&#38;nbsp;&#38;nbsp;1
+      50&#38;nbsp;&#38;nbsp;2
+      51&#38;nbsp;&#38;nbsp;3
+      52&#38;nbsp;&#38;nbsp;4
+      53&#38;nbsp;&#38;nbsp;5
+      54&#38;nbsp;&#38;nbsp;6
+      55&#38;nbsp;&#38;nbsp;7
+      56&#38;nbsp;&#38;nbsp;8
+      57&#38;nbsp;&#38;nbsp;9
+      58&#38;nbsp;&#38;nbsp;:
+      59&#38;nbsp;&#38;nbsp;;
+      60&#38;nbsp;&#38;nbsp;&lt;
+      61&#38;nbsp;&#38;nbsp;=
+      62&#38;nbsp;&#38;nbsp;&gt;
+      63&#38;nbsp;&#38;nbsp;?     
+    </code></entry>
     </row>
     <row>
     <entry>
-    <preformat class="output">
-    64  @        
-    65  A
-    66  B
-    67  C
-    68  D
-    69  E
-    70  F
-    71  G
-    72  H
-    73  I
-    74  J
-    75  K
-    76  L
-    77  M
-    78  N
-    79  O
-    80  P
-    81  Q
-    82  R
-    83  S
-    84  T
-    85  U
-    86  V
-    87  W
-    88  X
-    89  Y
-    90  Z
-    91  [
-    92  \
-    93  ]
-    94  ^
-    95  _
-    </preformat></entry>
+      <code class="python" lang="python">
+        64&#38;nbsp;&#38;nbsp;@&#38;nbsp;&#38;nbsp;&#38;nbsp;&#38;nbsp;&#38;nbsp;&#38;nbsp;&#38;nbsp;&#38;nbsp;
+        65&#38;nbsp;&#38;nbsp;A
+        66&#38;nbsp;&#38;nbsp;B
+        67&#38;nbsp;&#38;nbsp;C
+        68&#38;nbsp;&#38;nbsp;D
+        69&#38;nbsp;&#38;nbsp;E
+        70&#38;nbsp;&#38;nbsp;F
+        71&#38;nbsp;&#38;nbsp;G
+        72&#38;nbsp;&#38;nbsp;H
+        73&#38;nbsp;&#38;nbsp;I
+        74&#38;nbsp;&#38;nbsp;J
+        75&#38;nbsp;&#38;nbsp;K
+        76&#38;nbsp;&#38;nbsp;L
+        77&#38;nbsp;&#38;nbsp;M
+        78&#38;nbsp;&#38;nbsp;N
+        79&#38;nbsp;&#38;nbsp;O
+        80&#38;nbsp;&#38;nbsp;P
+        81&#38;nbsp;&#38;nbsp;Q
+        82&#38;nbsp;&#38;nbsp;R
+        83&#38;nbsp;&#38;nbsp;S
+        84&#38;nbsp;&#38;nbsp;T
+        85&#38;nbsp;&#38;nbsp;U
+        86&#38;nbsp;&#38;nbsp;V
+        87&#38;nbsp;&#38;nbsp;W
+        88&#38;nbsp;&#38;nbsp;X
+        89&#38;nbsp;&#38;nbsp;Y
+        90&#38;nbsp;&#38;nbsp;Z
+        91&#38;nbsp;&#38;nbsp;[
+        92&#38;nbsp;&#38;nbsp;\
+        93&#38;nbsp;&#38;nbsp;]
+        94&#38;nbsp;&#38;nbsp;^
+        95&#38;nbsp;&#38;nbsp;_     
+    </code></entry>
     </row>
     <row>
     <entry>
-    <preformat class="output">
-    96  `
-    97  a
-    98  b
-    99  c
-    100  d
-    101  e
-    102  f
-    103  g
-    104  h
-    105  i
-    106  j
-    107  k
-    108  l
-    109  m
-    110  n
-    111  o
-    112  p
-    113  q
-    114  r
-    115  s
-    116  t
-    117  u
-    118  v
-    119  w
-    120  x
-    121  y
-    122  z
-    123  {
-    124  |
-    125  }
-    126  ~
-    127  (delete)
-    </preformat></entry>
+    <code class="python" lang="python">
+      96&#38;nbsp;&#38;nbsp;`
+      97&#38;nbsp;&#38;nbsp;a
+      98&#38;nbsp;&#38;nbsp;b
+      99&#38;nbsp;&#38;nbsp;c
+     100&#38;nbsp;&#38;nbsp;d
+     101&#38;nbsp;&#38;nbsp;e
+     102&#38;nbsp;&#38;nbsp;f
+     103&#38;nbsp;&#38;nbsp;g
+     104&#38;nbsp;&#38;nbsp;h
+     105&#38;nbsp;&#38;nbsp;i
+     106&#38;nbsp;&#38;nbsp;j
+     107&#38;nbsp;&#38;nbsp;k
+     108&#38;nbsp;&#38;nbsp;l
+     109&#38;nbsp;&#38;nbsp;m
+     110&#38;nbsp;&#38;nbsp;n
+     111&#38;nbsp;&#38;nbsp;o
+     112&#38;nbsp;&#38;nbsp;p
+     113&#38;nbsp;&#38;nbsp;q
+     114&#38;nbsp;&#38;nbsp;r
+     115&#38;nbsp;&#38;nbsp;s
+     116&#38;nbsp;&#38;nbsp;t
+     117&#38;nbsp;&#38;nbsp;u
+     118&#38;nbsp;&#38;nbsp;v
+     119&#38;nbsp;&#38;nbsp;w
+     120&#38;nbsp;&#38;nbsp;x
+     121&#38;nbsp;&#38;nbsp;y
+     122&#38;nbsp;&#38;nbsp;z
+     123&#38;nbsp;&#38;nbsp;{
+     124&#38;nbsp;&#38;nbsp;|
+     125&#38;nbsp;&#38;nbsp;}
+     126&#38;nbsp;&#38;nbsp;~
+     127&#38;nbsp;&#38;nbsp;(delete)     
+    </code></entry>
     </row>
     </tbody>
     </tgroup>
@@ -257,11 +257,11 @@
     <title>Hopper quote</title>
     <para id="para-00016"><link url="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</link> (1906–1992) was a famous computer scientist (and rear admiral in the US Navy!) who came up with the idea of machine-independent programming languages. She envisioned a programming language based on English and made many contributions that paved the way for modern programming languages, including Python.</para>
     <para id="para-00017">Write a program that prints the following text. Your program may not use single quotes (') anywhere in the code. The last line must be indented with a tab character.</para>
-    <preformat class="output">
+    <code class="python" lang="python">
     "To me programming is more than an important practical art.
     It is also a gigantic undertaking in the foundations of knowledge."
-    	-- Grace Hopper
-    </preformat>
+    &#9;-- Grace Hopper    
+    </code>
     <media alt="hopper_quote_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_01_Hopper-quote.html"/>
     </media>
@@ -270,14 +270,14 @@
     <title>Shift cipher</title>
     <para id="para-00018">During the Roman Empire, Julius Caesar (100–44 BCE) used a simple technique to encrypt private messages. Each letter of the message was replaced with the third next letter of the alphabet. Ex: If the message was CAT, the C became F, the A became D, and the T became W, resulting in the message FDW. This technique is known as a shift cipher, because each letter is shifted by some amount. In Caesar's case, the amount was 3, but other amounts (besides 0) would work too.</para>
     <para id="para-00019">Write a program that prompts the user to input the following two values (example input in bold):</para>
-    <preformat class="output">
-    Enter a 3-letter word: &lt;kbd>CAT&lt;/kbd>
-    Shift by how many letters? &lt;kbd>3&lt;/kbd>
-    </preformat>
+    <code class="python" lang="python">
+    Enter a 3-letter word: CAT
+    Shift by how many letters? 3
+    </code>
     <para id="para-00020">The program should then shift each letter of the word by the desired amount. Based on the example above, the output would be:</para>
-    <preformat class="output">
+    <code class="python" lang="python">
     The secret message is: FDW
-    </preformat>
+    </code>
     <para id="para-00021">Hint: Use the <code>ord()</code> function to convert each letter to an integer, add the shift amount to each integer, use the <code>chr()</code> function to convert each integer to a character, and concatenate the resulting characters.</para>
     <media alt="shift_cipher_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_02_Shift-cipher.html"/>
