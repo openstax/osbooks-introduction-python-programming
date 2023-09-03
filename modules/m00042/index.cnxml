@@ -119,14 +119,14 @@
     <title>Prime numbers</title>
     <para id="para-00003">Write a program that takes in a positive integer number (N) and prints out the first N prime numbers on separate lines. Note: a prime number is a number that is not divisible by any positive number larger than 1. To check if a number is prime, the condition of number % i != 0 can be checked for i greater than 1 and less than number.</para>
     <para id="para-00004">Ex: if N = 6, the output is:</para>
-    <preformat class="python inline-code">
+    <code class="python" lang="python">
     2
     3
     5
     7
     11
     13
-    </preformat>
+    </code>
     <media alt="prime_numbers_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_07_10_Prime-numbers.html"/>
     </media>

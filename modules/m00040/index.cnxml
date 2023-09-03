@@ -17,21 +17,18 @@
     <section id="sect-00002">
     <title>Break</title>
     <para id="para-00002">A <term id="term-00001">break</term> statement <span class="blue-code">is</span> used within a <code class="python inline-code">for</code> or a <code class="python inline-code">while</code> loop to allow <span class="red-code">the program execution to exit</span> the loop once a given condition is triggered. A use case of a <code class="python inline-code">break</code> statement includes runtime efficiency when further loop's execution is not required.</para>
-    <para id="para-00003"><span class="blue-code">Ex: A loop that counts up starting from 1 until the second number that is divisible by both 2 and 5 is found.</span>
-    <preformat class="python inline-code">
+    <para id="para-00003"><span class="blue-code">Ex: A loop that counts up starting from 1 until the second number that is divisible by both 2 and 5 is found.</span></para>
     <code class="python" lang="python">
-    count = 0
+    count = 0<newline/>
     index = 1
     while count &lt; 2:
-    if index % 2 == 0 and index % 5 == 0:
-    count += 1
-    if count == 2:
-    break
-    index += 1
-    print(index)
+    &#160;&#160;if index % 2 == 0 and index % 5 == 0:
+    &#160;&#160;&#160;&#160;count += 1
+    &#160;&#160;if count == 2:
+    &#160;&#160;&#160;&#160;break
+    &#160;&#160;index += 1<newline/>
+    print(index)<newline/>
     </code>
-    </preformat>
-    </para>
     <note class="guided-slides" id="note-00001">
     <title>Break statement in a while loop.</title>
     <media alt="while_break_slides">
@@ -40,18 +37,16 @@
     </note>
     <note id="note-00002">
     <title>Infinite loop</title>
-    <para id="para-00004">A <code class="python inline-code">break</code> statement is an essential part of a loop without a termination condition. A loop without a termination condition is known as an <term id="term-00002">infinite loop</term>. Ex: An infinite loop that counts up starting from 1 and prints the counter's value while the counter's value is less than 10. A break condition is triggered when the counter's value is equal to 10, and hence the program execution exits.
-    <preformat class="python inline-code">
+    <para id="para-00004">A <code class="python inline-code">break</code> statement is an essential part of a loop without a termination condition. A loop without a termination condition is known as an <term id="term-00002">infinite loop</term>. Ex: An infinite loop that counts up starting from 1 and prints the counter's value while the counter's value is less than 10. A break condition is triggered when the counter's value is equal to 10, and hence the program execution exits.</para>
     <code class="python" lang="python">
     counter = 1
     while True:
-    if counter >= 10:
-    break
-    print(counter)
-    counter += 1
+    &#160;&#160;if counter &gt;= 10:
+    &#160;&#160;&#160;&#160;break
+    &#160;&#160;print(counter)
+    &#160;&#160;counter += 1
     </code>
-    </preformat>
-    </para></note>
+    </note>
     <note class="learning-questions" id="note-00003">
     <title>Using a break statement.</title>
     <exercise id="exer-00001">
@@ -81,21 +76,19 @@
     <tgroup cols="1">
     <tbody>
     <row>
-    <entry><preformat class="python inline-code">
-    <code class="python" lang="python">
+    <entry><code class="python" lang="python">
     for i in range(1, 21):
-    if i%5 != 0:
-    continue
-    print(i)
+    &#160;&#160;if i%5 != 0:
+    &#160;&#160;&#160;&#160;continue
+    &#160;&#160;print(i)
     </code>
-    </preformat></entry>
-    <entry><preformat class="python inline-code">
-    <code class="python" lang="python">
+    </entry>
+    <entry><code class="python" lang="python">
     for i in range(1, 21):
-    if i%5 == 0:
-    print(i)
+    &#160;&#160;if i%5 == 0:
+    &#160;&#160;&#160;&#160;print(i)
     </code>
-    </preformat></entry>
+    </entry>
     </row>
     </tbody>
     </tgroup>

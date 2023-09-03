@@ -25,30 +25,27 @@
       <tgroup cols="1">
     <tbody>
     <row>
-    <entry>
-    <preformat class="python inline-code">
-    <code class="python" lang="python">
+    <entry><code class="python" lang="python">
     numbers = [2, 5, 7, 11, 12]
     for i in numbers:
-    if i == 10:
-    print("Found 10!")
-    break
+    &#160;&#160;if i == 10:
+    &#160;&#160;&#160;&#160;print("Found 10!")
+    &#160;&#160;&#160;&#160;break
     else:
-    print("10 is not in the list.")
+    &#160;&#160;print("10 is not in the list.")
     </code>
-    </preformat></entry>
-    <entry><preformat class="python inline-code">
-    <code class="python" lang="python">
+    </entry>
+    <entry><code class="python" lang="python">
     numbers = [2, 5, 7, 11, 12]
     seen = False
     for i in numbers:
-    if i == 10:
-    print("Found 10!")
-    seen = True
+    &#160;&#160;if i == 10:
+    &#160;&#160;&#160;&#160;print("Found 10!")
+    &#160;&#160;&#160;&#160;seen = True
     if seen == False:
-    print("10 is not in the list.")
+    &#160;&#160;print("10 is not in the list.")
     </code>
-    </preformat></entry>
+    </entry>
     </row>
     </tbody>
       </tgroup>  
