@@ -25,13 +25,13 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using keyword and positional arguments</title>
-    <para id="para-00003">Consider the following function:
+    <para id="para-00003">Consider the following function:</para>
     <code class="python" lang="python">
     def greeting(msg, name, count):
       i = 0
       for i in range(0, count):
         print(msg, name)
-    </code></para>
+    </code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch06-m06-p01"/></para>
@@ -66,13 +66,13 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Using default parameter values</title>
-    <para id="para-00010">Consider the following, updated version of greeting():
+    <para id="para-00010">Consider the following, updated version of greeting():</para>
     <code class="python" lang="python">
     def greeting(msg, name="Friend", count=1):
       i = 0
       for i in range(0, count):
         print(msg, name)
-    </code></para>
+    </code>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch06-m06-p05"/></para>

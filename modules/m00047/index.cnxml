@@ -25,13 +25,13 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Arguments and parameters</title>
-    <para id="para-00003">Consider the following:
+    <para id="para-00003">Consider the following:</para>
     <code class="python" lang="python">
     def print_welcome(name):
       print(f"Welcome {name}!")<newline/>
     username = int(input("Enter new username: "))
     print_welcome(username)
-    </code></para>
+    </code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch06-m04-p01"/></para>
@@ -72,7 +72,7 @@
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Multiple arguments and parameters</title>
-    <para id="para-00009">Consider the following:
+    <para id="para-00009">Consider the following:</para>
     <code class="python" lang="python">
     def calc_distance(x1, y1, x2, y2):
       dist = math.sqrt((x2-x1)**2 + (y2-y1)**2)
@@ -82,7 +82,7 @@
     p2_x =int(input("Enter point 2's x: "))
     p2_y =int(input("Enter point 2's y: "))
     calc_distance(p1_x, p1_y, p2_x, p2_y)
-    </code></para>
+    </code>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch06-m04-p05"/></para>
