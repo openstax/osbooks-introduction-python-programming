@@ -89,12 +89,12 @@
     <title>Exploring further</title>
     <para id="para-00015">As shown in a memory diagram, variables and objects are two separate ideas. Calling a function like id() or type() returns information about an object, not a variable. In fact, a variable doesn't have an identity or a type, as shown in this example:</para>
     <code class="python" lang="python">
-    >>> rating = 10 # Integer object somewhere in memory.
+    >>> rating = 10&#160;&#160;# Integer object somewhere in memory.
     >>> type(rating)
     &lt;class 'int'>
     >>> id(rating)
     9793344
-    >>> rating = "ten" # String object somewhere else in memory.
+    >>> rating = "ten"&#160;&#160;# String object somewhere else in memory.
     >>> type(rating)
     &lt;class 'str'>
     >>> id(rating)
@@ -137,7 +137,7 @@
     <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
     <list id="list-00006">
-    <item>What is the type and value of each object?</item>
+    <item>What <span class="blue-code">is</span> the type and value of each object?</item>
     <item>Which object does each variable reference?</item>
     </list></item>
     </list>
