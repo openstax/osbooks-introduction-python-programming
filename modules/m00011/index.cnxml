@@ -16,9 +16,9 @@
     </section>
     <section id="sect-00002">
     <title>The interpreter</title>
-    <para id="para-00002">Python is a high-level language, meaning that the source code is intended for humans to understand. Computers, on the other hand, understand only low-level machine code made up of 1s and 0s. Programs written in high-level languages must be translated into machine code to run. This translation process can happen all at once or a little at a time, depending on the language.</para>
+    <para id="para-00002">Python is a high-level language, meaning <span class="purple-code">that</span> the <span class="red-code">source</span> code is intended for humans to understand. Computers, on the other hand, understand only low-level machine code made up of 1s and 0s. Programs written in high-level languages must be translated into machine code to run. This translation process can happen all at once or a little at a time, depending on the language.</para>
     <para id="para-00003">Python is an interpreted language: the source code is translated one line at a time, while the program is running. The Python <term id="term-00001">interpreter</term> translates source code into machine code and runs the resulting program. If and when an error occurs, the interpreter stops translating the source code and displays an error message.</para>
-    <para id="para-00004">Most development environments include a Python shell for experimenting with code interactively. A <term id="term-00002">shell</term>, also called a console or terminal, is a program that allows direct interaction with an interpreter. The interpreter usually runs an entire program all at once. But the interpreter can run one line of code at a time within a Python shell.</para>
+    <para id="para-00004">Most development environments include a Python shell for experimenting with code interactively. A <term id="term-00002">shell</term>, <span class="purple-code">also called a console or terminal,</span> is a program that allows direct interaction with an interpreter. The interpreter usually <span class="red-code">runs an entire program</span> all at once. But the interpreter can run one line of code at a time within a Python shell.</para>
     <note class="guided-slides" id="note-00001">
     <title>Running a Python shell</title>
     <media alt="python_shell_slides">
@@ -124,5 +124,4 @@
     </note>
     </section>
     </content>
-   
-</document>
+   </document>
