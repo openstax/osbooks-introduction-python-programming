@@ -31,11 +31,11 @@
     hour = 8
     minute = 0
     while hour &lt;= 9:
-    while minute &lt;= 59:
-    print(hour, ":", minute)
-    minute += 30
-    hour += 1
-    minute = 0
+    &#160;&#160;while minute &lt;= 59:
+    &#160;&#160;&#160;&#160;print(hour, ":", minute)
+    &#160;&#160;&#160;&#160;minute += 30
+    &#160;&#160;hour += 1
+    &#160;&#160;minute = 0
     </code>
     <para id="para-00004">The above code's output is:</para>
     <code class="python" lang="python">
