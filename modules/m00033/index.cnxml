@@ -20,35 +20,35 @@
     <para id="para-00003">The programmer may start with:</para>
     <code class="python" lang="python">
     if game == 1 and players &lt; 2:
-    print("Not enough players")
+    &#160;&#160;print("Not enough players")
     if game == 1 and players > 4:
-    print("Too many players")
+    &#160;&#160;print("Too many players")
     if game == 1 and (2 &lt;= players &lt;= 4):
-    print("Ready to start")
+    &#160;&#160;print("Ready to start")
     if game == 2 and players &lt; 3:
-    print("Not enough players")
+    &#160;&#160;print("Not enough players")
     if game == 2 and players > 6:
-    print("Too many players")
+    &#160;&#160;print("Too many players")
     if game == 2 and (3 &lt;= players &lt;= 6):
-    print("Ready to start")
+    &#160;&#160;print("Ready to start")
     </code>
     <para id="para-00004">The programmer realizes the code is redundant. What if the programmer could decide the game ID first and then make a decision about players? Nesting allows a decision statement to be inside another decision statement, and is indicated by an indentation level.</para>
     <para id="para-00005">An improved program:</para>
     <code class="python" lang="python">
     if game == 1:
-    if players &lt; 2:
-    print("Not enough players")
-    elif players > 4:
-    print("Too many players")
-    else:
-    print("Ready to start")
+    &#160;&#160;if players &lt; 2:
+    &#160;&#160;&#160;&#160;print("Not enough players")
+    &#160;&#160;elif players > 4:
+    &#160;&#160;&#160;&#160;print("Too many players")
+    &#160;&#160;else:
+    &#160;&#160;&#160;&#160;print("Ready to start")
     if game == 2:
-    if players &lt; 3:
-    print("Not enough players")
-    elif players > 6:
-    print("Too many players")
-    else:
-    print("Ready to start")
+    &#160;&#160;if players &lt; 3:
+    &#160;&#160;&#160;&#160;print("Not enough players")
+    &#160;&#160;elif players > 6:
+    &#160;&#160;&#160;&#160;print("Too many players")
+    &#160;&#160;else:
+    &#160;&#160;&#160;&#160;print("Ready to start")
     # Test game IDs 3-end
     </code>
     <note class="guided-slides" id="note-00001">
@@ -98,7 +98,7 @@
     <item>2: Turkey burger</item>
     <item>3: Mushroom risotto</item>
     </list>
-    <para id="para-00013">Ex: If the input is: <newline/>
+    <para id="para-00013">Ex: If the input is:<newline/>
     lunch <newline/>
     3 <newline/>
     </para>
