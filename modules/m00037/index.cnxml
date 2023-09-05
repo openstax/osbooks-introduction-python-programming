@@ -34,14 +34,14 @@
     # <span class="blue-code">I</span>nitializing the first two Fibonacci numbers
     f = 1
     g = 1
-    print (f, end = ' ')
+    print (f, end = ' ')<newline/>
     # <span class="blue-code">R</span>unning the loop while the last Fibonacci number is less than 20
     while g &lt; 20:
-    print(g, end = ' ')
-    # <span class="blue-code">C</span>alculating the next Fibonacci number and updating the last two sequence numbers
-    temp = f
-    f = g
-    g = temp + g
+      print(g, end = ' ')
+      # <span class="blue-code">C</span>alculating the next Fibonacci number and updating the last two sequence numbers
+      temp = f
+      f = g
+      g = temp + g
     </code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
@@ -67,13 +67,13 @@
     <title>A program printing all <span class="blue-code">odd</span> numbers between 1 and 10.</title>
     <code class="python" lang="python">
     # <span class="blue-code">I</span>nitialization
-    counter = 1
+    counter = 1<newline/>
     # <span class="blue-code">W</span>hile loop condition
     while counter &lt;= 10:
-    if counter % 2 == 1:
-    print(counter)
-    # <span class="blue-code">C</span>ounting up and increasing counter's value by 1 in each iteration
-    counter += 1
+      if counter % 2 == 1:
+        print(counter)
+      # <span class="blue-code">C</span>ounting up and increasing counter's value by 1 in each iteration
+      counter += 1<newline/>
     </code>
     </example>
     <note class="guided-slides" id="note-00003">
@@ -113,14 +113,15 @@
     <title>Programming Practice</title>
     <note class="practice-program" id="note-00005">
     <title>Reading inputs in a while loop.</title>
-    <para id="para-00012">Write a program that takes user inputs in a while loop until the user enters 'begin'. Test the code with the given input values to check that the loop does not terminate until the input is 'begin'. Once the input 'begin' is received, print "The while loop condition has been met." Enter different input words to see when the while loop condition is met.</para>
+    <para id="para-00012"><span class="blue-code">Write a program that takes user inputs in a while loop until the user enters 'begin'. Test the code with the given input values to check that the loop does not terminate until the input is 'begin'. Once the input 'begin' is received,</span> <span class="red-code">print</span> <span class="blue-code">"The while loop condition has been met."</span></para>
+    <para id="para-00014"><span class="blue-code">Enter different input words to see when the while loop condition is met.</span></para>
     <media alt="reading_inputs_in_a_while_loop_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_02_01_Reading-inputs-in-a-while-loop.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00006">
     <title>Sum of odd numbers.</title>
-    <para id="para-00013">Write a program that reads two integer values, n1 and n2. Use a while loop to calculate the sum of odd numbers between n1 and n2 (inclusive of n1 and n2). Remember, a number is odd if number % 2 != 0.</para>
+    <para id="para-00013"><span class="blue-code">Write a program that reads two integer values, n1 and n2. Use a while loop to calculate the sum of odd numbers between n1 and n2 (inclusive of n1 and n2). Remember, a number is odd if number % 2 != 0.</span></para>
     <media alt="sum_of_odd_numbers_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_02_02_Sum-of-odd-numbers.html"/>
     </media>
