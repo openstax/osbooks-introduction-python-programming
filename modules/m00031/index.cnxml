@@ -45,7 +45,7 @@
     <entry>addition, subtraction</entry>
     </row>
     <row>
-    <entry>&lt;, &lt;=, >, >=, ==, !=</entry>
+    <entry>&#60;, &#60;=, &#62;, &#62;=, ==, !=</entry>
     <entry>comparison operators</entry>
     </row>
     <row>
@@ -92,7 +92,7 @@
     <section id="sect-00003">
     <title>Associativity</title>
     <para id="para-00007">What if operators beside each other have the same level of precedence? Associativity determines the order of operations when precedence is the same. Ex: 8 / 4 * 3 is evaluated as (8/4) * 3 rather than 8 / (4*3) because multiplication and division are left associative. Most operators are left associative and are evaluated from left to right. Exponentiation is the main exception (noted above) and is right associative, that is evaluated from right to left. Ex: 2 ** 3 ** 4 is evaluated as 2 ** (3**4).</para>
-    <para id="para-00008">When comparison operators are chained, the expression is converted into the equivalent combination of comparisons and evaluated from left to right. Ex. 10 &lt; x &lt;= 20 is evaluated as 10 &lt; x and x &lt;= 20.</para>
+    <para id="para-00008">When comparison operators are chained, the expression is converted into the equivalent combination of comparisons and evaluated from left to right. Ex. 10 &#60; x &#60;= 20 is evaluated as 10 &#60; x and x &#60;= 20.</para>
     <note class="guided-slides" id="note-00003">
     <title>Operation precedence</title>
     <media alt="operation_precedence_slides">

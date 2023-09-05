@@ -69,12 +69,12 @@
     </media>
     <caption>if-else statement template
     <code class="python" lang="python">
-        # Statements before
-        if condition:
-        # Body
-        else:
-        # Body
-        # Statements after
+    # Statements before<newline/>
+    if condition:
+    &#160;&#160;# Body
+    else:
+    &#160;&#160;# Body<newline/>
+    # Statements after
     </code>
     </caption>
     </figure>

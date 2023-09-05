@@ -20,11 +20,11 @@
     <para id="para-00003">Two separate if statements <span class="red-code">do not</span> guarantee that only one branch is taken <span class="red-code">and might result in both branches being taken</span>. Ex: The program below attempts to add a curve based on the input test score. If the input is 60, both if statements are incorrectly executed, and the resulting score is 75.</para>
     <code class="python" lang="python">
     score = int(input())
-    if score &lt; 70:
-    score += 10
+    if score &#60; 70:
+    &#160;&#160;score += 10
     # Wrong:
-    if 70 &lt;= score &lt; 85:
-    score += 5
+    if 70 &#60;= score &#60; 85:
+    &#160;&#160;score += 5
     </code>
     <para id="para-00004">Chaining decision statements with elif allows the programmer to check for multiple conditions. An <term id="term-00001">elif</term>, short for else if, statement, checks a condition when the prior decision statement's condition is false. An elif statement is part of a chain and must follow an if (or elif) statement.</para>
     <figure id="fig-00001">
@@ -33,11 +33,11 @@
     </media>
     <caption>if-elif statement template
     <code class="python" lang="python">
-    # Statements before
+    # Statements before<newline/>
     if condition:
-    # Body
+    &#160;&#160;# Body
     elif condition:
-    # Body
+    &#160;&#160;# Body<newline/>
     # Statements after
     </code></caption>
     </figure>

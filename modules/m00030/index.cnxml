@@ -18,7 +18,7 @@
     </section>
     <section id="sect-00002">
     <title>Logical operator: and</title>
-    <para id="para-00002">Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that hour >= 9 and hour &lt; 17. A <term id="term-00001">logical operator</term> takes condition operand(s) and produces True or False.</para>
+    <para id="para-00002">Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that hour &#62;= 9 and hour &#60; 17. A <term id="term-00001">logical operator</term> takes condition operand(s) and produces True or False.</para>
     <para id="para-00003">Python has 3 logical operators: <emphasis effect="italics">and</emphasis>, <emphasis effect="italics">or</emphasis>, and <emphasis effect="italics">not</emphasis>. The <term id="term-00002">and</term> operator takes 2 condition operands and returns True if both conditions are True.</para>
     <table summary=" " id="table-00001">
     <title>Truth table: p and q</title>
