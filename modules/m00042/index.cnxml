@@ -48,7 +48,7 @@
     <entry><code class="python" lang="python">
     # initialization
     while expression:
-    # loop body
+      # loop body<newline/>
     # statements after the loop
     </code></entry>
     </row>
@@ -57,7 +57,7 @@
     <entry><code class="python" lang="python">
     # initialization
     for loop_variable in container:
-    # loop body
+      # loop body<newline/>
     # statements after the loop
     </code></entry>
     </row>
@@ -65,10 +65,10 @@
     <entry>Nested <code class="python inline-code">while</code> loop</entry>
     <entry><code class="python" lang="python">
     while outer_loop_expression:
-    # outer loop body (1)
-    while inner_loop_expression:
-    # inner loop body
-    # outer loop body (2)
+      # outer loop body (1)
+      while inner_loop_expression:
+        # inner loop body
+      # outer loop body (2)<newline/>
     # statements after the loop
     </code></entry>
     </row>
@@ -77,10 +77,10 @@
     <entry><code class="python" lang="python">
     # initialization
     while loop_expression:
-    # loop body
-    if break_condition:
-    break
-    # remaining body of loop
+      # loop body
+      if break_condition:
+        break
+      # remaining body of loop<newline/>
     # statements after the loop
     </code></entry>
     </row>
@@ -89,10 +89,10 @@
     <entry><code class="python" lang="python">
     # initialization
     while loop_expression:
-    # loop body
-    if continue_condition:
-    continue
-    # remaining body of loop
+      # loop body
+      if continue_condition:
+        continue
+      # remaining body of loop<newline/>
     # statements after the loop
     </code></entry>
     </row>
@@ -101,12 +101,12 @@
     <entry><code class="python" lang="python">
     # initialization
     for loop_expression:
-    # loop body
-    if break_condition:
-    break
-    # remaining body of loop
+      # loop body
+      if break_condition:
+        break
+      # remaining body of loop
     else:
-    # loop else statement
+      # loop else statement<newline/>
     # statements after the loop
     </code></entry>
     </row>
@@ -117,7 +117,8 @@
     <title>Programming practice</title>
     <note class="practice-program" id="note-00001">
     <title>Prime numbers</title>
-    <para id="para-00003">Write a program that takes in a positive integer number (N) and prints out the first N prime numbers on separate lines. Note: a prime number is a number that is not divisible by any positive number larger than 1. To check if a number is prime, the condition of number % i != 0 can be checked for i greater than 1 and less than number.</para>
+    <para id="para-00003">Write a program that takes in a positive integer number (N) and prints out the first N prime numbers on separate lines.</para>
+     <para id="para-00005">Note: a prime number is a number that is not divisible by any positive number larger than 1. To check if a number is prime, the condition of number % i != 0 can be checked for i greater than 1 and less than number.</para>
     <para id="para-00004">Ex: if N = 6, the output is:</para>
     <code class="python" lang="python">
     2

@@ -101,7 +101,7 @@
     </media>
     </note>
     <note class="learning-questions" id="note-00005">
-    <title>Using a continue statement.</title>
+    <title>Using <span class="red-code">a</span> continue <span class="red-code">statement.</span></title>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch05-m04-p04"/></para>
@@ -129,7 +129,7 @@
     </media>
     </note>
     <note class="practice-program" id="note-00007">
-    <title>Using a continue statement in a loop.</title>
+    <title>Using <span class="red-code">a continue</span> statement in a loop.</title>
     <para id="para-00014">Complete the following <span class="blue-code">code</span> so that the program calculates <span class="blue-code">the</span> sum of all the numbers in list my_list that are greater than <span class="blue-code">or equal to</span> 5.</para>
     <media alt="using_a_continue_statement_in_a_loop_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_05_08_Using-a-continue-statement-in-a-loop.html"/>
