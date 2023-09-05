@@ -27,7 +27,7 @@
     <title>For loop over a string container</title>
     <para id="para-00003">A string variable can be considered as a container of multiple characters, and hence can be iterated on. Given the following code, please answer the questions.</para>
     <code class="python" lang="python">
-    str_var = "A string"<newline />
+    str_var = "A string"<newline/>
     count = 0
     for c in str_var:
     &#160;&#160;count += 1<newline />
@@ -124,18 +124,18 @@
     <entry><code class="python" lang="python">
     # <span class="blue-code">F</span>or loop condition using range() function to print all multiples of 5 less than 50
     for i in range(0, 50, 5):
-    print(i)
+    &#160;&#160;print(i)
     </code></entry>
     <entry><code class="python" lang="python">
-    # <span class="blue-code">W</span>hile loop implementation of printing multiples of 5 less than 50
+    # <span class="blue-code">W</span>hile loop implementation of printing multiples of 5 less than 50<newline/>
     # <span class="blue-code">I</span>nitialization
     i = 0
     # <span class="blue-code">L</span>imiting the range to be less than 50
     while i &lt; 50:
-    # <span class="blue-code">C</span>hecking for multiples of 5
-    if i % 5 == 0:
-    print(i)
-    i += 1
+    &#160;&#160;# <span class="blue-code">C</span>hecking for multiples of 5
+    &#160;&#160;if i % 5 == 0:
+    &#160;&#160;&#160;&#160;print(i)
+    &#160;&#160;i += 1
     </code></entry>
     </row>
     </tbody>
