@@ -203,14 +203,14 @@
       The coefficients <emphasis effect="bold">\(</emphasis>a<emphasis effect="bold">\)</emphasis>, <emphasis effect="bold">\(</emphasis>b<emphasis effect="bold">\)</emphasis>, and <emphasis effect="bold">\(</emphasis>c<emphasis effect="bold">\)</emphasis> are known values.
       The variable <emphasis effect="bold">\(</emphasis>x<emphasis effect="bold">\)</emphasis> represents an unknown value.
       Ex: <emphasis effect="bold">\(</emphasis>2x^2 + 3x - 5 = 0<emphasis effect="bold">\)</emphasis> has the coefficients <emphasis effect="bold">\(</emphasis>a=2<emphasis effect="bold">\)</emphasis>, <emphasis effect="bold">\(</emphasis>b=3<emphasis effect="bold">\)</emphasis>, and <emphasis effect="bold">\(</emphasis>c=-5<emphasis effect="bold">\)</emphasis>.
-      The quadratic formula provides a quick and easy way to solve a quadratic equation for <emphasis effect="bold">\(</emphasis>x<emphasis effect="bold">\)</emphasis>:<newline/>
-      <emphasis effect="bold">\[</emphasis> x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} <emphasis effect="bold">\]</emphasis><newline/>
+      The quadratic formula provides a quick and easy way to solve a quadratic equation for <emphasis effect="bold">\(</emphasis>x<emphasis effect="bold">\)</emphasis>:<newline/><newline/>
+      <emphasis effect="bold">\[</emphasis> x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} <emphasis effect="bold">\]</emphasis><newline/><newline/>
       The plus-minus symbol indicates the equation has two solutions.
       However, Python does not have a plus-minus operator.
-      To use this formula in Python, the formula must be separated: <newline/>
+      To use this formula in Python, the formula must be separated: <newline/><newline/>
       <emphasis effect="bold">\[</emphasis> x_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a} <emphasis effect="bold">\]</emphasis>
       <emphasis effect="bold">\[</emphasis> x_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a} <emphasis effect="bold">\]
-      </emphasis><newline/>
+      </emphasis><newline/><newline/>
       Write the code for the quadratic formula in the program below.
       Test your program using the following values for <emphasis effect="bold">\(</emphasis>a<emphasis effect="bold">\)</emphasis>, <emphasis effect="bold">\(</emphasis>b<emphasis effect="bold">\)</emphasis>, and <emphasis effect="bold">\(</emphasis>c<emphasis effect="bold">\)</emphasis>:</para>
     <table summary=" " id="table-00003">

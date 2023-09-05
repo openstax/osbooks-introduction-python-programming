@@ -20,14 +20,14 @@
     <list id="list-00002">
     <item>Good spacing:<newline/>
     <code class="python" lang="python">
-    name = input("Enter someone's name: ")
-    place = input("Enter a famous place: ")
+    name = input("Enter someone's name: ")<newline/>
+    place = input("Enter a famous place: ")<newline/>
     print(name, "should visit", place + "!")
     </code></item>
     <item>Poor spacing: <newline/>
     <code class="python" lang="python">
-    name=input ("Enter someone's name: " )
-    place =input("Enter a famous place: ")
+    name=input ("Enter someone's name: " )<newline/>
+    place =input("Enter a famous place: ")<newline/>
     print( name,"should visit" , place+ "!")
     </code></item>
     </list>
@@ -114,13 +114,13 @@
     <para id="para-00011" class="centered-text">print("The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.")</para>
     <para id="para-00012">PEP 8 recommends that each line of code be less than 80 characters long. That way, programmers won't need to scroll horizontally to read the code. The above program can be rewritten by breaking up the original string:</para>
     <para id="para-00013" class="centered-text"><code class="python" lang="python">
-     print("The unanimous Declaration of the thirteen united States of "
-     &#160;&#160;&#160;&#160;&#160;&#160;"America, When in the Course of human events, it becomes "
-     &#160;&#160;&#160;&#160;&#160;&#160;"necessary for one people to dissolve the political bands "
-     &#160;&#160;&#160;&#160;&#160;&#160;"which have connected them with another, and to assume among "
-     &#160;&#160;&#160;&#160;&#160;&#160;"the powers of the earth, the separate and equal station to "
-     &#160;&#160;&#160;&#160;&#160;&#160;"which the Laws of Nature and of Nature's God entitle them, a "
-     &#160;&#160;&#160;&#160;&#160;&#160;"decent respect to the opinions of mankind requires that they "
+     print("The unanimous Declaration of the thirteen united States of "<newline/>
+     &#160;&#160;&#160;&#160;&#160;&#160;"America, When in the Course of human events, it becomes "<newline/>
+     &#160;&#160;&#160;&#160;&#160;&#160;"necessary for one people to dissolve the political bands "<newline/>
+     &#160;&#160;&#160;&#160;&#160;&#160;"which have connected them with another, and to assume among "<newline/>
+     &#160;&#160;&#160;&#160;&#160;&#160;"the powers of the earth, the separate and equal station to "<newline/>
+     &#160;&#160;&#160;&#160;&#160;&#160;"which the Laws of Nature and of Nature's God entitle them, a "<newline/>
+     &#160;&#160;&#160;&#160;&#160;&#160;"decent respect to the opinions of mankind requires that they "<newline/>
      &#160;&#160;&#160;&#160;&#160;&#160;"should declare the causes which impel them to the separation.")
     </code></para>
     <para id="para-00014">For convenience, Python automatically concatenates multiple strings. The <code>+</code> operator is not required in this situation.</para>
@@ -156,14 +156,14 @@
     <item><para id="para-00019">Explicit line joining, using <code class="python inline-code">\</code> characters:</para>
     <code class="python" lang="python">
     decl = "The unanimous Declaration of the thirteen united States of " \
-    &#160;&#160;&#160;&#160;&#160;&#160;"America, When in the Course of human events, it becomes " \
-    &#160;&#160;&#160;&#160;&#160;&#160;"necessary for one people to dissolve the political bands..."
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"America, When in the Course of human events, it becomes " \
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"necessary for one people to dissolve the political bands..."
     </code></item>
     <item><para id="para-00020">Implicit line joining, using parentheses:</para>
     <code class="python" lang="python">
-    decl = ("The unanimous Declaration of the thirteen united States of "
-    &#160;&#160;&#160;&#160;&#160;&#160;"America, When in the Course of human events, it becomes "
-    &#160;&#160;&#160;&#160;&#160;&#160;"necessary for one people to dissolve the political bands...")
+    decl = ("The unanimous Declaration of the thirteen united States of "<newline/>
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"America, When in the Course of human events, it becomes "<newline/>
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"necessary for one people to dissolve the political bands...")
     </code></item>
     </list>
     <para id="para-00021">Implicit line joining is more common, since many statements and expressions use parentheses anyway. PEP 8 recommends avoiding the use of explicit line joining whenever possible.</para>
