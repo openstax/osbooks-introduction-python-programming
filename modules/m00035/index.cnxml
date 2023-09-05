@@ -85,62 +85,62 @@
     <entry>Evaluates the boolean value of x and returns True if the value is False and False if the value is True. Ex: <code class="python inline-code">not True</code> is <code class="python inline-code">False</code>.</entry>
     </row>
     <row>
-    <entry>Decision statement</entry>
-    <entry>Description</entry>
+    <entry><emphasis effect="bold">Decision statement</emphasis></entry>
+    <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
     <entry><span class="blue-code">if statement</span></entry>
-    <entry><code class="python inline-code">
-    # Statements before
+    <entry><code class="python" lang="python">
+    # Statements before<newline/>
     if condition:
-    # Body
+    &#160;&#160;# Body<newline/>
     # Statements after
     </code></entry>
     </row>
     <row>
-    <entry><span class="blue-code">else statement</span></entry>
-    <entry><code class="python inline-code">
-    # Statements before
+    <entry><span class="blue-code"><emphasis effect="italics">else statement</emphasis></span></entry>
+    <entry><code class="python" lang="python">
+    # Statements before<newline/>
     <span class="purple-code">if</span> condition:
-    # Body
+    &#160;&#160;# Body
     else:
-    # Body
+    &#160;&#160;# Body<newline/>
     # Statements after
     </code></entry>
     </row>
     <row>
-    <entry>elif statement</entry>
-    <entry><code class="python inline-code">
-    # Statements before
+    <entry><span class="blue-code"><emphasis effect="italics">elif statement</emphasis></span></entry>
+    <entry><code class="python" lang="python">
+    # Statements before<newline/>
     <span class="purple-code">if</span> condition:
-    # Body
+    &#160;&#160;# Body
     elif condition:
-    # Body
+    &#160;&#160;# Body
     else:
-    # Body
+    &#160;&#160;# Body<newline/>
     # Statements after
     </code></entry>
     </row>
     <row>
     <entry>nested if statement</entry>
-    <entry><code class="python inline-code">
-    # Statements before
-    if condition:
-    if condition:
-    # Body
+    <entry><code class="python" lang="python">
+    # Statements before<newline/>
+    <span class="purple-code">if</span> condition:
+    &#160;&#160;if condition:
+    &#160;&#160;&#160;&#160;# Body
+    &#160;&#160;else:
+    &#160;&#160;&#160;&#160;# Body
     else:
-    # Body
-    else:
-    if condition:
-    # Body
-    else:
-    # Body
+    &#160;&#160;if condition:
+    &#160;&#160;&#160;&#160;# Body
+    &#160;&#160;else:
+    &#160;&#160;&#160;&#160;# Body<newline/>
     # Statements after
     </code></entry>
     </row>
     <row>
-    <entry><span class="blue-code">conditional expression</span></entry>
-    <entry><code class="python inline-code"><span class="blue-code">expression_if_true</span> <span class="purple-code">if</span> <span class="blue-code">condition</span> <span class="purple-code">else</span> <span class="blue-code">expression_if_false</span></code></entry>
+    <entry><span class="blue-code"><emphasis effect="bold">conditional expression</emphasis></span></entry>
+    <entry><code class="python inline-code"><emphasis effect="bold"><span class="blue-code">expression_if_true</span> <span class="purple-code">if</span> <span class="blue-code">condition</span> <span class="purple-code">else</span> <span class="blue-code">expression_if_false</span></emphasis></code></entry>
     </row>
     </tbody>
     </tgroup>
