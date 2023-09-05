@@ -148,7 +148,7 @@
     </note>
     <note class="practice-program" id="note-00005">
     <title>Wage calculator</title>
-    <para id="para-00013">You just landed a part-time job and would like to calculate how much money you will earn. Write a program that inputs the time you start working, the time you stop working, and your hourly pay rate (example input in bold):</para>
+    <para id="para-00013">You just landed a part-time job and would like to calculate how much money you <span class="blue-code">will</span> earn. Write a program that inputs the time you start working, the time you stop working, and your hourly pay rate (example input in bold):</para>
     <code class="python" lang="python">
     Starting hour: 9
     Starting minute: 30

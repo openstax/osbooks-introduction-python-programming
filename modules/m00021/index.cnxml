@@ -260,7 +260,7 @@
     <code class="python" lang="python">
     "To me programming is more than an important practical art.
     It is also a gigantic undertaking in the foundations of knowledge."
-    &#9;-- Grace Hopper    
+    &#9;-- Grace Hopper
     </code>
     <media alt="hopper_quote_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_01_Hopper-quote.html"/>
@@ -268,7 +268,7 @@
     </note>
     <note class="practice-program" id="note-00006">
     <title>Shift cipher</title>
-    <para id="para-00018">During the Roman Empire, Julius Caesar (100–44 BCE) used a simple technique to encrypt private messages. Each letter of the message was replaced with the third next letter of the alphabet. Ex: If the message was CAT, the C became F, the A became D, and the T became W, resulting in the message FDW. This technique is known as a shift cipher, because each letter is shifted by some amount. In Caesar's case, the amount was 3, but other amounts (besides 0) would work too.</para>
+    <para id="para-00018">During the Roman Empire, Julius Caesar (100–44 BCE) used a simple technique to encrypt private messages. Each letter of the message <span class="blue-code">was</span> replaced with the third next letter of the alphabet. Ex: If the message <span class="blue-code">was</span> CAT, the C became F, the A became D, and the T became W, resulting in the message FDW. This technique is known as a shift cipher, because each letter is shifted by some amount. In Caesar's case, the amount was 3, but other amounts (besides 0) would work too.</para>
     <para id="para-00019">Write a program that prompts the user to input the following two values (example input in bold):</para>
     <code class="python" lang="python">
     Enter a 3-letter word: CAT
