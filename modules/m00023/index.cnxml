@@ -117,7 +117,7 @@
     </code></item>
     <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
-    <list id="list-00004">
+    <list list-type="bulleted" id="list-00004">
     <item>What is the final value of <code>a</code>, <code>b</code>, and <code>c</code>?</item>
     <item>How many integer objects are created?</item>
     </list></item>
@@ -136,7 +136,7 @@
     </code></item>
     <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
-    <list id="list-00006">
+    <list list-type="bulleted" id="list-00006">
     <item>What <span class="blue-code">is</span> the type and value of each object?</item>
     <item>Which object does each variable reference?</item>
     </list></item>
