@@ -17,8 +17,7 @@
     </section>
     <section id="sect-00002">
     <title>Creating tuples and accessing elements</title>
-    <para id="para-00002">A <term id="term-00001">tuple</term> is a sequence of comma separated values that can contain elements of different types. A tuple must be created with commas between values, and conventionally the sequence is surrounded by parentheses. Each element is accessed by index, starting with the first element at index 0.</para>
-    
+    <para id="para-00002">A <term id="term-00001">tuple</term> is a sequence of comma separated values that can contain elements of different types. A tuple must be created with commas between values, and conventionally the sequence is surrounded by parentheses. Each element is accessed by index, starting with the first element at index 0.</para>    
     <table summary=" " id="table-00001">
     <title>Example tuples</title>
     <tgroup cols="1">
@@ -36,10 +35,12 @@
     </code>
     </entry>
     <entry>
+    <code class="python" lang="python">  
     tuple_1: (2, 3, 4)
-    3
+    3<newline/>
     data_13: ('Aimee Perry', 96, [94, 100, 97, 93])
     [94, 100, 97, 93]
+    </code>
     </entry>
     </row>
     </tbody>
@@ -100,10 +101,10 @@
     <title>Programming practice</title>
     <note class="practice-program" id="note-00005">
     <title>Creating a tuple from a list</title>
+    <para id="para-00011">Suppose a programmer wants to create a tuple from a list to prevent future changes. The tuple() function creates a tuple from an object like a list. Ex: my_tuple = tuple(my_list) creates a tuple from the list my_list. Update the program below to create a tuple final_grades from the list grades.</para>
     <media alt="creating_a_tuple_from_a_list_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_06_06_Creating-a-tuple-from-a-list.html"/>
-    </media>
-    <para id="para-00011">Suppose a programmer wants to create a tuple from a list to prevent future changes. The tuple() function creates a tuple from an object like a list. Ex: my_tuple = tuple(my_list) creates a tuple from the list my_list. Update the program below to create a tuple final_grades from the list grades.</para>
+    </media>  
     </note>
     <note class="practice-program" id="note-00006">
     <title>Creating a tuple with user input</title>
