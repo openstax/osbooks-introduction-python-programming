@@ -29,7 +29,7 @@
     <tbody>
     <row>
     <entry>abs(x)</entry>
-    <entry>Returns the absolute value of <code class="python inline-code">x</code>.</entry>
+    <entry><para id="para-00012">Returns the absolute value of <code class="python inline-code">x</code>.</para></entry>
     </row>
     <row>
     <entry>int(x)</entry>
@@ -45,7 +45,7 @@
     </row>
     <row>
     <entry>round(x, ndigits)</entry>
-    <entry>Rounds <code class="python inline-code">x</code> to <code class="python inline-code">ndigits</code> places after the decimal point. If <code class="python inline-code">ndigits</code> is omitted, returns the nearest integer to <code class="python inline-code">x</code>.</entry>
+    <entry><para id="para-00013">Rounds <code class="python inline-code">x</code> to <code class="python inline-code">ndigits</code> places after the decimal point. If <code class="python inline-code">ndigits</code> is omitted, returns the nearest integer to <code class="python inline-code">x</code>.</para></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Operator</emphasis></entry>
