@@ -47,7 +47,7 @@
     <para id="para-00007">Python Tutor is also useful for drawing memory diagrams similar to the ones in this book. Before clicking Visualize Execution, change the middle option from "inline primitives, don't nest objects [default]" to "render all objects on the heap (Python/Java)" as shown in the following screenshot:</para>
     <figure id="fig-00001">
     <media alt="Screenshot of Python tutor settings, with the middle dropdown list open to the last setting.">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    <image mime-type="image/jpg" src="../../media/python-tutor-settings.png"/>
     </media>
     <caption/>
     </figure>
