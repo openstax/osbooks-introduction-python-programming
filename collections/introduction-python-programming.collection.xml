@@ -87,5 +87,17 @@
         <col:module document="m00050"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 7: Modules</md:title>
+      <col:content>
+        <col:module document="m00051"/>
+        <col:module document="m00052"/>
+        <col:module document="m00053"/>
+        <col:module document="m00054"/>
+        <col:module document="m00055"/>
+        <col:module document="m00056"/>
+        <col:module document="m00057"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>
