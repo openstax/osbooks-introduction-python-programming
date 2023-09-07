@@ -1,4 +1,4 @@
-<document xmlns="http://cnx.rice.edu/cnxml">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>Keyword arguments</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
     <md:title>Keyword arguments</md:title>
@@ -57,7 +57,7 @@
     <section id="sect-00003">
     <title>Default parameter values</title>
     <para id="para-00008">Functions can define default parameter values to use if a positional or keyword argument is not provided for the parameter. Ex: <code class="python inline-code">def season(m, d, hemi="N"):</code> defines a default value of "N" for the hemi parameter. Note: Default parameter values are only defined once to be used by the function, so mutable objects (such as lists) should not be used as default values.</para>
-    <para id="para-00009">The physics example below calculates weight as a force in Newtons given mass in kilograms and acceleration in \(\frac{m}{s^2}\). Gravity on Earth is 9.8 \(\frac{m}{s^2}\), and gravity on Mars is 3.7 \(\frac{m}{s^2}\).</para>
+    <para id="para-00009">The physics example below calculates weight as a force in Newtons given mass in kilograms and acceleration in <m:math><m:mrow><m:mfrac><m:mi>m</m:mi><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>. Gravity on Earth is 9.8 <m:math><m:mrow><m:mfrac><m:mi>m</m:mi><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>, and gravity on Mars is 3.7 <m:math><m:mrow><m:mfrac><m:mi>m</m:mi><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Using default parameter values</title>
     <media alt="default_parameter_values_slides">

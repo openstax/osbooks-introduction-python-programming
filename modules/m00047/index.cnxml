@@ -1,4 +1,4 @@
-<document xmlns="http://cnx.rice.edu/cnxml">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>Parameters</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
     <md:title>Parameters</md:title>
@@ -162,7 +162,7 @@
     <title>Programming practice</title>
     <note class="practice-program" id="note-00006">
     <title>Printing right triangle area</title>
-    <para id="para-00021">Write a function, print_area(), that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is \(\dfrac{bh}{2}\), where \(b\) is the base and \(h\) is the height.</para><newline/>
+    <para id="para-00021">Write a function, print_area(), that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where <emphasis effect="italics">b</emphasis> is the base and <emphasis effect="italics">h</emphasis> is the height.</para><newline/>
     <para id="para-00022">Given input:</para>
     <code class="python" lang="python">
     3
