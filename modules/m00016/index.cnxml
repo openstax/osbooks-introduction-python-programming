@@ -1,4 +1,4 @@
-<document xmlns="http://cnx.rice.edu/cnxml">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>The math module</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
     <md:title>The math module</md:title>
@@ -73,19 +73,19 @@
     <tbody>
     <row>
     <entry><code class="python inline-code">math.e</code></entry>
-    <entry>\( e = 2.71828\ldots \)</entry>
+    <entry><m:math><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mn>2.71828</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>Euler's number; the base of the natural logarithm.</entry>
     </row>
     <row>
     <entry><code class="python inline-code">math.pi</code></entry>
-    <entry>\( \pi = 3.14159\ldots \)</entry>
+    <entry><m:math><m:mrow><m:mi>π</m:mi><m:mo>=</m:mo><m:mn>3.14159</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>The ratio of the circumference to the diameter of a circle.</entry>
     </row>
     <row>
     <entry><code class="python inline-code">math.tau</code></entry>
-    <entry>\( \tau = 6.28318\ldots \)</entry>
+    <entry><m:math><m:mrow><m:mi>τ</m:mi><m:mo>=</m:mo><m:mn>6.28318</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>The ratio of the circumference to the radius of a circle.
-    Tau is equal to \( 2\pi \).</entry>
+    Tau is equal to 2π.</entry>
     </row>
     </tbody>
     </tgroup>
@@ -110,14 +110,14 @@
     <row>
     <entry><code class="python inline-code">math.ceil(x)</code></entry>
     <entry>The ceiling of x: the smallest integer greater than or equal to x.</entry>
-    <entry><code class="python inline-code">math.ceil(7.4)</code> \(~\rightarrow~\) <code class="python inline-code">8</code><newline/>
-    <code class="python inline-code">math.ceil(-7.4)</code> \(~\rightarrow~\) <code class="python inline-code">-7</code></entry>
+    <entry><code class="python inline-code">math.ceil(7.4)</code> → <code class="python inline-code">8</code><newline/>
+    <code class="python inline-code">math.ceil(-7.4)</code> → <code class="python inline-code">-7</code></entry>
     </row>
     <row>
     <entry><code class="python inline-code">math.floor(x)</code></entry>
     <entry>The floor of x: the largest integer less than or equal to x.</entry>
-    <entry><code class="python inline-code">math.floor(7.4)</code> \(~\rightarrow~\) <code class="python inline-code">7</code><newline/>
-    <code class="python inline-code">math.floor(-7.4)</code> \(~\rightarrow~\) <code class="python inline-code">-8</code></entry>
+    <entry><code class="python inline-code">math.floor(7.4)</code> → <code class="python inline-code">7</code><newline/>
+    <code class="python inline-code">math.floor(-7.4)</code> → <code class="python inline-code">-8</code></entry>
     </row>
     <row>
     <entry namest="c1" nameend="c3"><emphasis effect="bold">Power and logarithmic</emphasis></entry>
@@ -125,26 +125,26 @@
     <row>
     <entry><code class="python inline-code">math.log(x)</code></entry>
     <entry>The natural logarithm of x (to base e).</entry>
-    <entry><code class="python inline-code">math.log(math.e)</code> \(~\rightarrow~\) <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.log(0)</code> \(~\rightarrow~\) <code class="python inline-code">ValueError: math domain error</code></entry>
+    <entry><code class="python inline-code">math.log(math.e)</code> → <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.log(0)</code> → <code class="python inline-code">ValueError: math domain error</code></entry>
     </row>
     <row>
     <entry><code class="python inline-code">math.log(x, base)</code></entry>
     <entry>The logarithm of x to the given base.</entry>
-    <entry><code class="python inline-code">math.log(8, 2)</code> \(~\rightarrow~\) <code class="python inline-code">3.0</code><newline/>
-    <code class="python inline-code">math.log(10000, 10)</code> \(~\rightarrow~\) <code class="python inline-code">4.0</code></entry>
+    <entry><code class="python inline-code">math.log(8, 2)</code> → <code class="python inline-code">3.0</code><newline/>
+    <code class="python inline-code">math.log(10000, 10)</code> → <code class="python inline-code">4.0</code></entry>
     </row>
     <row>
     <entry><code class="python inline-code">math.pow(x, y)</code></entry>
     <entry>x raised to the power y. Unlike the <code class="python inline-code">**</code> operator, <code class="python inline-code">math.pow()</code> converts x and y to type float.</entry>
-    <entry><code class="python inline-code">math.pow(3, 0)</code> \(~\rightarrow~\) <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.pow(3, 3)</code> \(~\rightarrow~\) <code class="python inline-code">27.0</code></entry>
+    <entry><code class="python inline-code">math.pow(3, 0)</code> → <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.pow(3, 3)</code> → <code class="python inline-code">27.0</code></entry>
     </row>
     <row>
     <entry><code class="python inline-code">math.sqrt(x)</code></entry>
     <entry>The square root of x.</entry>
-    <entry><code class="python inline-code">math.sqrt(9)</code> \(~\rightarrow~\) <code class="python inline-code">3.0</code><newline/>
-    <code class="python inline-code">math.sqrt(-9)</code> \(~\rightarrow~\) <code class="python inline-code">ValueError: math domain error</code></entry>
+    <entry><code class="python inline-code">math.sqrt(9)</code> → <code class="python inline-code">3.0</code><newline/>
+    <code class="python inline-code">math.sqrt(-9)</code> → <code class="python inline-code">ValueError: math domain error</code></entry>
     </row>
     <row>
     <entry namest="c1" nameend="c3"><emphasis effect="bold">Trigonometric</emphasis></entry>
@@ -152,20 +152,20 @@
     <row>
     <entry><code class="python inline-code">math.cos(x)</code></entry>
     <entry>The cosine of x radians.</entry>
-    <entry><code class="python inline-code">math.cos(0)</code> \(~\rightarrow~\) <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.cos(math.pi)</code> \(~\rightarrow~\) <code class="python inline-code">-1.0</code></entry>
+    <entry><code class="python inline-code">math.cos(0)</code> → <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.cos(math.pi)</code> → <code class="python inline-code">-1.0</code></entry>
     </row>
     <row>
     <entry><code class="python inline-code">math.sin(x)</code></entry>
     <entry>The sine of x radians.</entry>
-    <entry><code class="python inline-code">math.sin(0)</code> \(~\rightarrow~\) <code class="python inline-code">0.0</code><newline/>
-    <code class="python inline-code">math.sin(math.pi/2)</code> \(~\rightarrow~\) <code class="python inline-code">1.0</code></entry>
+    <entry><code class="python inline-code">math.sin(0)</code> → <code class="python inline-code">0.0</code><newline/>
+    <code class="python inline-code">math.sin(math.pi/2)</code> → <code class="python inline-code">1.0</code></entry>
     </row>
     <row>
     <entry><code class="python inline-code">math.tan(x)</code></entry>
     <entry>The tangent of x radians.</entry>
-    <entry><code class="python inline-code">math.tan(0)</code> \(~\rightarrow~\) <code class="python inline-code">0.0</code><newline/>
-    <code class="python inline-code">math.tan(math.pi/4)</code> \(~\rightarrow~\) <code class="python inline-code">0.999</code><newline/>
+    <entry><code class="python inline-code">math.tan(0)</code> → <code class="python inline-code">0.0</code><newline/>
+    <code class="python inline-code">math.tan(math.pi/4)</code> → <code class="python inline-code">0.999</code><newline/>
     (Round-off error; the result should be 1.0.)</entry>
     </row>
     </tbody>
@@ -199,20 +199,81 @@
     <title>Programming practice</title>
     <note class="practice-program" id="note-00004">
     <title>Quadratic formula</title>
-    <para id="para-00014">In algebra, a quadratic equation is written as <emphasis effect="bold">\(</emphasis>ax^2 + bx + c = 0<emphasis effect="bold">\)</emphasis>.
-      The coefficients <emphasis effect="bold">\(</emphasis>a<emphasis effect="bold">\)</emphasis>, <emphasis effect="bold">\(</emphasis>b<emphasis effect="bold">\)</emphasis>, and <emphasis effect="bold">\(</emphasis>c<emphasis effect="bold">\)</emphasis> are known values.
-      The variable <emphasis effect="bold">\(</emphasis>x<emphasis effect="bold">\)</emphasis> represents an unknown value.
-      Ex: <emphasis effect="bold">\(</emphasis>2x^2 + 3x - 5 = 0<emphasis effect="bold">\)</emphasis> has the coefficients <emphasis effect="bold">\(</emphasis>a=2<emphasis effect="bold">\)</emphasis>, <emphasis effect="bold">\(</emphasis>b=3<emphasis effect="bold">\)</emphasis>, and <emphasis effect="bold">\(</emphasis>c=-5<emphasis effect="bold">\)</emphasis>.
-      The quadratic formula provides a quick and easy way to solve a quadratic equation for <emphasis effect="bold">\(</emphasis>x<emphasis effect="bold">\)</emphasis>:<newline/><newline/>
-      <emphasis effect="bold">\[</emphasis> x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} <emphasis effect="bold">\]</emphasis><newline/><newline/>
+    <para id="para-00014">In algebra, a quadratic equation is written as <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>.
+      The coefficients <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, and <emphasis effect="italics">c</emphasis> are known values.
+      The variable <emphasis effect="italics">x</emphasis> represents an unknown value.
+      Ex: <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> has the coefficients <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mtext>2</m:mtext></m:mrow></m:math>, <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mtext>3</m:mtext></m:mrow></m:math>
+, and <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mtext>5</m:mtext></m:mrow></m:math>.
+      The quadratic formula provides a quick and easy way to solve a quadratic equation for <emphasis effect="italics">x</emphasis>:<newline/><newline/>
+      <equation id="eq-00001">
+<m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation><newline/><newline/>
       The plus-minus symbol indicates the equation has two solutions.
       However, Python does not have a plus-minus operator.
       To use this formula in Python, the formula must be separated: <newline/><newline/>
-      <emphasis effect="bold">\[</emphasis> x_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a} <emphasis effect="bold">\]</emphasis>
-      <emphasis effect="bold">\[</emphasis> x_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a} <emphasis effect="bold">\]
-      </emphasis><newline/><newline/>
+      <equation id="eq-00002"><m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:msqrt>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math></equation>
+      <equation id="eq-00003"><m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>b</m:mi><m:mo>−</m:mo><m:msqrt>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math></equation><newline/><newline/>
       Write the code for the quadratic formula in the program below.
-      Test your program using the following values for <emphasis effect="bold">\(</emphasis>a<emphasis effect="bold">\)</emphasis>, <emphasis effect="bold">\(</emphasis>b<emphasis effect="bold">\)</emphasis>, and <emphasis effect="bold">\(</emphasis>c<emphasis effect="bold">\)</emphasis>:</para>
+      Test your program using the following values for <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, and <emphasis effect="italics">c</emphasis>:</para>
     <table summary=" " id="table-00003">
     <tgroup cols="5">
     <colspec colnum="1" colname="c1"/>
@@ -277,9 +338,23 @@
     <note class="practice-program" id="note-00005">
     <title>Cylinder formulas</title>
     <para id="para-00015">In geometry, the surface area and volume of a right circular cylinder can be computed as follows:<newline/>
-    <emphasis effect="bold">\[</emphasis> A = 2\pi r h + 2\pi r^2 <emphasis effect="bold">\]</emphasis><newline/>
-    <emphasis effect="bold">\[</emphasis> V = \pi r^2 h <emphasis effect="bold">\]</emphasis><newline/>
-    Write the code for these two formulas in the program below. Hint: Your solution should use both <code class="python inline-code">math.pi</code> and <code class="python inline-code">math.tau</code>. Test your program using the following values for <emphasis effect="bold">\(r\)</emphasis> and <emphasis effect="bold">\(h\)</emphasis>:</para>
+    <equation id="eq-00004"><m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>r</m:mi><m:mi>h</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:msup>
+<m:mi>r</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:math></equation><newline/>
+    <equation id="eq-00005"><m:math>
+<m:mrow>
+<m:mi>V</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+<m:mi>r</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>h</m:mi></m:mrow>
+</m:math></equation><newline/>
+    Write the code for these two formulas in the program below. Hint: Your solution should use both <code class="python inline-code">math.pi</code> and <code class="python inline-code">math.tau</code>. Test your program using the following values for <emphasis effect="italics">r</emphasis> and <emphasis effect="italics">h</emphasis>:</para>
     <table summary=" " id="table-00004">
     <tgroup cols="4">
     <colspec colnum="1" colname="c1"/>

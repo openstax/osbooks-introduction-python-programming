@@ -18,7 +18,7 @@
     <title>Floating-point errors</title>
     <para id="para-00002"><span class="blue-code">Floating-point values</span> <span class="purple-code">are stored as binary values by</span> <span class="blue-code">Python</span>. <span class="purple-code">The conversion of a floating point number to the underlying binary results in specific types of floating-point errors.</span></para>
     <para id="para-00003"><span class="brown-code">A</span> <term id="term-00001"><span class="blue-code">round-off error</span></term> <span class="blue-code">occurs when floating-point values are stored erroneously as an approximation. The difference between an approximation of a value used in computation and the correct (true) value is called a round-off error.</span></para>
-    <para id="para-00004"><span class="brown-code">Ex:</span> <span class="purple-code">Storing the float</span> \((0.1)_{10}\) <span class="purple-code">results in binary values that actually produce \((0.1000000000000000055511151231257827021181583404541015625)_{10}\) when converted back, which is not exactly equal to \((0.1)_{10}\).</span></para>
+       <para id="para-00004"><span class="brown-code">Ex:</span> <span class="purple-code">Storing the float</span> (0.1)<sub>10</sub> <span class="purple-code">results in binary values that actually produce (0.1000000000000000055511151231257827021181583404541015625)<sub>10</sub> when converted back, which is not exactly equal to (0.1)<sub>10</sub>.</span></para>
     <table summary=" " id="table-00001">
     <title>Round-off error.</title>
     <tgroup cols="1">
@@ -133,7 +133,7 @@
     </note>
     <note class="practice-program" id="note-00005">
     <title>Area of a triangle</title>
-    <para id="para-00017"><span class="purple-code">Complete the following steps to calculate a triangle's area, and print the result of each step.</span> The area of a triangle is \(<span class="blue-code">\dfrac{bh}{2}</span>\), where \(b\) is the base and \(h\) is the height.</para>
+    <para id="para-00017"><span class="purple-code">Complete the following steps to calculate a triangle's area, and print the result of each step.</span> The area of a triangle is <span class="blue-code"><m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></span>, where <emphasis effect="italics">b</emphasis> is the base and <emphasis effect="italics">h</emphasis> is the height.</para>
     <list list-type="enumerated" id="list-00004">
     <item>Calculate the area of a triangle with base = 7 and height = 3.5.</item>
     <item>Round the triangle's area to one decimal place.</item>
