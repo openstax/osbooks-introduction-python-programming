@@ -47,7 +47,7 @@
     <para id="para-00006">Python uses <term id="term-00001">Unicode</term>, the international standard for representing text on computers. Unicode defines a unique number, called a <term id="term-00002">code point</term>, for each possible character. Ex: <code>'P'</code> has the code point 80, and <code>'!'</code> has the code point 33.</para>
     <para id="para-00007">The built-in <code>ord()</code> function converts a character to a code point. Ex: <code>ord('P')</code> returns the integer 80. Similarly, the built-in <code>chr()</code> function converts a code point to a character. Ex: <code>chr(33)</code> returns the string <code>'!'</code>.</para>
     <para id="para-00008">Unicode is an extension of <term id="term-00003">ASCII</term>, the American Standard Code for Information Interchange. Originally, ASCII defined only 128 code points, enough to support the English language. Unicode defines over one million code points and supports most of the world's written languages.</para>
-    <!--<table summary=" " id="table-00001">
+    <table summary=" " id="table-00001">
     <title>Character values</title>
     <tgroup cols="3">
     <tbody>
@@ -160,7 +160,7 @@
     </tbody>
 </tgroup>
     <caption>The following table shows code points 32 to 127 as defined by ASCII and Unicode. Code points 0 to 31 are non-printable characters that were used for telecommunications.</caption>
-    </table>-->
+    </table>
     <note class="learning-questions" id="note-00003">
     <title>ord() and chr()</title>
     <exercise id="exer-00004">
