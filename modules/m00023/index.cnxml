@@ -105,9 +105,10 @@
     </section>
     <section id="sect-00004">
     <title>Programming practice</title>
-    <note class="Three variables" id="note-00007">
+    <note class="practice-program" id="note-00007">
+    <title>Three variables</title>
     <list list-type="enumerated" id="list-00003">
-    <item>Draw a memory diagram for the following code:<newline/>
+    <item>Draw a memory diagram for the following code:
     <code class="python" lang="python">
     a = 1
     b = 2
@@ -123,7 +124,8 @@
     </list></item>
     </list>
     </note>
-    <note class="Different types" id="note-00008">
+    <note class="practice-program" id="note-00008">
+    <title>Different types</title>
     <list list-type="enumerated" id="list-00005">
     <item>Draw a memory diagram for the following code.<newline/>
     <code class="python" lang="python">
