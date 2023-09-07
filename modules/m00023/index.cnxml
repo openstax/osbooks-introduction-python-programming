@@ -107,7 +107,7 @@
     <title>Programming practice</title>
     <note class="Three variables" id="note-00007">
     <list list-type="enumerated" id="list-00003">
-    <item>Draw a memory diagram for the following code:
+    <item>Draw a memory diagram for the following code:<newline/>
     <code class="python" lang="python">
     a = 1
     b = 2
@@ -125,7 +125,7 @@
     </note>
     <note class="Different types" id="note-00008">
     <list list-type="enumerated" id="list-00005">
-    <item>Draw a memory diagram for the following code.
+    <item>Draw a memory diagram for the following code.<newline/>
     <code class="python" lang="python">
     name = "Chocolate"
     length = len(name)
