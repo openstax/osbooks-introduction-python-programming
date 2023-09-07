@@ -202,8 +202,7 @@
     <para id="para-00014">In algebra, a quadratic equation is written as <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>.
       The coefficients <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, and <emphasis effect="italics">c</emphasis> are known values.
       The variable <emphasis effect="italics">x</emphasis> represents an unknown value.
-      Ex: <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> has the coefficients <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mtext>2</m:mtext></m:mrow></m:math>, <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mtext>3</m:mtext></m:mrow></m:math>
-, and <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mtext>5</m:mtext></m:mrow></m:math>.
+      Ex: <m:math><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> has the coefficients <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mtext>2</m:mtext></m:mrow></m:math>, <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mtext>3</m:mtext></m:mrow></m:math>, and <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mtext>5</m:mtext></m:mrow></m:math>.
       The quadratic formula provides a quick and easy way to solve a quadratic equation for <emphasis effect="italics">x</emphasis>:<newline/><newline/>
       <equation id="eq-00001">
 <m:math>
