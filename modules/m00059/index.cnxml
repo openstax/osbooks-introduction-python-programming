@@ -31,11 +31,11 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code">></code> or <code class="python inline-code">>=</code></entry>
+    <entry><code class="python inline-code">&#62;</code> or <code class="python inline-code">&#62;=</code></entry>
     <entry>Checks whether the first string value is greater than (or greater than or equal to) the second string value.</entry>
-    <entry><code class="python inline-code">"c" > "d"</code></entry>
+    <entry><code class="python inline-code">"c" &#62; "d"</code></entry>
     <entry><code class="python inline-code">False</code></entry>
-    <entry>When comparing <code class="python inline-code">"c"</code> operand to <code class="python inline-code">"d"</code> operand, the ASCII value for <code class="python inline-code">"c"</code> is smaller than the ASCII value for <code class="python inline-code">"d"</code>. Therefore, <code class="python inline-code">"c" &lt;--> "d"</code> and the expression <code class="python inline-code">"c" > "d"</code> evaluates to False.</entry>
+    <entry>When comparing <code class="python inline-code">"c"</code> operand to <code class="python inline-code">"d"</code> operand, the ASCII value for <code class="python inline-code">"c"</code> is smaller than the ASCII value for <code class="python inline-code">"d"</code>. Therefore, <code class="python inline-code">"c" &#60; "d"</code> and the expression <code class="python inline-code">"c" &#62; "d"</code> evaluates to False.</entry>
     </row>
     <row>
     <entry><code class="python inline-code">&lt;</code> or <code class="python inline-code">&lt;=</code></entry>
