@@ -21,13 +21,14 @@
     <section id="sect-00003">
     <title>String formatting with replacement fields</title>
     <para id="para-00003"><term id="term-00002">Replacement fields</term> are used to define a pattern for creating multiple string values that comply with a given format. The example below shows two string values that use the same template for making requests to different individuals for taking different courses.</para>
-    <note id="note-00001">
+    <figure id="fig-00001">
     <title>String values from the same template</title>
-    <code class="python" lang="python">
-    Dear John, I'd like to take programming course with Prof. Potter.<newline/>
-    Dear Kishwar, I'd like to take math course with Prof. Robinson.
-    </code>
-    </note>
+    <media alt="">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption>Dear John, I'd like to take programming course with Prof. Potter.<newline/>
+    Dear Kishwar, I'd like to take math course with Prof. Robinson.</caption>
+    </figure>
     <para id="para-00004">In the example above, replacement fields are 1) the name of the individual the request is being made to 2) title of the course, and 3) the name of the instructor. To create a template, replacement fields can be added with <code class="python inline-code">{}</code> to show a placeholder for user input. The <term id="term-00003">format()</term> function is used to pass inputs for replacement fields in a string template.</para>
     <example id="exam-00001">
     <title>String template formatting for course enrollment requests</title>
@@ -190,19 +191,18 @@
     print(template.format(hex = "#FF0000", name = "Red"))<newline/>
     print(template.format(hex = "#00FF00", name = "green"))</code>
     </entry>
-    <entry><code class="python inline-code">#FF0000Red<newline/>
-    #00FF00green
+    <entry><code class="python" lang="python">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
+    #00FF00&#160;&#160;&#160;&#160;green
     </code></entry>
     </row>
     <row>
     <entry>Right-aligned</entry>
     <entry><code class="python inline-code">></code></entry>
-    <entry><code class="python inline-code">template = "{hex:>7}{name:>10}"<newline/>
+    <entry><code class="python inline-code">template = "{hex:&gt;7}{name:&gt;10}"<newline/>
     print(template.format(hex = "#FF0000", name = "Red"))<newline/>
     print(template.format(hex = "#00FF00", name = "green"))</code></entry>
-    <entry><code class="python inline-code">#FF0000 Red<newline/>
-    #00FF00 green
-    </code></entry>
+    <entry><code class="python" lang="python">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
+    #00FF00&#160;&#160;&#160;&#160;green</code></entry>
     </row>
     <row>
     <entry>Centered</entry>
@@ -211,9 +211,8 @@
     print(template.format(hex = "#FF0000", name = "Red"))<newline/>
     print(template.format(hex = "#00FF00", name = "green"))
     </code></entry>
-    <entry><code class="python inline-code">#FF0000 Red<newline/>
-    #00FF00 green
-    </code></entry>
+    <entry><code class="python" lang="python">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
+    #00FF00&#160;&#160;&#160;&#160;green</code></entry>
     </row>
     </tbody>
     </tgroup>
