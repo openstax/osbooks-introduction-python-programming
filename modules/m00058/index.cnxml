@@ -6,6 +6,12 @@
     <md:uuid>2e41e0bf-78d1-4b7e-8f03-27ec705ab181</md:uuid>
   </metadata>
   <content class="introduction">
-    <para id="para-00001">placeholder</para>
-  </content>
+    <figure class="splash" id="fig-00001">
+    <media alt="An image tiles, with characters written on tiles, reading M, I, N, and D.">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://www.pexels.com/photo/letter-tiles-surrounded-with-dried-flowers-on-flat-surface-7004949/">Photo</link> by <link url="https://www.pexels.com/@vie-studio/">Vie Studio</link> on <link url="https://pexel.com/">Pexel</link></caption>
+    </figure>
+    <para id="para-00001">A <term id="term-00001">string</term> is a sequence of characters. Python provides useful methods for processing string values. In this chapter, string methods will be demonstrated including, comparing string values, string slicing, searching, testing, formatting, and modifying.</para>
+    </content>
 </document>

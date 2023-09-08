@@ -6,5 +6,148 @@
     <md:uuid>b9171442-810b-4b6b-8e17-5c99a136e941</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Compare strings using logical and membership operators.</item>
+    <item>Use lower() and upper() string functions to convert string values to lowercase and uppercase characters.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>String comparison</title>
+    <para id="para-00002">String values can be compared using logical operators (<code class="python inline-code">&lt;</code>, <code class="python inline-code">&lt;=</code>, <code class="python inline-code">></code>, <code class="python inline-code">>=</code>, <code class="python inline-code">==</code>, <code class="python inline-code">!=</code>) and membership operators (<code class="python inline-code">in</code> and <code class="python inline-code">not in</code>). When comparing two string values, the matching characters in two string values are compared sequentially until a decision is reached. For comparing two characters, ASCII values are used to apply logical operators.</para>
+    <table summary=" " id="table-00001">
+    <title>Comparing string values.</title>
+    <tgroup cols="5">
+    <thead>
+    <row>
+    <entry>Operator</entry>
+    <entry>Description</entry>
+    <entry>Example</entry>
+    <entry>Output</entry>
+    <entry>Explanation</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code class="python inline-code">></code> or <code class="python inline-code">>=</code></entry>
+    <entry>Checks whether the first string value is greater than (or greater than or equal to) the second string value.</entry>
+    <entry><code class="python inline-code">"c" > "d"</code></entry>
+    <entry><code class="python inline-code">False</code></entry>
+    <entry>When comparing <code class="python inline-code">"c"</code> operand to <code class="python inline-code">"d"</code> operand, the ASCII value for <code class="python inline-code">"c"</code> is smaller than the ASCII value for <code class="python inline-code">"d"</code>. Therefore, <code class="python inline-code">"c" &lt;--> "d"</code> and the expression <code class="python inline-code">"c" > "d"</code> evaluates to False.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">&lt;</code> or <code class="python inline-code">&lt;=</code></entry>
+    <entry>Checks whether the first string value is less than (or less than or equal to) the second string value.</entry>
+    <entry><code class="python inline-code">"ab" &lt; "ac"</code></entry>
+    <entry><code class="python inline-code">True</code></entry>
+    <entry>When comparing <code class="python inline-code">"ab"</code> operand to <code class="python inline-code">"ac"</code> operand, the first characters are the same, but the second character of <code class="python inline-code">"ab"</code> is less than the second character in <code class="python inline-code">"ac"</code> and as such <code class="python inline-code">"ab" &lt; "ac"</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">==</code></entry>
+    <entry>Checks whether two string values are equal.</entry>
+    <entry><code class="python inline-code">"aa" == "aa"</code></entry>
+    <entry><code class="python inline-code">True</code></entry>
+    <entry>Since all characters in the first operand and the second operand are the same, the two string values are equal.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">!=</code></entry>
+    <entry>Checks whether two string values are not equal.</entry>
+    <entry><code class="python inline-code">"a" != "b"</code></entry>
+    <entry><code class="python inline-code">True</code></entry>
+    <entry>The two operands contain different string values (<code class="python inline-code">"a"</code> vs. <code class="python inline-code">"b"</code>), and the result of checking whether the two are not the same evaluates to True.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">in</code></entry>
+    <entry>Checks whether the second operand contains the first operand.</entry>
+    <entry><code class="python inline-code">"a" in "bc"</code></entry>
+    <entry><code class="python inline-code">False</code></entry>
+    <entry>Since string <code class="python inline-code">"bc"</code> does not contain string <code class="python inline-code">"a"</code>, the output of <code class="python inline-code">"a" in "bc"</code> evaluates to False.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">not in</code></entry>
+    <entry>Checks whether the second operand does not contain the first operand.</entry>
+    <entry><code class="python inline-code">"a" not in "bc"</code></entry>
+    <entry><code class="python inline-code">True</code></entry>
+    <entry>Since string <code class="python inline-code">"bc"</code> does not contain string <code class="python inline-code">"a"</code>, the output of <code class="python inline-code">"a" not in "bc"</code> evaluates to True.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00001">
+    <title>Using logical and membership operators to compare string values</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch08-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch08-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch08-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>lower() and upper() functions</title>
+    <para id="para-00006">Python has many useful functions for modifying strings, two of which are lower() and upper() functions. The <term id="term-00001">lower()</term> function returns the converted alphabetical characters to lowercase, and <term id="term-00002">upper()</term> function returns the converted alphabetical characters to uppercase. Both the lower() and upper() functions do <emphasis effect="bold">not</emphasis> modify the string.</para>
+    <example id="exam-00001">
+    <title>Converting characters in a string.</title>
+    <para id="para-00007">In the example below, the lower() and upper() string functions are called on the string variable x to convert all characters to lowercase and uppercase, respectively.</para>
+    <code class="python" lang="python">
+    x = "Apples"<newline/>
+    # The lower() function converts a string to all lowercase characters
+    print(x.lower())<newline/>
+    # The upper() function converts a string to all uppercase characters
+    print(x.upper())<newline/>
+    </code>
+    <para id="para-00008">The above code's output is:</para>
+    <code class="python" lang="python">
+    apples
+    APPLES
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00002">
+    <title>Using lower() and upper() string functions</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch08-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch08-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch08-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00003">
+    <title>Number of characters in the string</title>
+    <para id="para-00012">A string variable, s_input, is defined. Use lower() and upper() functions to convert the string to lowercase and uppercase and print results in the output. Also, print the number of characters in the string, including space characters.</para>
+    <media alt="number_of_characters_in_the_string_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_02_01_Number-of-characters-in-the-string.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00004">
+    <title>What is my character?</title>
+    <para id="para-00013">Given the string, s_input, which is a 1-character string object, if the character is between 'a' and 't' or 'A' and 'T', print True. Otherwise, print False. Hint: You can convert s_input to lowercase and check if s_input is between 'a' and 't'.</para>
+    <media alt="what_is_my_character_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_02_02_What-is-my-character_.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
