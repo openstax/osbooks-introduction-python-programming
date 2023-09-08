@@ -6,5 +6,78 @@
     <md:uuid>fa188077-c87b-413e-a4b5-adc159f03990</md:uuid>
   </metadata>
   <content>
-  </content>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>A string is a sequence of characters.</item>
+    <item>Logical operators can be used to compare two string values. String comparison is done by comparing corresponding ASCII values of characters in the order of appearance in the string.</item>
+    <item>String indexing is used to access a character or a sequence of characters in the string.</item>
+    <item>String objects are immutable.</item>
+    <item>String splicing.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write programs dealing with string values.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 8 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code class="python inline-code">len()</code></entry>
+    <entry>Returns the string length.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">upper()</code></entry>
+    <entry>Convert characters in the string to uppercase.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">lower()</code></entry>
+    <entry>Convert characters in the string to lowercase.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">count()</code></entry>
+    <entry>Returns the number of a given substring in a string.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">find()</code></entry>
+    <entry>Returns the index of the first occurrence of a given substring in a string. If the substring does not exist in the string, -1 is returned.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">index()</code></entry>
+    <entry>Returns the index of the first occurrence of a given substring in a string. If the substring does not exist in the string, a <code class="python inline-code">ValueError</code> is returned.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">format()</code></entry>
+    <entry>Is used to create strings with specified patterns using arguments.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">join()</code></entry>
+    <entry>Takes a list of string values and combines string values into one string by placing a given separator in between values.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">split()</code></entry>
+    <entry>Separates a string into tokens based on a given separator string. If no separator string is provided, white space characters are used as separators.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Operator</emphasis></entry>
+    <entry><emphasis effect="bold">Description</emphasis></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">in</code> loop</entry>
+    <entry>Checks if a substring exists in a string.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">in</code> operator in a <code class="python inline-code">for</code> loop</entry>
+    <entry><code class="python" lang="python">
+    for character in string:
+      # loop body
+    </code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </content>
 </document>

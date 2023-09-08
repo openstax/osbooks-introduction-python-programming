@@ -6,5 +6,102 @@
     <md:uuid>92a8058e-94c4-4254-ae14-7699bd8961bc</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use <code class="python inline-code">split()</code> function to split a string into substrings.</item>
+    <item>Combine objects in a list into a string using <code class="python inline-code">join()</code> function.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Split() function</title>
+    <para id="para-00002">A string in Python can be broken into substrings given a <term id="term-00001">delimiter</term>. A delimiter is also referred to as a separator. The <term id="term-00002">split()</term> function, when applied to a string, splits the string into substrings by using the given argument as a delimiter. Ex: <code class="python inline-code">"1-2".split('-')</code> returns a list of substrings <code class="python inline-code">["1", "2"]</code>. When no arguments are given to the <code class="python inline-code">split()</code> function, white space characters are used as delimiters. Ex: <code class="python inline-code">"1\t2\n3 4".split()</code> returns <code class="python inline-code">["1", "2", "3", "4"]</code>.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Split() function for breaking down the string into tokens</title>
+    <media alt="split_function_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/split-function"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Examples of string delimiters and split() function</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch08-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch08-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch08-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Join() function</title>
+    <para id="para-00006">The <term id="term-00003">join()</term> function is the inverse of the <code class="python inline-code">split()</code> function in which a list of string values are concatenated together to form one output string. When joining string elements in the list, the delimiter is added in-between elements. Ex: <code class="python inline-code">','.join(["this", "is", "great"])</code> returns <code class="python inline-code">"this,is,great"</code>.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>join() function for combining tokens into one string</title>
+    <media alt="join_function_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/join-function"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Applying join() function on list of string values</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch08-m05-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch08-m05-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch08-m05-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Unique and comma-separated words</title>
+    <para id="para-00010">Write a program that accepts a comma separated sequence of words as input and prints words in separate lines. Ex: Given the string <code>"happy,happy,face"</code>, the output would be:</para>
+    <code class="python" lang="python">
+    happy
+    happy
+    face
+    </code>
+    <media alt="unique_and_comma_separated_words_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_06_07_Unique-and-comma-separated-words.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Lunch order</title>
+    <para id="para-00011">Use the <code>join()</code> function to repeat back a user's order at a restaurant, separated by commas. The user will input each food item on a separate line. When finished ordering, the user will enter a blank line. The output depends on how many items the user orders:</para>
+    <list id="list-00002">
+    <item>If the user inputs nothing, the program outputs:<newline/>
+    <!--<samp>-->You ordered nothing<!--</samp>-->.</item>
+    <item>If the user inputs 1 item (Ex: <!--<kbd>-->eggs<!--</kbd>-->), the program outputs:<newline/>
+    <!--<samp>-->You ordered eggs<!--</samp>-->.</item>
+    <item>If the user inputs 2 items (Ex: <!--<kbd>-->eggs<!--</kbd>-->, <!--<kbd>-->ham<!--</kbd>-->), the program outputs:<newline/>
+    <!--<samp>-->You ordered eggs and ham<!--</samp>-->.</item>
+    <item>If the user inputs 3+ items (Ex: <!--<kbd>-->eggs<!--</kbd>-->, <!--<kbd>-->ham<!--</kbd>-->, <!--<kbd>-->toast<!--</kbd>-->), the program outputs:<newline/>
+    <!--<samp>-->You ordered eggs, ham, and toast<!--</samp>-->.</item>
+    </list>
+    <para id="para-00012">In the general case with 3+ items, each item should be separated by a comma and a space. The word "and" should be appended before the last item.</para>
+    <media alt="lunch_order_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_06_08_Lunch-order.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
