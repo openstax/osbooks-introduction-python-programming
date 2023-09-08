@@ -6,6 +6,21 @@
     <md:uuid>fef406e8-d5a4-4780-a0f4-9762c85039fc</md:uuid>
   </metadata>
   <content class="introduction">
-    <para id="para-00001">Placeholder</para>
-  </content>
+    <figure class="splash" id="fig-00001">
+    <media alt="Landscape photography of mountains with colors ranging from pink to orange to yellow to blue.">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://unsplash.com/photos/twukN12EN7c">Photo</link> by <link url="https://unsplash.com/@8moments">Simon Berger</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+    </figure>
+    <para id="para-00001">As programs get longer and more complex, organizing the code into modules is helpful. This chapter shows how to define, import, and find new modules. Python's <link url="https://docs.python.org/3/library/">standard library</link> provides over 200 <link url="https://docs.python.org/3/py-modindex.html">built-in modules</link>. Hundreds of thousands of <link url="https://pypi.org/">other modules</link> are available online.</para>
+    <para id="para-00002">A <term id="term-00001">module</term> is a <emphasis effect="italics">.py</emphasis> file containing function definitions and other statements. The module's name is the file's name without the <emphasis effect="italics">.py</emphasis> extension at the end. Ex: The following code, written in a file named <emphasis effect="italics">greetings.py</emphasis>, defines a module named <code>greetings</code>.</para>
+    <code class="python" lang="python">
+    """Functions that print standard greetings."""<newline/>
+    def hello():
+      print("Hello!")<newline/>
+    def bye():
+      print("Goodbye!")
+    </code>
+    <para id="para-00003">Technically, every program in this book is a module. But not every module is designed to run like a program. Running <emphasis effect="italics">greetings.py</emphasis> as a program would accomplish very little. Two functions would be defined, but the functions would never be called. These functions are intended to be called in other modules.</para>
+    </content>
 </document>

@@ -6,5 +6,115 @@
     <md:uuid>d270a690-61c0-40a7-9fa4-fbfa7113e389</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Import functions from a module using the <code>from</code> keyword.</item>
+    <item>Explain how to avoid a name collision when importing a module.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>The from keyword</title>
+    <para id="para-00002">Specific functions in a module can be imported using the <code>from</code> keyword:</para>
+    <code class="python" lang="python">
+    from area import triangle, cylinder
+    </code>
+    <para id="para-00003">These functions can be called directly, without referring to the module:</para>
+    <code class="python" lang="python">
+    print(triangle(1, 2))
+    print(cylinder(3, 4))
+    </code>
+    <note id="note-00001">
+    <title>Exploring further</title>
+    <para id="para-00004">As shown below, the from keyword can lead to confusing names.</para>
+    </note>
+    <note class="guided-slides" id="note-00002">
+    <title>Importing functions</title>
+    <media alt="importing_functions_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/importing-functions"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>The from keyword</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch07-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch07-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch07-m02-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Name collisions</title>
+    <para id="para-00008">Modules written by different programmers might use the same name for a function. A <term id="term-00001">name collision</term> occurs when a function is defined multiple times. If a function is defined again, the most recent definition is used:</para>
+    <code class="python" lang="python">
+    from area import cube<newline/>
+    def cube(x):    # Name collision (replaces the imported function)
+      return x ** 3<newline/>
+    print(cube(2)) # Calls the local cube() function, not area.cube()
+    </code>
+    <para id="para-00009">A programmer might not realize the <code>cube</code> function is defined twice, because no error occurs when running the program. Name collisions are not considered errors and often lead to unexpected behavior.</para>
+    <note class="guided-slides" id="note-00004">
+    <title>Module and function names</title>
+    <media alt="module_function_names_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/module-function-names"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00005">
+    <title>Name collisions</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch07-m02-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch07-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch07-m02-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00006">
+    <title>Exploring further</title>
+    <para id="para-00013">If a name is defined, imported, or assigned multiple times, Python uses the most recent definition. Other languages allow multiple functions to have the same name if the parameters are different. This feature, known as <emphasis effect="bold">function overloading</emphasis>, is not part of the Python language.</para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00007">
+    <title>Missing imports</title>
+    <para id="para-00014">Add the missing import statements to the top of the file. Do not make any changes to the rest of the code. In the end, the program should run without errors.</para>
+    <media alt="missing_imports_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_03_03_Missing-imports.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00008">
+    <title>Party favors</title>
+    <para id="para-00015">The following program does not run correctly because of name collisions. Fix the program by modifying import statements, function calls, and variable assignments. The output should be:</para>
+    <code class="python" lang="python">
+    Bouncy ball area: 13
+    Bouncy ball volume: 4
+    Cone hat area: 227
+    Cone hat volume: 209
+    </code>
+    <media alt="party_favors_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_03_04_Party-favors.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

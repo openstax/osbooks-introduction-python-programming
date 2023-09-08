@@ -6,5 +6,52 @@
     <md:uuid>dbaffeda-3370-496c-b2ff-fd895f24f231</md:uuid>
   </metadata>
   <content>
-  </content>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Programs can be organized into multiple <emphasis effect="italics">.py</emphasis> files (modules). The <code>import</code> keyword allows a program to use functions defined in another <emphasis effect="italics">.py</emphasis> file.</item>
+    <item>The <code>from</code> keyword can be used to import specific functions from a module. However, programs should avoid importing (or defining) multiple functions with the same name.</item>
+    <item>Modules often include the line <code>if __name__ == "__main__"</code> to prevent code from running as a side effect when the module is imported by other programs.</item>
+    <item>When working in a shell, the <code>help()</code> function can be used to look up the documentation for a module. The documentation is generated from the docstrings.</item>
+    <item>Python comes with over 200 built-in modules and hundreds of thousands of third-party modules. Programmers can search for modules on <link url="https://docs.python.org/">docs.python.org</link> and <link url="https://pypi.org/">pypi.org</link>.</item>
+    </list>
+    <table summary=" " id="table-00001">
+    <title>Chapter 7 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Statement</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code>import module</code></entry>
+    <entry>Imports a module for use in another program.</entry>
+    </row>
+    <row>
+    <entry><code>from module import function</code></entry>
+    <entry>Imports a specific function from a module.</entry>
+    </row>
+    <row>
+    <entry><code>if __name__ == "__main__":</code></entry>
+    <entry>A line of code found at the end of many modules. This statement indicates what code to run if the module is executed as a program (or in other words, what code <emphasis effect="italics">not</emphasis> to run if this module is imported by another program).</entry>
+    </row>
+    <row>
+    <entry><code>help(module_name)</code></entry>
+    <entry>Shows the documentation for the given module. The documentation includes the module's docstring, followed by a list of functions defined in the module, followed by a list of global variables assigned in the module, followed by the module's file name.</entry>
+    </row>
+    <row>
+    <entry><code>help(function_name)</code></entry>
+    <entry>Shows the docstring for the given function.</entry>
+    </row>
+    <row>
+    <entry><code>date(2023, 2, 14)</code></entry>
+    <entry>Creates a <code>date</code> object representing February 14, 2023.<newline/>
+    Requires: <code>from datetime import date</code>.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </content>
+    
 </document>

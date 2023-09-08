@@ -6,5 +6,156 @@
     <md:uuid>3193e9a8-0e92-49da-8568-b89556d12175</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Write a module that consists only of function definitions.</item>
+    <item>Import the module and use the functions in a program.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Defining a module</title>
+    <para id="para-00002">Modules are defined by putting code in a <emphasis effect="italics">.py</emphasis> file. The <code>area</code> module below is in a file named <emphasis effect="italics">area.py</emphasis>. This module provides functions for calculating area.</para>
+    <example id="exam-00001">
+    <title>The area module</title>
+    <code class="python" lang="python">
+    """Functions to calculate the area of geometric shapes."""<newline/>
+    import math<newline/><newline/>
+    # 2D shapes<newline/>
+    def square(side):
+        """Gets the area of a square."""
+        return side**2<newline/>
+    def rectangle(length, width):
+        """Gets the area of a rectangle."""
+        return length * width<newline/>
+    def triangle(base, height):
+        """Gets the area of a triangle."""
+        return 0.5 * base * height<newline/>
+    def trapezoid(base1, base2, height):
+        """Gets the area of a trapezoid."""
+        return 0.5 * (base1 + base2) * height<newline/>
+    def circle(radius):
+        """Gets the area of a circle."""
+        return math.pi * radius**2<newline/>
+    def ellipse(major, minor):
+        """Gets the area of an ellipse."""
+        return math.pi * major * minor<newline/><newline/>
+    # 3D shapes<newline/>
+    def cube(side):
+        """Gets the surface area of a cube."""
+        return 6 * side**2<newline/>
+    def cylinder(radius, height):
+        """Gets the surface area of a cylinder."""
+        return 2 * math.pi * radius * (radius + height)<newline/>
+    def cone(radius, height):
+        """Gets the surface area of a cone."""
+        return math.pi * radius * (radius + math.hypot(height, radius))<newline/>
+    def sphere(radius):
+        """Gets the surface area of a sphere."""
+        return 4 * math.pi * radius**2
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00001">
+    <title>Defining a module</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch07-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch07-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch07-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Importing a module</title>
+    <para id="para-00006">The module defined in <emphasis effect="italics">area.py</emphasis> can be used in other programs. When importing the <code>area</code> module, the suffix <emphasis effect="italics">.py</emphasis> is removed:</para>
+    <code class="python" lang="python">
+    import area<newline/>
+    print("Area of a basketball court:", area.rectangle(94, 50))
+    print("Area of a circus ring:", area.circle(21))
+    </code>
+    <para id="para-00007">The output is:</para>
+    <code class="python" lang="python">
+    Area of a basketball court: 4700
+    Area of a circus ring: 1385.4423602330987
+    </code>
+    <note class="guided-slides" id="note-00002">
+    <title>Importing area in a Python shell</title>
+    <media alt="importing_area_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/importing-area"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>Importing a module</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch07-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch07-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch07-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Conversion module</title>
+    <para id="para-00011">Write a module that defines the following functions:</para>
+    <list list-type="enumerated" id="list-00002">
+    <item><code>cel2fah(c)</code> –<newline/>
+    Converts a temperature in Celsius to Fahrenheit.<newline/>
+    The formula is <code>9/5 * c + 32</code>.</item>
+    <item><code>fah2cel(f)</code> –<newline/>
+    Converts a temperature in Fahrenheit to Celsius.<newline/>
+    The formula is <code>5/9 * (f - 32)</code>.</item>
+    <item><code>km2mi(km)</code> –<newline/>
+    Converts a distance in kilometers to miles.<newline/>
+    The formula is <code>km / 1.60934</code>.</item>
+    <item><code>mi2km(mi)</code> –<newline/>
+    Converts a distance in miles to kilometers.<newline/>
+    The formula is <code>mi * 1.60934</code>.</item>
+    </list>
+    <para id="para-00012">Each function should include a docstring as the first line. A docstring for the module has been provided for you.</para>
+    <para id="para-00013">The module should not do anything except define functions. When you click the "Run" button, the module should run without error. No output should be displayed.</para>
+    <media alt="conversion_module_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_02_01_Conversion-module.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>European vacation</title>
+    <para id="para-00014">Write a program that uses the <code>conversion</code> module from the previous exercise to complete a short story. The program's output should match the following example (input in bold).</para>
+    <code class="python" lang="python">
+    How fast were you driving? 180
+    Woah, that's like 112 mph!
+    What was the temperature? 35
+    That's 95 degrees Fahrenheit!
+    </code>
+    <para id="para-00015">Notice this exercise requires two files:</para>
+    <list list-type="enumerated" id="list-00003">
+    <item><emphasis effect="italics">european.py</emphasis>, the main program. Input and output statements are provided as a starting point. Edit the lines with TODO comments to use the conversion module.</item>
+    <item><emphasis effect="italics">conversion.py</emphasis>, the other module. Copy and paste your code from the previous exercise. Import this module in european.py after the docstring.</item>
+    </list>
+    <media alt="european_vacation_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_02_02_European-vacation.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>

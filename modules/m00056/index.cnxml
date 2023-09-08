@@ -6,5 +6,241 @@
     <md:uuid>f237378c-74f5-4502-b6c2-2ba1e7f421ed</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Explain differences between the standard library and PyPI.</item>
+    <item>Search python.org and pypi.org for modules of interest.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Built-in modules</title>
+    <para id="para-00002">The <term id="term-00001">Python Standard Library</term> is a collection of built-in functions and modules that support common programming tasks. Ex: The <code>math</code> module provides functions like <code>sqrt()</code> and constants like <code>pi</code>. Python's official documentation includes a <link url="https://docs.python.org/3/library/">library reference</link> and a <link url="https://docs.python.org/3/py-modindex.html">module index</link> for becoming familiar with the standard library.</para>
+    <para id="para-00003">For decades, Python has maintained a "<link url="https://peps.python.org/pep-0002/">batteries included</link>" philosophy. This philosophy means that the standard library should come with everything most programmers need. In fact, the standard library includes over 200 built-in modules!</para>
+    <table summary=" " id="table-00001">
+    <title>Example built-in modules in the standard library</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Module</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/calendar.html">calendar</link></code></entry>
+    <entry>General calendar-related functions.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/datetime.html">datetime</link></code></entry>
+    <entry>Basic date and time types and functions.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/email.html">email</link></code></entry>
+    <entry>Generate and process email messages.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/math.html">math</link></code></entry>
+    <entry>Mathematical functions and constants.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/os.html">os</link></code></entry>
+    <entry>Interact with the operating system.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/random.html">random</link></code></entry>
+    <entry>Generate pseudo-random numbers.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/statistics.html">statistics</link></code></entry>
+    <entry>Mathematical statistics functions.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/sys.html">sys</link></code></entry>
+    <entry>System-specific parameters and functions.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/turtle.html">turtle</link></code></entry>
+    <entry>Educational framework for simple graphics.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://docs.python.org/3/library/zipfile.html">zipfile</link></code></entry>
+    <entry>Read and write ZIP-format archive files.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00001">
+    <title>Built-in modules</title>
+    <para id="para-00004">Use the library reference, module index, and documentation links above to answer the questions.</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch07-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch07-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch07-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Third-party modules</title>
+    <para id="para-00008">The <term id="term-00002">Python Package Index</term> (PyPI), available at <link url="https://pypi.org/">pypi.org</link>, is the official third-party software library for Python. The abbreviation "PyPI" is pronounced like <emphasis effect="italics">pie pea eye</emphasis> (in contrast to <link url="https://www.pypy.org/">PyPy</link>, a different project).</para>
+    <para id="para-00009">PyPI allows anyone to develop and share modules with the Python community. Module authors include individuals, large companies, and non-profit organizations. PyPI helps programmers install modules and receive updates.</para>
+    <para id="para-00010">Most software available on PyPI is free and open source. PyPI is supported by the <link url="https://www.python.org/psf/">Python Software Foundation</link> and is maintained by an independent group of developers.</para>
+    <table summary=" " id="table-00002">
+    <title>Example third-party modules available from PyPI</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Module</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code><link url="https://pypi.org/project/arrow/">arrow</link></code></entry>
+    <entry>Convert and format dates, times, and timestamps.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/beautifulsoup4/">BeautifulSoup</link></code></entry>
+    <entry>Extract data from HTML and XML documents.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/bokeh/">bokeh</link></code></entry>
+    <entry>Interactive plots and applications in the browser.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/matplotlib/">matplotlib</link></code></entry>
+    <entry>Static, animated, and interactive visualizations.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/moviepy/">moviepy</link></code></entry>
+    <entry>Video editing, compositing, and processing.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/nltk/">nltk</link></code></entry>
+    <entry>Natural language toolkit for human languages.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/numpy/">numpy</link></code></entry>
+    <entry>Fundamental package for numerical computing.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/pandas/">pandas</link></code></entry>
+    <entry>Data analysis, time series, and statistics library.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/Pillow/">pillow</link></code></entry>
+    <entry>Image processing for jpg, png, and other formats.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/pytest/">pytest</link></code></entry>
+    <entry>Full-featured testing tool and unit test framework.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/requests/">requests</link></code></entry>
+    <entry>Elegant HTTP library for connecting to web servers.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/scikit-learn/">scikit-learn</link></code></entry>
+    <entry>Simple, efficient tools for predictive data analysis.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/scipy/">scipy</link></code></entry>
+    <entry>Fundamental algorithms for scientific computing.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/scrapy/">scrapy</link></code></entry>
+    <entry>Crawl websites and scrape data from web pages.</entry>
+    </row>
+    <row>
+    <entry><code><link url="https://pypi.org/project/tensorflow/">tensorflow</link></code></entry>
+    <entry>End-to-end machine learning platform for everyone.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00002">
+    <title>Third-party modules</title>
+    <para id="para-00011">Use pypi.org and the links in the table above to answer the questions.</para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch07-m05-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch07-m05-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch07-m05-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00003">
+    <title>Exploring further</title>
+    <para id="para-00015">Programming blogs often highlight PyPI modules to demonstrate the usefulness of Python. The following examples provide more background information about the modules listed above.</para>
+    <list id="list-00002">
+    <item><link url="https://www.simplilearn.com/top-python-libraries-for-data-science-article">Top 10 Python Libraries for Data Science for 2023</link></item>
+    <item><link url="https://hackr.io/blog/best-python-libraries">24 Best Python Libraries You Should Check in 2022</link></item>
+    <item><link url="https://learnpython.com/blog/most-popular-python-packages/">Most Popular Python Packages in 2021</link></item>
+    </list>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Happy birthday</title>
+    <para id="para-00016">Module documentation pages often include examples to help programmers become familiar with the module. For this exercise, refer to the following examples from the <code>datetime</code> module documentation:</para>
+    <list id="list-00003">
+    <item><link url="https://docs.python.org/3/library/datetime.html#examples-of-usage-date">Examples of Usage: date</link></item>
+    <item><link url="https://docs.python.org/3/library/datetime.html#examples-of-usage-timedelta">Examples of Usage: timedelta</link></item>
+    </list>
+    <para id="para-00017">Write a program that creates a <code>date</code> object representing your birthday. Then get a <code>date</code> object representing today's date (the date the program is run). Calculate the difference between the two dates, and output the results in the following format:</para>
+    <code class="python" lang="python">
+    Your birth date: 2005-03-14
+    Today's date is: 2023-06-01<newline/>
+    You were born 6653 days ago
+    (that is 574819200 seconds)<newline/>
+    You are about 18 years old
+    </code>
+    <media alt="happy_birthday_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_06_07_Happy-birthday.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>More exact age</title>
+    <para id="para-00018">The <code>datetime</code> module does not provide a built-in way to display a person's exact age. Ex: The following program calculates an exact age (in years and days) using floor division and modulo. The output is: <!--<samp>-->You are 15 years and 4 days old<!--</samp>-->.</para>
+    <code class="python" lang="python">
+    from datetime import date<newline/>
+    birth = date(2005, 3, 14)
+    today = date(2020, 3, 14) # 15 years later
+    delta = today - birth<newline/>
+    years = delta.days // 365
+    days = delta.days % 365
+    print("You are", years, "years and", days, "days old")
+    </code>
+    <para id="para-00019">Notice how leap years are included in the calculation. February 29th occurs four times between <code>birth</code> and <code>today</code>. Therefore, the user is not only 15 years old, but 15 years and 4 days old.</para>
+    <para id="para-00020">Many commonly used modules from PyPI, including <code>arrow</code>, are installed in the Python shell at <link url="https://www.python.org/shell/">python.org/shell</link>. Open the Python shell and type the following lines:</para>
+    <code class="python" lang="python">
+    import arrow
+    birth = arrow.get(2005, 3, 14)
+    birth.humanize()
+    </code>
+    <para id="para-00021">Refer to the <link url="https://arrow.readthedocs.io/en/latest/guide.html#humanize">humanize()</link> examples from the <code>arrow</code> module documentation. In the Python shell, figure out how to display the number of years and days since <code>birth</code> using <emphasis effect="italics">one line of code</emphasis>. Then display the number of years, months, and days since <code>birth</code>. Finally, use the <code>print()</code> function to output the results in this format: <!--<samp>-->You are 18 years 4 months and 7 days old<!--</samp>-->.</para>
+    <para id="para-00022">As time permits, experiment with other functions provided by the <code>arrow</code> module.</para>
+    </note>
+    </section>
+    </content>
 </document>

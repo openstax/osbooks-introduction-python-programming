@@ -6,5 +6,194 @@
     <md:uuid>6040713f-46fb-47ec-a918-f3d1187d15d9</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use the help() function to explore a module's contents.</item>
+    <item>Identify portions of code included in the documentation.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Colors on websites</title>
+    <para id="para-00002">This section introduces an example module for working with <link url="https://www.w3schools.com/html/html_colors.asp">HTML colors</link>. HyperText Markup Language (_HTML_) is used to design websites and graphical applications. Web browsers like Chrome and Safari read HTML and display the corresponding contents. Ex: The HTML code <code>&lt;p style="color: Red">Look out!&lt;/p></code> represents a paragraph with red text.</para>
+    <para id="para-00003">HTML defines 140 standard <link url="https://www.w3schools.com/tags/ref_colornames.asp">color names</link>. Additional colors can be specified using a hexadecimal format: <code>#RRGGBB</code>. The digits RR, GG, and BB represent the red, green, and blue components of the color. Ex: <code>#DC143C</code> is 220 red + 20 green + 60 blue, which is the color <code>Crimson</code>.</para>
+    <para id="para-00004">Red, green, and blue values range from 0 to 255 (or 00 to FF in hexadecimal). Lower values specify darker colors, and higher values specify lighter colors. Ex: <code>#008000</code> is the color <code>Green</code>, and <code>#00FF00</code> is the color <code>Lime</code>.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>HTML color codes</title>
+    <media alt="HTML_color_codes_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/HTML-color-codes"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>HTML color codes</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch07-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch07-m04-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch07-m04-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Example colors module</title>
+    <para id="para-00008">A module for working with HTML color codes would be helpful to graphic designers and web developers. The following Python code is in a file named <emphasis effect="italics">colors.py</emphasis>.</para>
+    <list id="list-00002">
+    <item>Line 1 is the docstring for the module.</item>
+    <item>Lines 3–16 assign variables for frequently used colors.</item>
+    <item>Lines 18–24 define a function to be used <emphasis effect="italics">within</emphasis> the module.</item>
+    <item>Lines 26–45 define functions to be used in other modules.</item>
+    </list>
+    <para id="para-00009">Note: The <code>tohex()</code> and <code>torgb()</code> functions use Python features (string formatting and slicing) described later in the book. For now, the documentation and comments are more important than the implementation details.</para>
+    <code class="python" lang="python">
+    """Functions for working with color names and hex/rgb values."""<newline/>
+    # Primary colors
+    RED = "#FF0000"
+    YELLOW = "#FFFF00"
+    BLUE = "#0000FF"<newline/>
+    # Secondary colors
+    ORANGE = "#FFA500"
+    GREEN = "#008000"
+    VIOLET = "#EE82EE"<newline/>
+    # Neutral colors
+    BLACK = "#000000"
+    GRAY = "#808080"
+    WHITE = "#FFFFFF"<newline/>
+    def _tohex(value):
+      """Converts an integer to an 8-bit (2-digit) hexadecimal string."""
+      if value &lt;= 0:
+        return "00"
+      if value >= 255:
+        return "FF"
+      return format(value, "02X")<newline/>
+    def tohex(r, g, b):
+      """Formats red, green, and blue integers as a color in hexadecimal."""
+      return "#" + _tohex(r) + _tohex(g) + _tohex(b)<newline/>
+    def torgb(color):
+      """Converts a color in hexadecimal to red, green, and blue integers."""
+      r = int(color[1:3], 16) # First 2 digits
+      g = int(color[3:5], 16) # Middle 2 digits
+      b = int(color[5:7], 16) # Last 2 digits
+      return r, g, b<newline/>
+    def lighten(color):
+      """Increases the red, green, and blue values of a color by 32 each."""
+      r, g, b = torgb(color)
+      return tohex(r+32, g+32, b+32)<newline/>
+    def darken(color):
+      """Decreases the red, green, and blue values of a color by 32 each."""
+      r, g, b = torgb(color)
+      return tohex(r-32, g-32, b-32)
+    </code>
+    <note class="learning-questions" id="note-00003">
+    <title>The colors module</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch07-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch07-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch07-m04-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Module documentation</title>
+    <para id="para-00013">The builtin <code>help()</code> function provides a summary of a module's functions and data. Calling <emphasis effect="italics">help(module_name)</emphasis> in a shell is a convenient way to learn about a module.</para>
+    <example id="exam-00001">
+    <title>Output of help(colors) in a shell.</title>
+    <para id="para-00014">The documentation below is automatically generated from the docstrings in <emphasis effect="italics">colors.py</emphasis>.</para>
+    <code class="python" lang="python">
+    >>> <emphasis effect="bold">help(colors)</emphasis><newline/>
+    Help on module colors:<newline/>
+    NAME
+      colors - Functions for working with color names and hex/rgb values.<newline/>
+    FUNCTIONS
+      darken(color)
+        Decreases the red, green, and blue values of a color by 32 each.<newline/>
+      lighten(color)
+        Increases the red, green, and blue values of a color by 32 each.<newline/>
+      tohex(r, g, b)
+        Formats red, green, and blue integers as a color in hexadecimal.<newline/>
+      torgb(color)
+        Converts a color in hexadecimal to red, green, and blue integers.<newline/>
+    DATA
+      BLACK = '#000000'
+      BLUE = '#0000FF'
+      GRAY = '#808080'
+      GREEN = '#008000'
+      ORANGE = '#FFA500'
+      RED = '#FF0000'
+      VIOLET = '#EE82EE'
+      WHITE = '#FFFFFF'
+      YELLOW = '#FFFF00'<newline/>
+    FILE
+      /home/student/Desktop/colors.py
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00004">
+    <title>The help() function</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch07-m04-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch07-m04-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch07-m04-p09"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Help on modules</title>
+    <para id="para-00018">The <code>random</code> and <code>statistics</code> modules are useful for running scientific experiments. You can become familiar with these two modules by skimming their documentation.</para>
+    <para id="para-00019">Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
+    <list id="list-00003">
+    <item>import random</item>
+    <item>help(random)
+    <code class="python" lang="python"><newline/></code></item>
+    <item>import statistics</item>
+    <item>help(statistics)</item>
+    </list>
+    <para id="para-00020">Many shell environments, including the one on python.org, display the output of <code>help()</code> one page at a time. Use the navigation keys on the keyboard (up/down arrows, page up/down, home/end) to read the documentation. When you are finished reading, press the Q key ("quit") to return to the Python shell.</para>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Help on functions</title>
+    <para id="para-00021">The <code>help()</code> function can be called on specific functions in a module. Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
+    <list id="list-00004">
+    <item>import random</item>
+    <item>help(random.randint)</item>
+    <item>help(random.choice)
+    <code class="python" lang="python"><newline/></code></item>
+    <item>import statistics</item>
+    <item>help(statistics.median)</item>
+    <item>help(statistics.mode)</item>
+    </list>
+    <para id="para-00022">Remember to use the navigation keys on the keyboard, and press the Q key ("quit") to return to the Python shell.</para>
+    </note>
+    </section>
+    </content>
 </document>
