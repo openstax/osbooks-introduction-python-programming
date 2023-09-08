@@ -133,7 +133,7 @@
     <title>Editing the string at specified locations</title>
     <para id="para-00020">Given a string variable, string_variable, and a list of indices, remove characters at the specified indices and print the resulting string.</para>
     <code class="python" lang="python">
-    Input:<newline/>
+    Input:
     string_variable = "great"
     indices = [0, 1]
     </code>
