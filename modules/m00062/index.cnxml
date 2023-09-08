@@ -191,9 +191,8 @@
     print(template.format(hex = "#FF0000", name = "Red"))<newline/>
     print(template.format(hex = "#00FF00", name = "green"))</code>
     </entry>
-    <entry><code class="python" lang="python">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
-    #00FF00&#160;&#160;&#160;&#160;green
-    </code></entry>
+    <entry><code class="python inline-code">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
+    #00FF00&#160;&#160;&#160;&#160;green</code></entry>
     </row>
     <row>
     <entry>Right-aligned</entry>
@@ -201,7 +200,7 @@
     <entry><code class="python inline-code">template = "{hex:&gt;7}{name:&gt;10}"<newline/>
     print(template.format(hex = "#FF0000", name = "Red"))<newline/>
     print(template.format(hex = "#00FF00", name = "green"))</code></entry>
-    <entry><code class="python" lang="python">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
+    <entry><code class="python inline-code">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
     #00FF00&#160;&#160;&#160;&#160;green</code></entry>
     </row>
     <row>
@@ -211,7 +210,7 @@
     print(template.format(hex = "#FF0000", name = "Red"))<newline/>
     print(template.format(hex = "#00FF00", name = "green"))
     </code></entry>
-    <entry><code class="python" lang="python">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
+    <entry><code class="python inline-code">#FF0000&#160;&#160;&#160;&#160;Red<newline/>
     #00FF00&#160;&#160;&#160;&#160;green</code></entry>
     </row>
     </tbody>
