@@ -6,5 +6,182 @@
     <md:uuid>b64819a7-bf8a-4606-a641-427083724882</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use in operator to identify if a given string contains a substring.</item>
+    <item>Call count() function to count the number of substrings in a given string.</item>
+    <item>Search a string to find a substring using the find() function.</item>
+    <item>Use index() function to find the index of the first occurrence of a substring in a given string.</item>
+    <item>Write for loop on strings using in operator.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>in operator</title>
+    <para id="para-00002">The <term id="term-00001">in</term> boolean operator can be used to check if a string contains another string. In returns True if the first string exists in the second string, False otherwise.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>What is in the phrase?</title>
+    <media alt="what_in_phrase_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/what-in-phrase"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Using in operator to find substrings</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch08-m03-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch08-m03-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch08-m03-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>For loop using in operator</title>
+    <para id="para-00006">The <code class="python inline-code">in</code> operator can be used to iterate over characters in a string using a <code class="python inline-code">for</code> loop. In each for loop iteration, one character is read and will be the loop variable for that iteration.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>for loop using in operator</title>
+    <media alt="for_loop_in_operator_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/for-loop-in-operator"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Using in operator within for loop</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch08-m03-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch08-m03-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch08-m03-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Count() function</title>
+    <para id="para-00010">The <term id="term-00002">count()</term> function counts the number of occurrences of a substring in a given string. If the given substring does not exist in the given string, the value of 0 is returned.</para>
+    <note class="guided-slides" id="note-00005">
+    <title>Counting the number of occurrences of a substring</title>
+    <media alt="counting_substrings_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/counting-substrings"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00006">
+    <title>Count() function to count the number of substrings</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch08-m03-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch08-m03-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch08-m03-p09"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Find() function</title>
+    <para id="para-00014">The <term id="term-00003">find()</term> function returns the index of the first occurrence of a substring in a given string. If the substring does not exist in the given string, the value of -1 is returned.</para>
+    <note class="guided-slides" id="note-00007">
+    <title>Finding the first index of a substring</title>
+    <media alt="finding_substring_index_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/finding-substring-index"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00008">
+    <title>Using find() function to locate a substring</title>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch08-m03-p10"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch08-m03-p11"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch08-m03-p12"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00006">
+    <title>Index() function</title>
+    <para id="para-00018">The <term id="term-00004">index()</term> function performs similar to the find() function in which the function returns the index of the first occurrence of a substring in a given string. The <code class="python inline-code">index()</code> function assumes that the substring exists in the given string, otherwise, throws a <code class="python inline-code">ValueError</code>.</para>
+    <example id="exam-00001">
+    <title>Getting the time's minute portion</title>
+    <para id="para-00019">Consider a time value is given as part of a string using the format of <code class="python inline-code">"hh:mm"</code> with <code class="python inline-code">"hh"</code> representing the hour and <code class="python inline-code">"mm"</code> representing the minutes. To retrieve only the string's minute portion the following code can be used:</para>
+    <code class="python" lang="python">
+    time_string = "The time is 12:50"
+    index = time_string.index(":")
+    print(time_string[index+1:index+3])
+    </code>
+    <para id="para-00020">The above code's output is:</para>
+    <code class="python" lang="python">
+    50
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00009">
+    <title>Using index() function to locate a substring</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CPL-ch08-m03-p13"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00022"><link class="os-embed" url="#exercise/CPL-ch08-m03-p14"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00023"><link class="os-embed" url="#exercise/CPL-ch08-m03-p15"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00007">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00010">
+    <title>Finding all spaces</title>
+    <para id="para-00024">Write a program that given a string, counts the number of space characters in the string. Also, print the given string with all spaces removed.</para>
+    <code class="python" lang="python">
+    Input: "This is great"
+    </code>
+    <code class="python" lang="python">
+    prints:
+    2
+    Thisisgreat
+    </code>
+    <media alt="finding_all_spaces_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_04_05_Finding-all-spaces.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+    
 </document>
