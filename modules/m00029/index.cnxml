@@ -19,7 +19,7 @@
     <title>if statement</title>
     <para id="para-00002">If the weather is rainy, grab an umbrella! People make decisions based on conditions like if the weather is rainy, and programs also perform operations based on conditions like a variable's value. Ex: A program adds 2 numbers. If the result is negative, the program prints an error.</para>
     <para id="para-00003">A <term id="term-00001">condition</term> is an expression that evaluates to True or False. An <term id="term-00002">if statement</term> is a decision-making structure that contains a condition and a body of statements. If the condition is true, the body is executed. If the condition is false, the body is not executed.</para>
-    <para id="para-00004">The if statement's body must be grouped together and have one level of indentation. The PEP 8 style guide recommends 4 spaces per indentation level. The Python interpreter will produce an error if the body is empty. </para>
+    <para id="para-00004">The if statement's body must be grouped together and have one level of indentation. The PEP 8 style guide recommends 4 spaces per indentation level. The Python interpreter will produce an error if the body is empty.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Quantity check</title>
     <media alt="quantity_check_slides">

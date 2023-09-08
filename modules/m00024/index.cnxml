@@ -18,7 +18,7 @@
     </section>
     <section id="sect-00002">
     <title>Lists</title>
-    <para id="para-00002">A list object can be used to bundle elements together in Python. A list is defined by using square brackets <code>[]</code> with comma separated values within the square brackets. Ex: <code>list_1 = [1, 2, 4]</code>. </para>
+    <para id="para-00002">A list object can be used to bundle elements together in Python. A list is defined by using square brackets <code>[]</code> with comma separated values within the square brackets. Ex: <code>list_1 = [1, 2, 4]</code>.</para>
     <para id="para-00003">Empty lists can be defined in two ways:
     <list id="list-00002">
     <item><code>list_1 = []</code></item>

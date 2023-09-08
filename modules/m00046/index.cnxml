@@ -44,7 +44,7 @@
     </section>
     <section id="sect-00003">
     <title>Local scope</title>
-    <para id="para-00006">A variable created within a function has <term id="term-00003">local scope</term> and only exists within the function. A local variable cannot be accessed outside of the function <span class="purple-code">in which the variable was created</span>. After a function finishes executing, the function's local variables no longer exist. </para>
+    <para id="para-00006">A variable created within a function has <term id="term-00003">local scope</term> and only exists within the function. A local variable cannot be accessed outside of the function <span class="purple-code">in which the variable was created</span>. After a function finishes executing, the function's local variables no longer exist.</para>
     <note class="guided-slides" id="note-00003">
     <title>Global and local variables in a program with a function</title>
     <media alt="global_and_local_variables_slides">
