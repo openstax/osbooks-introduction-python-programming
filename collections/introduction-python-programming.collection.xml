@@ -99,5 +99,17 @@
         <col:module document="m00057"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 8: Strings</md:title>
+      <col:content>
+        <col:module document="m00058"/>
+        <col:module document="m00059"/>
+        <col:module document="m00060"/>
+        <col:module document="m00061"/>
+        <col:module document="m00062"/>
+        <col:module document="m00063"/>
+        <col:module document="m00064"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>
