@@ -40,8 +40,8 @@
     <entry>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with the step size of <code class="python inline-code">s</code>.</entry>
     </row>
     <row>
-    <entry>Loop constructs</entry>
-    <entry>Description</entry>
+    <entry><emphasis effect="bold">Loop constructs</emphasis></entry>
+    <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
     <entry><code class="python inline-code">while</code> loop</entry>

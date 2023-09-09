@@ -88,8 +88,8 @@
     <code class="python" lang="python">
     n = 4
     while n > 0:
-    print(n)
-    n = n - 1
+    &#160;&#160;print(n)
+    &#160;&#160;n = n - 1<newline />
     print("value of n after the loop is", n)
     </code>
     <exercise id="exer-00004">
