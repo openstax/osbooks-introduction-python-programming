@@ -99,8 +99,8 @@
     """Iterating a list-of-lists."""<newline/>
     # Create a list of numbers
     list1 = [[1, 2, 3],
-        [1, 4, 9],
-        [1, 8, 27]]<newline/>
+            [1, 4, 9],
+            [1, 8, 27]]<newline/>
     # Iterating the list-of-lists
     for row in list1:
       for num in row:
@@ -117,10 +117,9 @@
     <note class="learning-questions" id="note-00003">
     <title>Iterating a list-of-lists</title>
     <para id="para-00013">For each question below consider the following list:</para>
-    <code>my_list = [[7, 4, 5, 12],<newline/>
-          [24, 3, 9, 16],<newline/>
-          [12, 8, 91, -5]]
-    </code>
+    <code>my_list = [[7, 4, 5, 12],
+          [24, 3, 9, 16],
+          [12, 8, 91, -5]]</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch09-m05-p04"/></para>
@@ -141,7 +140,7 @@
     <equation id="eq-00002">
     <m:math>
     <m:mrow>
-    <m:mtext>matW</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
+    <m:mtext>mat W</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
     <m:mrow>
     <m:mtable equalrows="true" equalcolumns="true">
     <m:mtr>
@@ -181,7 +180,7 @@
     </m:mtd>
     </m:mtr>
     </m:mtable></m:mrow>
-    </m:mfenced><m:mtext>matZ</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
+    </m:mfenced><m:mtext>mat Z</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
     <m:mrow>
     <m:mtable equalrows="true" equalcolumns="true">
     <m:mtr>
