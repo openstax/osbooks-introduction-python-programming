@@ -1,0 +1,18 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+  <title>Introduction</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Introduction</md:title>
+    <md:content-id>m00065</md:content-id>
+    <md:uuid>17eb1b0e-da1c-4c50-98ca-4c7bc0021ccf</md:uuid>
+  </metadata>
+  <content class="introduction">
+    <figure class="splash" id="fig-00001">
+    <media alt="A hand written shopping list">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://unsplash.com/photos/C4FbCe4L_pw">Photo</link> by <link url="https://unsplash.com/@tobben63s">Torbjorn Helgesen</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+  </figure>
+    <para id="para-00001">Programmers often work on collections of data. Lists are a useful way of collecting data elements. Python lists are extremely flexible, and unlike strings, a list's contents can be changed.</para>
+    <para id="para-00002">Chapter 3 introduced lists. This chapter explores operations that can be performed on lists.</para>
+    </content>
+</document>

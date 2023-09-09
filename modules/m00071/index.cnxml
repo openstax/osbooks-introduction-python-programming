@@ -1,0 +1,128 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>List comprehensions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>List comprehensions</md:title>
+    <md:content-id>m00071</md:content-id>
+    <md:uuid>b3d0f91e-08a8-4234-893d-37c173d0cbfc</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify the different components of a list comprehension statement.</item>
+    <item>Implement filtering using list comprehension.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>List comprehensions</title>
+    <para id="para-00002">A <term id="term-00001">list comprehension</term> is a Python statement to compactly create a new list using a pattern.</para>
+    <para id="para-00003">The general form of a list comprehension statement is shown below.</para>
+    <para id="para-00004"><code>list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">iterable</emphasis>]</code></para>
+    <para id="para-00005"><code>list_name</code> refers to the name of a new list which can be anything and the <code>for</code> is the for loop keyword. Expression defines what will become part of the new list. <code>loop_variable</code> is an iterator and <code>iterable</code> is an object which can be iterated such as a list or string.</para>
+    <example id="exam-00001">
+    <title>Creating a new list with a list comprehension.</title>
+    <para id="para-00006">A list comprehension shown below in the second code has the same effect as the regular for loop shown in the first code. The resultant list is <code>[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</code> in both cases.</para>
+    <para id="para-00007">Creating a list of squares using a for loop.</para>
+    <code class="python" lang="python">
+    # Create an empty List.
+    squares_list = []<newline/>
+    # Add items to a list, as squares of numbers starting at 0 and ending at 9.
+    for i in range(10):
+      squares_list.append(i*i)
+    </code>
+    <para id="para-00008">Creating a list of squares using the list comprehension.</para>
+    <code class="python" lang="python">
+    square_list = [i*i for i in range(10)]
+    </code>
+    <para id="para-00009">The expression <code>i*i</code> is applied for each value of the loop_variable <code>i</code>.</para>
+    </example>
+    <example id="exam-00002">
+    <title>A Dr. Seuss poem</title>
+    <para id="para-00010">A list comprehension can be used to create a list based on another list. In line 6, the for loop is written on the list <code>poem_lines</code>.</para>
+    <code class="python" lang="python">
+    # Create a list of words
+    words_list = ["one", "two", "red", "blue"]<newline/>
+    # Use a list comprehension to create a new list called poem_lines
+    # Inserting the word "fish" attached to each word in words_list
+    poem_lines = [w + " fish" for w in words_list]
+    for line in poem_lines:
+      print(line)
+    </code>
+    <para id="para-00011">The above code's output is:</para>
+    <code class="python" lang="python">
+    one fish
+    two fish
+    red fish
+    blue fish
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00001">
+    <title>List comprehensions</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch09-m06-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch09-m06-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch09-m06-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Filtering using list comprehensions</title>
+    <para id="para-00015">List comprehensions can be used to filter items from a given list. A <emphasis effect="italics">condition</emphasis> is added to the list comprehension.</para>
+    <para id="para-00016"><code>list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">container</emphasis> if <emphasis effect="italics">condition</emphasis>]</code></para>
+    <para id="para-00017">In a filter list comprehension, an element is added into <code>list_name</code> only if the condition is met.</para>
+    <note class="guided-slides" id="note-00002">
+    <title>Filtering a list</title>
+    <media alt="filtering_list_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/filtering-list"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>Filtering using list comprehensions</title>
+    <para id="para-00018">For each code using list comprehension select the correct resultant list in new_list.</para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch09-m06-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CPL-ch09-m06-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CPL-ch09-m06-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Selecting 5 letter words</title>
+    <para id="para-00022">Write a program that creates a list of only 5 letter words from the given list and prints out the new list.</para>
+    <media alt="selecting_5_letter_words_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_06_07_Selecting-5-letter-words.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Books starting with 'A'</title>
+    <para id="para-00023">Write a program that selects words that begin with an 'A' in the given list. Make sure the new list is then sorted in dictionary order. Finally, print the new sorted list.</para>
+    <media alt="books_starting_with_a_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_06_08_Books-starting-with-_A_.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

@@ -1,0 +1,120 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Iterating lists</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Iterating lists</md:title>
+    <md:content-id>m00067</md:content-id>
+    <md:uuid>bdd3fc82-1741-46a4-855e-e3fa55fe6c11</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Modify a list using <code>append()</code>, <code>remove()</code>, and <code>pop()</code> list operations.</item>
+    <item>Use indexes to access individual elements in a list.</item>
+    <item>Use indexes to modify individual elements in a list.</item>
+    <item>Use <code>len()</code> function to find the length of a list.</item>
+    <item>Search a list using a for loop.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Using indexes</title>
+    <para id="para-00002">Individual list elements can be accessed directly using an index. The index number is put in square brackets <code>[]</code> and attached to the end of the name of the list to access the required element. Ex: <code>newList[3]</code> accesses the 4th element in <code>newlist</code>. An expression that evaluates to an integer number can also be used as an index. Similar to strings, negative indexing can also be used to address individual elements. Ex: index -1 refers to the last item and -2 the second last element.</para>
+    <para id="para-00003">The <code>len()</code> function, when called on a list, returns the length of the list.</para>
+    <example id="exam-00001">
+    <title>List indexes and len() function</title>
+    <para id="para-00004">The following code demonstrates the use of list indexes and the <code>len()</code> function. Line 6 shows the use of the <code>len()</code> function to get the length of the list. Line 10 shows how to access an element using an index. Line 14 shows how to modify a list element using an index.</para>
+    <code class="python" lang="python">
+    #Setup a list of numbers
+    numList = [2, 3, 5, 9, 11]
+    print(numList)<newline/>
+    #print the length of the list
+    print(len(numList))<newline/>
+    #print the 4th element in the list
+    #The number 3 is used to refer to the 4th element
+    print(numList[3])<newline/>
+    #The desired value of the 4th element is actually 7
+    #update the value of the 4th element to 7
+    numList[3] = 7<newline/>
+    #The list lists the first 5 prime numbers
+    print(numList)
+    </code>
+    <para id="para-00005">The above code's output is:</para>
+    <code class="python" lang="python">
+    [2, 3, 5, 9, 11]
+    5
+    9
+    [2, 3, 5, 7, 11]
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00001">
+    <title>List indexes and the len() function</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch09-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch09-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch09-m02-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Iterating lists</title>
+    <para id="para-00009">An iterative for loop can be used to iterate through a list because lists are iterable. Alternatively, lists can also be iterated using list indexes with a counting for loop. The animation below shows both ways of iterating a list.</para>
+    <note class="guided-slides" id="note-00002">
+    <title>Using len() to get the length of a list</title>
+    <media alt="len_function_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/len-function"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>Iterating lists</title>
+    <para id="para-00010">For the following questions consider the following list:<newline/>
+    <code>my_list = [2, 3, 5, 7, 9]</code></para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch09-m02-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch09-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch09-m02-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Simple Searching</title>
+    <para id="para-00014">Write a program that prints "found!" if "Soccer" is found in the given list.</para>
+    <media alt="simple_searching_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_02_Simple-Searching.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>More complex searching</title>
+    <para id="para-00015">Write a program that counts the number of times 23 is found in the list. And prints each index where 23 was found. Your output should look as shown below.</para>
+    <code class="python" lang="python">
+    3 instances of 23 found at: [2, 7, 12]
+    </code>
+    <media alt="more_complex_searching_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_03_More-complex-searching.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

@@ -1,0 +1,104 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Dictionary creation</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Dictionary creation</md:title>
+    <md:content-id>m00075</md:content-id>
+    <md:uuid>68b65d0a-f2ef-4310-a763-5db9e128e6fc</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Create a dictionary object with given key/value pairs.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Dictionary creation</title>
+    <para id="para-00002">Two methods exist for creating an empty dictionary:
+    <list id="list-00002">
+    <item>Using curly braces <code class="python inline-code">{}</code>. Ex: <code class="python inline-code">dict_1 = {}</code>.</item>
+    <item>Using the <code class="python inline-code">dict()</code> function. Ex: <code class="python inline-code">dict_2 = dict()</code>.</item>
+    </list></para>
+    <para id="para-00003">A dictionary object can also be created with initial key-value pairs enclosed in curly braces. Ex: <code class="python inline-code">my_dict = {'pizza': 2, 'pasta': 3, 'drink': 4}</code> creates a dictionary object <code class="python inline-code">my_dict</code>. A key and associated value are separated by a colon and key-value pairs are separated by commas.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Creating a dictionary object</title>
+    <media alt="creating_dictionary_object_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/creating-dictionary-object"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Creating dictionary exercises</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch10-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch10-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch10-m02-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>dict() for dictionary creation</title>
+    <para id="para-00007">A dictionary object can be created with initial key-value pairs using the <code class="python inline-code">dict()</code> function.</para>
+    <list id="list-00003">
+    <item>Creating a dictionary from a list of tuples.
+    <code class="python" lang="python">
+    <span class="purple-code">my_list = [(<span class="blue-code">"</span>apple<span class="blue-code">"</span>, 2), (<span class="blue-code">"</span>banana<span class="blue-code">"</span>, 3), (<span class="blue-code">"</span>orange<span class="blue-code">"</span>, 4)]</span>
+    <span class="purple-code">my_dict = dict(my_list)</span>
+    </code></item>
+    <item>Creating a dictionary using keyword arguments.
+    <code class="python" lang="python">
+    <span class="purple-code">my_dict = dict(apple=2, banana=3, orange=4)</span>
+    </code></item>
+    <item>Creating a dictionary from another dictionary.
+    <code class="python" lang="python">
+    <span class="purple-code">old_dict = {<span class="blue-code">"</span>apple<span class="blue-code">"</span>: 2, <span class="blue-code">"</span>banana<span class="blue-code">"</span>: 3, <span class="blue-code">"</span>orange<span class="blue-code">"</span>: 4}</span>
+    <span class="purple-code">new_dict = dict(old_dict)</span>
+    </code></item>
+    </list>
+    <note class="guided-slides" id="note-00003">
+    <title>dict() for dictionary initialization</title>
+    <media alt="dict_initialization_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/dict-initialization"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>dict() function for dictionary creation</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch10-m02-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch10-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch10-m02-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Personal information dictionary</title>
+    <para id="para-00011">Create a dictionary, my_info, with three key-value pairs with keys being 'first name', 'last name', and 'age' and values being corresponding information about yourself. <span class="blue-code">Then, print my_info.</span></para>
+    <media alt="Personal_information_dictionary_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_03_02_Personal-information-dictionary.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

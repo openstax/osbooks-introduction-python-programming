@@ -111,5 +111,30 @@
         <col:module document="m00064"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 9: Lists</md:title>
+      <col:content>
+        <col:module document="m00065"/>
+        <col:module document="m00066"/>
+        <col:module document="m00067"/>
+        <col:module document="m00068"/>
+        <col:module document="m00069"/>
+        <col:module document="m00070"/>
+        <col:module document="m00071"/>
+        <col:module document="m00072"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 10: Dictionaries</md:title>
+      <col:content>
+        <col:module document="m00073"/>
+        <col:module document="m00074"/>
+        <col:module document="m00075"/>
+        <col:module document="m00076"/>
+        <col:module document="m00077"/>
+        <col:module document="m00078"/>
+        <col:module document="m00079"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>

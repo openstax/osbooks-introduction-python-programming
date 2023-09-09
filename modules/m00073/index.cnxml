@@ -1,0 +1,17 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+  <title>Introduction</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Introduction</md:title>
+    <md:content-id>m00073</md:content-id>
+    <md:uuid>890b73ec-f3cc-4842-8ea6-026eaac36e09</md:uuid>
+  </metadata>
+  <content class="introduction">
+    <figure class="splash" id="fig-00001">
+    <media alt="An image of a dictionary.">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://www.pexels.com/photo/yellow-tassel-159581/">Photo</link> by <link url="https://www.pexels.com/@pixabay/">Pixabay</link> on <link url="https://pexel.com/">Pexel</link></caption>
+    </figure>
+    <para id="para-00001">A Python <term id="term-00001">dictionary</term> is a data type for storing the data in key-value pair format. In this chapter, the dictionary data type is introduced. This chapter also introduces ways to use dictionaries in the code, including looping over dictionary items and performing conditional statements on a dictionary.</para>
+    </content>
+</document>

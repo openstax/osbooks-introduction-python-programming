@@ -1,0 +1,106 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Common list operations</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Common list operations</md:title>
+    <md:content-id>m00069</md:content-id>
+    <md:uuid>95fe65ca-6bcd-4fe7-ba49-cbbf8c9acc52</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use built-in functions <code>max()</code>, <code>min()</code>, and <code>sum()</code>.</item>
+    <item>Demonstrate how to copy a list.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Using built-in operations</title>
+    <para id="para-00002">The <code>max()</code> function called on a list returns the largest element in the list. The <code>min()</code> function called on a list returns the smallest element in the list. The <code>max()</code> and <code>min()</code> functions work for lists as long as elements within the list are comparable.</para>
+    <para id="para-00003">The <code>sum()</code> function called on a list of numbers returns the sum of all elements in the list.</para>
+    <example id="exam-00001">
+    <title>Common list operations</title>
+    <code class="python" lang="python">
+    """Common list operations."""<newline/>
+    # Set up a list of number
+    snum_list = [28, 92, 17, 3, -5, 999, 1]<newline/>
+    # Set up a list of words
+    city_list = ["New York", "Missoula", "Chicago", "Bozeman", "Birmingham", "Austin", "Sacramento"]<newline/>
+    # Usage of the max() funtion
+    print(max(num_list))<newline/>
+    # max() function works for strings as well
+    print(max(city_list))<newline/>
+    # Usage of the min() funtion which also works for strings
+    print(min(num_list))<newline/>
+    print(min(city_list))<newline/>
+    # sum() only works for a list of numbers
+    print(sum(num_list))<newline/><newline/>
+    </code>
+    <para id="para-00004">The above code's output is:</para>
+    <code class="python" lang="python">
+    999
+    Sacramento
+    -5
+    Austin
+    1135
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00001">
+    <title>List operations</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch09-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch09-m04-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch09-m04-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Copying a list</title>
+    <para id="para-00008">The <code>copy()</code> function is used to create a copy of a list.</para>
+    <note class="guided-slides" id="note-00002">
+    <title>Copying a list</title>
+    <media alt="copying_list_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/copying-list"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>Copying a list</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch09-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch09-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch09-m04-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Copy</title>
+    <para id="para-00012">Make a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in each list and print those sentences (no need to add periods at the end of the sentences).</para>
+    <media alt="copy_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_04_05_Copy.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

@@ -1,0 +1,336 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Nested lists</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Nested lists</md:title>
+    <md:content-id>m00070</md:content-id>
+    <md:uuid>c1ea3695-a26d-4d4a-8b15-8f88a870445c</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Demonstrate the use of a list-of-lists to structure data.</item>
+    <item>Demonstrate individual element addressing using multi-dimensional indexing.</item>
+    <item>Use nested loops to iterate a list-of-lists.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>List-of-lists</title>
+    <para id="para-00002">Lists can be made of any type of element. A list element can also be a list. Ex: <code>[2, [3, 5], 17]</code> is a valid list with the list <code>[3, 5]</code> being the element at index 1.</para>
+    <para id="para-00003">When a list is an element inside a larger list, the list is called a <term id="term-00001">nested list</term>. Nested lists are useful for expressing multidimensional data. When each of the elements of a larger list is smaller lists, the larger list is called a <term id="term-00002">list-of-lists</term>.</para>
+    <para id="para-00004">Ex: A table can be stored as a 2-dimensional list-of-lists, where each row of data is a list in the list-of-lists.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>List-of-lists</title>
+    <media alt="list_of_lists_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/list-of-lists"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Lists</title>
+    <para id="para-00005">For each of the following questions consider the following matrix:</para><newline/>
+    <equation id="eq-00001"><m:math>
+    <m:mrow>
+    <m:mtext>mat A</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
+    <m:mrow>
+    <m:mtable equalrows="true" equalcolumns="true">
+    <m:mtr>
+    <m:mtd>
+    <m:mn>7</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>4</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>5</m:mn>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mn>3</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>9</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>6</m:mn>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mn>1</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>2</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>8</m:mn>
+    </m:mtd>
+    </m:mtr>
+    </m:mtable></m:mrow>
+    </m:mfenced></m:mrow>
+    </m:math>
+    </equation>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch09-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch09-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch09-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Using nested loops to iterate nested lists</title>
+    <para id="para-00009">A nested loop structure can be used to iterate a list-of-lists. For a 2-dimensional list-of-lists, an outer <code>for</code> loop can be used for rows, and an inner <code>for</code> loop can be used for columns.</para>
+    <example id="exam-00001">
+    <title>Iterating a list-of-lists</title>
+    <para id="para-00010">The code below demonstrates how to iterate a list-of-lists.</para>
+    <para id="para-00011">The outer loop on line 9 goes element by element for the larger list. Each element in the larger list is a list. The inner loop on line 10 iterates through each element in each nested list.</para>
+    <code class="python" lang="python">
+    """Iterating a list-of-lists."""<newline/>
+    # Create a list of numbers
+    list1 = [[1, 2, 3],
+        [1, 4, 9],
+        [1, 8, 27]]<newline/>
+    # Iterating the list-of-lists
+    for row in list1:
+      for num in row:
+        print(num, end=" ")
+      print()
+    </code>
+    <para id="para-00012">The above code's output is:</para>
+    <code class="python" lang="python">
+    1 2 3
+    1 4 9
+    1 8 27
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00003">
+    <title>Iterating a list-of-lists</title>
+    <para id="para-00013">For each question below consider the following list:</para>
+    <code>my_list = [[7, 4, 5, 12],<newline/>
+          [24, 3, 9, 16],<newline/>
+          [12, 8, 91, -5]]
+    </code>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch09-m05-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch09-m05-p05"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Matrix multiplication</title>
+    <para id="para-00016">Write a program that calculates the matrix multiplication product of the matrices matW and matZ below and prints out the result. The expected result is shown.</para>
+    <equation id="eq-00002">
+    <m:math>
+    <m:mrow>
+    <m:mtext>matW</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
+    <m:mrow>
+    <m:mtable equalrows="true" equalcolumns="true">
+    <m:mtr>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>13</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>4</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>5</m:mn>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mn>2</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mo>−</m:mo><m:mn>9</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>7</m:mn>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mn>7</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>3</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>19</m:mn></m:mrow>
+    </m:mtd>
+    </m:mtr>
+    </m:mtable></m:mrow>
+    </m:mfenced><m:mtext>matZ</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
+    <m:mrow>
+    <m:mtable equalrows="true" equalcolumns="true">
+    <m:mtr>
+    <m:mtd>
+    <m:mn>2</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>1</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>5</m:mn>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mn>3</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>7</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mn>9</m:mn>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>13</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>19</m:mn></m:mrow>
+    </m:mtd>
+    </m:mtr>
+    </m:mtable></m:mrow>
+    </m:mfenced></m:mrow>
+    </m:math>
+    </equation>
+    <equation id="eq-00003">
+    <m:math>
+    <m:mrow>
+    <m:mtext>result</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
+    <m:mrow>
+    <m:mtable equalrows="true" equalcolumns="true">
+    <m:mtr>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>33</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>106</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>196</m:mn></m:mrow>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mrow>
+    <m:mo>−</m:mo><m:mn>30</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>30</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>62</m:mn></m:mrow>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mn>4</m:mn>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>275</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mn>423</m:mn></m:mrow>
+    </m:mtd>
+    </m:mtr>
+    </m:mtable></m:mrow>
+    </m:mfenced></m:mrow>
+    </m:math>
+    </equation><newline/>
+    <para id="para-00017">In the result matrix each element is calculated according to the position of the element. Result at position [i][j] is calculated using row i from the first matrix, W, and column j from the second matrix, Z.</para>
+    <para id="para-00018">Ex:</para>
+    <para id="para-00019">result[1][2] = (row 1 in W) times (column 2 in Z)</para>
+    <equation id="eq-00004">
+    <m:math>
+    <m:mrow>
+    <m:mtext>result</m:mtext><m:mo stretchy="false">[</m:mo><m:mtext>1</m:mtext><m:mo stretchy="false">]</m:mo><m:mo stretchy="false">[</m:mo><m:mtext>2</m:mtext><m:mo stretchy="false">]</m:mo><m:mtext>=</m:mtext><m:mfenced close="]" open="[">
+    <m:mrow>
+    <m:mtable equalrows="true" equalcolumns="true">
+    <m:mtr>
+    <m:mtd>
+    <m:mtext>2</m:mtext>
+    </m:mtd>
+    <m:mtd>
+    <m:mrow>
+    <m:mtext>-9</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd>
+    <m:mtext>7</m:mtext>
+    </m:mtd>
+    </m:mtr>
+    </m:mtable></m:mrow>
+    </m:mfenced><m:mtext>*</m:mtext><m:mfenced close="]" open="[">
+    <m:mrow>
+    <m:mtable equalrows="true" equalcolumns="true">
+    <m:mtr>
+    <m:mtd>
+    <m:mtext>5</m:mtext>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mtext>9</m:mtext>
+    </m:mtd>
+    </m:mtr>
+    <m:mtr>
+    <m:mtd>
+    <m:mrow>
+    <m:mtext>19</m:mtext></m:mrow>
+    </m:mtd>
+    </m:mtr>
+    </m:mtable></m:mrow>
+    </m:mfenced></m:mrow>
+    </m:math>
+    </equation>
+    <newline/><newline/>
+    <equation id="eq-00005">
+    <m:math>
+    <m:mrow>
+    <m:mtext>result</m:mtext><m:mo stretchy="false">[</m:mo><m:mtext>1</m:mtext><m:mo stretchy="false">]</m:mo><m:mo stretchy="false">[</m:mo><m:mtext>2</m:mtext><m:mo stretchy="false">]</m:mo><m:mtext>=2*5+</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>-9</m:mtext><m:mo stretchy="false">)</m:mo><m:mtext>*9+7*19=10-81+133=62</m:mtext></m:mrow>
+    </m:math>
+    </equation>
+    <media alt="matrix_multiplication_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_05_06_Matrix-multiplication.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

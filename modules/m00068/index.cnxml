@@ -1,0 +1,111 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Sorting and reversing lists</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Sorting and reversing lists</md:title>
+    <md:content-id>m00068</md:content-id>
+    <md:uuid>002fe1d5-24b5-4ea1-93aa-8ba9038a4d03</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Understand the concept of sorting.</item>
+    <item>Use in-built <code>sort()</code> and <code>reverse()</code> functions.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Sorting</title>
+    <para id="para-00002">Ordering elements in a sequence is often useful. <term id="term-00001">Sorting</term> is the task of arranging elements in a sequence in ascending or descending order.</para>
+    <para id="para-00003">Sorting can work on numerical or non-numerical data. When ordering text, dictionary order is used. Ex: "bat" comes before "cat", because 'b' comes before 'c'.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Sorting</title>
+    <media alt="sorting_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/sorting"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Sorting</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch09-m03-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch09-m03-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch09-m03-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Using <code>sort()</code> and <code>reverse()</code></title>
+    <para id="para-00007">Python provides functions for arranging elements in a list.
+    <list id="list-00002">
+    <item>The <code>sort()</code> function arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters leading to unexpected results. Ex: 'A' is ordered before 'a' in ascending order but so is 'G', thus "God" comes before "apple".</item>
+    <item>The <code>reverse()</code> function reverses the elements in a list.</item>
+    </list></para>
+    <example id="exam-00001">
+    <title>Sorting and reversing lists</title>
+    <code class="python" lang="python">
+    # Setup a list of numbers
+    num_list = [38, 92, 23, 16]
+    print(num_list)<newline/>
+    # Sort the list
+    num_list.sort()
+    print(num_list)<newline/>
+    # Setup a list of words
+    dance_list = ["Stepping", "Ballet", "Salsa", "Kathak", "Hopak", "Flamenco", "Dabke"]<newline/>
+    # Reverse the list
+    dance_list.reverse()
+    print(dance_list)<newline/>
+    # Sort the list
+    dance_list.sort()
+    print(dance_list)
+    </code>
+    <para id="para-00008">The above code's output is:</para>
+    <code class="python" lang="python">
+    [38, 92, 23, 16]
+    [16, 23, 38, 92]
+    ["Dabke", "Flamenco", "Hopak", "Kathak", "Salsa", "Ballet", "Stepping"]
+    ["Ballet", "Dabke", "Flamenco", "Hopak", "Kathak", "Salsa", "Stepping"]
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00003">
+    <title>sort() and reverse() functions</title>
+    <para id="para-00009">Use the following list for the questions below.<newline/>
+    <code>board_games = ["go", "chess", "scrabble", "checkers"]</code></para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch09-m03-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch09-m03-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch09-m03-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Sorting and reversing</title>
+    <para id="para-00013">Complete the program below to arrange and print the numbers in ascending and descending order.</para>
+    <media alt="sorting_and_reversing_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_03_04_Sorting-and-reversing.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

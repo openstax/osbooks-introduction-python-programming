@@ -1,0 +1,127 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Modifying and iterating lists</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Modifying and iterating lists</md:title>
+    <md:content-id>m00066</md:content-id>
+    <md:uuid>bed99d14-6f77-42b7-bfb9-1f9fb2f93a5c</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Modify a list using <code>append()</code>, <code>remove()</code>, and <code>pop()</code> list operations.</item>
+    <item>Search a list using a for loop.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Using list operations to modify a list</title>
+    <para id="para-00002">An <code>append()</code> operation is used to add an element to the end of a list. In programming, <term id="term-00001">append</term> means add to the end. A <code>remove()</code> operation removes the specified element from a list. A <code>pop()</code> operation removes the last item of a list.</para>
+    <example id="exam-00001">
+    <title>Simple operations to modify a list</title>
+    <para id="para-00003">The code below demonstrates simple operations for modifying a list.</para>
+    <para id="para-00004">Line 8 shows the <code>append()</code> operation, line 12 shows the <code>remove()</code> operation, and line 16 shows the <code>pop()</code> operation. Since the <code>pop()</code> operation removes the last element, no parameter is needed.</para>
+    <code class="python" lang="python">
+    """Operations for adding and removing elements from a list."""<newline/>
+    # Create a list of students working on a project
+    student_list = ["Jamie", "Vicky", "DeShawn", "Tae"]
+    print(student_list)<newline/>
+    # Another student joins the project. The student must be added to the list.
+    student_list.append("Ming")
+    print(student_list)<newline/>
+    # The student "Jamie" withdraws the project. Jamie must be removed from the list.
+    student_list.remove("Jamie")
+    print(student_list)<newline/>
+    # Suppose "Ming" had to be removed from the list for some reason, a pop() operation can be used.
+    student_list.pop()
+    print(student_list)
+    </code>
+    <para id="para-00005">The above code's output is:</para>
+    <code class="python" lang="python">
+    ['Jamie', 'Vicky', 'DeShawn', 'Tae']
+    ['Jamie', 'Vicky', 'DeShawn', 'Tae', 'Ming']
+    ['Vicky', 'DeShawn', 'Tae', 'Ming']
+    ['Vicky', 'DeShawn', 'Tae']
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00001">
+    <title>Modifying lists</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch09-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch09-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch09-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Iterating lists</title>
+    <para id="para-00009">An iterative for loop can be used to iterate through a list because lists are iterable. Alternatively, lists can also be iterated using list indexes with a counting for loop. The animation below shows both ways of iterating a list.</para>
+    <note class="guided-slides" id="note-00002">
+    <title>Using len() to get the length of a list</title>
+    <media alt="len_function_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/len-function"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>Iterating lists</title>
+    <para id="para-00010">For the following questions consider the list:<newline/>
+    <code>my_list = [2, 3, 5, 7, 9]</code></para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch09-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch09-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch09-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Sports list</title>
+    <para id="para-00014">Create a list of sports played on a college campus. The sports to be included are baseball, football, tennis, and table tennis.</para>
+    <para id="para-00015">Next, add volleyball to the list.</para>
+    <para id="para-00016">Next, remove "football" from the list and add "soccer" to the list.</para>
+    <para id="para-00017">Show list contents after each modification.</para>
+    <media alt="sports_list_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_01_Sports-list.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Simple Searching</title>
+    <para id="para-00018">Write a program that prints "found!" if "Soccer" is found in the given list.</para>
+    <media alt="simple_searching_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_02_Simple-Searching.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>More complex searching</title>
+    <para id="para-00019">Write a program that counts the number of times 23 is found in the list and prints each index where 23 was found. Your output should look as shown below.</para>
+    <code class="python" lang="python">
+    3 instances of 23 found at: [2, 7, 12]
+    </code>
+    <media alt="more_complex_searching_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_03_More-complex-searching.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

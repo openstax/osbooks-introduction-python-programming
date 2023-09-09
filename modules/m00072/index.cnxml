@@ -1,0 +1,73 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Chapter summary</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Chapter summary</md:title>
+    <md:content-id>m00072</md:content-id>
+    <md:uuid>68e1a197-f7f0-438e-be01-d8a1a867a9e7</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Lists are mutable and can be easily modified by using <code>append()</code>, <code>remove()</code>, and <code>pop()</code> operations.</item>
+    <item>Lists are iterable and can be iterated using an iterator or element indexes.</item>
+    <item>The <code>sort()</code> operation arranges the elements of a list in ascending order if all the elements of the list are of the same type.</item>
+    <item>The <code>reverse()</code> operation reverses a list.</item>
+    <item>The <code>copy()</code> function is used to create a copy of a list.</item>
+    <item>Lists have built-in functions for finding the maximum, minimum, and summation of a list for a list with only numeric values.</item>
+    <item>Lists can be nested to represent multidimensional data.</item>
+    <item>A list comprehension is a compact way of creating a new list, which can be used to filter items from an existing list.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write programs using lists and list functionality.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 9 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code>append(element)</code></entry>
+    <entry>Adds the specified element to the end of a list.</entry>
+    </row>
+    <row>
+    <entry><code>remove(element)</code></entry>
+    <entry>Removes the specified element from the list if the element exists.</entry>
+    </row>
+    <row>
+    <entry><code>pop()</code></entry>
+    <entry>Removes the last element of a list.</entry>
+    </row>
+    <row>
+    <entry><code>max(list)</code></entry>
+    <entry>Returns the maximum element of the list specified.</entry>
+    </row>
+    <row>
+    <entry><code>min(list)</code></entry>
+    <entry>Returns the maximum element of the list specified.</entry>
+    </row>
+    <row>
+    <entry><code>sum(list)</code></entry>
+    <entry>Returns the summation of a list composed of numbers.</entry>
+    </row>
+    <row>
+    <entry><code>sort()</code></entry>
+    <entry>Sorts a list on which the method is called in ascending order.</entry>
+    </row>
+    <row>
+    <entry><code>reverse()</code></entry>
+    <entry>Reverses the order of elements in a list.</entry>
+    </row>
+    <row>
+    <entry><code>copy()</code></entry>
+    <entry>Makes a complete copy of a list.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </section>
+    </content>
+</document>
