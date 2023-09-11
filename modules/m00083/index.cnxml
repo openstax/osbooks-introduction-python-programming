@@ -83,7 +83,7 @@
       self.with_sugar = sugar<newline/>
     def print_order(self):
       print(CoffeeOrder.loc,'Order', self.order_id, ':', self.cup_size, 'oz')
-      if self.with_milk:<newline/>
+      if self.with_milk:
         print('\twith milk')
       if self.with_sugar:
         print('\twith sugar')<newline/>
