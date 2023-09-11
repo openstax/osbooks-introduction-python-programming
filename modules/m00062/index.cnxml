@@ -166,7 +166,7 @@
     <row>
     <entry>Left-aligned</entry>
     <entry><code class="python inline-code">&lt;</code></entry>
-    <entry><code class="python" lang="python">
+    <entry><code class="python inline-code">
     template = "{hex:&lt;7}{name:&lt;10}"
     print(template.format(hex = "#FF0000", name = "Red"))
     print(template.format(hex = "#00FF00", name = "green"))</code>
@@ -178,7 +178,7 @@
     <row>
     <entry>Right-aligned</entry>
     <entry><code class="python inline-code">></code></entry>
-    <entry><code class="python" lang="python">
+    <entry><code class="python inline-code">
     template = "{hex:>7}{name:>10}"
     print(template.format(hex = "#FF0000", name = "Red"))
     print(template.format(hex = "#00FF00", name = "green"))</code></entry>
@@ -189,7 +189,7 @@
     <row>
     <entry>Centered</entry>
     <entry>^</entry>
-    <entry><code class="python" lang="python">
+    <entry><code class="python inline-code">
     template = "{hex:^7}{name:^10}"
     print(template.format(hex = "#FF0000", name = "Red"))
     print(template.format(hex = "#00FF00", name = "green"))</code></entry>
