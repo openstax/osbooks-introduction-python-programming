@@ -1,0 +1,69 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Recursion basics</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Recursion basics</md:title>
+    <md:content-id>m00088</md:content-id>
+    <md:uuid>9b8ccc5a-4690-4ca4-b9da-fa593c1446ad</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Describe the concept of recursion.</item>
+    <item>Demonstrate how recursion uses simple solutions to build a better solution.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Recursion</title>
+    <para id="para-00002"><term id="term-00001">Recursion</term> is a problem solving technique which uses the solution to a simpler version of the problem to solve the bigger problem. In turn, the same technique can be applied to the simpler version.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>3 towers</title>
+    <media alt="towers_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/towers"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>3 towers and recursion</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch12-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch12-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Recursion to find a complete solution</title>
+    <para id="para-00005">The recursion process continues until the problem is small enough, at which point the solution is known or can be easily found. The larger solution can then be built systematically by successively building ever larger solutions until the complete problem is solved.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Solving 3 towers</title>
+    <media alt="solving_3_towers_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/solving-3-towers"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Solving 3 towers</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch12-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch12-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch12-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    </content>
+</document>

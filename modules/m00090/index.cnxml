@@ -1,0 +1,100 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Recursion with strings and lists</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Recursion with strings and lists</md:title>
+    <md:content-id>m00090</md:content-id>
+    <md:uuid>c5106a78-d261-4abb-977c-bb6736c698bd</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Demonstrate the use of recursion to solve a string problem.</item>
+    <item>Demonstrate the use of recursion to solve a list problem.</item>
+    <item>Use built-in <code>count()</code> list function.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Recursion with strings</title>
+    <para id="para-00002">A word that is spelled the same forwards and backwards is called a palindrome. Ex: racecar.</para>
+    <para id="para-00003">Recursion can be used to identify if a given word is a palindrome.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Identifying a palindrome</title>
+    <media alt="identifying_palindrome_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/identifying-palindrome"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Recursion with strings</title>
+    <para id="para-00004">Refer to the animation above.</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch12-m03-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch12-m03-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch12-m03-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Recursion with lists</title>
+    <para id="para-00008">The animation below shows a recursive way to check whether two lists contain the same items but in different order.</para>
+    <para id="para-00009">The count() function returns a count of the number of items in a list that match the given item, and returns 0 otherwise. Ex: For <code>list_num = [1, 3, 3, 4]</code>, <code>list_num.count(3)</code> returns 2.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Checking list permutations</title>
+    <media alt="checking_list_permutations_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/checking-list-permutations"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>List permutations</title>
+    <para id="para-00010">Refer to the above animation. What would permu_check() return for each pair of lists below?</para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch12-m03-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch12-m03-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch12-m03-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch12-m03-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch12-m03-p08"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Remove duplicates</title>
+    <para id="para-00016">Write a recursive <code>rem_dup()</code> function that removes duplicates from a list.</para><newline/>
+    <para id="para-00017">Ex: List <code>[5, 5, 2, 1, 3, 1, 6]</code> should result in an output list <code>[5, 2, 1, 3, 6]</code></para>
+    <media alt="remove_duplicates_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_04_03_Remove-duplicates.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

@@ -1,0 +1,114 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Simple math recursion</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Simple math recursion</md:title>
+    <md:content-id>m00089</md:content-id>
+    <md:uuid>a0324325-77a8-42d1-a730-3ea568afab76</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify a recursive case and a base case in a recursive algorithm.</item>
+    <item>Demonstrate how to compute a recursive solution for the factorial function.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Calculating a factorial</title>
+    <para id="para-00002">The factorial of a positive integer is defined as the product of the integer and the positive integers less than the integer.</para>
+    <para id="para-00003">Ex: <code>5! = 5 * 4 * 3 * 2 * 1</code></para>
+    <para id="para-00004">Written as a general equation for a positive integer n: <code> n! = n * (n - 1) * (n - 2) * . . . * 1</code></para>
+    <para id="para-00005">The above formula for the factorial of n results in a recursive formula:
+    <code>n! = n * (n - 1)!</code></para>
+    <para id="para-00006">Thus, the factorial of n depends upon the value of the factorial at n-1. The factorial of n can be found by repeating the factorial of n - 1 until (n - 1)! = 1! (we know that 1! = 1). This result can be used to build the overall solution as seen in the animation below.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Finding the factorial of 5</title>
+    <media alt="finding_factorial_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/finding-factorial"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Recognizing recursion</title>
+    <para id="para-00007">Can the following algorithms be written recursively?</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch12-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch12-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch12-m02-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch12-m02-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Defining a recursive function</title>
+    <para id="para-00012">Recursive algorithms are written in Python as functions. In a recursive function different actions are performed according to the input parameter value. A critical part of a recursive function is that the function must call itself.</para>
+    <para id="para-00013">A value for which the recursion applies is called the <term id="term-00001">recursive case</term>. In the recursive case, the function calls itself with a smaller portion of the input parameter. Ex: In the recursive function factorial(), the initial parameter is an integer n. In the function's recursive case, the argument passed to factorial() is n-1, which is smaller than n.</para>
+    <para id="para-00014">A value of n for which the solution is known is called the <term id="term-00002">base case</term>. The base case stops the recursion. A recursive algorithm must include a base case otherwise the algorithm may result in an infinite computation.</para>
+    <para id="para-00015">To calculate a factorial, a recursive function, factorial() is defined with an integer input parameter, n. When n > 1 the recursive case applies. The factorial() calls itself with a smaller argument, n-1. When n == 1, the solution is known because 1! is 1, therefore n==1 is a base case.</para>
+    <para id="para-00016">Note: 0! Is defined to be 1, therefore n == 0 is a second base case for factorial().When n is less than 1 an error is returned.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Factorial using recursion</title>
+    <media alt="factorial_recursion_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/factorial-recursion"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Programming recursion</title>
+    <para id="para-00017">For the questions below, the function rec_fact() is another recursive function that calculates a factorial. What is the result of each definition of rec_fact() if n = 17 is the initial input parameter?</para>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch12-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch12-m02-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CPL-ch12-m02-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CPL-ch12-m02-p08"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Recursive summation</title>
+    <para id="para-00022">Write a program that uses a recursive function to calculate the summation of numbers from 0 to a user specified positive integer n.</para>
+    <media alt="recursive_summation_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_03_01_Recursive-summation.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Digits</title>
+    <para id="para-00023">Write a program that computes the sum of the digits of a positive integer using recursion.</para>
+    <para id="para-00024">Ex: The sum of the digits of 6721 is 16.</para>
+    <para id="para-00025">Hint: There are 10 base cases which can be checked easily with the right condition.</para>
+    <media alt="digits_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_03_02_Digits.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

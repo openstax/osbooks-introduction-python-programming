@@ -1,0 +1,19 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+  <title>Introduction</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Introduction</md:title>
+    <md:content-id>m00087</md:content-id>
+    <md:uuid>0b7224a5-4bc2-4486-be54-9443decbe102</md:uuid>
+  </metadata>
+  <content class="introduction">
+    <figure class="splash" id="fig-00001">
+    <media alt="Photo of a seashell showing recursive spiral pattern.">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://www.pexels.com/photo/orange-and-white-seashell-on-white-surface-33234/">Orange and White Seashell on White Surface</link> by unknown on <link url="https://www.pexels.com/">Pexels</link></caption>
+    </figure>
+    <para id="para-00001">Recursion is a powerful programming technique to write solutions compactly. Recursion simplifies programs by calling smaller versions of a given problem which are used to generate the solution to the overall problem.</para>
+    <para id="para-00002">In advanced programming, some programs are difficult to write without the use of recursion. So recursion is also a style of programming which enables us to simplify programs.</para>
+    <para id="para-00003">Recursion enables a piece of code, a function, to call the same piece of code, the same function, with different parameters.</para>
+    </content>
+</document>

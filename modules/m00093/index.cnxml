@@ -1,0 +1,44 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Chapter summary</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Chapter summary</md:title>
+    <md:content-id>m00093</md:content-id>
+    <md:uuid>dafd85a6-727a-4497-99d1-d4391ad650f8</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title/>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Describe the concept of recursion.</item>
+    <item>Demonstrate how recursion uses simpler solutions to build a bigger solution.</item>
+    <item>Identify a recursive case and a base case in a recursive algorithm.</item>
+    <item>Demonstrate how to compute a recursive solution for the factorial function.</item>
+    <item>Demonstrate the use of recursion to solve a string problem.</item>
+    <item>Demonstrate the use of recursion to solve a list problem.</item>
+    <item>Use the built-in <code>count()</code> list function.</item>
+    <item>Define a recursive function to generate Fibonacci numbers.</item>
+    <item>Use recursion to efficiently search a list.</item>
+    <item>Demonstrate a solution to the 3 towers problem.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to solve problems using recursion.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 12 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code>count(element)</code></entry>
+    <entry>Returns the number of times the element exists on the list on which the <code>count()</code> function is called..</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </section>
+    </content>
+</document>

@@ -1,0 +1,168 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Using recursion to solve problems</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Using recursion to solve problems</md:title>
+    <md:content-id>m00092</md:content-id>
+    <md:uuid>cd1387f8-b52b-4727-85fb-45eac43f3d6e</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use recursion to efficiently search a list.</item>
+    <item>Demonstrate a solution to the 3 towers problem.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Binary search</title>
+    <para id="para-00002">Searching a sorted list usually involves looking at each item. If the item being searched is not found, then the search can take a long time.</para>
+    <para id="para-00003">Binary search is a recursive algorithm used to efficiently search sorted lists. In each recursive step about half the items are discarded as not being potential matches and so the search proceeds much faster.</para>
+    <para id="para-00004">Binary search begins by checking the middle element of the list. If the search key is found, the algorithm returns the matching location (base case). Otherwise, the search is repeated on approximately half the list. If the key is greater than the middle, then the key must be on the right half and vice versa. The process continues by checking the middle element of the remaining half of the list.</para>
+    <example id="exam-00001">
+    <title>Binary Search</title>
+    <code class="python" lang="python">
+    """ Binary Search """<newline/>
+    def binary_search(search_list, low, high, key):<newline/>
+      # Check base case
+      if high > low:
+        mid = (high + low) // 2<newline/>
+        # If element is present at the middle itself (base case)
+        if search_list[mid] == key:
+          return mid<newline/>
+        # Recursive case: check which subarray must be checked
+        # Right subarray
+        elif key > search_list[mid]:
+          return binary_search(search_list, mid + 1, high, key)<newline/>
+        # Left subarray
+        else:
+          return binary_search(search_list, low, mid - 1, key)<newline/><newline/>
+      else:
+        # Key not found (other base case)
+        return "Not found"<newline/>
+    # Test list
+    in_list = [1, 3, 13, 16, 19, 22, 27, 32, 48, 66, 78, 99, 111, 122]<newline/>
+    # Call binary search function
+    print(binary_search(in_list, 0, len(in_list)-1, 48)) # Key exists at index 8<newline/>
+    print(binary_search(in_list, 0, len(in_list)-1, 86)) # Key does not exist<newline/>
+    </code>
+    <para id="para-00005">The above code's output is:</para>
+    <code class="python" lang="python">
+    8
+    Not found
+    </code>
+    </example>
+    <note class="guided-slides" id="note-00001">
+    <title>Binary search.</title>
+    <media alt="binary_search_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/binary-search"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Binary search</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch12-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch12-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch12-m05-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch12-m05-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Solving 3 towers</title>
+    <para id="para-00010">As discussed in an earlier section the 3 towers problem can be solved using recursion. The solution depends upon calling the solution to the next smaller problem twice. As shown below in the code example, the recursive solution can solve the problem for any number of rings.</para>
+    <example id="exam-00002">
+    <title>Solving N towers</title>
+    <para id="para-00011">Solution to 3 towers is simple with recursion. In the code below rings are numbered from the top down. The smallest ring is 1, the next ring is 2, and when solving for 3 rings the bottom ring is 3.</para>
+    <code class="python" lang="python">
+    """ Solving the towers problem recursively """<newline/>
+    def three_towers(N, source_tower, dest_tower, temp_tower):
+        # Base case: simply move the single(bottom) ring from source to destination tower
+        if N==1:
+            print("Move ring 1 from tower", source_tower, "to tower", dest_tower)
+            return # Exit when the base case is reached<newline/>
+        # Recursive case
+        # Call the smaller version of the problem: to move the N-1 stack to the middle tower
+        three_towers(N-1, source_tower, temp_tower, dest_tower)<newline/>
+        # Move the N ring to the destination tower
+        print("Move ring", N, "from tower", source_tower, "to tower", dest_tower)<newline/>
+        # Call the smaller version of the problem: to now move the N-1 stack from the middle tower to the destination
+        three_towers(N-1, temp_tower, dest_tower, source_tower)<newline/>
+    # Test code
+    print("Solution for 3 rings:")
+    three_towers(3, 't1', 't3', 't2') # t1, t2, t3 are the towers<newline/>
+    </code>
+    <para id="para-00012">The above code's output is:</para>
+    <code class="python" lang="python">
+    Solution for 3 rings:
+    Move ring 1 from tower t1 to tower t3
+    Move ring 2 from tower t1 to tower t2
+    Move ring 1 from tower t3 to tower t2
+    Move ring 3 from tower t1 to tower t3
+    Move ring 1 from tower t2 to tower t1
+    Move ring 2 from tower t2 to tower t3
+    Move ring 1 from tower t1 to tower t3
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00003">
+    <title>Solving 3 towers</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch12-m05-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch12-m05-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Coin combinations</title>
+    <para id="para-00015">Write a recursive function print_H_T() that produces all possible combinations of heads ('H') and tails ('T') for a given number of coin tosses.</para>
+    <para id="para-00016">Ex: For 3 coins the program should print the output shown below.</para>
+    <code class="python" lang="python">
+    HHH
+    HHT
+    HTH
+    HTT
+    THH
+    THT
+    TTH
+    TTT
+    </code>
+    <media alt="coin_combinations_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_06_06_Coin-combinations.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Generate random coin toss</title>
+    <para id="para-00017">Write a recursive function combi_H_T() that given a certain number of coin tosses generates a sequence of heads ('H') and tails ('T') generated at random.</para>
+    <para id="para-00018">Ex: For 5 coin tosses the program may print the output shown below.</para>
+    <code class="python" lang="python">
+    HTTTH
+    </code>
+    <media alt="generate_random_coin_toss_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_06_07_Generate-random-coin-toss.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

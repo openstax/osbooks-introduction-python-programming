@@ -1,0 +1,137 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>More math recursion</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>More math recursion</md:title>
+    <md:content-id>m00091</md:content-id>
+    <md:uuid>60ba0129-3a5a-4e49-ad3f-1dfbf3f358c9</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Define a recursive function to generate Fibonacci numbers.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Fibonacci sequence using recursion</title>
+    <para id="para-00002">The Fibonacci sequence is a sequence in which each number in the sequence is the sum of the previous 2 numbers in the sequence.The first two numbers being 0 and 1. Thus, starting from 0 and 1, the third number is 0+1=1, the next number is 1+1=2. The sequence of numbers is 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... .</para>
+    <para id="para-00003">Recursion can be used to calculate the nth Fibonacci number. 0 and 1 are the base cases. Thereafter the nth number is given by adding the (n-1)th and (n-2)th number. Thus, fib(n) = fib(n-1) + fib(n-2), which is a recursive definition ending with base cases, f(0) = 0, and f(1) = 1.</para>
+    <para id="para-00004">For a recursion that calls multiple functions in the recursive case, tracing how the recursion proceeds is useful. A structure used to trace the calls made by a recursive function is called a <term id="term-00001">recursion tree</term>. The animation below traces the recursion tree for a call to a recursive function to calculate the Fibonacci number for n = 5.</para>
+    <example id="exam-00001">
+    <title>Finding the nth Fibonacci number</title>
+    <para id="para-00005">The Fibonacci function recursion is more complex with the value at n depending on 2 function calls with smaller values.</para>
+    <code class="python" lang="python">
+    """ Recursive Fibonacci function """<newline/>
+    def fib(n):
+      # Base case
+      if n == 0 or n == 1:
+        return n
+      # Recursive case
+      elif n > 1:
+        return fib(n-1) + fib(n-2)
+      # Error case
+      else:
+        print("Fibonacci numbers begin at 0.")
+        return<newline/>
+    # Test code
+    print(fib(7))<newline/></code>
+    <para id="para-00006">The above code's output is:</para>
+    <code class="python" lang="python">
+    13
+    </code>
+    </example>
+    <note class="guided-slides" id="note-00001">
+    <title>Recursive Fibonacci function</title>
+    <media alt="recursive_fibonacci_function_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/recursive-Fibonacci-function"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Fibonacci numbers</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch12-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch12-m04-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch12-m04-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Greatest common divisor (GCD)</title>
+    <para id="para-00010">The greatest common divisor (GCD) of 2 positive integers is an integer that is a divisor for both integers. Ex: The GCD of 6 and 9 is 3 because 3 x 2 = 6, and 3 x 3 = 9.</para>
+    <para id="para-00011">The GCD is found easily using Euclid's method. Euclid's method recursively subtracts the smaller integer from the larger integer until a base case with equal integers is reached. The greatest common divisor is the integer value when the base case is reached.</para>
+    <example id="exam-00002">
+    <title>Finding the GCD</title>
+    <code class="python" lang="python">
+    """ Find GCD using recursive implementation of Euclid's method """<newline/>
+    def gcd(a, b):
+      if a == b: # Base case
+        return a
+      elif a &lt; b: # Recursive case
+        return gcd(a, b - a)
+      else:
+        return gcd(a - b, a)<newline/>
+    # Test code
+    print(gcd(24, 30))<newline/>
+    </code>
+    <para id="para-00012">The above code's output is:</para>
+    <code class="python" lang="python">
+    6
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00003">
+    <title>GCD</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch12-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch12-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch12-m04-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch12-m04-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Recursive power</title>
+    <para id="para-00017">Write a recursive power() function, such that given an integer x and a positive integer y, power(x, y) returns x raised to y.</para>
+    <para id="para-00018">Ex: power(3, 4) returns 81.</para>
+    <media alt="recursive_power_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_05_04_Recursive-power.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Recursive power (with any integer power)</title>
+    <para id="para-00019">Write a recursive rec_pow() function such that given 2 integers x and y returns x raised to y.</para>
+    <para id="para-00020">(Note: this is an extension of the above problem but now works for any integer value of y, positive or negative. How should the recursive function change to deal with a negative value of y?)</para>
+    <para id="para-00021">Ex: rec_pow(2, -4) returns 0.0625.</para>
+    <media alt="recursive_power_(with_any_integer_power)_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_05_05_Recursive-power-(with-any-integer-power).html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>
