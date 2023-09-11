@@ -166,7 +166,8 @@
     <row>
     <entry>Left-aligned</entry>
     <entry><code class="python inline-code">&lt;</code></entry>
-    <entry><code class="python inline-code">&#160;&#160;&#160;&#160;template = "{hex:&lt;7}{name:&lt;10}"
+    <entry><code class="python" lang="python">
+    template = "{hex:&lt;7}{name:&lt;10}"
     print(template.format(hex = "#FF0000", name = "Red"))
     print(template.format(hex = "#00FF00", name = "green"))</code>
     </entry>
