@@ -29,49 +29,49 @@
     <tbody>
     <row>
     <entry>abs(x)</entry>
-    <entry>Returns the absolute value of <code class="python inline-code">x</code>.</entry>
+    <entry><para id="para-00100">Returns the absolute value of <code class="python inline-code">x</code>.</para></entry>
     </row>
     <row>
     <entry>int(x)</entry>
-    <entry>Converts <code class="python inline-code">x</code> (a string or float) to an integer.</entry>
+    <entry><para id="para-00101">Converts <code class="python inline-code">x</code> (a string or float) to an integer.</para></entry>
     </row>
     <row>
     <entry>float(x)</entry>
-    <entry>Converts <code class="python inline-code">x</code> (a string or integer) to a float.</entry>
+    <entry><para id="para-00102">Converts <code class="python inline-code">x</code> (a string or integer) to a float.</para></entry>
     </row>
     <row>
     <entry>str(x)</entry>
-    <entry>Converts <code class="python inline-code">x</code> (a float or integer) to a string.</entry>
+    <entry><para id="para-00103">Converts <code class="python inline-code">x</code> (a float or integer) to a string.</para></entry>
     </row>
     <row>
     <entry>round(x, ndigits)</entry>
-    <entry>Rounds <code class="python inline-code">x</code> to <code class="python inline-code">ndigits</code> places after the decimal point. If <code class="python inline-code">ndigits</code> is omitted, returns the nearest integer to <code class="python inline-code">x</code>.</entry>
+    <entry><para id="para-00104">Rounds <code class="python inline-code">x</code> to <code class="python inline-code">ndigits</code> places after the decimal point. If <code class="python inline-code">ndigits</code> is omitted, returns the nearest integer to <code class="python inline-code">x</code>.</para></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Operator</emphasis></entry>
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">s * n</code><newline/>
-    (repetition)</entry>
-    <entry>Creates a string with <code class="python inline-code">n</code> copies of <code class="python inline-code">s</code>.
-    Ex: <code class="python inline-code">"Ha" * 3</code> is <code class="python inline-code">"HaHaHa"</code>.</entry>
+    <entry><para id="para-00105"><code class="python inline-code">s * n</code><newline/>
+    (repetition)</para></entry>
+    <entry><para id="para-00106">Creates a string with <code class="python inline-code">n</code> copies of <code class="python inline-code">s</code>.
+    Ex: <code class="python inline-code">"Ha" * 3</code> is <code class="python inline-code">"HaHaHa"</code>.</para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">x / y</code><newline/>
-    (real division)</entry>
-    <entry>Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the entire result as a float.
-    Ex: <code class="python inline-code">7 / 4</code> is <code class="python inline-code">1.75</code>.</entry>
+    <entry><para id="para-00107"><code class="python inline-code">x / y</code><newline/>
+    (real division)</para></entry>
+    <entry><para id="para-00108">Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the entire result as a float.
+    Ex: <code class="python inline-code">7 / 4</code> is <code class="python inline-code">1.75</code>.</para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">x // y</code><newline/>
-    (floor division)</entry>
-    <entry>Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the quotient as an integer.
-    Ex: <code class="python inline-code">7 // 4</code> is <code class="python inline-code">1</code>.</entry>
+    <entry><para id="para-00109"><code class="python inline-code">x // y</code><newline/>
+    (floor division)</para></entry>
+    <entry><para id="para-00110">Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the quotient as an integer.
+    Ex: <code class="python inline-code">7 // 4</code> is <code class="python inline-code">1</code>.</para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">x % y</code><newline/>
-    (modulo)</entry>
+    <entry><para id="para-00111"><code class="python inline-code">x % y</code><newline/>
+    (modulo)</para></entry>
     <entry>Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the remainder as an integer.
     Ex: <code class="python inline-code">7 % 4</code> is <code class="python inline-code">3</code>.</entry>
     </row>
