@@ -21,16 +21,16 @@
     <section id="sect-00003">
     <title>String formatting with replacement fields</title>
     <para id="para-00003"><term id="term-00002">Replacement fields</term> are used to define a pattern for creating multiple string values that comply with a given format. The example below shows two string values that use the same template for making requests to different individuals for taking different courses.</para>
-    <figure id="fig-00001">
-    <title>String values from the same template</title>
-    <media alt="">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
-    </media>
-    <caption>Dear John, I'd like to take programming course with Prof. Potter.<newline/>
-    Dear Kishwar, I'd like to take math course with Prof. Robinson.</caption>
-    </figure>
-    <para id="para-00004">In the example above, replacement fields are 1) the name of the individual the request is being made to 2) title of the course, and 3) the name of the instructor. To create a template, replacement fields can be added with <code class="python inline-code">{}</code> to show a placeholder for user input. The <term id="term-00003">format()</term> function is used to pass inputs for replacement fields in a string template.</para>
     <example id="exam-00001">
+    <title>String values from the same template</title>
+    <code class="python" lang="python">
+    Dear John, I'd like to take programming course with Prof. Potter.<newline/>
+    Dear Kishwar, I'd like to take math course with Prof. Robinson.
+    </code>
+    </example>
+
+    <para id="para-00004">In the example above, replacement fields are 1) the name of the individual the request is being made to 2) title of the course, and 3) the name of the instructor. To create a template, replacement fields can be added with <code class="python inline-code">{}</code> to show a placeholder for user input. The <term id="term-00003">format()</term> function is used to pass inputs for replacement fields in a string template.</para>
+    <example id="exam-00002">
     <title>String template formatting for course enrollment requests</title>
     <para id="para-00005">String template with replacement fields is defined below to create string values with different input arguments. The format() function is used to pass inputs to the template in the same order.</para>
     <code class="python" lang="python">
@@ -68,7 +68,7 @@
     <section id="sect-00004">
     <title>Named replacement fields</title>
     <para id="para-00010">Replacement fields can be tagged with a label, called <term id="term-00004">named replacement fields</term>, for ease of access and code readability. The example below illustrates how named replacement fields can be used in string templates.</para>
-    <example id="exam-00002">
+    <example id="exam-00003">
     <title>Season weather template using named replacement fields</title>
     <para id="para-00011">A named replacement argument is a convenient way of assigning name tags to replacement fields and passing values associated with replacement fields using corresponding names (instead of passing values in order).</para>
     <code class="python" lang="python">
@@ -123,7 +123,7 @@
     <title>Numbered replacement fields</title>
     <para id="para-00018">Python's string <code class="python inline-code">format()</code> function can use positional ordering to match the numbered arguments. The replacement fields that use the positional ordering of arguments are called <term id="term-00005">numbered replacement fields</term>. The indexing of the arguments starts from 0. Ex: <code class="python inline-code">print("{1}{0}".format("Home", "Welcome"))</code> outputs string value <code class="python inline-code">"Welcome Home"</code> as the first argument, <code class="python inline-code">"Home"</code>, is at index 0 and the second argument, <code class="python inline-code">"Welcome"</code>, is at index 1. Replacing these arguments in the order of <code class="python inline-code">"{1}{0}"</code> creates string <code class="python inline-code">"Welcome Home"</code>.</para>
     <para id="para-00019">Numbered replacement fields can use argument's values for multiple replacement fields by using the same argument index. Example below illustrates how an argument is used for more than one numbered replacement fields.</para>
-    <example id="exam-00003">
+    <example id="exam-00004">
     <title>Numbered replacement field to build a phrase</title>
     <para id="para-00020">Numbered replacement fields are used in this example to build phrases like "very very cold" or "very hot".</para>
     <code class="python" lang="python">
