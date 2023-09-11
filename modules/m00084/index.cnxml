@@ -1,0 +1,240 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Overloading operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Overloading operators</md:title>
+    <md:content-id>m00084</md:content-id>
+    <md:uuid>63ac6d28-80f6-4159-90c7-fbcb4c4b0583</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify magic methods and describe their purpose</item>
+    <item>Develop overloaded arithmetic and comparison operators for user-defined classes</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Magic methods and customizing</title>
+    <para id="para-00002"><term id="term-00001">Magic methods</term> are special methods that perform actions for users, typically out of view of users. Magic methods are also called dunder methods, since the methods must start and end with two (double) underscores. Ex: __init__() is a magic method used alongside __new__() to create a new instance and initialize attributes with a simple line like <code class="python inline-code">eng = Engineer()</code>. A programmer can explicitly define a magic method in a user-defined class to customize the method's behavior.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Customizing __str__() in a user-defined class, Engineer</title>
+    <media alt="customizing_str_user_defined_class_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/customizing-str-user-defined-class"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Magic methods</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch11-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch11-m04-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch11-m04-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Overloading arithmetic operators</title>
+    <para id="para-00006"><term id="term-00002">Operator overloading</term> refers to customizing the function of a built-in operator. Arithmetic operators are commonly overloaded to allow for easy changes to instances of user-defined classes.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Overloading __add__() for a user-defined class, Account</title>
+    <media alt="overloading_add_user_defined_class_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/overloading-add-user-defined-class"/>
+    </media>
+    </note>
+    <table summary=" " id="table-00001">
+    <title>Arithmetic operators and magic methods</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Arithmetic operator (Operation)</entry>
+    <entry>Magic method</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>+ (Addition)</entry>
+    <entry>__add__(self, other)</entry>
+    </row>
+    <row>
+    <entry>- (Subtraction)</entry>
+    <entry>__sub__(self, other)</entry>
+    </row>
+    <row>
+    <entry>* (Multiplication)</entry>
+    <entry>__mul__(self, other)</entry>
+    </row>
+    <row>
+    <entry>/ (Division)</entry>
+    <entry>__truediv__(self, other)</entry>
+    </row>
+    <row>
+    <entry>% (Modulo)</entry>
+    <entry>__mod__(self, other)</entry>
+    </row>
+    <row>
+    <entry>** (Power)</entry>
+    <entry>__pow__(self, other)</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00004">
+    <title>Arithmetic operator overloading</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch11-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch11-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch11-m04-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Overloading comparison operators</title>
+    <para id="para-00010">Comparison operators can also be overloaded like arithmetic operators.</para>
+    <table summary=" " id="table-00002">
+    <title>Comparison operators and magic methods</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Comparison operator (Operation)</entry>
+    <entry>Magic method</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>&lt; (Less than)</entry>
+    <entry>__lt__(self, other)</entry>
+    </row>
+    <row>
+    <entry>> (Greater than)</entry>
+    <entry>__gt__(self, other)</entry>
+    </row>
+    <row>
+    <entry>&lt;= (Less than or equal)</entry>
+    <entry>__le__(self, other)</entry>
+    </row>
+    <row>
+    <entry>>= (Greater than or equal)</entry>
+    <entry>__ge__(self, other)</entry>
+    </row>
+    <row>
+    <entry>== (Equal)</entry>
+    <entry>__eq__(self, other)</entry>
+    </row>
+    <row>
+    <entry>!= (Not equal)</entry>
+    <entry>__ne__(self, other)</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <table summary=" " id="table-00003">
+    <title>Overloading comparison operators for the Account class.</title>
+    <tgroup cols="2">
+    <tbody>
+    <row>
+    <entry>
+    <code class="python" lang="python">
+    class Account:
+      def __init__(self, name="", amount=0):
+        self.name = name
+        self.amount = amount<newline/>
+      def __str__(self):
+        return f"{self.name}: ${self.amount}"<newline/>
+      def __lt__(self, other):
+        return self.amount &lt; other.amount<newline/>
+      def __gt__(self, other):
+        return self.amount > other.amount<newline/>
+      def __eq__(self, other):
+        return self.amount == other.amount<newline/>
+    acct_a = Account("Ashe", 6492)
+    acct_b = Account("Bevins", 5210)<newline/>
+    print(acct_a &lt; acct_b)
+    print(acct_a > acct_b)
+    acct_a.amount = 5210
+    print(acct_a == acct_b)</code>
+    </entry>
+    <entry>
+    False<newline/>
+    True<newline/>
+    True
+    </entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00005">
+    <title>Comparison operator overloading</title>
+    <para id="para-00011">Consider the example above.</para>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch11-m04-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch11-m04-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch11-m04-p09"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00006">
+    <title>Combining exercise logs</title>
+    <para id="para-00015">The ExerciseLog class has two instance attributes: e_type, the type of exercise, and duration, the time spent exercising.</para>
+    <para id="para-00016">Overload the + operator to combine two ExerciseLogs such that:</para>
+    <list id="list-00002">
+    <item>If the exercise types are different, combine them with " and " in between. Else, use the same type and don't duplicate.</item>
+    <item>Add durations together.</item>
+    </list>
+    <para id="para-00017">Given input:</para>
+    <code class="python" lang="python">
+    walk
+    5
+    run
+    30
+    </code>
+    <para id="para-00018">The output is:</para>
+    <code class="python" lang="python">
+    walk and run: 35 minutes
+    </code>
+    <media alt="combining_exercise_logs_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_05_04_Combining-exercise-logs.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00007">
+    <title>Expanding the Account class</title>
+    <para id="para-00019">Using isinstance() allows the programmer to define different behaviors depending on an object's type. The first parameter is the object, and the second parameter is the type or class. Ex: isinstance(my_var, int) returns True if my_var is an integer.</para>
+    <para id="para-00020">Expand the existing Account example so that the addition operator can also be used to add an integer value to an Account's amount attribute.</para>
+    <media alt="expanding_the_account_class_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_05_05_Expanding-the-Account-class.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

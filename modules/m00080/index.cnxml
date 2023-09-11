@@ -1,0 +1,18 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+  <title>Introduction</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Introduction</md:title>
+    <md:content-id>m00080</md:content-id>
+    <md:uuid>33fc8f9e-8563-44bb-8209-10b43e4d2912</md:uuid>
+  </metadata>
+  <content class="introduction">
+    <figure class="splash" id="fig-00001">
+    <media alt="vineyard">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://unsplash.com/photos/IQVFVH0ajag">Photo</link> by <link url="Dan Meyers">Dan Meyers</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+    </figure>
+    <para id="para-00001">A programmer can model real-world entities as objects for better program design and organization. A class defines a type of object with attributes and methods. Many instances of a class type can be created to represent multiple objects in a program.</para>
+    <para id="para-00002">Classes promote reusability. Classes add benefits like data abstraction and encapsulation, which organize code for better usability and extensibility.</para>
+    </content>
+</document>

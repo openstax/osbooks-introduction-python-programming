@@ -1,0 +1,229 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Classes and instances</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Classes and instances</md:title>
+    <md:content-id>m00082</md:content-id>
+    <md:uuid>6b8e5013-8cbb-4281-82bf-5b9dc723991a</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Create a class with instance attributes, class attributes, and the __init__() method</item>
+    <item>Use a class definition to create class instances to represent objects</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Classes and instances</title>
+    <para id="para-00002">In the previous section, a real-world entity, like a person's social media profile, was modeled as a single object. How could a programmer develop a software system that manages millions of profiles? A blueprint that defines the fields and procedures of a profile would be crucial.</para>
+    <para id="para-00003">In a Python program, a <term id="term-00001">class</term> defines a type of object with attributes (fields) and methods (procedures). A class is a blueprint for creating objects. Individual objects created of the class type are called <term id="term-00002">instances</term>.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Representing a coffee order with a class</title>
+    <media alt="representing_with_class_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/representing-with-class"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Classes and instances</title>
+    <para id="para-00004">Consider the example below:</para>
+    <code class="python" lang="python">
+    class Cat:
+      def __init__(self):
+        self.name = 'Kitty'
+        self.breed = 'domestic short hair'
+        self.age = 1
+      def print_info(self):
+        print(self.name, 'is a ', self.age, 'yr old', self.breed)<newline/>
+    pet_1 = Cat()
+    pet_2 = Cat()
+    </code>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch11-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch11-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch11-m02-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch11-m02-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Creating instances with __init__()</title>
+    <para id="para-00009">___init___() is a special method that is called every time a new instance of a class is created. <term id="term-00003">self</term> refers to the instance of a class and is used in class methods to access the specific instance that called the method. <code class="python inline-code">__init__()</code> uses self to define and initialize the instance's attributes.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Creating multiple coffee orders and changing attributes</title>
+    <media alt="creating_changing_attributes_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/creating-changing-attributes"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>instances and __init__()</title>
+    <para id="para-00010">Consider the example below:</para>
+    <code class="python" lang="python">
+    class Rectangle:
+      def __init__(self):
+        self.length = 1
+        self.width = 1
+      def area(self):
+        return self.length * self.width<newline/>
+    room_1 = Rectangle()
+    room_1.length = 10
+    room_1.width = 15
+    print("Room 1's area:", room_1.area())
+    room_3 = Rectangle()
+    room_3.length = 12
+    room_3.width = 14
+    print("Room 3's area:", room_3.area())
+    </code>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch11-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch11-m02-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch11-m02-p07"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch11-m02-p08"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Instance attributes vs. class attributes</title>
+    <para id="para-00015">The attributes shown so far have been instance attributes. An <term id="term-00004">instance attribute</term> is a variable that is unique to each instance of a class and is accessed using the format <code class="python inline-code">instance_name.attribute_name</code>. Another type of attribute, a <term id="term-00005">class attribute</term>, belongs to the class and is shared by all class instances. Class attributes are accessed using the format, <code class="python inline-code">class_name.attribute_name</code>.</para>
+    <note class="guided-slides" id="note-00005">
+    <title>Using class attributes for shared coffee order information</title>
+    <media alt="using_class_attributes_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/using-class-attributes"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00006">
+    <title>Instances and class attributes</title>
+    <para id="para-00016">Consider the example above.</para>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch11-m02-p09"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch11-m02-p10"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch11-m02-p11"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CPL-ch11-m02-p12"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00007">
+    <title>Creating a class for an airline's flight tickets</title>
+    <para id="para-00021">Write a class, FlightTicket, as described below. Default values follow the attributes. Then create a flight ticket and assign each instance attribute with values read from input.</para>
+    <para id="para-00022">Instance attributes:</para>
+    <list id="list-00002">
+    <item>flight_num: 1</item>
+    <item>airport: 'JFK'</item>
+    <item>gate: 'T1-1'</item>
+    <item>time: '8:00'</item>
+    <item>seat: '1A'</item>
+    <item>passenger: 'unknown'</item>
+    </list>
+    <para id="para-00023">Class attributes:</para>
+    <list id="list-00003">
+    <item>airline: 'Oceanic Airlines'</item>
+    <item>airline_code: 'OA'</item>
+    </list>
+    <para id="para-00024">Method:</para>
+    <list id="list-00004">
+    <item>__init__(): initializes the instance attributes</item>
+    <item>print_info(): prints ticket information (provided in template)</item>
+    </list>
+    <para id="para-00025">Given input:</para>
+    <code class="python" lang="python">
+    2121
+    KEF
+    D22B
+    11:45
+    12B
+    Jules Laurent
+    </code>
+    <para id="para-00026">The output is:</para>
+    <code class="python" lang="python">
+    Passenger Jules Laurent departs on flight # 2121 at 11:45 from KEF D22B in seat 12B
+    </code>
+    <media alt="creating_a_class_for_an_airline_s_flight_tickets_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_03_01_Creating-a-class-for-an-airline_s-flight-tickets.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00008">
+    <title>Creating a class for fantasy books</title>
+    <para id="para-00027">Write a class, Book, as described below. Then create two instances and assign each instance attribute with values read from input.</para>
+    <para id="para-00028">Instance attributes:</para>
+    <list id="list-00005">
+    <item>title: ''</item>
+    <item>author: ''</item>
+    <item>year: 0</item>
+    <item>pages: 0</item>
+    </list>
+    <para id="para-00029">Class attribute:</para>
+    <list id="list-00006">
+    <item>imprint: 'Fantasy Tomes'</item>
+    </list>
+    <para id="para-00030">Method:</para>
+    <list id="list-00007">
+    <item>__init__(): initializes the instance attributes</item>
+    <item>print_info(): prints book information (provided in template)</item>
+    </list>
+    <para id="para-00031">Given input:</para>
+    <code class="python" lang="python">
+    Lord of the Bracelets
+    Blake R. R. Brown
+    1999
+    423
+    A Match of Thrones
+    Terry R. R. Thomas
+    2020
+    761
+    </code>
+    <para id="para-00032">The output is:</para>
+    <code class="python" lang="python">
+    Lord of the Bracelets by Blake R. R. Brown published by Fantasy Tomes in 1999 with 423 pages
+    A Match of Thrones by Terry R. R. Thomas published by Fantasy Tomes in 2020 with 761
+    pages</code>
+    <media alt="creating_a_class_for_fantasy_books_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_03_02_Creating-a-class-for-fantasy-books.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

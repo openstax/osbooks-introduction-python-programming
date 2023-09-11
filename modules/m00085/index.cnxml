@@ -1,0 +1,107 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Using modules with classes</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Using modules with classes</md:title>
+    <md:content-id>m00085</md:content-id>
+    <md:uuid>f5da0c64-192c-4ea1-a46a-ca24595f7c66</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Construct an import statement that selectively imports classes</item>
+    <item>Create an alias to import a module</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Importing classes from modules</title>
+    <para id="para-00002">Import statements, as discussed in the Modules chapter, allow code from other files, including classes, to be imported into a program. Accessing an imported class depends on whether the whole module is imported or just selected parts.</para>
+    <para id="para-00003">Multiple classes can be grouped in a module. For good organization, classes should be grouped in a module only if the grouping enables module reuse, as a key benefit of modules is reusability.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Importing classes from files</title>
+    <media alt="importing_classes_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/importing-classes"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Importing classes</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch11-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch11-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch11-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Using aliases</title>
+    <para id="para-00007"><term id="term-00001">Aliasing</term> allows the programmer to use an alternative name for imported items. Ex: <code class="python inline-code">import triangle as tri</code> allows the program to refer to the triangle module as tri. Aliasing is useful to avoid name collisions but should be used carefully to avoid confusion.</para>
+    <para id="para-00008"><emphasis effect="bold">Using aliasing to import character.</emphasis></para>
+    <para id="para-00009">character.py</para>
+    <code class="python" lang="python">
+    class Level:
+      def __init__(self, level=1):
+        self.level = level
+        ...
+      def level_up(self):
+        ...
+    class XP:
+      def __init__(self, XP=0):
+        self.XP = XP
+        ...
+      def add_xp(self, num):
+        ...
+    </code>
+    <para id="para-00010">main.py</para>
+    <code class="python" lang="python">
+    import character as c<newline/>
+    bard_level = c.Level(1)
+    bard_XP = c.XP(0)
+    bard_XP.add_xp(300)
+    bard_level.level_up()
+    ...
+    </code>
+    <note class="learning-questions" id="note-00003">
+    <title>Using an alias</title>
+    <para id="para-00011">Consider the example above. Suppose a program imports the character module using <code class="python inline-code">import character as game_char</code>.</para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch11-m05-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch11-m05-p05"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Missing import statement</title>
+    <para id="para-00014">Add the missing import statement to the top of the file. Do not make any changes to the rest of the code. In the end, the program should run without errors.</para>
+    <media alt="missing_import_statement_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_06_06_Missing-import-statement.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Missing class import statement</title>
+    <para id="para-00015">Add the missing class import statement to the top of the file. Import only a class, not a full module. Do not make any changes to the rest of the code. In the end, the program should run without errors.</para>
+    <media alt="missing_class_import_statement_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_06_07_Missing-class-import-statement.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

@@ -1,0 +1,79 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Object-oriented programming basics</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Object-oriented programming basics</md:title>
+    <md:content-id>m00081</md:content-id>
+    <md:uuid>f7c14d3d-ea71-4a5e-8908-22b33a5721b9</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Grouping into objects</title>
+    <para id="para-00001"><term id="term-00001">Object-oriented programming</term> (OOP) is a style of programming that groups related fields, or data members, and procedures into objects. Real-world entities are modeled as individual objects that interact with each other. Ex: A social media account can follow other accounts, and accounts can send messages to each other. An account can be modeled as an object in a program.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Using objects to model social media</title>
+    <media alt="model_social_media_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/model-social-media"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>OOP</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00002"><link class="os-embed" url="#exercise/CPL-ch11-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch11-m01-p02"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00002">
+    <title>Encapsulation</title>
+    <para id="para-00004"><term id="term-00002">Encapsulation</term> is a key concept in OOP that involves wrapping data and procedures that operate on that data into a single unit. Access to the unit's data is restricted to prevent other units from directly modifying the data. Ex: A ticket website manages all transactions for a concert, keeping track of tickets sold and tickets still available to avoid accidental overbooking.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Encapsulating concert ticket information</title>
+    <media alt="encapsulating_info_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/encapsulating-info"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Encapsulation</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch11-m01-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch11-m01-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Abstraction</title>
+    <para id="para-00007"><term id="term-00003">Abstraction</term> is a key concept in OOP in which a unit's inner workings are hidden from users and other units that don't need to know the inner workings. Ex: A driver doesn't usually need to know their car engine's exact, numerical temperature. So the car has a gauge to display if the engine temperature is within an appropriate range.</para>
+    <note class="guided-slides" id="note-00005">
+    <title>Abstracting data in a countdown calculator</title>
+    <media alt="abstracting_data_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/abstracting-data"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00006">
+    <title>Abstraction</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch11-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch11-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    </content>
+</document>

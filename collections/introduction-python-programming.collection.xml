@@ -136,5 +136,17 @@
         <col:module document="m00079"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 11: Classes</md:title>
+      <col:content>
+        <col:module document="m00080"/>
+        <col:module document="m00081"/>
+        <col:module document="m00082"/>
+        <col:module document="m00083"/>
+        <col:module document="m00084"/>
+        <col:module document="m00085"/>
+        <col:module document="m00086"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>

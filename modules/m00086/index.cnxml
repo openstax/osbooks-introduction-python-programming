@@ -1,0 +1,97 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Chapter summary</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Chapter summary</md:title>
+    <md:content-id>m00086</md:content-id>
+    <md:uuid>0cb605fc-2d98-4606-9eb6-e8eb945bcddb</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title/>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Object-oriented programming involves grouping related fields and procedures into objects using data abstraction and encapsulation.</item>
+    <item>Classes define a type of object with attributes and methods.</item>
+    <item>Instances of a class type represent objects and are created using <code class="python inline-code">__init__()</code>.</item>
+    <item>Attributes may belong to the instance (unique for each instance) or the class (shared by all instances).</item>
+    <item>Instance methods have the first parameter <code class="python inline-code">self</code> to access the specific instance.</item>
+    <item>Python uses magic methods to perform "under the hood" actions for users. Magic methods always start and end with double underscores.</item>
+    <item>Python allows overloading of existing operators for user-defined classes.</item>
+    <item>Classes can be imported from modules by name and can be renamed using aliases.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write classes that have instance attributes, class attributes, and methods and import classes from modules. You should also be able to overload operators when defining a class.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 11 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Construct</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>Class definition</entry>
+    <entry><code class="python" lang="python">
+    class ClassName:
+      """Docstring"""
+    </code></entry>
+    </row>
+    <row>
+    <entry>__init__()</entry>
+    <entry><code class="python" lang="python">
+    class ClassName:
+      def __init__(self):
+        # Initialize attributes</code></entry>
+    </row>
+    <row>
+    <entry>Attributes</entry>
+    <entry><code class="python" lang="python">
+    class ClassName:
+      class_attr_1 = [value]
+      class_attr_2 = [value]<newline/>
+      def __init__(self):
+        instance_attr_1 = [value]
+        instance_attr_2 = [value]
+        instance_attr_3 = [value]</code></entry>
+    </row>
+    <row>
+    <entry>Methods (instance)</entry>
+    <entry><code class="python" lang="python">
+    class ClassName:<newline/>
+      def __init__(self):
+        instance_attr_1 = [value]
+        instance_attr_2 = [value]
+        instance_attr_3 = [value]<newline/>
+      def method_1(self, val1, val2):
+        # Access/change attributes<newline/>
+      def method_2(self):
+        # Access/change attributes</code></entry>
+    </row>
+    <row>
+    <entry>Instances</entry>
+    <entry><code class="python" lang="python">
+    instance_1 = ClassName()
+    instance_1.instance_attr_1 = [new value]
+    instance_2 = ClassName()
+    instance_2.method_2()</code></entry>
+    </row>
+    <row>
+    <entry>Overloaded multiplication operator</entry>
+    <entry><code class="python" lang="python">
+    class ClassName:
+      # Other methods<newline/>
+      def __mul__(self, other):
+        return ClassName(self.instance_attr_3 * other.instance_attr_3)</code></entry>
+    </row>
+    <row>
+    <entry>Import class from module with alias</entry>
+    <entry><code class="python" lang="python">
+    from class_module import ClassName as ClassAlias</code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </section>
+    </content>
+</document>
