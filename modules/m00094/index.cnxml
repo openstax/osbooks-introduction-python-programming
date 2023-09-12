@@ -1,0 +1,18 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+  <title>Introduction</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Introduction</md:title>
+    <md:content-id>m00094</md:content-id>
+    <md:uuid>94afd581-bebd-496d-a77d-3de5d3261594</md:uuid>
+  </metadata>
+  <content class="introduction">
+    <figure class="splash" id="fig-00001">
+    <media alt="sheep with lamb">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://unsplash.com/photos/0U_gjae2TKo">Photo</link> by <link url="https://unsplash.com/@megancorkery">Megan Johnston</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+    </figure>
+    <para id="para-00001">Real-world entities are often described in relation to other entities. Ex: A finch is a type of bird. So classes, which represent types of real-world entities, can be related to each other.</para>
+    <para id="para-00002">Inheritance describes the relationship in which one class is a type of another class. Classes within inheritance relationships can inherit attributes and methods from other classes without needing to redefine everything. Thus, inheritance in object-oriented programming reduces redundancy and promotes modularity.</para>
+    </content>    
+</document>
