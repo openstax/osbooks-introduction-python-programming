@@ -1,0 +1,90 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Chapter summary</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Chapter summary</md:title>
+    <md:content-id>m00100</md:content-id>
+    <md:uuid>0ccb6c4b-47ab-4aa9-b5ee-1916127a4c03</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title/>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Inheritance describes an is-a relationship between classes. One class, the subclass, inherits from another class, the superclass.</item>
+    <item>Subclasses can access inherited attributes and methods directly.</item>
+    <item>Subclasses can override superclass methods to change or add functionality.</item>
+    <item>super() allows a subclass to access the methods of the superclass.</item>
+    <item>Polymorphism describes a single representation for multiple forms and is applied in Python to define multiple methods with the same name and allow the same method to take different arguments.</item>
+    <item>Hierarchical inheritance is a type of inheritance in which multiple classes inherit from a single superclass.</item>
+    <item>Multiple inheritance is a type of inheritance in which one class inherits from multiple classes.</item>
+    <item>Mixin classes are used in multiple inheritance to add functionality to a subclass without adding inheritance concerns.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write subclasses that inherit instance attributes and methods and have unique attributes and overridden methods. You should also be able to create hierarchical inheritance relationships and multiple inheritance relationships between classes.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 13 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Task</entry>
+    <entry>Example</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>Define a subclass</entry>
+    <entry><code class="python" lang="python">
+    class SuperClass:
+      pass<newline/>
+    class SubClass(SuperClass):
+      pass</code></entry>
+    </row>
+    <row>
+    <entry>Define a subclass's __init__() using super()</entry>
+    <entry><code class="python" lang="python">
+    class SubClass(SuperClass):
+      def __init__(self):
+        super().__init__() # Calls superclass __init__()
+        # Initialize subclass instance attributes</code></entry>
+    </row>
+    <row>
+    <entry>Override a superclass method</entry>
+    <entry><code class="python" lang="python">
+    class SuperClass:
+      def display(self):
+        print('Superclass method')<newline/>
+    class SubClass(SuperClass):
+      def display(self): # Same name as superclass method
+        print('Subclass method')</code></entry>
+    </row>
+    <row>
+    <entry>Implement hierarchical inheritance</entry>
+    <entry><code class="python" lang="python">
+    class SuperClass:
+      def display(self):
+        print('Superclass method')<newline/>
+    class SubClass1(SuperClass):
+      def display(self):
+        print('Subclass 1 method ')
+    class SubClass2(SuperClass):
+      def display(self):
+      print('Subclass 2 method')<newline/>
+    class SubClass3(SuperClass):
+      def display(self):
+        print('Subclass 3 method')</code></entry>
+    </row>
+    <row>
+    <entry>Implement multiple inheritance</entry>
+    <entry><code class="python" lang="python">
+    class SuperClass1:
+        pass<newline/>
+    class SuperClass2:
+        pass<newline/>
+    class SubClass(SuperClass1, SuperClass2):
+        pass</code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </section>
+    </content>
+</document>

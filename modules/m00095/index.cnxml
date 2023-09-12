@@ -1,0 +1,121 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Inheritance basics</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Inheritance basics</md:title>
+    <md:content-id>m00095</md:content-id>
+    <md:uuid>6bb922af-55ba-47da-8c04-f17ca32e32eb</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Identify is-a and has-a relationships between classes.</item>
+    <item>Differentiate between a subclass and a superclass.</item>
+    <item>Create a superclass and subclass and instances of each.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>is-a vs has-a relationships</title>
+    <para id="para-00002">Classes are related to each other. An is-a relationship exists between a superclass whose functionality is added to to create a subclass. Ex: A daffodil is a plant. So a Daffodil class inherits from a superclass, Plant.</para>
+    <para id="para-00003">Is-a relationships can be confused with has-a relationships. A has-a relationship exists between a class that contains another class. Ex. An employee has a company-issued laptop. Note: The laptop is not an employee.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>is-a relationship between Employee and Developer</title>
+    <media alt="is_a_relationship_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/is-a-relationship"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Relationships between classes</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch13-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch13-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch13-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Inheritance in Python</title>
+    <para id="para-00007">Inheritance uses an is-a relationship to inherit a class from a superclass. The subclass inherits all the superclass's attributes and methods and extends the superclass's functionality.</para>
+    <para id="para-00008">In Python, a subclass is created by including the superclass name at the top of the subclass's definition in parentheses:</para>
+    <code class="python" lang="python">
+    class SuperClass:
+        # SuperClass attributes and methods<newline/>
+    class SubClass(SuperClass):
+        # SubClass attributes and methods
+    </code>
+    <note class="guided-slides" id="note-00003">
+    <title>Using inheritance to create subclasses</title>
+    <media alt="inheritance_subclasses_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/inheritance-subclasses"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Creating subclasses</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch13-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch13-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch13-m01-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch13-m01-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00005">
+    <title>Alternative inheritance terms</title>
+    <para id="para-00013">Python documentation for inheritance uses multiple terms to refer to the class that is inherited from and the class that inherits. This book uses superclass/subclass throughout for consistency.</para>
+    <figure id="fig-00001">
+    <media alt="FIXME: Text describing the image as precisely as possible for visually impaired users.">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption/>
+    </figure>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00006">
+    <title>Employee and Developer classes</title>
+    <para id="para-00014">Given the Employee class, create a Developer class that inherits from Employee. The Developer class has one method update_codebase() that prints "Employee has updated the codebase". Then use the Developer instance, python_dev, to call print_company() and update_codebase().</para>
+    <media alt="employee_and_developer_classes_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch13/CodeRunner_13_02_01_Employee-and-Developer-classes.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00007">
+    <title>Polygon classes</title>
+    <para id="para-00015">Define three classes: Polygon, Rectangle, and Square:</para>
+    <list id="list-00002">
+    <item>Polygon has method p_disp() that prints "object is a Polygon"</item>
+    <item>Rectangle inherits from Polygon and has method r_disp() that prints "object is a Rectangle"</item>
+    <item>Square inherits from Rectangle and has method s_disp() that prints "object is a Square"</item>
+    </list>
+    <para id="para-00016">Create an instance of each class. Then for each instance, call all the methods the instance has access to.</para>
+    <media alt="polygon_classes_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch13/CodeRunner_13_02_02_Polygon-classes.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

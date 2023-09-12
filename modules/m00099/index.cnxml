@@ -1,0 +1,135 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Multiple inheritance and mixin classes</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Multiple inheritance and mixin classes</md:title>
+    <md:content-id>m00099</md:content-id>
+    <md:uuid>41d86ead-3948-4dae-8766-cf480c9376c6</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Construct a class that inherits from multiple superclasses.</item>
+    <item>Identify the diamond problem within multiple inheritance.</item>
+    <item>Construct a mixin class to add functionality to a subclass.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Multiple inheritance basics</title>
+    <para id="para-00002"><term id="term-00001">Multiple inheritance</term> is a type of inheritance in which one class inherits from multiple classes. A class inherited from multiple classes has all superclasses listed in the class definition inheritance list. Ex: <code class="python inline-code">class SubClass(SuperClass_1, SuperClass_2)</code>.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Multiple inheritance organization</title>
+    <media alt="multiple_inheritance_organization_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/multiple-inheritance-organization"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Implementing multiple inheritance</title>
+    <para id="para-00003">Consider the program:</para>
+    <code class="python" lang="python">
+    class A:
+      def __init__(self, a_attr=2):
+        self.a_attr = a_attr<newline/>
+    class B:
+      def __init__(self, b_attr=4):
+        self.b_attr = b_attr<newline/>
+    class C(A, B):
+      def __init__(self, a_attr=5, b_attr=10, c_attr=20):
+        A.__init__(self, a_attr)
+        B.__init__(self, b_attr)
+        self.c_attr = c_attr<newline/>
+    b_inst = B(2)
+    c_inst = C(1, 2)
+    </code>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch13-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch13-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch13-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>The diamond problem and mixin classes</title>
+    <para id="para-00007">Multiple inheritance should be implemented with care. The <term id="term-00002">diamond problem</term> occurs when a class inherits from multiple classes that share a common superclass. Ex: Dessert and BakedGood both inherit from Food, and ApplePie inherits from Dessert and BakedGood.</para>
+    <figure id="fig-00001">
+    <title>The diamond problem.</title>
+    <media alt="">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption>If both Dessert and BakedGood override a Food method, the overridden Food method that ApplePie inherits is ambiguous. Thus, diamond shaped inheritance should be avoided.</caption>
+    </figure>
+    <para id="para-00008">Mixin classes promote modularity and can remove the diamond problem. A mixin class:</para>
+    <list id="list-00002">
+    <item>Has no superclass</item>
+    <item>Has attributes and methods to be added to a subclass</item>
+    <item>Isn't instantiated (Ex: Given MyMixin class, <code class="python inline-code">my_inst = MyMixin()</code> should never be used.)</item>
+    </list>
+    <para id="para-00009"><term id="term-00003">Mixin classes</term> are used in multiple inheritance to add functionality to a subclass without adding inheritance concerns.</para>
+    <note class="learning-questions" id="note-00003">
+    <title>Creating a mixin class</title>
+    <para id="para-00010">The following code isn't correct, as not all plants are carnivorous. Follow the programmer through the programmer's edits to improve the program. Note: Rose, Pitcher, and VenusFlyTrap represent plants that all photosynthesize. Pitcher and VenusFlyTrap represent plants that are also carnivorous and can eat.</para>
+    <para id="para-00011">A pass statement is used in Python to indicate that code is to be written later and prevents certain errors that would result if no code or a comment was used instead.</para>
+    <code class="python" lang="python">
+    class Plant:
+      def photosynth(self):
+        print("Photosynthesizing")<newline/>
+      def eat(self):
+        print("Eating")<newline/>
+    class Rose(Plant):
+      pass<newline/>
+    class Pitcher(Plant):
+      pass<newline/>
+    class VenusFlyTrap(Plant):
+      pass
+    </code>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch13-m05-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch13-m05-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch13-m05-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Fixing the diamond problem with  a mixin class</title>
+    <para id="para-00015">The program below represents multiple inheritance and has the diamond problem. Edit the program to use a mixin class, OnlineMixin. OnlineMixin:</para>
+    <list id="list-00003">
+    <item>Replaces OnlineShop</item>
+    <item>Is a superclass of FoodFast</item>
+    <item>Has one method, process_online(), which prints "Connecting to server" and is called by FoodFast's process_order()</item>
+    </list>
+    <para id="para-00016">The output should match:</para>
+    <code class="python" lang="python">
+    Processing meal order
+    Connecting to server
+    Enjoy your FoodFast order
+    </code>
+    <media alt="fixing_the_diamond_problem_with--a_mixin_class_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_06_07_Fixing-the-diamond-problem-with--a-mixin-class.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

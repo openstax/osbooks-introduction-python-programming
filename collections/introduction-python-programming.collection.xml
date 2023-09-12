@@ -8,12 +8,6 @@
   </col:metadata>
   <col:content>
     <col:subcollection>
-      <md:title>Chapter 13: Inheritance</md:title>
-      <col:content>
-        <col:module document="m00094"/>
-      </col:content>
-    </col:subcollection>
-    <col:subcollection>
       <md:title>Chapter 1: Statements</md:title>
       <col:content>
         <col:module document="m00001"/>
@@ -164,6 +158,18 @@
         <col:module document="m00091"/>
         <col:module document="m00092"/>
         <col:module document="m00093"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 13: Inheritance</md:title>
+      <col:content>
+        <col:module document="m00094"/>
+        <col:module document="m00095"/>
+        <col:module document="m00096"/>
+        <col:module document="m00097"/>
+        <col:module document="m00098"/>
+        <col:module document="m00099"/>
+        <col:module document="m00100"/>
       </col:content>
     </col:subcollection>
   </col:content>

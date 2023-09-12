@@ -1,0 +1,150 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Hierarchical inheritance</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Hierarchical inheritance</md:title>
+    <md:content-id>m00098</md:content-id>
+    <md:uuid>9593cb5d-6422-4e2e-ac0c-459cd15d14a9</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Label relationships between classes as types of inheritance.</item>
+    <item>Construct classes that form hierarchical inheritance.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Hierarchical inheritance basics</title>
+    <para id="para-00002"><term id="term-00001">Hierarchical inheritance</term> is a type of inheritance in which multiple classes inherit from a single superclass. <term id="term-00002">Multilevel inheritance</term> is a type of inheritance in which a subclass becomes the superclass for another class. Combining hierarchical and multilevel inheritance creates a tree-like organization of classes.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Hierarchical organization and types of inheritance</title>
+    <media alt="inheritance_types_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/inheritance-types"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Hierarchical organization</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch13-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch13-m04-p02"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Implementing hierarchical inheritance</title>
+    <para id="para-00005">Multiple classes can inherit from a single class by simply including the superclass name in each subclass definition.</para>
+    <example id="exam-00001">
+    <title>Choir members</title>
+    <code class="python" lang="python">
+    class ChoirMember:
+      def display(self):
+        print("Current choir member")<newline/>
+    class Soprano(ChoirMember):
+      def display(self):
+        super().display()
+        print("Part: Soprano")<newline/>
+    class Soprano1(Soprano):
+      def display(self):
+        super().display()
+        print("Division: Soprano 1")<newline/>
+    class Alto(ChoirMember):
+      def display(self):
+        super().display()
+        print("Part: Alto")<newline/>
+    class Tenor(ChoirMember):
+      def display(self):
+        super().display()
+        print("Part: Tenor")<newline/>
+    class Bass(ChoirMember):
+      def display(self):
+        super().display()
+        print("Part: Bass")<newline/>
+    mem_10 = Alto()
+    mem_13 = Tenor()
+    mem_15 = Soprano1()<newline/>
+    mem_10.display()
+    print()
+    mem_13.display()
+    print()
+    mem_15.display()
+    </code>
+    <para id="para-00006">The code's output is:</para>
+    <code class="python" lang="python">
+    Current choir member
+    Part: Alto<newline/>
+    Current choir member
+    Part: Tenor<newline/>
+    Current choir member
+    Part: Soprano
+    Division: Soprano 1
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00003">
+    <title>Implementing hierarchical inheritance</title>
+    <para id="para-00007">Consider the program:</para>
+    <code class="python" lang="python">
+    class A:
+      def __init__(self, a_attr=0):
+        self.a_attr = a_attr<newline/>
+    class B(A):
+      def __init__(self, a_attr=0, b_attr=0):
+        super().__init__(a_attr)
+        self.b_attr = b_attr<newline/>
+    class C(A):
+      def __init__(self, a_attr=0, c_attr=0):
+        super().__init__(a_attr)
+        self.c_attr = c_attr<newline/>
+    class D(B):
+      def __init__(self, a_attr=0, b_attr=0, d_attr=0):
+        super().__init__(a_attr, b_attr)
+        self.d_attr = d_attr<newline/>
+    b_inst = B(2)
+    c_inst = C(c_attr=4)
+    d_inst = D(6, 7)
+    </code>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch13-m04-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch13-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch13-m04-p05"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Overriding methods</title>
+    <para id="para-00011">Define 3 classes: Instrument, Woodwind, and String.</para>
+    <list id="list-00002">
+    <item>Instrument has instance attribute owner, with default value of 'unknown'.</item>
+    <item>Woodwind inherits from Instrument and has instance attribute material with default value of 'wood'.</item>
+    <item>String inherits from Instrument and has instance attribute num_strings, with default value of 4.</item>
+    </list>
+    <para id="para-00012">The output should match:</para>
+    <code class="python" lang="python">
+    This flute belongs to unknown and is made of silver
+    This cello belongs to Bea and has 4 strings
+    </code>
+    <media alt="overriding_methods_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_04_04_Overriding-methods.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

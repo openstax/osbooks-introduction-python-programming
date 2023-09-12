@@ -1,0 +1,208 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Methods</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Methods</md:title>
+    <md:content-id>m00097</md:content-id>
+    <md:uuid>3e82dd71-2e77-4c98-8556-6e4e368c9bab</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Write overridden methods to change behavior of inherited methods.</item>
+    <item>Use super() to access superclass methods.</item>
+    <item>Identify applications of polymorphism in method and function use.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Overriding methods</title>
+    <para id="para-00002">Sometimes a programmer wants to change the functions a subclass inherits. Mint is a subclass that has the same functionality as Plant, except for one function. A subclass can <term id="term-00001">override</term> a superclass method by defining a method with the same name as the superclass method.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Overriding a superclass method</title>
+    <media alt="overriding_superclass_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/overriding-superclass"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Overriding methods</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch13-m03-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch13-m03-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch13-m03-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>super()</title>
+    <para id="para-00006">super() is a special method that provides a temporary superclass object instance for a subclass to use. super() is commonly used to call superclass, also called a superclass, methods from a subclass. super() is commonly used in a subclass's __init__() to assign inherited instance attributes. Ex: <code class="python inline-code">super().__init__()</code>.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Using super() to call the superclass __init__() method</title>
+    <media alt="using_super_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/using-super"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Using super()</title>
+    <para id="para-00007">Consider the following program.</para>
+    <code class="python" lang="python">
+    class Polygon:
+      def __init__(self, num_sides=3):
+        self.num_sides = num_sides<newline/>
+    class Rectangle(Polygon):
+      def __init__(self, ln=1, wd=1):
+        super().__init__(4)
+        self.length = ln
+        self.width = wd<newline/>
+    class Square(Rectangle):
+      def __init__(self, side=1):
+        super().__init__(side, side)
+        self.side = side<newline/>
+    sq_1 = Square(5)
+    print(sq_1.num_sides)</code>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch13-m03-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch13-m03-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch13-m03-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch13-m03-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Polymorphism</title>
+    <para id="para-00012"><term id="term-00002">Polymorphism</term> is the concept of having many forms. In programming, a single name can be used for multiple functionalities. Within inheritance, polymorphism is the basis of method overriding, as multiple methods have the same name.</para>
+    <example id="exam-00001">
+    <title>Polymorphism and inheritance</title>
+    <para id="para-00013">The name display() maps to multiple methods. The class type of the calling object determines which display() method is executed.</para>
+    <code class="python" lang="python">
+    class Plant:
+      def display(self):
+        print("I'm a plant")<newline/>
+    class Mint(Plant):
+      def display(self):
+        print("I'm a mint")<newline/>
+    class Lavender(Mint):
+      def display(self):
+        print("I'm a lavender")<newline/>
+    mint_1 = Mint()
+    mint_1.display()<newline/>
+    lavender_1 = Lavender()
+    lavender_1.display()
+    </code>
+    <para id="para-00014">The code's output is:</para>
+    <code class="python" lang="python">
+    I'm a mint
+    I'm a lavender
+    </code>
+    </example>
+    <para id="para-00015">Polymorphism can also be used with methods of unrelated classes. The class type of the calling object determines the method executed.</para>
+    <example id="exam-00002">
+    <title>Polymorphism and methods</title>
+    <para id="para-00016">Tax and ContractTax are unrelated classes that each define calc_tax(). calc_tax() isn't overridden as ContractTax isn't inherited from Tax.</para>
+    <code class="python" lang="python">
+    class Tax:
+      def calc_tax(self):
+        print("Calculating tax")
+        total = 0.10 * self.value # To replace with calculation
+        return total<newline/>
+    class ContractTax:
+      def calc_tax(self):
+        print("Calculating contracts tax")
+        total = 0.15 * self.value # To replace with calculation
+        return total<newline/>
+    my_tax = ContractTax()
+    my_tax.calc_tax()
+    </code>
+    <para id="para-00017">The code's output is:</para>
+    <code class="python" lang="python">
+    Calculating contracts tax
+    </code>
+    </example>
+    <para id="para-00018">Polymorphism allows methods to be called with different parameter types. Many built-in operators and functions have this utility.</para>
+    <example id="exam-00003">
+    <title>Polymorphism and functions</title>
+    <para id="para-00019">len() can be called with multiple types, including lists and strings.</para>
+    <code class="python" lang="python">
+    tree_list = ["ash", "hazel", "oak", "yew"]
+    tree_1 = tree_list[0]
+    print(len(tree_list))
+    print(len(tree_1))
+    </code>
+    <para id="para-00020">The code's output is:</para>
+    <code class="python" lang="python">
+    4
+    3
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00005">
+    <title>Polymorphism in practice</title>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CPL-ch13-m03-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00022"><link class="os-embed" url="#exercise/CPL-ch13-m03-p09"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00006">
+    <title>Overriding methods</title>
+    <para id="para-00023">Given the Pet class, create a Bird class inherited from Pet and a Finch class inherited from Bird. Override the display() method in Bird and Finch such that the program output is:</para>
+    <code class="python" lang="python">
+    Pet type: Bird
+    Bird type: Finch
+    </code>
+    <media alt="overriding_methods_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_04_04_Overriding-methods.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00007">
+    <title>Using super()</title>
+    <para id="para-00024">Given the Employee class, create a Developer class inherited from Employee with methods __init__() and print_info() such that:</para>
+    <para id="para-00025">__init__()</para>
+    <list id="list-00002">
+    <item>Uses super() to call Employee's __init__() to initialize e_id and hire_year</item>
+    <item>Assigns lang_xp with list parameter lang_xp. lang_xp's default value is []</item>
+    </list>
+    <para id="para-00026">print_info()</para>
+    <list id="list-00003">
+    <item>Uses super() to print e_id and hire_year.</item>
+    <item>Prints "Language(s):" followed by lang_xp</item>
+    </list>
+    <para id="para-00027">Developer class has one method update_codebase() that prints 'Employee has updated the codebase'. Then use the Developer instance, python_dev, to call print_company() and update_codebase().</para>
+    <media alt="using_super()_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_04_05_Using-super().html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>
