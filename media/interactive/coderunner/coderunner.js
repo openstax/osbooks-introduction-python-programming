@@ -63,7 +63,7 @@ window.addEventListener('load', async() => {
         white-space: pre-wrap;
     }
 
-    #fullscreen, #reset, #toggle-solution {
+    #reset, #toggle-solution {
         background-color: white;
         box-shadow: none;
         color: #0288D1;
@@ -71,7 +71,7 @@ window.addEventListener('load', async() => {
         padding: 0 1ex 0 0;
     }
 
-    #fullscreen:hover, #reset:hover, #toggle-solution:hover {
+    #reset:hover, #toggle-solution:hover {
         color: #37474F;
     }
 
@@ -146,7 +146,6 @@ window.addEventListener('load', async() => {
 <textarea id="input"></textarea>
 <div id='button-container'>
     <button class="primary medium" onclick="run()">Run</button>
-    <button id="fullscreen" class="secondary small" onclick="fullscreen()">Full screen</button>
     <button id="reset" class="secondary small" onclick="reset()">Reset all</button>
 </div>
 <label for="output">Output</label>
@@ -200,24 +199,6 @@ window.addEventListener('load', async() => {
     } catch (err) {
         console.log('Some features are disabled because of CORS');
     }
-
-    /**
-        Toggle fullscreen mode.
-        @function fullscreen
-        @return {void}
-    */
-    window.fullscreen = function() {
-        if (parentDoc?.fullscreenElement) {
-            parentDoc?.exitFullscreen();
-        } else {
-            windowFrameElement?.requestFullscreen();
-        }
-    }
-
-    // Add padding when in fullscreen mode.
-    parentDoc?.addEventListener("fullscreenchange", function() {
-        document.body.style.padding = parentDoc.fullscreenElement ? '1em' : '';
-    });
 
     // Remember original height of resizable elements.
     const heights = [
