@@ -72,8 +72,8 @@
     <row>
     <entry><para id="para-00111"><code class="python inline-code">x % y</code><newline/>
     (modulo)</para></entry>
-    <entry>Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the remainder as an integer.
-    Ex: <code class="python inline-code">7 % 4</code> is <code class="python inline-code">3</code>.</entry>
+    <entry><para id="para-00112">Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the remainder as an integer.
+    Ex: <code class="python inline-code">7 % 4</code> is <code class="python inline-code">3</code>.</para></entry>
     </row>
     </tbody>
     </tgroup>
