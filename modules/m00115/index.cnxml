@@ -6,5 +6,145 @@
     <md:uuid>453f3e5c-843c-4c6e-9bd0-7342785c31f0</md:uuid>
   </metadata>
   <content>
-  </content>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Data science is a multidisciplinary field that combines collection, processing, and analysis of large volumes of data to extract insights and derives informed decision-making.</item>
+    <item>Data science life-cycle is the framework followed by data scientists to complete a data science project.</item>
+    <item>Data science life-cycle includes 1) data acquisition, 2) data exploration, 3) data analysis, and 4) reporting.</item>
+    <item>Google Colab is a cloud-based Jupyter Notebook environment that allows you to write, run, and share Python code online.</item>
+    <item><code class="python inline-code">NumPy</code> (Numerical Python) is a Python library that provides support for efficient numerical operations on large, multi-dimensional arrays and serves as a fundamental building block for data analysis in Python.</item>
+    <item><code class="python inline-code">NumPy</code> implements an <code class="python inline-code">ndarray</code> object that allows the creation of multi-dimensional arrays of homogeneous data types and efficient data processing.</item>
+    <item><code class="python inline-code">NumPy</code> provides functionalities for mathematical operations, array manipulation, and linear algebra operations.</item>
+    <item><code class="python inline-code">Pandas</code> is an open-source Python library used for data cleaning, processing, and analysis.</item>
+    <item><code class="python inline-code">Pandas</code> provides <code class="python inline-code">Series</code> and <code class="python inline-code">DataFrame</code> data structures, data processing functionality, and integration with other libraries.</item>
+    <item>Exploratory Data Analysis (EDA) is the task of analyzing the data to gain insights, identify patterns, and understand the underlying structure of the data.</item>
+    <item>A feature is an individual variable or attribute that is calculated from the raw data in the dataset.</item>
+    <item>Data indexing can be used to select and access specific rows and columns.</item>
+    <item>Data slicing refers to selecting a subset of rows and/or columns from a <code class="python inline-code">DataFrame</code>.</item>
+    <item>Data filtering involves selecting rows or columns based on certain conditions.</item>
+    <item>Missing values in a dataset can occur when data is not available or was not recorded properly.</item>
+    <item>Data visualization has a crucial role in data science to understand the data.</item>
+    <item>Different types of visualizations may include bar plot, line plot, scatter plot, histogram plot, and boxplot.</item>
+    <item>Several Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. These libraries include <code class="python inline-code">Matplotlib</code>, <code class="python inline-code">Seaborn</code>, and <code class="python inline-code">Plotly</code>.</item>
+    <item>The conventional aliases for importing <code class="python inline-code">NumPy</code>, <code class="python inline-code">Pandas</code>, and <code class="python inline-code">Matplotlib.pyplot</code> are <code class="python inline-code">np</code>, <code class="python inline-code">pd</code>, and <code class="python inline-code">plt</code>, respectively.</item>
+    </list>
+    <para id="para-00002">At this point, you should be able to write programs to create data structures to store different datasets and explore and visualize datasets.</para>
+    <table summary=" " id="table-00001">
+    <title>Chapter 15 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code class="python inline-code">np.array()</code></entry>
+    <entry>Creates an <code class="python inline-code">ndarray</code> from a list or tuple.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">np.zeros()</code></entry>
+    <entry>Creates an array of zeros.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">np.ones()</code></entry>
+    <entry>Creates an array of ones.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">np.random.rand(n, m)</code></entry>
+    <entry>Creates an array of random numbers with <code class="python inline-code">n</code> rows and <code class="python inline-code">m</code> columns</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">np.genfromtxt('data.csv', delimiter=',')</code></entry>
+    <entry>Creates an array from a CSV file.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">pd.DataFrame()</code></entry>
+    <entry>Creates a <code class="python inline-code">DataFrame</code> from a list, dictionary, or an array.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">pd.read_csv()</code></entry>
+    <entry>Creates a <code class="python inline-code">DataFrame</code> from a CSV file.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.head()</code></entry>
+    <entry>Returns the first few rows of a <code class="python inline-code">DataFrame</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.tail()</code></entry>
+    <entry>Returns the last few rows of a <code class="python inline-code">DataFrame</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.info()</code></entry>
+    <entry>Provides a summary of the DataFrame, including the column names, data types, and the number of non-null values.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.describe()</code></entry>
+    <entry>Generates statistics of the numerical columns like count, mean, standard deviation, minimum, maximum, and quartile.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.value_counts()</code></entry>
+    <entry>Counts the occurrences of unique values in a column and presents them in descending order.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.unique()</code></entry>
+    <entry>Returns an array of unique values in a column.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">loc[]</code></entry>
+    <entry>Allows for accessing data in a DataFrame using row/column labels.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">iloc[]</code></entry>
+    <entry>Allows for accessing data in a DataFrame using row/column integer-based indices.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df[condition]</code></entry>
+    <entry>Selects only the rows that meet the given <code class="python inline-code">condition</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.loc[start_row:end_row, start_column:end_column]</code></entry>
+    <entry>Slices using label ranges.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.loc[[label1, label2, ...], :]</code></entry>
+    <entry>Slices rows that are in the list <code class="python inline-code">[label1, label2, ...]</code>.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">df.isnull()</code></entry>
+    <entry>Returns a Boolean array with Boolean values representing whether each entry has been Null.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">fillna()</code></entry>
+    <entry>Replaces Null values.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">dropna()</code></entry>
+    <entry>Removes all rows containing a Null value.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">plt.bar(x, height)</code></entry>
+    <entry>Takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">plt.plot(x, y)</code></entry>
+    <entry>Takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">plt.scatter(x, y)</code></entry>
+    <entry>Takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots points representing <code class="python inline-code">(x, y)</code> pairs.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">plt.hist(x)</code></entry>
+    <entry>Takes in one input <code class="python inline-code">x</code>, and plots a histogram of values in <code class="python inline-code">x</code> to show distribution or trend.</entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code">plt.boxplot(x)</code></entry>
+    <entry>Takes in one input <code class="python inline-code">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code">x</code>.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </content>
 </document>
