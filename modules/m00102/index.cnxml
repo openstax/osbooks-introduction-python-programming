@@ -1,0 +1,155 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Reading from files</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Reading from files</md:title>
+    <md:content-id>m00102</md:content-id>
+    <md:uuid>1fb34e14-7748-4e9f-8fd9-e485daa7c33e</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Understand how to open a file using the <code>open()</code> function.</item>
+    <item>Demonstrate how to read information from a file using <code>read()</code>, <code>readline()</code>, and <code>readlines()</code>.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Opening a file</title>
+    <para id="para-00002">Reading information from and writing information to files is a common task in programming.</para>
+    <para id="para-00003">Python supports the opening of a file using the <code>open()</code> function.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Opening a file</title>
+    <media alt="opening_a_file_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/opening-a-file"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>Opening files</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch14-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch14-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch14-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Using <code>read()</code> and reading lines</title>
+    <para id="para-00007">Python provides functions that can be called on a file object for reading the contents of a file:</para>
+    <list id="list-00002">
+    <item>The <code>read()</code> function reads the contents of a file and returns a string.</item>
+    <item>The <code>readline()</code> function reads the next line in a file and returns a string.</item>
+    <item>The <code>readlines()</code> function reads the individual lines of a file and returns a string list containing all the lines of the file in order.</item>
+    </list>
+    <example id="exam-00001">
+    <title>Using read() and readlines()</title>
+    <para id="para-00008">A file called input.txt has the following contents:</para>
+    <code class="python" lang="python">
+    12
+    55
+    5
+    91
+    </code>
+    <code class="python" lang="python">
+    """Demonstrating read() and readlines()"""<newline/>
+    # Using read()
+    # Open the file and associate with a file object
+    infile = open("input.txt")<newline/>
+    # Read the contents of the file into a string
+    str1 = infile.read()<newline/>
+    # Print str1
+    print("Result of using read():")
+    print(str1)<newline/>
+    # Always close the file once done using the file
+    infile.close()<newline/>
+    # Using read()
+    # Open the file and associate with a file object
+    infile2 = open("input.txt")<newline/>
+    # Read the contents of the file into a string list
+    str_list = infile2.readlines()<newline/>
+    # Printing the third item in the string list.
+    print("Result of using readlines() printing the third item in the string list:")
+    print(str_list[2])<newline/>
+    # Always close the file once done using the file
+    infile2.close()<newline/>
+    </code>
+    <para id="para-00009">The code's output is:</para>
+    <code class="python" lang="python">
+    Result of using read():
+    12
+    55
+    5
+    91
+    Result of using readlines() printing the third item in the string list:
+    5
+    </code>
+    </example>
+    <note class="guided-slides" id="note-00003">
+    <title>read() and readline()</title>
+    <media alt="read_and_readline_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/read-and-readline"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Reading files</title>
+    <para id="para-00010">Suppose <code>fileobj = open("input.txt")</code> has already been executed for each question below.</para>
+    <para id="para-00011">input.txt:</para>
+    <code class="python" lang="python">
+    Hello world!
+    How are you?
+    </code>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch14-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch14-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch14-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00005">
+    <title>Reading from a file.</title>
+    <para id="para-00015">Open the file test.txt and print the file's contents.</para>
+    <media alt="reading_from_a_file_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_02_01_Reading-from-a-file.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00006">
+    <title>Reading from a file line by line.</title>
+    <para id="para-00016">The file input.txt is shown. The file represents a set of integers. Line 1 of the file specifies how many integers follow. Write a program that reads from this file and determines the average of the numbers following the first line.</para><newline/>
+    <para id="para-00017">input.txt</para>
+    <code class="python" lang="python">
+    n: 5
+    25
+    13
+    4
+    6
+    19
+    </code>
+    <media alt="reading_from_a_file_line_by_line_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_02_02_Reading-from-a-file-line-by-line.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

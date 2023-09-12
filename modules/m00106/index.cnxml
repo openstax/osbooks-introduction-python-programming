@@ -1,0 +1,108 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Raising exceptions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Raising exceptions</md:title>
+    <md:content-id>m00106</md:content-id>
+    <md:uuid>c74899cb-f952-4e99-9961-bf1be5e26e5e</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Use a raise statement to indicate that user input is invalid.</item>
+    <item>Explain the flow of execution when an exception is raised.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>The raise statement</title>
+    <para id="para-00002">A program can raise an exception when an error is detected. Raising an exception forces a program to deal with the error. If the exception is not handled using <code>try</code> and <code>except</code>, the program displays an error message and terminates.</para>
+    <example id="exam-00001">
+    <title>Invalid pizza size</title>
+    <para id="para-00003">The following class represents a pizza for sale. The <code>SIZES</code> dictionary maps an abbreviation to a size's name and price. Line 11 checks if the size received by the constructor is in the dictionary. Line 12 raises a <code>ValueError</code> with specific error message.</para>
+    <code class="python" lang="python">
+    class Pizza:<newline/>
+        SIZES = {
+            "S": ("Small", 5.99),
+            "M": ("Medium", 7.99),
+            "L": ("Large", 9.99),
+            "XL": ("X-Large", 11.99),
+        }<newline/>
+        def __init__(self, size):
+            if size not in Pizza.SIZES:
+              raise ValueError(f"Unknown size '{size}'")
+            self.size = size<newline/>
+        def __str__(self):
+            name, price = Pizza.SIZES[self.size]
+            return f"{name} pizza for ${price}"<newline/>
+    if __name__ == "__main__":
+        p1 = Pizza("L")
+        print(p1)
+        p2 = Pizza("Z")
+        print(p2)
+    </code>
+    <code class="python" lang="python">
+    Large pizza for $9.99
+    Traceback (most recent call last):
+      File "pizza.py", line 23, in &lt;module>
+        p2 = Pizza("Z")
+      File "pizza.py", line 12, in __init__
+        raise ValueError(f"Unknown size '{size}'")
+    ValueError: Unknown size 'Z'
+    </code>
+    <para id="para-00004">Raising an exception in a constructor prevents an invalid object from being constructed. In the example, <code>p1</code> is constructed but <code>p2</code> is not constructed.</para>
+    </example>
+    <note class="learning-questions" id="note-00001">
+    <title>Predicting output with raise</title>
+    <para id="para-00005">For each code snippet, what is the output?</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch14-m05-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch14-m05-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch14-m05-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00002">
+    <title>Language objects</title>
+    <para id="para-00009">The file <emphasis effect="italics">top27.csv</emphasis> is based on Wikipedia's <link url="https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers">list of languages by number of native speakers</link>. A linguist would like to work with this data in an object-oriented way and has already defined a <code>Language</code> class. However, the code is not working correctly because of errors in the CSV file. (The CSV file cannot be changed, because the program needs to be able to detect these kinds of errors.)</para>
+    <para id="para-00010">Your task is to modify the constructor to raise a ValueError in the following situations:</para>
+    <list id="list-00002">
+    <item>If the line does not have exactly four values (separated by commas).</item>
+    <item>If the number of speakers is not a positive floating point number.</item>
+    </list>
+    <para id="para-00011">Note: The provided <emphasis effect="italics">top27.csv</emphasis> includes mistakes for English, Korean, and French. Your program should raise a ValueError only for these languages. No other errors (including IndexError) should be raised.</para>
+    <media alt="language_objects_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_06_08_Language-objects.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00003">
+    <title>Looking up keys</title>
+    <para id="para-00012">When looking up a value in a dictionary, a key has to match exactly. Ex: Given <code>fruit = {"apple": 1, "banana": 2}</code>, the expression <code>fruit["Apple"]</code> raises a KeyError, because "Apple" is not the same as "apple". Likewise, <code>fruit["NANA"]</code> raises a KeyError, because "nana" does not exactly match "banana".</para>
+    <para id="para-00013">Implement the <code>lookup()</code> function. This function tries to find a key in the dictionary that matches the search term. A key matches if the search term is a substring of the key, ignoring case. Ex: The key "banana" matches the search term "NANA".</para>
+    <para id="para-00014"> If no matching keys are found, <code>lookup()</code> should raise a KeyError with the message "search term not found". If multiple matches are found, <code>lookup()</code> should raise a KeyError with the message "multiple keys found". Otherwise, <code>lookup()</code> should return both the key and the value for the matching item in the dictionary.</para>
+    <para id="para-00015">Given the <emphasis effect="italics">books.csv</emphasis> file, the output should be:</para>
+    <code class="python" lang="python">
+    Found: ('Pride and Prejudice', 9780141439518)
+    Found: ('The Hobbit', 9780547928227)
+    Error: search term not found
+    Error: multiple keys found
+    </code>
+    <media alt="looking_up_keys_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_06_09_Looking-up-keys.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

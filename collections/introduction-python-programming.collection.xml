@@ -172,5 +172,17 @@
         <col:module document="m00100"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 14: Files</md:title>
+      <col:content>
+        <col:module document="m00101"/>
+        <col:module document="m00102"/>
+        <col:module document="m00103"/>
+        <col:module document="m00104"/>
+        <col:module document="m00105"/>
+        <col:module document="m00106"/>
+        <col:module document="m00107"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>

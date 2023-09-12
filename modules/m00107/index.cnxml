@@ -1,0 +1,107 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Chapter summary</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Chapter summary</md:title>
+    <md:content-id>m00107</md:content-id>
+    <md:uuid>ca2ac923-46f9-4124-8c40-3f75d2ae2b0d</md:uuid>
+  </metadata>
+  <content>
+    <para id="para-00001">Highlights from this chapter include:</para>
+    <list id="list-00001">
+    <item>Python can read and write data in files using the built-in <code>open()</code> function.</item>
+    <item>Due to buffering, changes to a file may not be visible until the file is closed.</item>
+    <item>Newline characters need to be removed/added when reading/writing files.</item>
+    <item>Comma separated value (CSV) files are commonly used to represent data.</item>
+    <item>Exceptions that cause a program to terminate can be handled using <code>try</code> and <code>except</code>.</item>
+    <item>Raising an exception is an alternative way to return from a function when an error occurs.</item>
+    </list>
+    <table summary=" " id="table-00001">
+    <title>Chapter 14 reference</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Statement</entry>
+    <entry>Description</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code>file = open("myfile.txt")</code></entry>
+    <entry>Open a file for reading.</entry>
+    </row>
+    <row>
+    <entry><code>file = open("myfile.txt", 'w')</code></entry>
+    <entry>Open a file for writing.</entry>
+    </row>
+    <row>
+    <entry><code>file = open("myfile.txt", 'a')</code></entry>
+    <entry>Open a file for appending.</entry>
+    </row>
+    <row>
+    <entry><code>file.close()</code></entry>
+    <entry>Close a file after making changes.</entry>
+    </row>
+    <row>
+    <entry><code>data = file.read()</code></entry>
+    <entry>Read the entire contents of a file. The variable <code>data</code> is a string.</entry>
+    </row>
+    <row>
+    <entry><code>data = file.readline()</code></entry>
+    <entry>Read the next line of a file. The variable <code>data</code> is a string.</entry>
+    </row>
+    <row>
+    <entry><code>data = file.readlines()</code></entry>
+    <entry>Read all lines of a file. The variable <code>data</code> is a list of strings.</entry>
+    </row>
+    <row>
+    <entry><code>file.write("Have a nice day!\n")</code></entry>
+    <entry>Writes a line to a file. In contrast to <code>print()</code>, the <code>write()</code> function does not automatically append a newline.</entry>
+    </row>
+    <row>
+    <entry><code>file.write(["Line 1\n", "Line 2\n"])</code></entry>
+    <entry>Writes multiple lines to a file. As with <code>write()</code>, a newline is not automatically added at the end of each line.</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">
+    try:
+        # Statements
+    except:
+        # Statements
+    </code></entry>
+    <entry>Try to run statements that might raise an error. If any error is raised, run other statements.</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">
+    try:
+        # Statements
+    except ValueError:
+        # Statements
+    </code></entry>
+    <entry>Try to run statements that might raise a ValueError. If a ValueError is raised, run other statements.</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">
+    try:
+        # Statements
+    except ValueError as err:
+        # Statements
+    </code></entry>
+    <entry>Try to run statements that might raise a ValueError. If a ValueError is raised, run other statements. The variable <code>err</code> contains more details about the ValueError.</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">
+    raise ValueError
+    </code></entry>
+    <entry>Raises a ValueError with no specific error message.</entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">
+    raise ValueError("number is prime")
+    </code></entry>
+    <entry>Raises a ValueError with the message "number is prime".</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </content>
+</document>

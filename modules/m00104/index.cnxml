@@ -1,0 +1,152 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Files in different locations and working with CSV files</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Files in different locations and working with CSV files</md:title>
+    <md:content-id>m00104</md:content-id>
+    <md:uuid>8fc3afec-61b0-45da-b469-413f4d740cbe</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Demonstrate how to access files within a file system.</item>
+    <item>Demonstrate how to process a CSV file.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Opening a file at any location</title>
+    <para id="para-00002">When only the filename is used as the argument to the <code>open()</code> function the file must be in the same folder as the Python file which is executing. Ex: If files.py has a line <code>fileobj = open("file1.txt")</code> then for the line of code to execute successfully, the file1.txt file should be in the same folder as files.py.</para>
+    <para id="para-00003">Often a programmer needs to open files from other folders than the one in which the Python file exists. A <term id="term-00001">path</term> uniquely identifies a folder location on a computer. The path can be used along with filename to open a file in any folder location. Ex: To open a file named logfile.log located in <code>/users/turtle/desktop</code> the following can be used:</para>
+    <para id="para-00004"><code>fileobj = open("/users/turtle/desktop/logfile.log")</code></para>
+    <table summary=" " id="table-00001">
+    <title>Modes for open() function.</title>
+    <tgroup cols="3">
+    <thead>
+    <row>
+    <entry>Operating System<newline/><newline/></entry>
+    <entry>File location</entry>
+    <entry><code>open()</code> function example</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>Mac<newline/><newline/></entry>
+    <entry><code>/users/student/</code></entry>
+    <entry><code>fileobj = open("/users/student/output.txt")</code></entry>
+    </row>
+    <row>
+    <entry>Linux<newline/><newline/></entry>
+    <entry><code>/usr/code/</code></entry>
+    <entry><code>fileobj = open("/usr/code/output.txt")</code></entry>
+    </row>
+    <row>
+    <entry>Windows</entry>
+    <entry><code>c:\projects\code\</code></entry>
+    <entry><code>fileobj = open("c:/projects/code/output.txt")</code><newline/>or<newline/><code>fileobj = open("c:\\projects\\code\\output.txt")</code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    <caption>In each of the following cases, a file called output.txt is located in a different folder than the Python folder. Windows uses backslash \ characters instead of slash / characters for the path. If the backslash is included directly in open() then an additional backslash is needed for Python to understand the location correctly.</caption>
+    </table>
+    <note class="learning-questions" id="note-00001">
+    <title>Opening files at different locations</title>
+    <para id="para-00005">For each question assume that the Python file executing the open() function is not in the same folder as the out.txt file.</para>
+    <para id="para-00006">Each question indicates the location of out.txt and the type of computer and the desired mode for opening the file. Choose which option is best for opening out.txt.</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch14-m03-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch14-m03-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch14-m03-p03"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch14-m03-p04"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Working with CSV files</title>
+    <para id="para-00011">In Python, files are read from and written to as Unicode by default. Many common file formats use Unicode such as text files (.txt), Python code files (.py), and other code files (.c,.java).</para>
+    <para id="para-00012">Comma separated value (CSV, .csv) files are often used for storing tabular data. These files store cells of information as Unicode separated by commas. CSV files can be read using methods learned thus far as seen in the example below.</para>
+    <figure id="fig-00001">
+    <title>CSV files</title>
+    <media alt="FIXME: WRITE ALT TEXT">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption>A CSV file is simply a text file with rows separated by newline \n characters and cells separated by commas. Raw text of the file:
+    <code class="python" lang="python">
+    Title, Author, Pages\n1984, George Orwell, 268\nJane Eyre, Charlotte Bronte, 532\nWalden, Henry David Thoreau, 156\nMoby Dick, Herman Melville, 538
+    </code></caption>
+    </figure>
+    <example id="exam-00001">
+    <title>Processing a CSV file.</title>
+    <code class="python" lang="python">
+    """Processing a CSV file."""
+    # Open the CSV file for reading
+    file_obj = open("books.csv")<newline/>
+    # Rows are separated by newline \n characters, so readlines() can be used to read in all rows into a string list
+    csv_rows = file_obj.readlines()<newline/>
+    list_csv = []<newline/>
+    # Remove \n characters from each row and split by comma and save into a 2D structure
+    for row in csv_rows:
+      # Remove \n character
+      row = row.strip("\n")
+      # Split using commas
+      cells = row.split(",")
+      list_csv.append(cells)<newline/>
+    # Print result
+    print(list_csv)
+    </code>
+    <para id="para-00013">The code's output is:</para>
+    <code class="python" lang="python">
+    [['Title', ' Author', ' Pages'], ['1984', ' George Orwell', ' 268'], ['Jane Eyre', ' Charlotte Bronte', ' 532'], ['Walden', ' Henry David Thoreau', ' 156'], ['Moby Dick', ' Herman Melville', ' 538']]
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00002">
+    <title>File types and CSV files</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch14-m03-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch14-m03-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch14-m03-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00003">
+    <title>Exploring further</title>
+    <para id="para-00017">Files such as Word documents (.docx) and PDF documents (.pdf), image formats such as Portable Network Graphics (PNG, .png) and Joint Photographic Experts Group (JPEG, .jpeg or .jpg) as well as many other file types are encoded differently. </para>
+    <para id="para-00018">Some types of non Unicode files can be read using specialized libraries that support the reading and writing of different file types.</para>
+    <para id="para-00019"><link url="https://pypdf.readthedocs.io/en/stable/">PyPDF</link> is a popular library that can be used to extract information from PDF files.</para>
+    <para id="para-00020"><link url="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</link> can be used to extract information from XML and HTML files. XML and HTML files usually contain unicode that have structure provided through the use of angled &lt;> bracket tags.</para>
+    <para id="para-00021"><link url="https://python-docx.readthedocs.io/en/latest/">python-docx</link> can be used to read and write DOCX files.</para>
+    <para id="para-00022">Additionally, <link url="https://docs.python.org/3/library/csv.html?highlight=csv">csv</link> is a an in-built library that can be used to extract information from CSV files.</para>
+    </note>
+    <note class="practice-program" id="note-00004">
+    <title>Processing a CSV file</title>
+    <para id="para-00023">The file fe.csv contains scores for a group of students on a final exam. Write a program to display the average score.</para>
+    <media alt="processing_a_CSV_file_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_04_05_Processing-a-CSV-file.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

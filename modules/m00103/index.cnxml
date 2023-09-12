@@ -1,0 +1,165 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Writing to files</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Writing to files</md:title>
+    <md:content-id>m00103</md:content-id>
+    <md:uuid>c06f4427-5353-4333-abbb-4b327f2a1ec8</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Understand how to open a file for writing.</item>
+    <item>Explain different modes for opening a file in Python.</item>
+    <item>Demonstrate the use of the <code>write()</code> function to write to a file.</item>
+    <item>Understand the importance of closing a file.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Opening a file for writing</title>
+    <para id="para-00002">A file may be opened for reading allowing no changes or for writing allowing changes to occur on the file. The <term id="term-00001">mode</term> defines whether a file is opened for reading only or for writing. The default mode of the <code>open()</code> function is reading only. A second mode parameter defines the mode.</para>
+    <para id="para-00003">Ex: <code>open("output.txt", 'w')</code> opens the output.txt file in writing mode. The table lists common modes.</para>
+    <table summary=" " id="table-00001">
+    <title>Modes for open() function.</title>
+    <tgroup cols="3">
+    <thead>
+    <row>
+    <entry>Parameter</entry>
+    <entry>Mode name and description</entry>
+    <entry>Example</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>'r'</entry>
+    <entry>Read mode:<newline/>Open the specified file for reading. <newline/>If the file does not exist an error occurs.<newline/>When no mode parameter is used the default is to open a file in read mode.</entry>
+    <entry><code>fileobj = open("input.txt")</code><newline/>same as:<newline/><code>fileobj = open("input.txt", 'r')</code></entry>
+    </row>
+    <row>
+    <entry>'w'</entry>
+    <entry>Write mode:<newline/>Open the specified file for writing. <newline/>If the file does not exist, then the file is created. <newline/> If the file already exists, the contents of the file are overwritten.</entry>
+    <entry><code>fileobj = open("output.txt", 'w')</code></entry>
+    </row>
+    <row>
+    <entry>'a'</entry>
+    <entry>Append mode:<newline/>Open the specified file for appending which means to add information <newline/> to the end of the existing file. <newline/>If the file does not exist, then the file is created.</entry>
+    <entry><code>fileobj = open("log.txt", 'a')</code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00001">
+    <title>File modes</title>
+    <para id="para-00004">Assume that a file named logfile.txt exists.</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch14-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch14-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch14-m02-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Using <code>write()</code> and <code>close()</code></title>
+    <para id="para-00008">The <code>write()</code> function is used to write to an already opened file. The <code>write()</code> function only takes a string parameter. Other variable types must be cast to string before writing using <code>write()</code>.</para>
+    <para id="para-00009">The <code>write()</code> function also does not automatically add a newline character as the <code>print()</code> function does. A newline must be added explicitly by adding a newline ('\n') character.</para>
+    <para id="para-00010">The <code>write()</code> function writes automatically to a temporary store called the file buffer. To ensure that the information is written to a file, the <code>close()</code> function must be used. The <code>close()</code> function finalizes changes and closes the file.</para>
+    <example id="exam-00001">
+    <title>Writing and appending to a file.</title>
+    <code class="python" lang="python">
+    """Operations for writing and appending to files."""<newline/>
+    # Create a new file
+    opfile = open("output.txt", 'w')<newline/>
+    # Writing to the file
+    opfile.write("Writing to a new file.")<newline/>
+    # To add another line the newline character must be used
+    opfile.write("\nSecond line.")<newline/>
+    # Ensure changes are saved by closing the file
+    opfile.close()<newline/>
+    # Read and display the contents of the file
+    infile = open("output.txt")
+    print("\nRead the original file:\n")
+    print(infile.read())
+    infile.close()<newline/><newline/>
+    # Reopen the file in append mode to add to the file
+    opfile = open("output.txt", 'a')<newline/>
+    # Note the use of newline characters
+    opfile.write("\nAdding to the file.")
+    opfile.write("\nAdding another line.")<newline/>
+    # Ensure changes are saved by closing the file
+    opfile.close()<newline/>
+    # Read and display the contents of the modified file
+    infile = open("output.txt")
+    print("\nRead the modified file:\n")
+    print(infile.read())
+    infile.close()
+    </code>
+    <para id="para-00011">The code's output is:</para>
+    <code class="python" lang="python"><newline/>
+    Read the original file:<newline/>
+    Writing to a new file.
+    Second line.<newline/>
+    Read the modified file:<newline/>
+    Writing to a new file.
+    Second line.
+    Adding to the file.
+    Adding another line.
+    </code>
+    </example>
+    <note class="guided-slides" id="note-00002">
+    <title>write() and close()</title>
+    <media alt="write_and_close_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/write-and-close"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00003">
+    <title>Writing to files.</title>
+    <para id="para-00012">resources.txt already exists. What would happen for each of the following snippets of code?</para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch14-m02-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch14-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch14-m02-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Writing to a new file</title>
+    <para id="para-00016">Write a line of text to a file called out.txt. (Don't forget to use close(). out.txt should only have the line of text that you have written.)</para>
+    <media alt="writing_to_a_new_file_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_03_03_Writing-to-a-new-file.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Writing to an existing file</title>
+    <para id="para-00017">Add 2 lines of text to the file called out.log, such that out.log has 3 lines after the code executes.</para>
+    <newline/>
+    <para id="para-00018">Hint: Don't forget that you need a newline character.</para>
+    <media alt="writing_to_an_existing_file_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_03_04_Writing-to-an-existing-file.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
+</document>

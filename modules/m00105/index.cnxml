@@ -1,0 +1,176 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Handling exceptions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Handling exceptions</md:title>
+    <md:content-id>m00105</md:content-id>
+    <md:uuid>6edc5aae-b01f-44f3-8efd-549d341fe04a</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Describe two exceptions that may occur when reading files.</item>
+    <item>Write try/except statements that handle built-in exceptions.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Runtime errors</title>
+    <para id="para-00002">Various errors may occur when reading a file:</para>
+    <list id="list-00002">
+    <item><code>FileNotFoundError</code>: The filename or path is invalid.</item>
+    <item><code>IndexError</code>/<code>ValueError</code>: The file's format is invalid.</item>
+    <item>Other errors caused by invalid contents of a file.</item>
+    </list>
+    <para id="para-00003">When an error occurs, the program terminates with an error message.</para>
+    <example id="exam-00001">
+    <title>Typo in a file</title>
+    <para id="para-00004">A file named <emphasis effect="italics">food_order.txt</emphasis> has the following contents:</para>
+    <code class="python" lang="python">
+    5 sandwiches
+    4 chips
+    1 pickle
+    soft drinks
+    </code>
+    <para id="para-00005">The following program expects each line of the file to begin with an integer:</para>
+    <code class="python" lang="python">
+    for line in open("food_order.txt"):
+        space = line.index(" ")
+        qty = int(line[:space])
+        item = line[space+1:-1]
+        print(qty, item)
+    </code>
+    <para id="para-00006">Unfortunately, the line "soft drinks" does not begin with an integer. As a result, the program terminates and displays an error message:</para>
+    <code class="python" lang="python">
+    Traceback (most recent call last):
+      File "food_order.py", line 3
+        qty = int(line[:space])
+    ValueError: invalid literal for int() with base 10: 'soft'
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00001">
+    <title>Common exceptions</title>
+    <para id="para-00007">What error might occur in each situation?</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch14-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch14-m04-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch14-m04-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00002">
+    <title>Exploring further</title>
+    <para id="para-00011">The <link url="https://docs.python.org/3/library/exceptions.html">Built-in Exceptions</link> page of the Python Standard Library explains the meaning of each exception.</para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Try and except</title>
+    <para id="para-00012">Programs can be designed to handle exceptions, rather than terminate. A <code>try</code> statement runs code that might raise an exception. An <code>except</code> clause runs code in response to the exception.</para>
+    <example id="exam-00002">
+    <title>Try to open a file</title>
+    <para id="para-00013">The following program, named <emphasis effect="italics">try_open.py</emphasis>, asks the user for a filename and counts the number of lines in the file.</para>
+    <code class="python" lang="python">
+    name = input("Enter a filename: ")
+    try:
+        file = open(name)
+        lines = file.readlines()
+        count = len(lines)
+        print(name, "has", count, "lines")
+    except FileNotFoundError:
+        print("File not found:", name)
+    print("Have a nice day!")
+    </code>
+    <para id="para-00014">When running this program with the input <emphasis effect="italics">try_open.py</emphasis>, the name of the program file, the output is:</para>
+    <code class="python" lang="python">
+    Enter a filename: try_open.py
+    try_open.py has 9 lines
+    Have a nice day!
+    </code>
+    <para id="para-00015">If the filename does not exist, a FileNotFoundError is raised on line 3. The program then jumps to the <code>except</code> clause on line 7 and continues to run. The resulting output is:</para>
+    <code class="python" lang="python">
+    Enter a filename: try_open.txt
+    File not found: try_open.txt
+    Have a nice day!
+    </code>
+    </example>
+    <note class="learning-questions" id="note-00003">
+    <title>Predicting output with exceptions</title>
+    <para id="para-00016">For each code snippet, what is the output?</para>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch14-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch14-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch14-m04-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Type analyzer</title>
+    <para id="para-00020">Analysis programs often need to find numbers in large bodies of text. How can a program tell if a string like <code>"123.45"</code> represents a number? One approach is to use exceptions:</para>
+    <list list-type="enumerated" id="list-00003">
+    <item>Try converting the string to an integer. If no ValueError is raised, then the string represents an integer.</item>
+    <item>Otherwise, try converting the string to a float. If no ValueError is raised, then the string represents a float.</item>
+    <item>Otherwise, the string does not represent a number.</item>
+    </list>
+    <para id="para-00021">Implement the <code>get_type()</code> function using this approach. The provided main block calls <code>get_type()</code> for each word in a file. <code>get_type()</code> should return either <code>"int"</code>, <code>"float"</code>, or <code>"str"</code>, based on the word. The output for the provided <emphasis effect="italics">data.txt</emphasis> is:</para>
+    <code class="python" lang="python">
+    str: Hello
+    int: 100
+    str: times!
+    float: 3.14159
+    str: is
+    str: pi.
+    </code>
+    <media alt="type_analyzer_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_05_06_Type-analyzer.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>United countries</title>
+    <para id="para-00022">Write a program that prompts the user to input a word and a filename. The program should print each line of the file that contains the word. Here is an example run of the program (user input in bold):</para>
+    <code class="python" lang="python">
+    Enter a word: United
+    Enter a filename: countries.csv
+    United Arab Emirates,9890402,83600,118
+    United Kingdom,67886011,241930,281
+    United States of America,331002651,9147420,36
+    </code>
+    <para id="para-00023">This example uses a file named <emphasis effect="italics">countries.csv</emphasis> based on the <link url="https://www.worldometers.info/geography/alphabetical-list-of-countries/">alphabetical list of countries</link> from Worldometer. Each line of the file includes a country's name, population, land area, and population density, separated by commas.</para>
+    <para id="para-00024">The user might incorrectly type the filename (Ex: <!--<kbd>-->countries.txt<!--</kbd>--> instead of <!--<kbd>-->countries.csv<!--</kbd>-->). Your program should output an error message if the file is not found, and keep prompting the user to input a filename until the file is found:</para>
+    <code class="python" lang="python">
+    ...
+    Enter a filename: countries
+    File not found: countries
+    Enter a filename: countries.txt
+    File not found: countries.txt
+    Enter a filename: countries.csv
+    ...
+    </code>
+    <para id="para-00025">Hint: Try to open the file specified by the user. A <code>FileNotFoundError</code> is raised if the filename is invalid.</para>
+    <media alt="united_countries_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_05_07_United-countries.html"/>
+    </media>
+    </note>
+    </section>
+    </content>    
+</document>
