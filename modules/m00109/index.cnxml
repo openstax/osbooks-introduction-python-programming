@@ -1,0 +1,93 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Introduction to data science</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Introduction to data science</md:title>
+    <md:content-id>m00109</md:content-id>
+    <md:uuid>65da2c04-f409-4086-8c13-38f0dd0cc903</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Describe data science.</item>
+    <item>Identify different stages of the data science life-cycle.</item>
+    <item>Name data science tools and software.</item>
+    <item>Use Google Colaboratory to run code.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Data science life-cycle</title>
+    <para id="para-00002"><term id="term-00001">Data science</term> is a multidisciplinary field that combines collecting, processing, and analyzing large volumes of data to extract insights and drive informed decision-making. The <term id="term-00002">data science life-cycle</term> is the framework followed by data scientists to complete a data science project. Data science life-cycle is an iterative process that starts with data acquisition, followed by data exploration. The data acquisition stage may involve obtaining data from a source or collecting data through surveys and other means of data collection which are domain-specific. During the data exploration stage, data scientists will ensure that the data is in the right format for data analysis stage through data cleanup and may also visualize the data for further inspection. Once the data is cleaned, data scientists can perform data analysis which can then be communicated with stakeholders through reports and presentations. The <term id="term-00003">data analysis</term> stage involves using the data to generate insights or make a predictive model. Data science is increasingly being adopted in many different fields such as healthcare, economics, education, and social sciences, just to name a few. The animation below demonstrates different stages of the data science life-cycle.</para>
+    <note class="guided-slides" id="note-00001">
+    <title>Data science life-cycle</title>
+    <media alt="data_science_life_cycle_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/data-science-life-cycle"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>What is data science?</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch15-m01-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch15-m01-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch15-m01-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Data science tools</title>
+    <para id="para-00006">Several tools and software are commonly used in data science. Here we list some of these examples.</para>
+    <list id="list-00002">
+    <item>Python programming languauge: Python is widely used in data science. It has a large ecosystem of libraries designed for data analysis, machine learning, and visualization. Some popular Python libraries for data science include NumPy, Pandas, Matplotlib, Seaborn, and scikit-learn. In this chapter, we will look into some of these libraries.</item>
+    <item>R programming languauge: R is commonly used in statistical computing and data analysis and offers a wide range of packages and libraries tailored for data manipulation, statistical modeling, and visualization.</item>
+    <item>Jupyter Notebook/JupyterLab: <term id="term-00004">Jupyter Notebook and JupyterLab</term> are web-based interactive computing environments that support multiple programming languages, including Python and R. They allow a programmer to create documents that contain code, visualizations, and text, making them suitable for data exploration, analysis, and reporting. </item>
+    <item>Google Colaboratory: <term id="term-00005">Google Colaboratory</term> is a cloud-based Jupyter Notebook environment that allows a programmer to write, run, and share Python code online. In this chapter, we will use Google Colaboratory to practice data science concepts.</item>
+    <item>Kaggle Kernels: <term id="term-00006">Kaggle Kernels</term> is an online data science platform that provides a collaborative environment for building and running code. Kaggle Kernels support Python and R and offers access to datasets, pre-installed libraries, and computational resources. Kaggle also hosts data science competitions and provides a platform for sharing and discovering data science projects.</item>
+    <item>Excel/Sheets: <term id="term-00007">Microsoft Excel</term> and <term id="term-00008">Google Sheets</term> are a widely used spreadsheet softwares that offer basic data analysis and visualization capabilities. It can be useful for beginners to get started with data manipulation, basic statistical calculations, and simple visualizations.</item>
+    </list>
+    <note class="guided-slides" id="note-00003">
+    <title>Google Colaboratory ecosystem</title>
+    <media alt="google_colab_eco_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/google-colab-eco"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>Data science tools and software</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch15-m01-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch15-m01-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch15-m01-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note id="note-00005">
+    <title>Exploring Google Colaboratory platform</title>
+    <para id="para-00010"><emphasis>Exploring further:</emphasis></para>
+    <para id="para-00011">Open the Google Colaboratory document below. To open the Colaboratory document, you need to login to a Google account, if you have one, or create a Google account. Run all cells. You may also attempt creating new cells or modifying existing cells. To be able to save a copy of your edits, you need to go to "File > Save a Copy in Drive", and the edited file will be stored in your own Google Drive.</para>
+    <para id="para-00012"><link url="https://colab.research.google.com/drive/1-JMI6_IR7XxSx7SL4ZAcFCZbyHSpgu1W?usp=sharing">Google Colaboratory document</link></para>
+    </note>
+    </section>
+    </content>
+</document>

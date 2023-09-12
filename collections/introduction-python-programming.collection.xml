@@ -184,5 +184,18 @@
         <col:module document="m00107"/>
       </col:content>
     </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 15: Data Science</md:title>
+      <col:content>
+        <col:module document="m00108"/>
+        <col:module document="m00109"/>
+        <col:module document="m00110"/>
+        <col:module document="m00111"/>
+        <col:module document="m00112"/>
+        <col:module document="m00113"/>
+        <col:module document="m00114"/>
+        <col:module document="m00115"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>

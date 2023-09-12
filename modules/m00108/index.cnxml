@@ -1,0 +1,18 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="introduction">
+  <title>Introduction</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Introduction</md:title>
+    <md:content-id>m00108</md:content-id>
+    <md:uuid>c33d5bb3-a0de-4bcb-8d96-167fb3e5024c</md:uuid>
+  </metadata>
+  <content class="introduction">
+    <figure class="splash" id="fig-00001">
+    <media alt="">
+    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><link url="https://www.pexels.com/photo/person-holding-chart-and-bar-graph-669612/">Photo</link> by <link url="https://www.pexels.com/@goumbik/">Lucas</link> on <link url="https://pexel.com/">Pexel</link></caption>
+    </figure>
+    <para id="para-00001"><term id="term-00001">Data Science</term> provides the ability to derive insights and make informed decisions from data. The data science field has been increasingly nourished by different fields and provides informed decision-making capabilities in fields like healthcare, business, education, politics, environmental science, and social sciences.</para>
+    <para id="para-00002">This chapter aims to provide an introduction to the field of data science and the data science life-cycle as well as different data science life-cycle elements. The resources provided in this chapter are meant to guide readers using Python to further explore data science.</para>
+    </content>
+</document>

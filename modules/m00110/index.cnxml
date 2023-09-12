@@ -1,0 +1,103 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>NumPy</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>NumPy</md:title>
+    <md:content-id>m00110</md:content-id>
+    <md:uuid>24250aa5-986f-47c5-875b-dd7fdbf3901c</md:uuid>
+  </metadata>
+  <content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Describe the NumPy library.</item>
+    <item>Create a NumPy array object.</item>
+    <item>Choose appropriate NumPy functions to process arrays of numerical data.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>NumPy library</title>
+    <para id="para-00002"><term id="term-00001">NumPy</term> (Numerical Python) is a Python library that provides support for efficient numerical operations on large, multi-dimensional arrays and serves as a fundamental building block for data analysis in Python. The conventional alias for importing NumPy is <code class="python inline-code">np</code>. In other words, NumPy is imported as <code class="python inline-code">import numpy as np</code>. NumPy implements the <term id="term-00002">ndarray</term> object that allows the creation of a multi-dimensional array of homogeneous data types (columns with the same data type) and efficient data processing. An <code class="python inline-code">ndarray</code> object can have any number of dimensions and can store elements of various numeric data types. To create a NumPy <code class="python inline-code">ndarray</code> object, one of the following options can be used:</para>
+    <list id="list-00002">
+    <item>Creating an <code class="python inline-code">ndarray</code> by converting a Python list or tuple using the <code class="python inline-code">np.array()</code> function.</item>
+    <item>Using built-in functions like <code class="python inline-code">np.zeros()</code> and <code class="python inline-code">np.ones()</code> for creating an array of all zeros or all ones, respectively.</item>
+    <item>Generating an array with random numbers using <code class="python inline-code">np.random.rand(n, m)</code>, where <code class="python inline-code">n</code> and <code class="python inline-code">m</code> are the number of rows and columns, respectively.</item>
+    <item>Loading data from a file. Ex: <code class="python inline-code">np.genfromtxt('data.csv', delimiter=',')</code></item>
+    </list>
+    <note class="guided-slides" id="note-00001">
+    <title>Creating an ndarray object</title>
+    <media alt="dictionary_object_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/dictionary-object"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>NumPy library</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch15-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch15-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch15-m02-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>NumPy operations</title>
+    <para id="para-00006">In addition to the <code class="python inline-code">ndarray</code> data type, NumPy's operations provide optimized performance for large-scale computation. The key features of NumPy include:</para>
+    <list id="list-00003">
+    <item>Mathematical Operations: NumPy provides a range of mathematical functions and operations that can be applied to entire arrays or specific elements. These operations include arithmetic, trigonometric, exponential, and logarithmic functions.</item>
+    <item>Array Manipulation: NumPy provides various functions to manipulate the shape, size, and structure of arrays. These include reshaping, transposing, concatenating, splitting, and adding or removing elements from arrays.</item>
+    <item>Linear Algebra Operations: NumPy offers a set of linear algebra functions for matrix operations, like matrix multiplication, matrix inversion, eigenvalues, and eigenvectors.</item>
+    </list>
+    <note class="guided-slides" id="note-00003">
+    <title>NumPy array operations</title>
+    <media alt="numPy_operations_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/NumPy-operations"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>NumPy operations</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch15-m02-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch15-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch15-m02-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00005">
+    <title>Exploring further.</title>
+    <para id="para-00010"><emphasis>Exploring further:</emphasis></para>
+    <para id="para-00011">Please refer to the NumPy user guide for more information about the NumPy library.</para>
+    <list id="list-00004">
+    <item><link url="https://numpy.org/devdocs/user/">NumPy User Guide</link></item>
+    </list>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note id="note-00006">
+    <title>NumPy programming practice</title>
+    <para id="para-00012"><emphasis>Exploring further:</emphasis></para>
+    <para id="para-00013">Use the Google Colaboratory document below to practice NumPy functionalities to extract statistical insights from a dataset.</para>
+    <para id="para-00014"><link url="https://colab.research.google.com/drive/1reRDkIMCHEAbELxkLltexn-V1wbgFEbW?usp=sharing">Google Colaboratory document</link></para>
+    </note>
+    </section>
+    </content>
+</document>
