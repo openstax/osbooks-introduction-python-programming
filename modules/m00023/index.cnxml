@@ -109,13 +109,13 @@
     <title>Three variables</title>
     <list list-type="enumerated" id="list-00003">
     <item>Draw a memory diagram for the following code:
-    <para id="para-00017"><code class="python" lang="python">
+   <code class="python" lang="python" display="block">
     a = 1
     b = 2
     c = b
     b = a
     a = c
-    </code></para></item>
+    </code></item>
     <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
     <list list-type="bulleted" id="list-00004">
