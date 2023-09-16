@@ -89,13 +89,13 @@
     <para id="para-00011">Use the <code>join()</code> function to repeat back a user's order at a restaurant, separated by commas. The user will input each food item on a separate line. When finished ordering, the user will enter a blank line. The output depends on how many items the user orders:</para>
     <list id="list-00002">
     <item>If the user inputs nothing, the program outputs:<newline/>
-    <!--<samp>-->You ordered nothing<!--</samp>-->.</item>
-    <item>If the user inputs 1 item (Ex: <!--<kbd>-->eggs<!--</kbd>-->), the program outputs:<newline/>
-    <!--<samp>-->You ordered eggs<!--</samp>-->.</item>
-    <item>If the user inputs 2 items (Ex: <!--<kbd>-->eggs<!--</kbd>-->, <!--<kbd>-->ham<!--</kbd>-->), the program outputs:<newline/>
-    <!--<samp>-->You ordered eggs and ham<!--</samp>-->.</item>
-    <item>If the user inputs 3+ items (Ex: <!--<kbd>-->eggs<!--</kbd>-->, <!--<kbd>-->ham<!--</kbd>-->, <!--<kbd>-->toast<!--</kbd>-->), the program outputs:<newline/>
-    <!--<samp>-->You ordered eggs, ham, and toast<!--</samp>-->.</item>
+    <code>You ordered nothing</code>.</item>
+    <item>If the user inputs 1 item (Ex: eggs), the program outputs:<newline/>
+    <code>You ordered eggs</code>.</item>
+    <item>If the user inputs 2 items (Ex: eggs, ham), the program outputs:<newline/>
+    <code>You ordered eggs and ham</code>.</item>
+    <item>If the user inputs 3+ items (Ex: eggs, ham, toast), the program outputs:<newline/>
+    <code>You ordered eggs, ham, and toast</code>.</item>
     </list>
     <para id="para-00012">In the general case with 3+ items, each item should be separated by a comma and a space. The word "and" should be appended before the last item.</para>
     <media alt="lunch_order_program">
