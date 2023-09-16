@@ -33,9 +33,9 @@
     <row>
     <entry><para id="para-00014"><code class="python inline-code">></code> or <code class="python inline-code">>=</code></para></entry>
     <entry>Checks whether the first string value is greater than (or greater than or equal to) the second string value.</entry>
-    <entry><para id="para-00015"><code class="python inline-code">"c" > "d"</code></para></entry>
+    <entry><para id="para-00015"><code class="python inline-code">"c" &gt; "d"</code></para></entry>
     <entry><para id="para-00016"><code class="python inline-code">False</code></para></entry>
-    <entry><para id="para-00017">When comparing <code class="python inline-code">"c"</code> operand to <code class="python inline-code">"d"</code> operand, the ASCII value for <code class="python inline-code">"c"</code> is smaller than the ASCII value for <code class="python inline-code">"d"</code>. Therefore, <code class="python inline-code">"c" &lt; "d"</code> and the expression <code class="python inline-code">"c" > "d"</code> evaluates to False.</para></entry>
+    <entry><para id="para-00017">When comparing <code class="python inline-code">"c"</code> operand to <code class="python inline-code">"d"</code> operand, the ASCII value for <code class="python inline-code">"c"</code> is smaller than the ASCII value for <code class="python inline-code">"d"</code>. Therefore, <code class="python inline-code">"c" &lt; "d"</code> and the expression <code class="python inline-code">"c" &gt; "d"</code> evaluates to False.</para></entry>
     </row>
     <row>
     <entry><para id="para-00018"><code class="python inline-code">&lt;</code> or <code class="python inline-code">&lt;=</code></para></entry>

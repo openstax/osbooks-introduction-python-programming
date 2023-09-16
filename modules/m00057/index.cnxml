@@ -25,29 +25,29 @@
     </thead>
     <tbody>
     <row>
-    <entry><code>import module</code></entry>
+    <entry><para id="para-00002"><code>import module</code></para></entry>
     <entry>Imports a module for use in another program.</entry>
     </row>
     <row>
-    <entry><code>from module import function</code></entry>
+    <entry><para id="para-00003"><code>from module import function</code></para></entry>
     <entry>Imports a specific function from a module.</entry>
     </row>
     <row>
-    <entry><code>if __name__ == "__main__":</code></entry>
+    <entry><para id="para-00004"><code>if __name__ == "__main__":</code></para></entry>
     <entry>A line of code found at the end of many modules. This statement indicates what code to run if the module is executed as a program (or in other words, what code <emphasis effect="italics">not</emphasis> to run if this module is imported by another program).</entry>
     </row>
     <row>
-    <entry><code>help(module_name)</code></entry>
+    <entry><para id="para-00005"><code>help(module_name)</code></para></entry>
     <entry>Shows the documentation for the given module. The documentation includes the module's docstring, followed by a list of functions defined in the module, followed by a list of global variables assigned in the module, followed by the module's file name.</entry>
     </row>
     <row>
-    <entry><code>help(function_name)</code></entry>
+    <entry><para id="para-00006"><code>help(function_name)</code></para></entry>
     <entry>Shows the docstring for the given function.</entry>
     </row>
     <row>
-    <entry><code>date(2023, 2, 14)</code></entry>
-    <entry>Creates a <code>date</code> object representing February 14, 2023.<newline/>
-    Requires: <code>from datetime import date</code>.</entry>
+    <entry><para id="para-00007"><code>date(2023, 2, 14)</code></para></entry>
+    <entry><para id="para-00008">Creates a <code>date</code> object representing February 14, 2023.<newline/>
+    Requires: <code>from datetime import date</code>.</para></entry>
     </row>
     </tbody>
     </tgroup>
