@@ -50,6 +50,8 @@
     </code>
     </entry>
     <entry>True</entry>
+  </row>
+  <row>
     <entry>dict.values()
     <code class="python" lang="python">
     # value in dictionary.values()<newline/>
