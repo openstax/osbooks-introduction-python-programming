@@ -6,5 +6,194 @@
     <md:uuid>b3025492-7435-4640-a01f-cc27e9483575</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Write a conditional statement to check for a key/value.</item>
+    <item>Write a for loop to iterate over elements of a dictionary.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Conditionals for dictionary</title>
+    <para id="para-00002">Conditional statements can be used with dictionaries to check if certain keys, values, or dictionary items exist in the dictionary or if a value satisfies a particular condition.</para>
+    <table summary=" " id="table-00001">
+    <title>Templates and examples of a conditional statement on a dictionary.</title>
+    <tgroup cols="1">
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">dict.items()</emphasis>
+    <code class="python" lang="python">
+    # (key, value) in dictionary.items()
+    movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+    print(("Interstellar", 2014) in movies.items())
+    </code>
+    </entry>
+    </row>
+    <row>
+    <entry>True</entry>
+    <entry>Conditionals on values or keys
+    <code class="python" lang="python">
+    # dictionary[key] operand test_value<newline/>
+    movies = {"The godfather": 1974, "Interstellar": 2014}
+    print(movies["The godfather"] &lt; 2000)<newline/>
+    </code>
+    </entry>
+    </row>
+    <row>
+    <entry>True</entry>
+    <entry>dict.keys()
+    <code class="python" lang="python">
+    # key in dictionary.keys()<newline/>
+    movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+    print("Interstellar" in movies.keys())
+    </code>
+    </entry>
+    </row>
+    <row>
+    <entry>True</entry>
+    <entry>dict.values()
+    <code class="python" lang="python">
+    # value in dictionary.values()<newline/>
+    movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+    print(2014 in movies.values())
+    </code>
+    </entry>
+    </row>
+    <row>
+    <entry>True</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00001">
+    <title>Conditionals on dictionaries</title>
+    <para id="para-00003">Given the dictionary <code class="python inline-code">fruit_count = {"apple": 2, "orange": 5, "pomegranate": 1}</code>, answer the following questions.</para>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch10-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch10-m04-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch10-m04-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Looping on a dictionary</title>
+    <para id="para-00007">Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a dictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using <code class="python inline-code">keys()</code> function and are passed to the loop variable one at a time. When looping over items using <code class="python inline-code">items()</code> function, both the key and value for each item are passed to the loop variable.</para>
+    <note id="note-00002">
+    <title>A for loop over a dictionary retrieves each key in the dictionary.</title>
+    <code class="python" lang="python">
+    for key in dictionary: # Loop expression
+      # Statements to execute in the loop<newline/>
+    # Statements to execute after the loop
+    </code>
+    </note>
+    <table summary=" " id="table-00002">
+    <title>Iterating over a dictionary.</title>
+    <tgroup cols="1">
+    <tbody>
+    <row>
+    <entry>dict.items()
+    <code class="python" lang="python">
+    zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
+    for key, value in zip_codes.items():
+    print(key, value)
+    </code></entry>
+    <entry>
+    Berkeley 94709<newline/>
+    Santa Cruz 95064<newline/>
+    Mountain View 94030
+    </entry>
+    </row>
+    <row>
+    <entry>dict.keys()
+    <code class="python" lang="python">
+    zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
+    for key in zip_codes.keys():
+    print(key)
+    </code>
+    </entry>
+    <entry>
+    Berkeley<newline/>
+    Santa Cruz<newline/>
+    Mountain View
+    </entry>
+    </row>
+    <row>
+    <entry>dict.values()
+    <code class="python" lang="python">
+    zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
+    for value in zip_codes.values():
+    print(value)
+    </code>
+    </entry>
+    <entry>
+    94709
+    95064
+    94030
+    </entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00003">
+    <title>Loops on dictionaries</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch10-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch10-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch10-m04-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00004">
+    <title>Character count in a string</title>
+    <para id="para-00011">Given a string value, calculate and print the number of occurrences of all characters using a dictionary.</para>
+    <code class="python" lang="python">
+    Input:
+    string_value = "This is a string"
+    </code>
+    <code class="python" lang="python">
+    Prints {"T": 1, "h": 1, "i": 3, "s": 3, " ": 3, "a": 1, "t": 1, "r": 1, "n": 1, "g": 1}
+    </code>
+    <media alt="character_count_in_a_string_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_05_05_Character-count-in-a-string.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00005">
+    <title>Calculate the total number of fruits</title>
+    <para id="para-00012">Given a fruit_count dictionary that contains information about fruits and the count of each fruit, calculate the total number of fruits across all fruit types.</para>
+    <code class="python" lang="python">
+    Input:
+    fruit_count = {"banana": 2, "orange": 5, "peach": 5}
+    </code>
+    <code class="python" lang="python">
+    Prints 12
+    </code>
+    <media alt="calculate_the_total_number_of_fruits_program">
+    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_05_06_Calculate-the-total-number-of-fruits.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
