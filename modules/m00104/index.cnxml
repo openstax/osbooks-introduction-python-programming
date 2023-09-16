@@ -42,8 +42,8 @@
     </row>
     <row>
     <entry>Windows</entry>
-    <entry><code>c:\projects\code\</code></entry>
-    <entry><code>fileobj = open("c:/projects/code/output.txt")</code><newline/>or<newline/><code>fileobj = open("c:\\projects\\code\\output.txt")</code></entry>
+    <entry><para id="para-00024"><code>c:\projects\code\</code></para></entry>
+    <entry><para id="para-00025"><code>fileobj = open("c:/projects/code/output.txt")</code><newline/>or<newline/><code>fileobj = open("c:\\projects\\code\\output.txt")</code></para></entry>
     </row>
     </tbody>
     </tgroup>

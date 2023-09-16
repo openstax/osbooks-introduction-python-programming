@@ -33,8 +33,8 @@
     </thead>
     <tbody>
     <row>
-    <entry><code>count(element)</code></entry>
-    <entry>Returns the number of times the element exists on the list on which the <code>count()</code> function is called..</entry>
+    <entry><para id="para-00003"><code>count(element)</code></para></entry>
+    <entry><para id="para-00004">Returns the number of times the element exists on the list on which the <code>count()</code> function is called..</para></entry>
     </row>
     </tbody>
     </tgroup>
