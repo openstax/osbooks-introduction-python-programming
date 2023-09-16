@@ -22,7 +22,7 @@
     <tgroup cols="1">
     <tbody>
     <row>
-    <entry><emphasis effect="bold">dict.items()</emphasis>
+    <entry>dict.items()
     <code class="python" lang="python">
     # (key, value) in dictionary.items()
     movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
