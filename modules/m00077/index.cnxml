@@ -29,9 +29,9 @@
     print(("Interstellar", 2014) in movies.items())
     </code>
     </entry>
-    </row>
-    <row>
     <entry>True</entry>
+  </row>
+  <row>
     <entry>Conditionals on values or keys
     <code class="python" lang="python">
     # dictionary[key] operand test_value<newline/>
@@ -39,9 +39,9 @@
     print(movies["The godfather"] &lt; 2000)<newline/>
     </code>
     </entry>
-    </row>
-    <row>
     <entry>True</entry>
+  </row>
+  <row>
     <entry>dict.keys()
     <code class="python" lang="python">
     # key in dictionary.keys()<newline/>
@@ -49,8 +49,6 @@
     print("Interstellar" in movies.keys())
     </code>
     </entry>
-    </row>
-    <row>
     <entry>True</entry>
     <entry>dict.values()
     <code class="python" lang="python">
@@ -59,8 +57,6 @@
     print(2014 in movies.values())
     </code>
     </entry>
-    </row>
-    <row>
     <entry>True</entry>
     </row>
     </tbody>
