@@ -32,7 +32,7 @@
     <tbody>
     <row>
     <entry>bool(x)</entry>
-    <entry>Converts <code class="python inline-code">x</code> to a boolean value, either True or False.</entry>
+    <entry><para id="para-00022">Converts <code class="python inline-code">x</code> to a boolean value, either True or False.</para></entry>
     </row>
     <row>
     <entry>Operator</entry>

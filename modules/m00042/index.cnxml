@@ -33,11 +33,11 @@
     </row>
     <row>
     <entry><para id="para-00007"><code class="python inline-code">range(start, end)</code></para></entry>
-    <entry>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with step size of 1.</entry>
+    <entry><para id="para-00015">Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with step size of 1.</para></entry>
     </row>
     <row>
     <entry><para id="para-00008"><code class="python inline-code">range(start, end, s)</code></para></entry>
-    <entry>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with the step size of <code class="python inline-code">s</code>.</entry>
+    <entry><para id="para-00016">Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with the step size of <code class="python inline-code">s</code>.</para></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Loop constructs</emphasis></entry>
