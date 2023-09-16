@@ -26,39 +26,39 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code">len()</code></entry>
+    <entry><para id="para-00003"><code class="python inline-code">len()</code></para></entry>
     <entry>Returns the string length.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">upper()</code></entry>
+    <entry><para id="para-00004"><code class="python inline-code">upper()</code></para></entry>
     <entry>Convert characters in the string to uppercase.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">lower()</code></entry>
+    <entry><para id="para-00005"><code class="python inline-code">lower()</code></para></entry>
     <entry>Convert characters in the string to lowercase.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">count()</code></entry>
+    <entry><para id="para-00006"><code class="python inline-code">count()</code></para></entry>
     <entry>Returns the number of a given substring in a string.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">find()</code></entry>
+    <entry><para id="para-00007"><code class="python inline-code">find()</code></para></entry>
     <entry>Returns the index of the first occurrence of a given substring in a string. If the substring does not exist in the string, -1 is returned.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">index()</code></entry>
+    <entry><para id="para-00008"><code class="python inline-code">index()</code></para></entry>
     <entry>Returns the index of the first occurrence of a given substring in a string. If the substring does not exist in the string, a <code class="python inline-code">ValueError</code> is returned.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">format()</code></entry>
+    <entry><para id="para-00009"><code class="python inline-code">format()</code></para></entry>
     <entry>Is used to create strings with specified patterns using arguments.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">join()</code></entry>
+    <entry><para id="para-00010"><code class="python inline-code">join()</code></para></entry>
     <entry>Takes a list of string values and combines string values into one string by placing a given separator in between values.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">split()</code></entry>
+    <entry><para id="para-00011"><code class="python inline-code">split()</code></para></entry>
     <entry>Separates a string into tokens based on a given separator string. If no separator string is provided, white space characters are used as separators.</entry>
     </row>
     <row>
@@ -66,11 +66,11 @@
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">in</code> loop</entry>
+    <entry><para id="para-00012"><code class="python inline-code">in</code> loop</para></entry>
     <entry>Checks if a substring exists in a string.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">in</code> operator in a <code class="python inline-code">for</code> loop</entry>
+    <entry><para id="para-00013"><code class="python inline-code">in</code> operator in a <code class="python inline-code">for</code> loop</para></entry>
     <entry><code class="python" lang="python">
     for character in string:
       # loop body

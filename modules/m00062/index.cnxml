@@ -165,37 +165,37 @@
     <tbody>
     <row>
     <entry>Left-aligned</entry>
-    <entry><code class="python inline-code">&lt;</code></entry>
-    <entry><code class="python inline-code">
+    <entry><para id="para-00041"><code class="python inline-code">&lt;</code></para></entry>
+    <entry><para id="para-00042"><code class="python inline-code">
     template = "{hex:&lt;7}{name:&lt;10}"
     print(template.format(hex = "#FF0000", name = "Red"))
-    print(template.format(hex = "#00FF00", name = "green"))</code>
+    print(template.format(hex = "#00FF00", name = "green"))</code></para>
     </entry>
-    <entry><code class="python inline-code">
+    <entry><para id="para-00043"><code class="python inline-code">
     #FF0000    Red
-    #00FF00    green</code></entry>
+    #00FF00    green</code></para></entry>
     </row>
     <row>
     <entry>Right-aligned</entry>
-    <entry><code class="python inline-code">></code></entry>
-    <entry><code class="python inline-code">
+    <entry><para id="para-00044"><code class="python inline-code">></code></para></entry>
+    <entry><para id="para-00045"><code class="python inline-code">
     template = "{hex:>7}{name:>10}"
     print(template.format(hex = "#FF0000", name = "Red"))
-    print(template.format(hex = "#00FF00", name = "green"))</code></entry>
-    <entry><code class="python inline-code">
+    print(template.format(hex = "#00FF00", name = "green"))</code></para></entry>
+    <entry><para id="para-00046"><code class="python inline-code">
     #FF0000    Red
-    #00FF00    green</code></entry>
+    #00FF00    green</code></para></entry>
     </row>
     <row>
     <entry>Centered</entry>
     <entry>^</entry>
-    <entry><code class="python inline-code">
+    <entry><para id="para-00047"><code class="python inline-code">
     template = "{hex:^7}{name:^10}"
     print(template.format(hex = "#FF0000", name = "Red"))
-    print(template.format(hex = "#00FF00", name = "green"))</code></entry>
-    <entry><code class="python inline-code">
+    print(template.format(hex = "#00FF00", name = "green"))</code></para></entry>
+    <entry><para id="para-00048"><code class="python inline-code">
     #FF0000    Red
-    #00FF00    green</code></entry>
+    #00FF00    green</code></para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -241,29 +241,29 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code">print("{:.7f}".format(0.9795))</code></entry>
-    <entry><code class="python inline-code">0.9795000</code></entry>
-    <entry>The format specification <code class="python inline-code">.7</code> shows the output must have 7 decimal places. The <code class="python inline-code">f</code> specification is an identifier of floating-point formatting.</entry>
+    <entry><para id="para-00049"><code class="python inline-code">print("{:.7f}".format(0.9795))</code></para></entry>
+    <entry><para id="para-00050"><code class="python inline-code">0.9795000</code></para></entry>
+    <entry><para id="para-00051">The format specification <code class="python inline-code">.7</code> shows the output must have 7 decimal places. The <code class="python inline-code">f</code> specification is an identifier of floating-point formatting.</para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">print("{:.3f}".format(12))</code></entry>
-    <entry><code class="python inline-code">12.000</code></entry>
-    <entry>The format specification <code class="python inline-code">.3</code> shows the output must have 3 decimal places. The <code class="python inline-code">f</code> specification is an identifier of floating-point formatting.</entry>
+    <entry><para id="para-00052"><code class="python inline-code">print("{:.3f}".format(12))</code></para></entry>
+    <entry><para id="para-00053"><code class="python inline-code">12.000</code></para></entry>
+    <entry><para id="para-00054">The format specification <code class="python inline-code">.3</code> shows the output must have 3 decimal places. The <code class="python inline-code">f</code> specification is an identifier of floating-point formatting.</para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">print("{:+.2f}".format(4))</code></entry>
-    <entry><code class="python inline-code">+4.00</code></entry>
-    <entry>The format specification <code class="python inline-code">.2</code> shows the output must have 2 decimal places. The <code class="python inline-code">f</code> specification is an identifier of floating-point formatting. The <code class="python inline-code">+</code> sign before the precision specification adds a sign character to the output.</entry>
+    <entry><para id="para-00055"><code class="python inline-code">print("{:+.2f}".format(4))</code></para></entry>
+    <entry><para id="para-00056"><code class="python inline-code">+4.00</code></para></entry>
+    <entry><para id="para-00057">The format specification <code class="python inline-code">.2</code> shows the output must have 2 decimal places. The <code class="python inline-code">f</code> specification is an identifier of floating-point formatting. The <code class="python inline-code">+</code> sign before the precision specification adds a sign character to the output.</para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">print("{:0>5d}".format(5))</code></entry>
-    <entry><code class="python inline-code">00005</code></entry>
-    <entry>The format specification <code class="python inline-code">0>5</code> defines the width field as 5 and hence the output must have a minimum length of 5 and if the number has less than 5 digits, the number must be padded with 0's from the left side. The <code class="python inline-code">d</code> specification is an identifier of a decimal number formatting.</entry>
+    <entry><para id="para-00058"><code class="python inline-code">print("{:0>5d}".format(5))</code></para></entry>
+    <entry><para id="para-00059"><code class="python inline-code">00005</code></para></entry>
+    <entry><para id="para-00060">The format specification <code class="python inline-code">0>5</code> defines the width field as 5 and hence the output must have a minimum length of 5 and if the number has less than 5 digits, the number must be padded with 0's from the left side. The <code class="python inline-code">d</code> specification is an identifier of a decimal number formatting.</para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">print("{:.3s}".format("12.50"))</code></entry>
-    <entry><code class="python inline-code">12.</code></entry>
-    <entry>The format specification <code class="python inline-code">.3</code> shows the output will have 3 characters. The <code class="python inline-code">s</code> specification is an identifier of string formatting.</entry>
+    <entry><para id="para-00061"><code class="python inline-code">print("{:.3s}".format("12.50"))</code></para></entry>
+    <entry><para id="para-00062"><code class="python inline-code">12.</code></para></entry>
+    <entry><para id="para-00063">The format specification <code class="python inline-code">.3</code> shows the output will have 3 characters. The <code class="python inline-code">s</code> specification is an identifier of string formatting.</para></entry>
     </row>
     </tbody>
     </tgroup>
