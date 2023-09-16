@@ -28,15 +28,15 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code">range(end)</code></entry>
+    <entry><para id="para-00006"><code class="python inline-code">range(end)</code></para></entry>
     <entry>Generates a sequence beginning at 0 until end with step size of 1.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">range(start, end)</code></entry>
+    <entry><para id="para-00007"><code class="python inline-code">range(start, end)</code></para></entry>
     <entry>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with step size of 1.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">range(start, end, s)</code></entry>
+    <entry><para id="para-00008"><code class="python inline-code">range(start, end, s)</code></para></entry>
     <entry>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with the step size of <code class="python inline-code">s</code>.</entry>
     </row>
     <row>
@@ -44,7 +44,7 @@
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">while</code> loop</entry>
+    <entry><para id="para-00009"><code class="python inline-code">while</code> loop</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     while expression:
@@ -53,7 +53,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">for</code> loop</entry>
+    <entry><para id="para-00010"><code class="python inline-code">for</code> loop</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     for loop_variable in container:
@@ -62,7 +62,7 @@
     </code></entry>
     </row>
     <row>
-    <entry>Nested <code class="python inline-code">while</code> loop</entry>
+    <entry><para id="para-00011">Nested <code class="python inline-code">while</code> loop</para></entry>
     <entry><code class="python" lang="python">
     while outer_loop_expression:
       # outer loop body (1)
@@ -73,7 +73,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">break</code> statement</entry>
+    <entry><para id="para-00012"><code class="python inline-code">break</code> statement</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     while loop_expression:
@@ -85,7 +85,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">continue</code> statement</entry>
+    <entry><para id="para-00013"><code class="python inline-code">continue</code> statement</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     while loop_expression:
@@ -97,7 +97,7 @@
     </code></entry>
     </row>
     <row>
-    <entry>Loop <code class="python inline-code">else</code> statement</entry>
+    <entry><para id="para-00014">Loop <code class="python inline-code">else</code> statement</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     for loop_expression:

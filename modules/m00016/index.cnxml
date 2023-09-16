@@ -72,17 +72,17 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code">math.e</code></entry>
+    <entry><para id="para-00016"><code class="python inline-code">math.e</code></para></entry>
     <entry><m:math><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mn>2.71828</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>Euler's number; the base of the natural logarithm.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.pi</code></entry>
+    <entry><para id="para-00017"><code class="python inline-code">math.pi</code></para></entry>
     <entry><m:math><m:mrow><m:mi>π</m:mi><m:mo>=</m:mo><m:mn>3.14159</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>The ratio of the circumference to the diameter of a circle.</entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.tau</code></entry>
+    <entry><para id="para-00018"><code class="python inline-code">math.tau</code></para></entry>
     <entry><m:math><m:mrow><m:mi>τ</m:mi><m:mo>=</m:mo><m:mn>6.28318</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>The ratio of the circumference to the radius of a circle.
     Tau is equal to 2π.</entry>
@@ -108,65 +108,65 @@
     <entry namest="c1" nameend="c3"><emphasis effect="bold">Number-theoretic</emphasis></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.ceil(x)</code></entry>
+    <entry><para id="para-00019"><code class="python inline-code">math.ceil(x)</code></para></entry>
     <entry>The ceiling of x: the smallest integer greater than or equal to x.</entry>
-    <entry><code class="python inline-code">math.ceil(7.4)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">8</code><newline/>
-    <code class="python inline-code">math.ceil(-7.4)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">-7</code></entry>
+    <entry><para id="para-00020"><code class="python inline-code">math.ceil(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">8</code><newline/>
+    <code class="python inline-code">math.ceil(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">-7</code></para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.floor(x)</code></entry>
+    <entry><para id="para-00021"><code class="python inline-code">math.floor(x)</code></para></entry>
     <entry>The floor of x: the largest integer less than or equal to x.</entry>
-    <entry><code class="python inline-code">math.floor(7.4)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">7</code><newline/>
-    <code class="python inline-code">math.floor(-7.4)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">-8</code></entry>
+    <entry><para id="para-00022"><code class="python inline-code">math.floor(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">7</code><newline/>
+    <code class="python inline-code">math.floor(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">-8</code></para></entry>
     </row>
     <row>
     <entry namest="c1" nameend="c3"><emphasis effect="bold">Power and logarithmic</emphasis></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.log(x)</code></entry>
+    <entry><para id="para-00023"><code class="python inline-code">math.log(x)</code></para></entry>
     <entry>The natural logarithm of x (to base e).</entry>
-    <entry><code class="python inline-code">math.log(math.e)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.log(0)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">ValueError: math domain error</code></entry>
+    <entry><para id="para-00024"><code class="python inline-code">math.log(math.e)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.log(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">ValueError: math domain error</code></para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.log(x, base)</code></entry>
+    <entry><para id="para-00025"><code class="python inline-code">math.log(x, base)</code></para></entry>
     <entry>The logarithm of x to the given base.</entry>
-    <entry><code class="python inline-code">math.log(8, 2)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">3.0</code><newline/>
-    <code class="python inline-code">math.log(10000, 10)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">4.0</code></entry>
+    <entry><para id="para-00026"><code class="python inline-code">math.log(8, 2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">3.0</code><newline/>
+    <code class="python inline-code">math.log(10000, 10)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">4.0</code></para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.pow(x, y)</code></entry>
-    <entry>x raised to the power y. Unlike the <code class="python inline-code">**</code> operator, <code class="python inline-code">math.pow()</code> converts x and y to type float.</entry>
-    <entry><code class="python inline-code">math.pow(3, 0)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.pow(3, 3)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">27.0</code></entry>
+    <entry><para id="para-00027"><code class="python inline-code">math.pow(x, y)</code></para></entry>
+    <entry><para id="para-00028">x raised to the power y. Unlike the <code class="python inline-code">**</code> operator, <code class="python inline-code">math.pow()</code> converts x and y to type float.</para></entry>
+    <entry><para id="para-00029"><code class="python inline-code">math.pow(3, 0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.pow(3, 3)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">27.0</code></para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.sqrt(x)</code></entry>
+    <entry><para id="para-00030"><code class="python inline-code">math.sqrt(x)</code></para></entry>
     <entry>The square root of x.</entry>
-    <entry><code class="python inline-code">math.sqrt(9)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">3.0</code><newline/>
-    <code class="python inline-code">math.sqrt(-9)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">ValueError: math domain error</code></entry>
+    <entry><para id="para-00031"><code class="python inline-code">math.sqrt(9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">3.0</code><newline/>
+    <code class="python inline-code">math.sqrt(-9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">ValueError: math domain error</code></para></entry>
     </row>
     <row>
     <entry namest="c1" nameend="c3"><emphasis effect="bold">Trigonometric</emphasis></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.cos(x)</code></entry>
+    <entry><para id="para-00032"><code class="python inline-code">math.cos(x)</code></para></entry>
     <entry>The cosine of x radians.</entry>
-    <entry><code class="python inline-code">math.cos(0)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.cos(math.pi)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">-1.0</code></entry>
+    <entry><para id="para-00033"><code class="python inline-code">math.cos(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
+    <code class="python inline-code">math.cos(math.pi)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">-1.0</code></para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.sin(x)</code></entry>
+    <entry><para id="para-00034"><code class="python inline-code">math.sin(x)</code></para></entry>
     <entry>The sine of x radians.</entry>
-    <entry><code class="python inline-code">math.sin(0)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">0.0</code><newline/>
-    <code class="python inline-code">math.sin(math.pi/2)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">1.0</code></entry>
+    <entry><para id="para-00035"><code class="python inline-code">math.sin(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">0.0</code><newline/>
+    <code class="python inline-code">math.sin(math.pi/2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">1.0</code></para></entry>
     </row>
     <row>
-    <entry><code class="python inline-code">math.tan(x)</code></entry>
+    <entry><para id="para-00036"><code class="python inline-code">math.tan(x)</code></para></entry>
     <entry>The tangent of x radians.</entry>
-    <entry><code class="python inline-code">math.tan(0)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">0.0</code><newline/>
-    <code class="python inline-code">math.tan(math.pi/4)</code> <m:math><m:mo>&#x2192;</m:mo></m:math> <code class="python inline-code">0.999</code><newline/>
-    (Round-off error; the result should be 1.0.)</entry>
+    <entry><para id="para-00037"><code class="python inline-code">math.tan(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">0.0</code><newline/>
+    <code class="python inline-code">math.tan(math.pi/4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">0.999</code><newline/>
+    (Round-off error; the result should be 1.0.)</para></entry>
     </row>
     </tbody>
     </tgroup>
