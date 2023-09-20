@@ -16,7 +16,7 @@
 </section>
 <section id="sect-00002">
 <title>Computer programs</title>
-<para id="para-00002">A <term id="term-00001">computer</term> is an electronic device that stores and processes information. Examples of computers include smartphones, tablets, laptops, desktops, and servers. Technically speaking, a <term id="term-00002">program</term> is a sequence of instructions that a computer can run. Programs help people accomplish everyday tasks, create new technology, and have fun.</para>
+<para id="para-00002">A <term id="term-00001">computer</term> is an electronic device that stores and processes information. Examples of computers include smartphones, tablets, laptops, desktops, and servers. Technically, a <term id="term-00002">program</term> is a sequence of instructions that a computer can run. Programs help people accomplish everyday tasks, create new technology, and have fun.</para>
 <para id="para-00003">The goal of this book is to teach introductory programming and problem solving. Writing programs is a creative activity, inherently useful, and rewarding!
 No prior background in mathematics or computer science is necessary to read this book. Many different types of programs exist, as shown in the illustration below.
 This book will focus on general purpose programs that typically run "behind the scenes."</para>
@@ -51,7 +51,7 @@ This book will focus on general purpose programs that typically run "behind the 
 </note>
 <note id="note-00003">
 <title>Exploring further</title>
-<para id="para-00008">The middle chapters of this book show how to write analysis programs using real data. Example libraries that provide access to online streaming services include <link url="https://spotipy.readthedocs.io/"><emphasis effect="bold">Spotipy</emphasis></link>, <link url="https://pytube.io/"><emphasis effect="bold">Pytube</emphasis></link>, and <link url="https://github.com/mcrute/pydora"><emphasis effect="bold">Pydora</emphasis></link>. (Python-related tools often have the letters "py" in their name.)</para>
+<para id="para-00008">The middle chapters of this book show how to write analysis programs using real data. Example libraries that provide access to online streaming services include <link url="https://spotipy.readthedocs.io/"><emphasis effect="bold">Spotipy</emphasis></link>, <link url="https://pytube.io/"><emphasis effect="bold">Pytube</emphasis></link>, and <link url="https://github.com/mcrute/pydora"><emphasis effect="bold">Pydora</emphasis></link>. Python-related tools often have the letters "py" in their name.</para>
 </note>
 </section>
 <section id="sect-00003">
@@ -97,7 +97,7 @@ System.out.println("Hello, World!");
 <note class="practice-program" id="note-00006">
 <title>Favorite song</title>
 <list id="list-00002">
-<item>This program asks for your name and displays a friendly greeting. Run the program and see what happens. Notice the second sentence is incomplete.</item>
+<item>The program below asks for your name and displays a friendly greeting. Run the program and see what happens. In the error message, EOF stands for End of File.</item>
 <item>Many of the programs in this chapter expect input from the user. Enter your name in the Input box below the code. Run the program again, and see what changes.</item>
 <item>Copy the following lines to the end of the program:
 <preformat class="python inline-code">
@@ -105,7 +105,7 @@ print("What is your favorite song?")
 song = input()
 print("Cool! I like", song, "too.")
 </preformat></item>
-<item>The modified program reads two lines of input: name and song. Add your favorite song to the Input box below your name, and run the program again.</item>
+<item>The modified program reads two lines of input: <code class="python inline-code">name</code> and <code class="python inline-code">song</code>. Add your favorite song to the Input box below your name, and run the program again.</item>
 <item>The next section of the book will explain how <code class="python inline-code">print()</code> and <code class="python inline-code">input()</code> work. Feel free to experiment with this code until you are ready to move on.</item>
 </list>
 <media alt="favorite_song_program">
