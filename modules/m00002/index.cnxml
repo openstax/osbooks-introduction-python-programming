@@ -113,5 +113,171 @@ print("Cool! I like", song, "too.")
 </media>
 </note>
 </section>
+
+<table summary=" " id="table-00001">
+  <title>Null identification and removal examples</title>
+  <tgroup cols="4">
+  <thead>
+  <row>
+  <entry>Function</entry>
+  <entry>Example</entry>
+  <entry>Output</entry>
+  <entry>Explanation</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry><code class="python" lang="python">isnull()</code></entry>
+  <entry><code class="python" lang="python">df.isnull()</code></entry>
+  <entry><table summary=" " id="table-00002">
+    <tgroup cols="4">
+    <thead>
+    <row>
+      <entry></entry>
+      <entry>Column 1</entry>
+      <entry>Column 2</entry>
+      <entry>Column 3</entry>
+    </row>
+    </thead>
+    <tbody>
+      <row>
+        <entry>0</entry>
+        <entry>False</entry>
+        <entry>True</entry>
+        <entry>False</entry>
+      </row>
+      <row>
+        <entry>1</entry>
+        <entry>False</entry>
+        <entry>False</entry>
+        <entry>False</entry>
+      </row>
+      <row>
+        <entry>2</entry>
+        <entry>False</entry>
+        <entry>False</entry>
+        <entry>False</entry>
+      </row>
+      <row>
+        <entry>3</entry>
+        <entry>False</entry>
+        <entry>False</entry>
+        <entry>True</entry>
+      </row>
+      <row>
+        <entry>4</entry>
+        <entry>False</entry>
+        <entry>False</entry>
+        <entry>True</entry>
+      </row>
+    </tbody>
+    </tgroup>
+  </table></entry>
+  <entry><code class="python" lang="python">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</entry>
+  </row>
+  <row>
+    <entry><code class="python" lang="python">isnull()</code></entry>
+    <entry><code class="python" lang="python">df.isnull()</code></entry>
+    <entry><table summary=" " id="table-00003">
+      <tgroup cols="4">
+      <thead>
+      <row>
+        <entry></entry>
+        <entry>Column 1</entry>
+        <entry>Column 2</entry>
+        <entry>Column 3</entry>
+      </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>0</entry>
+          <entry>False</entry>
+          <entry>True</entry>
+          <entry>False</entry>
+        </row>
+        <row>
+          <entry>1</entry>
+          <entry>False</entry>
+          <entry>False</entry>
+          <entry>False</entry>
+        </row>
+        <row>
+          <entry>2</entry>
+          <entry>False</entry>
+          <entry>False</entry>
+          <entry>False</entry>
+        </row>
+        <row>
+          <entry>3</entry>
+          <entry>False</entry>
+          <entry>False</entry>
+          <entry>True</entry>
+        </row>
+        <row>
+          <entry>4</entry>
+          <entry>False</entry>
+          <entry>False</entry>
+          <entry>True</entry>
+        </row>
+      </tbody>
+      </tgroup>
+    </table></entry>
+    <entry><code class="python" lang="python">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</entry>
+    </row>
+    <row>
+      <entry><code class="python" lang="python">isnull()</code></entry>
+      <entry><code class="python" lang="python">df.isnull()</code></entry>
+      <entry><table summary=" " id="table-00004">
+        <tgroup cols="4">
+        <thead>
+        <row>
+          <entry></entry>
+          <entry>Column 1</entry>
+          <entry>Column 2</entry>
+          <entry>Column 3</entry>
+        </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>0</entry>
+            <entry>False</entry>
+            <entry>True</entry>
+            <entry>False</entry>
+          </row>
+          <row>
+            <entry>1</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+          </row>
+          <row>
+            <entry>2</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+            <entry>True</entry>
+          </row>
+          <row>
+            <entry>4</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+            <entry>True</entry>
+          </row>
+        </tbody>
+        </tgroup>
+      </table></entry>
+      <entry><code class="python" lang="python">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</entry>
+      </row>
+  
+  </tbody>
+  </tgroup>
+  </table>
+
+  
 </content>
 </document>
