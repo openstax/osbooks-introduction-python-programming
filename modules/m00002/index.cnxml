@@ -129,7 +129,8 @@ print("Cool! I like", song, "too.")
   <row>
   <entry><code class="python" lang="python">isnull()</code></entry>
   <entry><code class="python" lang="python">df.isnull()</code></entry>
-  <entry><table summary=" " id="table-00002">
+  <entry>
+    <table class="unnumbered" summary=" " id="table-00002">
     <tgroup cols="4">
     <thead>
     <row>
@@ -178,7 +179,8 @@ print("Cool! I like", song, "too.")
   <row>
     <entry><code class="python" lang="python">isnull()</code></entry>
     <entry><code class="python" lang="python">df.isnull()</code></entry>
-    <entry><table summary=" " id="table-00003">
+    <entry>
+      <table class="unnumbered" summary=" " id="table-00003">
       <tgroup cols="4">
       <thead>
       <row>
@@ -227,7 +229,8 @@ print("Cool! I like", song, "too.")
     <row>
       <entry><code class="python" lang="python">isnull()</code></entry>
       <entry><code class="python" lang="python">df.isnull()</code></entry>
-      <entry><table summary=" " id="table-00004">
+      <entry>
+        <table class="unnumbered" summary=" " id="table-00004">
         <tgroup cols="4">
         <thead>
         <row>
