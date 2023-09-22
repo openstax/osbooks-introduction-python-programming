@@ -7,10 +7,10 @@
   </metadata>
   <content class="introduction">
     <figure class="splash" id="fig-00001">
-    <media alt="A row of arcade games">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    <media alt="overhead view of arcade games with people playing the games">
+    <image mime-type="image/jpg" src="../../media/Python_06_00_000.jpg"/>
     </media>
-    <caption><link url="https://unsplash.com/photos/jbIsTd7rdd8">Photo</link> by <link url="https://unsplash.com/@spideyjoey">Joey kwok</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+    <caption>credit: modification of work "IMG_3037", by Jay Roc/Flickr, Public Domain</caption>
     </figure>
     <para id="para-00001">Functions are the next step towards creating optimized code as a software developer. If the same block of code is reused repeatedly, a function allows the programmer to write the block of code once, name the block, and use the code as many times as needed by calling the <span class="red-code">block by</span> name. Functions can read in values and return values to perform tasks including complex calculations.</para>
     <para id="para-00002">Like branching statements discussed in Chapter <span class="blue-code">4</span>, functions allow different paths of execution through a program, and Chapter <span class="blue-code">6</span> discusses control flow and the scope of variables in more detail.</para>
