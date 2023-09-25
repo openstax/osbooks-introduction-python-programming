@@ -17,38 +17,73 @@
     <section id="sect-00002">
     <title>Nested dictionaries</title>
     <para id="para-00002">As described before, Python dictionaries are a type of data structure that allows for storing data in key-value pairs. <term id="term-00001">Nested dictionaries</term> are dictionaries that are stored as values within another dictionary. Ex: An organizational chart with keys being different departments and values being dictionaries of employees in a given department. For storing employee information in a department, a dictionary can be used with keys being employee IDs and values being employee names. The figure below outlines the structure of such nested dictionaries and how nested values can be accessed.</para>
-    <table summary=" " id="table-00001">
-    <title>Defining nested dictionaries and accessing elements</title>
-    <tgroup cols="1">
-    <tbody>
-    <row>
-    <entry><emphasis effect="bold">Defining nested dictionaries</emphasis>
-    <code class="python" lang="python">
-    company_org_chart = {
-      "Marketing": {
-        "ID234": "Jane Smith"
-      },
-      "Sales": {
-        "ID123": "Bob Johnson",
-        "ID122": "David Lee"
-      },
-      "Engineering": {
-        "ID303": "Radhika Potlapally",
-        "ID321": "Maryam Samimi"
-      }
-    }
-    </code></entry>
-    <entry><emphasis effect="bold">Accessing nested dictionary items</emphasis>
-    <code class="python" lang="python">
-    print(company_org_chart["Sales"]["ID122"])
-    print(company_org_chart["Engineering"]["ID321"])
-    </code><newline/>
-    David Lee<newline/>
-    Maryam Samimi</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+    
+    <example id="exam-00001">
+      <title>Defining nested dictionaries and accessing elements</title>
+      <table summary=" " id="table-00001">
+        <tgroup cols="1">
+          <thead>
+            <row>
+            <entry>Defining nested dictionaries</entry>
+          </row>
+          </thead>
+        <tbody>
+        <row>
+        <entry>
+          <code class="python" lang="python">
+            company_org_chart = {
+              "Marketing": {
+                "ID234": "Jane Smith"
+              },
+              "Sales": {
+                "ID123": "Bob Johnson",
+                "ID122": "David Lee"
+              },
+              "Engineering": {
+                "ID303": "Radhika Potlapally",
+                "ID321": "Maryam Samimi"
+              }
+            }
+            </code>
+        </entry>
+      </row>
+     
+      </tbody>
+      </tgroup>
+      </table>
+
+      <table summary=" " id="table-00002">
+        <tgroup cols="1">
+          <thead>
+            <row>
+            <entry>Accessing nested dictionary items</entry>
+          </row>
+          </thead>
+        <tbody>
+        <row>
+        <entry>
+          <code class="python" lang="python">
+            print(company_org_chart["Sales"]["ID122"])
+            print(company_org_chart["Engineering"]["ID321"])
+            </code><newline/>
+            <code class="python" lang="python">
+            David Lee
+            Maryam Samimi</code>
+        </entry>
+      </row>
+      <row>
+        <entry>
+          <code class="python" lang="python">
+          Berkeley
+          Santa Cruz
+          Mountain View
+          </code></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </example>
+    
     <note class="learning-questions" id="note-00001">
     <title>Nested dictionary structure</title>
     <exercise id="exer-00001">
