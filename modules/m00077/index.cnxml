@@ -17,53 +17,108 @@
     <section id="sect-00002">
     <title>Conditionals for dictionary</title>
     <para id="para-00002">Conditional statements can be used with dictionaries to check if certain keys, values, or dictionary items exist in the dictionary or if a value satisfies a particular condition.</para>
-    <table summary=" " id="table-00001">
-    <title>Templates and examples of a conditional statement on a dictionary.</title>
+    <example id="exam-00001">
+      <title>Templates and examples of a conditional statement on a dictionary.</title>
+  <table summary=" " id="table-00001">
     <tgroup cols="1">
+      <thead>
+        <row>
+        <entry>dict.items()</entry>
+      </row>
+      </thead>
     <tbody>
     <row>
-    <entry>dict.items()
+    <entry>
     <code class="python" lang="python">
-    # (key, value) in dictionary.items()
+    # (key, value) in dictionary.items()<newline/>
     movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
     print(("Interstellar", 2014) in movies.items())
     </code>
     </entry>
-    <entry>True</entry>
   </row>
   <row>
-    <entry>Conditionals on values or keys
-    <code class="python" lang="python">
-    # dictionary[key] operand test_value<newline/>
-    movies = {"The godfather": 1974, "Interstellar": 2014}
-    print(movies["The godfather"] &lt; 2000)<newline/>
-    </code>
-    </entry>
-    <entry>True</entry>
+    <entry><para id="para-00101"><code class="python inline-code">True</code></para></entry>
   </row>
-  <row>
-    <entry>dict.keys()
-    <code class="python" lang="python">
-    # key in dictionary.keys()<newline/>
-    movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
-    print("Interstellar" in movies.keys())
-    </code>
-    </entry>
-    <entry>True</entry>
-  </row>
-  <row>
-    <entry>dict.values()
-    <code class="python" lang="python">
-    # value in dictionary.values()<newline/>
-    movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
-    print(2014 in movies.values())
-    </code>
-    </entry>
-    <entry>True</entry>
+</tbody>
+</tgroup>
+</table>
+  
+
+<table summary=" " id="table-00002">
+  <tgroup cols="1">
+    <thead>
+      <row>
+      <entry>Conditionals on values or keys</entry>
     </row>
-    </tbody>
-    </tgroup>
-    </table>
+    </thead>
+  <tbody>
+  <row>
+  <entry>
+    <code class="python" lang="python">
+      # dictionary[key] operand test_value<newline/>
+      movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+      print(movies["The godfather"] &lt; 2000)
+      </code>
+  </entry>
+</row>
+<row>
+  <entry><para id="para-00102"><code class="python inline-code">True</code></para></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+<table summary=" " id="table-00003">
+  <tgroup cols="1">
+    <thead>
+      <row>
+      <entry>dict.keys()</entry>
+    </row>
+    </thead>
+  <tbody>
+  <row>
+  <entry>
+    <code class="python" lang="python">
+      # key in dictionary.keys()<newline/>
+      movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+      print("Interstellar" in movies.keys())
+      </code>
+  </entry>
+</row>
+<row>
+  <entry><para id="para-00103"><code class="python inline-code">True</code></para></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<table summary=" " id="table-00004">
+  <tgroup cols="1">
+    <thead>
+      <row>
+      <entry>dict.values()</entry>
+    </row>
+    </thead>
+  <tbody>
+  <row>
+  <entry>
+    <code class="python" lang="python">
+      # value in dictionary.values()<newline/>
+      movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+      print(2014 in movies.values())
+      </code>
+  </entry>
+</row>
+<row>
+  <entry><para id="para-00104"><code class="python inline-code">True</code></para></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+  
+  </example>
+
     <note class="learning-questions" id="note-00001">
     <title>Conditionals on dictionaries</title>
     <para id="para-00003">Given the dictionary <code class="python inline-code">fruit_count = {"apple": 2, "orange": 5, "pomegranate": 1}</code>, answer the following questions.</para>
@@ -95,54 +150,100 @@
     # Statements to execute after the loop
     </code>
     </note>
-    <table summary=" " id="table-00002">
-    <title>Iterating over a dictionary.</title>
-    <tgroup cols="1">
-    <tbody>
-    <row>
-    <entry>dict.items()
-    <code class="python" lang="python">
-    zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
-    for key, value in zip_codes.items():
-    print(key, value)
-    </code></entry>
-    <entry>
-    Berkeley 94709<newline/>
-    Santa Cruz 95064<newline/>
-    Mountain View 94030
-    </entry>
-    </row>
-    <row>
-    <entry>dict.keys()
-    <code class="python" lang="python">
-    zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
-    for key in zip_codes.keys():
-    print(key)
-    </code>
-    </entry>
-    <entry>
-    Berkeley<newline/>
-    Santa Cruz<newline/>
-    Mountain View
-    </entry>
-    </row>
-    <row>
-    <entry>dict.values()
-    <code class="python" lang="python">
-    zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
-    for value in zip_codes.values():
-    print(value)
-    </code>
-    </entry>
-    <entry>
-    94709
-    95064
-    94030
-    </entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+
+    <example id="exam-00002">
+      <title>Iterating over a dictionary.</title>
+      <table summary=" " id="table-00005">
+        <tgroup cols="1">
+          <thead>
+            <row>
+            <entry>dict.items()</entry>
+          </row>
+          </thead>
+        <tbody>
+        <row>
+        <entry>
+          <code class="python" lang="python">
+            zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+            for key, value in zip_codes.items():
+              print(key, value)
+            </code>
+        </entry>
+      </row>
+      <row>
+        <entry><code class="python" lang="python">    
+        Berkeley 94709
+        Santa Cruz 95064
+        Mountain View 94030</code>
+      </entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+
+      <table summary=" " id="table-00006">
+        <tgroup cols="1">
+          <thead>
+            <row>
+            <entry>dict.keys()</entry>
+          </row>
+          </thead>
+        <tbody>
+        <row>
+        <entry>
+          <code class="python" lang="python">
+          zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+          for key in zip_codes.keys():
+            print(key)
+          </code>
+        </entry>
+      </row>
+      <row>
+        <entry>
+          <code class="python" lang="python">
+          Berkeley
+          Santa Cruz
+          Mountain View
+          </code></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+
+      <table summary=" " id="table-00007">
+        <tgroup cols="1">
+          <thead>
+            <row>
+            <entry>dict.values()</entry>
+          </row>
+          </thead>
+        <tbody>
+        <row>
+        <entry>
+          <code class="python" lang="python">
+          zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+          for value in zip_codes.values():
+            print(value)
+            </code>
+          
+        </entry>
+      </row>
+      <row>
+        <entry>
+          <code class="python" lang="python">
+          94709
+          95064
+          94030
+          </code></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+
+      
+    </example>
+
+
     <note class="learning-questions" id="note-00003">
     <title>Loops on dictionaries</title>
     <exercise id="exer-00004">
