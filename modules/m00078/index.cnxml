@@ -65,19 +65,11 @@
           <code class="python" lang="python">
             print(company_org_chart["Sales"]["ID122"])
             print(company_org_chart["Engineering"]["ID321"])
-            </code><newline/>
+            </code>
             <code class="python" lang="python">
             David Lee
             Maryam Samimi</code>
         </entry>
-      </row>
-      <row>
-        <entry>
-          <code class="python" lang="python">
-          Berkeley
-          Santa Cruz
-          Mountain View
-          </code></entry>
       </row>
       </tbody>
       </tgroup>

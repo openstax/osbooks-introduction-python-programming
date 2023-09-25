@@ -40,7 +40,7 @@
     </code></entry>
     </row>
     <row>
-    <entry>Dictionary creation using the <code class="python inline-code">dict()</code> method</entry>
+    <entry><para id="para-00101">Dictionary creation using the <code class="python inline-code">dict()</code> method</para></entry>
     <entry><code class="python" lang="python">
     # Using a list
     my_list = [(key1, value1), (key2, value2)]
