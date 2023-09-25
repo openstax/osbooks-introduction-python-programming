@@ -47,7 +47,7 @@
     </row>
     <row>
     <entry><para id="para-00008"><code class="python inline-code">index()</code></para></entry>
-    <entry>Returns the index of the first occurrence of a given substring in a string. If the substring does not exist in the string, a <code class="python inline-code">ValueError</code> is returned.</entry>
+    <entry><para id="para-00014">Returns the index of the first occurrence of a given substring in a string. If the substring does not exist in the string, a <code class="python inline-code">ValueError</code> is returned.</para></entry>
     </row>
     <row>
     <entry><para id="para-00009"><code class="python inline-code">format()</code></para></entry>

@@ -142,12 +142,18 @@
     <section id="sect-00006">
     <title>String length and alignment formatting</title>
     <para id="para-00022">Formatting the string length may be needed for standardizing the output style when multiple string values of the same context are being created and printed. Example below shows a use case of string formatting in printing a table with minimum-length columns and specific alignment.</para>
+    <example id="exam-00005">
+      <title>Numbered replacement field to build a phrase</title>
     <para id="para-00035">A formatted table of a class roster</para>
-    <para id="para-00036">Student Name              Major          Grade</para>
-    <para id="para-00037">----------------------------------------------</para>
-    <para id="para-00038">Manoj Sara          Computer Science     A-</para>
-    <para id="para-00039">Gabriel Wang     Electrical Engineering   A</para>
-    <para id="para-00040">Alex Narayanan       Social Sciences     A+</para>
+    <code class="python" lang="python">
+    Student Name              Major          Grade
+    ----------------------------------------------
+    Manoj Sara          Computer Science        A-
+    Gabriel Wang     Electrical Engineering      A
+    Alex Narayanan       Social Sciences        A+
+    </code>
+    </example>
+
     <para id="para-00023">In the example above, the table is formatted into 3 columns. The first column takes up 15 characters and is left-aligned. The second column uses 25 characters and is center-aligned, and the last column uses 2 characters and is right aligned. Alignment and length format specifications controls are used to create the formatted table above.</para>
     <para id="para-00024">The field width in string format specification is used to specify the minimum length of the given string. If the string is shorter than the given minimum length, the string will be padded by space characters. A <term id="term-00006">field width</term> is included in the format specification field using an integer after a colon. Ex: <code class="python inline-code">{name:15}</code> specifies that the minimum length of the string values that are passed to the <code class="python inline-code">name</code> field is 15.</para>
     <para id="para-00025">Since the field width can be used to specify the minimum length of a string, the string can be padded with space characters from right, left, or both to be left-aligned, right-aligned, and centered, respectively. The <term id="term-00007">string alignment type</term> is specified using <code class="python inline-code">&lt;</code>, <code class="python inline-code">></code>, or <code class="python inline-code">^</code>characters after the colon when field length is specified. Ex: <code class="python inline-code">{name:^20}</code> specifies a named replacement field with the minimum length of 20 characters which is center-aligned.</para>
