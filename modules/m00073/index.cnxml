@@ -8,9 +8,9 @@
   <content class="introduction">
     <figure class="splash" id="fig-00001">
     <media alt="An image of a dictionary.">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    <image mime-type="image/jpg" src="../../media/Python_10_00_000.jpg"/>
     </media>
-    <caption><link url="https://www.pexels.com/photo/yellow-tassel-159581/">Photo</link> by <link url="https://www.pexels.com/@pixabay/">Pixabay</link> on <link url="https://pexel.com/">Pexel</link></caption>
+    <caption>credit: modification of work "Dictionary", by Caleb Roenigk/Flickr, CC BY 2.0</caption>
     </figure>
     <para id="para-00001">A Python <term id="term-00001">dictionary</term> is a data type for storing the data in key-value pair format. In this chapter, the dictionary data type is introduced. This chapter also introduces ways to use dictionaries in the code, including looping over dictionary items and performing conditional statements on a dictionary.</para>
     </content>

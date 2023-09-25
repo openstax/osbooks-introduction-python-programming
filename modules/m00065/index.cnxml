@@ -7,10 +7,10 @@
   </metadata>
   <content class="introduction">
     <figure class="splash" id="fig-00001">
-    <media alt="A hand written shopping list">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    <media alt='A photo of a notepad and a pen. The notepad says "Budget" across the top, with a numbered list below…'>
+    <image mime-type="image/jpg" src="../../media/Python_09_00_000.jpg"/>
     </media>
-    <caption><link url="https://unsplash.com/photos/C4FbCe4L_pw">Photo</link> by <link url="https://unsplash.com/@tobben63s">Torbjorn Helgesen</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+    <caption>credit: modification of work "Budget and Bills" by Alabama Extension/Flickr, Public Domain</caption>
   </figure>
     <para id="para-00001">Programmers often work on collections of data. Lists are a useful way of collecting data elements. Python lists are extremely flexible, and unlike strings, a list's contents can be changed.</para>
     <para id="para-00002">Chapter 3 introduced lists. This chapter explores operations that can be performed on lists.</para>
