@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Basic output</title>
-    <para id="para-00002">The <term id="term-00001">print()</term> function displays output to the user. <term id="term-00002">Output</term> is the information or result produced by a program. The <code>sep</code> and <code>end</code> options can be used to customize the output. Table <link target-id="table-00001"/> shows examples of <code>sep</code> and <code>end</code>.</para>
+    <para id="para-00002">The <term id="term-00001">print()</term> function displays output to the user. <term id="term-00002">Output</term> is the information or result produced by a program. The <code>sep</code> and <code>end</code> options can be used to customize the output. <link target-id="table-00001"/> shows examples of <code>sep</code> and <code>end</code>.</para>
     <para id="para-00003">Multiple values, separated by commas, can be printed in the same statement. By default, each value is separated by a space character in the output. The <code>sep</code> option can be used to change this behavior.</para>
     <para id="para-00004">By default, the print() function adds a newline character at the end of the output. A <term id="term-00003">newline</term> character tells the display to move to the next line. The <code>end</code> option can be used to continue printing on the same line.</para>
     <table summary=" " id="table-00001">
