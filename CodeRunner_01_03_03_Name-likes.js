@@ -1,1 +1,0 @@
-window.parameters = {"files": [{"name": "name_likes.py", "contents": "# Type your code after this comment\n", "solution": "print(\"What is your name? \")\nname = input()\nprint(\"What do you like? \")\nlike = input()\nprint()\nprint(name, \"likes\", like)\n"}], "input": null, "showSolution": true};
