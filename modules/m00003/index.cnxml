@@ -6,106 +6,148 @@
     <md:uuid>0de1cd72-7923-4ddb-8334-1a0a18ea1344</md:uuid>
   </metadata>
   <content>
-<section id="sect-00001">
-<title>Learning objectives</title>
-<para id="para-00013">By the end of this section you should be able to</para>
-<list id="list-00001">
-<item>Display output using the print() function.</item>
-<item>Obtain user input using the input() function.</item>
-</list>
-</section>
-<section id="sect-00002">
-<title>Basic output</title>
-<para id="para-00001"><span class="red-code">The purpose for producing output is to observe what occurs when a program runs</span>. In Python, output is produced with <code class="python inline-code">print(data)</code>. Ex. <code class="python inline-code">print("Today is Monday")</code> <span class="magenta-code">will print "Today is Monday" to the screen</span>.</para>
-<para id="para-00002"><span class="magenta-code">T</span>wo or more <span class="red-code">data items separated by commas</span> produce <span class="red-code">a single line of</span> output. <span class="red-code">Ex.</span> <code class="python inline-code">print("The time is", "8 AM")</code> <span class="red-code">will print "The time is 8 AM" to the screen on a single line.</span></para>
-<para id="para-00003"><span class="red-code">By default</span>, <code class="python inline-code">print(data)</code> <span class="magenta-code">introduces a</span> <span class="red-code">new line after</span> <span class="magenta-code">the output</span>. <code class="python inline-code">end=</code> <span class="red-code">is used to</span> <span class="magenat-code">avoid a new line</span> <span class="red-code">after</span> the output. <span class="magenta-code">Ex.</span> <span class="red-code">"The weather for today is sunny!" is printed to the screen</span> <span class="magenta-code">on a single line</span> <span class="red-code">by the following:</span>
-<code class="python inline-code">print("The weather for today is", end=" ")<newline/>
-print("sunny!")
-</code></para>
-<note class="guided-slides" id="note-00001">
-<title>Displaying output to the user</title>
-<media alt="displaying_output_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/displaying-output"/>
-</media>
-</note>
-<note class="learning-questions" id="note-00002">
-<title>The print() function</title>
-<exercise id="exer-00001">
-<problem id="prob-00001">
-<para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch01-m02-p01"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00002">
-<problem id="prob-00002">
-<para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch01-m02-p02"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00003">
-<problem id="prob-00003">
-<para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch01-m02-p03"/></para>
-</problem>
-</exercise>
-</note>
-</section>
-<section id="sect-00003">
-<title>Basic input</title>
-<para id="para-00007"><span class="red-code">When a computer program runs, it often requests input data from</span> a <span class="red-code">user</span>. In Python, input data is obtained with named_item = input(), where named_item <span class="magenta-code">stores the input entered by a user.</span> Ex. name = input() <span class="magenta-code">stores the input entered by a user into name</span>.</para>
-<note class="guided-slides" id="note-00003">
-<title>Obtaining input from the user</title>
-<media alt="obtaining_input_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/obtaining-input"/>
-</media>
-</note>
-<note class="learning-questions" id="note-00004">
-<title>The input() function</title>
-<exercise id="exer-00004">
-<problem id="prob-00004">
-<para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch01-m02-p04"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00005">
-<problem id="prob-00005">
-<para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch01-m02-p05"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00006">
-<problem id="prob-00006">
-<para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch01-m02-p06"/></para>
-</problem>
-</exercise>
-</note>
-</section>
-<section id="sect-00004">
-<title>Programming practice</title>
-<note class="practice-program" id="note-00005">
-<title>Frost poem</title>
-<para id="para-00011">Write a Python computer program that uses multiple print() statements to produce the following:
-<list id="list-00002">
-<item>I shall be telling this with a sigh</item>
-<item>Somewhere ages and ages hence:</item>
-<item>Two roads diverged in a wood, and I--</item>
-<item>I took the one less traveled by,</item>
-<item>And that has made all the difference.</item>
-</list></para>
-<media alt="frost_poem_program">
-<iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_02_Frost-poem.html"/>
-</media>
-</note>
-<note class="practice-program" id="note-00006">
-<title>Name likes</title>
-<para id="para-00012">Write a Python computer program that
-<list id="list-00003">
-<item>asks the user their name</item>
-<item>assigns their response to a variable, name</item>
-<item>asks the user what they like</item>
-<item>assigns their response to a variable, like</item>
-<item><span class="magenta-code">prints</span> a blank line of output</item>
-<item><span class="magenta-code">prints the variable</span> name, "likes", <span class="magenta-code">followed by the variable</span> like as a single line of output</item>
-</list></para>
-<media alt="name_likes_program">
-<iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_03_Name-likes.html"/>
-</media>
-</note>
-</section>
-</content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Display output using the print() function.</item>
+    <item>Obtain user input using the input() function.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Basic output</title>
+    <para id="para-00002">The <term id="term-00001">print()</term> function displays output to the user. <term id="term-00002">Output</term> is the information or result produced by a program. The <code>sep</code> and <code>end</code> options can be used to customize the output. Table <link target-id="table-00001"/> shows examples of <code>sep</code> and <code>end</code>.</para>
+    <para id="para-00003">Multiple values, separated by commas, can be printed in the same statement. By default, each value is separated by a space character in the output. The <code>sep</code> option can be used to change this behavior.</para>
+    <para id="para-00004">By default, the print() function adds a newline character at the end of the output. A <term id="term-00003">newline</term> character tells the display to move to the next line. The <code>end</code> option can be used to continue printing on the same line.</para>
+    <table summary=" " id="table-00001">
+    <title>Example uses of print()</title>
+    <tgroup cols="2">
+    <thead>
+    <row>
+    <entry>Code</entry>
+    <entry>Output</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code>print("Today is Monday.")</code><newline/>
+    <code>print("Monday string beans.")</code></entry>
+    <entry><code>Today is Monday.</code><newline/>
+    <code>Monday string beans.</code></entry>
+    </row>
+    <row>
+    <entry><code>print("Today", "is", "Monday")</code><newline/>
+    <code>print("Today", "is", "Monday", sep="...")</code></entry>
+    <entry><code>Today is Monday</code><newline/>
+    <code>Today...is...Monday</code></entry>
+    </row>
+    <row>
+    <entry><code>print("Today is Monday, ", end="")</code><newline/>
+    <code>print("Monday string beans.")</code></entry>
+    <entry><code>Today is Monday, Monday string beans.</code></entry>
+    </row>
+    <row>
+    <entry><code>print("Today", "is", "Monday", sep="? ", end="!!")</code><newline/>
+    <code>print("Monday string beans.")</code></entry>
+    <entry><code>Today? is? Monday!!Monday string beans.</code></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="guided-slides" id="note-00001">
+    <title>Displaying output to the user</title>
+    <media alt="displaying_output_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/displaying-output"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>The print() function</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch01-m02-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch01-m02-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch01-m02-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note id="note-00003">
+    <title>Do spaces really matter?</title>
+    <para id="para-00008">Spaces and newline characters are not inherently important. However, learning to be precise is an essential skill for programming. Noticing little details, like how words are separated and how lines end, helps new programmers become better.</para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Basic input</title>
+    <para id="para-00009">Computer programs often receive input from the user. <term id="term-00004">Input</term> is what a user enters into a program. An input statement, <code><emphasis effect="italics">variable</emphasis> = input(<emphasis effect="italics">"prompt"</emphasis>)</code>, has three parts:</para>
+    <list list-type="enumerated" id="list-00002">
+    <item>A <term id="term-00005">variable</term> refers to a value stored in memory. In the statement above, <emphasis effect="italics">variable</emphasis> can be replaced with any name the programmer chooses.</item>
+    <item>The <term id="term-00006">input()</term> function reads one line of input from the user. The input is stored in the computer's memory and can be accessed later using the variable.</item>
+    <item>A <term id="term-00007">prompt</term> is a short message that indicates the program is waiting for input. In the statement above, <emphasis effect="italics">"prompt"</emphasis> can be omitted or replaced with any message.</item>
+    </list>
+    <note class="guided-slides" id="note-00004">
+    <title>Obtaining input from the user</title>
+    <media alt="obtaining_input_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/obtaining-input"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00005">
+    <title>The input() function</title>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch01-m02-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch01-m02-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch01-m02-p06"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Programming practice</title>
+    <note class="practice-program" id="note-00006">
+    <title>Frost poem</title>
+    <para id="para-00013">Write a program that uses multiple print() statements to output the following poem by <link url="https://en.wikipedia.org/wiki/Robert_Frost">Robert Frost</link>. Each print() statement should correspond to one line of output.</para>
+    <para id="para-00014"><emphasis effect="italics">Tip:</emphasis> You don't need to write the entire program all at once. Try writing the first print() statement, and then click the <emphasis effect="italics">Run</emphasis> button. Then write the next print() statement, and click the <emphasis effect="italics">Run</emphasis> button again. Continue writing and testing the code incrementally until you finish the program.</para>
+    <code class="python" lang="python">
+    I shall be telling this with a sigh
+    Somewhere ages and ages hence:
+    Two roads diverged in a wood, and I--
+    I took the one less traveled by,
+    And that has made all the difference.
+    </code>
+    <media alt="frost_poem_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_02_Frost-poem.html"/>
+    </media>
+    </note>
+    <note class="practice-program" id="note-00007">
+    <title>Name and likes</title>
+    <para id="para-00015">Write a program that asks the following two questions (example input in bold):</para>
+    <code class="python" lang="python">
+    What is your name? Shakira
+    What do you like? singing
+    </code>
+    <para id="para-00016">Output a blank line after reading the input. Then output the following message based on the input:</para>
+    <code class="python" lang="python">
+    Shakira likes singing
+    </code>
+    <media alt="name_likes_program">
+    <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_03_Name-likes.html"/>
+    </media>
+    </note>
+    </section>
+    </content>
 </document>
