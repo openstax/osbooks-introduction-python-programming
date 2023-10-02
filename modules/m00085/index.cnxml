@@ -46,7 +46,9 @@
     <section id="sect-00003">
     <title>Using aliases</title>
     <para id="para-00007"><term id="term-00001">Aliasing</term> allows the programmer to use an alternative name for imported items. Ex: <code class="python inline-code">import triangle as tri</code> allows the program to refer to the triangle module as tri. Aliasing is useful to avoid name collisions but should be used carefully to avoid confusion.</para>
-    <para id="para-00008"><emphasis effect="bold">Using aliasing to import character.</emphasis></para>
+    <example id="exam-00001">
+      <title>Using aliasing to import character.</title>
+    
     <para id="para-00009">character.py</para>
     <code class="python" lang="python">
     class Level:
@@ -71,6 +73,7 @@
     bard_level.level_up()
     ...
     </code>
+    </example>
     <note class="learning-questions" id="note-00003">
     <title>Using an alias</title>
     <para id="para-00011">Consider the example above. Suppose a program imports the character module using <code class="python inline-code">import character as game_char</code>.</para>

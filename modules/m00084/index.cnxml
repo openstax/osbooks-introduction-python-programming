@@ -147,8 +147,10 @@
     </tbody>
     </tgroup>
     </table>
+    <example id="exam-00001">
+      <title>Overloading comparison operators for the Account class.</title>
     <table summary=" " id="table-00003">
-    <title>Overloading comparison operators for the Account class.</title>
+    <title/>
     <tgroup cols="2">
     <tbody>
     <row>
@@ -182,6 +184,7 @@
     </tbody>
     </tgroup>
     </table>
+    </example>
     <note class="learning-questions" id="note-00005">
     <title>Comparison operator overloading</title>
     <para id="para-00011">Consider the example above.</para>
