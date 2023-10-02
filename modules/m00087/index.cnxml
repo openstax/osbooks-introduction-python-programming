@@ -8,9 +8,9 @@
   <content class="introduction">
     <figure class="splash" id="fig-00001">
     <media alt="Photo of a seashell showing recursive spiral pattern.">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    <image mime-type="image/jpg" src="../../media/Python_12_00_000.jpg"/>
     </media>
-    <caption><link url="https://www.pexels.com/photo/orange-and-white-seashell-on-white-surface-33234/">Orange and White Seashell on White Surface</link> by unknown on <link url="https://www.pexels.com/">Pexels</link></caption>
+    <caption>credit: modification of work "Rings from the Ocean", by Sue Corbisez/Flickr, CC BY 2.0</caption>
     </figure>
     <para id="para-00001">Recursion is a powerful programming technique to write solutions compactly. Recursion simplifies programs by calling smaller versions of a given problem which are used to generate the solution to the overall problem.</para>
     <para id="para-00002">In advanced programming, some programs are difficult to write without the use of recursion. So recursion is also a style of programming which enables us to simplify programs.</para>

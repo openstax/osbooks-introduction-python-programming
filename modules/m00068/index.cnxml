@@ -44,7 +44,7 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title>Using <code>sort()</code> and <code>reverse()</code></title>
+    <title>Using <code class="python inline-code">sort()</code> and <code class="python inline-code">reverse()</code></title>
     <para id="para-00007">Python provides functions for arranging elements in a list.
     <list id="list-00002">
     <item>The <code>sort()</code> function arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters leading to unexpected results. Ex: 'A' is ordered before 'a' in ascending order but so is 'G', thus "God" comes before "apple".</item>
