@@ -8,9 +8,9 @@
   <content class="introduction">
     <figure class="splash" id="fig-00001">
     <media alt="close up of a computer screen with a file menu open">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+    <image mime-type="image/jpg" src="../../media/Python_14_00_000.jpg"/>
     </media>
-    <caption><link url="https://unsplash.com/photos/hXrPSgGFpqQ">Photo</link> by <link url="https://unsplash.com/@ilyapavlov">Ilya Pavlov</link> on <link url="https://unsplash.com/">Unsplash</link></caption>
+    <caption>credit: Larissa Chu, CC BY 4.0</caption>
     </figure>
     <para id="para-00001">Programming often involves reading information from files and writing information into files. This chapter begins by introducing how to read from and write into files in Python.</para>
     <para id="para-00002">Reading and writing files can lead to exceptions when the file specified cannot be found. There are many other situations in which exceptions can occur. The second half of the chapter introduces exceptions and how to handle exceptions in Python.</para>
