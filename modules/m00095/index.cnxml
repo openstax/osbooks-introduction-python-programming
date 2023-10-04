@@ -86,12 +86,32 @@
     <note id="note-00005">
     <title>Alternative inheritance terms</title>
     <para id="para-00013">Python documentation for inheritance uses multiple terms to refer to the class that is inherited from and the class that inherits. This book uses superclass/subclass throughout for consistency.</para>
-    <figure id="fig-00001">
-    <media alt="FIXME: Text describing the image as precisely as possible for visually impaired users.">
-    <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
-    </media>
-    <caption/>
-    </figure>
+    <table summary=" " id="table-00001">
+      <title>Chapter 12 reference</title>
+      <tgroup cols="2">
+      <thead>
+      <row>
+      <entry>Class inherited from</entry>
+      <entry>Class that inherits</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry>superclass</entry>
+      <entry>subclass</entry>
+      </row>
+      <row>
+        <entry>base class</entry>
+        <entry>derived class</entry>
+        </row>
+        <row>
+          <entry>parent class</entry>
+          <entry>child class</entry>
+          </row>
+      </tbody>
+      </tgroup>
+      </table>
+    
     </note>
     </section>
     <section id="sect-00004">
