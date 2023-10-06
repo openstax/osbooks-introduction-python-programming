@@ -150,9 +150,9 @@
     <entry><code class="python" lang="python">
     df.isnull()
     </code></entry>
-    <entry><media alt="The content of the dataframe df is shown.">
+    <entry><para id="para-00024"><media alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image2.png"/>
-    </media></entry>
+    </media></para></entry>
     <entry><para id="para-00017"><code class="python inline-code">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</para></entry>
     </row>
     <row>
