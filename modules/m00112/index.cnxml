@@ -150,14 +150,15 @@
     <entry><code class="python" lang="python">
     df.isnull()
     </code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <entry><media alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image2.png"/>
     </media></entry>
     <entry><para id="para-00017"><code class="python inline-code">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</para></entry>
     </row>
     <row>
     <entry><code class="python" lang="python">fillna()</code></entry>
-    <entry><code class="python" lang="python">df["Column 2"] =\
+    <entry><code class="python" lang="python">
+    df["Column 2"] =\
     df["Column 2"].fillna(df["Column 2"]
       .mean())</code></entry>
     <entry><media display="inline" alt="The content of the dataframe df is shown.">
