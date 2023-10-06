@@ -87,9 +87,7 @@
     <caption>A CSV file is simply a text file with rows separated by newline \n characters and cells separated by commas. </caption>
     </figure>
     <para id="para-00112">Raw text of the file:</para>
-      <code class="python" lang="python">
-      Title, Author, Pages\n1984, George Orwell, 268\nJane Eyre, Charlotte Bronte, 532\nWalden, Henry David Thoreau, 156\nMoby Dick, Herman Melville, 538
-      </code>
+    <para id="para-00113"><code class="python inline-code">Title, Author, Pages\n1984, George Orwell, 268\nJane Eyre, Charlotte Bronte, 532\nWalden, Henry David Thoreau, 156\nMoby Dick, Herman Melville, 538</code></para>
     <example id="exam-00001">
     <title>Processing a CSV file.</title>
     <code class="python" lang="python">
