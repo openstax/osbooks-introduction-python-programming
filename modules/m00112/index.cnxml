@@ -6,5 +6,199 @@
     <md:uuid>27d50d39-3230-4745-9bbe-89a6bc677111</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section id="sect-00001">
+    <title>Learning objectives</title>
+    <para id="para-00001">By the end of this section you should be able to</para>
+    <list id="list-00001">
+    <item>Describe exploratory data analysis.</item>
+    <item>Inspect DataFrame entries through appropriate indexing.</item>
+    <item>Use filtering and slicing to obtain a subset of a DataFrame.</item>
+    <item>Identify Null values in a DataFrame.</item>
+    <item>Remove or replace Null values in a DataFrame.</item>
+    </list>
+    </section>
+    <section id="sect-00002">
+    <title>Exploratory data analysis</title>
+    <para id="para-00002"><term id="term-00001">Exploratory Data Analysis (EDA)</term> is the task of analyzing data to gain insights, identify patterns, and understand the underlying structure of the data. During EDA, data scientists visually and statistically examine data to uncover relationships, anomalies, and trends, and to generate hypotheses for further analysis. The main goal of EDA is to get familiar with the data and assess the quality of the data. Once data is understood and cleaned, data scientists may perform feature creation and hypothesis formation. A <term id="term-00002">feature</term> is an individual variable or attribute that is calculated from the raw data in the dataset.</para>
+    <para id="para-00003"><term id="term-00003">Data indexing</term> can be used to select and access specific rows and columns. Data indexing is essential in examining a dataset. In Pandas, two types of indexing methods exist:</para>
+    <list id="list-00002">
+    <item>Label-based Indexing using <code class="python inline-code">loc[]</code>: <term id="term-00004">loc[]</term> allows you to access data in a DataFrame using row/column labels. Ex: <code class="python inline-code">df.loc[row_label, column_label]</code> returns specific data at the label <code class="python inline-code">row_label</code> and <code class="python inline-code">column_label</code>.</item>
+    <item>Integer-based Indexing using <code class="python inline-code">iloc[]</code>: <term id="term-00005">iloc[]</term> allows you to access data in a DataFrame using integer-based indices. Integer indices can be passed to retrieve specific data. Ex: <code class="python inline-code">df.iloc[row_index, column_index]</code> returns a specific data at the index <code class="python inline-code">row_index</code> and <code class="python inline-code">column_index</code>.</item>
+    </list>
+    <note class="guided-slides" id="note-00001">
+    <title>Indexing a DataFrame</title>
+    <media alt="indexing_DataFrame_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/indexing-DataFrame"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00002">
+    <title>DataFrame indexing</title>
+    <para id="para-00004">Given the following code, respond to the following questions.</para>
+    <code class="python" lang="python">
+    import pandas as pd<newline/>
+    # Create sample data
+    data = {
+      "A": ["a", "b", "c", "d"],
+      "B": [12, 20, 5, -10],
+      "C": ["C", "C", "C", "C"]
+    }<newline/>
+    df = pd.DataFrame(data)</code>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch15-m04-p01"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch15-m04-p02"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch15-m04-p03"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Data slicing and filtering</title>
+    <para id="para-00008">Data slicing and filtering involve selecting specific subsets of data based on certain conditions or index/label ranges. <term id="term-00006">Data slicing</term> refers to selecting a subset of rows and/or columns from a DataFrame. Slicing can be performed using ranges, lists, or Boolean conditions. </para>
+    <list id="list-00003">
+    <item>Slicing using ranges: Ex: <code class="python inline-code">df.loc[start_row:end_row, start_column:end_column]</code> selects rows and columns within the specified ranges.</item>
+    <item>Slicing using a list: Ex: <code class="python inline-code">df.loc[[label1, label2, ...], :]</code> selects rows that are in the list <code class="python inline-code">[label1, label2, ...]</code> and includes all columns since all columns are selected by the colon operator.</item>
+    <item>Slicing based on a condition: <code class="python inline-code">df[condition]</code> selects only the rows that meet the given <code class="python inline-code">condition</code>.</item>
+    </list>
+    <para id="para-00009"><term id="term-00007">Data filtering</term> involves selecting rows or columns based on certain conditions. Ex: In the expression <code class="python inline-code">df[df['column_name'] > threshold]</code> the DataFrame <code class="python inline-code">df</code> is filtered using the selection operator (<code class="python inline-code">[]</code>) and the condition(<code class="python inline-code">df['column_name'] > threshold</code>) that is passed. All entries in the DataFrame <code class="python inline-code">df</code> where the corresponding value in the DataFrame is true will be returned.</para>
+    <note class="guided-slides" id="note-00003">
+    <title>Indexing on a flight dataset</title>
+    <media alt="indexing_flight_dataset_slides">
+    <iframe width="660" height="371.4" src="https://www.openstax.org/r/indexing-flight-dataset"/>
+    </media>
+    </note>
+    <note class="learning-questions" id="note-00004">
+    <title>DataFrame slicing and filtering</title>
+    <para id="para-00010">Given the following code, respond to the following questions.</para>
+    <code class="python" lang="python">
+    import pandas as pd<newline/>
+    # Create sample data
+    data = {
+      "A": [1, 2, 3, 4],
+      "B": [5, 6, 7, 8],
+      "C": [9, 10, 11, 12]
+    }<newline/>
+    df = pd.DataFrame(data)</code>
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch15-m04-p04"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch15-m04-p05"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch15-m04-p06"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch15-m04-p07"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Handling missing data</title>
+    <para id="para-00015">Missing values in a dataset can occur when data is not available or is not recorded properly. Identifying and removing missing values is an important step in data cleaning and preprocessing. A data scientist should consider ethical considerations throughout the EDA process, especially when handling missing data. They might consider answering questions about "why the data is missing?", "Whose data is missing", "Is the dataset, considering the missing data is a representative sample of the population under study?". The functions below are used in understanding and analyzing the missing data.</para>
+    <list id="list-00004">
+    <item><code class="python inline-code">isnull()</code>: To identify <code class="python inline-code">Null</code> entries in a DataFrame <code class="python inline-code">isnull()</code> function can be used. The return value of the function is a Boolean DataFrame with the same dimensions as the original DataFrame with <code class="python inline-code">True</code> values where missing values exist.</item>
+    <item><code class="python inline-code">dropna()</code>: The <code class="python inline-code">dropna()</code> function can be used to drop rows with <code class="python inline-code">Null</code> values.</item>
+    <item><code class="python inline-code">fillna()</code>: The <code class="python inline-code">fillna()</code> function can be used to substitute <code class="python inline-code">Null</code> values with a given value. Ex: <code class="python inline-code">df.fillna(df.mean())</code> replaces all <code class="python inline-code">Null</code> values with the average value of the specific column.</item>
+    </list>
+    <para id="para-00016">To define a null value in a DataFrame, you can use the <code class="python inline-code">np.nan</code> value from the NumPy library. Assuming that the following code is given, the table below outlines examples of identifying and removing <code class="python inline-code">Null</code> entries.</para>
+    <code class="python" lang="python">
+    import pandas as pd
+    import numpy as np<newline/>
+    # Create sample data
+    data = {
+      "Column 1": ["A", "B", "C", "D", "E"],
+      "Column 2": [np.NAN, 200, 500, 0, -10],
+      "Column 3": [True, True, False, np.NaN, np.NaN]
+    }<newline/>
+    df = pd.DataFrame(data)</code>
+    <figure class="unnumbered" id="fig-00001">
+    <media display="inline" alt="The content of the dataframe df is shown.">
+    <image mime-type="image/jpeg" src="../../media/Python_15_4_image4.png"/>
+    </media>
+    </figure>
+    <table summary=" " id="table-00001">
+    <title>Null identification and removal examples.</title>
+    <tgroup cols="4">
+    <thead>
+    <row>
+    <entry>Function</entry>
+    <entry>Example</entry>
+    <entry>Output</entry>
+    <entry>Explanation</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><code class="python" lang="python">isnull()</code></entry>
+    <entry><code class="python" lang="python">
+    df.isnull()
+    </code></entry>
+    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <image mime-type="image/jpeg" src="../../media/Python_15_4_image2.png"/>
+    </media></entry>
+    <entry><para id="para-00017"><code class="python inline-code">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</para></entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">fillna()</code></entry>
+    <entry><code class="python" lang="python">df["Column 2"] =\
+    df["Column 2"].fillna(df["Column 2"]
+      .mean())</code></entry>
+    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <image mime-type="image/jpeg" src="../../media/Python_15_4_image1.png"/></media></entry>
+    <entry><para id="para-00018">Null values in <code class="python inline-code">Column 2</code> are replaced with the mean of non-Null values in the column.</para></entry>
+    </row>
+    <row>
+    <entry><code class="python" lang="python">dropna()</code></entry>
+    <entry><code class="python" lang="python">
+    # Applied after the run of the previous row
+    df = df.dropna()</code></entry>
+    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <image mime-type="image/jpeg" src="../../media/Python_15_4_image3.png"/></media></entry>
+    <entry>All rows containing a Null value are removed from the DataFrame.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="learning-questions" id="note-00005">
+    <title>Missing value treatment</title>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch15-m04-p08"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CPL-ch15-m04-p09"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CPL-ch15-m04-p10"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Programming Practice with Google</title>
+    <para id="para-00022">Use the Google Colaboratory document below to practice EDA on a given dataset.</para>
+    <para id="para-00023"><link url="https://colab.research.google.com/drive/1-R1sB9P7RCU2nEEXfp2NVsCHyk2xU_KQ?usp=sharing">Google Colaboratory document</link></para>
+    </section>
+    </content>
 </document>
