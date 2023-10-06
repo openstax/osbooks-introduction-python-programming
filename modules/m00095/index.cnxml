@@ -87,7 +87,7 @@
     <title>Alternative inheritance terms</title>
     <para id="para-00013">Python documentation for inheritance uses multiple terms to refer to the class that is inherited from and the class that inherits. This book uses superclass/subclass throughout for consistency.</para>
     <table summary=" " id="table-00001">
-      <title>Chapter 12 reference</title>
+      <title/>
       <tgroup cols="2">
       <thead>
       <row>
