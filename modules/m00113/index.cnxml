@@ -85,7 +85,6 @@
     <section id="sect-00003">
     <title>Data visualization tools</title>
     <para id="para-00006">Many Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. Some of the most commonly-used frameworks are <code class="python inline-code">Matplotlib</code>, <code class="python inline-code">Plotly</code>, and <code class="python inline-code">Seaborn</code>. Here, some useful functionalities of <code class="python inline-code">Matplotlib</code> are summarized.</para>
-    
     <table summary=" " id="table-00002">
     <title>Matplotlib functionalities.</title>
     <tgroup cols="4">
@@ -100,8 +99,9 @@
     <tbody>
     <row>
     <entry>Bar plot</entry>
-    <entry><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</entry>
-    <entry><code class="python" lang="python">import matplotlib.pyplot as plt<newline/>
+    <entry><para id="para-00013"><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</para></entry>
+    <entry><code class="python" lang="python">
+    import matplotlib.pyplot as plt<newline/>
     # Data
     categories = ["Course A", "Course B", "Course C"]
     values = [25, 40, 30]<newline/>
@@ -120,8 +120,9 @@
     </row>
     <row>
     <entry>Line plot</entry>
-    <entry><code class="python inline-code">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</entry>
-    <entry><code class="python" lang="python">import matplotlib.pyplot as plt<newline/>
+    <entry><para id="para-00014"><code class="python inline-code">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</para></entry>
+    <entry><code class="python" lang="python">
+    import matplotlib.pyplot as plt<newline/>
     # Data
     month = ["Jan", "Feb", "Mar", "Apr", "May"]
     inflation = [6.41, 6.04, 4.99, 4.93, 4.05]<newline/>
@@ -140,7 +141,7 @@
     </row>
     <row>
     <entry>Scatter plot</entry>
-    <entry><code class="python inline-code">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots points representing <code class="python inline-code">(x, y)</code> pairs.</entry>
+    <entry><para id="para-00015"><code class="python inline-code">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots points representing <code class="python inline-code">(x, y)</code> pairs.</para></entry>
     <entry><code class="python" lang="python">
     import matplotlib.pyplot as plt<newline/>
     # Data
@@ -160,8 +161,9 @@
     </row>
     <row>
     <entry>Histogram plot</entry>
-    <entry><code class="python inline-code">plt.hist(x)</code> function takes in one input <code class="python inline-code">x</code>, and plots a histogram of values in <code class="python inline-code">x</code> to show distribution or trend.</entry>
-    <entry><code class="python" lang="python">import matplotlib.pyplot as plt
+    <entry><para id="para-00016"><code class="python inline-code">plt.hist(x)</code> function takes in one input <code class="python inline-code">x</code>, and plots a histogram of values in <code class="python inline-code">x</code> to show distribution or trend.</para></entry>
+    <entry><code class="python" lang="python">
+    import matplotlib.pyplot as plt
     import numpy as np<newline/>
     # Data: random 1000 samples
     data = np.random.randn(1000)<newline/>
@@ -179,8 +181,9 @@
     </row>
     <row>
     <entry>Box plot</entry>
-    <entry><code class="python inline-code">plt.boxplot(x)</code> function takes in one input <code class="python inline-code">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code">x</code>.</entry>
-    <entry><code class="python" lang="python">import matplotlib.pyplot as plt
+    <entry><para id="para-00017"><code class="python inline-code">plt.boxplot(x)</code> function takes in one input <code class="python inline-code">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code">x</code>.</para></entry>
+    <entry><code class="python" lang="python">
+    import matplotlib.pyplot as plt
     import numpy as np<newline/>
     # Data: random 100 samples
     data = [np.random.normal(0, 5, 100)]<newline/>
