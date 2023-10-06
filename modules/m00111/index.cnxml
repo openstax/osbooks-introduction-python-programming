@@ -207,9 +207,7 @@
     <row>
     <entry><para id="para-00014"><code class="python inline-code">head(n)</code></para></entry>
     <entry><para id="para-00015">The function allows for viewing the first <code class="python inline-code">n</code> rows. If a value is not passed, the first 5 rows will be shown.</para></entry>
-    <entry><code class="python" lang="python">
-    df.head(4)
-    </code></entry>
+    <entry><code class="python" lang="python">df.head(4)</code></entry>
     <entry><media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image3.png"/>
     </media></entry>
