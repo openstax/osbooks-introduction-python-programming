@@ -91,7 +91,7 @@
 </section>
 <section id="sect-00004">
 <title>Operator precedence</title>
-<para id="para-00014">When a calculation has multiple operators, each operator is evaluated In order of <term id="term-00002">precedence</term>. Ex: <code class="python inline-code">1 + 2 * 3</code> is <code class="python inline-code">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code">(1 + 2) * 3</code> is <code class="python inline-code">9</code>, because parentheses take precedence over multiplication.</para>
+<para id="para-00014">When a calculation has multiple operators, each operator is evaluated in order of <term id="term-00002">precedence</term>. Ex: <code class="python inline-code">1 + 2 * 3</code> is <code class="python inline-code">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code">(1 + 2) * 3</code> is <code class="python inline-code">9</code>, because parentheses take precedence over multiplication.</para>
 <table summary=" " id="table-00001">
 <title>Operator precedence from highest to lowest</title>
 <tgroup cols="4">
@@ -174,9 +174,9 @@
 <title>Values and types</title>
 <para id="para-00019">Write a Python computer program that:
 <list list-type="enumerated" id="list-00003">
-<item>Defines an integer variable named 'int_a' and assign 'int_a' with the value 10.</item>
-<item>Defines a floating-point variable named 'float_a' and assign 'float_a' with the value 10.0.</item>
-<item>Defines a string variable named 'string_a' and assign 'string_a' with the string value "10".</item>
+<item>Defines an integer variable named 'int_a' and assigns 'int_a' with the value 10.</item>
+<item>Defines a floating-point variable named 'float_a' and assigns 'float_a' with the value 10.0.</item>
+<item>Defines a string variable named 'string_a' and assigns 'string_a' with the string value "10".</item>
 <item>Prints the value of each of the three variables along with their type.</item>
 </list></para>
 <media alt="values_and_types_program">
