@@ -64,13 +64,13 @@ This book will focus on general purpose programs that typically run "behind the 
 <para id="para-00012">By tradition, <link url="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello World</link> is the first program to write when learning a new language. This program simply displays the message "Hello, World!" to the user. The hello world program is only one line in Python:</para>
 <code class="python" lang="python">print("Hello, World!")</code>
 <para id="para-00013">In contrast, the hello world program is five lines in Java (a different language). Beginners often struggle with Java's required keywords and punctuation rules:</para>
-<preformat class="java inline-code">
+<code class="python" lang="python">
 public class Hello {
-public static void main(String[] args) {
-System.out.println("Hello, World!");
+  public static void main(String[] args) {
+   System.out.println("Hello, World!");
+  }
 }
-}
-</preformat>
+</code>
 </example>
 <note class="guided-slides" id="note-00004">
 <title>Counting lines in a file</title>

@@ -1,4 +1,4 @@
-<document xmlns="http://cnx.rice.edu/cnxml">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:null="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0">
   <title>Error messages</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
     <md:title>Error messages</md:title>
@@ -24,12 +24,12 @@
 <item>Additional details about the error.</item>
 </list>
 <para id="para-00004">Ex: Typing <code class="python inline-code">print "Hello!"</code> without parentheses is a syntax error. In Python, parentheses are required to use <code class="python inline-code">print</code>. When attempting to run <code class="python inline-code">print "Hello!"</code>, Python displays the following error:</para>
-<preformat class="python inline-code">Traceback (most recent call last):
-File "/home/student/Desktop/example.py", line 1
-print "Hello"
-^
+<code class="python" lang="python">Traceback (most recent call last):
+  File "/home/student/Desktop/example.py", line 1
+    print "Hello"
+                ^<newline />
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
-</preformat>
+</code>
 <para id="para-00005">The caret character (<code>^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown, because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
 <para id="para-00006">Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
 <note class="guided-slides" id="note-00001">
@@ -41,11 +41,11 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
 <note class="learning-questions" id="note-00002">
 <title>Parts of an error</title>
 <para id="para-00007">Given the following error message:</para>
-<preformat class="python inline-code">Traceback (most recent call last):
-File "/home/student/Desktop/example.py", line 2
-print "test"
-^
-SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?</preformat>
+<code class="python" lang="python">Traceback (most recent call last):
+  File "/home/student/Desktop/example.py", line 2
+    print "test"
+        ^<newline />
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?</code>
 <exercise id="exer-00001">
 <problem id="prob-00001">
 <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch01-m06-p01"/></para>
@@ -78,46 +78,40 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
 </thead>
 <tbody>
 <row>
-<entry><code class="python inline-code">
-print("Have a nice day!"&lt;mark>&lt;strong> &lt;/strong>&lt;/mark>
-</code></entry>
+<entry><para id="para-00111"><code class="python inline-code">print("Have a nice day!"</code></para></entry>
 <entry>SyntaxError: unexpected EOF while parsing</entry>
 <entry>The closing parenthesis is missing. Python is surprised to reach the end of file (EOF) before this line is complete.</entry>
 </row>
 <row>
-<entry><code class="python inline-code">
-word = input("Type a word: &lt;mark>&lt;strong>)&lt;/strong>&lt;/mark>
-</code></entry>
+<entry><para id="para-00112"><code class="python inline-code">word = input("Type a word: )</code></para></entry>
 <entry>SyntaxError: EOL while scanning string literal</entry>
 <entry>The quote marks are missing. As a result, the string does not terminate before the end of line (EOL).</entry>
 </row>
 <row>
-<entry><code class="python inline-code">
-print("You typed:", w&lt;mark>&lt;strong>i&lt;/strong>&lt;/mark>rd)
-</code></entry>
+<entry><para id="para-00113"><code class="python inline-code">print("You typed:", w<emphasis effect="bold">i</emphasis>rd)</code></para></entry>
 <entry>NameError: name 'wird' is not defined</entry>
-<entry>The spelling of <code class="python inline-code">word</code> is incorrect. The programmer accidentally typed the wrong key.</entry>
+<entry><para id="para-00114">The spelling of <code class="python inline-code">word</code> is incorrect. The programmer accidentally typed the wrong key.</para></entry>
 </row>
 <row>
-<entry><code class="python inline-code">
-print&lt;mark>&lt;strong>s&lt;/strong>&lt;/mark>("You typed:", word)
-</code></entry>
+<entry><para id="para-00115"><code class="python inline-code">print<emphasis effect="bold">s</emphasis>("You typed:", word)</code></para></entry>
 <entry>NameError: name 'prints' is not defined</entry>
-<entry>The spelling of <code class="python inline-code">print</code> is incorrect. The programmer accidentally typed an extra letter.</entry>
+<entry><para id="para-00116">The spelling of <code class="python inline-code">print</code> is incorrect. The programmer accidentally typed an extra letter.</para></entry>
 </row>
 <row>
-<entry><code class="python inline-code">
-&lt;mark>&lt;strong> &lt;/strong>&lt;/mark>print("Hello")
+<entry>
+<code class="python" lang="python">
+  print("Hello")
 </code></entry>
 <entry>IndentationError: unexpected indent</entry>
 <entry>The programmer accidentally typed a space at the start of the line.</entry>
 </row>
 <row>
-<entry><code class="python inline-code">
-&lt;mark>&lt;strong>    &lt;/strong>&lt;/mark>print("Goodbye")
+<entry>
+<code class="python" lang="python">
+    print("Goodbye")
 </code></entry>
 <entry>IndentationError: unexpected indent</entry>
-<entry>The programmer accidentally pressed the &lt;kbd>Tab&lt;/kbd> key at the start of the line.</entry>
+<entry>The programmer accidentally pressed the Tab key at the start of the line.</entry>
 </row>
 </tbody>
 </tgroup>
