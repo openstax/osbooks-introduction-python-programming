@@ -100,11 +100,11 @@ public class Hello {
 <item>The program below asks for your name and displays a friendly greeting. Run the program and see what happens. In the error message, EOF stands for End of File.</item>
 <item>Many of the programs in this chapter expect input from the user. Enter your name in the Input box below the code. Run the program again, and see what changes.</item>
 <item>Copy the following lines to the end of the program:
-<preformat class="python inline-code">
+<code class="python" lang="python">
 print("What is your favorite song?")
 song = input()
 print("Cool! I like", song, "too.")
-</preformat></item>
+</code></item>
 <item>The modified program reads two lines of input: <code class="python inline-code">name</code> and <code class="python inline-code">song</code>. Add your favorite song to the Input box below your name, and run the program again.</item>
 <item>The next section of the book will explain how <code class="python inline-code">print()</code> and <code class="python inline-code">input()</code> work. Feel free to experiment with this code until you are ready to move on.</item>
 </list>

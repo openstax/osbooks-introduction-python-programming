@@ -16,9 +16,9 @@
     </section>
     <section id="sect-00002">
     <title>Basic output</title>
-    <para id="para-00002">The <term id="term-00001">print()</term> function displays output to the user. <term id="term-00002">Output</term> is the information or result produced by a program. The <code>sep</code> and <code>end</code> options can be used to customize the output. <link target-id="table-00001"/> shows examples of <code>sep</code> and <code>end</code>.</para>
-    <para id="para-00003">Multiple values, separated by commas, can be printed in the same statement. By default, each value is separated by a space character in the output. The <code>sep</code> option can be used to change this behavior.</para>
-    <para id="para-00004">By default, the print() function adds a newline character at the end of the output. A <term id="term-00003">newline</term> character tells the display to move to the next line. The <code>end</code> option can be used to continue printing on the same line.</para>
+    <para id="para-00002">The <term id="term-00001">print()</term> function displays output to the user. <term id="term-00002">Output</term> is the information or result produced by a program. The <code class="python inline-code">sep</code> and <code class="python inline-code">end</code> options can be used to customize the output. <link target-id="table-00001"/> shows examples of <code class="python inline-code">sep</code> and <code class="python inline-code">end</code>.</para>
+    <para id="para-00003">Multiple values, separated by commas, can be printed in the same statement. By default, each value is separated by a space character in the output. The <code class="python inline-code">sep</code> option can be used to change this behavior.</para>
+    <para id="para-00004">By default, the print() function adds a newline character at the end of the output. A <term id="term-00003">newline</term> character tells the display to move to the next line. The <code class="python inline-code">end</code> option can be used to continue printing on the same line.</para>
     <table summary=" " id="table-00001">
     <title>Example uses of print()</title>
     <tgroup cols="2">
@@ -30,26 +30,26 @@
     </thead>
     <tbody>
     <row>
-    <entry><code>print("Today is Monday.")</code><newline/>
-    <code>print("Monday string beans.")</code></entry>
-    <entry><code>Today is Monday.</code><newline/>
-    <code>Monday string beans.</code></entry>
+    <entry><para id="para-00103"><code class="python inline-code">print("Today is Monday.")</code><newline/>
+    <code class="python inline-code">print("Monday string beans.")</code></para></entry>
+    <entry><para id="para-00104"><code class="python inline-code">Today is Monday.</code><newline/>
+    <code class="python inline-code">Monday string beans.</code></para></entry>
     </row>
     <row>
-    <entry><code>print("Today", "is", "Monday")</code><newline/>
-    <code>print("Today", "is", "Monday", sep="...")</code></entry>
-    <entry><code>Today is Monday</code><newline/>
-    <code>Today...is...Monday</code></entry>
+    <entry><para id="para-00105"><code class="python inline-code">print("Today", "is", "Monday")</code><newline/>
+    <code class="python inline-code">print("Today", "is", "Monday", sep="...")</code></para></entry>
+    <entry><para id="para-00106"><code class="python inline-code">Today is Monday</code><newline/>
+    <code class="python inline-code">Today...is...Monday</code></para></entry>
     </row>
     <row>
-    <entry><code>print("Today is Monday, ", end="")</code><newline/>
-    <code>print("Monday string beans.")</code></entry>
-    <entry><code>Today is Monday, Monday string beans.</code></entry>
+    <entry><para id="para-00107"><code class="python inline-code">print("Today is Monday, ", end="")</code><newline/>
+    <code class="python inline-code">print("Monday string beans.")</code></para></entry>
+    <entry><para id="para-00108"><code class="python inline-code">Today is Monday, Monday string beans.</code></para></entry>
     </row>
     <row>
-    <entry><code>print("Today", "is", "Monday", sep="? ", end="!!")</code><newline/>
-    <code>print("Monday string beans.")</code></entry>
-    <entry><code>Today? is? Monday!!Monday string beans.</code></entry>
+    <entry><para id="para-00109"><code class="python inline-code">print("Today", "is", "Monday", sep="? ", end="!!")</code><newline/>
+    <code class="python inline-code">print("Monday string beans.")</code></para></entry>
+    <entry><para id="para-00110"><code class="python inline-code">Today? is? Monday!!Monday string beans.</code></para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -85,7 +85,7 @@
     </section>
     <section id="sect-00003">
     <title>Basic input</title>
-    <para id="para-00009">Computer programs often receive input from the user. <term id="term-00004">Input</term> is what a user enters into a program. An input statement, <code><emphasis effect="italics">variable</emphasis> = input(<emphasis effect="italics">"prompt"</emphasis>)</code>, has three parts:</para>
+    <para id="para-00009">Computer programs often receive input from the user. <term id="term-00004">Input</term> is what a user enters into a program. An input statement, <code class="python inline-code"><emphasis effect="italics">variable</emphasis> = input(<emphasis effect="italics">"prompt"</emphasis>)</code>, has three parts:</para>
     <list list-type="enumerated" id="list-00002">
     <item>A <term id="term-00005">variable</term> refers to a value stored in memory. In the statement above, <emphasis effect="italics">variable</emphasis> can be replaced with any name the programmer chooses.</item>
     <item>The <term id="term-00006">input()</term> function reads one line of input from the user. The input is stored in the computer's memory and can be accessed later using the variable.</item>

@@ -19,26 +19,26 @@
 <para id="para-00002"><term id="term-00001">Comments</term> are short phrases that explain what the code is doing. Ex: Lines 1, 8, and 10 in the following program contain comments. Each comment begins with a hash character (<code class="python inline-code">#</code>). All text from the hash character to the end of the line is ignored when running the program. In contrast, hash characters inside of strings are treated as regular text. Ex: The string <code class="python inline-code">"Item #1: "</code> does not contain a comment.</para>
 <para id="para-00003">When writing comments:</para>
 <list id="list-00002">
-<item>The <code>#</code> character should be followed by a single space.
+<item>The <code class="python inline-code">#</code> character should be followed by a single space.
 Ex: <code class="python inline-code"># End of menu</code> is easier to read than <code class="python inline-code">#End of menu</code>.</item>
 <item>Comments should explain the purpose of the code, not just repeat the code itself.
 Ex: <code class="python inline-code"># Get the user's preferences</code> is more descriptive than <code class="python inline-code"># Input item1 and item2</code>.</item>
 </list>
 <example id="exam-00001">
 <title>Program with three comments</title>
-<para id="para-00004"><code class="python">
-# Display the menu options<newline/>
-print("Lunch Menu")<newline/>
-print("----------")<newline/>
-print("Burrito")<newline/>
-print("Enchilada")<newline/>
-print("Taco")<newline/>
-print("Salad")<newline/>
+<code class="python" lang="python">
+# Display the menu options
+print("Lunch Menu")
+print("----------")
+print("Burrito")
+print("Enchilada")
+print("Taco")
+print("Salad")
 print() # End of menu<newline/>
-# Get the user's preferences<newline/>
-item1 = input("Item #1: ")<newline/>
-item2 = input("Item #2: ")<newline/>
-</code></para>
+# Get the user's preferences
+item1 = input("Item #1: ")
+item2 = input("Item #2: ")
+</code>
 </example>
 <note class="learning-questions" id="note-00001">
 <title>Simple comments</title>

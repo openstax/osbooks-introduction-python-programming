@@ -30,7 +30,7 @@
                 ^<newline />
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
 </code>
-<para id="para-00005">The caret character (<code>^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown, because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
+<para id="para-00005">The caret character (<code class="python inline-code">^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown, because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
 <para id="para-00006">Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
 <note class="guided-slides" id="note-00001">
 <title>Incorrect variable name</title>
