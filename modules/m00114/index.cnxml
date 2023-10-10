@@ -81,7 +81,7 @@
       <row>
       <entry><para id="para-00126"><code class="python inline-code">**</code><newline/>
       (exponentiation)</para></entry>
-      <entry>Raises a number to a power. Ex: <code class="python inline-code">3**2</code> is three squared.</entry>
+      <entry><para id="para-00226">Raises a number to a power. Ex: <code class="python inline-code">3**2</code> is three squared.</para></entry>
       </row>
       <row>
       <entry><emphasis effect="bold">Syntax</emphasis></entry>
