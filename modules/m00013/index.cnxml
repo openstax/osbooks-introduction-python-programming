@@ -22,8 +22,8 @@
     price = float(input())
     total = quantity * price
     print(total)</code>
-  <para id="para-00022"><code>quantity</code> is an integer, and <code>price</code> is a float. So what is the data type of <code>total</code>? For input 3 and 5.0, <code>total</code> is a float, and the program prints 15.0.</para>
-    <para id="para-00003">Combining an integer and a float produces a float. A float is by default printed with at least one decimal point and has many decimal places as needed to represent the value. Note: Division using the <code>/</code> operator always produces a float.</para>
+  <para id="para-00022"><code class="python inline-code">quantity</code> is an integer, and <code class="python inline-code">price</code> is a float. So what is the data type of <code class="python inline-code">total</code>? For input 3 and 5.0, <code class="python inline-code">total</code> is a float, and the program prints 15.0.</para>
+    <para id="para-00003">Combining an integer and a float produces a float. A float is by default printed with at least one decimal point and has many decimal places as needed to represent the value. Note: Division using the <code class="python inline-code">/</code> operator always produces a float.</para>
     <note class="guided-slides" id="note-00001">
     <title>Operations combining integers and floats</title>
     <media alt="combining_int_float_slides">

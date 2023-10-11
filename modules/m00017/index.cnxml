@@ -50,36 +50,36 @@
     <tbody>
     <row>
     <entry>Parentheses: no space before or after.</entry>
-    <entry><code>print("Go team!")</code></entry>
-    <entry><code>print ("Go team!")</code><newline/>
-    <code>print( "Go team!" )</code></entry>
+    <entry><para id="para-00105"><code class="python inline-code">print("Go team!")</code></para></entry>
+    <entry><para id="para-00106"><code class="python inline-code">print ("Go team!")</code><newline/>
+    <code class="python inline-code">print( "Go team!" )</code></para></entry>
     </row>
     <row>
     <entry>Commas: no space before, one space after.</entry>
-    <entry><code>print("Hello", name)</code></entry>
-    <entry><code>print("Hello" , name)</code><newline/>
-    <code>print("Hello",name)</code></entry>
+    <entry><para id="para-00107"><code class="python inline-code">print("Hello", name)</code></para></entry>
+    <entry><para id="para-00108"><code class="python inline-code">print("Hello" , name)</code><newline/>
+    <code class="python inline-code">print("Hello",name)</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00028">Assignment: one space before and after the <code>=</code>.</para></entry>
-    <entry><code>name = input("Your name? ")</code></entry>
-    <entry><code>name=input("Your name? ")</code><newline/>
-    <code>name= input("Your name? ")</code><newline/>
-    <code>name =input("Your name? ")</code></entry>
+    <entry><para id="para-00028">Assignment: one space before and after the <code class="python inline-code">=</code>.</para></entry>
+    <entry><para id="para-00109"><code class="python inline-code">name = input("Your name? ")</code></para></entry>
+    <entry><para id="para-00110"><code class="python inline-code">name=input("Your name? ")</code><newline/>
+    <code class="python inline-code">name= input("Your name? ")</code><newline/>
+    <code class="python inline-code">name =input("Your name? ")</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00029">Concatenation: one space before and after the <code>+</code>.</para></entry>
-    <entry><code>print("Hi", name + "!")</code></entry>
-    <entry><code>print("Hi", name+"!")</code><newline/>
-    <code>print("Hi", name+ "!")</code><newline/>
-    <code>print("Hi", name +"!")</code></entry>
+    <entry><para id="para-00029">Concatenation: one space before and after the <code class="python inline-code">+</code>.</para></entry>
+    <entry><para id="para-00111"><code class="python inline-code">print("Hi", name + "!")</code></para></entry>
+    <entry><para id="para-00112"><code class="python inline-code">print("Hi", name+"!")</code><newline/>
+    <code class="python inline-code">print("Hi", name+ "!")</code><newline/>
+    <code class="python inline-code">print("Hi", name +"!")</code></para></entry>
     </row>
     <row>
     <entry>Arithmetic: use space to show lower precedence.</entry>
-    <entry><code>x**2 + 5*x - 8</code></entry>
-    <entry><code>x ** 2 + 5 * x - 8</code><newline/>
-    <code>x ** 2+5 * x-8</code><newline/>
-    <code>x**2+5*x-8</code></entry>
+    <entry><para id="para-00113"><code class="python inline-code">x**2 + 5*x - 8</code></para></entry>
+    <entry><para id="para-00114"><code class="python inline-code">x ** 2 + 5 * x - 8</code><newline/>
+    <code class="python inline-code">x ** 2+5 * x-8</code><newline/>
+    <code class="python inline-code">x**2+5*x-8</code></para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -123,7 +123,7 @@
            "decent respect to the opinions of mankind requires that they "<newline/>
            "should declare the causes which impel them to the separation.")
     </code></para>
-    <para id="para-00014">For convenience, Python automatically concatenates multiple strings. The <code>+</code> operator is not required in this situation.</para>
+    <para id="para-00014">For convenience, Python automatically concatenates multiple strings. The <code class="python inline-code">+</code> operator is not required in this situation.</para>
     <note class="guided-slides" id="note-00003">
     <title>String concatenation</title>
     <media alt="string_concat_slides">
