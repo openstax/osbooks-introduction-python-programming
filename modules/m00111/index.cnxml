@@ -39,10 +39,39 @@
     </thead>
     <tbody>
     <row>
-    <entry><media display="inline" alt="The content of a dataframe is shown.">
+      <entry><table summary=" " id="table-00101">
+        <title/>
+    <tgroup cols="4">
+    <thead>
+    <row>
+    <entry></entry>
+    <entry>Name</entry>
+    <entry>Age</entry>
+    <entry>City</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row><entry>0</entry>
+      <entry>Emma</entry>
+      <entry>15</entry>
+      <entry>Dubai</entry>
+    </row>
+    <row><entry>1</entry>
+      <entry>Gireeja</entry>
+      <entry>28</entry>
+      <entry>London</entry>
+    </row>
+    <row><entry>2</entry>
+      <entry>Sophia</entry>
+      <entry>22</entry>
+      <entry>San Jose</entry>
+    </row>
+    </tbody></tgroup>
+      </table></entry>
+    <!--<entry><media display="inline" alt="The content of a dataframe is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image8.png"/>
     </media>
-    </entry>
+    </entry>-->
     <entry><media display="inline" alt="The content of a series is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image5.png"/>
     </media></entry>
