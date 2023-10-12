@@ -72,9 +72,30 @@
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image8.png"/>
     </media>
     </entry>-->
-    <entry><media display="inline" alt="The content of a series is shown.">
+    <entry>
+      <table summary=" " id="table-00102">
+        <title/>
+    <tgroup cols="2">
+    <tbody>
+    <row><entry>0</entry>
+      <entry>Emma</entry>
+    </row>
+    <row><entry>1</entry>
+      <entry>Gireeja</entry>
+    </row>
+    <row><entry>2</entry>
+      <entry>Sophia</entry>
+    </row>
+    <row><entry>dtype:</entry>
+      <entry>object</entry>
+    </row>
+    </tbody></tgroup>
+      </table>
+      <!--<media display="inline" alt="The content of a series is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image5.png"/>
-    </media></entry>
+    </media>-->
+  
+  </entry>
     </row>
     </tbody>
     </tgroup>
@@ -109,9 +130,40 @@
     df = pd.DataFrame(data)<newline/>
     # Display the DataFrame
     df</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <entry>
+      <table summary=" " id="table-00103">
+        <title/>
+    <tgroup cols="4">
+    <thead>
+    <row>
+    <entry></entry>
+    <entry>Name</entry>
+    <entry>Age</entry>
+    <entry>City</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row><entry>0</entry>
+      <entry>Emma</entry>
+      <entry>15</entry>
+      <entry>Dubai</entry>
+    </row>
+    <row><entry>1</entry>
+      <entry>Gireeja</entry>
+      <entry>28</entry>
+      <entry>London</entry>
+    </row>
+    <row><entry>2</entry>
+      <entry>Sophia</entry>
+      <entry>22</entry>
+      <entry>San Jose</entry>
+    </row>
+    </tbody></tgroup>
+      </table>
+      <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image2.png"/>
-    </media></entry>
+    </media>-->
+  </entry>
     <entry><para id="para-00005"><code class="python inline-code">pd.DataFrame()</code> function takes in a dictionary and converts it into a DataFrame. Dictionary keys will be column labels and values are stored in respective columns.</para></entry>
     </row>
     <row>
@@ -130,9 +182,40 @@
     df = pd.DataFrame(data, columns=columns)<newline/>
     # Display the DataFrame
     df</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <entry>
+      <table summary=" " id="table-00104">
+        <title/>
+    <tgroup cols="4">
+    <thead>
+    <row>
+    <entry></entry>
+    <entry>Name</entry>
+    <entry>Age</entry>
+    <entry>City</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row><entry>0</entry>
+      <entry>Emma</entry>
+      <entry>15</entry>
+      <entry>Dubai</entry>
+    </row>
+    <row><entry>1</entry>
+      <entry>Gireeja</entry>
+      <entry>28</entry>
+      <entry>London</entry>
+    </row>
+    <row><entry>2</entry>
+      <entry>Sophia</entry>
+      <entry>22</entry>
+      <entry>San Jose</entry>
+    </row>
+    </tbody></tgroup>
+      </table>
+      <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image2.png"/>
-    </media></entry>
+    </media>-->
+  </entry>
     <entry><para id="para-00006"><code class="python inline-code">pd.DataFrame()</code> function takes in a list containing the records in different rows of a DataFrame along with a list of column labels and creates a DataFrame with the given rows and column labels.</para></entry>
     </row>
     <row>
@@ -152,9 +235,42 @@
     df = pd.DataFrame(data, columns=columns)<newline/>
     # Display the DataFrame
     df</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <entry>
+      <table summary=" " id="table-00105">
+        <title/>
+    <tgroup cols="4">
+    <thead>
+    <row>
+    <entry></entry>
+    <entry>A</entry>
+    <entry>B</entry>
+    <entry>C</entry>
+    </row>
+    </thead>
+    <tbody>
+      <row>
+        <entry>0</entry>
+        <entry>1</entry>
+        <entry>0</entry>
+        <entry>0</entry>
+        </row>
+    <row><entry>1</entry>
+      <entry>0</entry>
+      <entry>1</entry>
+      <entry>0</entry>
+    </row>
+    <row><entry>2</entry>
+      <entry>2</entry>
+      <entry>3</entry>
+      <entry>4</entry>
+    </row>
+    
+    </tbody></tgroup>
+      </table>
+      <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image4.png"/>
-    </media></entry>
+    </media>-->
+  </entry>
     <entry><para id="para-00007">A NumPy array along with column labels are passed to <code class="python inline-code">pd.DataFrame()</code> function to create a DataFrame object.</para></entry>
     </row>
     <row>
