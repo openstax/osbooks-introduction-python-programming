@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>References to objects</title>
-    <para id="para-00002">In Python, every variable refers to an object. The assignment statement <code>message = "Hello"</code> makes the variable <code>message</code> refer to the object <code>"Hello"</code>. Multiple variables may refer to the same object. Ex: <code>greeting = message</code> makes <code>greeting</code> refer to the same object as <code>message</code>. A <term id="term-00001">memory diagram</term> shows the relationship between variables and objects.</para>
+    <para id="para-00002">In Python, every variable refers to an object. The assignment statement <code class="python inline-code">message = "Hello"</code> makes the variable <code class="python inline-code">message</code> refer to the object <code class="python inline-code">"Hello"</code>. Multiple variables may refer to the same object. Ex: <code class="python inline-code">greeting = message</code> makes <code class="python inline-code">greeting</code> refer to the same object as <code class="python inline-code">message</code>. A <term id="term-00001">memory diagram</term> shows the relationship between variables and objects.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example memory diagram</title>
     <media alt="memory_diagram_slides">
@@ -57,8 +57,8 @@
     <title>Properties of objects</title>
     <para id="para-00008">Every object has an identity, a type, and a value:</para>
     <list id="list-00002">
-    <item><para id="para-00009">An object's <term id="term-00002">identity</term> is a unique integer associated with the object. Generally, this integer refers to the memory location where the object is stored. Once created, an object's identity never changes. The built-in <code>id()</code> function returns the object's identity.</para></item>
-    <item><para id="para-00010">An object's <term id="term-00003">type</term> determines the possible values and operations of an object. Ex: Integers and floats can be "divided" using the <code>/</code> operator, but strings cannot. The built-in <code>type()</code> function returns the object's type.</para></item>
+    <item><para id="para-00009">An object's <term id="term-00002">identity</term> is a unique integer associated with the object. Generally, this integer refers to the memory location where the object is stored. Once created, an object's identity never changes. The built-in <code class="python inline-code">id()</code> function returns the object's identity.</para></item>
+    <item><para id="para-00010">An object's <term id="term-00003">type</term> determines the possible values and operations of an object. Ex: Integers and floats can be "divided" using the <code class="python inline-code">/</code> operator, but strings cannot. The built-in <code class="python inline-code">type()</code> function returns the object's type.</para></item>
     <item><para id="para-00011">An object's <term id="term-00004">value</term> represents the current state of the object. Many objects, such as numbers and strings, cannot be modified once created. Some objects, such as lists (introduced later), are designed to be modified.</para></item>
     </list>
     <note class="guided-slides" id="note-00004">
@@ -119,7 +119,7 @@
     <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
     <list list-type="bulleted" id="list-00004">
-    <item>What is the final value of <code>a</code>, <code>b</code>, and <code>c</code>?</item>
+    <item>What is the final value of <code class="python inline-code">a</code>, <code class="python inline-code">b</code>, and <code class="python inline-code">c</code>?</item>
     <item>How many integer objects are created?</item>
     </list></item>
     </list>

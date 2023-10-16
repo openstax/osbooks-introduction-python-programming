@@ -45,8 +45,8 @@
     </section>
     <section id="sect-00003">
     <title>Unicode</title>
-    <para id="para-00006">Python uses <term id="term-00001">Unicode</term>, the international standard for representing text on computers. Unicode defines a unique number, called a <term id="term-00002">code point</term>, for each possible character. Ex: <code>'P'</code> has the code point 80, and <code>'!'</code> has the code point 33.</para>
-    <para id="para-00007">The built-in <code>ord()</code> function converts a character to a code point. Ex: <code>ord('P')</code> returns the integer 80. Similarly, the built-in <code>chr()</code> function converts a code point to a character. Ex: <code>chr(33)</code> returns the string <code>'!'</code>.</para>
+    <para id="para-00006">Python uses <term id="term-00001">Unicode</term>, the international standard for representing text on computers. Unicode defines a unique number, called a <term id="term-00002">code point</term>, for each possible character. Ex: <code class="python inline-code">'P'</code> has the code point 80, and <code class="python inline-code">'!'</code> has the code point 33.</para>
+    <para id="para-00007">The built-in <code class="python inline-code">ord()</code> function converts a character to a code point. Ex: <code class="python inline-code">ord('P')</code> returns the integer 80. Similarly, the built-in <code class="python inline-code">chr()</code> function converts a code point to a character. Ex: <code class="python inline-code">chr(33)</code> returns the string <code class="python inline-code">'!'</code>.</para>
     <para id="para-00008">Unicode is an extension of <term id="term-00003">ASCII</term>, the American Standard Code for Information Interchange. Originally, ASCII defined only 128 code points, enough to support the English language. Unicode defines over one million code points and supports most of the world's written languages.</para>
     <table summary=" " id="table-00001">
     <title>Character values</title>
@@ -275,7 +275,7 @@
     <code class="python" lang="python">
     The secret message is: FDW
     </code>
-    <para id="para-00021">Hint: Use the <code>ord()</code> function to convert each letter to an integer, add the shift amount to each integer, use the <code>chr()</code> function to convert each integer to a character, and concatenate the resulting characters.</para>
+    <para id="para-00021">Hint: Use the <code class="python inline-code">ord()</code> function to convert each letter to an integer, add the shift amount to each integer, use the <code class="python inline-code">chr()</code> function to convert each integer to a character, and concatenate the resulting characters.</para>
     <media alt="shift_cipher_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_02_Shift-cipher.html"/>
     </media>

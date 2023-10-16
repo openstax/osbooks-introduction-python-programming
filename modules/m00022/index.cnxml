@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>F-strings</title>
-    <para id="para-00002">A <term id="term-00001">formatted string literal</term> (or <term id="term-00002">f-string</term>) is a string literal that is prefixed with 'f' or 'F'. A <term id="term-00003">replacement field</term> is an expression in curly braces (<code>{}</code>) inside an f-string. Ex: The string <code>f"Good morning, {first} {last}!"</code> has two replacement fields: one for a first name, and one for a last name. F-strings provide a convenient way to combine multiple values into one string.</para>
+    <para id="para-00002">A <term id="term-00001">formatted string literal</term> (or <term id="term-00002">f-string</term>) is a string literal that is prefixed with 'f' or 'F'. A <term id="term-00003">replacement field</term> is an expression in curly braces (<code class="python inline-code">{}</code>) inside an f-string. Ex: The string <code class="python inline-code">f"Good morning, {first} {last}!"</code> has two replacement fields: one for a first name, and one for a last name. F-strings provide a convenient way to combine multiple values into one string.</para>
     <note class="guided-slides" id="note-00001">
     <title>Printing an f-string</title>
     <media alt="printing_f_string_slides">
@@ -45,7 +45,7 @@
     <section id="sect-00003">
     <title>Formatting numbers</title>
     <para id="para-00006">Programs often need to display numbers in a specific format. Ex: When displaying the time, minutes are formatted as two-digit integers. If the hour is 9 and the minute is 5, then the time is "9:05" (not "9:5").</para>
-    <para id="para-00007">In an f-string, a replacement field may include a format specifier introduced by a colon. A <term id="term-00004">format specifier</term> defines how a value should be formatted for display. Ex: In the string <code>f"{hour}:{minute:02d}"</code>, the format specifier for <code>minute</code> is <code>02d</code>.</para>
+    <para id="para-00007">In an f-string, a replacement field may include a format specifier introduced by a colon. A <term id="term-00004">format specifier</term> defines how a value should be formatted for display. Ex: In the string <code class="python inline-code">f"{hour}:{minute:02d}"</code>, the format specifier for <code class="python inline-code">minute</code> is <code class="python inline-code">02d</code>.</para>
     <table summary=" " id="table-00001">
     <title>Example format specifiers</title>
     <tgroup cols="4">
@@ -59,52 +59,52 @@
     </thead>
     <tbody>
     <row>
-    <entry><code>d</code></entry>
+    <entry><para id="para-00107"><code class="python inline-code">d</code></para></entry>
     <entry>Decimal integer (default integer format)</entry>
-    <entry><code>f"{12345678:d}"</code></entry>
-    <entry><code>'12345678'</code></entry>
+    <entry><para id="para-00108"><code class="python inline-code">f"{12345678:d}"</code></para></entry>
+    <entry><para id="para-00109"><code class="python inline-code">'12345678'</code></para></entry>
     </row>
     <row>
-    <entry><code>,d</code></entry>
+    <entry><para id="para-00110"><code class="python inline-code">,d</code></para></entry>
     <entry>Decimal integer, with comma separators</entry>
-    <entry><code>f"{12345678:,d}"</code></entry>
-    <entry><code>'12,345,678'</code></entry>
+    <entry><para id="para-00111"><code class="python inline-code">f"{12345678:,d}"</code></para></entry>
+    <entry><para id="para-00112"><code class="python inline-code">'12,345,678'</code></para></entry>
     </row>
     <row>
-    <entry><code>10d</code></entry>
+    <entry><para id="para-00113"><code class="python inline-code">10d</code></para></entry>
     <entry>Decimal integer, at least 10 characters wide</entry>
-    <entry><code>f"{12345678:10d}"</code></entry>
-    <entry><code>'  12345678'</code></entry>
+    <entry><para id="para-00114"><code class="python inline-code">f"{12345678:10d}"</code></para></entry>
+    <entry><para id="para-00115"><code class="python inline-code">'  12345678'</code></para></entry>
     </row>
     <row>
-    <entry><code>010d</code></entry>
+    <entry><para id="para-00116"><code class="python inline-code">010d</code></para></entry>
     <entry>Decimal integer, at least 10 characters wide, with leading zeros</entry>
-    <entry><code>f"{12345678:010d}"</code></entry>
-    <entry><code>'0012345678'</code></entry>
+    <entry><para id="para-00117"><code class="python inline-code">f"{12345678:010d}"</code></para></entry>
+    <entry><para id="para-00118"><code class="python inline-code">'0012345678'</code></para></entry>
     </row>
     <row>
-    <entry><code>f</code></entry>
+    <entry><para id="para-00119"><code class="python inline-code">f</code></para></entry>
     <entry>Fixed-point (default is 6 decimal places)</entry>
-    <entry><code>f"{math.pi:f}"</code></entry>
-    <entry><code>'3.141593'</code></entry>
+    <entry><para id="para-00120"><code class="python inline-code">f"{math.pi:f}"</code></para></entry>
+    <entry><para id="para-00121"><code class="python inline-code">'3.141593'</code></para></entry>
     </row>
     <row>
-    <entry><code>.4f</code></entry>
+    <entry><para id="para-00122"><code class="python inline-code">.4f</code></para></entry>
     <entry>Fixed-point, rounded to 4 decimal places</entry>
-    <entry><code>f"{math.pi:.4f}"</code></entry>
-    <entry><code>'3.1416'</code></entry>
+    <entry><para id="para-00123"><code class="python inline-code">f"{math.pi:.4f}"</code></para></entry>
+    <entry><para id="para-00124"><code class="python inline-code">'3.1416'</code></para></entry>
     </row>
     <row>
-    <entry><code>8.4f</code></entry>
+    <entry><para id="para-00125"><code class="python inline-code">8.4f</code></para></entry>
     <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide</entry>
-    <entry><code>f"{math.pi:8.4f}"</code></entry>
-    <entry><code>'  3.1416'</code></entry>
+    <entry><para id="para-00126"><code class="python inline-code">f"{math.pi:8.4f}"</code></para></entry>
+    <entry><para id="para-00127"><code class="python inline-code">'  3.1416'</code></para></entry>
     </row>
     <row>
-    <entry><code>08.4f</code></entry>
+    <entry><para id="para-00128"><code class="python inline-code">08.4f</code></para></entry>
     <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide, with leading zeros</entry>
-    <entry><code>f"{math.pi:08.4f}"</code></entry>
-    <entry><code>'003.1416'</code></entry>
+    <entry><para id="para-00129"><code class="python inline-code">f"{math.pi:08.4f}"</code></para></entry>
+    <entry><para id="para-00130"><code class="python inline-code">'003.1416'</code></para></entry>
     </row>
     </tbody>
     </tgroup>
