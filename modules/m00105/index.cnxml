@@ -18,8 +18,8 @@
     <title>Runtime errors</title>
     <para id="para-00002">Various errors may occur when reading a file:</para>
     <list id="list-00002">
-    <item><code>FileNotFoundError</code>: The filename or path is invalid.</item>
-    <item><code>IndexError</code>/<code>ValueError</code>: The file's format is invalid.</item>
+    <item><code class="python inline-code">FileNotFoundError</code>: The filename or path is invalid.</item>
+    <item><code class="python inline-code">IndexError</code>/<code class="python inline-code">ValueError</code>: The file's format is invalid.</item>
     <item>Other errors caused by invalid contents of a file.</item>
     </list>
     <para id="para-00003">When an error occurs, the program terminates with an error message.</para>
@@ -74,7 +74,7 @@
     </section>
     <section id="sect-00003">
     <title>Try and except</title>
-    <para id="para-00012">Programs can be designed to handle exceptions, rather than terminate. A <code>try</code> statement runs code that might raise an exception. An <code>except</code> clause runs code in response to the exception.</para>
+    <para id="para-00012">Programs can be designed to handle exceptions, rather than terminate. A <code class="python inline-code">try</code> statement runs code that might raise an exception. An <code class="python inline-code">except</code> clause runs code in response to the exception.</para>
     <example id="exam-00002">
     <title>Try to open a file</title>
     <para id="para-00013">The following program, named <emphasis effect="italics">try_open.py</emphasis>, asks the user for a filename and counts the number of lines in the file.</para>
@@ -95,7 +95,7 @@
     try_open.py has 9 lines
     Have a nice day!
     </code>
-    <para id="para-00015">If the filename does not exist, a FileNotFoundError is raised on line 3. The program then jumps to the <code>except</code> clause on line 7 and continues to run. The resulting output is:</para>
+    <para id="para-00015">If the filename does not exist, a FileNotFoundError is raised on line 3. The program then jumps to the <code class="python inline-code">except</code> clause on line 7 and continues to run. The resulting output is:</para>
     <code class="python" lang="python">
     Enter a filename: try_open.txt
     File not found: try_open.txt
@@ -126,13 +126,13 @@
     <title>Programming practice</title>
     <note class="practice-program" id="note-00004">
     <title>Type analyzer</title>
-    <para id="para-00020">Analysis programs often need to find numbers in large bodies of text. How can a program tell if a string like <code>"123.45"</code> represents a number? One approach is to use exceptions:</para>
+    <para id="para-00020">Analysis programs often need to find numbers in large bodies of text. How can a program tell if a string like <code class="python inline-code">"123.45"</code> represents a number? One approach is to use exceptions:</para>
     <list list-type="enumerated" id="list-00003">
     <item>Try converting the string to an integer. If no ValueError is raised, then the string represents an integer.</item>
     <item>Otherwise, try converting the string to a float. If no ValueError is raised, then the string represents a float.</item>
     <item>Otherwise, the string does not represent a number.</item>
     </list>
-    <para id="para-00021">Implement the <code>get_type()</code> function using this approach. The provided main block calls <code>get_type()</code> for each word in a file. <code>get_type()</code> should return either <code>"int"</code>, <code>"float"</code>, or <code>"str"</code>, based on the word. The output for the provided <emphasis effect="italics">data.txt</emphasis> is:</para>
+    <para id="para-00021">Implement the <code class="python inline-code">get_type()</code> function using this approach. The provided main block calls <code class="python inline-code">get_type()</code> for each word in a file. <code class="python inline-code">get_type()</code> should return either <code class="python inline-code">"int"</code>, <code class="python inline-code">"float"</code>, or <code class="python inline-code">"str"</code>, based on the word. The output for the provided <emphasis effect="italics">data.txt</emphasis> is:</para>
     <code class="python" lang="python">
     str: Hello
     int: 100
@@ -166,7 +166,7 @@
     Enter a filename: countries.csv
     ...
     </code>
-    <para id="para-00025">Hint: Try to open the file specified by the user. A <code>FileNotFoundError</code> is raised if the filename is invalid.</para>
+    <para id="para-00025">Hint: Try to open the file specified by the user. A <code class="python inline-code">FileNotFoundError</code> is raised if the filename is invalid.</para>
     <media alt="united_countries_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_05_07_United-countries.html"/>
     </media>

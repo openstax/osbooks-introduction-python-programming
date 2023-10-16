@@ -8,11 +8,11 @@
   <content>
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
-    <item>Python can read and write data in files using the built-in <code>open()</code> function.</item>
+    <item>Python can read and write data in files using the built-in <code class="python inline-code">open()</code> function.</item>
     <item>Due to buffering, changes to a file may not be visible until the file is closed.</item>
     <item>Newline characters need to be removed/added when reading/writing files.</item>
     <item>Comma separated value (CSV) files are commonly used to represent data.</item>
-    <item>Exceptions that cause a program to terminate can be handled using <code>try</code> and <code>except</code>.</item>
+    <item>Exceptions that cause a program to terminate can be handled using <code class="python inline-code">try</code> and <code class="python inline-code">except</code>.</item>
     <item>Raising an exception is an alternative way to return from a function when an error occurs.</item>
     </list>
     <table summary=" " id="table-00001">
@@ -26,40 +26,40 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00002"><code>file = open("myfile.txt")</code></para></entry>
+    <entry><para id="para-00002"><code class="python inline-code">file = open("myfile.txt")</code></para></entry>
     <entry>Open a file for reading.</entry>
     </row>
     <row>
-    <entry><para id="para-00003"><code>file = open("myfile.txt", 'w')</code></para></entry>
+    <entry><para id="para-00003"><code class="python inline-code">file = open("myfile.txt", 'w')</code></para></entry>
     <entry>Open a file for writing.</entry>
     </row>
     <row>
-    <entry><para id="para-00004"><code>file = open("myfile.txt", 'a')</code></para></entry>
+    <entry><para id="para-00004"><code class="python inline-code">file = open("myfile.txt", 'a')</code></para></entry>
     <entry>Open a file for appending.</entry>
     </row>
     <row>
-    <entry><para id="para-00005"><code>file.close()</code></para></entry>
+    <entry><para id="para-00005"><code class="python inline-code">file.close()</code></para></entry>
     <entry>Close a file after making changes.</entry>
     </row>
     <row>
-    <entry><para id="para-00006"><code>data = file.read()</code></para></entry>
-    <entry><para id="para-00007">Read the entire contents of a file. The variable <code>data</code> is a string.</para></entry>
+    <entry><para id="para-00006"><code class="python inline-code">data = file.read()</code></para></entry>
+    <entry><para id="para-00007">Read the entire contents of a file. The variable <code class="python inline-code">data</code> is a string.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00008"><code>data = file.readline()</code></para></entry>
-    <entry><para id="para-00009">Read the next line of a file. The variable <code>data</code> is a string.</para></entry>
+    <entry><para id="para-00008"><code class="python inline-code">data = file.readline()</code></para></entry>
+    <entry><para id="para-00009">Read the next line of a file. The variable <code class="python inline-code">data</code> is a string.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00010"><code>data = file.readlines()</code></para></entry>
-    <entry><para id="para-00011">Read all lines of a file. The variable <code>data</code> is a list of strings.</para></entry>
+    <entry><para id="para-00010"><code class="python inline-code">data = file.readlines()</code></para></entry>
+    <entry><para id="para-00011">Read all lines of a file. The variable <code class="python inline-code">data</code> is a list of strings.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00012"><code>file.write("Have a nice day!\n")</code></para></entry>
-    <entry><para id="para-00013">Writes a line to a file. In contrast to <code>print()</code>, the <code>write()</code> function does not automatically append a newline.</para></entry>
+    <entry><para id="para-00012"><code class="python inline-code">file.write("Have a nice day!\n")</code></para></entry>
+    <entry><para id="para-00013">Writes a line to a file. In contrast to <code class="python inline-code">print()</code>, the <code class="python inline-code">write()</code> function does not automatically append a newline.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00014"><code>file.write(["Line 1\n", "Line 2\n"])</code></para></entry>
-    <entry><para id="para-00015">Writes multiple lines to a file. As with <code>write()</code>, a newline is not automatically added at the end of each line.</para></entry>
+    <entry><para id="para-00014"><code class="python inline-code">file.write(["Line 1\n", "Line 2\n"])</code></para></entry>
+    <entry><para id="para-00015">Writes multiple lines to a file. As with <code class="python inline-code">write()</code>, a newline is not automatically added at the end of each line.</para></entry>
     </row>
     <row>
     <entry><code class="python" lang="python">
@@ -86,7 +86,7 @@
     except ValueError as err:
         # Statements
     </code></entry>
-    <entry><para id="para-00016">Try to run statements that might raise a ValueError. If a ValueError is raised, run other statements. The variable <code>err</code> contains more details about the ValueError.</para></entry>
+    <entry><para id="para-00016">Try to run statements that might raise a ValueError. If a ValueError is raised, run other statements. The variable <code class="python inline-code">err</code> contains more details about the ValueError.</para></entry>
     </row>
     <row>
     <entry><code class="python" lang="python">

@@ -10,14 +10,14 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Understand how to open a file using the <code>open()</code> function.</item>
-    <item>Demonstrate how to read information from a file using <code>read()</code>, <code>readline()</code>, and <code>readlines()</code>.</item>
+    <item>Understand how to open a file using the <code class="python inline-code">open()</code> function.</item>
+    <item>Demonstrate how to read information from a file using <code class="python inline-code">read()</code>, <code class="python inline-code">readline()</code>, and <code class="python inline-code">readlines()</code>.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Opening a file</title>
     <para id="para-00002">Reading information from and writing information to files is a common task in programming.</para>
-    <para id="para-00003">Python supports the opening of a file using the <code>open()</code> function.</para>
+    <para id="para-00003">Python supports the opening of a file using the <code class="python inline-code">open()</code> function.</para>
     <note class="guided-slides" id="note-00001">
     <title>Opening a file</title>
     <media alt="opening_a_file_slides">
@@ -44,12 +44,12 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title>Using <code>read()</code> and reading lines</title>
+    <title>Using <code class="python inline-code">read()</code> and reading lines</title>
     <para id="para-00007">Python provides functions that can be called on a file object for reading the contents of a file:</para>
     <list id="list-00002">
-    <item>The <code>read()</code> function reads the contents of a file and returns a string.</item>
-    <item>The <code>readline()</code> function reads the next line in a file and returns a string.</item>
-    <item>The <code>readlines()</code> function reads the individual lines of a file and returns a string list containing all the lines of the file in order.</item>
+    <item>The <code class="python inline-code">read()</code> function reads the contents of a file and returns a string.</item>
+    <item>The <code class="python inline-code">readline()</code> function reads the next line in a file and returns a string.</item>
+    <item>The <code class="python inline-code">readlines()</code> function reads the individual lines of a file and returns a string list containing all the lines of the file in order.</item>
     </list>
     <example id="exam-00001">
     <title>Using read() and readlines()</title>
@@ -102,7 +102,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Reading files</title>
-    <para id="para-00010">Suppose <code>fileobj = open("input.txt")</code> has already been executed for each question below.</para>
+    <para id="para-00010">Suppose <code class="python inline-code">fileobj = open("input.txt")</code> has already been executed for each question below.</para>
     <para id="para-00011">input.txt:</para>
     <code class="python" lang="python">
     Hello world!

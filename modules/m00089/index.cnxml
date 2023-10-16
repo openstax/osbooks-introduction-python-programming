@@ -17,10 +17,10 @@
     <section id="sect-00002">
     <title>Calculating a factorial</title>
     <para id="para-00002">The factorial of a positive integer is defined as the product of the integer and the positive integers less than the integer.</para>
-    <para id="para-00003">Ex: <code>5! = 5 * 4 * 3 * 2 * 1</code></para>
-    <para id="para-00004">Written as a general equation for a positive integer n: <code> n! = n * (n - 1) * (n - 2) * . . . * 1</code></para>
+    <para id="para-00003">Ex: <code class="python inline-code">5! = 5 * 4 * 3 * 2 * 1</code></para>
+    <para id="para-00004">Written as a general equation for a positive integer n: <code class="python inline-code"> n! = n * (n - 1) * (n - 2) * . . . * 1</code></para>
     <para id="para-00005">The above formula for the factorial of n results in a recursive formula:
-    <code>n! = n * (n - 1)!</code></para>
+    <code class="python inline-code">n! = n * (n - 1)!</code></para>
     <para id="para-00006">Thus, the factorial of n depends upon the value of the factorial at n-1. The factorial of n can be found by repeating the factorial of n - 1 until (n - 1)! = 1! (we know that 1! = 1). This result can be used to build the overall solution as seen in the animation below.</para>
     <note class="guided-slides" id="note-00001">
     <title>Finding the factorial of 5</title>

@@ -16,9 +16,9 @@
     </section>
     <section id="sect-00002">
     <title>Opening a file at any location</title>
-    <para id="para-00002">When only the filename is used as the argument to the <code>open()</code> function the file must be in the same folder as the Python file which is executing. Ex: If files.py has a line <code>fileobj = open("file1.txt")</code> then for the line of code to execute successfully, the file1.txt file should be in the same folder as files.py.</para>
-    <para id="para-00003">Often a programmer needs to open files from other folders than the one in which the Python file exists. A <term id="term-00001">path</term> uniquely identifies a folder location on a computer. The path can be used along with filename to open a file in any folder location. Ex: To open a file named logfile.log located in <code>/users/turtle/desktop</code> the following can be used:</para>
-    <para id="para-00004"><code>fileobj = open("/users/turtle/desktop/logfile.log")</code></para>
+    <para id="para-00002">When only the filename is used as the argument to the <code class="python inline-code">open()</code> function the file must be in the same folder as the Python file which is executing. Ex: If files.py has a line <code class="python inline-code">fileobj = open("file1.txt")</code> then for the line of code to execute successfully, the file1.txt file should be in the same folder as files.py.</para>
+    <para id="para-00003">Often a programmer needs to open files from other folders than the one in which the Python file exists. A <term id="term-00001">path</term> uniquely identifies a folder location on a computer. The path can be used along with filename to open a file in any folder location. Ex: To open a file named logfile.log located in <code class="python inline-code">/users/turtle/desktop</code> the following can be used:</para>
+    <para id="para-00004"><code class="python inline-code">fileobj = open("/users/turtle/desktop/logfile.log")</code></para>
     <table summary=" " id="table-00001">
     <title>Modes for open() function.</title>
     <tgroup cols="3">
@@ -26,24 +26,24 @@
     <row>
     <entry>Operating System<newline/><newline/></entry>
     <entry>File location</entry>
-    <entry><para id="para-00101"><code>open()</code> function example</para></entry>
+    <entry><para id="para-00101"><code class="python inline-code">open()</code> function example</para></entry>
     </row>
     </thead>
     <tbody>
     <row>
     <entry>Mac<newline/><newline/></entry>
-    <entry><code>/users/student/</code></entry>
-    <entry><code>fileobj = open("/users/student/output.txt")</code></entry>
+    <entry><para id="para-00102"><code class="python inline-code">/users/student/</code></para></entry>
+    <entry><para id="para-00103"><code class="python inline-code">fileobj = open("/users/student/output.txt")</code></para></entry>
     </row>
     <row>
     <entry>Linux<newline/><newline/></entry>
-    <entry><code>/usr/code/</code></entry>
-    <entry><code>fileobj = open("/usr/code/output.txt")</code></entry>
+    <entry><para id="para-00104"><code class="python inline-code">/usr/code/</code></para></entry>
+    <entry><para id="para-00105"><code class="python inline-code">fileobj = open("/usr/code/output.txt")</code></para></entry>
     </row>
     <row>
     <entry>Windows</entry>
-    <entry><para id="para-00024"><code>c:\projects\code\</code></para></entry>
-    <entry><para id="para-00025"><code>fileobj = open("c:/projects/code/output.txt")</code><newline/>or<newline/><code>fileobj = open("c:\\projects\\code\\output.txt")</code></para></entry>
+    <entry><para id="para-00024"><code class="python inline-code">c:\projects\code\</code></para></entry>
+    <entry><para id="para-00025"><code class="python inline-code">fileobj = open("c:/projects/code/output.txt")</code><newline/>or<newline/><code class="python inline-code">fileobj = open("c:\\projects\\code\\output.txt")</code></para></entry>
     </row>
     </tbody>
     </tgroup>

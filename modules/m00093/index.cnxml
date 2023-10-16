@@ -16,7 +16,7 @@
     <item>Demonstrate how to compute a recursive solution for the factorial function.</item>
     <item>Demonstrate the use of recursion to solve a string problem.</item>
     <item>Demonstrate the use of recursion to solve a list problem.</item>
-    <item>Use the built-in <code>count()</code> list function.</item>
+    <item>Use the built-in <code class="python inline-code">count()</code> list function.</item>
     <item>Define a recursive function to generate Fibonacci numbers.</item>
     <item>Use recursion to efficiently search a list.</item>
     <item>Demonstrate a solution to the 3 towers problem.</item>
@@ -33,8 +33,8 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00003"><code>count(element)</code></para></entry>
-    <entry><para id="para-00004">Returns the number of times the element exists on the list on which the <code>count()</code> function is called..</para></entry>
+    <entry><para id="para-00003"><code class="python inline-code">count(element)</code></para></entry>
+    <entry><para id="para-00004">Returns the number of times the element exists on the list on which the <code class="python inline-code">count()</code> function is called..</para></entry>
     </row>
     </tbody>
     </tgroup>

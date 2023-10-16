@@ -16,10 +16,10 @@
     </section>
     <section id="sect-00002">
     <title>The raise statement</title>
-    <para id="para-00002">A program can raise an exception when an error is detected. Raising an exception forces a program to deal with the error. If the exception is not handled using <code>try</code> and <code>except</code>, the program displays an error message and terminates.</para>
+    <para id="para-00002">A program can raise an exception when an error is detected. Raising an exception forces a program to deal with the error. If the exception is not handled using <code class="python inline-code">try</code> and <code class="python inline-code">except</code>, the program displays an error message and terminates.</para>
     <example id="exam-00001">
     <title>Invalid pizza size</title>
-    <para id="para-00003">The following class represents a pizza for sale. The <code>SIZES</code> dictionary maps an abbreviation to a size's name and price. Line 11 checks if the size received by the constructor is in the dictionary. Line 12 raises a <code>ValueError</code> with specific error message.</para>
+    <para id="para-00003">The following class represents a pizza for sale. The <code class="python inline-code">SIZES</code> dictionary maps an abbreviation to a size's name and price. Line 11 checks if the size received by the constructor is in the dictionary. Line 12 raises a <code class="python inline-code">ValueError</code> with specific error message.</para>
     <code class="python" lang="python">
     class Pizza:<newline/>
         SIZES = {
@@ -50,7 +50,7 @@
         raise ValueError(f"Unknown size '{size}'")
     ValueError: Unknown size 'Z'
     </code>
-    <para id="para-00004">Raising an exception in a constructor prevents an invalid object from being constructed. In the example, <code>p1</code> is constructed but <code>p2</code> is not constructed.</para>
+    <para id="para-00004">Raising an exception in a constructor prevents an invalid object from being constructed. In the example, <code class="python inline-code">p1</code> is constructed but <code class="python inline-code">p2</code> is not constructed.</para>
     </example>
     <note class="learning-questions" id="note-00001">
     <title>Predicting output with raise</title>
@@ -76,7 +76,7 @@
     <title>Programming practice</title>
     <note class="practice-program" id="note-00002">
     <title>Language objects</title>
-    <para id="para-00009">The file <emphasis effect="italics">top27.csv</emphasis> is based on Wikipedia's <link url="https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers">list of languages by number of native speakers</link>. A linguist would like to work with this data in an object-oriented way and has already defined a <code>Language</code> class. However, the code is not working correctly because of errors in the CSV file. (The CSV file cannot be changed, because the program needs to be able to detect these kinds of errors.)</para>
+    <para id="para-00009">The file <emphasis effect="italics">top27.csv</emphasis> is based on Wikipedia's <link url="https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers">list of languages by number of native speakers</link>. A linguist would like to work with this data in an object-oriented way and has already defined a <code class="python inline-code">Language</code> class. However, the code is not working correctly because of errors in the CSV file. (The CSV file cannot be changed, because the program needs to be able to detect these kinds of errors.)</para>
     <para id="para-00010">Your task is to modify the constructor to raise a ValueError in the following situations:</para>
     <list id="list-00002">
     <item>If the line does not have exactly four values (separated by commas).</item>
@@ -89,9 +89,9 @@
     </note>
     <note class="practice-program" id="note-00003">
     <title>Looking up keys</title>
-    <para id="para-00012">When looking up a value in a dictionary, a key has to match exactly. Ex: Given <code>fruit = {"apple": 1, "banana": 2}</code>, the expression <code>fruit["Apple"]</code> raises a KeyError, because "Apple" is not the same as "apple". Likewise, <code>fruit["NANA"]</code> raises a KeyError, because "nana" does not exactly match "banana".</para>
-    <para id="para-00013">Implement the <code>lookup()</code> function. This function tries to find a key in the dictionary that matches the search term. A key matches if the search term is a substring of the key, ignoring case. Ex: The key "banana" matches the search term "NANA".</para>
-    <para id="para-00014"> If no matching keys are found, <code>lookup()</code> should raise a KeyError with the message "search term not found". If multiple matches are found, <code>lookup()</code> should raise a KeyError with the message "multiple keys found". Otherwise, <code>lookup()</code> should return both the key and the value for the matching item in the dictionary.</para>
+    <para id="para-00012">When looking up a value in a dictionary, a key has to match exactly. Ex: Given <code class="python inline-code">fruit = {"apple": 1, "banana": 2}</code>, the expression <code class="python inline-code">fruit["Apple"]</code> raises a KeyError, because "Apple" is not the same as "apple". Likewise, <code class="python inline-code">fruit["NANA"]</code> raises a KeyError, because "nana" does not exactly match "banana".</para>
+    <para id="para-00013">Implement the <code class="python inline-code">lookup()</code> function. This function tries to find a key in the dictionary that matches the search term. A key matches if the search term is a substring of the key, ignoring case. Ex: The key "banana" matches the search term "NANA".</para>
+    <para id="para-00014"> If no matching keys are found, <code class="python inline-code">lookup()</code> should raise a KeyError with the message "search term not found". If multiple matches are found, <code class="python inline-code">lookup()</code> should raise a KeyError with the message "multiple keys found". Otherwise, <code class="python inline-code">lookup()</code> should return both the key and the value for the matching item in the dictionary.</para>
     <para id="para-00015">Given the <emphasis effect="italics">books.csv</emphasis> file, the output should be:</para>
     <code class="python" lang="python">
     Found: ('Pride and Prejudice', 9780141439518)
