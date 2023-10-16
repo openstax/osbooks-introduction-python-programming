@@ -39,7 +39,7 @@
     </thead>
     <tbody>
     <row>
-      <entry><table summary=" " id="table-00101">
+      <entry><table class="unnumbered" summary=" " id="table-00101">
         <title/>
     <tgroup cols="4">
     <thead>
@@ -73,7 +73,7 @@
     </media>
     </entry>-->
     <entry>
-      <table summary=" " id="table-00102">
+      <table class="unnumbered" summary=" " id="table-00102">
         <title/>
     <tgroup cols="2">
     <tbody>
@@ -131,7 +131,7 @@
     # Display the DataFrame
     df</code></entry>
     <entry>
-      <table summary=" " id="table-00103">
+      <table class="unnumbered" summary=" " id="table-00103">
         <title/>
     <tgroup cols="4">
     <thead>
@@ -183,7 +183,7 @@
     # Display the DataFrame
     df</code></entry>
     <entry>
-      <table summary=" " id="table-00104">
+      <table class="unnumbered" summary=" " id="table-00104">
         <title/>
     <tgroup cols="4">
     <thead>
@@ -236,7 +236,7 @@
     # Display the DataFrame
     df</code></entry>
     <entry>
-      <table summary=" " id="table-00105">
+      <table class="unnumbered" summary=" " id="table-00105">
         <title/>
     <tgroup cols="4">
     <thead>
@@ -331,12 +331,67 @@
       'Year': [2000, 1990, 2020, 1998, 2001, 2022]
     }
     df = pd.DataFrame(days)</code>
-    <figure class="unnumbered" id="fig-00001">
+
+    <table summary=" " id="table-00106">
+      <title/>
+  <tgroup cols="5">
+  <thead>
+  <row>
+  <entry></entry>
+  <entry>Season</entry>
+  <entry>Month</entry>
+  <entry>Month-day</entry>
+  <entry>Year</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row><entry>0</entry>
+    <entry>Summer</entry>
+    <entry>July</entry>
+    <entry>1</entry>
+    <entry>2000</entry>
+  </row>
+  <row><entry>1</entry>
+    <entry>Summer</entry>
+    <entry>June</entry>
+    <entry>12</entry>
+    <entry>1990</entry>
+  </row>
+  <row><entry>2</entry>
+    <entry>Fall</entry>
+    <entry>September</entry>
+    <entry>3</entry>
+    <entry>2020</entry>
+  </row>
+  <row><entry>3</entry>
+    <entry>Winter</entry>
+    <entry>January</entry>
+    <entry>7</entry>
+    <entry>1998</entry>
+  </row>
+  <row><entry>4</entry>
+    <entry>Fall</entry>
+    <entry>October</entry>
+    <entry>20</entry>
+    <entry>2001</entry>
+  </row>
+  <row><entry>5</entry>
+    <entry>Winter</entry>
+    <entry>February</entry>
+    <entry>28</entry>
+    <entry>2022</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+
+
+    <!--<figure class="unnumbered" id="fig-00001">
     <media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image6.png"/>
     </media>
     <caption/>
-    </figure>
+    </figure>-->
     <table summary=" " id="table-00003">
     <title>DataFrame functions.</title>
     <tgroup cols="4">
@@ -353,17 +408,97 @@
     <entry><para id="para-00014"><code class="python inline-code">head(n)</code></para></entry>
     <entry><para id="para-00015">The function allows for viewing the first <code class="python inline-code">n</code> rows. If a value is not passed, the first 5 rows will be shown.</para></entry>
     <entry><code class="python" lang="python">df.head(4)</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <entry>
+      <table class="unnumbered" summary=" " id="table-00107">
+        <title/>
+    <tgroup cols="5">
+    <thead>
+    <row>
+    <entry></entry>
+    <entry>Season</entry>
+    <entry>Month</entry>
+    <entry>Month-day</entry>
+    <entry>Year</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row><entry>0</entry>
+      <entry>Summer</entry>
+      <entry>July</entry>
+      <entry>1</entry>
+      <entry>2000</entry>
+    </row>
+    <row><entry>1</entry>
+      <entry>Summer</entry>
+      <entry>June</entry>
+      <entry>12</entry>
+      <entry>1990</entry>
+    </row>
+    <row><entry>2</entry>
+      <entry>Fall</entry>
+      <entry>September</entry>
+      <entry>3</entry>
+      <entry>2020</entry>
+    </row>
+    <row><entry>3</entry>
+      <entry>Winter</entry>
+      <entry>January</entry>
+      <entry>7</entry>
+      <entry>1998</entry>
+    </row>
+    
+    </tbody>
+    </tgroup>
+    </table>
+      <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image3.png"/>
-    </media></entry>
+    </media>-->
+  </entry>
     </row>
     <row>
     <entry><para id="para-00016"><code class="python inline-code">tail(n)</code></para></entry>
     <entry>The function allows for viewing the last n rows. If a value is not passed, the last 5 rows will be shown.</entry>
     <entry><code class="python" lang="python">df.tail(3)</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <entry>
+      <table class="unnumbered" summary=" " id="table-00108">
+        <title/>
+    <tgroup cols="5">
+    <thead>
+    <row>
+    <entry></entry>
+    <entry>Season</entry>
+    <entry>Month</entry>
+    <entry>Month-day</entry>
+    <entry>Year</entry>
+    </row>
+    </thead>
+    <tbody>
+    
+    <row><entry>3</entry>
+      <entry>Winter</entry>
+      <entry>January</entry>
+      <entry>7</entry>
+      <entry>1998</entry>
+    </row>
+    <row><entry>4</entry>
+      <entry>Fall</entry>
+      <entry>October</entry>
+      <entry>20</entry>
+      <entry>2001</entry>
+    </row>
+    <row><entry>5</entry>
+      <entry>Winter</entry>
+      <entry>February</entry>
+      <entry>28</entry>
+      <entry>2022</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+      <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image1.png"/>
-    </media></entry>
+    </media>-->
+  </entry>
     </row>
     <row>
     <entry><para id="para-00017"><code class="python inline-code">info()</code></para></entry>
