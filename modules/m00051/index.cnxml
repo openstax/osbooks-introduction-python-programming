@@ -13,7 +13,7 @@
     <caption>credit: modification of work "Lone Pine Sunset", by Romain Guy/Flickr, Public Domain</caption>
     </figure>
     <para id="para-00001">As programs get longer and more complex, organizing the code into modules is helpful. This chapter shows how to define, import, and find new modules. Python's <link url="https://docs.python.org/3/library/">standard library</link> provides over 200 <link url="https://docs.python.org/3/py-modindex.html">built-in modules</link>. Hundreds of thousands of <link url="https://pypi.org/">other modules</link> are available online.</para>
-    <para id="para-00002">A <term id="term-00001">module</term> is a <emphasis effect="italics">.py</emphasis> file containing function definitions and other statements. The module's name is the file's name without the <emphasis effect="italics">.py</emphasis> extension at the end. Ex: The following code, written in a file named <emphasis effect="italics">greetings.py</emphasis>, defines a module named <code>greetings</code>.</para>
+    <para id="para-00002">A <term id="term-00001">module</term> is a <emphasis effect="italics">.py</emphasis> file containing function definitions and other statements. The module's name is the file's name without the <emphasis effect="italics">.py</emphasis> extension at the end. Ex: The following code, written in a file named <emphasis effect="italics">greetings.py</emphasis>, defines a module named <code class="python inline-code">greetings</code>.</para>
     <code class="python" lang="python">
     """Functions that print standard greetings."""<newline/>
     def hello():

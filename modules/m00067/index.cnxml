@@ -10,20 +10,20 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Modify a list using <code>append()</code>, <code>remove()</code>, and <code>pop()</code> list operations.</item>
+    <item>Modify a list using <code class="python inline-code">append()</code>, <code class="python inline-code">remove()</code>, and <code class="python inline-code">pop()</code> list operations.</item>
     <item>Use indexes to access individual elements in a list.</item>
     <item>Use indexes to modify individual elements in a list.</item>
-    <item>Use <code>len()</code> function to find the length of a list.</item>
+    <item>Use <code class="python inline-code">len()</code> function to find the length of a list.</item>
     <item>Search a list using a for loop.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Using indexes</title>
-    <para id="para-00002">Individual list elements can be accessed directly using an index. The index number is put in square brackets <code>[]</code> and attached to the end of the name of the list to access the required element. Ex: <code>newList[3]</code> accesses the 4th element in <code>newlist</code>. An expression that evaluates to an integer number can also be used as an index. Similar to strings, negative indexing can also be used to address individual elements. Ex: index -1 refers to the last item and -2 the second last element.</para>
-    <para id="para-00003">The <code>len()</code> function, when called on a list, returns the length of the list.</para>
+    <para id="para-00002">Individual list elements can be accessed directly using an index. The index number is put in square brackets <code class="python inline-code">[]</code> and attached to the end of the name of the list to access the required element. Ex: <code class="python inline-code">newList[3]</code> accesses the 4th element in <code class="python inline-code">newlist</code>. An expression that evaluates to an integer number can also be used as an index. Similar to strings, negative indexing can also be used to address individual elements. Ex: index -1 refers to the last item and -2 the second last element.</para>
+    <para id="para-00003">The <code class="python inline-code">len()</code> function, when called on a list, returns the length of the list.</para>
     <example id="exam-00001">
     <title>List indexes and len() function</title>
-    <para id="para-00004">The following code demonstrates the use of list indexes and the <code>len()</code> function. Line 6 shows the use of the <code>len()</code> function to get the length of the list. Line 10 shows how to access an element using an index. Line 14 shows how to modify a list element using an index.</para>
+    <para id="para-00004">The following code demonstrates the use of list indexes and the <code class="python inline-code">len()</code> function. Line 6 shows the use of the <code class="python inline-code">len()</code> function to get the length of the list. Line 10 shows how to access an element using an index. Line 14 shows how to modify a list element using an index.</para>
     <code class="python" lang="python">
     #Setup a list of numbers
     numList = [2, 3, 5, 9, 11]
@@ -78,7 +78,7 @@
     <note class="learning-questions" id="note-00003">
     <title>Iterating lists</title>
     <para id="para-00010">For the following questions consider the following list:<newline/>
-    <code>my_list = [2, 3, 5, 7, 9]</code></para>
+    <code class="python inline-code">my_list = [2, 3, 5, 7, 9]</code></para>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch09-m02-p04"/></para>

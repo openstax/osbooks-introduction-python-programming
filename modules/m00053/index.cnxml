@@ -10,13 +10,13 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Import functions from a module using the <code>from</code> keyword.</item>
+    <item>Import functions from a module using the <code class="python inline-code">from</code> keyword.</item>
     <item>Explain how to avoid a name collision when importing a module.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>The from keyword</title>
-    <para id="para-00002">Specific functions in a module can be imported using the <code>from</code> keyword:</para>
+    <para id="para-00002">Specific functions in a module can be imported using the <code class="python inline-code">from</code> keyword:</para>
     <code class="python" lang="python">
     from area import triangle, cylinder
     </code>
@@ -63,7 +63,7 @@
       return x ** 3<newline/>
     print(cube(2)) # Calls the local cube() function, not area.cube()
     </code>
-    <para id="para-00009">A programmer might not realize the <code>cube</code> function is defined twice, because no error occurs when running the program. Name collisions are not considered errors and often lead to unexpected behavior.</para>
+    <para id="para-00009">A programmer might not realize the <code class="python inline-code">cube</code> function is defined twice, because no error occurs when running the program. Name collisions are not considered errors and often lead to unexpected behavior.</para>
     <note class="guided-slides" id="note-00004">
     <title>Module and function names</title>
     <media alt="module_function_names_slides">

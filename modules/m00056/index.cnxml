@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Built-in modules</title>
-    <para id="para-00002">The <term id="term-00001">Python Standard Library</term> is a collection of built-in functions and modules that support common programming tasks. Ex: The <code>math</code> module provides functions like <code>sqrt()</code> and constants like <code>pi</code>. Python's official documentation includes a <link url="https://docs.python.org/3/library/">library reference</link> and a <link url="https://docs.python.org/3/py-modindex.html">module index</link> for becoming familiar with the standard library.</para>
+    <para id="para-00002">The <term id="term-00001">Python Standard Library</term> is a collection of built-in functions and modules that support common programming tasks. Ex: The <code class="python inline-code">math</code> module provides functions like <code class="python inline-code">sqrt()</code> and constants like <code class="python inline-code">pi</code>. Python's official documentation includes a <link url="https://docs.python.org/3/library/">library reference</link> and a <link url="https://docs.python.org/3/py-modindex.html">module index</link> for becoming familiar with the standard library.</para>
     <para id="para-00003">For decades, Python has maintained a "<link url="https://peps.python.org/pep-0002/">batteries included</link>" philosophy. This philosophy means that the standard library should come with everything most programmers need. In fact, the standard library includes over 200 built-in modules!</para>
     <table summary=" " id="table-00001">
     <title>Example built-in modules in the standard library</title>
@@ -29,43 +29,43 @@
     </thead>
     <tbody>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/calendar.html">calendar</link></code></entry>
+    <entry><para id="para-00103"><code class="python inline-code"><link url="https://docs.python.org/3/library/calendar.html">calendar</link></code></para></entry>
     <entry>General calendar-related functions.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/datetime.html">datetime</link></code></entry>
+    <entry><para id="para-00104"><code class="python inline-code"><link url="https://docs.python.org/3/library/datetime.html">datetime</link></code></para></entry>
     <entry>Basic date and time types and functions.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/email.html">email</link></code></entry>
+    <entry><para id="para-00105"><code class="python inline-code"><link url="https://docs.python.org/3/library/email.html">email</link></code></para></entry>
     <entry>Generate and process email messages.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/math.html">math</link></code></entry>
+    <entry><para id="para-00106"><code class="python inline-code"><link url="https://docs.python.org/3/library/math.html">math</link></code></para></entry>
     <entry>Mathematical functions and constants.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/os.html">os</link></code></entry>
+    <entry><para id="para-00107"><code class="python inline-code"><link url="https://docs.python.org/3/library/os.html">os</link></code></para></entry>
     <entry>Interact with the operating system.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/random.html">random</link></code></entry>
+    <entry><para id="para-00108"><code class="python inline-code"><link url="https://docs.python.org/3/library/random.html">random</link></code></para></entry>
     <entry>Generate pseudo-random numbers.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/statistics.html">statistics</link></code></entry>
+    <entry><para id="para-00109"><code class="python inline-code"><link url="https://docs.python.org/3/library/statistics.html">statistics</link></code></para></entry>
     <entry>Mathematical statistics functions.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/sys.html">sys</link></code></entry>
+    <entry><para id="para-00110"><code class="python inline-code"><link url="https://docs.python.org/3/library/sys.html">sys</link></code></para></entry>
     <entry>System-specific parameters and functions.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/turtle.html">turtle</link></code></entry>
+    <entry><para id="para-00111"><code class="python inline-code"><link url="https://docs.python.org/3/library/turtle.html">turtle</link></code></para></entry>
     <entry>Educational framework for simple graphics.</entry>
     </row>
     <row>
-    <entry><code><link url="https://docs.python.org/3/library/zipfile.html">zipfile</link></code></entry>
+    <entry><para id="para-0112"><code class="python inline-code"><link url="https://docs.python.org/3/library/zipfile.html">zipfile</link></code></para></entry>
     <entry>Read and write ZIP-format archive files.</entry>
     </row>
     </tbody>
@@ -107,63 +107,63 @@
     </thead>
     <tbody>
     <row>
-    <entry><code><link url="https://pypi.org/project/arrow/">arrow</link></code></entry>
+    <entry><para id="para-00113"><code class="python inline-code"><link url="https://pypi.org/project/arrow/">arrow</link></code></para></entry>
     <entry>Convert and format dates, times, and timestamps.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/beautifulsoup4/">BeautifulSoup</link></code></entry>
+    <entry><para id="para-00114"><code class="python inline-code"><link url="https://pypi.org/project/beautifulsoup4/">BeautifulSoup</link></code></para></entry>
     <entry>Extract data from HTML and XML documents.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/bokeh/">bokeh</link></code></entry>
+    <entry><para id="para-00115"><code class="python inline-code"><link url="https://pypi.org/project/bokeh/">bokeh</link></code></para></entry>
     <entry>Interactive plots and applications in the browser.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/matplotlib/">matplotlib</link></code></entry>
+    <entry><para id="para-00116"><code class="python inline-code"><link url="https://pypi.org/project/matplotlib/">matplotlib</link></code></para></entry>
     <entry>Static, animated, and interactive visualizations.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/moviepy/">moviepy</link></code></entry>
+    <entry><para id="para-00117"><code class="python inline-code"><link url="https://pypi.org/project/moviepy/">moviepy</link></code></para></entry>
     <entry>Video editing, compositing, and processing.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/nltk/">nltk</link></code></entry>
+    <entry><para id="para-00118"><code class="python inline-code"><link url="https://pypi.org/project/nltk/">nltk</link></code></para></entry>
     <entry>Natural language toolkit for human languages.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/numpy/">numpy</link></code></entry>
+    <entry><para id="para-00119"><code class="python inline-code"><link url="https://pypi.org/project/numpy/">numpy</link></code></para></entry>
     <entry>Fundamental package for numerical computing.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/pandas/">pandas</link></code></entry>
+    <entry><para id="para-00120"><code class="python inline-code"><link url="https://pypi.org/project/pandas/">pandas</link></code></para></entry>
     <entry>Data analysis, time series, and statistics library.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/Pillow/">pillow</link></code></entry>
+    <entry><para id="para-00121"><code class="python inline-code"><link url="https://pypi.org/project/Pillow/">pillow</link></code></para></entry>
     <entry>Image processing for jpg, png, and other formats.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/pytest/">pytest</link></code></entry>
+    <entry><para id="para-00122"><code class="python inline-code"><link url="https://pypi.org/project/pytest/">pytest</link></code></para></entry>
     <entry>Full-featured testing tool and unit test framework.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/requests/">requests</link></code></entry>
+    <entry><para id="para-00123"><code class="python inline-code"><link url="https://pypi.org/project/requests/">requests</link></code></para></entry>
     <entry>Elegant HTTP library for connecting to web servers.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/scikit-learn/">scikit-learn</link></code></entry>
+    <entry><para id="para-00124"><code class="python inline-code"><link url="https://pypi.org/project/scikit-learn/">scikit-learn</link></code></para></entry>
     <entry>Simple, efficient tools for predictive data analysis.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/scipy/">scipy</link></code></entry>
+    <entry><para id="para-00125"><code class="python inline-code"><link url="https://pypi.org/project/scipy/">scipy</link></code></para></entry>
     <entry>Fundamental algorithms for scientific computing.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/scrapy/">scrapy</link></code></entry>
+    <entry><para id="para-00126"><code class="python inline-code"><link url="https://pypi.org/project/scrapy/">scrapy</link></code></para></entry>
     <entry>Crawl websites and scrape data from web pages.</entry>
     </row>
     <row>
-    <entry><code><link url="https://pypi.org/project/tensorflow/">tensorflow</link></code></entry>
+    <entry><para id="para-00127"><code class="python inline-code"><link url="https://pypi.org/project/tensorflow/">tensorflow</link></code></para></entry>
     <entry>End-to-end machine learning platform for everyone.</entry>
     </row>
     </tbody>
@@ -202,12 +202,12 @@
     <title>Programming practice</title>
     <note class="practice-program" id="note-00004">
     <title>Happy birthday</title>
-    <para id="para-00016">Module documentation pages often include examples to help programmers become familiar with the module. For this exercise, refer to the following examples from the <code>datetime</code> module documentation:</para>
+    <para id="para-00016">Module documentation pages often include examples to help programmers become familiar with the module. For this exercise, refer to the following examples from the <code class="python inline-code">datetime</code> module documentation:</para>
     <list id="list-00003">
     <item><link url="https://docs.python.org/3/library/datetime.html#examples-of-usage-date">Examples of Usage: date</link></item>
     <item><link url="https://docs.python.org/3/library/datetime.html#examples-of-usage-timedelta">Examples of Usage: timedelta</link></item>
     </list>
-    <para id="para-00017">Write a program that creates a <code>date</code> object representing your birthday. Then get a <code>date</code> object representing today's date (the date the program is run). Calculate the difference between the two dates, and output the results in the following format:</para>
+    <para id="para-00017">Write a program that creates a <code class="python inline-code">date</code> object representing your birthday. Then get a <code class="python inline-code">date</code> object representing today's date (the date the program is run). Calculate the difference between the two dates, and output the results in the following format:</para>
     <code class="python" lang="python">
     Your birth date: 2005-03-14
     Today's date is: 2023-06-01<newline/>
@@ -221,7 +221,7 @@
     </note>
     <note class="practice-program" id="note-00005">
     <title>More exact age</title>
-    <para id="para-00018">The <code>datetime</code> module does not provide a built-in way to display a person's exact age. Ex: The following program calculates an exact age (in years and days) using floor division and modulo. The output is: <code>You are 15 years and 4 days old</code>.</para>
+    <para id="para-00018">The <code class="python inline-code">datetime</code> module does not provide a built-in way to display a person's exact age. Ex: The following program calculates an exact age (in years and days) using floor division and modulo. The output is: <code class="python inline-code">You are 15 years and 4 days old</code>.</para>
     <code class="python" lang="python">
     from datetime import date<newline/>
     birth = date(2005, 3, 14)
@@ -231,15 +231,15 @@
     days = delta.days % 365
     print("You are", years, "years and", days, "days old")
     </code>
-    <para id="para-00019">Notice how leap years are included in the calculation. February 29th occurs four times between <code>birth</code> and <code>today</code>. Therefore, the user is not only 15 years old, but 15 years and 4 days old.</para>
-    <para id="para-00020">Many commonly used modules from PyPI, including <code>arrow</code>, are installed in the Python shell at <link url="https://www.python.org/shell/">python.org/shell</link>. Open the Python shell and type the following lines:</para>
+    <para id="para-00019">Notice how leap years are included in the calculation. February 29th occurs four times between <code class="python inline-code">birth</code> and <code class="python inline-code">today</code>. Therefore, the user is not only 15 years old, but 15 years and 4 days old.</para>
+    <para id="para-00020">Many commonly used modules from PyPI, including <code class="python inline-code">arrow</code>, are installed in the Python shell at <link url="https://www.python.org/shell/">python.org/shell</link>. Open the Python shell and type the following lines:</para>
     <code class="python" lang="python">
     import arrow
     birth = arrow.get(2005, 3, 14)
     birth.humanize()
     </code>
-    <para id="para-00021">Refer to the <link url="https://arrow.readthedocs.io/en/latest/guide.html#humanize">humanize()</link> examples from the <code>arrow</code> module documentation. In the Python shell, figure out how to display the number of years and days since <code>birth</code> using <emphasis effect="italics">one line of code</emphasis>. Then display the number of years, months, and days since <code>birth</code>. Finally, use the <code>print()</code> function to output the results in this format: <code>You are 18 years 4 months and 7 days old</code>.</para>
-    <para id="para-00022">As time permits, experiment with other functions provided by the <code>arrow</code> module.</para>
+    <para id="para-00021">Refer to the <link url="https://arrow.readthedocs.io/en/latest/guide.html#humanize">humanize()</link> examples from the <code class="python inline-code">arrow</code> module documentation. In the Python shell, figure out how to display the number of years and days since <code class="python inline-code">birth</code> using <emphasis effect="italics">one line of code</emphasis>. Then display the number of years, months, and days since <code class="python inline-code">birth</code>. Finally, use the <code class="python inline-code">print()</code> function to output the results in this format: <code class="python inline-code">You are 18 years 4 months and 7 days old</code>.</para>
+    <para id="para-00022">As time permits, experiment with other functions provided by the <code class="python inline-code">arrow</code> module.</para>
     </note>
     </section>
     </content>

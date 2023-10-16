@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Identify code that will run as a side effect of importing.</item>
-    <item>Explain the purpose of <code>if __name__ == "__main__"</code>.</item>
+    <item>Explain the purpose of <code class="python inline-code">if __name__ == "__main__"</code>.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -44,7 +44,7 @@
     </section>
     <section id="sect-00003">
     <title>Using __name__</title>
-    <para id="para-00006">Python modules often include the statement <code>if __name__ == "__main__"</code> to prevent side effects. This statement is true when the module is run as a program and false when the module is imported.</para>
+    <para id="para-00006">Python modules often include the statement <code class="python inline-code">if __name__ == "__main__"</code> to prevent side effects. This statement is true when the module is run as a program and false when the module is imported.</para>
     <note class="guided-slides" id="note-00003">
     <title>The main module</title>
     <media alt="main_module_slides">
@@ -71,7 +71,7 @@
     </note>
     <note id="note-00005">
     <title>Exploring further</title>
-    <para id="para-00010">Variables that begin and end with double underscores have special meaning in Python. Double underscores are informally called "dunder" or "magic" variables. Other examples include <code>__doc__</code> (the module's docstring) and <code>__file__</code> (the module's filename).</para>
+    <para id="para-00010">Variables that begin and end with double underscores have special meaning in Python. Double underscores are informally called "dunder" or "magic" variables. Other examples include <code class="python inline-code">__doc__</code> (the module's docstring) and <code class="python inline-code">__file__</code> (the module's filename).</para>
     </note>
     </section>
     <section id="sect-00004">
@@ -80,7 +80,7 @@
     <title>Side effects</title>
     <para id="para-00011">This exercise is a continuation of the "Missing imports" exercise. Previously, you added missing import statements to the top of the program. Modify the program to prevent side effects when importing the program as a module:</para>
     <list list-type="enumerated" id="list-00002">
-    <item>Add <code>if __name__ == "__main__"</code> at the end.</item>
+    <item>Add <code class="python inline-code">if __name__ == "__main__"</code> at the end.</item>
     <item>Move all test code under that if statement.</item>
     </list>
     <para id="para-00012">The program should run without errors and produce the same output as before.</para>
@@ -90,7 +90,7 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Conversion test</title>
-    <para id="para-00013">This exercise is a continuation of the "Conversion module" exercise. Previously, you wrote the functions <code>cel2fah</code>, <code>fah2cel</code>, <code>km2mi</code>, and <code>mi2km</code>. Write test code at the end of <emphasis effect="italics">conversion.py</emphasis> (the original file) for each of these functions. The test code must not run as a side effect when <code>conversion</code> is imported by other programs. When running <emphasis effect="italics">conversion.py</emphasis> as the main program, the test output should be:</para>
+    <para id="para-00013">This exercise is a continuation of the "Conversion module" exercise. Previously, you wrote the functions <code class="python inline-code">cel2fah</code>, <code class="python inline-code">fah2cel</code>, <code class="python inline-code">km2mi</code>, and <code class="python inline-code">mi2km</code>. Write test code at the end of <emphasis effect="italics">conversion.py</emphasis> (the original file) for each of these functions. The test code must not run as a side effect when <code class="python inline-code">conversion</code> is imported by other programs. When running <emphasis effect="italics">conversion.py</emphasis> as the main program, the test output should be:</para>
     <code class="python" lang="python">
     0 C is 32 F
     5 C is 41 F
