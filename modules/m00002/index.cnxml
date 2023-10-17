@@ -92,8 +92,6 @@ public class Hello {
 </exercise>
 </note>
 </section>
-<section id="sect-00004">
-<title>Programming practice</title>
 <note class="practice-program" id="note-00006">
 <title>Favorite song</title>
 <list id="list-00002">
@@ -112,6 +110,5 @@ print("Cool! I like", song, "too.")
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_02_01_Favorite-song.html"/>
 </media>
 </note>
-</section>
 </content>
 </document>
