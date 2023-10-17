@@ -504,17 +504,81 @@
     <entry><para id="para-00017"><code class="python inline-code">info()</code></para></entry>
     <entry>The function provides a summary of the DataFrame, including the column names, data types, and the number of non-null values. The function also returns the DataFrame's memory usage.</entry>
     <entry><code class="python" lang="python">df.info()</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
-    <image mime-type="image/jpeg" src="../../media/Python_15_3_image9.png"/>
-    </media></entry>
+    <entry>
+      <code class="python" lang="python">
+        &lt;class 'pandas.core.frame.DataFrame'>
+        RangeIndex: 6 entries, 0 to 5
+        Data columns (total 4 columns):
+         #    Column        Non-Null Count    Dtype
+        ---   ------        --------------    -----
+         0    Season        6 non-null        object
+         1    Month         6 non-null        object
+         2    Month-day     6 non-null        int64
+         3    Year          6 non-null        int64
+        dtypes: int64(2), object(2)
+        memory usage: 320.0+ bytes
+        
+        </code>
+        <!--  <media display="inline" alt="The content of the dataframe df is shown.">
+        <image mime-type="image/jpeg" src="../../media/Python_15_3_image9.png"/>
+        </media>-->
+    </entry>
     </row>
     <row>
     <entry><para id="para-00018"><code class="python inline-code">describe()</code></para></entry>
     <entry>The function generates statistics of the numerical columns like count, mean, standard deviation, minimum, maximum, and quartile.</entry>
     <entry><code class="python" lang="python">df.describe()</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <entry>
+      <table class="unnumbered" summary=" " id="table-00109">
+        <title/>
+    <tgroup cols="3">
+    <thead>
+    <row>
+    <entry></entry>
+    <entry>Month-day</entry>
+    <entry>Year</entry>
+    </row>
+    </thead>
+    <tbody>
+    
+    <row><entry align="center">count</entry>
+      <entry align="right">6.000000</entry>
+      <entry align="right">6.000000</entry>
+    </row>
+    <row><entry align="center">mean</entry>
+      <entry align="right">11.833333</entry>
+      <entry align="right">2005.166667</entry>
+    </row>
+    <row><entry align="center">std</entry>
+      <entry align="right">10.457852</entry>
+      <entry align="right">12.875040</entry>
+    </row>
+    <row><entry align="center">min</entry>
+      <entry align="right">1.000000</entry>
+      <entry align="right">1990.000000</entry>
+    </row>
+    <row><entry align="center">25%</entry>
+      <entry align="right">4.000000</entry>
+      <entry align="right">1998.500000</entry>
+    </row>
+    <row><entry align="center">50%</entry>
+      <entry align="right">9.500000</entry>
+      <entry align="right">2000.500000</entry>
+    </row>
+    <row><entry align="center">75%</entry>
+      <entry align="right">18.000000</entry>
+      <entry align="right">2015.250000</entry>
+    </row>
+    <row><entry align="center">max</entry>
+      <entry align="right">28.000000</entry>
+      <entry align="right">2022.000000</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+      <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image7.png"/>
-    </media>
+    </media>-->
     </entry>
     </row>
     <row>
