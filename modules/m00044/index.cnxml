@@ -100,8 +100,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00007">
     <title>Cinema concession stand</title>
     <para id="para-00015">Write a function, concessions(), that prints the food and drink options at a cinema.</para>
@@ -142,6 +141,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_02_02_Terms-and-conditions-prompt.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

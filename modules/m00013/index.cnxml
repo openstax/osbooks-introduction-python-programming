@@ -118,8 +118,6 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
     <note class="practice-program" id="note-00005">
     <title>After the point</title>
     <para id="para-00020">Write a program that reads in a string of digits that represent the digits after the decimal point of a number, num. Concatenate the input string together with '.' and num, and print the result. Ex: <span class="blue-code">I</span>f input is 345, the program will print 2.345.</para>
@@ -134,6 +132,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_04_05_Print-n-times.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

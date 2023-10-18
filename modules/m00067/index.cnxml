@@ -96,8 +96,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00004">
     <title>Simple Searching</title>
     <para id="para-00014">Write a program that prints "found!" if "Soccer" is found in the given list.</para>
@@ -115,6 +114,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_03_More-complex-searching.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

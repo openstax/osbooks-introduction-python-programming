@@ -137,8 +137,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
 </exercise>
 </note>
 </section>
-<section id="sect-00004">
-<title>Programming practice</title>
+
 <note class="practice-program" id="note-00004">
 <title>Three errors</title>
 <para id="para-00016">The following program has three errors.</para>
@@ -163,6 +162,5 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
 <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_07_10_Wrong-symbols.html"/>
 </media>
 </note>
-</section>
 </content>
 </document>

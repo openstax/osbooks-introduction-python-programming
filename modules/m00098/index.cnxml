@@ -126,8 +126,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00004">
     <title>Overriding methods</title>
     <para id="para-00011">Define 3 classes: Instrument, Woodwind, and String.</para>
@@ -145,6 +144,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_05_06_Overriding-methods.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

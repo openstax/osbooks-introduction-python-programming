@@ -144,8 +144,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00007">
     <title>Creating a class for an airline's flight tickets</title>
     <para id="para-00021">Write a class, FlightTicket, as described below. Default values follow the attributes. Then create a flight ticket and assign each instance attribute with values read from input.</para>
@@ -224,6 +223,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_03_02_Creating-a-class-for-fantasy-books.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

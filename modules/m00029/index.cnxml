@@ -97,8 +97,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+  
     <note class="practice-program" id="note-00006">
     <title>Improved division</title>
     <para id="para-00016">The following program divides 2 integers. Division by 0 produces an error. Modify the program to read in a new denominator (with no prompt) if the denominator is 0.</para>
@@ -118,6 +117,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_03_04_Converting-temperature-units.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

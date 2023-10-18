@@ -104,8 +104,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00005">
     <title>Crochet hook size conversion</title>
     <para id="para-00015">Write a program that reads in a crochet hook's US size and computes the metric diameter in millimeters. (A subset of sizes is used.) If the input does not match B-G, the diameter should be assigned with -1.0. Ex: If the input is D, the output is "3.25 mm".</para>
@@ -147,6 +146,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_06_07_Color-wavelengths.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

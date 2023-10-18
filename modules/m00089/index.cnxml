@@ -91,8 +91,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00005">
     <title>Recursive summation</title>
     <para id="para-00022">Write a program that uses a recursive function to calculate the summation of numbers from 0 to a user specified positive integer n.</para>
@@ -109,6 +108,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_03_02_Digits.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

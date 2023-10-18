@@ -75,8 +75,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+
     <note class="practice-program" id="note-00005">
     <title>Exploring the shell</title>
     <para id="para-00013">Running code interactively is a great way to learn how Python works. Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Then enter any Python code, one line at a time, to see the result. Here are a few expressions to try:</para>
@@ -122,6 +121,5 @@
     <item>That's all folks!</item>
     </list>
     </note>
-    </section>
     </content>
    </document>

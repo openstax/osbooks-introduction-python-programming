@@ -189,22 +189,22 @@
         <list id="list-00004">
     <item><link url="https://www.unicode.org/charts/PDF/U0000.pdf">Unicode Basic Latin Chart</link></item>
     </list>
-    </note>
-    <note class="practice-program" id="note-00010">
-    <title>Programming practice: Friday boolean</title>
-    <para id="para-00032">"It's Friday, I'm in love" -- <span class="purple-code">from Friday I'm in Love, a song released by the Cure in 1992.</span></para>
-    <para id="para-00033">Write a program that reads in the day of the week. Assign the boolean variable, in_love, with the result of whether the day is Friday or not.</para>
-    <media alt="programming_practice_-Friday_boolean_program">
-    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_01_Programming-practice_-Friday-boolean.html"/>
-    </media>
-    </note>
-    <note class="practice-program" id="note-00011">
-    <title>Programming practice: Even numbers</title>
-    <para id="para-00034">Write a program that reads in an integer and prints whether the integer is even or not. Remember, a number is even if number % 2 == 0. Ex: If the input is 6, the output is "6 is even: True".</para>
-    <media alt="programming_practice_-Even_numbers_program">
-    <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_02_Programming-practice_-Even-numbers.html"/>
-    </media>
-    </note>
+  </note>
     </section>
+    <note class="practice-program" id="note-00010">
+      <title>Friday boolean</title>
+      <para id="para-00032">"It's Friday, I'm in love" -- <span class="purple-code">from Friday I'm in Love, a song released by the Cure in 1992.</span></para>
+      <para id="para-00033">Write a program that reads in the day of the week. Assign the boolean variable, in_love, with the result of whether the day is Friday or not.</para>
+      <media alt="programming_practice_-Friday_boolean_program">
+      <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_01_Programming-practice_-Friday-boolean.html"/>
+      </media>
+      </note>
+      <note class="practice-program" id="note-00011">
+      <title>Even numbers</title>
+      <para id="para-00034">Write a program that reads in an integer and prints whether the integer is even or not. Remember, a number is even if number % 2 == 0. Ex: If the input is 6, the output is "6 is even: True".</para>
+      <media alt="programming_practice_-Even_numbers_program">
+      <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_02_Programming-practice_-Even-numbers.html"/>
+      </media>
+      </note>
     </content>
 </document>

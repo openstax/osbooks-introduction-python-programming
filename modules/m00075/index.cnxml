@@ -90,8 +90,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00005">
     <title>Personal information dictionary</title>
     <para id="para-00011">Create a dictionary, my_info, with three key-value pairs with keys being 'first name', 'last name', and 'age' and values being corresponding information about yourself. <span class="blue-code">Then, print my_info.</span></para>
@@ -99,6 +98,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_03_02_Personal-information-dictionary.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

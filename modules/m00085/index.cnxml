@@ -89,8 +89,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00004">
     <title>Missing import statement</title>
     <para id="para-00014">Add the missing import statement to the top of the file. Do not make any changes to the rest of the code. In the end, the program should run without errors.</para>
@@ -105,6 +104,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_06_07_Missing-class-import-statement.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

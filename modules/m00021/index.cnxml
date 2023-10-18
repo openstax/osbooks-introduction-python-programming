@@ -248,8 +248,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00005">
     <title>Hopper quote</title>
     <para id="para-00016"><link url="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</link> (1906–1992) was a famous computer scientist (and rear admiral in the US Navy!) who came up with the idea of machine-independent programming languages. She envisioned a programming language based on English and made many contributions that paved the way for modern programming languages, including Python.</para>
@@ -280,6 +279,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_02_Shift-cipher.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

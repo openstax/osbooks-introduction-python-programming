@@ -118,8 +118,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00004">
     <title>Inaccurate tips</title>
     <para id="para-00016">The following code calculates the tip amount, given a bill amount and the tip ratio. Experiment with the following bill amount and tip ratios and see if any inaccuracies may result in calculating the tip amount.</para>
@@ -143,6 +142,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_05_07_Area-of-a-triangle.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

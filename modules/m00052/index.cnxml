@@ -113,8 +113,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00004">
     <title>Conversion module</title>
     <para id="para-00011">Write a module that defines the following functions:</para>
@@ -156,6 +155,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_02_02_European-vacation.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

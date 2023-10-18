@@ -165,8 +165,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00005">
     <title>Help on modules</title>
     <para id="para-00018">The <code class="python inline-code">random</code> and <code class="python inline-code">statistics</code> modules are useful for running scientific experiments. You can become familiar with these two modules by skimming their documentation.</para>
@@ -194,6 +193,5 @@
     </list>
     <para id="para-00022">Remember to use the navigation keys on the keyboard, and press the Q key ("quit") to return to the Python shell.</para>
     </note>
-    </section>
     </content>
 </document>

@@ -103,8 +103,7 @@
     <para id="para-00016">One might incorrectly think that the rating variable's type or identity changes. However, the only thing that changes is which object the rating variable refers to.</para>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00007">
     <title>Three variables</title>
     <list list-type="enumerated" id="list-00003">
@@ -144,6 +143,5 @@
     </list></item>
     </list>
     </note>
-    </section>
     </content>
 </document>

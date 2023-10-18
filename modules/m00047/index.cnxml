@@ -158,8 +158,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00006">
     <title>Printing right triangle area</title>
     <para id="para-00021">Write a function, print_area(), that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where <emphasis effect="italics">b</emphasis> is the base and <emphasis effect="italics">h</emphasis> is the height.</para><newline/>
@@ -195,6 +194,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_05_07_Curving-scores.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

@@ -70,8 +70,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00005">
     <title>Unique and comma-separated words</title>
     <para id="para-00010">Write a program that accepts a comma separated sequence of words as input and prints words in separate lines. Ex: Given the string <code class="python inline-code">"happy,happy,face"</code>, the output would be:</para>
@@ -102,6 +101,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_06_08_Lunch-order.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

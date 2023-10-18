@@ -293,8 +293,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00008">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00007">
     <title>Formatting a list of numbers</title>
     <para id="para-00034">Given a list of numbers (floating-point or integer), print numbers with 2 decimal place precision and at least 6 characters.</para>
@@ -309,6 +308,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_05_06_Formatting-a-list-of-numbers.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

@@ -172,8 +172,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00006">
     <title>Overriding methods</title>
     <para id="para-00023">Given the Pet class, create a Bird class inherited from Pet and a Finch class inherited from Bird. Override the display() method in Bird and Finch such that the program output is:</para>
@@ -203,6 +202,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_04_05_Using-super().html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

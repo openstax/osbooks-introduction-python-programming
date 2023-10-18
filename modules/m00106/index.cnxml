@@ -72,8 +72,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00003">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00002">
     <title>Language objects</title>
     <para id="para-00009">The file <emphasis effect="italics">top27.csv</emphasis> is based on Wikipedia's <link url="https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers">list of languages by number of native speakers</link>. A linguist would like to work with this data in an object-oriented way and has already defined a <code class="python inline-code">Language</code> class. However, the code is not working correctly because of errors in the CSV file. (The CSV file cannot be changed, because the program needs to be able to detect these kinds of errors.)</para>
@@ -103,6 +102,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_06_09_Looking-up-keys.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

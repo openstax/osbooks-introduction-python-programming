@@ -108,8 +108,7 @@
   </exercise>
   </note>
   </section>
-  <section id="sect-00004">
-  <title>Programming practice</title>
+  
   <note class="practice-program" id="note-00004">
   <title>Creating a class for vending machines</title>
   <para id="para-00012">Write a class, VendingMachine, as described below. Default values follow the attributes. Ex: count's default value is 0. Create a vending machine using a value read from input and call instance methods.</para>
@@ -142,6 +141,5 @@
   <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_04_03_Creating-a-class-for-vending-machines.html"/>
   </media>
   </note>
-  </section>
   </content>
 </document>

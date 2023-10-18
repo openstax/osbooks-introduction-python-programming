@@ -195,8 +195,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+
     <note class="practice-program" id="note-00004">
     <title>Quadratic formula</title>
     <para id="para-00014">In algebra, a quadratic equation is written as <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>.
@@ -410,6 +409,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_07_11_Cylinder-formulas.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

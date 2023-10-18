@@ -97,8 +97,7 @@
     <para id="para-00010">Tuples are immutable and have a fixed size, so tuples use less memory. Overall, tuples are faster to create and access, resulting in better performance that can be noticeable with large amounts of data.</para>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+  
     <note class="practice-program" id="note-00005">
     <title>Creating a tuple from a list</title>
     <para id="para-00011">Suppose a programmer wants to create a tuple from a list to prevent future changes. The tuple() function creates a tuple from an object like a list. Ex: my_tuple = tuple(my_list) creates a tuple from the list my_list. Update the program below to create a tuple final_grades from the list grades.</para>
@@ -124,6 +123,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_06_07_Creating-a-tuple-with-user-input.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

@@ -130,8 +130,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+  
     <note class="practice-program" id="note-00005">
     <title>Product prices</title>
     <para id="para-00011">Suppose you have a dictionary of product prices, where the keys are product names and the values are their respective prices in dollars. Write a Python program that uses dictionary comprehension to create a new dictionary that has the same keys as the original dictionary, but the values are the prices in euros. Assume that the exchange rate is 1 dollar = 0.85 euros.</para>
@@ -164,6 +163,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_06_08_Restructuring-the-company-data.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

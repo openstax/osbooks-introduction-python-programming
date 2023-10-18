@@ -94,8 +94,7 @@
     <para id="para-00014">The PEP 8 style guide recommends no spaces around <code class="python inline-code">=</code> when indicating keyword arguments and default parameter values.</para>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00006">
     <title>Stream donations</title>
     <para id="para-00015">Write a function, donate(), that lets an online viewer send a donation to a streamer. donate() has 3 parameters:
@@ -117,6 +116,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_07_10_Stream-donations.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

@@ -81,10 +81,9 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00003">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00003">
-    <title>Programming practice: Meal orders</title>
+    <title>Meal orders</title>
     <para id="para-00010">Write a program that reads in a string, "lunch" or "dinner", representing the menu choice and an integer, 1, 2, or 3, representing the user's meal choice. The program then prints the user's meal choice.</para>
     <para id="para-00011">Lunch Meal Options</para>
     <list id="list-00002">
@@ -108,6 +107,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_07_07_Programming-practice_-Meal-orders.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

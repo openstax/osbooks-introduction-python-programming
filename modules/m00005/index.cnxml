@@ -141,10 +141,6 @@
 </note>
 </section>
 
-<section id="sect-00005">
-<title>Programming practice</title>
-
-
 <note class="practice-program" id="note-00005">
   <title>Name length</title>
   <para id="para-00019">Write a program that asks the user to input their first and last name separately. Use the following prompts (example input in bold):</para>
@@ -178,6 +174,6 @@
 </media>
 </note>
 
-</section>
+
 </content>
 </document>

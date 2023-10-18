@@ -107,8 +107,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00004">
     <title>Selecting 5 letter words</title>
     <para id="para-00022">Write a program that creates a list of only 5 letter words from the given list and prints out the new list.</para>
@@ -123,6 +122,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_06_08_Books-starting-with-_A_.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

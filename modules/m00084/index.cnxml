@@ -205,8 +205,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00006">
     <title>Combining exercise logs</title>
     <para id="para-00015">The ExerciseLog class has two instance attributes: e_type, the type of exercise, and duration, the time spent exercising.</para>
@@ -238,6 +237,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_05_05_Expanding-the-Account-class.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

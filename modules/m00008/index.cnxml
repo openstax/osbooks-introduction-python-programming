@@ -121,8 +121,7 @@ item2 = input("Item #2: ")
 </exercise>
 </note>
 </section>
-<section id="sect-00005">
-<title>Programming practice</title>
+
 <note class="practice-program" id="note-00006">
 <title>Whose birthday</title>
 <para id="para-00018">Add two comments to the following program: one for the input, and one for the output. Separate the input and output with a blank line. Then compare your comments with the sample solution, and ask yourself the following questions:</para>
@@ -141,6 +140,5 @@ item2 = input("Item #2: ")
 <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_08_12_Gravity-calculation.html"/>
 </media>
 </note>
-</section>
 </content>
 </document>

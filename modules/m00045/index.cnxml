@@ -72,8 +72,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00005">
     <title>Updated terms and conditions prompt</title>
     <para id="para-00011">Write an updated function terms() that asks the user to accept the terms and conditions, reads in Y/N, and outputs a response by calling accepted() or rejected().  accepted() prints "Thank you for accepting the terms." rejected() prints "You have rejected the terms. Thank you."</para>
@@ -113,6 +112,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_03_04_Laundromat-information.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

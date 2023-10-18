@@ -164,8 +164,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00007">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00010">
     <title>Finding all spaces</title>
     <para id="para-00024">Write a program that given a string, counts the number of space characters in the string. Also, print the given string with all spaces removed.</para>
@@ -181,7 +180,6 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_04_05_Finding-all-spaces.html"/>
     </media>
     </note>
-    </section>
     </content>
     
 </document>

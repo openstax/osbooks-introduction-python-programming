@@ -173,8 +173,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00006">
     <title>Create a dictionary of cars step-by-step</title>
     <para id="para-00023">Follow the steps below to create a dictionary of cars and modify it step-by-step.</para>
@@ -208,6 +207,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_04_04_The-number-of-unique-characters.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

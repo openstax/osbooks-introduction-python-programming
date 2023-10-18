@@ -132,8 +132,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00003">
     <title>Number of characters in the string</title>
     <para id="para-00012">A string variable, s_input, is defined. Use lower() and upper() functions to convert the string to lowercase and uppercase and print results in the output. Also, print the number of characters in the string, including space characters.</para>
@@ -149,6 +148,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_02_02_What-is-my-character_.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

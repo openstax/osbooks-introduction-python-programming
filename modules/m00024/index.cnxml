@@ -91,8 +91,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00004">
     <title>List basics</title>
     <para id="para-00015">Write a program to complete the following:
@@ -105,6 +104,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_05_05_List-basics.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

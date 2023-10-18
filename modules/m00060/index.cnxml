@@ -120,8 +120,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00006">
     <title>Changing the greeting message</title>
     <para id="para-00019">Given the string "Hello my fellow classmates" containing a greeting message, print the first word by getting the beginning of the string up to (and including) the 5th character. Change the first word in the string to "Hi" instead of "hello" and print the greeting message again.</para>
@@ -144,6 +143,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_03_04_Editing-the-string-at-specified-locations.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

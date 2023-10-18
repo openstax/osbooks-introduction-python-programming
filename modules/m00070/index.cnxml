@@ -132,8 +132,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00004">
     <title>Matrix multiplication</title>
     <para id="para-00016">Write a program that calculates the matrix multiplication product of the matrices matW and matZ below and prints out the result. The expected result is shown.</para>
@@ -330,6 +329,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_05_06_Matrix-multiplication.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

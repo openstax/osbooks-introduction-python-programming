@@ -111,8 +111,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00006">
     <title>Estimated days alive</title>
     <para id="para-00013">Write a function days_alive() that takes in an age in years and outputs the estimated days the user has been alive as an integer. Assume each year has 365.24 days. Use round(), which takes a number and returns the nearest whole number.</para>
@@ -136,6 +135,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_06_09_Averaging-lists.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

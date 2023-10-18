@@ -142,8 +142,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+ 
     <note class="practice-program" id="note-00004">
     <title>Writing to a new file</title>
     <para id="para-00016">Write a line of text to a file called out.txt. (Don't forget to use close(). out.txt should only have the line of text that you have written.)</para>
@@ -160,6 +159,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_03_04_Writing-to-an-existing-file.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

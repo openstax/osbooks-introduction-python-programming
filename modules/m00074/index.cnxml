@@ -73,8 +73,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+  
     <note class="practice-program" id="note-00005">
     <title>Investigate variable types</title>
     <para id="para-00012">Given the variables in the code below, examine variables' types.</para>
@@ -82,6 +81,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_02_01_Investigate-variable-types.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

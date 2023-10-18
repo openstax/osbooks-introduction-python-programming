@@ -76,8 +76,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00003">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00003">
     <title>Sum of values less than 10</title>
     <para id="para-00008">Write a program that given a list calculates the sum of all integer values less than 10. If a value greater than or equal to 10 is in the list, no output should be printed. Test the code for different values in the list.</para>
@@ -85,6 +84,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_06_09_Sum-of-values-less-than-10.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

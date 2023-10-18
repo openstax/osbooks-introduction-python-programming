@@ -132,8 +132,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00004">
     <title>Coin combinations</title>
     <para id="para-00015">Write a recursive function print_H_T() that produces all possible combinations of heads ('H') and tails ('T') for a given number of coin tosses.</para>
@@ -163,6 +162,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_06_07_Generate-random-coin-toss.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

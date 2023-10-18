@@ -263,8 +263,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+  
     <note class="practice-program" id="note-00004">
     <title>Character count in a string</title>
     <para id="para-00011">Given a string value, calculate and print the number of occurrences of all characters using a dictionary.</para>
@@ -293,6 +292,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_05_06_Calculate-the-total-number-of-fruits.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

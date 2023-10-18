@@ -91,8 +91,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00005">
     <title>Creating a subclass with an instance attribute</title>
     <para id="para-00011">Given class Dessert, create a class, Cupcake, inherited from Dessert. Cupcake class methods:</para>
@@ -108,6 +107,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_03_03_Creating-a-subclass-with-an-instance-attribute.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

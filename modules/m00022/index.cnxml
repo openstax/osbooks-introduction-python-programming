@@ -129,8 +129,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00004">
     <title>Mad lib (f-string)</title>
     <para id="para-00011">A "<link url="https://en.wikipedia.org/wiki/Mad_Libs">mad lib</link>" is a funny story that uses words provided by a user. The following mad lib is based on four words (user input in bold):</para>
@@ -167,6 +166,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_03_04_Wage-calculator.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

@@ -85,8 +85,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00005">
     <title>Remove duplicates</title>
     <para id="para-00016">Write a recursive <code class="python inline-code">rem_dup()</code> function that removes duplicates from a list.</para><newline/>
@@ -95,6 +94,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_04_03_Remove-duplicates.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

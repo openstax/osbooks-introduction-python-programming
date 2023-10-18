@@ -130,8 +130,7 @@
     </tbody>
     </tgroup>
     </table>
-    <section id="sect-00001">
-    <title>Programming practice</title>
+    
     <note class="practice-program" id="note-00001">
     <title>Even and odd values</title>
     <para id="para-00003">Given a list, create a dictionary with two keys, "even" and "odd". The values associated with each key must be the list of corresponding even and odd values in the given list.</para>
@@ -146,6 +145,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_07_09_Even-and-odd-values.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

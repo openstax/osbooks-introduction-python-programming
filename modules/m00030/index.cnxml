@@ -196,8 +196,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00005">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00007">
     <title>Speed limits</title>
     <para id="para-00017">Write a program that reads in a car's speed as an integer and checks if the car's speed is within the freeway limits. A car's speed must be at least 45 mph but no greater than 70 mph on the freeway.</para>
@@ -206,6 +205,6 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_04_05_Speed-limits.html"/>
     </media>
     </note>
-    </section>
+
     </content>
 </document>

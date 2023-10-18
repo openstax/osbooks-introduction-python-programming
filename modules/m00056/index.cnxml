@@ -198,8 +198,7 @@
     </list>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00004">
     <title>Happy birthday</title>
     <para id="para-00016">Module documentation pages often include examples to help programmers become familiar with the module. For this exercise, refer to the following examples from the <code class="python inline-code">datetime</code> module documentation:</para>
@@ -241,6 +240,5 @@
     <para id="para-00021">Refer to the <link url="https://arrow.readthedocs.io/en/latest/guide.html#humanize">humanize()</link> examples from the <code class="python inline-code">arrow</code> module documentation. In the Python shell, figure out how to display the number of years and days since <code class="python inline-code">birth</code> using <emphasis effect="italics">one line of code</emphasis>. Then display the number of years, months, and days since <code class="python inline-code">birth</code>. Finally, use the <code class="python inline-code">print()</code> function to output the results in this format: <code class="python inline-code">You are 18 years 4 months and 7 days old</code>.</para>
     <para id="para-00022">As time permits, experiment with other functions provided by the <code class="python inline-code">arrow</code> module.</para>
     </note>
-    </section>
     </content>
 </document>

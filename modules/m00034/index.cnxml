@@ -59,8 +59,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00003">
-    <title>Programming practice</title>
+
     <note class="practice-program" id="note-00003">
     <title>Ping values</title>
     <para id="para-00011">Write a program that reads in an integer, ping, and prints ping_report, a string indicating whether the ping is low to average or too high. ping values under 150 have a ping_report of "low to average". ping values of 150 and higher have a ping_report of "too high". Use a conditional expression to assign ping_report.</para>
@@ -69,6 +68,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_08_08_Ping-values.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

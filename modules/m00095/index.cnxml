@@ -114,8 +114,7 @@
     
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00006">
     <title>Employee and Developer classes</title>
     <para id="para-00014">Given the Employee class, create a Developer class that inherits from Employee. The Developer class has one method update_codebase() that prints "Employee has updated the codebase". Then use the Developer instance, python_dev, to call print_company() and update_codebase().</para>
@@ -136,6 +135,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch13/CodeRunner_13_02_02_Polygon-classes.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>

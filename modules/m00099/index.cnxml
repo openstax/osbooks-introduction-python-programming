@@ -110,8 +110,7 @@
     </exercise>
     </note>
     </section>
-    <section id="sect-00004">
-    <title>Programming practice</title>
+   
     <note class="practice-program" id="note-00004">
     <title>Fixing the diamond problem with  a mixin class</title>
     <para id="para-00015">The program below represents multiple inheritance and has the diamond problem. Edit the program to use a mixin class, OnlineMixin. OnlineMixin:</para>
@@ -130,6 +129,5 @@
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_06_07_Fixing-the-diamond-problem-with--a-mixin-class.html"/>
     </media>
     </note>
-    </section>
     </content>
 </document>
