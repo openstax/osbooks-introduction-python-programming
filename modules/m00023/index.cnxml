@@ -108,7 +108,7 @@
     <title>Three variables</title>
     <list list-type="enumerated" id="list-00003">
     <item>Draw a memory diagram for the following code:
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     a = 1
     b = 2
     c = b
@@ -127,7 +127,7 @@
     <title>Different types</title>
     <list list-type="enumerated" id="list-00005">
     <item>Draw a memory diagram for the following code.
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     name = "Chocolate"
     length = len(name)
     price = 1.99
