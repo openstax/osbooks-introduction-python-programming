@@ -128,11 +128,56 @@
       "Column 3": [True, True, False, np.NaN, np.NaN]
     }<newline/>
     df = pd.DataFrame(data)</code>
-    <figure class="unnumbered" id="fig-00001">
+    <table summary=" " id="table-00101">
+      <title/>
+      <tgroup cols="4">
+      <thead>
+      <row>
+        <entry></entry>
+        <entry>Column 1</entry>
+        <entry>Column 2</entry>
+        <entry>Column 3</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+        <entry align="center">0</entry>
+        <entry align="right">A</entry>
+        <entry align="right">NaN</entry>
+        <entry align="right">True</entry>
+      </row>
+      
+      <row>
+        <entry align="center">1</entry>
+        <entry align="right">B</entry>
+        <entry align="right">200.0</entry>
+        <entry align="right">True</entry>
+      </row>
+      <row>
+        <entry align="center">2</entry>
+        <entry align="right">C</entry>
+        <entry align="right">500.0</entry>
+        <entry align="right">False</entry>
+      </row>
+      <row>
+        <entry align="center">3</entry>
+        <entry align="right">D</entry>
+        <entry align="right">0.0</entry>
+        <entry align="right">NaN</entry>
+      </row>
+      <row>
+        <entry align="center">4</entry>
+        <entry align="right">E</entry>
+        <entry align="right">-10.0</entry>
+        <entry align="right">NaN</entry>
+      </row>
+    </tbody>
+    </tgroup></table>
+    <!--<figure class="unnumbered" id="fig-00001">
     <media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image4.png"/>
     </media>
-    </figure>
+    </figure>-->
     <table summary=" " id="table-00001">
     <title>Null identification and removal examples.</title>
     <tgroup cols="4">
@@ -150,9 +195,56 @@
     <entry><code class="python" lang="python">
     df.isnull()
     </code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
+    <entry>
+      <table summary=" " id="table-00102">
+        <title/>
+        <tgroup cols="4">
+        <thead>
+        <row>
+          <entry></entry>
+          <entry>Column 1</entry>
+          <entry>Column 2</entry>
+          <entry>Column 3</entry>
+        </row>
+        </thead>
+        <tbody>
+        <row>
+          <entry align="center">0</entry>
+          <entry align="right">False</entry>
+          <entry align="right">True</entry>
+          <entry align="right">False</entry>
+        </row>
+        
+        <row>
+          <entry align="center">1</entry>
+          <entry align="right">False</entry>
+          <entry align="right">False</entry>
+          <entry align="right">False</entry>
+        </row>
+        <row>
+          <entry align="center">2</entry>
+          <entry align="right">False</entry>
+          <entry align="right">False</entry>
+          <entry align="right">False</entry>
+        </row>
+        <row>
+          <entry align="center">3</entry>
+          <entry align="right">False</entry>
+          <entry align="right">False</entry>
+          <entry align="right">True</entry>
+        </row>
+        <row>
+          <entry align="center">4</entry>
+          <entry align="right">False</entry>
+          <entry align="right">False</entry>
+          <entry align="right">True</entry>
+        </row>
+      </tbody>
+      </tgroup></table>
+    <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image2.png"/>
-    </media></entry>
+    </media>-->
+    </entry>
     <entry><para id="para-00017"><code class="python inline-code">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</para></entry>
     </row>
     <row>
@@ -161,8 +253,55 @@
     df["Column 2"] =\
     df["Column 2"].fillna(df["Column 2"]
       .mean())</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
-    <image mime-type="image/jpeg" src="../../media/Python_15_4_image1.png"/></media></entry>
+    <entry>
+      <table summary=" " id="table-00103">
+        <title/>
+        <tgroup cols="4">
+        <thead>
+        <row>
+          <entry></entry>
+          <entry>Column 1</entry>
+          <entry>Column 2</entry>
+          <entry>Column 3</entry>
+        </row>
+        </thead>
+        <tbody>
+        <row>
+          <entry align="center">0</entry>
+          <entry align="right">A</entry>
+          <entry align="right">172.5</entry>
+          <entry align="right">True</entry>
+        </row>
+        
+        <row>
+          <entry align="center">1</entry>
+          <entry align="right">B</entry>
+          <entry align="right">200.0</entry>
+          <entry align="right">True</entry>
+        </row>
+        <row>
+          <entry align="center">2</entry>
+          <entry align="right">C</entry>
+          <entry align="right">500.0</entry>
+          <entry align="right">False</entry>
+        </row>
+        <row>
+          <entry align="center">3</entry>
+          <entry align="right">D</entry>
+          <entry align="right">0.0</entry>
+          <entry align="right">NaN</entry>
+        </row>
+        <row>
+          <entry align="center">4</entry>
+          <entry align="right">E</entry>
+          <entry align="right">-10.0</entry>
+          <entry align="right">NaN</entry>
+        </row>
+      </tbody>
+      </tgroup></table>
+    <!--<media display="inline" alt="The content of the dataframe df is shown.">
+    <image mime-type="image/jpeg" src="../../media/Python_15_4_image1.png"/></media>-->
+    </entry>
     <entry><para id="para-00018">Null values in <code class="python inline-code">Column 2</code> are replaced with the mean of non-Null values in the column.</para></entry>
     </row>
     <row>
@@ -170,8 +309,45 @@
     <entry><code class="python" lang="python">
     # Applied after the run of the previous row
     df = df.dropna()</code></entry>
-    <entry><media display="inline" alt="The content of the dataframe df is shown.">
-    <image mime-type="image/jpeg" src="../../media/Python_15_4_image3.png"/></media></entry>
+    <entry>
+      <table summary=" " id="table-00104">
+        <title/>
+        <tgroup cols="4">
+        <thead>
+        <row>
+          <entry></entry>
+          <entry>Column 1</entry>
+          <entry>Column 2</entry>
+          <entry>Column 3</entry>
+        </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry align="center">0</entry>
+            <entry align="right">A</entry>
+            <entry align="right">172.5</entry>
+            <entry align="right">True</entry>
+          </row>
+          
+          <row>
+            <entry align="center">1</entry>
+            <entry align="right">B</entry>
+            <entry align="right">200.0</entry>
+            <entry align="right">True</entry>
+          </row>
+          <row>
+            <entry align="center">2</entry>
+            <entry align="right">C</entry>
+            <entry align="right">500.0</entry>
+            <entry align="right">False</entry>
+          </row>
+        
+      </tbody>
+      </tgroup></table>  
+    <!--<media display="inline" alt="The content of the dataframe df is shown.">
+    <image mime-type="image/jpeg" src="../../media/Python_15_4_image3.png"/></media>-->
+  
+    </entry>
     <entry>All rows containing a Null value are removed from the DataFrame.</entry>
     </row>
     </tbody>
