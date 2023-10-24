@@ -92,8 +92,6 @@
       <row>
       <entry>Plot type</entry>
       <entry>Method</entry>
-      <entry>Example</entry>
-      <entry>Output</entry>
       </row>
       </thead>
       <tbody>
@@ -103,8 +101,8 @@
       
       </row>
       <row>
-        <entry>Example</entry>
-        <entry>Output</entry>
+        <entry><emphasis effect="bold">Example</emphasis></entry>
+        <entry><emphasis effect="bold">Output</emphasis></entry>
         </row>
         <row>
           <entry><code class="python" lang="python">
@@ -121,7 +119,7 @@
           # Display the chart
           plt.show()</code></entry>
           <entry><media display="inline" alt="Bar chart example">
-          <image mime-type="image/jpeg" src="../../media/Python_15_5_image3.png"/>
+          <image mime-type="image/jpeg" src="../../media/Python_15_05_001.jpg"/>
           </media>
           </entry>
           </row>
