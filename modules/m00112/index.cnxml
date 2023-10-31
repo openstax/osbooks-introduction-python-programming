@@ -196,7 +196,7 @@
 df.isnull()
 </code></entry>
 <entry>
-<table summary=" " id="table-00102">
+<table class="unnumbered" summary=" " id="table-00102">
 <title/>
 <tgroup cols="4">
 <thead>
@@ -253,7 +253,7 @@ df["Column 2"] =\
 df["Column 2"].fillna(df["Column 2"]
   .mean())</code></entry>
 <entry>
-<table summary=" " id="table-00103">
+<table class="unnumbered" summary=" " id="table-00103">
 <title/>
 <tgroup cols="4">
 <thead>
@@ -309,7 +309,7 @@ df["Column 2"].fillna(df["Column 2"]
 # of the previous row
 df = df.dropna()</code></entry>
 <entry>
-<table summary=" " id="table-00104">
+<table class="unnumbered" summary=" " id="table-00104">
 <title/>
 <tgroup cols="4">
 <thead>
