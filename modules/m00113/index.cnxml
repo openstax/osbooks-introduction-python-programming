@@ -85,129 +85,125 @@
     <section id="sect-00003">
     <title>Data visualization tools</title>
     <para id="para-00006">Many Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. Some of the most commonly-used frameworks are <code class="python inline-code">Matplotlib</code>, <code class="python inline-code">Plotly</code>, and <code class="python inline-code">Seaborn</code>. Here, some useful functionalities of <code class="python inline-code">Matplotlib</code> are summarized.</para>
-    <table summary=" " id="table-00101">
-      <title>Matplotlib functionalities.</title>
-      <tgroup cols="2">
-      <thead>
-      <row>
-      <entry>Plot type</entry>
-      <entry>Method</entry>
-      </row>
-      </thead>
-      <tbody>
-      <row>
-      <entry>Bar plot</entry>
-      <entry><para id="para-00113"><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</para></entry>
-      
-      </row>
-      <row>
-        <entry><emphasis effect="bold">Example</emphasis></entry>
-        <entry><emphasis effect="bold">Output</emphasis></entry>
-        </row>
-        <row>
-          <entry><code class="python" lang="python">
-          import matplotlib.pyplot as plt<newline/>
-          # Data
-          categories = ["Course A", "Course B", "Course C"]
-          values = [25, 40, 30]<newline/>
-          # Create the bar chart
-          fig = plt.bar(categories, values)<newline/>
-          # Customize the chart
-          plt.title("Number of students in each course')
-          plt.xlabel("Courses")
-          plt.ylabel("Number of students")<newline/>
-          # Display the chart
-          plt.show()</code></entry>
-          <entry><media display="inline" alt="Bar chart example">
-          <image mime-type="image/jpeg" src="../../media/Python_15_05_001.jpg"/>
-          </media>
-          </entry>
-          </row>
-      </tbody>
-      </tgroup></table>
+<table summary=" " id="table-00101">
+<title>Matplotlib functionalities. Bar plot.</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Plot type</entry>
+<entry>Method</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Bar plot</entry>
+<entry><para id="para-00113"><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</para></entry>     
+</row>
+<row>
+<entry><emphasis effect="bold">Example</emphasis></entry>
+<entry><emphasis effect="bold">Output</emphasis></entry>
+</row>
+<row>
+<entry><code class="python" lang="python">
+import matplotlib.pyplot as plt<newline/>
+# Data
+categories = ["Course A", "Course B", "Course C"]
+values = [25, 40, 30]<newline/>
+# Create the bar chart
+fig = plt.bar(categories, values)<newline/>
+# Customize the chart
+plt.title("Number of students in each course')
+plt.xlabel("Courses")
+plt.ylabel("Number of students")<newline/>
+# Display the chart
+plt.show()</code></entry>
+<entry><media display="inline" alt="Bar chart example">
+<image mime-type="image/jpeg" src="../../media/Python_15_05_003.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
     
-      <table summary=" " id="table-00102">
-        <title>Matplotlib functionalities.</title>
-        <tgroup cols="2">
-        <thead>
-        <row>
-        <entry>Plot type</entry>
-        <entry>Method</entry>
-        </row>
-        </thead>
-        <tbody>
-        <row>
-          <entry>Line plot</entry>
-          <entry><para id="para-00114"><code class="python inline-code">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</para></entry>
-        
-        </row>
-        <row>
-          <entry><emphasis effect="bold">Example</emphasis></entry>
-          <entry><emphasis effect="bold">Output</emphasis></entry>
-          </row>
-          <row>
-            <entry><code class="python" lang="python">
-              import matplotlib.pyplot as plt<newline/>
-              # Data
-              month = ["Jan", "Feb", "Mar", "Apr", "May"]
-              inflation = [6.41, 6.04, 4.99, 4.93, 4.05]<newline/>
-              # Create the line chart
-              plt.plot(month, inflation, marker="o", linestyle="-", color="blue")<newline/>
-              # Customize the chart
-              plt.title("Inflation trend in 2023")
-              plt.xlabel("Month")
-              plt.ylabel("Inflation")<newline/>
-              # Display the chart
-              plt.show()
-              </code></entry>
-            <entry><media display="inline" alt="Line plot example">
-            <image mime-type="image/jpeg" src="../../media/Python_15_05_002.jpg"/>
-            </media>
-            </entry>
-            </row>
-        </tbody>
-        </tgroup></table>
+<table summary=" " id="table-00102">
+<title>Matplotlib functionalities. Line plot.</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Plot type</entry>
+<entry>Method</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Line plot</entry>
+<entry><para id="para-00114"><code class="python inline-code">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</para></entry>
+</row>
+<row>
+<entry><emphasis effect="bold">Example</emphasis></entry>
+<entry><emphasis effect="bold">Output</emphasis></entry>
+</row>
+<row>
+<entry><code class="python" lang="python">
+import matplotlib.pyplot as plt<newline/>
+# Data
+month = ["Jan", "Feb", "Mar", "Apr", "May"]
+inflation = [6.41, 6.04, 4.99, 4.93, 4.05]<newline/>
+# Create the line chart
+plt.plot(month, inflation, marker="o", linestyle="-", color="blue")<newline/>
+# Customize the chart
+plt.title("Inflation trend in 2023")
+plt.xlabel("Month")
+plt.ylabel("Inflation")<newline/>
+# Display the chart
+plt.show()
+</code></entry>
+<entry><media display="inline" alt="Line plot example">
+<image mime-type="image/jpeg" src="../../media/Python_15_05_002.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
 
-        <table summary=" " id="table-00103">
-          <title>Matplotlib functionalities.</title>
-          <tgroup cols="2">
-          <thead>
-          <row>
-          <entry>Plot type</entry>
-          <entry>Method</entry>
-          </row>
-          </thead>
-          <tbody>
-          <row>
-            <entry>Scatter plot</entry>
-            <entry><para id="para-00115"><code class="python inline-code">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots points representing <code class="python inline-code">(x, y)</code> pairs.</para></entry>
-          
-          </row>
-          <row>
-            <entry><emphasis effect="bold">Example</emphasis></entry>
-            <entry><emphasis effect="bold">Output</emphasis></entry>
-            </row>
-            <row>
-              <entry><code class="python" lang="python">
-                import matplotlib.pyplot as plt<newline/>
-                # Data
-                x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                y = [10, 8, 6, 4, 2, 5, 7, 9, 3, 1]<newline/>
-                # Create the scatter plot
-                plt.scatter(x, y, marker="o", color="red")<newline/>
-                # Customize the chart
-                plt.title("Scatter Plot Example")
-                plt.xlabel("X")
-                plt.ylabel("Y")<newline/>
-                # Display the chart
-                plt.show()</code></entry>
-              <entry><media display="inline" alt="Scatter plot example">
-              <image mime-type="image/jpeg" src="../../media/Python_15_05_003.jpg"/>
-              </media>
-              </entry>
-              </row>
-          </tbody>
-          </tgroup></table> 
+<table summary=" " id="table-00103">
+<title>Matplotlib functionalities.</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Plot type</entry>
+<entry>Method</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Scatter plot</entry>
+<entry><para id="para-00115"><code class="python inline-code">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots points representing <code class="python inline-code">(x, y)</code> pairs.</para></entry>      
+</row>
+<row>
+<entry><emphasis effect="bold">Example</emphasis></entry>
+<entry><emphasis effect="bold">Output</emphasis></entry>
+</row>
+<row>
+<entry><code class="python" lang="python">
+import matplotlib.pyplot as plt<newline/>
+# Data
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y = [10, 8, 6, 4, 2, 5, 7, 9, 3, 1]<newline/>
+# Create the scatter plot
+plt.scatter(x, y, marker="o", color="red")<newline/>
+# Customize the chart
+plt.title("Scatter Plot Example")
+plt.xlabel("X")
+plt.ylabel("Y")<newline/>
+# Display the chart
+plt.show()</code></entry>
+<entry><media display="inline" alt="Scatter plot example">
+<image mime-type="image/jpeg" src="../../media/Python_15_05_005.jpg"/></media>
+</entry>
+</row>
+</tbody>
+</tgroup></table> 
 
           <table summary=" " id="table-00104">
             <title>Matplotlib functionalities.</title>
