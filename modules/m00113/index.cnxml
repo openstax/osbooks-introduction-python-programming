@@ -150,7 +150,8 @@ import matplotlib.pyplot as plt<newline/>
 month = ["Jan", "Feb", "Mar", "Apr", "May"]
 inflation = [6.41, 6.04, 4.99, 4.93, 4.05]<newline/>
 # Create the line chart
-plt.plot(month, inflation, marker="o", linestyle="-", color="blue")<newline/>
+plt.plot(month, inflation, marker="o", 
+linestyle="-", color="blue")<newline/>
 # Customize the chart
 plt.title("Inflation trend in 2023")
 plt.xlabel("Month")
@@ -205,122 +206,120 @@ plt.show()</code></entry>
 </tbody>
 </tgroup></table> 
 
-          <table summary=" " id="table-00104">
-            <title>Matplotlib functionalities.</title>
-            <tgroup cols="2">
-            <thead>
-            <row>
-            <entry>Plot type</entry>
-            <entry>Method</entry>
-            </row>
-            </thead>
-            <tbody>
-            <row>
-              <entry>Histogram plot</entry>
-              <entry><para id="para-00116"><code class="python inline-code">plt.hist(x)</code> function takes in one input <code class="python inline-code">x</code>, and plots a histogram of values in <code class="python inline-code">x</code> to show distribution or trend.</para></entry>
-            
-            </row>
-            <row>
-              <entry><emphasis effect="bold">Example</emphasis></entry>
-              <entry><emphasis effect="bold">Output</emphasis></entry>
-              </row>
-              <row>
-                <entry><code class="python" lang="python">
-                  import matplotlib.pyplot as plt
-                  import numpy as np<newline/>
-                  # Data: random 1000 samples
-                  data = np.random.randn(1000)<newline/>
-                  # Create the histogram
-                  plt.hist(data, bins=30, edgecolor="black")<newline/>
-                  # Customize the chart
-                  plt.title("Histogram of random values")
-                  plt.xlabel("Values")
-                  plt.ylabel("Frequency")<newline/>
-                  # Display the chart
-                  plt.show()</code></entry>
-                <entry><media display="inline" alt="Histogram plot example">
-                <image mime-type="image/jpeg" src="../../media/Python_15_05_004.jpg"/>
-                </media>
-                </entry>
-                </row>
-            </tbody>
-            </tgroup></table>
+<table summary=" " id="table-00104">
+<title>Matplotlib functionalities.</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Plot type</entry>
+<entry>Method</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Histogram plot</entry>
+<entry><para id="para-00116"><code class="python inline-code">plt.hist(x)</code> function takes in one input <code class="python inline-code">x</code>, and plots a histogram of values in <code class="python inline-code">x</code> to show distribution or trend.</para></entry>
+</row>
+<row>
+<entry><emphasis effect="bold">Example</emphasis></entry>
+<entry><emphasis effect="bold">Output</emphasis></entry>
+</row>
+<row>
+<entry><code class="python" lang="python">
+import matplotlib.pyplot as plt
+import numpy as np<newline/>
+# Data: random 1000 samples
+data = np.random.randn(1000)<newline/>
+# Create the histogram
+plt.hist(data, bins=30, edgecolor="black")<newline/>
+# Customize the chart
+plt.title("Histogram of random values")
+plt.xlabel("Values")
+plt.ylabel("Frequency")<newline/>
+# Display the chart
+plt.show()</code></entry>
+<entry><media display="inline" alt="Histogram plot example">
+<image mime-type="image/jpeg" src="../../media/Python_15_05_001.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
 
-            <table summary=" " id="table-00105">
-              <title>Matplotlib functionalities.</title>
-              <tgroup cols="2">
-              <thead>
-              <row>
-              <entry>Plot type</entry>
-              <entry>Method</entry>
-              </row>
-              </thead>
-              <tbody>
-              <row>
-                <entry>Box plot</entry>
-                <entry><para id="para-00117"><code class="python inline-code">plt.boxplot(x)</code> function takes in one input <code class="python inline-code">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code">x</code>.</para></entry>
-              
-              </row>
-              <row>
-                <entry><emphasis effect="bold">Example</emphasis></entry>
-                <entry><emphasis effect="bold">Output</emphasis></entry>
-                </row>
-                <row>
-                  <entry><code class="python" lang="python">
-                    import matplotlib.pyplot as plt
-                    import numpy as np<newline/>
-                    # Data: random 100 samples
-                    data = [np.random.normal(0, 5, 100)]<newline/>
-                    # Create the box plot
-                    plt.boxplot(data)<newline/>
-                    # Customize the chart
-                    plt.title("Box Plot of random values")
-                    plt.xlabel("Data Distribution")
-                    plt.ylabel("Values")<newline/>
-                    # Display the chart
-                    plt.show()</code></entry>
-                  <entry><media display="inline" alt="Box plot example">
-                  <image mime-type="image/jpeg" src="../../media/Python_15_05_005.jpg"/>
-                  </media>
-                  </entry>
-                  </row>
-              </tbody>
-              </tgroup></table>
+<table summary=" " id="table-00105">
+<title>Matplotlib functionalities.</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Plot type</entry>
+<entry>Method</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Box plot</entry>
+<entry><para id="para-00117"><code class="python inline-code">plt.boxplot(x)</code> function takes in one input <code class="python inline-code">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code">x</code>.</para></entry>
+</row>
+<row>
+<entry><emphasis effect="bold">Example</emphasis></entry>
+<entry><emphasis effect="bold">Output</emphasis></entry>
+</row>
+<row>
+<entry><code class="python" lang="python">
+import matplotlib.pyplot as plt
+import numpy as np<newline/>
+# Data: random 100 samples
+data = [np.random.normal(0, 5, 100)]<newline/>
+# Create the box plot
+plt.boxplot(data)<newline/>
+# Customize the chart
+plt.title("Box Plot of random values")
+plt.xlabel("Data Distribution")
+plt.ylabel("Values")<newline/>
+# Display the chart
+plt.show()</code></entry>
+<entry><media display="inline" alt="Box plot example">
+<image mime-type="image/jpeg" src="../../media/Python_15_05_004.jpg"/>
+</media>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
 
-      <table summary=" " id="table-00002">
-    <title>Matplotlib functionalities.</title>
-    <tgroup cols="4">
-    <thead>
-    <row>
-    <entry>Plot type</entry>
-    <entry>Method</entry>
-    <entry>Example</entry>
-    <entry>Output</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>Bar plot</entry>
-    <entry><para id="para-00013"><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</para></entry>
-    <entry><code class="python" lang="python">
-    import matplotlib.pyplot as plt<newline/>
-    # Data
-    categories = ["Course A", "Course B", "Course C"]
-    values = [25, 40, 30]<newline/>
-    # Create the bar chart
-    fig = plt.bar(categories, values)<newline/>
-    # Customize the chart
-    plt.title("Number of students in each course')
-    plt.xlabel("Courses")
-    plt.ylabel("Number of students")<newline/>
-    # Display the chart
-    plt.show()</code></entry>
-    <entry><media display="inline" alt="Bar chart example">
-    <image mime-type="image/jpeg" src="../../media/Python_15_5_image3.png"/>
-    </media>
-    </entry>
-    </row>
-    <row>
+<!--<table summary=" " id="table-00002">
+<title>Matplotlib functionalities.</title>
+<tgroup cols="4">
+<thead>
+<row>
+<entry>Plot type</entry>
+<entry>Method</entry>
+<entry>Example</entry>
+<entry>Output</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Bar plot</entry>
+<entry><para id="para-00013"><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</para></entry>
+<entry><code class="python" lang="python">
+import matplotlib.pyplot as plt<newline/>
+# Data
+categories = ["Course A", "Course B", "Course C"]
+values = [25, 40, 30]<newline/>
+# Create the bar chart
+fig = plt.bar(categories, values)<newline/>
+# Customize the chart
+plt.title("Number of students in each course')
+plt.xlabel("Courses")
+plt.ylabel("Number of students")<newline/>
+# Display the chart
+plt.show()</code></entry>
+<entry><media display="inline" alt="Bar chart example">
+<image mime-type="image/jpeg" src="../../media/Python_15_5_image3.png"/>
+</media>
+</entry>
+</row>
+<row>
     <entry>Line plot</entry>
     <entry><para id="para-00014"><code class="python inline-code">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</para></entry>
     <entry><code class="python" lang="python">
@@ -403,7 +402,7 @@ plt.show()</code></entry>
     </row>
     </tbody>
     </tgroup>
-    </table>
+    </table>-->
     <note class="learning-questions" id="note-00003">
     <title>Matplotlib methods</title>
     <exercise id="exer-00004">
