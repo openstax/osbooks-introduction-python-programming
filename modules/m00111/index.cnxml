@@ -104,200 +104,199 @@
     <section id="sect-00003">
     <title>Data input and output</title>
     <para id="para-00004">A DataFrame can be created from a dictionary, list, NumPy array, or a CSV file. Column names and column data types can be specified at the time of DataFrame instantiation.</para>
-    <table summary=" " id="table-00002">
-    <title>DataFrame creation.</title>
-    <tgroup cols="4">
-    <thead>
-    <row>
-    <entry>Description</entry>
-    <entry>Example</entry>
-    <entry>Output</entry>
-    <entry>Explanation</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>DataFrame from a Dictionary</entry>
-    <entry><code class="python" lang="python">
-    import pandas as pd<newline/>
-    # Create a dictionary of columns
-    data = {
-      "Name": ["Emma", "Gireeja", "Sophia"],
-      "Age": [15, 28, 22],
-      "City": ["Dubai", "London", "San Jose"]
-    }<newline/>
-    # Create a DataFrame from the dictionary
-    df = pd.DataFrame(data)<newline/>
-    # Display the DataFrame
-    df</code></entry>
-    <entry>
-      <table class="unnumbered" summary=" " id="table-00103">
-        <title/>
-    <tgroup cols="4">
-    <thead>
-    <row>
-    <entry></entry>
-    <entry>Name</entry>
-    <entry>Age</entry>
-    <entry>City</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row><entry>0</entry>
-      <entry>Emma</entry>
-      <entry>15</entry>
-      <entry>Dubai</entry>
-    </row>
-    <row><entry>1</entry>
-      <entry>Gireeja</entry>
-      <entry>28</entry>
-      <entry>London</entry>
-    </row>
-    <row><entry>2</entry>
-      <entry>Sophia</entry>
-      <entry>22</entry>
-      <entry>San Jose</entry>
-    </row>
-    </tbody></tgroup>
-      </table>
+<table summary=" " id="table-00002">
+<title>DataFrame creation.</title>
+<tgroup cols="4">
+<thead>
+<row>
+<entry>Description</entry>
+<entry>Example</entry>
+<entry>Output</entry>
+<entry>Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>DataFrame from a Dictionary</entry>
+<entry><code class="python" lang="python">
+import pandas as pd<newline/>
+# Create a dictionary of columns
+data = {
+  "Name": ["Emma", "Gireeja", "Sophia"],
+  "Age": [15, 28, 22],
+  "City": ["Dubai", "London", "San Jose"]
+}<newline/>
+# Create a DataFrame from the dictionary
+df = pd.DataFrame(data)<newline/>
+# Display the DataFrame
+df</code></entry>
+<entry>
+<table class="unnumbered" summary=" " id="table-00103">
+<title/>
+<tgroup cols="4">
+<thead>
+<row>
+<entry></entry>
+<entry>Name</entry>
+<entry>Age</entry>
+<entry>City</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>0</entry>
+<entry>Emma</entry>
+<entry>15</entry>
+<entry>Dubai</entry>
+</row>
+<row><entry>1</entry>
+<entry>Gireeja</entry>
+<entry>28</entry>
+<entry>London</entry>
+</row>
+<row><entry>2</entry>
+<entry>Sophia</entry>
+<entry>22</entry>
+<entry>San Jose</entry>
+</row>
+</tbody></tgroup>
+</table>
       <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image2.png"/>
     </media>-->
-  </entry>
-    <entry><para id="para-00005"><code class="python inline-code">pd.DataFrame()</code> function takes in a dictionary and converts it into a DataFrame. Dictionary keys will be column labels and values are stored in respective columns.</para></entry>
-    </row>
-    <row>
-    <entry>DataFrame from a list</entry>
-    <entry><code class="python" lang="python">
-    import pandas as pd<newline/>
-    # Create a list of rows
-    data = [
-      ["Emma", 15, "Dubai"],
-      ["Gireeja", 28, "London"],
-      ["Sophia", 22, "San Jose"]
-    ]<newline/>
-    # Define column labels
-    columns = ["Name", "Age", "City"]<newline/>
-    # Create a DataFrame from list using column labels
-    df = pd.DataFrame(data, columns=columns)<newline/>
-    # Display the DataFrame
-    df</code></entry>
-    <entry>
-      <table class="unnumbered" summary=" " id="table-00104">
-        <title/>
-    <tgroup cols="4">
-    <thead>
-    <row>
-    <entry></entry>
-    <entry>Name</entry>
-    <entry>Age</entry>
-    <entry>City</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row><entry>0</entry>
-      <entry>Emma</entry>
-      <entry>15</entry>
-      <entry>Dubai</entry>
-    </row>
-    <row><entry>1</entry>
-      <entry>Gireeja</entry>
-      <entry>28</entry>
-      <entry>London</entry>
-    </row>
-    <row><entry>2</entry>
-      <entry>Sophia</entry>
-      <entry>22</entry>
-      <entry>San Jose</entry>
-    </row>
-    </tbody></tgroup>
-      </table>
+</entry>
+<entry><para id="para-00005"><code class="python inline-code">pd.DataFrame()</code> function takes in a dictionary and converts it into a DataFrame. Dictionary keys will be column labels and values are stored in respective columns.</para></entry>
+</row>
+<row>
+<entry>DataFrame from a list</entry>
+<entry><code class="python" lang="python">
+import pandas as pd<newline/>
+# Create a list of rows
+data = [
+  ["Emma", 15, "Dubai"],
+  ["Gireeja", 28, "London"],
+  ["Sophia", 22, "San Jose"]
+]<newline/>
+# Define column labels
+columns = ["Name", "Age", "City"]<newline/>
+# Create a DataFrame from list using column labels
+df = pd.DataFrame(data, columns=columns)<newline/>
+# Display the DataFrame
+df</code></entry>
+<entry>
+<table class="unnumbered" summary=" " id="table-00104">
+<title/>
+<tgroup cols="4">
+<thead>
+<row>
+<entry></entry>
+<entry>Name</entry>
+<entry>Age</entry>
+<entry>City</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>0</entry>
+<entry>Emma</entry>
+<entry>15</entry>
+<entry>Dubai</entry>
+</row>
+<row><entry>1</entry>
+<entry>Gireeja</entry>
+<entry>28</entry>
+<entry>London</entry>
+</row>
+<row><entry>2</entry>
+<entry>Sophia</entry>
+<entry>22</entry>
+<entry>San Jose</entry>
+</row>
+</tbody></tgroup>
+</table>
       <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image2.png"/>
     </media>-->
-  </entry>
-    <entry><para id="para-00006"><code class="python inline-code">pd.DataFrame()</code> function takes in a list containing the records in different rows of a DataFrame along with a list of column labels and creates a DataFrame with the given rows and column labels.</para></entry>
-    </row>
-    <row>
-    <entry>DataFrame from a NumPy array</entry>
-    <entry><code class="python" lang="python">
-    import numpy as np
-    import pandas as pd<newline/>
-    # Create a NumPy array
-    data = np.array([
-      [1, 0, 0],
-      [0, 1, 0],
-      [2, 3, 4]
-    ])<newline/>
-    # Define column labels
-    columns = ["A", "B", "C"]<newline/>
-    # Create a DataFrame from the NumPy array
-    df = pd.DataFrame(data, columns=columns)<newline/>
-    # Display the DataFrame
-    df</code></entry>
-    <entry>
-      <table class="unnumbered" summary=" " id="table-00105">
-        <title/>
-    <tgroup cols="4">
-    <thead>
-    <row>
-    <entry></entry>
-    <entry>A</entry>
-    <entry>B</entry>
-    <entry>C</entry>
-    </row>
-    </thead>
-    <tbody>
-      <row>
-        <entry>0</entry>
-        <entry>1</entry>
-        <entry>0</entry>
-        <entry>0</entry>
-        </row>
-    <row><entry>1</entry>
-      <entry>0</entry>
-      <entry>1</entry>
-      <entry>0</entry>
-    </row>
-    <row><entry>2</entry>
-      <entry>2</entry>
-      <entry>3</entry>
-      <entry>4</entry>
-    </row>
-    
-    </tbody></tgroup>
-      </table>
+</entry>
+<entry><para id="para-00006"><code class="python inline-code">pd.DataFrame()</code> function takes in a list containing the records in different rows of a DataFrame along with a list of column labels and creates a DataFrame with the given rows and column labels.</para></entry>
+</row>
+<row>
+<entry>DataFrame from a NumPy array</entry>
+<entry><code class="python" lang="python">
+import numpy as np
+import pandas as pd<newline/>
+# Create a NumPy array
+data = np.array([
+  [1, 0, 0],
+  [0, 1, 0],
+  [2, 3, 4]
+])<newline/>
+# Define column labels
+columns = ["A", "B", "C"]<newline/>
+# Create a DataFrame from the NumPy array
+df = pd.DataFrame(data, columns=columns)<newline/>
+# Display the DataFrame
+df</code></entry>
+<entry>
+<table class="unnumbered" summary=" " id="table-00105">
+<title/>
+<tgroup cols="4">
+<thead>
+<row>
+<entry></entry>
+<entry>A</entry>
+<entry>B</entry>
+<entry>C</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+</row>
+<row><entry>1</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+</row>
+<row><entry>2</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+</row>
+</tbody></tgroup>
+</table>
       <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image4.png"/>
     </media>-->
-  </entry>
-    <entry><para id="para-00007">A NumPy array along with column labels are passed to <code class="python inline-code">pd.DataFrame()</code> function to create a DataFrame object.</para></entry>
-    </row>
-    <row>
-    <entry>DataFrame from a CSV file</entry>
-    <entry><code class="python" lang="python">
-    import pandas as pd<newline/>
-    # Read the CSV file into a DataFrame
-    df = pd.read_csv("data.csv")<newline/>
-    # Display the DataFrame
-    df</code></entry>
-    <entry>The content of the CSV file will be printed in a tabular format.</entry>
-    <entry><para id="para-00008">The <code class="python inline-code">pd.read_csv()</code> function reads a CSV file into a DataFrame and organizes the content in a tabular format.</para></entry>
-    </row>
-    <row>
-    <entry>DataFrame from a Excel file</entry>
-    <entry><code class="python" lang="python">
-    import pandas as pd<newline/>
-    # Read the Excel file into a DataFrame
-    df = pd.read_excel("data.xlsx")<newline/>
-    # Display the DataFrame
-    df</code></entry>
-    <entry>The content of the Excel file will be printed in a tabular format.</entry>
-    <entry><para id="para-00009">The <code class="python inline-code">pd.read_excel()</code> function reads a Excel file into a DataFrame and organizes the content in a tabular format.</para></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+</entry>
+<entry><para id="para-00007">A NumPy array along with column labels are passed to <code class="python inline-code">pd.DataFrame()</code> function to create a DataFrame object.</para></entry>
+</row>
+<row>
+<entry>DataFrame from a CSV file</entry>
+<entry><code class="python" lang="python">
+import pandas as pd<newline/>
+# Read the CSV file into a DataFrame
+df = pd.read_csv("data.csv")<newline/>
+# Display the DataFrame
+df</code></entry>
+<entry>The content of the CSV file will be printed in a tabular format.</entry>
+<entry><para id="para-00008">The <code class="python inline-code">pd.read_csv()</code> function reads a CSV file into a DataFrame and organizes the content in a tabular format.</para></entry>
+</row>
+<row>
+<entry>DataFrame from a Excel file</entry>
+<entry><code class="python" lang="python">
+import pandas as pd<newline/>
+# Read the Excel file into a DataFrame
+df = pd.read_excel("data.xlsx")<newline/>
+# Display the DataFrame
+df</code></entry>
+<entry>The content of the Excel file will be printed in a tabular format.</entry>
+<entry><para id="para-00009">The <code class="python inline-code">pd.read_excel()</code> function reads a Excel file into a DataFrame and organizes the content in a tabular format.</para></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
     <note class="learning-questions" id="note-00001">
     <title>Pandas basics</title>
     <exercise id="exer-00001">
@@ -332,25 +331,25 @@
     }
     df = pd.DataFrame(days)</code>
 
-    <table summary=" " id="table-00106">
-      <title/>
-  <tgroup cols="5">
-  <thead>
-  <row>
-  <entry></entry>
-  <entry>Season</entry>
-  <entry>Month</entry>
-  <entry>Month-day</entry>
-  <entry>Year</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row><entry>0</entry>
-    <entry>Summer</entry>
-    <entry>July</entry>
-    <entry>1</entry>
-    <entry>2000</entry>
-  </row>
+<table summary=" " id="table-00106">
+<title/>
+<tgroup cols="5">
+<thead>
+<row>
+<entry></entry>
+<entry>Season</entry>
+<entry>Month</entry>
+<entry>Month-day</entry>
+<entry>Year</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>0</entry>
+<entry>Summer</entry>
+<entry>July</entry>
+<entry>1</entry>
+<entry>2000</entry>
+</row>
   <row><entry>1</entry>
     <entry>Summer</entry>
     <entry>June</entry>
@@ -392,216 +391,213 @@
     </media>
     <caption/>
     </figure>-->
-    <table summary=" " id="table-00003">
-    <title>DataFrame functions.</title>
-    <tgroup cols="4">
-    <thead>
-    <row>
-    <entry>Function name</entry>
-    <entry>Explanation</entry>
-    <entry>Example</entry>
-    <entry>Output</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry><para id="para-00014"><code class="python inline-code">head(n)</code></para></entry>
-    <entry><para id="para-00015">The function allows for viewing the first <code class="python inline-code">n</code> rows. If a value is not passed, the first 5 rows will be shown.</para></entry>
-    <entry><code class="python" lang="python">df.head(4)</code></entry>
-    <entry>
-      <table class="unnumbered" summary=" " id="table-00107">
-        <title/>
-    <tgroup cols="5">
-    <thead>
-    <row>
-    <entry></entry>
-    <entry>Season</entry>
-    <entry>Month</entry>
-    <entry>Month-day</entry>
-    <entry>Year</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row><entry>0</entry>
-      <entry>Summer</entry>
-      <entry>July</entry>
-      <entry>1</entry>
-      <entry>2000</entry>
-    </row>
-    <row><entry>1</entry>
-      <entry>Summer</entry>
-      <entry>June</entry>
-      <entry>12</entry>
-      <entry>1990</entry>
-    </row>
-    <row><entry>2</entry>
-      <entry>Fall</entry>
-      <entry>September</entry>
-      <entry>3</entry>
-      <entry>2020</entry>
-    </row>
-    <row><entry>3</entry>
-      <entry>Winter</entry>
-      <entry>January</entry>
-      <entry>7</entry>
-      <entry>1998</entry>
-    </row>
-    
-    </tbody>
-    </tgroup>
-    </table>
+<table summary=" " id="table-00003">
+<title>DataFrame functions.</title>
+<tgroup cols="4">
+<thead>
+<row>
+<entry>Function name</entry>
+<entry>Explanation</entry>
+<entry>Example</entry>
+<entry>Output</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><para id="para-00014"><code class="python inline-code">head(n)</code></para></entry>
+<entry><para id="para-00015">The function allows for viewing the first <code class="python inline-code">n</code> rows. If a value is not passed, the first 5 rows will be shown.</para></entry>
+<entry><code class="python" lang="python">df.head(4)</code></entry>
+<entry>
+<table class="unnumbered" summary=" " id="table-00107">
+<title/>
+<tgroup cols="5">
+<thead>
+<row>
+<entry></entry>
+<entry>Season</entry>
+<entry>Month</entry>
+<entry>Month-day</entry>
+<entry>Year</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>0</entry>
+<entry>Summer</entry>
+<entry>July</entry>
+<entry>1</entry>
+<entry>2000</entry>
+</row>
+<row><entry>1</entry>
+<entry>Summer</entry>
+<entry>June</entry>
+<entry>12</entry>
+<entry>1990</entry>
+</row>
+<row><entry>2</entry>
+<entry>Fall</entry>
+<entry>September</entry>
+<entry>3</entry>
+<entry>2020</entry>
+</row>
+<row><entry>3</entry>
+<entry>Winter</entry>
+<entry>January</entry>
+<entry>7</entry>
+<entry>1998</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
       <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image3.png"/>
     </media>-->
-  </entry>
-    </row>
-    <row>
-    <entry><para id="para-00016"><code class="python inline-code">tail(n)</code></para></entry>
-    <entry>The function allows for viewing the last n rows. If a value is not passed, the last 5 rows will be shown.</entry>
-    <entry><code class="python" lang="python">df.tail(3)</code></entry>
-    <entry>
-      <table class="unnumbered" summary=" " id="table-00108">
-        <title/>
-    <tgroup cols="5">
-    <thead>
-    <row>
-    <entry></entry>
-    <entry>Season</entry>
-    <entry>Month</entry>
-    <entry>Month-day</entry>
-    <entry>Year</entry>
-    </row>
-    </thead>
-    <tbody>
-    
-    <row><entry>3</entry>
-      <entry>Winter</entry>
-      <entry>January</entry>
-      <entry>7</entry>
-      <entry>1998</entry>
-    </row>
-    <row><entry>4</entry>
-      <entry>Fall</entry>
-      <entry>October</entry>
-      <entry>20</entry>
-      <entry>2001</entry>
-    </row>
-    <row><entry>5</entry>
-      <entry>Winter</entry>
-      <entry>February</entry>
-      <entry>28</entry>
-      <entry>2022</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+</entry>
+</row>
+<row>
+<entry><para id="para-00016"><code class="python inline-code">tail(n)</code></para></entry>
+<entry>The function allows for viewing the last n rows. If a value is not passed, the last 5 rows will be shown.</entry>
+<entry><code class="python" lang="python">df.tail(3)</code></entry>
+<entry>
+<table class="unnumbered" summary=" " id="table-00108">
+<title/>
+<tgroup cols="5">
+<thead>
+<row>
+<entry></entry>
+<entry>Season</entry>
+<entry>Month</entry>
+<entry>Month-day</entry>
+<entry>Year</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>3</entry>
+<entry>Winter</entry>
+<entry>January</entry>
+<entry>7</entry>
+<entry>1998</entry>
+</row>
+<row><entry>4</entry>
+<entry>Fall</entry>
+<entry>October</entry>
+<entry>20</entry>
+<entry>2001</entry>
+</row>
+<row><entry>5</entry>
+<entry>Winter</entry>
+<entry>February</entry>
+<entry>28</entry>
+<entry>2022</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
       <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image1.png"/>
     </media>-->
-  </entry>
-    </row>
-    <row>
-    <entry><para id="para-00017"><code class="python inline-code">info()</code></para></entry>
-    <entry>The function provides a summary of the DataFrame, including the column names, data types, and the number of non-null values. The function also returns the DataFrame's memory usage.</entry>
-    <entry><code class="python" lang="python">df.info()</code></entry>
-    <entry>
-      <code class="python" lang="python">
-        &lt;class 'pandas.core.frame.DataFrame'>
-        RangeIndex: 6 entries, 0 to 5
-        Data columns (total 4 columns):
-         #    Column        Non-Null Count    Dtype
-        ---   ------        --------------    -----
-         0    Season        6 non-null        object
-         1    Month         6 non-null        object
-         2    Month-day     6 non-null        int64
-         3    Year          6 non-null        int64
-        dtypes: int64(2), object(2)
-        memory usage: 320.0+ bytes
-        
-        </code>
+</entry>
+</row>
+<row>
+<entry><para id="para-00017"><code class="python inline-code">info()</code></para></entry>
+<entry>The function provides a summary of the DataFrame, including the column names, data types, and the number of non-null values. The function also returns the DataFrame's memory usage.</entry>
+<entry><code class="python" lang="python">df.info()</code></entry>
+<entry>
+<code class="python" lang="python">
+&lt;class 'pandas.core.frame.DataFrame'>
+RangeIndex: 6 entries, 0 to 5
+Data columns (total 4 columns):
+ #    Column        Non-Null Count    Dtype
+---   ------        --------------    -----
+ 0    Season        6 non-null        object
+ 1    Month         6 non-null        object
+ 2    Month-day     6 non-null        int64
+ 3    Year          6 non-null        int64
+dtypes: int64(2), object(2)
+memory usage: 320.0+ bytes
+</code>
         <!--  <media display="inline" alt="The content of the dataframe df is shown.">
         <image mime-type="image/jpeg" src="../../media/Python_15_3_image9.png"/>
         </media>-->
-    </entry>
-    </row>
-    <row>
-    <entry><para id="para-00018"><code class="python inline-code">describe()</code></para></entry>
-    <entry>The function generates statistics of the numerical columns like count, mean, standard deviation, minimum, maximum, and quartile.</entry>
-    <entry><code class="python" lang="python">df.describe()</code></entry>
-    <entry>
-      <table class="unnumbered" summary=" " id="table-00109">
-        <title/>
-    <tgroup cols="3">
-    <thead>
-    <row>
-    <entry></entry>
-    <entry>Month-day</entry>
-    <entry>Year</entry>
-    </row>
-    </thead>
-    <tbody>
-    
-    <row><entry align="center">count</entry>
-      <entry align="right">6.000000</entry>
-      <entry align="right">6.000000</entry>
-    </row>
-    <row><entry align="center">mean</entry>
-      <entry align="right">11.833333</entry>
-      <entry align="right">2005.166667</entry>
-    </row>
-    <row><entry align="center">std</entry>
-      <entry align="right">10.457852</entry>
-      <entry align="right">12.875040</entry>
-    </row>
-    <row><entry align="center">min</entry>
-      <entry align="right">1.000000</entry>
-      <entry align="right">1990.000000</entry>
-    </row>
-    <row><entry align="center">25%</entry>
-      <entry align="right">4.000000</entry>
-      <entry align="right">1998.500000</entry>
-    </row>
-    <row><entry align="center">50%</entry>
-      <entry align="right">9.500000</entry>
-      <entry align="right">2000.500000</entry>
-    </row>
-    <row><entry align="center">75%</entry>
-      <entry align="right">18.000000</entry>
-      <entry align="right">2015.250000</entry>
-    </row>
-    <row><entry align="center">max</entry>
-      <entry align="right">28.000000</entry>
-      <entry align="right">2022.000000</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+</entry>
+</row>
+<row>
+<entry><para id="para-00018"><code class="python inline-code">describe()</code></para></entry>
+<entry>The function generates statistics of the numerical columns like count, mean, standard deviation, minimum, maximum, and quartile.</entry>
+<entry><code class="python" lang="python">df.describe()</code></entry>
+<entry>
+<table class="unnumbered" summary=" " id="table-00109">
+<title/>
+<tgroup cols="3">
+<thead>
+<row>
+<entry></entry>
+<entry>Month-day</entry>
+<entry>Year</entry>
+</row>
+</thead>
+<tbody> 
+<row><entry align="center">count</entry>
+<entry align="right">6.000000</entry>
+<entry align="right">6.000000</entry>
+</row>
+<row><entry align="center">mean</entry>
+<entry align="right">11.833333</entry>
+<entry align="right">2005.166667</entry>
+</row>
+<row><entry align="center">std</entry>
+<entry align="right">10.457852</entry>
+<entry align="right">12.875040</entry>
+</row>
+<row><entry align="center">min</entry>
+<entry align="right">1.000000</entry>
+<entry align="right">1990.000000</entry>
+</row>
+<row><entry align="center">25%</entry>
+<entry align="right">4.000000</entry>
+<entry align="right">1998.500000</entry>
+</row>
+<row><entry align="center">50%</entry>
+<entry align="right">9.500000</entry>
+<entry align="right">2000.500000</entry>
+</row>
+<row><entry align="center">75%</entry>
+<entry align="right">18.000000</entry>
+<entry align="right">2015.250000</entry>
+</row>
+<row><entry align="center">max</entry>
+<entry align="right">28.000000</entry>
+<entry align="right">2022.000000</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
       <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image7.png"/>
     </media>-->
-    </entry>
-    </row>
-    <row>
-    <entry><para id="para-00019"><code class="python inline-code">value_counts()</code></para></entry>
-    <entry>The function counts the occurrences of unique values in a column when a column is passed as an argument and presents them in descending order.</entry>
-    <entry><code class="python" lang="python">df.value_counts('Season')</code></entry>
-    <entry><code class="python" lang="python">
-    Season
-    Fall  2
-    Summer  2
-    Winter  2
-    dtype: int64
-    </code></entry>
-    </row>
-    <row>
-    <entry><para id="para-00020"><code class="python inline-code">unique()</code></para></entry>
-    <entry>This function returns an array of unique values in a column when called on a column.</entry>
-    <entry><code class="python" lang="python">df['Season'].unique()</code></entry>
-    <entry><code class="python" lang="python">​​['Summer' 'Fall' 'Winter']</code></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+</entry>
+</row>
+<row>
+<entry><para id="para-00019"><code class="python inline-code">value_counts()</code></para></entry>
+<entry>The function counts the occurrences of unique values in a column when a column is passed as an argument and presents them in descending order.</entry>
+<entry><code class="python" lang="python">df.value_counts('Season')</code></entry>
+<entry><code class="python" lang="python">
+Season
+Fall  2
+Summer  2
+Winter  2
+dtype: int64
+</code></entry>
+</row>
+<row>
+<entry><para id="para-00020"><code class="python inline-code">unique()</code></para></entry>
+<entry>This function returns an array of unique values in a column when called on a column.</entry>
+<entry><code class="python" lang="python">df['Season'].unique()</code></entry>
+<entry><code class="python" lang="python">​​['Summer' 'Fall' 'Winter']</code></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
     <note class="learning-questions" id="note-00002">
     <title>DataFrame operations</title>
     <exercise id="exer-00004">

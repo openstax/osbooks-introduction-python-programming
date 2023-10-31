@@ -178,181 +178,177 @@
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image4.png"/>
     </media>
     </figure>-->
-    <table summary=" " id="table-00001">
-    <title>Null identification and removal examples.</title>
-    <tgroup cols="4">
-    <thead>
-    <row>
-    <entry>Function</entry>
-    <entry>Example</entry>
-    <entry>Output</entry>
-    <entry>Explanation</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry><code class="python" lang="python">isnull()</code></entry>
-    <entry><code class="python" lang="python">
-    df.isnull()
-    </code></entry>
-    <entry>
-      <table summary=" " id="table-00102">
-        <title/>
-        <tgroup cols="4">
-        <thead>
-        <row>
-          <entry></entry>
-          <entry>Column 1</entry>
-          <entry>Column 2</entry>
-          <entry>Column 3</entry>
-        </row>
-        </thead>
-        <tbody>
-        <row>
-          <entry align="center">0</entry>
-          <entry align="right">False</entry>
-          <entry align="right">True</entry>
-          <entry align="right">False</entry>
-        </row>
-        
-        <row>
-          <entry align="center">1</entry>
-          <entry align="right">False</entry>
-          <entry align="right">False</entry>
-          <entry align="right">False</entry>
-        </row>
-        <row>
-          <entry align="center">2</entry>
-          <entry align="right">False</entry>
-          <entry align="right">False</entry>
-          <entry align="right">False</entry>
-        </row>
-        <row>
-          <entry align="center">3</entry>
-          <entry align="right">False</entry>
-          <entry align="right">False</entry>
-          <entry align="right">True</entry>
-        </row>
-        <row>
-          <entry align="center">4</entry>
-          <entry align="right">False</entry>
-          <entry align="right">False</entry>
-          <entry align="right">True</entry>
-        </row>
-      </tbody>
-      </tgroup></table>
+<table summary=" " id="table-00001">
+<title>Null identification and removal examples.</title>
+<tgroup cols="4">
+<thead>
+<row>
+<entry>Function</entry>
+<entry>Example</entry>
+<entry>Output</entry>
+<entry>Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><code class="python" lang="python">isnull()</code></entry>
+<entry><code class="python" lang="python">
+df.isnull()
+</code></entry>
+<entry>
+<table summary=" " id="table-00102">
+<title/>
+<tgroup cols="4">
+<thead>
+<row>
+<entry></entry>
+<entry>Column 1</entry>
+<entry>Column 2</entry>
+<entry>Column 3</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">0</entry>
+<entry align="right">False</entry>
+<entry align="right">True</entry>
+<entry align="right">False</entry>
+</row>        
+<row>
+<entry align="center">1</entry>
+<entry align="right">False</entry>
+<entry align="right">False</entry>
+<entry align="right">False</entry>
+</row>
+<row>
+<entry align="center">2</entry>
+<entry align="right">False</entry>
+<entry align="right">False</entry>
+<entry align="right">False</entry>
+</row>
+<row>
+<entry align="center">3</entry>
+<entry align="right">False</entry>
+<entry align="right">False</entry>
+<entry align="right">True</entry>
+</row>
+<row>
+<entry align="center">4</entry>
+<entry align="right">False</entry>
+<entry align="right">False</entry>
+<entry align="right">True</entry>
+</row>
+</tbody>
+</tgroup></table>
     <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image2.png"/>
     </media>-->
-    </entry>
-    <entry><para id="para-00017"><code class="python inline-code">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</para></entry>
-    </row>
-    <row>
-    <entry><code class="python" lang="python">fillna()</code></entry>
-    <entry><code class="python" lang="python">
-    df["Column 2"] =\
-    df["Column 2"].fillna(df["Column 2"]
-      .mean())</code></entry>
-    <entry>
-      <table summary=" " id="table-00103">
-        <title/>
-        <tgroup cols="4">
-        <thead>
-        <row>
-          <entry></entry>
-          <entry>Column 1</entry>
-          <entry>Column 2</entry>
-          <entry>Column 3</entry>
-        </row>
-        </thead>
-        <tbody>
-        <row>
-          <entry align="center">0</entry>
-          <entry align="right">A</entry>
-          <entry align="right">172.5</entry>
-          <entry align="right">True</entry>
-        </row>
-        
-        <row>
-          <entry align="center">1</entry>
-          <entry align="right">B</entry>
-          <entry align="right">200.0</entry>
-          <entry align="right">True</entry>
-        </row>
-        <row>
-          <entry align="center">2</entry>
-          <entry align="right">C</entry>
-          <entry align="right">500.0</entry>
-          <entry align="right">False</entry>
-        </row>
-        <row>
-          <entry align="center">3</entry>
-          <entry align="right">D</entry>
-          <entry align="right">0.0</entry>
-          <entry align="right">NaN</entry>
-        </row>
-        <row>
-          <entry align="center">4</entry>
-          <entry align="right">E</entry>
-          <entry align="right">-10.0</entry>
-          <entry align="right">NaN</entry>
-        </row>
-      </tbody>
-      </tgroup></table>
+</entry>
+<entry><para id="para-00017"><code class="python inline-code">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</para></entry>
+</row>
+<row>
+<entry><code class="python" lang="python">fillna()</code></entry>
+<entry><code class="python" lang="python">
+df["Column 2"] =\
+df["Column 2"].fillna(df["Column 2"]
+  .mean())</code></entry>
+<entry>
+<table summary=" " id="table-00103">
+<title/>
+<tgroup cols="4">
+<thead>
+<row>
+<entry></entry>
+<entry>Column 1</entry>
+<entry>Column 2</entry>
+<entry>Column 3</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">0</entry>
+<entry align="right">A</entry>
+<entry align="right">172.5</entry>
+<entry align="right">True</entry>
+</row>
+<row>
+<entry align="center">1</entry>
+<entry align="right">B</entry>
+<entry align="right">200.0</entry>
+<entry align="right">True</entry>
+</row>
+<row>
+<entry align="center">2</entry>
+<entry align="right">C</entry>
+<entry align="right">500.0</entry>
+<entry align="right">False</entry>
+</row>
+<row>
+<entry align="center">3</entry>
+<entry align="right">D</entry>
+<entry align="right">0.0</entry>
+<entry align="right">NaN</entry>
+</row>
+<row>
+<entry align="center">4</entry>
+<entry align="right">E</entry>
+<entry align="right">-10.0</entry>
+<entry align="right">NaN</entry>
+</row>
+</tbody>
+</tgroup></table>
     <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image1.png"/></media>-->
-    </entry>
-    <entry><para id="para-00018">Null values in <code class="python inline-code">Column 2</code> are replaced with the mean of non-Null values in the column.</para></entry>
-    </row>
-    <row>
-    <entry><code class="python" lang="python">dropna()</code></entry>
-    <entry><code class="python" lang="python">
-    # Applied after the run of the previous row
-    df = df.dropna()</code></entry>
-    <entry>
-      <table summary=" " id="table-00104">
-        <title/>
-        <tgroup cols="4">
-        <thead>
-        <row>
-          <entry></entry>
-          <entry>Column 1</entry>
-          <entry>Column 2</entry>
-          <entry>Column 3</entry>
-        </row>
-        </thead>
-        <tbody>
-          <row>
-            <entry align="center">0</entry>
-            <entry align="right">A</entry>
-            <entry align="right">172.5</entry>
-            <entry align="right">True</entry>
-          </row>
-          
-          <row>
-            <entry align="center">1</entry>
-            <entry align="right">B</entry>
-            <entry align="right">200.0</entry>
-            <entry align="right">True</entry>
-          </row>
-          <row>
-            <entry align="center">2</entry>
-            <entry align="right">C</entry>
-            <entry align="right">500.0</entry>
-            <entry align="right">False</entry>
-          </row>
-        
-      </tbody>
-      </tgroup></table>  
+</entry>
+<entry><para id="para-00018">Null values in <code class="python inline-code">Column 2</code> are replaced with the mean of non-Null values in the column.</para></entry>
+</row>
+<row>
+<entry><code class="python" lang="python">dropna()</code></entry>
+<entry><code class="python" lang="python">
+# Applied after the run 
+# of the previous row
+df = df.dropna()</code></entry>
+<entry>
+<table summary=" " id="table-00104">
+<title/>
+<tgroup cols="4">
+<thead>
+<row>
+<entry></entry>
+<entry>Column 1</entry>
+<entry>Column 2</entry>
+<entry>Column 3</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">0</entry>
+<entry align="right">A</entry>
+<entry align="right">172.5</entry>
+<entry align="right">True</entry>
+</row>
+<row>
+<entry align="center">1</entry>
+<entry align="right">B</entry>
+<entry align="right">200.0</entry>
+<entry align="right">True</entry>
+</row>
+<row>
+<entry align="center">2</entry>
+<entry align="right">C</entry>
+<entry align="right">500.0</entry>
+<entry align="right">False</entry>
+</row>
+</tbody>
+</tgroup></table>  
     <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image3.png"/></media>-->
-  
-    </entry>
-    <entry>All rows containing a Null value are removed from the DataFrame.</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+</entry>
+<entry>All rows containing a Null value are removed from the DataFrame.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
     <note class="learning-questions" id="note-00005">
     <title>Missing value treatment</title>
     <exercise id="exer-00008">

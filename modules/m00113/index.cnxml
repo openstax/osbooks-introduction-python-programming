@@ -168,7 +168,7 @@ plt.show()
 </tgroup></table>
 
 <table summary=" " id="table-00103">
-<title>Matplotlib functionalities.</title>
+<title>Matplotlib functionalities. Scatter plot.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -207,7 +207,7 @@ plt.show()</code></entry>
 </tgroup></table> 
 
 <table summary=" " id="table-00104">
-<title>Matplotlib functionalities.</title>
+<title>Matplotlib functionalities. Histogram plot.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -247,7 +247,7 @@ plt.show()</code></entry>
 </tgroup></table>
 
 <table summary=" " id="table-00105">
-<title>Matplotlib functionalities.</title>
+<title>Matplotlib functionalities. Box plot.</title>
 <tgroup cols="2">
 <thead>
 <row>
