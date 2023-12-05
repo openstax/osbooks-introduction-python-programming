@@ -19,7 +19,7 @@
     </section>
     <section id="sect-00002">
     <title>bool data type</title>
-    <para id="para-00002">People often ask true/false questions or binary questions. Ex: True or False: I like pineapple on pizza. The response is a boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for boolean, represents a binary value of either True or False. <code class="python inline-code">True</code> and <code class="python inline-code">False</code> are keywords, and capitalization <span class="purple-code">is required</span>.</para>
+    <para id="para-00002">People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza? Ex: True or False: I like pineapple on pizza. The response is a boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for boolean, represents a binary value of either True or False. <code class="python inline-code">True</code> and <code class="python inline-code">False</code> are keywords, and capitalization <span class="purple-code">is required</span>.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Crosswalk sign</title>
     <media alt="crosswalk_sign_slides">
@@ -133,12 +133,12 @@
     <para id="para-00021"><span class="red-code">Programmers often have to answer questions like "</span>Is the current user the admin?<span class="red-code">"</span> A programmer may want to compare a string variable, user, to the string, "admin". <term id="term-00003">Comparison operators</term> are used to compare values, and the result is either True or False. Ex: is_admin = (user == "admin"). user is compared with "admin" using the == operator, which tests for equality. The boolean variable, is_admin, is assigned with the boolean result.</para>
     <para id="para-00022">The 6 comparison operators:
     <list id="list-00003">
-    <item><term id="term-00004">==</term> : equal to</item>
-    <item><term id="term-00005">!=</term> : not equal to</item>
-    <item><term id="term-00006">></term> : greater than</item>
-    <item><term id="term-00007">&lt;</term> : less than</item>
-    <item><term id="term-00008">>=</term> : greater than or equal to</item>
-    <item><term id="term-00009">&lt;=</term> : less than or equal to</item>
+    <item>equal to : <term id="term-00004">==</term></item>
+    <item>not equal to : <term id="term-00005">!=</term></item>
+    <item>greater than : <term id="term-00006">></term></item>
+    <item>less than : <term id="term-00007">&lt;</term></item>
+    <item>greater than or equal to : <term id="term-00008">>=</term></item>
+    <item>less than or equal to : <term id="term-00009">&lt;=</term></item>
     </list></para>
     <note class="guided-slides" id="note-00006">
     <title>Example: Rolling a d20 in a tabletop game</title>
