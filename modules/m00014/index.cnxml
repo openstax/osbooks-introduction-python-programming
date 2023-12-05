@@ -23,7 +23,7 @@
     <para id="para-00003"><span class="brown-code">A</span> <term id="term-00001"><span class="blue-code">round-off error</span></term> <span class="blue-code">occurs when floating-point values are stored erroneously as an approximation. The difference between an approximation of a value used in computation and the correct (true) value is called a round-off error.</span></para>
        <para id="para-00004"><span class="brown-code">Ex:</span> <span class="purple-code">Storing the float</span> (0.1)<sub>10</sub> <span class="purple-code">results in binary values that actually produce (0.1000000000000000055511151231257827021181583404541015625)<sub>10</sub> when converted back, which is not exactly equal to (0.1)<sub>10</sub>.</span></para>
     <table summary=" " id="table-00001">
-    <title>Round-off error. (The example above shows a formatted string or f-string which are introduced in the Objects chapter.)</title>
+    <title>Round-off error.</title>
     <tgroup cols="1">
     <tbody>
     <row>
@@ -41,6 +41,7 @@
     </row>
     </tbody>
     </tgroup>
+    <caption>(The example above shows a formatted string or f-string which are introduced in the Objects chapter.)</caption>
     </table>
     <para id="para-00005"><span class="brown-code">An</span> <term id="term-00002"><span class="blue-code">overflow error</span></term> <span class="blue-code">occurs when a value is too large to be stored. The maximum and minimum floating-point values that can be represented are <m:math><m:mrow><m:mtext>1</m:mtext><m:mtext>.8</m:mtext><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math>, respectively. Attempting to store a floating-point value outside the range <m:math><m:mrow><m:mo>(</m:mo><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>)</m:mo></m:mrow></m:math> leads to an overflow error.</span></para>
     <para id="para-00006"><span class="brown-code">Below, <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>256</m:mn></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>512</m:mn></m:mrow></m:msup></m:mrow></m:math> can be represented, but <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>1024</m:mn></m:mrow></m:msup></m:mrow></m:math> is too large and causes an overflow error.</span></para>

@@ -108,7 +108,7 @@
     </row>
     </tbody>
     </tgroup>
-    <caption>The following table shows common ways that numbers can be formatted. Many more formatting options are available and described in Python's <link url="https://docs.python.org/3/library/string.html#formatspec">Format Specification Mini-Language</link>.</caption>
+    <caption>The table shows common ways that numbers can be formatted. Many more formatting options are available and described in Python's <link url="https://docs.python.org/3/library/string.html#formatspec">Format Specification Mini-Language</link>.</caption>
     </table>
     <note class="learning-questions" id="note-00003">
     <title>Formatting numbers</title>

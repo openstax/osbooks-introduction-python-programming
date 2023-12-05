@@ -22,7 +22,7 @@
     <para id="para-00003">Empty lists can be defined in two ways:
     <list id="list-00002">
     <item><code class="python inline-code">list_1 = []</code></item>
-    <item><code class="python inline-code">list_1 = List()</code></item>
+    <item><code class="python inline-code">list_1 = list()</code></item>
     </list></para>
     <para id="para-00004">Lists can be made of elements of any type. Lists can contain integers, strings, floats, or any other type. Lists can also contain a combination of types. Ex: <code class="python inline-code">[2, "Hello", 2.5]</code> is a valid list.</para>
     <para id="para-00005"><span class="purple-code">Python lists allow programmers to change the contents of the list in various ways.</span></para>
@@ -54,19 +54,19 @@
     <example id="exam-00001">
     <title>List indexes and len() function</title>
     <para id="para-00011">The following code demonstrates the use of list indexes and the <code class="python inline-code">len()</code> function. Line 6 shows the use of the <code class="python inline-code">len()</code> function to get the length of the list. Line <span class="blue-code">10</span> shows how to access an element using an index. Line <span class="blue-code">14</span> shows how to modify a list element using an index.</para>
-    <code class="python" lang="python">
-    # <span class="purple-code">S</span>etup a list of numbers
+    <code class="python line-numbering" lang="python">
+    # Setup a list of numbers
     num_list = [2, 3, 5, 9, 11]
     print(num_list)<newline/>
-    # <span class="purple-code">P</span>rint the length of the list
-    print(<span class="blue-code">"Length: ",</span> len(num_list))<newline/>
-    # <span class="purple-code">P</span>rint the 4th element in the list
+    # Print the length of the list
+    print("Length: ", len(num_list))<newline/>
+    # Print the 4th element in the list
     # The number 3 is used to refer to the 4th element
-    print(<span class="purple-code">"4th element:"</span>, num_list[3])<newline/>
-    # <span class="purple-code">T</span>he desired value of the 4th element is actually 7
+    print("4th element:", num_list[3])<newline/>
+    # The desired value of the 4th element is actually 7
     # Update the value of the 4th element to 7
     num_list[3] = 7<newline/>
-    # <span class="purple-code">T</span>he list <span class="purple-code">of</span> the first 5 prime numbers
+    # The list of the first 5 prime numbers
     print(num_list)<newline/>
     </code>
     <para id="para-00012">The above code's output is:</para>
