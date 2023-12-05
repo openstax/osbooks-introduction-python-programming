@@ -47,7 +47,7 @@
     <title>Explicit type conversion</title>
     <para id="para-00007">A programmer often needs to change data types to perform an operation. Ex: A program should read in two values using input() and sum the values. Remember input() reads in values as strings. A programmer can use <term id="term-00002">explicit type conversion</term> to convert one data type to another.</para>
     <list id="list-00002">
-    <item><term id="term-00003">int()</term> converts a data type to an integer. Any fractional part is removed. Ex: int(5.5) produces 5.</item>
+    <item><term id="term-00003">int()</term> converts a data type to an integer. Any fractional part is removed. Ex: int(5.9) produces 5.</item>
     <item><term id="term-00004">float()</term> converts a data type to a float. Ex: float(2) produces 2.0.</item>
     <item><term id="term-00005">str()</term> converts a data type to a string. Ex: str(3.14) produces "3.14".</item>
     </list>

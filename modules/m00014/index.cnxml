@@ -16,11 +16,14 @@
     </section>
     <section id="sect-00002">
     <title>Floating-point errors</title>
-    <para id="para-00002"><span class="blue-code">Floating-point values</span> <span class="purple-code">are stored as binary values by</span> <span class="blue-code">Python</span>. <span class="purple-code">The conversion of a floating point number to the underlying binary results in specific types of floating-point errors.</span></para>
+    <para id="para-00101">Computers store information using 0s and 1s. All information must be converted to a string of 0s and 1s. Ex: 5 is converted to 101. Since only 2 values 0 or 1 are allowed the format is called binary.</para>
+
+
+    <para id="para-00002">Floating-point values are stored as binary by Python. The conversion of a floating point number to the underlying binary results in specific types of floating-point errors.</para>
     <para id="para-00003"><span class="brown-code">A</span> <term id="term-00001"><span class="blue-code">round-off error</span></term> <span class="blue-code">occurs when floating-point values are stored erroneously as an approximation. The difference between an approximation of a value used in computation and the correct (true) value is called a round-off error.</span></para>
        <para id="para-00004"><span class="brown-code">Ex:</span> <span class="purple-code">Storing the float</span> (0.1)<sub>10</sub> <span class="purple-code">results in binary values that actually produce (0.1000000000000000055511151231257827021181583404541015625)<sub>10</sub> when converted back, which is not exactly equal to (0.1)<sub>10</sub>.</span></para>
     <table summary=" " id="table-00001">
-    <title>Round-off error.</title>
+    <title>Round-off error. (The example above shows a formatted string or f-string which are introduced in the Objects chapter.)</title>
     <tgroup cols="1">
     <tbody>
     <row>

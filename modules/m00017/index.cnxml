@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Recommended spacing</title>
-    <para id="para-00002">Most spaces in Python code are ignored when running programs. The following two programs are equivalent:</para>
+    <para id="para-00002">Most spaces in Python code are ignored when running programs, however spaces at the start of a line are very important. The following two programs are equivalent:</para>
     <list id="list-00002">
     <item>Good spacing:<newline/>
     <code class="python" lang="python">
