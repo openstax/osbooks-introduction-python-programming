@@ -64,11 +64,11 @@
     <tbody>
     <row>
     <entry><emphasis effect="bold">Artificial intelligence</emphasis></entry>
-    <entry>An engineer develops models to support image and voice recognition. Ex: TensorFlow library.</entry>
+    <entry>An engineer develops models to support image and voice recognition. Ex: <link url="https://www.tensorflow.org">TensorFlow library</link>.</entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Data visualization</emphasis></entry>
-    <entry>A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library.</entry>
+    <entry>A statistician creates charts to make sense of large amounts of data. Ex: <link url="https://matplotlib.org/">Matplotlib library</link>.</entry>
     </row>
     <row>
     <entry><emphasis effect="bold">General purpose</emphasis></entry>
@@ -76,11 +76,11 @@
     </row>
     <row>
     <entry><emphasis effect="bold">Scientific computing</emphasis></entry>
-    <entry>Python is very useful for conducting experiments and analyzing data. Ex: The SciPy project.</entry>
+    <entry>Python is very useful for conducting experiments and analyzing data. Ex: <link url="https://scipy.org/">The SciPy project</link>.</entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Web development</emphasis></entry>
-    <entry>Python can run interactive websites. Ex: Instagram is built with Django, a Python framework.</entry>
+    <entry>Python can run interactive websites. Ex: Instagram is built with <link url="https://www.djangoproject.com/">Django</link>, a Python framework.</entry>
     </row>
     </tbody>
     </tgroup>
