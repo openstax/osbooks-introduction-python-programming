@@ -64,6 +64,7 @@
     print(cube(2)) # Calls the local cube() function, not area.cube()
     </code>
     <para id="para-00009">A programmer might not realize the <code class="python inline-code">cube</code> function is defined twice, because no error occurs when running the program. Name collisions are not considered errors and often lead to unexpected behavior.</para>
+    <para id="para-00016">Care should be taken to avoid name collisions. Selecting specific functions from a module to import reduces the memory footprint, however importing a complete module can help to avoid collisions because a module.name format would be used. A tradeoff the programmer must consider.</para>
     <note class="guided-slides" id="note-00004">
     <title>Module and function names</title>
     <media alt="module_function_names_slides">

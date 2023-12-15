@@ -16,18 +16,14 @@
     </section>
     <section id="sect-00002">
     <title>Break</title>
-    <para id="para-00002">A <term id="term-00001">break</term> statement <span class="blue-code">is</span> used within a <code class="python inline-code">for</code> or a <code class="python inline-code">while</code> loop to allow <span class="red-code">the program execution to exit</span> the loop once a given condition is triggered. A use case of a <code class="python inline-code">break</code> statement includes runtime efficiency when further loop's execution is not required.</para>
-    <para id="para-00003"><span class="blue-code">Ex: A loop that counts up starting from 1 until the second number that is divisible by both 2 and 5 is found.</span></para>
+    <para id="para-00002">A <term id="term-00001">break</term> statement <span class="blue-code">is</span> used within a <code class="python inline-code">for</code> or a <code class="python inline-code">while</code> loop to allow <span class="red-code">the program execution to exit</span> the loop once a given condition is triggered. A <code class="python inline-code">break</code> statement can be used to improve runtime efficiency when further loop execution is not required.</para>
+    <para id="para-00003"><span class="blue-code">Ex: A loop that looks for the character 'a' in a given string called user_string. The loop below is a regular for loop for going through all the characters of user_string. If the character is found, the break statement takes execution out of the for loop. Since the task has been accomplished the rest of the for loop execution is bypassed.</span></para>
     <code class="python" lang="python">
-    count = 0<newline/>
-    index = 1
-    while count &lt; 2:
-    &#160;&#160;if index % 2 == 0 and index % 5 == 0:
-    &#160;&#160;&#160;&#160;count += 1
-    &#160;&#160;if count == 2:
+    user_string = "This is a string."
+    for i in range(len(user_string)):
+    &#160;&#160;if user_string[i] == 'a':
+    &#160;&#160;&#160;&#160;print("Found at index:", i)
     &#160;&#160;&#160;&#160;break
-    &#160;&#160;index += 1<newline/>
-    print(index)<newline/>
     </code>
     <note class="guided-slides" id="note-00001">
     <title>Break statement in a while loop.</title>
@@ -37,7 +33,7 @@
     </note>
     <note id="note-00002">
     <title>Infinite loop</title>
-    <para id="para-00004">A <code class="python inline-code">break</code> statement is an essential part of a loop without a termination condition. A loop without a termination condition is known as an <term id="term-00002">infinite loop</term>. Ex: An infinite loop that counts up starting from 1 and prints the counter's value while the counter's value is less than 10. A break condition is triggered when the counter's value is equal to 10, and hence the program execution exits.</para>
+    <para id="para-00004">A <code class="python inline-code">break</code> statement is an essential part of a loop that does not have a termination condition. A loop without a termination condition is known as an <term id="term-00002">infinite loop</term>. Ex: An infinite loop that counts up starting from 1 and prints the counter's value while the counter's value is less than 10. A break condition is triggered when the counter's value is equal to 10, and hence the program execution exits.</para>
     <code class="python" lang="python">
     counter = 1
     while True:
@@ -69,33 +65,8 @@
     <section id="sect-00003">
     <title>Continue</title>
     <para id="para-00008">A <term id="term-00003">continue</term> statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely. A <code class="python inline-code">continue</code> statement can be used in a <code class="python inline-code">for</code> or a <code class="python inline-code">while</code> loop. After the <code class="python inline-code">continue</code> statement's execution, the loop expression will be evaluated again and the loop will continue from the loop's <span class="red-code">expression</span>. A <code class="python inline-code">continue</code> statement facilitates loop's control and readability.</para>
-    <example id="exam-00001">
-    <title>Printing multiples of 5 between 1 and 20.</title>
-    <para id="para-00009">In the code examples below, the code on the left prints <code class="python inline-code">i</code>'s value unless the condition <code class="python inline-code">i%5 !== 0</code> is triggered. The code on the right prints <code class="python inline-code">i</code>'s value when the condition <code class="python inline-code">i%5 == 0</code> is triggered. The code on the left performs the print operation by default, but the code on the right is written so that in case a given condition is true, the operation is performed. As such, the code on the right can become less readable due to the additional nesting.</para>
-    <table summary=" " id="table-00001">
-    <tgroup cols="1">
-    <tbody>
-    <row>
-    <entry><code class="python" lang="python">
-    for i in range(1, 21):
-    &#160;&#160;if i%5 != 0:
-    &#160;&#160;&#160;&#160;continue
-    &#160;&#160;print(i)
-    </code>
-    </entry>
-    <entry><code class="python" lang="python">
-    for i in range(1, 21):
-    &#160;&#160;if i%5 == 0:
-    &#160;&#160;&#160;&#160;print(i)
-    </code>
-    </entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </example>
-    <note class="guided-slides" id="note-00004">
-    <title>Control statement in a while loop.</title>
+        <note class="guided-slides" id="note-00004">
+    <title>Continue statement in a while loop.</title>
     <media alt="while_control_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/while-control"/>
     </media>
@@ -112,12 +83,7 @@
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch05-m04-p05"/></para>
     </problem>
     </exercise>
-    <exercise id="exer-00006">
-    <problem id="prob-00006">
-    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch05-m04-p06"/></para>
-    </problem>
-    </exercise>
-    </note>
+  </note>
     </section>
     
     <note class="practice-program" id="note-00006">

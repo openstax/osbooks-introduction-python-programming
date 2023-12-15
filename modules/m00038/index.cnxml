@@ -116,7 +116,7 @@
     </tgroup>
     </table>
     <example id="exam-00001">
-    <title>Two programs printing all integer multiples of 5 less than 50.</title>
+    <title>Two programs printing all integer multiples of 5 less than 50. (Notice the compactness of the for construction compared to the while.)</title>
     <table summary=" " id="table-00002">
     <tgroup cols="1">
     <tbody>
@@ -132,10 +132,8 @@
     i = 0
     # <span class="blue-code">L</span>imiting the range to be less than 50
     while i &lt; 50:
-      # <span class="blue-code">C</span>hecking for multiples of 5
-      if i % 5 == 0:
         print(i)
-      i += 1
+        i+=5
     </code></entry>
     </row>
     </tbody>

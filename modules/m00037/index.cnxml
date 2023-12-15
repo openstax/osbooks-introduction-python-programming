@@ -36,7 +36,7 @@
     g = 1
     print (f, end = ' ')<newline/>
     # <span class="blue-code">R</span>unning the loop while the last Fibonacci number is less than 20
-    while g &lt; 20:
+    while g &gt;= 20:
       print(g, end = ' ')
       # <span class="blue-code">C</span>alculating the next Fibonacci number and updating the last two sequence numbers
       temp = f
@@ -62,7 +62,7 @@
     </section>
     <section id="sect-00003">
     <title>Counting with a while loop</title>
-    <para id="para-00007">A <code class="python inline-code">while</code> loop <span class="purple-code">can be used</span> to count up or down. <span class="purple-code">The counter can be used in the loop expression to determine the number of iterations executed</span>. Ex: <span class="blue-code">A</span> programmer may want <span class="blue-code">to print all even numbers between 1 and 20. The task can be done by using a counter initialized with 1. In each iteration the counter's value is increased by one, and a condition can check whether the counter's value is an even number or not. The change in the counter's value in each iteration is called</span> <span class="purple-code">the</span> <span class="blue-code"><term id="term-00002">step size</term></span>. The step size can be any positive or negative value. If the step size is a positive number, the coun<span class="red-code">ter counts in ascending order</span>, and if the step size is a negative number, the <span class="red-code">counter counts in descending order</span>.</para>
+    <para id="para-00007">A <code class="python inline-code">while</code> loop <span class="purple-code">can be used</span> to count up or down. <span class="purple-code">A counter variable can be used in the loop expression to determine the number of iterations executed</span>. Ex: <span class="blue-code">A</span> programmer may want <span class="blue-code">to print all even numbers between 1 and 20. The task can be done by using a counter initialized with 1. In each iteration the counter's value is increased by one, and a condition can check whether the counter's value is an even number or not. The change in the counter's value in each iteration is called</span> <span class="purple-code">the</span> <span class="blue-code"><term id="term-00002">step size</term></span>. The step size can be any positive or negative value. If the step size is a positive number, the coun<span class="red-code">ter counts in ascending order</span>, and if the step size is a negative number, the <span class="red-code">counter counts in descending order</span>.</para>
     <example id="exam-00001">
     <title>A program printing all <span class="blue-code">odd</span> numbers between 1 and 10.</title>
     <code class="python" lang="python">
