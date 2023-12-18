@@ -74,7 +74,7 @@
     </note>
     </section>
     <section id="sect-00004">
-    <title>Count() function</title>
+    <title>count() function</title>
     <para id="para-00010">The <term id="term-00002">count()</term> function counts the number of occurrences of a substring in a given string. If the given substring does not exist in the given string, the value of 0 is returned.</para>
     <note class="guided-slides" id="note-00005">
     <title>Counting the number of occurrences of a substring</title>
@@ -83,7 +83,7 @@
     </media>
     </note>
     <note class="learning-questions" id="note-00006">
-    <title>Count() function to count the number of substrings</title>
+    <title>count() function to count the number of substrings</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch08-m03-p07"/></para>
@@ -102,7 +102,7 @@
     </note>
     </section>
     <section id="sect-00005">
-    <title>Find() function</title>
+    <title>find() function</title>
     <para id="para-00014">The <term id="term-00003">find()</term> function returns the index of the first occurrence of a substring in a given string. If the substring does not exist in the given string, the value of -1 is returned.</para>
     <note class="guided-slides" id="note-00007">
     <title>Finding the first index of a substring</title>
@@ -130,7 +130,7 @@
     </note>
     </section>
     <section id="sect-00006">
-    <title>Index() function</title>
+    <title>index() function</title>
     <para id="para-00018">The <term id="term-00004">index()</term> function performs similar to the find() function in which the function returns the index of the first occurrence of a substring in a given string. The <code class="python inline-code">index()</code> function assumes that the substring exists in the given string, otherwise, throws a <code class="python inline-code">ValueError</code>.</para>
     <example id="exam-00001">
     <title>Getting the time's minute portion</title>

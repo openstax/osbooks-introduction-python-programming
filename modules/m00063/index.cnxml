@@ -43,7 +43,7 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title>Join() function</title>
+    <title>join() function</title>
     <para id="para-00006">The <term id="term-00003">join()</term> function is the inverse of the <code class="python inline-code">split()</code> function in which a list of string values are concatenated together to form one output string. When joining string elements in the list, the delimiter is added in-between elements. Ex: <code class="python inline-code">','.join(["this", "is", "great"])</code> returns <code class="python inline-code">"this,is,great"</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>join() function for combining tokens into one string</title>

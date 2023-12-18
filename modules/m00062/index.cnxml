@@ -178,8 +178,8 @@
     print(template.format(hex = "#00FF00", name = "green"))</code></para>
     </entry>
     <entry><para id="para-00043"><code class="python inline-code">
-    #FF0000    Red
-    #00FF00    green</code></para></entry>
+    #FF0000Red
+    #00FF00green</code></para></entry>
     </row>
     <row>
     <entry>Right-aligned</entry>
@@ -189,7 +189,7 @@
     print(template.format(hex = "#FF0000", name = "Red"))
     print(template.format(hex = "#00FF00", name = "green"))</code></para></entry>
     <entry><para id="para-00046"><code class="python inline-code">
-    #FF0000    Red
+    #FF0000      Red
     #00FF00    green</code></para></entry>
     </row>
     <row>
@@ -200,8 +200,8 @@
     print(template.format(hex = "#FF0000", name = "Red"))
     print(template.format(hex = "#00FF00", name = "green"))</code></para></entry>
     <entry><para id="para-00048"><code class="python inline-code">
-    #FF0000    Red
-    #00FF00    green</code></para></entry>
+    #FF0000   Red
+    #00FF00  green</code></para></entry>
     </row>
     </tbody>
     </tgroup>

@@ -31,14 +31,14 @@
     <title>While loop example</title>
     <para id="para-00003">Fibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The Fibonacci sequence starts with two ones: 1, 1, 2, 3, …. Consider the following code that prints all Fibonacci numbers less than 20, and answer the following questions.</para>
     <code class="python" lang="python">
-    # <span class="blue-code">I</span>nitializing the first two Fibonacci numbers
+    # Initializing the first two Fibonacci numbers
     f = 1
     g = 1
     print (f, end = ' ')<newline/>
-    # <span class="blue-code">R</span>unning the loop while the last Fibonacci number is less than 20
-    while g &gt;= 20:
+    # Running the loop while the last Fibonacci number is less than 20
+    while g &lt; 20:
       print(g, end = ' ')
-      # <span class="blue-code">C</span>alculating the next Fibonacci number and updating the last two sequence numbers
+      # Calculating the next Fibonacci number and updating the last two sequence numbers
       temp = f
       f = g
       g = temp + g

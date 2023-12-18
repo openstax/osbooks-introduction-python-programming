@@ -12,7 +12,7 @@
     </media>
     <caption>credit: modification of work "IMG_3037", by Jay Roc/Flickr, Public Domain</caption>
     </figure>
-    <para id="para-00001">Functions are the next step towards creating optimized code as a software developer. If the same block of code is reused repeatedly, a function allows the programmer to write the block of code once, name the block, and use the code as many times as needed by calling the <span class="red-code">block by</span> name. Functions can read in values and return values to perform tasks including complex calculations.</para>
-    <para id="para-00002">Like branching statements discussed in Chapter <span class="blue-code">4</span>, functions allow different paths of execution through a program, and Chapter <span class="blue-code">6</span> discusses control flow and the scope of variables in more detail.</para>
+    <para id="para-00001">Functions are the next step towards creating optimized code as a software developer. If the same block of code is reused repeatedly, a function allows the programmer to write the block of code once, name the block, and use the code as many times as needed by calling the block by name. Functions can read in values and return values to perform tasks, including complex calculations.</para>
+    <para id="para-00002">Like branching statements discussed in Chapter 4, functions allow different paths of execution through a program, and Chapter 6 discusses control flow and the scope of variables in more detail.</para>
     </content>
 </document>

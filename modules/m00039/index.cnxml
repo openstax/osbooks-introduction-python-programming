@@ -65,7 +65,7 @@
     </section>
     <section id="sect-00003">
     <title>Nested for loops</title>
-    <para id="para-00008">A nested <code class="python inline-code">for</code> loop can be implemented and used in the same way as a nested <code class="python inline-code">while</code> loop. A <code class="python inline-code">for loop</code> is a preferable option in cases that a loop is used for counting purposes using a <code class="python inline-code">range()</code> function or when iterating over a container object, including nested situations. Ex: ​​Iterating over multiple course rosters. The outer loop iterates over different courses, and the inner loop iterates over the names in each course roster.</para>
+    <para id="para-00008">A nested <code class="python inline-code">for</code> loop can be implemented and used in the same way as a nested <code class="python inline-code">while</code> loop. A <code class="python inline-code">for</code> loop is a preferable option in cases that a loop is used for counting purposes using a <code class="python inline-code">range()</code> function or when iterating over a container object, including nested situations. Ex: ​​Iterating over multiple course rosters. The outer loop iterates over different courses, and the inner loop iterates over the names in each course roster.</para>
     <note class="guided-slides" id="note-00003">
     <title>Nested for loops</title>
     <media alt="nested_for_loops_slides">
