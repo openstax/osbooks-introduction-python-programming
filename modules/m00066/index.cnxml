@@ -65,7 +65,7 @@
     </section>
     <section id="sect-00003">
     <title>Iterating lists</title>
-    <para id="para-00009">An iterative for loop can be used to iterate through a list because lists are iterable. Alternatively, lists can also be iterated using list indexes with a counting for loop. The animation below shows both ways of iterating a list.</para>
+    <para id="para-00009">An iterative for loop can be used to iterate through a list. Alternatively, lists can also be iterated using list indexes with a counting for loop. The animation below shows both ways of iterating a list.</para>
     <note class="guided-slides" id="note-00002">
     <title>Using len() to get the length of a list</title>
     <media alt="len_function_slides">

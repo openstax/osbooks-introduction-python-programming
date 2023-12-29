@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Magic methods and customizing</title>
-    <para id="para-00002"><term id="term-00001">Magic methods</term> are special methods that perform actions for users, typically out of view of users. Magic methods are also called dunder methods, since the methods must start and end with two (double) underscores. Ex: __init__() is a magic method used alongside __new__() to create a new instance and initialize attributes with a simple line like <code class="python inline-code">eng = Engineer()</code>. A programmer can explicitly define a magic method in a user-defined class to customize the method's behavior.</para>
+    <para id="para-00002"><term id="term-00001">Magic methods</term> are special methods that perform actions for users, typically out of view of users. Magic methods are also called dunder methods, since the methods must start and end with double underscores (__). Ex: __init__() is a magic method used alongside __new__() to create a new instance and initialize attributes with a simple line like <code class="python inline-code">eng = Engineer()</code>. A programmer can explicitly define a magic method in a user-defined class to customize the method's behavior.</para>
     <note class="guided-slides" id="note-00001">
     <title>Customizing __str__() in a user-defined class, Engineer</title>
     <media alt="customizing_str_user_defined_class_slides">

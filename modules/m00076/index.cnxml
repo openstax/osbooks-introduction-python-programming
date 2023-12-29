@@ -10,11 +10,11 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Recognize a dictionary object is mutable.</item>
+    <item>Recognize that a dictionary object is mutable.</item>
     <item>Evaluate dictionary items, keys, and values.</item>
     <item>Demonstrate the ability to access, evaluate, and modify dictionary items.</item>
-    <item>Modify a dictionary by adding items to a dictionary.</item>
-    <item>Modify a dictionary by removing items from a dictionary.</item>
+    <item>Modify a dictionary by adding items.</item>
+    <item>Modify a dictionary by removing items.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -101,7 +101,7 @@
     <section id="sect-00004">
     <title>Dictionary mutability</title>
     <para id="para-00015">In Python, a dictionary is a mutable data type, which means that dictionary's content can be modified after creation. Dictionary items can be added, updated, or deleted from a dictionary after a dictionary object is created.</para>
-    <para id="para-00016">To add an item to a dictionary, Either the square bracket notation or <code class="python inline-code">update()</code> function can be used.</para>
+    <para id="para-00016">To add an item to a dictionary, either the square bracket notation or <code class="python inline-code">update()</code> function can be used.</para>
     <list id="list-00003">
     <item>Square bracket notation: When using square brackets to access a new key object and assign a value to the key, the new key-value pair will be added to the dictionary.
     <code class="python" lang="python">
