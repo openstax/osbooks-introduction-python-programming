@@ -89,7 +89,7 @@
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><span class="blue-code">if statement</span></entry>
+    <entry>if statement</entry>
     <entry><code class="python" lang="python">
     # Statements before<newline/>
     if condition:
@@ -98,10 +98,10 @@
     </code></entry>
     </row>
     <row>
-    <entry><span class="blue-code"><emphasis effect="italics">else statement</emphasis></span></entry>
+    <entry><emphasis effect="italics">else statement</emphasis></entry>
     <entry><code class="python" lang="python">
     # Statements before<newline/>
-    <span class="purple-code">if</span> condition:
+    if condition:
       # Body
     else:
       # Body<newline/>
@@ -109,10 +109,10 @@
     </code></entry>
     </row>
     <row>
-    <entry><span class="blue-code"><emphasis effect="italics">elif statement</emphasis></span></entry>
+    <entry><emphasis effect="italics">elif statement</emphasis></entry>
     <entry><code class="python" lang="python">
     # Statements before<newline/>
-    <span class="purple-code">if</span> condition:
+    if condition:
       # Body
     elif condition:
       # Body
@@ -125,7 +125,7 @@
     <entry>nested if statement</entry>
     <entry><code class="python" lang="python">
     # Statements before<newline/>
-    <span class="purple-code">if</span> condition:
+    if condition:
       if condition:
         # Body
       else:
@@ -139,8 +139,8 @@
     </code></entry>
     </row>
     <row>
-    <entry><span class="blue-code"><emphasis effect="bold">conditional expression</emphasis></span></entry>
-    <entry><para id="para-00021"><code class="python inline-code"><emphasis effect="bold"><span class="blue-code">expression_if_true</span> <span class="purple-code">if</span> <span class="blue-code">condition</span> <span class="purple-code">else</span> <span class="blue-code">expression_if_false</span></emphasis></code></para></entry>
+    <entry><emphasis effect="bold">conditional expression</emphasis></entry>
+    <entry><para id="para-00021"><code class="python inline-code"><emphasis effect="bold">expression_if_true if condition else expression_if_false</emphasis></code></para></entry>
     </row>
     </tbody>
     </tgroup>

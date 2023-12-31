@@ -16,8 +16,8 @@
     </section>
     <section id="sect-00002">
     <title>elif</title>
-    <para id="para-00002"><span class="red-code">Sometimes,</span> a complicated decision is based on more than a single condition. Ex: A travel planning site reviews the layovers on an itinerary. If a layover is greater than 24 hours, the site should suggest accommodations. <emphasis effect="italics">Else if</emphasis> the layover is less than 1 hour, the site should alert for a possible missed connection.</para>
-    <para id="para-00003">Two separate if statements <span class="red-code">do not</span> guarantee that only one branch is taken <span class="red-code">and might result in both branches being taken</span>. Ex: The program below attempts to add a curve based on the input test score. If the input is 60, both if statements are incorrectly executed, and the resulting score is 75.</para>
+    <para id="para-00002">Sometimes, a complicated decision is based on more than a single condition. Ex: A travel planning site reviews the layovers on an itinerary. If a layover is greater than 24 hours, the site should suggest accommodations. <emphasis effect="italics">Else if</emphasis> the layover is less than 1 hour, the site should alert for a possible missed connection.</para>
+    <para id="para-00003">Two separate if statements do not guarantee that only one branch is taken and might result in both branches being taken. Ex: The program below attempts to add a curve based on the input test score. If the input is 60, both if statements are incorrectly executed, and the resulting score is 75.</para>
     <code class="python" lang="python">
     score = int(input())
     if score &lt; 70:

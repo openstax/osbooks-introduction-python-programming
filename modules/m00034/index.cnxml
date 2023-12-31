@@ -23,7 +23,7 @@
     </code>
     <para id="para-00003">A conditional expression is evaluated by first checking the condition. If <code class="python inline-code">condition</code> is true, <code class="python inline-code">expression_if_true</code> is evaluated, and the result is the resulting value of the conditional expression. Else, <code class="python inline-code">expression_if_false</code> is evaluated, and the result is the resulting value of the conditional expression.</para>
     <para id="para-00004">A variable can be assigned with a conditional expression. Ex: Finding the max of two numbers can be calculated with <code class="python inline-code">max_num = y if x &lt; y else x</code></para>
-    <para id="para-00005">Note: Conditional expressions have the lowest <span class="purple-code">precedence</span>span> of all Python operations.</para> 
+    <para id="para-00005">Note: Conditional expressions have the lowest precedence of all Python operations.</para> 
     <note class="guided-slides" id="note-00001">
     <title>Example: Version check</title>
     <media alt="version_check_slides">

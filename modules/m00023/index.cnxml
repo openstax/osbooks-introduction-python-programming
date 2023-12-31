@@ -138,7 +138,7 @@
     <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
     <list list-type="bulleted" id="list-00006">
-    <item>What <span class="blue-code">is</span> the type and value of each object?</item>
+    <item>What is the type and value of each object?</item>
     <item>Which object does each variable reference?</item>
     </list></item>
     </list>

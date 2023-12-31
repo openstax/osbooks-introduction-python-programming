@@ -19,7 +19,7 @@
     </section>
     <section id="sect-00002">
     <title>bool data type</title>
-    <para id="para-00002">People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza? Ex: True or False: I like pineapple on pizza. The response is a boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for boolean, represents a binary value of either True or False. <code class="python inline-code">True</code> and <code class="python inline-code">False</code> are keywords, and capitalization <span class="purple-code">is required</span>.</para>
+    <para id="para-00002">People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza? Ex: True or False: I like pineapple on pizza. The response is a boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for boolean, represents a binary value of either True or False. <code class="python inline-code">True</code> and <code class="python inline-code">False</code> are keywords, and capitalization is required.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Crosswalk sign</title>
     <media alt="crosswalk_sign_slides">
@@ -130,7 +130,7 @@
     </section>
     <section id="sect-00004">
     <title>Comparison operators</title>
-    <para id="para-00021"><span class="red-code">Programmers often have to answer questions like "</span>Is the current user the admin?<span class="red-code">"</span> A programmer may want to compare a string variable, user, to the string, "admin". <term id="term-00003">Comparison operators</term> are used to compare values, and the result is either True or False. Ex: is_admin = (user == "admin"). user is compared with "admin" using the == operator, which tests for equality. The boolean variable, is_admin, is assigned with the boolean result.</para>
+    <para id="para-00021">Programmers often have to answer questions like "Is the current user the admin?" A programmer may want to compare a string variable, user, to the string, "admin". <term id="term-00003">Comparison operators</term> are used to compare values, and the result is either True or False. Ex: is_admin = (user == "admin"). user is compared with "admin" using the == operator, which tests for equality. The boolean variable, is_admin, is assigned with the boolean result.</para>
     <para id="para-00022">The 6 comparison operators:
     <list id="list-00003">
     <item>equal to: <term id="term-00004">==</term></item>
@@ -193,7 +193,7 @@
     </section>
     <note class="practice-program" id="note-00010">
       <title>Friday boolean</title>
-      <para id="para-00032">"It's Friday, I'm in love" -- <span class="purple-code">from Friday I'm in Love, a song released by the Cure in 1992.</span></para>
+      <para id="para-00032">"It's Friday, I'm in love" -- from Friday I'm in Love, a song released by the Cure in 1992.</para>
       <para id="para-00033">Write a program that reads in the day of the week. Assign the boolean variable, in_love, with the result of whether the day is Friday or not.</para>
       <media alt="programming_practice_-Friday_boolean_program">
       <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_01_Programming-practice_-Friday-boolean.html"/>

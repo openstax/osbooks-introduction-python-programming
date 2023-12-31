@@ -10,14 +10,14 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item><span class="red-code">Describe</span> how precedence impacts order of operations</item>
-    <item><span class="red-code">Describe</span> how associativity impacts order of operations</item>
+    <item>Describe how precedence impacts order of operations</item>
+    <item>Describe how associativity impacts order of operations</item>
     <item>Explain the purpose of using parentheses in expressions with multiple operators</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Precedence</title>
-    <para id="para-00002">When an expression has multiple operators, which operator is evaluated first? Precedence rules provide the priority level of operators. Operators with the highest precedence execute first. <span class="red-code">Ex: <code class="python inline-code">1 + 2 * 3</code> is <code class="python inline-code">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code">(1 + 2) * 3</code> is <code class="python inline-code">9</code>, because parentheses take precedence over multiplication.</span></para>
+    <para id="para-00002">When an expression has multiple operators, which operator is evaluated first? Precedence rules provide the priority level of operators. Operators with the highest precedence execute first. Ex: <code class="python inline-code">1 + 2 * 3</code> is <code class="python inline-code">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code">(1 + 2) * 3</code> is <code class="python inline-code">9</code>, because parentheses take precedence over multiplication.</para>
     <table summary=" " id="table-00001">
     <title>Operator precedence from highest to lowest</title>
     <tgroup cols="2">
