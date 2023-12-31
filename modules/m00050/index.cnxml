@@ -22,7 +22,7 @@
     </list>
     <para id="para-00002">At this point, you should be able to write functions that have any number of parameters and return a value and programs that call functions using keyword arguments and optional arguments.</para>
     <table summary=" " id="table-00001">
-    <title>Chapter <span class="blue-code">6</span> reference</title>
+    <title>Chapter 6 reference</title>
     <tgroup cols="2">
     <thead>
     <row>

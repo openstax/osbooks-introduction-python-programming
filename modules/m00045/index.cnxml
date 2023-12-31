@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Control flow and functions</title>
-    <para id="para-00002"><term id="term-00001">Control flow</term> is the sequence of program execution. A program's control flow <span class="purple-code">begins at the main program but</span> rarely follows a strict sequence. Ex: Control flow skips over lines when a conditional statement isn't executed.</para>
+    <para id="para-00002"><term id="term-00001">Control flow</term> is the sequence of program execution. A program's control flow begins at the main program but rarely follows a strict sequence. Ex: Control flow skips over lines when a conditional statement isn't executed.</para>
     <para id="para-00003">When execution reaches a function call, control flow moves to where the function is defined and executes the function statements. Then, control flow moves back to where the function was called and continues the sequence.</para>
     <note class="guided-slides" id="note-00001">
     <title>Calling a brunch menu function</title>
@@ -49,8 +49,8 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title><span class="purple-code">Functions calling</span> functions</title>
-    <para id="para-00008">Functions frequently call other functions to keep the modularity of each function performing one task. Ex: A function that calculates an order total may call a function that calculates sales tax. When a function <span class="purple-code">called from another function</span> finishes execution, control flow returns to the calling function.</para>
+    <title>Functions calling functions</title>
+    <para id="para-00008">Functions frequently call other functions to keep the modularity of each function performing one task. Ex: A function that calculates an order total may call a function that calculates sales tax. When a function called from another function finishes execution, control flow returns to the calling function.</para>
     <note class="guided-slides" id="note-00003">
     <title>Example: Book club email messages</title>
     <media alt="email_messages_slides">
@@ -58,7 +58,7 @@
     </media>
     </note>
     <note class="learning-questions" id="note-00004">
-    <title><span class="purple-code">Functions calling</span> functions</title>
+    <title>Functions calling functions</title>
     <para id="para-00017">Consider the book club example above.</para>
     <exercise id="exer-00005">
     <problem id="prob-00005">
@@ -76,7 +76,7 @@
     <note class="practice-program" id="note-00005">
     <title>Updated terms and conditions prompt</title>
     <para id="para-00011">Write an updated function terms() that asks the user to accept the terms and conditions, reads in Y/N, and outputs a response by calling accepted() or rejected().  accepted() prints "Thank you for accepting the terms." rejected() prints "You have rejected the terms. Thank you."</para>
-    <para id="para-00012">Given inputs <span class="purple-code">2, "Y" and "N"</span>, the output is:</para>
+    <para id="para-00012">Given inputs 2, "Y" and "N", the output is:</para>
     <code class="python" lang="python">
     Do you accept the terms and conditions?
     Y
@@ -94,14 +94,14 @@
     </note>
     <note class="practice-program" id="note-00006">
     <title>Laundromat information</title>
-    <para id="para-00014">Write a program that uses 3 functions to print information about a laundromat, <span class="purple-code">Liam's Laundry</span>:</para>
+    <para id="para-00014">Write a program that uses 3 functions to print information about a laundromat, Liam's Laundry:</para>
     <list id="list-00002">
-    <item>laundromat_info(): Prints the name, <span class="purple-code">Liam's Laundry</span>, and hours of operation, <span class="purple-code">7a - 11p</span>,  and calls washers_open() and dryers_open()</item>
-    <item>washers_open(): <span class="purple-code">Reads an integer</span>, assigns washer_count with <span class="purple-code">the value</span>, and prints washer_count</item>
-    <item>dryers_open(): <span class="purple-code">Reads an integer</span>, assigns dryer_count with <span class="purple-code">the value</span>, and prints dryer_count</item>
+    <item>laundromat_info(): Prints the name, Liam's Laundry, and hours of operation, 7a - 11p,  and calls washers_open() and dryers_open()</item>
+    <item>washers_open(): Reads an integer, assigns washer_count with the value, and prints washer_count</item>
+    <item>dryers_open(): Reads an integer, assigns dryer_count with the value, and prints dryer_count</item>
     </list>
     <para id="para-00015">The main program should just call laundromat_info().</para>
-    <para id="para-00016"><span class="purple-code">Given inputs 50 and 40</span>, the output is:</para>
+    <para id="para-00016">Given inputs 50 and 40, the output is:</para>
     <code class="python" lang="python">
     Liam's Laundry
     7a - 11p

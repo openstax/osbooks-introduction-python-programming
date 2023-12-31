@@ -16,9 +16,9 @@
     </section>
     <section id="sect-00002">
     <title>Returning from a function</title>
-    <para id="para-00002">When a function finishes, the function returns and provides a result to the calling code. A <term id="term-00001">return statement</term> finishes the function execution and can specify a value to return to the function's caller. Functions introduced so far have not had a return statement, which is the same as returning <code class="python inline-code">None</code>, <span class="purple-code">representing no value</span>.</para>
+    <para id="para-00002">When a function finishes, the function returns and provides a result to the calling code. A <term id="term-00001">return statement</term> finishes the function execution and can specify a value to return to the function's caller. Functions introduced so far have not had a return statement, which is the same as returning <code class="python inline-code">None</code>, representing no value.</para>
     <note class="guided-slides" id="note-00001">
-    <title><span class="purple-code">Returning a value from</span> a function</title>
+    <title>Returning a value from a function</title>
     <media alt="returning_value_from_function_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/returning-value-from-function"/>
     </media>
@@ -45,7 +45,7 @@
     <section id="sect-00003">
     <title>Using multiple return statements</title>
     <para id="para-00006">Functions that have multiple execution paths may use multiple return statements. Ex: A function with an if-else statement may have two return statements for each branch. Return statements always end the function and return control flow to the calling code.</para>
-    <para id="para-00007"><span class="purple-code">In the figure below, calc_mpg() takes in miles driven and gallons of gas used and calculates a car's miles per gallon. calc_mpg() checks if gallons is 0 (to avoid division by 0) and if so returns -1, a value often used to indicate a problem.</span></para>
+    <para id="para-00007">In the figure below, calc_mpg() takes in miles driven and gallons of gas used and calculates a car's miles per gallon. calc_mpg() checks if gallons is 0 (to avoid division by 0) and if so returns -1, a value often used to indicate a problem.</para>
     <table summary=" " id="table-00001">
     <title>Calculating miles-per-gallon and checking for division by zero</title>
     <tgroup cols="1">
@@ -53,10 +53,10 @@
       <row>
     <entry>
     <code class="python" lang="python">
-    <span class="blue-code">def</span> calc_mpg(miles, gallons):
-      <span class="green-code">if gallons > 0:</span>
+    def calc_mpg(miles, gallons):
+      if gallons > 0:
         mpg = miles/gallons
-        <span class="blue-code">return</span> mpg
+        return mpg
       else:
         print("Gallons can't be 0")
         return -1<newline/>

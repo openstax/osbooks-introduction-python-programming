@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Identify function calls in a program.</item>
-    <item>Define a <span class="purple-code">parameterless</span> function that outputs strings.</item>
+    <item>Define a parameterless function that outputs strings.</item>
     <item>Describe benefits of using functions.</item>
     </list>
     </section>
@@ -122,13 +122,13 @@
     <note class="practice-program" id="note-00008">
     <title>Terms and conditions prompt</title>
     <para id="para-00018">Write a function terms() that asks the user to accept the terms and conditions, reads in Y/N, and outputs a response. In the main program, read in the number of users and call terms() for each user.</para>
-    <para id="para-00019">Given <span class="purple-code">inputs 1 and "Y"</span>, the output is:</para>
+    <para id="para-00019">Given inputs 1 and "Y", the output is:</para>
     <code class="python" lang="python">
     Do you accept the terms and conditions?
     Y
     Thank you for accepting.
     </code>
-    <para id="para-00020">Given <span class="purple-code">inputs 2, "N", and "Y"</span>, the output is:</para>
+    <para id="para-00020">Given inputs 2, "N", and "Y", the output is:</para>
     <code class="python" lang="python">
     Do you accept the terms and conditions?
     N

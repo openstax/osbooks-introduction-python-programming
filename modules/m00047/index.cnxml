@@ -106,7 +106,7 @@
     <para id="para-00014">Programmers should be cautious of modifying function arguments, as these side effects can make programs difficult to debug and maintain.</para>
     <example id="exam-00002">
     <title>Converting temperatures</title>
-    <para id="para-00015"><span class="purple-code">W</span>hat are the values of weekend_temps and type after convert_temps() finishes?</para>
+    <para id="para-00015">What are the values of weekend_temps and type after convert_temps() finishes?</para>
     <code class="python" lang="python">
     def convert_temps(temps, unit):
       if unit == "F":
@@ -177,7 +177,7 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Curving scores</title>
-    <para id="para-00024">Write a function, print_scores(), that takes in a list of test scores and a number representing <span class="purple-code">how many points to add</span>. For each score, print the original score and the sum of the score and <span class="purple-code">bonus</span>. Make sure not to change the list.</para><newline/>
+    <para id="para-00024">Write a function, print_scores(), that takes in a list of test scores and a number representing how many points to add. For each score, print the original score and the sum of the score and bonus. Make sure not to change the list.</para><newline/>
     <para id="para-00025">Given function call:</para>
     <code class="python" lang="python">
     print_scores([67, 68, 72, 71, 69], 10)
