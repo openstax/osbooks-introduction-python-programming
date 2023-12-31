@@ -25,7 +25,7 @@
 </note>
 <note class="learning-questions" id="note-00002">
 <title>Integers, floats, and strings</title>
-<para id="para-00002"><span class="brown-code">Assume that <code class="python inline-code">x = 1</code>, <code class="python inline-code">y = 2.0</code>, and <code class="python inline-code">s = "32"</code>.</span></para>
+<para id="para-00002">Assume that <code class="python inline-code">x = 1</code>, <code class="python inline-code">y = 2.0</code>, and <code class="python inline-code">s = "32"</code>.</para>
 <exercise id="exer-00001">
 <problem id="prob-00001">
 <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch01-m05-p01"/></para>

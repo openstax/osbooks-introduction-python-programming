@@ -143,8 +143,8 @@
 <item>creates a variable, team2, assigned with the value, "Chelsea"</item>
 <item>creates a variable, score1, assigned with the value, 4</item>
 <item>creates a variable, score2, assigned with the value, 3</item>
-<item><span class="magenta-code">prints</span> team1, "versus", and team2 as a single line of output</item>
-<item><span class="magenta-code">prints</span> "Final score: ", score1, "to", score2 as a single line of output</item>
+<item>prints team1, "versus", and team2 as a single line of output</item>
+<item>prints "Final score: ", score1, "to", score2 as a single line of output</item>
 </list></para>
 <media alt="final_score_program">
 <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_04_04_Final-score.html"/>

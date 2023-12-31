@@ -20,34 +20,34 @@
 <para id="para-00001">A string is a sequence of characters enclosed by matching single (') or double (") quotes. Ex: "Happy birthday!" and '21' are both strings.</para>
 <para id="para-00002">To include a single quote (') in a string, enclose the string with matching double quotes ("). Ex: "Won't this work?" To include a double quote ("), enclose the string with matching single quotes ('). Ex: 'They said "Try it!", so I did'.</para>
 <table summary=" " id="table-00001">
-<title><span class="red-code">Rules for strings</span></title>
+<title>Rules for strings</title>
 <tgroup cols="2">
 <thead>
 <row>
-<entry><span class="red-code">Valid string</span></entry>
-<entry><span class="red-code">Invalid string</span></entry>
+<entry>Valid string</entry>
+<entry>Invalid string</entry>
 </row>
 </thead>
 <tbody>
 <row>
-<entry><span class="red-code">"17" or '17'</span></entry>
-<entry><span class="red-code">17</span></entry>
+<entry>"17" or '17'</entry>
+<entry>17</entry>
 </row>
 <row>
-<entry><span class="red-code">"seventeen" or 'seventeen'</span></entry>
-<entry><span class="red-code">seventeen</span></entry>
+<entry>"seventeen" or 'seventeen'</entry>
+<entry>seventeen</entry>
 </row>
 <row>
-<entry><span class="red-code">"Where?" or 'Where?'</span></entry>
-<entry><span class="red-code">"Where?'</span></entry>
+<entry>"Where?" or 'Where?'</entry>
+<entry>"Where?'</entry>
 </row>
 <row>
-<entry><span class="red-code">"I hope you aren't sad."</span></entry>
-<entry><span class="red-code">'I hope you aren't sad.'</span></entry>
+<entry>"I hope you aren't sad."</entry>
+<entry>'I hope you aren't sad.'</entry>
 </row>
 <row>
-<entry><span class="red-code">'The teacher said "Correct!" '</span></entry>
-<entry><span class="red-code">"The teacher said "Correct!" "</span></entry>
+<entry>'The teacher said "Correct!" '</entry>
+<entry>"The teacher said "Correct!" "</entry>
 </row>
 </tbody>
 </tgroup>
