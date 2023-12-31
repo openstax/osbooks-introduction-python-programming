@@ -10,13 +10,13 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Implement nested <code class="python inline-code">while</code> loop<span class="red-code">s</span>.</item>
-    <item><span class="red-code">Implement nested <code class="python inline-code">for</code> loops.</span></item>
+    <item>Implement nested <code class="python inline-code">while</code> loops.</item>
+    <item>Implement nested <code class="python inline-code">for</code> loops.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Nested loops</title>
-    <para id="para-00002">A <term id="term-00001">nested loop</term> <span class="red-code">has one or more</span> loops within the body of another loop. The two loops are referred to as <term id="term-00002">outer loop</term> and <term id="term-00003">inner loop</term>. The outer loop controls the number of the inner loop's full execution. <span class="blue-code">More than one inner loop can exist in a nested loop</span>.</para>
+    <para id="para-00002">A <term id="term-00001">nested loop</term> has one or more loops within the body of another loop. The two loops are referred to as <term id="term-00002">outer loop</term> and <term id="term-00003">inner loop</term>. The outer loop controls the number of the inner loop's full execution. More than one inner loop can exist in a nested loop.</para>
     <note class="guided-slides" id="note-00001">
     <title>Nested for loops</title>
     <media alt="nested_while_loops_slides">
@@ -25,7 +25,7 @@
     </note>
     <example id="exam-00001">
     <title>Available appointments.</title>
-    <para id="para-00003"><span class="red-code">Consider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available appointments can use a nested for loop where the outer loop iterates over the hours, and the inner loop iterates over the minutes</span>. <span class="blue-code">This example prints time in hours and minutes in the time between 8 am and 10 am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the inner loop iterates over the time's minute portion between 0 and 59.</span></para>
+    <para id="para-00003">Consider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available appointments can use a nested for loop where the outer loop iterates over the hours, and the inner loop iterates over the minutes. This example prints time in hours and minutes in the time between 8 am and 10 am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the inner loop iterates over the time's minute portion between 0 and 59.</para>
     <code class="python" lang="python">
     hour = 8
     minute = 0
@@ -92,7 +92,7 @@
     </note>
     <note id="note-00005">
     <title>Mixed loops</title>
-    <para id="para-00012">The two <code class="python inline-code">for</code> and <code class="python inline-code">while</code> loop constructs can also be mixed in a nested loop construct. <span class="blue-code">Ex:</span> <span class="red-code">P</span><span class="blue-code">rinting even numbers less than</span> <span class="red-code">a given</span> <span class="blue-code">number in a list. The outer loop can be implemented using a <code class="python inline-code">for</code> loop iterating over the provided list, and the inner loop iterates over all even numbers less than a given number from the list using a <code class="python inline-code">while</code> loop.</span></para>
+    <para id="para-00012">The two <code class="python inline-code">for</code> and <code class="python inline-code">while</code> loop constructs can also be mixed in a nested loop construct. Ex: Printing even numbers less than a given number in a list. The outer loop can be implemented using a <code class="python inline-code">for</code> loop iterating over the provided list, and the inner loop iterates over all even numbers less than a given number from the list using a <code class="python inline-code">while</code> loop.</para>
     <code class="python" lang="python">
     numbers = [12, 5, 3]<newline/>
     i = 0
