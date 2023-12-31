@@ -26,7 +26,7 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Dictionary basics</title>
-    <para id="para-00003">Given the dictionary object <code class="python inline-code">days = {<span class="blue-code">"</span>Sunday<span class="blue-code">"</span>: 1, <span class="blue-code">"</span>Monday<span class="blue-code">"</span>: 2, <span class="blue-code">"</span>Tuesday<span class="blue-code">"</span>: 3}</code>, answer the following questions.</para>
+    <para id="para-00003">Given the dictionary object <code class="python inline-code">days = {"Sunday": 1, "Monday": 2, "Tuesday": 3}</code>, answer the following questions.</para>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch10-m01-p01"/></para>
@@ -55,7 +55,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Dictionary type and properties</title>
-    <para id="para-00008">Given the dictionary object <code class="python inline-code">encoding = {<span class="blue-code">"</span>a<span class="blue-code">"</span>: 97, <span class="blue-code">"</span>b<span class="blue-code">"</span>: 98, <span class="blue-code">"</span>A<span class="blue-code">"</span>: 65, <span class="blue-code">"</span>B<span class="blue-code">"</span>: 66}</code>, answer the following questions.</para>
+    <para id="para-00008">Given the dictionary object <code class="python inline-code">encoding = {"a": 97, "b": 98, "A": 65, "B": 66}</code>, answer the following questions.</para>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch10-m01-p04"/></para>
