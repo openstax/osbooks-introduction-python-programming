@@ -20,7 +20,7 @@
     <item>Using curly braces <code class="python inline-code">{}</code>. Ex: <code class="python inline-code">dict_1 = {}</code>.</item>
     <item>Using the <code class="python inline-code">dict()</code> function. Ex: <code class="python inline-code">dict_2 = dict()</code>.</item>
     </list></para>
-    <para id="para-00003">A dictionary object can also be created with initial key-value pairs enclosed in curly braces. Ex: <code class="python inline-code">my_dict = {'pizza': 2, 'pasta': 3, 'drink': 4}</code> creates a dictionary object <code class="python inline-code">my_dict</code>. A key and associated value are separated by a colon and key-value pairs are separated by commas.</para>
+    <para id="para-00003">A dictionary object can also be created with initial key-value pairs enclosed in curly braces. Ex: <code class="python inline-code">my_dict = {"pizza": 2, "pasta": 3, "drink": 4}</code> creates a dictionary object <code class="python inline-code">my_dict</code>. A key and associated value are separated by a colon and key-value pairs are separated by commas.</para>
     <note class="guided-slides" id="note-00001">
     <title>Creating a dictionary object</title>
     <media alt="creating_dictionary_object_slides">
