@@ -77,7 +77,7 @@
     </code>
     </example>
     <note class="learning-questions" id="note-00003">
-    <title>sort() and reverse() functions</title>
+    <title>sort() and reverse() methods</title>
     <para id="para-00009">Use the following list for the questions below.<newline/>
     <code class="python inline-code">board_games = ["go", "chess", "scrabble", "checkers"]</code></para>
     <exercise id="exer-00004">
