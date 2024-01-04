@@ -104,13 +104,13 @@
     <para id="para-00016">To add an item to a dictionary, either the square bracket notation or <code class="python inline-code">update()</code> function can be used.</para>
     <list id="list-00003">
     <item>Square bracket notation: When using square brackets to access a new key object and assign a value to the key, the new key-value pair will be added to the dictionary.
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict["pineapple"] = 1
     print(my_dict) # Prints: {"apple": 2, "banana": 3, "orange": 4, "pineapple": 1}<newline/>
     </code></item>
     <item><code class="python inline-code">update()</code> method: <code class="python inline-code">update()</code> method can be called with additional key-value pairs to update the dictionary content.
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict.update({"pineapple": 1, "cherry": 0})
     print(my_dict) # Prints: {"apple": 2, "banana": 3, "orange": 4, "pineapple": 1, "cherry": 0}<newline/>
@@ -119,13 +119,13 @@
     <para id="para-00017">To modify a dictionary item, the two approaches above can be used on an existing dictionary key along with the updated value. Ex:</para>
     <list id="list-00004">
     <item>Square bracket notation:
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict["apple"] = 1
     print(my_dict) # Prints: {"apple": 1, "banana": 3, "orange": 4}
     </code></item>
     <item><code class="python inline-code">update()</code> method:
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict.update({"apple": 1})
     print(my_dict) # Prints: {"apple": 1, "banana": 3, "orange": 4}
@@ -134,13 +134,13 @@
     <para id="para-00018">Items can be deleted from a dictionary using the <code class="python inline-code">del</code> keyword or the <code class="python inline-code">pop()</code> method.</para>
     <list id="list-00005">
     <item><code class="python inline-code">del</code> keyword:
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     del my_dict["orange"]
     print(my_dict) # Prints: {"apple": 2, "banana": 3}
     </code></item>
     <item><code class="python inline-code">pop()</code> method:
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     deleted_value = my_dict.pop("banana")
     print(deleted_value) # Prints: 3
