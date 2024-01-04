@@ -153,92 +153,92 @@ print(2014 in movies.values())
 
     <example id="exam-00002">
       <title>Iterating over a dictionary.</title>
-      <table summary=" " id="table-00005">
-        <tgroup cols="1">
-          <thead>
-            <row>
-            <entry>dict.items()</entry>
-          </row>
-          </thead>
-        <tbody>
-        <row>
-        <entry>
-          <code class="python" lang="python">
-            zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
-            for key, value in zip_codes.items():
-              print(key, value)
-            </code>
-        </entry>
-      </row>
-      <row>
-        <entry><code class="python" lang="python">    
-        Berkeley 94709
-        Santa Cruz 95064
-        Mountain View 94030</code>
-      </entry>
-      </row>
-      </tbody>
-      </tgroup>
-      </table>
+<table summary=" " id="table-00005">
+<tgroup cols="1">
+<thead>
+<row>
+<entry>dict.items()</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<code class="python" lang="python">
+zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+for key, value in zip_codes.items():
+  print(key, value)
+</code>
+</entry>
+</row>
+<row>
+<entry><code class="python" lang="python">    
+Berkeley 94709
+Santa Cruz 95064
+Mountain View 94030</code>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
 
-      <table summary=" " id="table-00006">
-        <tgroup cols="1">
-          <thead>
-            <row>
-            <entry>dict.keys()</entry>
-          </row>
-          </thead>
-        <tbody>
-        <row>
-        <entry>
-          <code class="python" lang="python">
-          zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
-          for key in zip_codes.keys():
-            print(key)
-          </code>
-        </entry>
-      </row>
-      <row>
-        <entry>
-          <code class="python" lang="python">
-          Berkeley
-          Santa Cruz
-          Mountain View
-          </code></entry>
-      </row>
-      </tbody>
-      </tgroup>
-      </table>
+<table summary=" " id="table-00006">
+<tgroup cols="1">
+<thead>
+<row>
+<entry>dict.keys()</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<code class="python" lang="python">
+zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+for key in zip_codes.keys():
+  print(key)
+</code>
+</entry>
+</row>
+<row>
+<entry>
+<code class="python" lang="python">
+Berkeley
+Santa Cruz
+Mountain View
+</code></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
 
-      <table summary=" " id="table-00007">
-        <tgroup cols="1">
-          <thead>
-            <row>
-            <entry>dict.values()</entry>
-          </row>
-          </thead>
-        <tbody>
-        <row>
-        <entry>
-          <code class="python" lang="python">
-          zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
-          for value in zip_codes.values():
-            print(value)
-            </code>
+<table summary=" " id="table-00007">
+<tgroup cols="1">
+<thead>
+<row>
+<entry>dict.values()</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<code class="python" lang="python">
+zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+for value in zip_codes.values():
+  print(value)
+</code>
           
-        </entry>
-      </row>
-      <row>
-        <entry>
-          <code class="python" lang="python">
-          94709
-          95064
-          94030
-          </code></entry>
-      </row>
-      </tbody>
-      </tgroup>
-      </table>
+</entry>
+</row>
+<row>
+<entry>
+<code class="python" lang="python">
+94709
+95064
+94030
+</code></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
 
       
     </example>
