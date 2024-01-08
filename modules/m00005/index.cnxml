@@ -79,7 +79,7 @@
 </section>
 <section id="sect-00103">
   <title>len() function</title>
-  <para id="para-00107">A common operation on a string object is to get the string length, or the number of characters in the string literal. The <term id="term-00001">len()</term> function, when called on a string value, returns the string length.</para>
+  <para id="para-00107">A common operation on a string object is to get the string length, or the number of characters in the string. The <term id="term-00001">len()</term> function, when called on a string value, returns the string length.</para>
   
   <note class="guided-slides" id="note-00102">
     <title>Using len() to get the length of a string</title>
