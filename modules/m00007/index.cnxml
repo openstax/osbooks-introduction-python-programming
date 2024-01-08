@@ -85,7 +85,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
 <row>
 <entry><para id="para-00112"><code class="python inline-code">word = input("Type a word: )</code></para></entry>
 <entry>SyntaxError: EOL while scanning string literal</entry>
-<entry>The quote marks are missing. As a result, the string does not terminate before the end of line (EOL).</entry>
+<entry>The closing quote marks are missing. As a result, the string does not terminate before the end of line (EOL).</entry>
 </row>
 <row>
 <entry><para id="para-00113"><code class="python inline-code">print("You typed:", w<emphasis effect="bold">i</emphasis>rd)</code></para></entry>

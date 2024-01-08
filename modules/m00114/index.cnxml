@@ -97,6 +97,11 @@
       (string)</para></entry>
       <entry><para id="para-00129">Strings may be written using either kind of quote. Ex: <code class="python inline-code">'A'</code> and <code class="python inline-code">"A"</code> represent the same string. By convention, this book uses double quotes (<code class="python inline-code">"</code>) for most strings.</para></entry>
       </row>
+      <row>
+      <entry><para id="para-00228"><code class="python inline-code">"""</code><newline/>
+      (Docstring)</para></entry>
+      <entry><para id="para-00229">Used for documentation, often in multi-line strings, to summarize a program's purpose or usage</para></entry>
+      </row>
       </tbody>
       </tgroup>
       <caption/>
