@@ -119,7 +119,7 @@
     <entry>Interactive plots and applications in the browser.</entry>
     </row>
     <row>
-    <entry><para id="para-00116"><code class="python inline-code"><link url="https://openstax.org/r/100matplotlib">matplotlib</link></code></para></entry>
+    <entry><para id="para-00116"><code class="python inline-code"><link url="https://pypi.org/project/matplotlib/">matplotlib</link></code></para></entry>
     <entry>Static, animated, and interactive visualizations.</entry>
     </row>
     <row>
@@ -163,7 +163,7 @@
     <entry>Crawl websites and scrape data from web pages.</entry>
     </row>
     <row>
-    <entry><para id="para-00127"><code class="python inline-code"><link url="https://openstax.org/r/100tensorflow">tensorflow</link></code></para></entry>
+    <entry><para id="para-00127"><code class="python inline-code"><link url="https://pypi.org/project/tensorflow/">tensorflow</link></code></para></entry>
     <entry>End-to-end machine learning platform for everyone.</entry>
     </row>
     </tbody>
