@@ -31,9 +31,9 @@
     <tbody>
     <row>
     <entry><para id="para-00103"><code class="python inline-code">print("Today is Monday.")</code><newline/>
-    <code class="python inline-code">print("Monday string beans.")</code></para></entry>
+    <code class="python inline-code">print("I like string beans.")</code></para></entry>
     <entry><para id="para-00104"><code class="python inline-code">Today is Monday.</code><newline/>
-    <code class="python inline-code">Monday string beans.</code></para></entry>
+    <code class="python inline-code">I like string beans.</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00105"><code class="python inline-code">print("Today", "is", "Monday")</code><newline/>
@@ -43,13 +43,13 @@
     </row>
     <row>
     <entry><para id="para-00107"><code class="python inline-code">print("Today is Monday, ", end="")</code><newline/>
-    <code class="python inline-code">print("Monday string beans.")</code></para></entry>
-    <entry><para id="para-00108"><code class="python inline-code">Today is Monday, Monday string beans.</code></para></entry>
+    <code class="python inline-code">print("I like string beans.")</code></para></entry>
+    <entry><para id="para-00108"><code class="python inline-code">Today is Monday, I like string beans.</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00109"><code class="python inline-code">print("Today", "is", "Monday", sep="? ", end="!!")</code><newline/>
-    <code class="python inline-code">print("Monday string beans.")</code></para></entry>
-    <entry><para id="para-00110"><code class="python inline-code">Today? is? Monday!!Monday string beans.</code></para></entry>
+    <code class="python inline-code">print("I like string beans.")</code></para></entry>
+    <entry><para id="para-00110"><code class="python inline-code">Today? is? Monday!!I like string beans.</code></para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -88,7 +88,7 @@
     <para id="para-00009">Computer programs often receive input from the user. <term id="term-00004">Input</term> is what a user enters into a program. An input statement, <code class="python inline-code"><emphasis effect="italics">variable</emphasis> = input(<emphasis effect="italics">"prompt"</emphasis>)</code>, has three parts:</para>
     <list list-type="enumerated" id="list-00002">
     <item>A <term id="term-00005">variable</term> refers to a value stored in memory. In the statement above, <emphasis effect="italics">variable</emphasis> can be replaced with any name the programmer chooses.</item>
-    <item>The <term id="term-00006">input()</term> function reads one line of input from the user. The input is stored in the computer's memory and can be accessed later using the variable.</item>
+    <item>The <term id="term-00006">input()</term> function reads one line of input from the user. A function is a named, reusable block of code that performs a task when called. The input is stored in the computer's memory and can be accessed later using the variable.</item>
     <item>A <term id="term-00007">prompt</term> is a short message that indicates the program is waiting for input. In the statement above, <emphasis effect="italics">"prompt"</emphasis> can be omitted or replaced with any message.</item>
     </list>
     <note class="guided-slides" id="note-00004">
@@ -136,12 +136,12 @@
     <title>Name and likes</title>
     <para id="para-00015">Write a program that asks the following two questions (example input in bold):</para>
     <code class="python" lang="python">
-    What is your name? Shakira
-    What do you like? singing
+    What is your name? <emphasis effect="bold">Shakira</emphasis>
+    What do you like? <emphasis effect="bold">singing</emphasis>
     </code>
     <para id="para-00016">Output a blank line after reading the input. Then output the following message based on the input:</para>
     <code class="python" lang="python">
-    Shakira likes singing
+    <emphasis effect="bold">Shakira</emphasis> likes <emphasis effect="bold">singing</emphasis>
     </code>
     <media alt="name_likes_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_03_Name-likes.html"/>

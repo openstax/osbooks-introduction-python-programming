@@ -16,7 +16,7 @@
 </section>
 <section id="sect-00002">
 <title>Numeric data types</title>
-<para id="para-00001">Python has two basic numeric types, integer and floating-point. An integer type represents a whole number, and a floating-point type represents a decimal number.</para>
+<para id="para-00001">Python supports two basic number formats, integer and floating-point. An integer represents a whole number, and a floating-point format represents a decimal number. The format a language uses to represent data is called a <emphasis effect="italics"><term id="term-00101">data type</term></emphasis>. In addition to integer and floating-point types, programming languages typically have a string type for representing text.</para>
 <note class="guided-slides" id="note-00001">
 <title>Integer and floating-point</title>
 <media alt="integer-and-floating-point_slides">
