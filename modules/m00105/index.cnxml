@@ -19,7 +19,7 @@
     <para id="para-00002">Various errors may occur when reading a file:</para>
     <list id="list-00002">
     <item><code class="python inline-code">FileNotFoundError</code>: The filename or path is invalid.</item>
-    <item><code class="python inline-code">IndexError</code>/<code class="python inline-code">ValueError</code>: The file's format is invalid.</item>
+    <item><code class="python inline-code">IndexError</code>/<code class="python inline-code"><term class="no-emphasis" id="term-00001">ValueError</term></code>: The file's format is invalid.</item>
     <item>Other errors caused by invalid contents of a file.</item>
     </list>
     <para id="para-00003">When an error occurs, the program terminates with an error message.</para>
@@ -74,7 +74,7 @@
     </section>
     <section id="sect-00003">
     <title>Try and except</title>
-    <para id="para-00012">Programs can be designed to handle exceptions, rather than terminate. A <code class="python inline-code">try</code> statement runs code that might raise an exception. An <code class="python inline-code">except</code> clause runs code in response to the exception.</para>
+    <para id="para-00012">Programs can be designed to handle exceptions, rather than terminate. A <code class="python inline-code"><term class="no-emphasis" id="term-00002">try</term></code> statement runs code that might raise an exception. An <code class="python inline-code">except</code> clause runs code in response to the exception.</para>
     <example id="exam-00002">
     <title>Try to open a file</title>
     <para id="para-00013">The following program, named <emphasis effect="italics">try_open.py</emphasis>, asks the user for a filename and counts the number of lines in the file.</para>
