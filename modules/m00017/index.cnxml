@@ -35,7 +35,7 @@
     <para id="para-00004">Good programmers write code that is as easy to read as possible. That way, other programmers are more likely to understand the code. To encourage consistency, the Python community has a set of guidelines about where to put spaces and blank lines, what to name variables, how to break up long lines, and other important topics.</para>
     <note id="note-00001">
     <title>Python style guide</title>
-    <para id="para-00005"><link url="https://peps.python.org/pep-0008/">PEP 8</link> is the official style guide for Python. <term id="term-00001">PEP</term> stands for Python Enhancement Proposal. Members of the Python community write PEPs to document best practices and propose new features. The table below is based on guidelines from PEP 8 under the heading <link url="https://peps.python.org/pep-0008/#whitespace-in-expressions-and-statements">Whitespace in Expressions and Statements</link>.</para>
+    <para id="para-00005"><link url="https://openstax.org/r/100PEP8">PEP 8</link> is the official style guide for Python. <term id="term-00001">PEP</term> stands for Python Enhancement Proposal. Members of the Python community write PEPs to document best practices and propose new features. The table below is based on guidelines from PEP 8 under the heading <link url="https://openstax.org/r/100whitespace">Whitespace in Expressions and Statements</link>.</para>
     </note>
     <table summary=" " id="table-00001">
     <title>Guidelines for spaces</title>
@@ -110,7 +110,7 @@
     </section>
     <section id="sect-00003">
     <title>Automatic concatenation</title>
-    <para id="para-00010">Long strings make Python programs difficult to read. Ex: This program prints the first sentence of the <link url="https://www.archives.gov/founding-docs/declaration-transcript">US Declaration of Independence</link>:</para>
+    <para id="para-00010">Long strings make Python programs difficult to read. Ex: This program prints the first sentence of the <link url="https://openstax.org/r/100declaration">US Declaration of Independence</link>:</para>
     <para id="para-00011">print("The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.")</para>
     <para id="para-00012">PEP 8 recommends that each line of code be less than 80 characters long. That way, programmers won't need to scroll horizontally to read the code. The above program can be rewritten by breaking up the original string:</para>
     <para id="para-00013"><code class="python" lang="python">
@@ -196,7 +196,7 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Five quotes</title>
-    <para id="para-00026">Write a program that prints the following five quotes (source: <link url="https://www.brainyquote.com/authors/guido-van-rossum-quotes">BrainyQuote</link>) from Guido van Rossum, the creator of Python. Your program should have exactly five print statements, one for each quote:</para>
+    <para id="para-00026">Write a program that prints the following five quotes (source: <link url="https://openstax.org/r/100brainyquote">BrainyQuote</link>) from Guido van Rossum, the creator of Python. Your program should have exactly five print statements, one for each quote:</para>
     <code class="python" lang="python">
     1. "If you're talking about Java in particular, Python is about the best fit you can get amongst all the other languages. Yet the funny thing is, from a language point of view, JavaScript has a lot in common with Python, but it is sort of a restricted subset."
     2. "The second stream of material that is going to come out of this project is a programming environment and a set of programming tools where we really want to focus again on the needs of the newbie. This environment is going to have to be extremely user-friendly."

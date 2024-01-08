@@ -51,17 +51,17 @@ This book will focus on general purpose programs that typically run "behind the 
 </note>
 <note id="note-00003">
 <title>Exploring further</title>
-<para id="para-00008">The middle chapters of this book show how to write analysis programs using real data. Example libraries that provide access to online streaming services include <link url="https://spotipy.readthedocs.io/"><emphasis effect="bold">Spotipy</emphasis></link>, <link url="https://pytube.io/"><emphasis effect="bold">Pytube</emphasis></link>, and <link url="https://github.com/mcrute/pydora"><emphasis effect="bold">Pydora</emphasis></link>. Python-related tools often have the letters "py" in their name.</para>
+<para id="para-00008">The middle chapters of this book show how to write analysis programs using real data. Example libraries that provide access to online streaming services include <link url="https://openstax.org/r/100spotipy"><emphasis effect="bold">Spotipy</emphasis></link>, <link url="https://openstax.org/r/100pytube"><emphasis effect="bold">Pytube</emphasis></link>, and <link url="https://openstax.org/r/100pydora"><emphasis effect="bold">Pydora</emphasis></link>. Python-related tools often have the letters "py" in their name.</para>
 </note>
 </section>
 <section id="sect-00003">
 <title>The Python language</title>
-<para id="para-00009">This book introduces <link url="https://www.python.org/">Python</link>, one of the top programming languages today. Leading tech giants like Google, Apple, NASA, Instagram, Pixar, and others use Python extensively.</para>
-<para id="para-00010">One reason why Python is popular is because many libraries exist for doing real work. A <term id="term-00003">library</term> is a collection of code that can be used in other programs. Python comes with an extensive <link url="https://docs.python.org/3/library/">Standard Library</link> for solving everyday computing problems like extracting data from files and creating summary reports. In addition, the community develops many other libraries for Python. Ex: <link url="https://pandas.pydata.org/">Pandas</link> is a widely used library for data analysis.</para>
+<para id="para-00009">This book introduces <link url="https://openstax.org/r/100python">Python</link>, one of the top programming languages today. Leading tech giants like Google, Apple, NASA, Instagram, Pixar, and others use Python extensively.</para>
+<para id="para-00010">One reason why Python is popular is because many libraries exist for doing real work. A <term id="term-00003">library</term> is a collection of code that can be used in other programs. Python comes with an extensive <link url="https://openstax.org/r/100pythlibrary">Standard Library</link> for solving everyday computing problems like extracting data from files and creating summary reports. In addition, the community develops many other libraries for Python. Ex: <link url="https://openstax.org/r/100pandas">Pandas</link> is a widely used library for data analysis.</para>
 <para id="para-00011">Another reason why Python is popular is because the syntax is easy to learn. The <term id="term-00004">syntax</term> of a language defines how code must be structured. Syntax rules define the keywords, symbols, and formatting used in programs. Compared to other programming languages, Python is more concise and straightforward.</para>
 <example id="exam-00001">
 <title>Hello world in Python and Java</title>
-<para id="para-00012">By tradition, <link url="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello World</link> is the first program to write when learning a new language. This program simply displays the message "Hello, World!" to the user. The hello world program is only one line in Python:</para>
+<para id="para-00012">By tradition, <link url="https://openstax.org/r/100helloworld">Hello World</link> is the first program to write when learning a new language. This program simply displays the message "Hello, World!" to the user. The hello world program is only one line in Python:</para>
 <code class="python" lang="python">print("Hello, World!")</code>
 <para id="para-00013">In contrast, the hello world program is five lines in Java (a different language). Beginners often struggle with Java's required keywords and punctuation rules:</para>
 <code class="python" lang="python">

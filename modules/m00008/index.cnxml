@@ -94,7 +94,7 @@ item2 = input("Item #2: ")
 </section>
 <section id="sect-00004">
 <title>Documentation</title>
-<para id="para-00013">Python programs may optionally begin with a string known as a docstring. A <term id="term-00002">docstring</term> is documentation written for others who will use the program but not necessarily read the source code. Most of the official documentation at <link url="https://docs.python.org/">docs.python.org</link> is generated from docstrings.</para>
+<para id="para-00013">Python programs may optionally begin with a string known as a docstring. A <term id="term-00002">docstring</term> is documentation written for others who will use the program but not necessarily read the source code. Most of the official documentation at <link url="https://openstax.org/r/100docstrings">docs.python.org</link> is generated from docstrings.</para>
 <para id="para-00014">Documentation can be long, so docstrings are generally written as multi-line strings (<code class="python inline-code">"""</code>). Common elements of a docstring include a one-line summary, a blank line, and a longer description.</para>
 <note class="guided-slides" id="note-00004">
 <title>Vacations docstring</title>

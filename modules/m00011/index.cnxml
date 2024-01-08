@@ -78,7 +78,7 @@
 
     <note class="practice-program" id="note-00005">
     <title>Exploring the shell</title>
-    <para id="para-00013">Running code interactively is a great way to learn how Python works. Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Then enter any Python code, one line at a time, to see the result. Here are a few expressions to try:</para>
+    <para id="para-00013">Running code interactively is a great way to learn how Python works. Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Then enter any Python code, one line at a time, to see the result. Here are a few expressions to try:</para>
     <list id="list-00003">
     <item>x = 5</item>
     <item>3*x - 5</item>
@@ -95,11 +95,11 @@
     <item>round(9.49)</item>
     <item>round(9.50)</item>
     </list>
-    <para id="para-00014">Note: These functions (type, str, int, abs, len, and round) will be explored in more detail later in the chapter. You can read more about the <link url="https://docs.python.org/3/library/functions.html">built-in functions</link> in the Python documentation.</para>
+    <para id="para-00014">Note: These functions (type, str, int, abs, len, and round) will be explored in more detail later in the chapter. You can read more about the <link url="https://openstax.org/r/100builtin">built-in functions</link> in the Python documentation.</para>
     </note>
     <note class="practice-program" id="note-00006">
     <title>Correcting mistakes</title>
-    <para id="para-00015">Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Run the following two statements in the shell:</para>
+    <para id="para-00015">Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Run the following two statements in the shell:</para>
     <list id="list-00004">
     <item>x = 123</item>
     <item>y = 456</item>

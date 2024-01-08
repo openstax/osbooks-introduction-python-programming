@@ -119,7 +119,7 @@
  
     <note class="practice-program" id="note-00006">
     <title>Frost poem</title>
-    <para id="para-00013">Write a program that uses multiple print() statements to output the following poem by <link url="https://en.wikipedia.org/wiki/Robert_Frost">Robert Frost</link>. Each print() statement should correspond to one line of output.</para>
+    <para id="para-00013">Write a program that uses multiple print() statements to output the following poem by <link url="https://openstax.org/r/100robertfrost">Robert Frost</link>. Each print() statement should correspond to one line of output.</para>
     <para id="para-00014"><emphasis effect="italics">Tip:</emphasis> You don't need to write the entire program all at once. Try writing the first print() statement, and then click the <emphasis effect="italics">Run</emphasis> button. Then write the next print() statement, and click the <emphasis effect="italics">Run</emphasis> button again. Continue writing and testing the code incrementally until you finish the program.</para>
     <code class="python" lang="python">
     I shall be telling this with a sigh

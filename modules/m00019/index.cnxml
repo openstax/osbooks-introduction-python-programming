@@ -81,7 +81,7 @@
 
     <note class="practice-program" id="note-00001">
     <title>Baking bread</title>
-    <para id="para-00003">The holidays are approaching, and you need to buy ingredients for baking many loaves of bread. According to a <link url="https://www.kingarthurflour.com/recipes/basic-sourdough-bread-recipe">recipe by King Arthur Flour</link>, you will need the following ingredients for each loaf:</para>
+    <para id="para-00003">The holidays are approaching, and you need to buy ingredients for baking many loaves of bread. According to a <link url="https://openstax.org/r/100kingarthurflr">recipe by King Arthur Flour</link>, you will need the following ingredients for each loaf:</para>
     <list id="list-00002">
     <item>1 1/2 teaspoons instant yeast</item>
     <item>1 1/2 teaspoons salt</item>
@@ -108,7 +108,7 @@
     </note>
     <note class="practice-program" id="note-00002">
     <title>Tip calculator</title>
-    <para id="para-00007">Google has a variety of <link url="https://mashtips.com/google-search-tricks/">search tricks</link> that present users with instant results. If you search on Google for <link url="https://www.google.com/search?q=tip+calculator">tip calculator</link>, an interactive tool is included at the top of the results. The goal of this exercise is to implement a similar tip calculator.</para>
+    <para id="para-00007">Google has a variety of <link url="https://openstax.org/r/100googletricks">search tricks</link> that present users with instant results. If you search on Google for <link url="https://openstax.org/r/100tipcalculatr">tip calculator</link>, an interactive tool is included at the top of the results. The goal of this exercise is to implement a similar tip calculator.</para>
     <para id="para-00008">Begin by prompting the user to input the following values (user input in bold):</para>
     <code class="python" lang="python">
     Enter bill amount: <emphasis effect="bold">43.21</emphasis>

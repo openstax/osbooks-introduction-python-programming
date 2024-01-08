@@ -64,11 +64,11 @@
     <tbody>
     <row>
     <entry><emphasis effect="bold">Artificial intelligence</emphasis></entry>
-    <entry>An engineer develops models to support image and voice recognition. Ex: <link url="https://www.tensorflow.org">TensorFlow library</link>.</entry>
+    <entry>An engineer develops models to support image and voice recognition. Ex: <link url="https://openstax.org/r/100tensorflow">TensorFlow library</link>.</entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Data visualization</emphasis></entry>
-    <entry>A statistician creates charts to make sense of large amounts of data. Ex: <link url="https://matplotlib.org/">Matplotlib library</link>.</entry>
+    <entry>A statistician creates charts to make sense of large amounts of data. Ex: <link url="https://openstax.org/r/100matplotlib">Matplotlib library</link>.</entry>
     </row>
     <row>
     <entry><emphasis effect="bold">General purpose</emphasis></entry>
@@ -76,11 +76,11 @@
     </row>
     <row>
     <entry><emphasis effect="bold">Scientific computing</emphasis></entry>
-    <entry>Python is very useful for conducting experiments and analyzing data. Ex: <link url="https://scipy.org/">The SciPy project</link>.</entry>
+    <entry>Python is very useful for conducting experiments and analyzing data. Ex: <link url="https://openstax.org/r/100scipyproject">The SciPy project</link>.</entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Web development</emphasis></entry>
-    <entry>Python can run interactive websites. Ex: Instagram is built with <link url="https://www.djangoproject.com/">Django</link>, a Python framework.</entry>
+    <entry>Python can run interactive websites. Ex: Instagram is built with <link url="https://openstax.org/r/100django">Django</link>, a Python framework.</entry>
     </row>
     </tbody>
     </tgroup>
@@ -105,7 +105,7 @@
     </note>
     <note id="note-00002">
     <title>Exploring further</title>
-    <para id="para-00008">For more examples of applications that can be built with Python, see <link url="https://www.upgrad.com/blog/python-applications-in-real-world/"> Top 12 Fascinating Python Applications in Real-World</link> by Rohit Sharma. For more information about Python related careers, see <link url="https://brainstation.io/career-guides/what-does-a-python-developer-do"> What Does a Python Developer Do?</link> in BrainStation's career guide.</para>
+    <para id="para-00008">For more examples of applications that can be built with Python, see <link url="https://openstax.org/r/100top12apps"> Top 12 Fascinating Python Applications in Real-World</link> by Rohit Sharma. For more information about Python related careers, see <link url="https://openstax.org/r/100careers"> What Does a Python Developer Do?</link> in BrainStation's career guide.</para>
     </note>
     </section>
     </content>

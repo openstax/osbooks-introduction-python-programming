@@ -16,9 +16,9 @@
     </section>
     <section id="sect-00002">
     <title>Importing modules</title>
-    <para id="para-00002">Python comes with an extensive <link url="https://docs.python.org/3/library/">standard library</link> of modules. A <term id="term-00001">module</term> is previously written code that can be imported in a program. The <term id="term-00002">import statement</term> defines a variable for accessing code in a module. Import statements often appear at the beginning of a program.</para>
-    <para id="para-00003">The standard library also defines built-in functions such as <code class="python inline-code">print()</code>, <code class="python inline-code">input()</code>, and <code class="python inline-code">float()</code>. A <term id="term-00003">built-in function</term> is always available and does not need to be imported. The complete <link url="https://docs.python.org/3/library/functions.html">list of built-in functions</link> is available in Python's official documentation.</para>
-    <para id="para-00004">A commonly used module in the standard library is the <link url="https://docs.python.org/3/library/math.html">math module</link>. This module defines functions such as <code class="python inline-code">sqrt()</code> (square root). To call <code class="python inline-code">sqrt()</code>, a program must <code class="python inline-code">import math</code> and use the resulting <code class="python inline-code">math</code> variable followed by a dot. Ex: <code class="python inline-code">math.sqrt(25)</code> evaluates to <code class="python inline-code">5.0</code>.</para>
+    <para id="para-00002">Python comes with an extensive <link url="https://openstax.org/r/100pythlibrary">standard library</link> of modules. A <term id="term-00001">module</term> is previously written code that can be imported in a program. The <term id="term-00002">import statement</term> defines a variable for accessing code in a module. Import statements often appear at the beginning of a program.</para>
+    <para id="para-00003">The standard library also defines built-in functions such as <code class="python inline-code">print()</code>, <code class="python inline-code">input()</code>, and <code class="python inline-code">float()</code>. A <term id="term-00003">built-in function</term> is always available and does not need to be imported. The complete <link url="https://openstax.org/r/100builtin">list of built-in functions</link> is available in Python's official documentation.</para>
+    <para id="para-00004">A commonly used module in the standard library is the <link url="https://openstax.org/r/100mathmodule">math module</link>. This module defines functions such as <code class="python inline-code">sqrt()</code> (square root). To call <code class="python inline-code">sqrt()</code>, a program must <code class="python inline-code">import math</code> and use the resulting <code class="python inline-code">math</code> variable followed by a dot. Ex: <code class="python inline-code">math.sqrt(25)</code> evaluates to <code class="python inline-code">5.0</code>.</para>
     <para id="para-00005">The following program imports and uses the math module, and uses built-in functions for input and output.</para>
     <example id="exam-00001">
     <title>Calculating the distance between two points</title>
@@ -59,7 +59,7 @@
     </section>
     <section id="sect-00003">
     <title>Mathematical functions</title>
-    <para id="para-00009">Commonly used math functions and constants are shown below. The complete <link url="https://docs.python.org/3/library/math.html">math module listing</link> is available in Python's official documentation.</para>
+    <para id="para-00009">Commonly used math functions and constants are shown below. The complete <link url="https://openstax.org/r/100mathmodule">math module listing</link> is available in Python's official documentation.</para>
     <table summary=" " id="table-00001">
     <title>Example constants in the math module</title>
     <tgroup cols="3">
