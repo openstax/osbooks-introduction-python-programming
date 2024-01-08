@@ -75,7 +75,7 @@
    
     <note class="practice-program" id="note-00002">
     <title>Language objects</title>
-    <para id="para-00009">The file <emphasis effect="italics">top27.csv</emphasis> is based on Wikipedia's <link url="https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers">list of languages by number of native speakers</link>. A linguist would like to work with this data in an object-oriented way and has already defined a <code class="python inline-code">Language</code> class. However, the code is not working correctly because of errors in the CSV file. (The CSV file cannot be changed, because the program needs to be able to detect these kinds of errors.)</para>
+    <para id="para-00009">The file <emphasis effect="italics">top27.csv</emphasis> is based on Wikipedia's <link url="https://openstax.org/r/100languages">list of languages by number of native speakers</link>. A linguist would like to work with this data in an object-oriented way and has already defined a <code class="python inline-code">Language</code> class. However, the code is not working correctly because of errors in the CSV file. (The CSV file cannot be changed, because the program needs to be able to detect these kinds of errors.)</para>
     <para id="para-00010">Your task is to modify the constructor to raise a ValueError in the following situations:</para>
     <list id="list-00002">
     <item>If the line does not have exactly four values (separated by commas).</item>

@@ -371,7 +371,7 @@ df = df.dropna()</code></entry>
     <section id="sect-00005">
     <title>Programming Practice with Google</title>
     <para id="para-00022">Use the Google Colaboratory document below to practice EDA on a given dataset.</para>
-    <para id="para-00023"><link url="https://colab.research.google.com/drive/1-R1sB9P7RCU2nEEXfp2NVsCHyk2xU_KQ?usp=sharing">Google Colaboratory document</link></para>
+    <para id="para-00023"><link url="https://openstax.org/r/100edapractice">Google Colaboratory document</link></para>
     </section>
     </content>
 </document>

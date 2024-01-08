@@ -85,14 +85,14 @@
     <title>Exploring further</title>
     <para id="para-00011">Please refer to the NumPy user guide for more information about the NumPy library.</para>
     <list id="list-00004">
-    <item><link url="https://numpy.org/devdocs/user/">NumPy User Guide</link></item>
+    <item><link url="https://openstax.org/r/100numpyguide">NumPy User Guide</link></item>
     </list>
     </note>
     </section>
     <section id="sect-00004">
     <title>Programming Practice with Google</title>
     <para id="para-00013">Use the Google Colaboratory document below to practice NumPy functionalities to extract statistical insights from a dataset.</para>
-    <para id="para-00014"><link url="https://colab.research.google.com/drive/1reRDkIMCHEAbELxkLltexn-V1wbgFEbW?usp=sharing">Google Colaboratory document</link></para>
+    <para id="para-00014"><link url="https://openstax.org/r/100numpycolab">Google Colaboratory document</link></para>
     </section>
     </content>
 </document>

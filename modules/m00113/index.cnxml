@@ -425,16 +425,16 @@ plt.show()</code></entry>
     <title>Exploring further</title>
     <para id="para-00010">Please refer to the following user guide for more information about <code class="python inline-code">Matplotlib</code>, <code class="python inline-code">Plotly</code>, and <code class="python inline-code">Seaborn</code> libraries.</para>
     <list id="list-00002">
-    <item><link url="https://matplotlib.org/stable/users/index.html">Matplotlib User Guide</link></item>
-    <item><link url="https://plotly.com/python/getting-started/">Plotly User Guide</link></item>
-    <item><link url="https://seaborn.pydata.org/tutorial.html">Seaborn User Guide</link></item>
+    <item><link url="https://openstax.org/r/100matplotguide">Matplotlib User Guide</link></item>
+    <item><link url="https://openstax.org/r/100plotlyguide">Plotly User Guide</link></item>
+    <item><link url="https://openstax.org/r/100seabornguide">Seaborn User Guide</link></item>
     </list>
     </note>
     </section>
     <section id="sect-00004">
     <title>Programming Practice with Google</title>
     <para id="para-00011">Use the Google Colaboratory document below to practice a visualization task on a given dataset.</para>
-    <para id="para-00012"><link url="https://colab.research.google.com/drive/1jMK3XK913JXObS_g8QWAwUEvpiCEbvsH?usp=sharing">Google Colaboratory document</link></para>
+    <para id="para-00012"><link url="https://openstax.org/r/100visualization">Google Colaboratory document</link></para>
     </section>
     </content>
 </document>

@@ -134,10 +134,10 @@
     <title>Exploring further</title>
     <para id="para-00017">Files such as Word documents (.docx) and PDF documents (.pdf), image formats such as Portable Network Graphics (PNG, .png) and Joint Photographic Experts Group (JPEG, .jpeg or .jpg) as well as many other file types are encoded differently. </para>
     <para id="para-00018">Some types of non Unicode files can be read using specialized libraries that support the reading and writing of different file types.</para>
-    <para id="para-00019"><link url="https://pypdf.readthedocs.io/en/stable/">PyPDF</link> is a popular library that can be used to extract information from PDF files.</para>
-    <para id="para-00020"><link url="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</link> can be used to extract information from XML and HTML files. XML and HTML files usually contain unicode that have structure provided through the use of angled &lt;> bracket tags.</para>
-    <para id="para-00021"><link url="https://python-docx.readthedocs.io/en/latest/">python-docx</link> can be used to read and write DOCX files.</para>
-    <para id="para-00022">Additionally, <link url="https://docs.python.org/3/library/csv.html?highlight=csv">csv</link> is a an in-built library that can be used to extract information from CSV files.</para>
+    <para id="para-00019"><link url="https://openstax.org/r/100readthedocs">PyPDF</link> is a popular library that can be used to extract information from PDF files.</para>
+    <para id="para-00020"><link url="https://openstax.org/r/100software">BeautifulSoup</link> can be used to extract information from XML and HTML files. XML and HTML files usually contain unicode that have structure provided through the use of angled &lt;> bracket tags.</para>
+    <para id="para-00021"><link url="https://openstax.org/r/100readwrtedocx">python-docx</link> can be used to read and write DOCX files.</para>
+    <para id="para-00022">Additionally, <link url="https://openstax.org/r/100csvlibrary">csv</link> is a an in-built library that can be used to extract information from CSV files.</para>
     </note>
     <note class="practice-program" id="note-00004">
     <title>Processing a CSV file</title>

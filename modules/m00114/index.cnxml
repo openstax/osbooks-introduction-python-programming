@@ -122,7 +122,7 @@
         <note class="practice-program" id="note-00006">
         <title>Mad lib</title>
         <para id="para-00022">A mad lib is a word game in which one person asks others for words to substitute into a pre-written story. The story is then read aloud with the goal of making people laugh.</para>
-        <para id="para-00023">This exercise is based the <link url="https://www.madlibs.com/wp-content/uploads/2016/04/VacationFun_ML_2009_pg15.pdf">Vacations Mad Lib</link> available on the <link url="https://www.madlibs.com/printables/">Printables</link> section of MadLibs.com. Write a program that asks the user to input two adjectives and two nouns (user input in bold):</para>
+        <para id="para-00023">This exercise is based the <link url="https://openstax.org/r/100madlibs">Vacations Mad Lib</link> available on the <link url="https://openstax.org/r/100printable">Printables</link> section of MadLibs.com. Write a program that asks the user to input two adjectives and two nouns (user input in bold):</para>
         <code class="python" lang="python">
         Adjective: <emphasis effect="bold">tranquil</emphasis>
         Adjective: <emphasis effect="bold">scandalous</emphasis>

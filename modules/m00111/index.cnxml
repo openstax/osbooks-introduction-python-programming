@@ -620,14 +620,14 @@ dtype: int64
     <title>Exploring further</title>
     <para id="para-00024">Please refer to the Pandas user guide for more information about Pandas library.</para>
     <list id="list-00004">
-    <item><link url="https://pandas.pydata.org/docs/user_guide/index.html#user-guide">Pandas User Guide</link></item>
+    <item><link url="https://openstax.org/r/100pandaguide">Pandas User Guide</link></item>
     </list>
     </note>
     </section>
     <section id="sect-00005">
     <title>Programming Practice with Google</title>
     <para id="para-00025">Use the Google Colaboratory document below to practice Pandas functionalities to extract insights from a dataset.</para>
-    <para id="para-00026"><link url="https://colab.research.google.com/drive/1ik5BY_Gld866iOWCFY_kPOYppZAzQN2M?usp=sharing">Google Colaboratory document</link></para>
+    <para id="para-00026"><link url="https://openstax.org/r/100googlecolab">Google Colaboratory document</link></para>
     </section>
     </content>
 </document>

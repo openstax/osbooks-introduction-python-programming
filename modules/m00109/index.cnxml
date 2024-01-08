@@ -83,7 +83,7 @@
     <section id="sect-00004">
     <title>Programming Practice with Google</title>
     <para id="para-00011">Open the Google Colaboratory document below. To open the Colaboratory document, you need to login to a Google account, if you have one, or create a Google account. Run all cells. You may also attempt creating new cells or modifying existing cells. To be able to save a copy of your edits, you need to go to "File > Save a Copy in Drive", and the edited file will be stored in your own Google Drive.</para>
-    <para id="para-00012"><link url="https://colab.research.google.com/drive/1-JMI6_IR7XxSx7SL4ZAcFCZbyHSpgu1W?usp=sharing">Google Colaboratory document</link></para>
+    <para id="para-00012"><link url="https://openstax.org/r/100colabdoc">Google Colaboratory document</link></para>
    
     </section>
     </content>
