@@ -43,7 +43,7 @@
     </note>
     <note id="note-00003">
     <title>Exploring further</title>
-    <para id="para-00006"><link url="https://pythontutor.com/">Python Tutor</link> is a free online tool for visualizing code execution. A user can enter any Python code, click Visualize Execution, and then click the Next button to run the code one line at a time. Here is the <link url="https://pythontutor.com/visualize.html#code=rating%20%3D%2010%0Ascore%20%3D%20rating%0Arating%20%3D%209.7&amp;heapPrimitives=true&amp;mode=edit">rating and score example</link> from the animation above.</para>
+    <para id="para-00006"><link url="https://openstax.org/r/100pythontutor">Python Tutor</link> is a free online tool for visualizing code execution. A user can enter any Python code, click Visualize Execution, and then click the Next button to run the code one line at a time. Here is the <link url="https://openstax.org/r/100ratingscore">rating and score example</link> from the animation above.</para>
     <para id="para-00007">Python Tutor is also useful for drawing memory diagrams similar to the ones in this book. Before clicking Visualize Execution, change the middle option from "inline primitives, don't nest objects [default]" to "render all objects on the heap (Python/Java)" as shown in the following screenshot:</para>
     <figure id="fig-00001">
     <media alt="Screenshot of Python tutor settings, with the middle dropdown list open to the last setting.">
@@ -115,7 +115,7 @@
     b = a
     a = c
     </code></item>
-    <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
+    <item>Run the code on <link url="https://openstax.org/r/100pythruncode">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
     <list list-type="bulleted" id="list-00004">
     <item>What is the final value of <code class="python inline-code">a</code>, <code class="python inline-code">b</code>, and <code class="python inline-code">c</code>?</item>
@@ -135,7 +135,7 @@
     product = name
     name = name * 2
     </code></item>
-    <item>Run the code on <link url="https://pythontutor.com/visualize.html#heapPrimitives=true">Python Tutor</link> to check your answer.</item>
+    <item>Run the code on <link url="https://openstax.org/r/100pythruncode">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
     <list list-type="bulleted" id="list-00006">
     <item>What is the type and value of each object?</item>

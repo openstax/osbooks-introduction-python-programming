@@ -132,7 +132,7 @@
    
     <note class="practice-program" id="note-00004">
     <title>Mad lib (f-string)</title>
-    <para id="para-00011">A "<link url="https://en.wikipedia.org/wiki/Mad_Libs">mad lib</link>" is a funny story that uses words provided by a user. The following mad lib is based on four words (user input in bold):</para>
+    <para id="para-00011">A "<link url="https://openstax.org/r/100fstring">mad lib</link>" is a funny story that uses words provided by a user. The following mad lib is based on four words (user input in bold):</para>
     <code class="python" lang="python">
     Enter a name: Buster
     Enter a noun: dog

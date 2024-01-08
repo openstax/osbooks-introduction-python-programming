@@ -16,8 +16,8 @@
     </section>
     <section id="sect-00002">
     <title>Colors on websites</title>
-    <para id="para-00002">This section introduces an example module for working with <link url="https://www.w3schools.com/html/html_colors.asp">HTML colors</link>. HyperText Markup Language (_HTML_) is used to design websites and graphical applications. Web browsers like Chrome and Safari read HTML and display the corresponding contents. Ex: The HTML code <code class="python inline-code">&lt;p style="color: Red">Look out!&lt;/p></code> represents a paragraph with red text.</para>
-    <para id="para-00003">HTML defines 140 standard <link url="https://www.w3schools.com/tags/ref_colornames.asp">color names</link>. Additional colors can be specified using a hexadecimal format: <code class="python inline-code">#RRGGBB</code>. The digits RR, GG, and BB represent the red, green, and blue components of the color. Ex: <code class="python inline-code">#DC143C</code> is 220 red + 20 green + 60 blue, which is the color <code class="python inline-code">Crimson</code>.</para>
+    <para id="para-00002">This section introduces an example module for working with <link url="https://openstax.org/r/100htmlcolors">HTML colors</link>. HyperText Markup Language (_HTML_) is used to design websites and graphical applications. Web browsers like Chrome and Safari read HTML and display the corresponding contents. Ex: The HTML code <code class="python inline-code">&lt;p style="color: Red">Look out!&lt;/p></code> represents a paragraph with red text.</para>
+    <para id="para-00003">HTML defines 140 standard <link url="https://openstax.org/r/100colornames">color names</link>. Additional colors can be specified using a hexadecimal format: <code class="python inline-code">#RRGGBB</code>. The digits RR, GG, and BB represent the red, green, and blue components of the color. Ex: <code class="python inline-code">#DC143C</code> is 220 red + 20 green + 60 blue, which is the color <code class="python inline-code">Crimson</code>.</para>
     <para id="para-00004">Red, green, and blue values range from 0 to 255 (or 00 to FF in hexadecimal). Lower values specify darker colors, and higher values specify lighter colors. Ex: <code class="python inline-code">#008000</code> is the color <code class="python inline-code">Green</code>, and <code class="python inline-code">#00FF00</code> is the color <code class="python inline-code">Lime</code>.</para>
     <note class="guided-slides" id="note-00001">
     <title>HTML color codes</title>
@@ -169,7 +169,7 @@
     <note class="practice-program" id="note-00005">
     <title>Help on modules</title>
     <para id="para-00018">The <code class="python inline-code">random</code> and <code class="python inline-code">statistics</code> modules are useful for running scientific experiments. You can become familiar with these two modules by skimming their documentation.</para>
-    <para id="para-00019">Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
+    <para id="para-00019">Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
     <list id="list-00003">
     <item>import random</item>
     <item>help(random)
@@ -181,7 +181,7 @@
     </note>
     <note class="practice-program" id="note-00006">
     <title>Help on functions</title>
-    <para id="para-00021">The <code class="python inline-code">help()</code> function can be called on specific functions in a module. Open a Python shell on your computer, or use the one at <link url="https://www.python.org/shell/">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
+    <para id="para-00021">The <code class="python inline-code">help()</code> function can be called on specific functions in a module. Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
     <list id="list-00004">
     <item>import random</item>
     <item>help(random.randint)</item>

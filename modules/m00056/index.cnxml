@@ -16,8 +16,8 @@
     </section>
     <section id="sect-00002">
     <title>Built-in modules</title>
-    <para id="para-00002">The <term id="term-00001">Python Standard Library</term> is a collection of built-in functions and modules that support common programming tasks. Ex: The <code class="python inline-code">math</code> module provides functions like <code class="python inline-code">sqrt()</code> and constants like <code class="python inline-code">pi</code>. Python's official documentation includes a <link url="https://docs.python.org/3/library/">library reference</link> and a <link url="https://docs.python.org/3/py-modindex.html">module index</link> for becoming familiar with the standard library.</para>
-    <para id="para-00003">For decades, Python has maintained a "<link url="https://peps.python.org/pep-0002/">batteries included</link>" philosophy. This philosophy means that the standard library should come with everything most programmers need. In fact, the standard library includes over 200 built-in modules!</para>
+    <para id="para-00002">The <term id="term-00001">Python Standard Library</term> is a collection of built-in functions and modules that support common programming tasks. Ex: The <code class="python inline-code">math</code> module provides functions like <code class="python inline-code">sqrt()</code> and constants like <code class="python inline-code">pi</code>. Python's official documentation includes a <link url="https://openstax.org/r/100pythlibrary">library reference</link> and a <link url="https://openstax.org/r/100200modules">module index</link> for becoming familiar with the standard library.</para>
+    <para id="para-00003">For decades, Python has maintained a "<link url="https://openstax.org/r/100batteries">batteries included</link>" philosophy. This philosophy means that the standard library should come with everything most programmers need. In fact, the standard library includes over 200 built-in modules!</para>
     <table summary=" " id="table-00001">
     <title>Example built-in modules in the standard library</title>
     <tgroup cols="2">
@@ -29,43 +29,43 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00103"><code class="python inline-code"><link url="https://docs.python.org/3/library/calendar.html">calendar</link></code></para></entry>
+    <entry><para id="para-00103"><code class="python inline-code"><link url="https://openstax.org/r/100pythcalendar">calendar</link></code></para></entry>
     <entry>General calendar-related functions.</entry>
     </row>
     <row>
-    <entry><para id="para-00104"><code class="python inline-code"><link url="https://docs.python.org/3/library/datetime.html">datetime</link></code></para></entry>
+    <entry><para id="para-00104"><code class="python inline-code"><link url="https://openstax.org/r/100pythdatetime">datetime</link></code></para></entry>
     <entry>Basic date and time types and functions.</entry>
     </row>
     <row>
-    <entry><para id="para-00105"><code class="python inline-code"><link url="https://docs.python.org/3/library/email.html">email</link></code></para></entry>
+    <entry><para id="para-00105"><code class="python inline-code"><link url="https://openstax.org/r/100pythonemail">email</link></code></para></entry>
     <entry>Generate and process email messages.</entry>
     </row>
     <row>
-    <entry><para id="para-00106"><code class="python inline-code"><link url="https://docs.python.org/3/library/math.html">math</link></code></para></entry>
+    <entry><para id="para-00106"><code class="python inline-code"><link url="https://openstax.org/r/100mathmodule">math</link></code></para></entry>
     <entry>Mathematical functions and constants.</entry>
     </row>
     <row>
-    <entry><para id="para-00107"><code class="python inline-code"><link url="https://docs.python.org/3/library/os.html">os</link></code></para></entry>
+    <entry><para id="para-00107"><code class="python inline-code"><link url="https://openstax.org/r/100opersystem">os</link></code></para></entry>
     <entry>Interact with the operating system.</entry>
     </row>
     <row>
-    <entry><para id="para-00108"><code class="python inline-code"><link url="https://docs.python.org/3/library/random.html">random</link></code></para></entry>
+    <entry><para id="para-00108"><code class="python inline-code"><link url="https://openstax.org/r/100randomlib">random</link></code></para></entry>
     <entry>Generate pseudo-random numbers.</entry>
     </row>
     <row>
-    <entry><para id="para-00109"><code class="python inline-code"><link url="https://docs.python.org/3/library/statistics.html">statistics</link></code></para></entry>
+    <entry><para id="para-00109"><code class="python inline-code"><link url="https://openstax.org/r/100pythonstats">statistics</link></code></para></entry>
     <entry>Mathematical statistics functions.</entry>
     </row>
     <row>
-    <entry><para id="para-00110"><code class="python inline-code"><link url="https://docs.python.org/3/library/sys.html">sys</link></code></para></entry>
+    <entry><para id="para-00110"><code class="python inline-code"><link url="https://openstax.org/r/100sysparameter">sys</link></code></para></entry>
     <entry>System-specific parameters and functions.</entry>
     </row>
     <row>
-    <entry><para id="para-00111"><code class="python inline-code"><link url="https://docs.python.org/3/library/turtle.html">turtle</link></code></para></entry>
+    <entry><para id="para-00111"><code class="python inline-code"><link url="https://openstax.org/r/100pythonturtle">turtle</link></code></para></entry>
     <entry>Educational framework for simple graphics.</entry>
     </row>
     <row>
-    <entry><para id="para-0112"><code class="python inline-code"><link url="https://docs.python.org/3/library/zipfile.html">zipfile</link></code></para></entry>
+    <entry><para id="para-0112"><code class="python inline-code"><link url="https://openstax.org/r/100pythzipfile">zipfile</link></code></para></entry>
     <entry>Read and write ZIP-format archive files.</entry>
     </row>
     </tbody>
@@ -93,9 +93,9 @@
     </section>
     <section id="sect-00003">
     <title>Third-party modules</title>
-    <para id="para-00008">The <term id="term-00002">Python Package Index</term> (PyPI), available at <link url="https://pypi.org/">pypi.org</link>, is the official third-party software library for Python. The abbreviation "PyPI" is pronounced like <emphasis effect="italics">pie pea eye</emphasis> (in contrast to <link url="https://www.pypy.org/">PyPy</link>, a different project).</para>
+    <para id="para-00008">The <term id="term-00002">Python Package Index</term> (PyPI), available at <link url="https://openstax.org/r/100pypi">pypi.org</link>, is the official third-party software library for Python. The abbreviation "PyPI" is pronounced like <emphasis effect="italics">pie pea eye</emphasis> (in contrast to <link url="https://openstax.org/r/100pypy">PyPy</link>, a different project).</para>
     <para id="para-00009">PyPI allows anyone to develop and share modules with the Python community. Module authors include individuals, large companies, and non-profit organizations. PyPI helps programmers install modules and receive updates.</para>
-    <para id="para-00010">Most software available on PyPI is free and open source. PyPI is supported by the <link url="https://www.python.org/psf/">Python Software Foundation</link> and is maintained by an independent group of developers.</para>
+    <para id="para-00010">Most software available on PyPI is free and open source. PyPI is supported by the <link url="https://openstax.org/r/100foundation">Python Software Foundation</link> and is maintained by an independent group of developers.</para>
     <table summary=" " id="table-00002">
     <title>Example third-party modules available from PyPI</title>
     <tgroup cols="2">
@@ -107,63 +107,63 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00113"><code class="python inline-code"><link url="https://pypi.org/project/arrow/">arrow</link></code></para></entry>
+    <entry><para id="para-00113"><code class="python inline-code"><link url="https://openstax.org/r/100projectarrow">arrow</link></code></para></entry>
     <entry>Convert and format dates, times, and timestamps.</entry>
     </row>
     <row>
-    <entry><para id="para-00114"><code class="python inline-code"><link url="https://pypi.org/project/beautifulsoup4/">BeautifulSoup</link></code></para></entry>
+    <entry><para id="para-00114"><code class="python inline-code"><link url="https://openstax.org/r/100beautifsoup">BeautifulSoup</link></code></para></entry>
     <entry>Extract data from HTML and XML documents.</entry>
     </row>
     <row>
-    <entry><para id="para-00115"><code class="python inline-code"><link url="https://pypi.org/project/bokeh/">bokeh</link></code></para></entry>
+    <entry><para id="para-00115"><code class="python inline-code"><link url="https://openstax.org/r/100pypibokeh">bokeh</link></code></para></entry>
     <entry>Interactive plots and applications in the browser.</entry>
     </row>
     <row>
-    <entry><para id="para-00116"><code class="python inline-code"><link url="https://pypi.org/project/matplotlib/">matplotlib</link></code></para></entry>
+    <entry><para id="para-00116"><code class="python inline-code"><link url="https://openstax.org/r/100matplotlib">matplotlib</link></code></para></entry>
     <entry>Static, animated, and interactive visualizations.</entry>
     </row>
     <row>
-    <entry><para id="para-00117"><code class="python inline-code"><link url="https://pypi.org/project/moviepy/">moviepy</link></code></para></entry>
+    <entry><para id="para-00117"><code class="python inline-code"><link url="https://openstax.org/r/100moviepy">moviepy</link></code></para></entry>
     <entry>Video editing, compositing, and processing.</entry>
     </row>
     <row>
-    <entry><para id="para-00118"><code class="python inline-code"><link url="https://pypi.org/project/nltk/">nltk</link></code></para></entry>
+    <entry><para id="para-00118"><code class="python inline-code"><link url="https://openstax.org/r/100pypilanguage">nltk</link></code></para></entry>
     <entry>Natural language toolkit for human languages.</entry>
     </row>
     <row>
-    <entry><para id="para-00119"><code class="python inline-code"><link url="https://pypi.org/project/numpy/">numpy</link></code></para></entry>
+    <entry><para id="para-00119"><code class="python inline-code"><link url="https://openstax.org/r/100pypinumpy">numpy</link></code></para></entry>
     <entry>Fundamental package for numerical computing.</entry>
     </row>
     <row>
-    <entry><para id="para-00120"><code class="python inline-code"><link url="https://pypi.org/project/pandas/">pandas</link></code></para></entry>
+    <entry><para id="para-00120"><code class="python inline-code"><link url="https://openstax.org/r/100pypipandas">pandas</link></code></para></entry>
     <entry>Data analysis, time series, and statistics library.</entry>
     </row>
     <row>
-    <entry><para id="para-00121"><code class="python inline-code"><link url="https://pypi.org/project/Pillow/">pillow</link></code></para></entry>
+    <entry><para id="para-00121"><code class="python inline-code"><link url="https://openstax.org/r/100pypipillows">pillow</link></code></para></entry>
     <entry>Image processing for jpg, png, and other formats.</entry>
     </row>
     <row>
-    <entry><para id="para-00122"><code class="python inline-code"><link url="https://pypi.org/project/pytest/">pytest</link></code></para></entry>
+    <entry><para id="para-00122"><code class="python inline-code"><link url="https://openstax.org/r/100pypipytest">pytest</link></code></para></entry>
     <entry>Full-featured testing tool and unit test framework.</entry>
     </row>
     <row>
-    <entry><para id="para-00123"><code class="python inline-code"><link url="https://pypi.org/project/requests/">requests</link></code></para></entry>
+    <entry><para id="para-00123"><code class="python inline-code"><link url="https://openstax.org/r/100pypirequests">requests</link></code></para></entry>
     <entry>Elegant HTTP library for connecting to web servers.</entry>
     </row>
     <row>
-    <entry><para id="para-00124"><code class="python inline-code"><link url="https://pypi.org/project/scikit-learn/">scikit-learn</link></code></para></entry>
+    <entry><para id="para-00124"><code class="python inline-code"><link url="https://openstax.org/r/100pypiscikit">scikit-learn</link></code></para></entry>
     <entry>Simple, efficient tools for predictive data analysis.</entry>
     </row>
     <row>
-    <entry><para id="para-00125"><code class="python inline-code"><link url="https://pypi.org/project/scipy/">scipy</link></code></para></entry>
+    <entry><para id="para-00125"><code class="python inline-code"><link url="https://openstax.org/r/100pypiscipy">scipy</link></code></para></entry>
     <entry>Fundamental algorithms for scientific computing.</entry>
     </row>
     <row>
-    <entry><para id="para-00126"><code class="python inline-code"><link url="https://pypi.org/project/scrapy/">scrapy</link></code></para></entry>
+    <entry><para id="para-00126"><code class="python inline-code"><link url="https://openstax.org/r/100pypiscrapy">scrapy</link></code></para></entry>
     <entry>Crawl websites and scrape data from web pages.</entry>
     </row>
     <row>
-    <entry><para id="para-00127"><code class="python inline-code"><link url="https://pypi.org/project/tensorflow/">tensorflow</link></code></para></entry>
+    <entry><para id="para-00127"><code class="python inline-code"><link url="https://openstax.org/r/100tensorflow">tensorflow</link></code></para></entry>
     <entry>End-to-end machine learning platform for everyone.</entry>
     </row>
     </tbody>
@@ -192,9 +192,9 @@
     <title>Exploring further</title>
     <para id="para-00015">Programming blogs often highlight PyPI modules to demonstrate the usefulness of Python. The following examples provide more background information about the modules listed above.</para>
     <list id="list-00002">
-    <item><link url="https://www.simplilearn.com/top-python-libraries-for-data-science-article">Top 10 Python Libraries for Data Science for 2023</link></item>
-    <item><link url="https://hackr.io/blog/best-python-libraries">24 Best Python Libraries You Should Check in 2022</link></item>
-    <item><link url="https://learnpython.com/blog/most-popular-python-packages/">Most Popular Python Packages in 2021</link></item>
+    <item><link url="https://openstax.org/r/100simplelearn">Top 10 Python Libraries for Data Science for 2023</link></item>
+    <item><link url="https://openstax.org/r/100library2022">24 Best Python Libraries You Should Check in 2022</link></item>
+    <item><link url="https://openstax.org/r/100packages2021">Most Popular Python Packages in 2021</link></item>
     </list>
     </note>
     </section>
@@ -203,8 +203,8 @@
     <title>Happy birthday</title>
     <para id="para-00016">Module documentation pages often include examples to help programmers become familiar with the module. For this exercise, refer to the following examples from the <code class="python inline-code">datetime</code> module documentation:</para>
     <list id="list-00003">
-    <item><link url="https://docs.python.org/3/library/datetime.html#examples-of-usage-date">Examples of Usage: date</link></item>
-    <item><link url="https://docs.python.org/3/library/datetime.html#examples-of-usage-timedelta">Examples of Usage: timedelta</link></item>
+    <item><link url="https://openstax.org/r/100dateexamples">Examples of Usage: date</link></item>
+    <item><link url="https://openstax.org/r/100timedeltaex">Examples of Usage: timedelta</link></item>
     </list>
     <para id="para-00017">Write a program that creates a <code class="python inline-code">date</code> object representing your birthday. Then get a <code class="python inline-code">date</code> object representing today's date (the date the program is run). Calculate the difference between the two dates, and output the results in the following format:</para>
     <code class="python" lang="python">
@@ -231,13 +231,13 @@
     print("You are", years, "years and", days, "days old")
     </code>
     <para id="para-00019">Notice how leap years are included in the calculation. February 29th occurs four times between <code class="python inline-code">birth</code> and <code class="python inline-code">today</code>. Therefore, the user is not only 15 years old, but 15 years and 4 days old.</para>
-    <para id="para-00020">Many commonly used modules from PyPI, including <code class="python inline-code">arrow</code>, are installed in the Python shell at <link url="https://www.python.org/shell/">python.org/shell</link>. Open the Python shell and type the following lines:</para>
+    <para id="para-00020">Many commonly used modules from PyPI, including <code class="python inline-code">arrow</code>, are installed in the Python shell at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Open the Python shell and type the following lines:</para>
     <code class="python" lang="python">
     import arrow
     birth = arrow.get(2005, 3, 14)
     birth.humanize()
     </code>
-    <para id="para-00021">Refer to the <link url="https://arrow.readthedocs.io/en/latest/guide.html#humanize">humanize()</link> examples from the <code class="python inline-code">arrow</code> module documentation. In the Python shell, figure out how to display the number of years and days since <code class="python inline-code">birth</code> using <emphasis effect="italics">one line of code</emphasis>. Then display the number of years, months, and days since <code class="python inline-code">birth</code>. Finally, use the <code class="python inline-code">print()</code> function to output the results in this format: <code class="python inline-code">You are 18 years 4 months and 7 days old</code>.</para>
+    <para id="para-00021">Refer to the <link url="https://openstax.org/r/100humanize">humanize()</link> examples from the <code class="python inline-code">arrow</code> module documentation. In the Python shell, figure out how to display the number of years and days since <code class="python inline-code">birth</code> using <emphasis effect="italics">one line of code</emphasis>. Then display the number of years, months, and days since <code class="python inline-code">birth</code>. Finally, use the <code class="python inline-code">print()</code> function to output the results in this format: <code class="python inline-code">You are 18 years 4 months and 7 days old</code>.</para>
     <para id="para-00022">As time permits, experiment with other functions provided by the <code class="python inline-code">arrow</code> module.</para>
     </note>
     </content>
