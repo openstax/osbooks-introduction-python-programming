@@ -110,81 +110,87 @@
     <section id="sect-00004">
     <title>Overloading comparison operators</title>
     <para id="para-00010">Comparison operators can also be overloaded like arithmetic operators.</para>
-    <table summary=" " id="table-00002">
-    <title>Comparison operators and magic methods</title>
-    <tgroup cols="2">
-    <thead>
-    <row>
-    <entry>Comparison operator (Operation)</entry>
-    <entry>Magic method</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>&lt; (Less than)</entry>
-    <entry>__lt__(self, other)</entry>
-    </row>
-    <row>
-    <entry>> (Greater than)</entry>
-    <entry>__gt__(self, other)</entry>
-    </row>
-    <row>
-    <entry>&lt;= (Less than or equal)</entry>
-    <entry>__le__(self, other)</entry>
-    </row>
-    <row>
-    <entry>>= (Greater than or equal)</entry>
-    <entry>__ge__(self, other)</entry>
-    </row>
-    <row>
-    <entry>== (Equal)</entry>
-    <entry>__eq__(self, other)</entry>
-    </row>
-    <row>
-    <entry>!= (Not equal)</entry>
-    <entry>__ne__(self, other)</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <example id="exam-00001">
-      <title>Overloading comparison operators for the Account class.</title>
-    <table summary=" " id="table-00003">
-    <title/>
-    <tgroup cols="2">
-    <tbody>
-    <row>
-    <entry>
-    <code class="python" lang="python">
-    class Account:
-      def __init__(self, name="", amount=0):
-        self.name = name
-        self.amount = amount<newline/>
-      def __str__(self):
-        return f"{self.name}: ${self.amount}"<newline/>
-      def __lt__(self, other):
-        return self.amount &lt; other.amount<newline/>
-      def __gt__(self, other):
-        return self.amount > other.amount<newline/>
-      def __eq__(self, other):
-        return self.amount == other.amount<newline/>
-    acct_a = Account("Ashe", 6492)
-    acct_b = Account("Bevins", 5210)<newline/>
-    print(acct_a &lt; acct_b)
-    print(acct_a > acct_b)
-    acct_a.amount = 5210
-    print(acct_a == acct_b)</code>
-    </entry>
-    <entry>
-    False<newline/>
-    True<newline/>
-    True
-    </entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </example>
+<table summary=" " id="table-00002">
+<title>Comparison operators and magic methods</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Comparison operator (Operation)</entry>
+<entry>Magic method</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>&lt; (Less than)</entry>
+<entry>__lt__(self, other)</entry>
+</row>
+<row>
+<entry>> (Greater than)</entry>
+<entry>__gt__(self, other)</entry>
+</row>
+<row>
+<entry>&lt;= (Less than or equal)</entry>
+<entry>__le__(self, other)</entry>
+</row>
+<row>
+<entry>>= (Greater than or equal)</entry>
+<entry>__ge__(self, other)</entry>
+</row>
+<row>
+<entry>== (Equal)</entry>
+<entry>__eq__(self, other)</entry>
+</row>
+<row>
+<entry>!= (Not equal)</entry>
+<entry>__ne__(self, other)</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<example id="exam-00001">
+<title>Overloading comparison operators for the Account class.</title>
+<table summary=" " id="table-00003">
+<title/>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Code</entry>
+<entry>Output</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<code class="python" lang="python">
+class Account:
+  def __init__(self, name="", amount=0):
+    self.name = name
+    self.amount = amount<newline/>
+  def __str__(self):
+    return f"{self.name}: ${self.amount}"<newline/>
+  def __lt__(self, other):
+    return self.amount &lt; other.amount<newline/>
+  def __gt__(self, other):
+    return self.amount > other.amount<newline/>
+  def __eq__(self, other):
+    return self.amount == other.amount<newline/>
+acct_a = Account("Ashe", 6492)
+acct_b = Account("Bevins", 5210)<newline/>
+print(acct_a &lt; acct_b)
+print(acct_a > acct_b)
+acct_a.amount = 5210
+print(acct_a == acct_b)</code>
+</entry>
+<entry>
+False<newline/>
+True<newline/>
+True
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</example>
     <note class="learning-questions" id="note-00005">
     <title>Comparison operator overloading</title>
     <para id="para-00011">Consider the example above.</para>
