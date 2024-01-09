@@ -108,43 +108,43 @@
       </table>
       </section>
     
-        <note class="practice-program" id="note-00005">
-        <title>Fun facts</title>
-        <para id="para-00019">Write a program that assigns a variable named <code class="python inline-code">number</code> to any integer of your choice. Ex: <code class="python inline-code">number = 74</code>. Then use this variable to calculate and output the following results:</para>
-        <code class="python" lang="python">
-        74 squared is 5476
-        74 cubed is 405224
-        One tenth of 74 is 7.4
-        74 plus 123 is 197
-        74 minus 456 is -382
-        </code>
-        <para id="para-00020">Run the program multiple times, using a different integer each time. Your output should be mathematically correct for any integer that you choose.</para>
-        <para id="para-00021">The point of this exercise is to perform basic arithmetic within a print statement. Do not use any other variables besides <code class="python inline-code">number</code>. Your program should have only one assignment statement (at the beginning).</para>
-        <media alt="fun_facts_program">
-        <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_10_13_Fun-facts.html"/>
-        </media>
-        </note>
-        <note class="practice-program" id="note-00006">
-        <title>Mad lib</title>
-        <para id="para-00022">A mad lib is a word game in which one person asks others for words to substitute into a pre-written story. The story is then read aloud with the goal of making people laugh.</para>
-        <para id="para-00023">This exercise is based the <link url="https://openstax.org/r/100madlibs">Vacations Mad Lib</link> available on the <link url="https://openstax.org/r/100printable">Printables</link> section of MadLibs.com. Write a program that asks the user to input two adjectives and two nouns (user input in bold):</para>
-        <code class="python" lang="python">
-        Adjective: <emphasis effect="bold">tranquil</emphasis>
-        Adjective: <emphasis effect="bold">scandalous</emphasis>
-        Noun: <emphasis effect="bold">pancake</emphasis>
-        Noun: <emphasis effect="bold">field</emphasis>
-        </code>
-        <para id="para-00024">Use <code class="python inline-code">input()</code> to display each prompt exactly as shown. The user's input should be on the same line as the prompt. Each colon must be followed by exactly one space. After reading the input, the program should output the following three lines:</para>
-        <code class="python" lang="python">
-        <newline />
-        A vacation is when you take a trip to some <emphasis effect="bold">tranquil</emphasis> place with your <emphasis effect="bold">scandalous</emphasis> family.
-        Usually you go to some place that is near a/an <emphasis effect="bold">pancake</emphasis> or up on a/an <emphasis effect="bold">field</emphasis>.
-        </code>
-        <para id="para-00025">Notice that the first line should be completely blank.  Replace the bold words (from the above example) with the actual words input by the user.</para>
-        <para id="para-00026">Your final program should have four input statements, three print statements, and at least two comments. For completeness, write an appropriate docstring at the top of the program.</para>
-        <media alt="mad_lib_program">
-        <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_10_14_Mad-lib.html"/>
-        </media>
-        </note>
+<note class="practice-program" id="note-00005">
+<title>Fun facts</title>
+<para id="para-00019">Write a program that assigns a variable named <code class="python inline-code">number</code> to any integer of your choice. Ex: <code class="python inline-code">number = 74</code>. Then use this variable to calculate and output the following results:</para>
+<code class="python" lang="python">
+74 squared is 5476
+74 cubed is 405224
+One tenth of 74 is 7.4
+74 plus 123 is 197
+74 minus 456 is -382
+</code>
+<para id="para-00020">Run the program multiple times, using a different integer each time. Your output should be mathematically correct for any integer that you choose.</para>
+<para id="para-00021">The point of this exercise is to perform basic arithmetic within a print statement. Do not use any other variables besides <code class="python inline-code">number</code>. Your program should have only one assignment statement (at the beginning).</para>
+<media alt="fun_facts_program">
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_10_13_Fun-facts.html"/>
+</media>
+</note>
+<note class="practice-program" id="note-00006">
+<title>Mad lib</title>
+<para id="para-00022">A mad lib is a word game in which one person asks others for words to substitute into a pre-written story. The story is then read aloud with the goal of making people laugh.</para>
+<para id="para-00023">This exercise is based the <link url="https://openstax.org/r/100madlibs">Vacations Mad Lib</link> available on the <link url="https://openstax.org/r/100printable">Printables</link> section of MadLibs.com. Write a program that asks the user to input two adjectives and two nouns (user input in bold):</para>
+<code class="python" lang="python">
+Adjective: <emphasis effect="bold">tranquil</emphasis>
+Adjective: <emphasis effect="bold">scandalous</emphasis>
+Noun: <emphasis effect="bold">pancake</emphasis>
+Noun: <emphasis effect="bold">field</emphasis>
+</code>
+<para id="para-00024">Use <code class="python inline-code">input()</code> to display each prompt exactly as shown. The user's input should be on the same line as the prompt. Each colon must be followed by exactly one space. After reading the input, the program should output the following three lines:</para>
+<code class="python" lang="python">
+<newline />
+A vacation is when you take a trip to some <emphasis effect="bold">tranquil</emphasis> place with your <emphasis effect="bold">scandalous</emphasis> family.
+Usually you go to some place that is near a/an <emphasis effect="bold">pancake</emphasis> or up on a/an <emphasis effect="bold">field</emphasis>.
+</code>
+<para id="para-00025">Notice that the first line should be completely blank.  Replace the bold words (from the above example) with the actual words input by the user.</para>
+<para id="para-00026">Your final program should have four input statements, three print statements, and at least two comments. For completeness, write an appropriate docstring at the top of the program.</para>
+<media alt="mad_lib_program">
+<iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_10_14_Mad-lib.html"/>
+</media>
+</note>
   </content>
 </document>
