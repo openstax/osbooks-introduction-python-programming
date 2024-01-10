@@ -22,53 +22,53 @@
     <para id="para-00002">Floating-point values are stored as binary by Python. The conversion of a floating point number to the underlying binary results in specific types of floating-point errors.</para>
     <para id="para-00003">A <term id="term-00001">round-off error</term> occurs when floating-point values are stored erroneously as an approximation. The difference between an approximation of a value used in computation and the correct (true) value is called a round-off error.</para>
        <para id="para-00004">Ex: Storing the float (0.1)<sub>10</sub> results in binary values that actually produce (0.1000000000000000055511151231257827021181583404541015625)<sub>10</sub> when converted back, which is not exactly equal to (0.1)<sub>10</sub>.</para>
-    <table summary=" " id="table-00001">
-    <title>Round-off error.</title>
-    <tgroup cols="1">
-    <tbody>
-    <row>
-    <entry><code class="python" lang="python">
-    # Print floats with 30 decimal places
-    print(f'{0.1:.30f}') # prints 0.1
-    print(f'{0.2:.30f}') # prints 0.2
-    print(f'{0.4:.30f}') # prints 0.4
-    </code></entry>
-    <entry><code class="python" lang="python">
-    0.100000000000000005551115123126
-    0.200000000000000011102230246252
-    0.400000000000000022204460492503
-    </code></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    <caption>(The example above shows a formatted string or f-string which are introduced in the Objects chapter.)</caption>
-    </table>
+<table summary=" " id="table-00001">
+<title>Round-off error.</title>
+<tgroup cols="1">
+<tbody>
+<row>
+<entry><code class="python" lang="python">
+# Print floats with 30 decimal places
+print(f'{0.1:.30f}') # prints 0.1
+print(f'{0.2:.30f}') # prints 0.2
+print(f'{0.4:.30f}') # prints 0.4
+</code></entry>
+<entry><code class="python" lang="python">
+0.100000000000000005551115123126
+0.200000000000000011102230246252
+0.400000000000000022204460492503
+</code></entry>
+</row>
+</tbody>
+</tgroup>
+<caption>(The example above shows a formatted string or f-string which are introduced in the Objects chapter.)</caption>
+</table>
     <para id="para-00005">An <term id="term-00002">overflow error</term> occurs when a value is too large to be stored. The maximum and minimum floating-point values that can be represented are <m:math><m:mrow><m:mtext>1</m:mtext><m:mtext>.8</m:mtext><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math>, respectively. Attempting to store a floating-point value outside the range <m:math><m:mrow><m:mo>(</m:mo><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>)</m:mo></m:mrow></m:math> leads to an overflow error.</para>
     <para id="para-00006">Below, <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>256</m:mn></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>512</m:mn></m:mrow></m:msup></m:mrow></m:math> can be represented, but <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>1024</m:mn></m:mrow></m:msup></m:mrow></m:math> is too large and causes an overflow error.</para>
-    <table summary=" " id="table-00002">
-    <title>Overflow error.</title>
-    <tgroup cols="1">
-    <tbody>
-    <row>
-    <entry><code class="python" lang="python">
-    print('3.0 to the power of 256 =', 3.0**256)
-    print('3.0 to the power of 512 = ', 3.0**512)
-    print('3.0 to the power of 1024 = ', 3.0**1024)
-    </code></entry>
-    <entry>
-    <code class="python" lang="python">
-    3.0 to the power of 256 = 1.3900845237714473e+122
-    3.0 to the power of 512 = 1.9323349832288915e+244
-    3.0 to the power of 1024 =
-    Traceback (most recent call last):
-    &#160;&#160;File "&lt;stdin&gt;", line 3, in &lt;module>
-    &#160;&#160;&#160;&#160;print('3.0 to the power of 1024 = ', 3.0**1024)
-    OverflowError: (34, 'Numerical result out of range')
-    </code></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+<table summary=" " id="table-00002">
+<title>Overflow error.</title>
+<tgroup cols="1">
+<tbody>
+<row>
+<entry><code class="python" lang="python">
+print('3.0 to the power of 256 =', 3.0**256)
+print('3.0 to the power of 512 = ', 3.0**512)
+print('3.0 to the power of 1024 = ', 3.0**1024)
+</code></entry>
+<entry>
+<code class="python" lang="python">
+3.0 to the power of 256 = 1.3900845237714473e+122
+3.0 to the power of 512 = 1.9323349832288915e+244
+3.0 to the power of 1024 =
+Traceback (most recent call last):
+&#160;&#160;File "&lt;stdin&gt;", line 3, in &lt;module>
+&#160;&#160;&#160;&#160;print('3.0 to the power of 1024 = ', 3.0**1024)
+OverflowError: (34, 'Numerical result out of range')
+</code></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
     <note class="learning-questions" id="note-00001">
     <title>Floating-point errors</title>
     <para id="para-00007">For each situation, which error occurs?</para>
