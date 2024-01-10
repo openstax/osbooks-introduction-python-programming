@@ -1,0 +1,156 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="preface">
+  <title>Preface</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Preface</md:title>
+    <md:content-id>m00116</md:content-id>
+    <md:uuid>32a8f534-ae2d-4c29-b64b-5263a1215e12</md:uuid>
+  </metadata>
+  <content class="preface">
+    <section id="sect-00001">
+    <title>About OpenStax</title>
+    <para id="para-00001">OpenStax is part of Rice University, which is a 501(c)(3) nonprofit charitable corporation. As an educational initiative, it's our mission to improve educational access and learning for everyone. Through our partnerships with philanthropic organizations and our alliance with other educational resource companies, we're breaking down the most common barriers to learning. Because we believe that everyone should and can have access to knowledge.</para>
+    </section>
+    <section id="sect-00002">
+    <title>About OpenStax Resources</title>
+    <section id="sect-00003">
+    <title>Customization</title>
+    <para id="para-00002"><emphasis effect="italics">Introduction to Programming with Python</emphasis> is licensed under a Creative Commons Attribution 4.0 International (CC BY) license, which means that you can distribute, remix, and build upon the content, as long as you provide attribution to OpenStax and its content contributors.</para>
+    <para id="para-00003">Because our books are openly licensed, you are free to use the entire book or select only the sections that are most relevant to the needs of your course. Feel free to remix the content by assigning your students certain chapters and sections in your syllabus, in the order that you prefer. You can even provide a direct link in your syllabus to the sections in the web view of your book.</para>
+    <para id="para-00004">Instructors also have the option of creating a customized version of their OpenStax book. Visit the Instructor Resources section of your book page on OpenStax.org for more information.</para>
+    </section>
+    <section id="sect-00004">
+    <title>Art attribution</title>
+    <para id="para-00005">In <emphasis effect="italics">Introduction to Programming with Python</emphasis>, most photos and third-party illustrations contain attribution to their creator, rights holder, host platform, and/or license within the caption. Because the art is openly licensed, anyone may reuse the art as long as they provide the same attribution to its original source. To maximize readability and content flow, some art does not include attribution in the text. This art is part of the public domain or under a CC0 or similar license, and can be reused without attribution. For illustrations (e.g. graphs, charts, etc.) that are not credited, use the following attribution: Copyright Rice University, OpenStax, under [CC BY 4.0 / CC BY-NC-SA 4.0] license.</para>
+    </section>
+    <section id="sect-00005">
+    <title>Errata</title>
+    <para id="para-00006">All OpenStax textbooks undergo a rigorous review process. However, like any professional-grade textbook, errors sometimes occur. In addition, the wide range of topics, data, and legal circumstances in sociology change frequently, and portions of the textbook may become out of date. Since our books are web-based, we can make updates periodically when deemed pedagogically necessary. If you have a correction to suggest, submit it through the link on your book page on OpenStax.org. Subject matter experts review all errata suggestions. OpenStax is committed to remaining transparent about all updates, so you will also find a list of past and pending errata changes on your book page on OpenStax.org.</para>
+    </section>
+    <section id="sect-00006">
+    <title>Format</title>
+    <para id="para-00007">You can access this textbook for free in web view or PDF through OpenStax.org, and for a low cost in print. The web view is the recommended format because it is the most accessible--including being WCAG 2.0 AA compliant--and most current. Print versions are available for individual purchase, or they may be ordered through your campus bookstore.</para>
+    </section>
+    </section>
+    <section id="sect-00007">
+    <title>About <emphasis effect="italics">Introduction to Programming with Python</emphasis></title>
+    <para id="para-00008">OpenStax's <emphasis effect="italics">Introduction to Programming with Python</emphasis> is an interactive textbook that teaches basic programming concepts, problem solving skills, and the Python language using hands-on activities. The content is organized in chapters, with each chapter containing 6–8 sections.</para>
+    <para id="para-00009">Each section follows the pattern:</para>
+    <list id="list-00001">
+    <item>Learning objectives</item>
+    <item>1–3 subsections</item>
+    <item>Programming practice</item>
+    </list>
+    <para id="para-00010">The learning objectives are designed to help readers identify the section's focus. Each objective completes the sentence, "At the end of this section, the reader will be able to…" The programming practice aligns with the learning objectives and gives readers an opportunity to apply concepts learned in the section.</para>
+    </section>
+    <section id="sect-00008">
+    <title>Pedagogical Foundation</title>
+    <section id="sect-00009">
+    <title>Concise text and video-based animations</title>
+    <para id="para-00011">Most of the section's content is organized in subsections. Each subsection begins with concise text to introduce a new concept, define key terms, and provide context. The concept is then explained in detail using video-based animations and interactive learning questions.</para>
+    <para id="para-00012">Animation videos use a step-by-step approach to show the execution of Python code. Explanations for each step describe Python syntax, show how fundamental programming concepts are used, illustrate how variables are assigned , emphasize how code executes line by line, apply problem solving to create programs, and more.</para>
+    <para id="para-00013">"Displaying output to the user" <link url="https://www.youtube.com/embed/S5yhPLL0m6E?si=Ns8gOt2KiV1lDWen">https://www.youtube.com/embed/S5yhPLL0m6E?si=Ns8gOt2KiV1lDWen</link></para>
+    </section>
+    <section id="sect-00010">
+    <title>Learning questions</title>
+    <para id="para-00014">After introducing a new concept with concise text and explaining the concept with a video-based animation, each subsection includes engagement in the form of learning questions. These questions reinforce the concepts taught, explain concepts in more depth, directly address misconceptions and errors commonly made by new programmers, and teach related concepts.</para>
+    <para id="para-00015">Explanations are provided for the incorrect answers. Incorrect answers' explanations include why the answer is incorrect and help guide the reader to the correct answer.</para>
+    <para id="para-00016">Incorrect answer choices typically represent a misconception or are the result of making a common mistake. Even if the correct answer is achieved, readers are encouraged to explore the explanations to gain awareness of these common misconceptions.</para>
+    </section>
+    <section id="sect-00011">
+    <title>Programming practice exercises</title>
+    <para id="para-00017">Each section ends with 1 or 2 practice programs. This book includes an integrated programming environment, known as the "OpenStax Python code runner," that allows readers to write programs directly in the browser. The code runner requires the reader to pre-enter any input before running a program.</para>
+    <para id="para-00018">The following program reads an hourly pay from the user input, calculates the weekly pay based on a 40-hour work week, and outputs the result. The user input has been prepopulated with the value 15.</para>
+    <para id="para-00019">NOTE:</para>
+    <para id="para-00020">Insert programming practice module available in shared Rice Gdrive https://drive.google.com/drive/folders/1iOXpII3UIkWYaTtkKzCRY8ssPEmfF4TK?usp=drive_link</para>
+    <para id="para-00021">CodeRunner_Pre_01_01_Weekly-pay.htm (https://drive.google.com/file/d/1D6OHdjBmJ5oLMy9aek374gzMJ4vSnquU/view?usp=drive_link)</para>
+    <para id="para-00022">CodeRunner_Pre_01_01_Weekly-pay.js (https://drive.google.com/file/d/1KM_yhP_rwBbOtBEgjH5o4Q-ZJ65ytxKN/view?usp=drive_link)</para>
+    </section>
+    <section id="sect-00012">
+    <title>Conventions used in this book</title>
+    <para id="para-00023">The following typographical conventions are used throughout the book:</para>
+    <para id="para-00024"><emphasis effect="bold">Bold</emphasis><newline/>
+    Indicates vocabulary words when first defined in the chapter. A summary of all definitions can be found by clicking the menu icon (upper left) and selecting "Search zyBook."</para>
+    <para id="para-00025"><emphasis effect="italics">Italic</emphasis><newline/>
+    Indicates emphasized text, filenames, and file extensions.</para>
+    <para id="para-00026"><code>Constant width</code><newline/>
+    Used for code listings and code elements within paragraphs. Code elements include variable names, Python keywords, etc.</para>
+    <para id="para-00027"><code><emphasis effect="bold">Constant width bold</emphasis></code><newline/>
+    Shows commands or keyboard input that should be typed literally by the user.</para>
+    <para id="para-00028">Ex:<newline/>
+    Abbreviation for "Example:" Recommended by the zyBooks' Editorial Style Guide.</para>
+    </section>
+    </section>
+    <section id="sect-00013">
+    <title>About the Authors</title>
+    <section id="sect-00014">
+    <title>Authors</title>
+    <figure class="unnumbered" id="fig-00001">
+    <media alt="">
+    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    </media>
+    </figure>
+    <para id="para-00029">Aubrey Lawson, Wiley</para>
+    <para id="para-00030">Aubrey Lawson is a CS Content Developer at zyBooks. She received her bachelor's and master's degrees in Computer Science from Clemson University, and her Ph.D. research focuses on CS education.</para>
+    <figure class="unnumbered" id="fig-00002">
+    <media alt="">
+    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    </media>
+    </figure>
+    <para id="para-00031">Chris Mayfield, James Madison University</para>
+    <para id="para-00032">Chris Mayfield, Ph.D., is a Professor of Computer Science at James Madison University. His research focuses on CS education and professional development at the undergraduate and high school levels. He received a Ph.D. in Computer Science from Purdue University and bachelor’s degrees in CS and German from the University of Utah.</para>
+    <figure class="unnumbered" id="fig-00003">
+    <media alt="">
+    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    </media>
+    </figure>
+    <para id="para-00033">Narges Norouzi, UC Berkeley</para>
+    <para id="para-00034">Narges Norouzi received her MS and Ph.D. from the University of Toronto, focusing on applied deep learning. She has since been involved in working on applied machine learning projects with a focus on biology and education. Her CS education research focuses on using artificial intelligence in the classroom to close the equity gap and leading student-centered programs that promote equity and access.</para>
+    <figure class="unnumbered" id="fig-00004">
+    <media alt="">
+    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    </media>
+    </figure>
+    <para id="para-00035">Udayan Das</para>
+    <para id="para-00036">Udayan Das, Ph.D. is an Associate Professor and Program Director of Computer Science at Saint Mary's College of California. He received his Ph.D. in Computer Science and a Master's in Computer Engineering from the Illinois Institute of Technology. His research interests include Wireless Networks, Computer Science education and broadening participation in computing, and knowledge graph backed language models for technical document processing. He is also strongly committed to incorporating ethics into Computer Science and Engineering education and the Computer Science program that he has developed and launched at Saint Mary's College of California centers ethics and social justice while teaching students to be high quality computing professionals.</para>
+    </section>
+    <section id="sect-00015">
+    <title>Contributing Authors</title>
+    <figure class="unnumbered" id="fig-00005">
+    <media alt="">
+    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    </media>
+    </figure>
+    <para id="para-00037">Yamuna Rajasekhar, Wiley</para>
+    <para id="para-00038">Yamuna Rajasekhar, Ph.D., is Director of Content, Authoring, and Research at Wiley. She works across disciplines on research strategy, authoring pedagogy and training, and content development for Computer Science and IT. She received her M.S. and Ph.D. from University of North Carolina at Charlotte, focusing on Computer Engineering education. Prior to joining Wiley as a content author, Yamuna was an assistant professor of Computer Engineering at Miami University, where her research was focused on assistive technology with embedded systems and Computer Engineering education.</para>
+    <figure class="unnumbered" id="fig-00006">
+    <media alt="">
+    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    </media>
+    </figure>
+    <para id="para-00039">Reed Kanemaru, Wiley</para>
+    <para id="para-00040">Reed Kanemaru earned a BS in Computer Science from University of California, Riverside in 2020 and an MS in Computer Science from University of California, Riverside in 2021. Since graduating, he has worked as a Content/Software Developer at zyBooks, A Wiley Brand.</para>
+    </section>
+    <section id="sect-00016">
+    <title>Academic Integrity</title>
+    <para id="para-00041">Academic integrity builds trust, understanding, equity, and genuine learning. While students may encounter significant challenges in their courses and their lives, doing their own work and maintaining a high degree of authenticity will result in meaningful outcomes that will extend far beyond their college career. Faculty, administrators, resource providers, and students should work together to maintain a fair and positive experience.</para>
+    <para id="para-00042">We realize that students benefit when academic integrity ground rules are established early in the course. To that end, OpenStax has created an interactive to aid with academic integrity discussions in your course.</para>
+    <figure id="fig-00007">
+    <media alt="">
+    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    </media>
+    <caption>attribution: Copyright Rice University, OpenStax, under CC BY 4.0 license</caption>
+    </figure>
+    <para id="para-00043">Visit our <link url="https://www.openstax.org/r/academic-integrity-slider">academic integrity slider</link>. Click and drag icons along the continuum to align these practices with your institution and course policies.You may then include the graphic on your syllabus, present it in your first course meeting, or create a handout for students.</para>
+    <para id="para-00044">At OpenStax we are also developing resources supporting authentic learning experiences and assessment. Please visit this book's page for updates. For an in-depth review of academic integrity strategies, we highly recommend visiting the International Center of Academic Integrity (ICAI) website at <link url="https://academicintegrity.org/">https://academicintegrity.org/</link>.</para>
+    </section>
+    <section id="sect-00017">
+    <title>Community Hubs</title>
+    <para id="para-00045">OpenStax partners with the Institute for the Study of Knowledge Management in Education (ISKME) to offer Community Hubs on OER Commons--a platform for instructors to share community-created resources that support OpenStax books, free of charge. Through our Community Hubs, instructors can upload their own materials or download resources to use in their own courses, including additional ancillaries, teaching material, multimedia, and relevant course content. We encourage instructors to join the hubs for the subjects most relevant to your teaching and research as an opportunity both to enrich your courses and to engage with other faculty. To reach the Community Hubs, visit <link url="https://learn.zybooks.com/zybook/OpenStaxPythonDev/chapter/20/section/www.oercommons.org/hubs/openstax">www.oercommons.org/hubs/openstax</link>.</para>
+    </section>
+    <section id="sect-00018">
+    <title>Technology partners</title>
+    <para id="para-00046">As allies in making high-quality learning materials accessible, our technology partners offer optional low-cost tools that are integrated with OpenStax books. To access the technology options for your text, visit your book page on OpenStax.org.</para>
+    </section>
+    </section>
+    </content>
+</document>
