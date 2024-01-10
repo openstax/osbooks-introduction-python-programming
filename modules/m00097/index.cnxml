@@ -45,7 +45,7 @@
     </section>
     <section id="sect-00003">
     <title>super()</title>
-    <para id="para-00006">super() is a special method that provides a temporary superclass object instance for a subclass to use. super() is commonly used to call superclass, also called a superclass, methods from a subclass. super() is commonly used in a subclass's __init__() to assign inherited instance attributes. Ex: <code class="python inline-code">super().__init__()</code>.</para>
+    <para id="para-00006">super() is a special method that provides a temporary superclass object instance for a subclass to use. super() is commonly used to call superclass methods from a subclass. super() is commonly used in a subclass's __init__() to assign inherited instance attributes. Ex: <code class="python inline-code">super().__init__()</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Using super() to call the superclass __init__() method</title>
     <media alt="using_super_slides">

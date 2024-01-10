@@ -12,7 +12,7 @@
     </media>
     <caption>credit: modification of work by Sebastian Sikora/Flickr, CC BY 2.0</caption>
     </figure>
-    <para id="para-00001"><term id="term-00001">Data Science</term> provides the ability to derive insights and make informed decisions from data. The data science field has been increasingly nourished by different fields and provides informed decision-making capabilities in fields like healthcare, business, education, politics, environmental science, and social sciences.</para>
+    <para id="para-00001"><term id="term-00001">Data Science</term> provides the ability to derive insights and make informed decisions from data. The data science field has been increasingly enriched by different fields and provides informed decision-making capabilities in fields like healthcare, business, education, politics, environmental science, and social sciences.</para>
     <para id="para-00002">This chapter aims to provide an introduction to the field of data science and the data science life-cycle as well as different data science life-cycle elements. The resources provided in this chapter are meant to guide readers using Python to further explore data science.</para>
     </content>
 </document>

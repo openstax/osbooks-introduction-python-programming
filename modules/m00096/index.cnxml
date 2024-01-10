@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Creating a simple subclass</title>
-    <para id="para-00002">Subclasses have access to the attributes inherited from the superclass. When the subclass's __init__() isn't explicitly defined, the superclass's is called. Accessing both types of attributes uses the same syntax.</para>
+    <para id="para-00002">Subclasses have access to the attributes inherited from the superclass. When the subclass's __init__() isn't explicitly defined, the superclass's __init__() method is called. Accessing both types of attributes uses the same syntax.</para>
     <note class="guided-slides" id="note-00001">
     <title>Defining a simple subclass</title>
     <media alt="simple_subclass_slides">
