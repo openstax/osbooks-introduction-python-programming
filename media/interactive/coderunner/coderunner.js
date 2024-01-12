@@ -15,9 +15,8 @@ window.addEventListener('load', async() => {
 
     .editors-container {
         display: flex;
-        height: 12em;
+        height: 10em;
         min-height: 3.7em;
-        max-height: 8.7em;
         overflow: hidden;
         resize: vertical;
     }
