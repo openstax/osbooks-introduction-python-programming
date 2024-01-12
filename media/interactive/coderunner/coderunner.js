@@ -15,7 +15,7 @@ window.addEventListener('load', async() => {
 
     .editors-container {
         display: flex;
-        height: 10em;
+        height: 9em;
         min-height: 3.7em;
         overflow: hidden;
         resize: vertical;
@@ -35,7 +35,7 @@ window.addEventListener('load', async() => {
         border-radius: 3px;
         color: #37474F;
         flex: initial;
-        height: 5.3em;
+        height: 4.2em;
         min-height: 2.2em;
         padding: 4px 10px;
         resize: vertical;
