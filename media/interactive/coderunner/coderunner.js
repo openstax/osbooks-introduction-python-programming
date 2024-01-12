@@ -35,8 +35,7 @@ window.addEventListener('load', async() => {
         border-radius: 3px;
         color: #37474F;
         flex: initial;
-        height: 5.2em;
-        min-height: 2.2em;
+        min-height: 5.2em;
         padding: 4px 10px;
         resize: vertical;
     }
