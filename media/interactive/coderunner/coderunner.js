@@ -17,6 +17,7 @@ window.addEventListener('load', async() => {
         display: flex;
         height: 12em;
         min-height: 3.7em;
+        max-height: 8.7em;
         overflow: hidden;
         resize: vertical;
     }
