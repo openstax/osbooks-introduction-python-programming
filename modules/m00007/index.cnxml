@@ -27,7 +27,8 @@
 <code class="python" lang="python">Traceback (most recent call last):
   File "/home/student/Desktop/example.py", line 1
     print "Hello"
-                ^<newline />
+                ^
+
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
 </code>
 <para id="para-00005">The caret character (<code class="python inline-code">^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown, because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
@@ -44,7 +45,8 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
 <code class="python" lang="python">Traceback (most recent call last):
   File "/home/student/Desktop/example.py", line 2
     print "test"
-        ^<newline />
+        ^
+
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?</code>
 <exercise id="exer-00001">
 <problem id="prob-00001">

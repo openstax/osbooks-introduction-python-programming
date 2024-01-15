@@ -92,7 +92,8 @@
     </list>
     <para id="para-00004">Write a program that inputs the following variables: <code class="python inline-code">bread_weight</code> (float), <code class="python inline-code">serving_size</code> (float), and <code class="python inline-code">num_guests</code> (int). The output will look like the following:</para>
     <code class="python" lang="python">
-    For 25 people, you will need 3.90625 loaves of bread:<newline/>
+    For 25 people, you will need 3.90625 loaves of bread:
+
     &#160;&#160;5.859375 teaspoons instant yeast
     &#160;&#160;5.859375 teaspoons salt
     &#160;&#160;5.859375 teaspoons sugar
@@ -116,9 +117,10 @@
     Number of people: <emphasis effect="bold">2</emphasis>
     </code>
     <para id="para-00009">Then calculate the tip amount and total amount for the bill, based on the user input. Output the results using this format:</para>
-    <code class="python" lang="python"><newline/>
+    <code class="python" lang="python">
     Tip amount: $7.78
-    Total amount: $50.99<newline/>
+    Total amount: $50.99
+    
     Tip per person: $3.89
     Total per person: $25.49
     </code>

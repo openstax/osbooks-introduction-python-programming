@@ -135,7 +135,6 @@
     </code>
     <para id="para-00024">Use <code class="python inline-code">input()</code> to display each prompt exactly as shown. The user's input should be on the same line as the prompt. Each colon must be followed by exactly one space. After reading the input, the program should output the following three lines:</para>
     <code class="python" lang="python">
-    <newline />
     A vacation is when you take a trip to some <emphasis effect="bold">tranquil</emphasis> place with your <emphasis effect="bold">scandalous</emphasis> family.
     Usually you go to some place that is near a/an <emphasis effect="bold">pancake</emphasis> or up on a/an <emphasis effect="bold">field</emphasis>.
     </code>

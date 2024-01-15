@@ -114,7 +114,8 @@
     </code>
     <para id="para-00021">You may assume that the cash paid will always be a whole number (representing dollar bills) that is greater than or equal to the total amount. The program should calculate and output the amount of change due and how many dollars, quarters, dimes, nickels, and pennies should be dispensed:</para>
     <code class="python" lang="python">
-    Change Due $1.24<newline/>
+    Change Due $1.24
+    
      Dollars: 1
     Quarters: 0
        Dimes: 2

@@ -34,7 +34,8 @@ print("Burrito")
 print("Enchilada")
 print("Taco")
 print("Salad")
-print() # End of menu<newline/>
+print() # End of menu
+
 # Get the user's preferences
 item1 = input("Item #1: ")
 item2 = input("Item #2: ")
