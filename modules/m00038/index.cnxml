@@ -27,10 +27,12 @@
     <title>For loop over a string container</title>
     <para id="para-00003">A string variable can be considered as a container of multiple characters, and hence can be iterated on. Given the following code, please answer the questions.</para>
     <code class="python" lang="python">
-    str_var = "A string"<newline/>
+    str_var = "A string"
+
     count = 0
     for c in str_var:
-      count += 1<newline/>
+      count += 1
+
     print(count)
     </code>
     <exercise id="exer-00001">
@@ -127,7 +129,8 @@
       print(i)
     </code></entry>
     <entry><code class="python" lang="python">
-    # While loop implementation of printing multiples of 5 less than 50<newline/>
+    # While loop implementation of printing multiples of 5 less than 50
+    
     # Initialization
     i = 0
     # Limiting the range to be less than 50

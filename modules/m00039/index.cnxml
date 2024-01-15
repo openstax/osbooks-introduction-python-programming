@@ -94,7 +94,8 @@
     <title>Mixed loops</title>
     <para id="para-00012">The two <code class="python inline-code">for</code> and <code class="python inline-code">while</code> loop constructs can also be mixed in a nested loop construct. Ex: Printing even numbers less than a given number in a list. The outer loop can be implemented using a <code class="python inline-code">for</code> loop iterating over the provided list, and the inner loop iterates over all even numbers less than a given number from the list using a <code class="python inline-code">while</code> loop.</para>
     <code class="python" lang="python">
-    numbers = [12, 5, 3]<newline/>
+    numbers = [12, 5, 3]
+    
     i = 0
     for n in numbers:
     &#160;&#160;while i &lt; n:

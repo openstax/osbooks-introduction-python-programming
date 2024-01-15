@@ -29,11 +29,13 @@
     <para id="para-00004">Chaining decision statements with elif allows the programmer to check for multiple conditions. An <term id="term-00001">elif</term>, short for else if, statement, checks a condition when the prior decision statement's condition is false. An elif statement is part of a chain and must follow an if (or elif) statement.</para>
     <para id="para-00021">if-elif statement template</para>
     <code class="python" lang="python">
-    # Statements before<newline/>
+    # Statements before
+
     if condition:
       # Body
     elif condition:
-      # Body<newline/>
+      # Body
+    
     # Statements after
     </code>
     <note class="guided-slides" id="note-00001">

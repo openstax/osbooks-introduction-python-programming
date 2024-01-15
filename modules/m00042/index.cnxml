@@ -48,7 +48,8 @@
     <entry><code class="python" lang="python">
     # initialization
     while expression:
-      # loop body<newline/>
+      # loop body
+
     # statements after the loop
     </code></entry>
     </row>
@@ -57,7 +58,8 @@
     <entry><code class="python" lang="python">
     # initialization
     for loop_variable in container:
-      # loop body<newline/>
+      # loop body
+
     # statements after the loop
     </code></entry>
     </row>
@@ -68,7 +70,8 @@
       # outer loop body (1)
       while inner_loop_expression:
         # inner loop body
-      # outer loop body (2)<newline/>
+      # outer loop body (2)
+
     # statements after the loop
     </code></entry>
     </row>
@@ -80,7 +83,8 @@
       # loop body
       if break_condition:
         break
-      # remaining body of loop<newline/>
+      # remaining body of loop
+
     # statements after the loop
     </code></entry>
     </row>
@@ -92,7 +96,8 @@
       # loop body
       if continue_condition:
         continue
-      # remaining body of loop<newline/>
+      # remaining body of loop
+
     # statements after the loop
     </code></entry>
     </row>
@@ -106,7 +111,8 @@
         break
       # remaining body of loop
     else:
-      # loop else statement<newline/>
+      # loop else statement
+    
     # statements after the loop
     </code></entry>
     </row>

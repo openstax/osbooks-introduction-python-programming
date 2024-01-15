@@ -34,7 +34,8 @@
     # Initializing the first two Fibonacci numbers
     f = 1
     g = 1
-    print (f, end = ' ')<newline/>
+    print (f, end = ' ')
+
     # Running the loop while the last Fibonacci number is less than 20
     while g &lt; 20:
       print(g, end = ' ')
@@ -67,13 +68,14 @@
     <title>A program printing all odd numbers between 1 and 10.</title>
     <code class="python" lang="python">
     # Initialization
-    counter = 1<newline/>
+    counter = 1
+
     # While loop condition
     while counter &lt;= 10:
       if counter % 2 == 1:
         print(counter)
       # Counting up and increasing counter's value by 1 in each iteration
-      counter += 1<newline/>
+      counter += 1
     </code>
     </example>
     <note class="guided-slides" id="note-00003">
@@ -89,7 +91,8 @@
     n = 4
     while n > 0:
     &#160;&#160;print(n)
-    &#160;&#160;n = n - 1<newline />
+    &#160;&#160;n = n - 1
+    
     print("value of n after the loop is", n)
     </code>
     <exercise id="exer-00004">

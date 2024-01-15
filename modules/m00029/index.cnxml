@@ -65,11 +65,13 @@
     <para id="para-00012">An <term id="term-00003">else statement</term> is used with an if statement and contains a body of statements that is executed when the if statement's condition is False. When an if-else statement is executed, one and only one of the branches is taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the same level of indentation as the if statement, and the body is indented.</para>
     <para id="para-00020">if-else statement template</para>
     <code class="python line-numbering" lang="python">
-    # Statements before<newline/>
+    # Statements before
+
     if condition:
       # Body
     else:
-      # Body<newline/>
+      # Body
+    
     # Statements after
     </code>
     <note class="guided-slides" id="note-00004">

@@ -91,40 +91,47 @@
     <row>
     <entry>if statement</entry>
     <entry><code class="python" lang="python">
-    # Statements before<newline/>
+    # Statements before
+
     if condition:
-      # Body<newline/>
+      # Body
+
     # Statements after
     </code></entry>
     </row>
     <row>
     <entry><emphasis effect="italics">else statement</emphasis></entry>
     <entry><code class="python" lang="python">
-    # Statements before<newline/>
+    # Statements before
+
     if condition:
       # Body
     else:
-      # Body<newline/>
+      # Body
+
     # Statements after
     </code></entry>
     </row>
     <row>
     <entry><emphasis effect="italics">elif statement</emphasis></entry>
     <entry><code class="python" lang="python">
-    # Statements before<newline/>
+    # Statements before
+
     if condition:
       # Body
     elif condition:
       # Body
     else:
-      # Body<newline/>
+      # Body
+
     # Statements after
     </code></entry>
     </row>
     <row>
     <entry>nested if statement</entry>
     <entry><code class="python" lang="python">
-    # Statements before<newline/>
+    # Statements before
+
     if condition:
       if condition:
         # Body
@@ -134,7 +141,8 @@
       if condition:
         # Body
       else:
-        # Body<newline/>
+        # Body
+    
     # Statements after
     </code></entry>
     </row>
