@@ -28,7 +28,8 @@
     <para id="para-00003">Consider the following:</para>
     <code class="python" lang="python">
     def print_welcome(name):
-      print(f"Welcome {name}!")<newline/>
+      print(f"Welcome {name}!")
+
     username = int(input("Enter new username: "))
     print_welcome(username)
     </code>
@@ -62,7 +63,8 @@
     <code class="python" lang="python">
     def print_div(op_1, op_2):
       """ Prints division operation """
-      print(f"{op_1}/{op_2} = {op_1/op_2}")<newline/>
+      print(f"{op_1}/{op_2} = {op_1/op_2}")
+
     num_1 = 6
     num_2 = 3
     print_div(num_1, num_2) # Prints "6/3 = 2.0"
@@ -76,7 +78,8 @@
     <code class="python" lang="python">
     def calc_distance(x1, y1, x2, y2):
       dist = math.sqrt((x2-x1)**2 + (y2-y1)**2)
-      print(dist)<newline/>
+      print(dist)
+
     p1_x =int(input("Enter point 1's x: "))
     p1_y =int(input("Enter point 1's y: "))
     p2_x =int(input("Enter point 2's x: "))
@@ -116,11 +119,13 @@
       else:
         for i in range(len(temps)):
           temps[i] = (temps[i]*9/5) + 32
-        unit = "F"<newline/><newline/>
+        unit = "F"
+
     # Weekend temperatures in Fahrenheit.
     wknd_temps = [49.0, 51.0, 44.0]
     deg_sign = u"\N{DEGREE SIGN}" # Unicode
-    metric = "F"<newline/>
+    metric = "F"
+
     # Convert from Fahrenheit to Celsius.
     convert_temps(wknd_temps, metric)
     for temp in wknd_temps:
@@ -161,7 +166,7 @@
    
     <note class="practice-program" id="note-00006">
     <title>Printing right triangle area</title>
-    <para id="para-00021">Write a function, print_area(), that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where <emphasis effect="italics">b</emphasis> is the base and <emphasis effect="italics">h</emphasis> is the height.</para><newline/>
+    <para id="para-00021">Write a function, print_area(), that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where <emphasis effect="italics">b</emphasis> is the base and <emphasis effect="italics">h</emphasis> is the height.</para>
     <para id="para-00022">Given input:</para>
     <code class="python" lang="python">
     3
@@ -177,7 +182,7 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Curving scores</title>
-    <para id="para-00024">Write a function, print_scores(), that takes in a list of test scores and a number representing how many points to add. For each score, print the original score and the sum of the score and bonus. Make sure not to change the list.</para><newline/>
+    <para id="para-00024">Write a function, print_scores(), that takes in a list of test scores and a number representing how many points to add. For each score, print the original score and the sum of the score and bonus. Make sure not to change the list.</para>
     <para id="para-00025">Given function call:</para>
     <code class="python" lang="python">
     print_scores([67, 68, 72, 71, 69], 10)

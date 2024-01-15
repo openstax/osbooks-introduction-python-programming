@@ -24,7 +24,8 @@
     <example id="exam-00001">
     <title>String values from the same template</title>
     <code class="python" lang="python">
-    Dear John, I'd like to take programming course with Prof. Potter.<newline/>
+    Dear John, I'd like to take programming course with Prof. Potter.
+
     Dear Kishwar, I'd like to take math course with Prof. Robinson.
     </code>
     </example>
@@ -34,10 +35,11 @@
     <title>String template formatting for course enrollment requests</title>
     <para id="para-00005">String template with replacement fields is defined below to create string values with different input arguments. The format() function is used to pass inputs to the template in the same order.</para>
     <code class="python" lang="python">
-    s = "Dear {}, I'd like to take {} course with Prof. {}."<newline/>
+    s = "Dear {}, I'd like to take {} course with Prof. {}."
+
     print(s)
     print(s.format("John", "programming", "Potter"))
-    print(s.format("Kishwar", "math", "Robinson"))<newline/>
+    print(s.format("Kishwar", "math", "Robinson"))
     </code>
     <para id="para-00006">The above code's output is:</para>
     <code class="python" lang="python">
@@ -72,10 +74,11 @@
     <title>Season weather template using named replacement fields</title>
     <para id="para-00011">A named replacement argument is a convenient way of assigning name tags to replacement fields and passing values associated with replacement fields using corresponding names (instead of passing values in order).</para>
     <code class="python" lang="python">
-    s = "Weather in {season} is {temperature}."<newline/>
+    s = "Weather in {season} is {temperature}."
+
     print(s)
     print(s.format(season = "summer", temperature = "hot"))
-    print(s.format(season = "winter", temperature = "cold"))<newline/>
+    print(s.format(season = "winter", temperature = "cold"))
     </code>
     <para id="para-00012">The above code's output is:</para>
     <code class="python" lang="python">
@@ -88,10 +91,11 @@
     <title>Multiple use of a named argument</title>
     <para id="para-00013">Since named replacement fields are referred to using a name key, a named replacement field can appear and be used more than once in the template. Also, positional ordering is not necessary when named replacement fields are used.</para>
     <code class="python" lang="python">
-    s = "Weather in {season} is {temperature}; very very {temperature}."<newline/>
+    s = "Weather in {season} is {temperature}; very very {temperature}."
+
     print(s)
     print(s.format(season = "summer", temperature = "hot"))
-    print(s.format(temperature = "cold", season = "winter"))<newline/>
+    print(s.format(temperature = "cold", season = "winter"))
     </code>
     <para id="para-00014">The above code's output is:</para>
     <code class="python" lang="python">
@@ -128,9 +132,10 @@
     <para id="para-00020">Numbered replacement fields are used in this example to build phrases like "very very cold" or "very hot".</para>
     <code class="python" lang="python">
     template1 = "{0} {0} {1}"
-    template2 = "{0} {1}"<newline/>
+    template2 = "{0} {1}"
+
     print(template1.format("very", "cold"))
-    print(template2.format("very", "hot"))<newline/>
+    print(template2.format("very", "hot"))
     </code>
     <para id="para-00021">The above code's output is:</para>
     <code class="python" lang="python">
@@ -301,7 +306,8 @@
     Input: [12.5, 2]
     </code>
     <code class="python" lang="python">
-    Prints: 012.50<newline/>
+    Prints: 012.50
+    
     002:00
     </code>
     <media alt="formatting_a_list_of_numbers_program">

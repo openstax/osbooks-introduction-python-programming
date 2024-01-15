@@ -55,39 +55,47 @@
     </list>
     <para id="para-00009">Note: The <code class="python inline-code">tohex()</code> and <code class="python inline-code">torgb()</code> functions use Python features (string formatting and slicing) described later in the book. For now, the documentation and comments are more important than the implementation details.</para>
     <code class="python" lang="python">
-    """Functions for working with color names and hex/rgb values."""<newline/>
+    """Functions for working with color names and hex/rgb values."""
+
     # Primary colors
     RED = "#FF0000"
     YELLOW = "#FFFF00"
-    BLUE = "#0000FF"<newline/>
+    BLUE = "#0000FF"
+
     # Secondary colors
     ORANGE = "#FFA500"
     GREEN = "#008000"
-    VIOLET = "#EE82EE"<newline/>
+    VIOLET = "#EE82EE"
+
     # Neutral colors
     BLACK = "#000000"
     GRAY = "#808080"
-    WHITE = "#FFFFFF"<newline/>
+    WHITE = "#FFFFFF"
+
     def _tohex(value):
       """Converts an integer to an 8-bit (2-digit) hexadecimal string."""
       if value &lt;= 0:
         return "00"
       if value >= 255:
         return "FF"
-      return format(value, "02X")<newline/>
+      return format(value, "02X")
+
     def tohex(r, g, b):
       """Formats red, green, and blue integers as a color in hexadecimal."""
-      return "#" + _tohex(r) + _tohex(g) + _tohex(b)<newline/>
+      return "#" + _tohex(r) + _tohex(g) + _tohex(b)
+
     def torgb(color):
       """Converts a color in hexadecimal to red, green, and blue integers."""
       r = int(color[1:3], 16) # First 2 digits
       g = int(color[3:5], 16) # Middle 2 digits
       b = int(color[5:7], 16) # Last 2 digits
-      return r, g, b<newline/>
+      return r, g, b
+
     def lighten(color):
       """Increases the red, green, and blue values of a color by 32 each."""
       r, g, b = torgb(color)
-      return tohex(r+32, g+32, b+32)<newline/>
+      return tohex(r+32, g+32, b+32)
+
     def darken(color):
       """Decreases the red, green, and blue values of a color by 32 each."""
       r, g, b = torgb(color)
@@ -119,19 +127,26 @@
     <title>Output of help(colors) in a shell.</title>
     <para id="para-00014">The documentation below is automatically generated from the docstrings in <emphasis effect="italics">colors.py</emphasis>.</para>
     <code class="python" lang="python">
-    >>> <emphasis effect="bold">help(colors)</emphasis><newline/>
-    Help on module colors:<newline/>
+    >>> <emphasis effect="bold">help(colors)</emphasis>
+
+    Help on module colors:
+
     NAME
-      colors - Functions for working with color names and hex/rgb values.<newline/>
+      colors - Functions for working with color names and hex/rgb values.
+
     FUNCTIONS
       darken(color)
-        Decreases the red, green, and blue values of a color by 32 each.<newline/>
+        Decreases the red, green, and blue values of a color by 32 each.
+
       lighten(color)
-        Increases the red, green, and blue values of a color by 32 each.<newline/>
+        Increases the red, green, and blue values of a color by 32 each.
+
       tohex(r, g, b)
-        Formats red, green, and blue integers as a color in hexadecimal.<newline/>
+        Formats red, green, and blue integers as a color in hexadecimal.
+
       torgb(color)
-        Converts a color in hexadecimal to red, green, and blue integers.<newline/>
+        Converts a color in hexadecimal to red, green, and blue integers.
+
     DATA
       BLACK = '#000000'
       BLUE = '#0000FF'
@@ -141,7 +156,8 @@
       RED = '#FF0000'
       VIOLET = '#EE82EE'
       WHITE = '#FFFFFF'
-      YELLOW = '#FFFF00'<newline/>
+      YELLOW = '#FFFF00'
+
     FILE
       /home/student/Desktop/colors.py
     </code>
@@ -172,8 +188,7 @@
     <para id="para-00019">Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
     <list id="list-00003">
     <item>import random</item>
-    <item>help(random)
-    <code class="python" lang="python"><newline/></code></item>
+    <item>help(random)</item>
     <item>import statistics</item>
     <item>help(statistics)</item>
     </list>
@@ -185,8 +200,7 @@
     <list id="list-00004">
     <item>import random</item>
     <item>help(random.randint)</item>
-    <item>help(random.choice)
-    <code class="python" lang="python"><newline/></code></item>
+    <item>help(random.choice)</item>
     <item>import statistics</item>
     <item>help(statistics.median)</item>
     <item>help(statistics.mode)</item>

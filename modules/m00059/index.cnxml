@@ -101,11 +101,13 @@
     <title>Converting characters in a string.</title>
     <para id="para-00007">In the example below, the lower() and upper() string functions are called on the string variable x to convert all characters to lowercase and uppercase, respectively.</para>
     <code class="python" lang="python">
-    x = "Apples"<newline/>
+    x = "Apples"
+
     # The lower() function converts a string to all lowercase characters
-    print(x.lower())<newline/>
+    print(x.lower())
+
     # The upper() function converts a string to all uppercase characters
-    print(x.upper())<newline/>
+    print(x.upper())
     </code>
     <para id="para-00008">The above code's output is:</para>
     <code class="python" lang="python">

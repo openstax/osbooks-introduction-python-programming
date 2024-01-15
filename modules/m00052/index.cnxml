@@ -20,37 +20,50 @@
     <example id="exam-00001">
     <title>The area module</title>
     <code class="python" lang="python">
-    """Functions to calculate the area of geometric shapes."""<newline/>
-    import math<newline/><newline/>
-    # 2D shapes<newline/>
+    """Functions to calculate the area of geometric shapes."""
+
+    import math
+
+    # 2D shapes
+
     def square(side):
         """Gets the area of a square."""
-        return side**2<newline/>
+        return side**2
+
     def rectangle(length, width):
         """Gets the area of a rectangle."""
-        return length * width<newline/>
+        return length * width
+
     def triangle(base, height):
         """Gets the area of a triangle."""
-        return 0.5 * base * height<newline/>
+        return 0.5 * base * height
+
     def trapezoid(base1, base2, height):
         """Gets the area of a trapezoid."""
-        return 0.5 * (base1 + base2) * height<newline/>
+        return 0.5 * (base1 + base2) * height
+
     def circle(radius):
         """Gets the area of a circle."""
-        return math.pi * radius**2<newline/>
+        return math.pi * radius**2
+
     def ellipse(major, minor):
         """Gets the area of an ellipse."""
-        return math.pi * major * minor<newline/><newline/>
-    # 3D shapes<newline/>
+        return math.pi * major * minor
+
+    # 3D shapes
+
     def cube(side):
         """Gets the surface area of a cube."""
-        return 6 * side**2<newline/>
+        return 6 * side**2
+
     def cylinder(radius, height):
         """Gets the surface area of a cylinder."""
-        return 2 * math.pi * radius * (radius + height)<newline/>
+        return 2 * math.pi * radius * (radius + height)
+
     def cone(radius, height):
         """Gets the surface area of a cone."""
-        return math.pi * radius * (radius + math.hypot(height, radius))<newline/>
+        return math.pi * radius * (radius + math.hypot(height, radius))
+
     def sphere(radius):
         """Gets the surface area of a sphere."""
         return 4 * math.pi * radius**2
@@ -79,7 +92,8 @@
     <title>Importing a module</title>
     <para id="para-00006">The module defined in <emphasis effect="italics">area.py</emphasis> can be used in other programs. When importing the <code class="python inline-code">area</code> module, the suffix <emphasis effect="italics">.py</emphasis> is removed:</para>
     <code class="python" lang="python">
-    import area<newline/>
+    import area
+    
     print("Area of a basketball court:", area.rectangle(94, 50))
     print("Area of a circus ring:", area.circle(21))
     </code>

@@ -209,9 +209,11 @@
     <para id="para-00017">Write a program that creates a <code class="python inline-code">date</code> object representing your birthday. Then get a <code class="python inline-code">date</code> object representing today's date (the date the program is run). Calculate the difference between the two dates, and output the results in the following format:</para>
     <code class="python" lang="python">
     Your birth date: 2005-03-14
-    Today's date is: 2023-06-01<newline/>
+    Today's date is: 2023-06-01
+
     You were born 6653 days ago
-    (that is 574819200 seconds)<newline/>
+    (that is 574819200 seconds)
+
     You are about 18 years old
     </code>
     <media alt="happy_birthday_program">
@@ -222,10 +224,12 @@
     <title>More exact age</title>
     <para id="para-00018">The <code class="python inline-code">datetime</code> module does not provide a built-in way to display a person's exact age. Ex: The following program calculates an exact age (in years and days) using floor division and modulo. The output is: <code class="python inline-code">You are 15 years and 4 days old</code>.</para>
     <code class="python" lang="python">
-    from datetime import date<newline/>
+    from datetime import date
+
     birth = date(2005, 3, 14)
     today = date(2020, 3, 14) # 15 years later
-    delta = today - birth<newline/>
+    delta = today - birth
+    
     years = delta.days // 365
     days = delta.days % 365
     print("You are", years, "years and", days, "days old")

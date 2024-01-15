@@ -59,7 +59,8 @@
         return mpg
       else:
         print("Gallons can't be 0")
-        return -1<newline/>
+        return -1
+    
     car_1_mpg = calc_mpg(448, 16)
     print("Car 1's mpg is", car_1_mpg)
     car_2_mpg = calc_mpg(300, 0)

@@ -105,7 +105,7 @@
    
     <note class="practice-program" id="note-00008">
     <title>Battle royale game launch</title>
-    <para id="para-00016">Write a program that reads in a selected game mode and calls one of two functions to launch the game. If the input is "br", call battle_royale(). Otherwise, call practice().</para><newline/>
+    <para id="para-00016">Write a program that reads in a selected game mode and calls one of two functions to launch the game. If the input is "br", call battle_royale(). Otherwise, call practice().</para>
     <para id="para-00017">battle_royale():</para>
     <list id="list-00002">
     <item>Reads in the number of players.</item>

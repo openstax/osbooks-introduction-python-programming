@@ -50,7 +50,8 @@
     <entry>Argument</entry>
     <entry><code class="python" lang="python">
     def function_name(parameter_1):
-      # Function body<newline/>
+      # Function body
+    
     function_name(argument_1)
     </code></entry>
     </row>
@@ -68,7 +69,8 @@
     def function_name(parameter_1):
       # Function body
       local_var = parameter_1 * 5
-      return local_var<newline/>
+      return local_var
+
     global_var = function_name(arg_1)
     </code></entry>
     </row>
@@ -76,7 +78,8 @@
     <entry>Keyword arguments</entry>
     <entry><code class="python" lang="python">
     def function_name(parameter_1, parameter_2):
-      # Function body<newline/>
+      # Function body
+    
     function_name(parameter_2 = 5, parameter_1 = 2)
     </code></entry>
     </row>
