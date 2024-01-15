@@ -137,7 +137,8 @@
     Enter a name: Buster
     Enter a noun: dog
     Enter an adjective: super
-    Verb ending in -ing: swimming<newline/>
+    Verb ending in -ing: swimming
+    
     Buster, the super dog, likes to go swimming.
     </code>
     <para id="para-00012">Most of the code for this mad lib is already written. Complete the code below by writing the f-string.</para>

@@ -19,13 +19,13 @@
     <para id="para-00002">Most spaces in Python code are ignored when running programs, however spaces at the start of a line are very important. The following two programs are equivalent:</para>
     <list id="list-00002">
     <item>Good spacing:
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     name = input("Enter someone's name: ")
     place = input("Enter a famous place: ")
     print(name, "should visit", place + "!")
     </code></item>
     <item>Poor spacing: 
-    <code class="python" lang="python">
+    <code display="block" class="python" lang="python">
     name=input ("Enter someone's name: " )
     place =input("Enter a famous place: ")
     print( name,"should visit" , place+ "!")
@@ -113,7 +113,7 @@
     <para id="para-00010">Long strings make Python programs difficult to read. Ex: This program prints the first sentence of the <link url="https://openstax.org/r/100declaration">US Declaration of Independence</link>:</para>
     <para id="para-00011">print("The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.")</para>
     <para id="para-00012">PEP 8 recommends that each line of code be less than 80 characters long. That way, programmers won't need to scroll horizontally to read the code. The above program can be rewritten by breaking up the original string:</para>
-    <para id="para-00013"><code class="python" lang="python">
+    <para id="para-00013"><code class="python inline-code" lang="python">
      print("The unanimous Declaration of the thirteen united States of "
            "America, When in the Course of human events, it becomes "
            "necessary for one people to dissolve the political bands "
@@ -154,13 +154,13 @@
     <para id="para-00018">Most statements in a Python program need only one line of code. But occasionally, longer statements need to span multiple lines. Python provides two ways to write multi-line statements:</para>
     <list id="list-00003">
     <item><para id="para-00019">Explicit line joining, using <code class="python inline-code">\</code> characters:</para>
-    <code class="python" lang="python">
+    <code class="python" display="block" lang="python">
     decl = "The unanimous Declaration of the thirteen united States of " \
             "America, When in the Course of human events, it becomes " \
             "necessary for one people to dissolve the political bands..."
     </code></item>
     <item><para id="para-00020">Implicit line joining, using parentheses:</para>
-    <code class="python" lang="python">
+    <code class="python" display="block" lang="python">
     decl = ("The unanimous Declaration of the thirteen united States of "
             "America, When in the Course of human events, it becomes "
             "necessary for one people to dissolve the political bands...")

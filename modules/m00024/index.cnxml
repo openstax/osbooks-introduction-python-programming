@@ -57,17 +57,21 @@
     <code class="python line-numbering" lang="python">
     # Setup a list of numbers
     num_list = [2, 3, 5, 9, 11]
-    print(num_list)<newline/>
+    print(num_list)
+
     # Print the length of the list
-    print("Length: ", len(num_list))<newline/>
+    print("Length: ", len(num_list))
+
     # Print the 4th element in the list
     # The number 3 is used to refer to the 4th element
-    print("4th element:", num_list[3])<newline/>
+    print("4th element:", num_list[3])
+
     # The desired value of the 4th element is actually 7
     # Update the value of the 4th element to 7
-    num_list[3] = 7<newline/>
+    num_list[3] = 7
+
     # The list of the first 5 prime numbers
-    print(num_list)<newline/>
+    print(num_list)
     </code>
     <para id="para-00012">The above code's output is:</para>
     <code class="python" lang="python">

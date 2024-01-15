@@ -37,7 +37,8 @@ print(data_13[2])
 <entry>
 <code class="python" lang="python">  
 tuple_1: (2, 3, 4)
-3<newline/>
+3
+
 data_13: ('Aimee Perry', 96, [94, 100, 97, 93])
 [94, 100, 97, 93]
 </code>
