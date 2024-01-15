@@ -119,29 +119,29 @@
     </table>
     <example id="exam-00001">
     <title>Two programs printing all integer multiples of 5 less than 50. (Notice the compactness of the for construction compared to the while.)</title>
-    <table summary=" " id="table-00002">
-    <tgroup cols="1">
-    <tbody>
-    <row>
-    <entry><code class="python" lang="python">
-    # For loop condition using range() function to print all multiples of 5 less than 50
-    for i in range(0, 50, 5):
-      print(i)
-    </code></entry>
-    <entry><code class="python" lang="python">
-    # While loop implementation of printing multiples of 5 less than 50
+<table summary=" " id="table-00002">
+<tgroup cols="1">
+<tbody>
+<row>
+<entry><code class="python" lang="python">
+# For loop condition using range() function to print all multiples of 5 less than 50
+for i in range(0, 50, 5):
+  print(i)
+</code></entry>
+<entry><code class="python" lang="python">
+# While loop implementation of printing multiples of 5 less than 50
     
-    # Initialization
-    i = 0
-    # Limiting the range to be less than 50
-    while i &lt; 50:
-        print(i)
-        i+=5
-    </code></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+# Initialization
+i = 0
+# Limiting the range to be less than 50
+while i &lt; 50:
+    print(i)
+    i+=5
+</code></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>For loop using a range() function</title>

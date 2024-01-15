@@ -21,35 +21,35 @@
     <example id="exam-00001">
     <title>Finding the number 10 in a list</title>
     <para id="para-00004">In the code examples below, the code on the left prints "Found 10!" if the variable <code class="python inline-code">i</code>'s value is 10. If the value 10 is not in the list, the code prints "10 is not in the list." The code on the right uses the <code class="python inline-code">seen</code> boolean variable to track if the value 10 is in the list. After loop's execution, if <code class="python inline-code">seen</code>'s value is still false, the code prints "10 is not in the list."</para>
-    <table summary=" " id="table-00001">
-      <tgroup cols="1">
-    <tbody>
-    <row>
-    <entry><code class="python" lang="python">
-    numbers = [2, 5, 7, 11, 12]
-    for i in numbers:
-    &#160;&#160;if i == 10:
-    &#160;&#160;&#160;&#160;print("Found 10!")
-    &#160;&#160;&#160;&#160;break
-    else:
-    &#160;&#160;print("10 is not in the list.")
-    </code>
-    </entry>
-    <entry><code class="python" lang="python">
-    numbers = [2, 5, 7, 11, 12]
-    seen = False
-    for i in numbers:
-    &#160;&#160;if i == 10:
-    &#160;&#160;&#160;&#160;print("Found 10!")
-    &#160;&#160;&#160;&#160;seen = True
-    if seen == False:
-    &#160;&#160;print("10 is not in the list.")
-    </code>
-    </entry>
-    </row>
-    </tbody>
-      </tgroup>  
-  </table>
+<table summary=" " id="table-00001">
+<tgroup cols="1">
+<tbody>
+<row>
+<entry><code class="python" lang="python">
+numbers = [2, 5, 7, 11, 12]
+for i in numbers:
+&#160;&#160;if i == 10:
+&#160;&#160;&#160;&#160;print("Found 10!")
+&#160;&#160;&#160;&#160;break
+else:
+&#160;&#160;print("10 is not in the list.")
+</code>
+</entry>
+<entry><code class="python" lang="python">
+numbers = [2, 5, 7, 11, 12]
+seen = False
+for i in numbers:
+&#160;&#160;if i == 10:
+&#160;&#160;&#160;&#160;print("Found 10!")
+&#160;&#160;&#160;&#160;seen = True
+if seen == False:
+&#160;&#160;print("10 is not in the list.")
+</code>
+</entry>
+</row>
+</tbody>
+</tgroup>  
+</table>
     </example>
     <note class="guided-slides" id="note-00001">
     <title>Loop else template</title>
