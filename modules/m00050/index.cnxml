@@ -21,78 +21,78 @@
     <item>Functions can use return statements to return values back to the calling code.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write functions that have any number of parameters and return a value and programs that call functions using keyword arguments and optional arguments.</para>
-    <table summary=" " id="table-00001">
-    <title>Chapter 6 reference</title>
-    <tgroup cols="2">
-    <thead>
-    <row>
-    <entry>Construct</entry>
-    <entry>Description</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>Function definition</entry>
-    <entry><code class="python" lang="python">
-    def function_name():
-      """Docstring"""
-      # Function body
-    </code></entry>
-    </row>
-    <row>
-    <entry>Parameter</entry>
-    <entry><code class="python" lang="python">
-    def function_name(parameter_1):
-      # Function body
-    </code></entry>
-    </row>
-    <row>
-    <entry>Argument</entry>
-    <entry><code class="python" lang="python">
-    def function_name(parameter_1):
-      # Function body
+<table summary=" " id="table-00001">
+<title>Chapter 6 reference</title>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Construct</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Function definition</entry>
+<entry><code class="python" lang="python">
+def function_name():
+  """Docstring"""
+  # Function body
+</code></entry>
+</row>
+<row>
+<entry>Parameter</entry>
+<entry><code class="python" lang="python">
+def function_name(parameter_1):
+  # Function body
+</code></entry>
+</row>
+<row>
+<entry>Argument</entry>
+<entry><code class="python" lang="python">
+def function_name(parameter_1):
+  # Function body
     
-    function_name(argument_1)
-    </code></entry>
-    </row>
-    <row>
-    <entry>Return statement</entry>
-    <entry><code class="python" lang="python">
-    def function_name():
-      # Function body
-      return result # Returns the value of result to the caller
-    </code></entry>
-    </row>
-    <row>
-    <entry>Variables (scope)</entry>
-    <entry><code class="python" lang="python">
-    def function_name(parameter_1):
-      # Function body
-      local_var = parameter_1 * 5
-      return local_var
+function_name(argument_1)
+</code></entry>
+</row>
+<row>
+<entry>Return statement</entry>
+<entry><code class="python" lang="python">
+def function_name():
+  # Function body
+  return result # Returns the value of result to the caller
+</code></entry>
+</row>
+<row>
+<entry>Variables (scope)</entry>
+<entry><code class="python" lang="python">
+def function_name(parameter_1):
+  # Function body
+  local_var = parameter_1 * 5
+  return local_var
 
-    global_var = function_name(arg_1)
-    </code></entry>
-    </row>
-    <row>
-    <entry>Keyword arguments</entry>
-    <entry><code class="python" lang="python">
-    def function_name(parameter_1, parameter_2):
-      # Function body
+global_var = function_name(arg_1)
+</code></entry>
+</row>
+<row>
+<entry>Keyword arguments</entry>
+<entry><code class="python" lang="python">
+def function_name(parameter_1, parameter_2):
+  # Function body
     
-    function_name(parameter_2 = 5, parameter_1 = 2)
-    </code></entry>
-    </row>
-    <row>
-    <entry>Default parameter value</entry>
-    <entry><code class="python" lang="python">
-    def function_name(parameter_1 = 100):
-      # Function body
-    </code></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </section>
-    </content>
+function_name(parameter_2 = 5, parameter_1 = 2)
+</code></entry>
+</row>
+<row>
+<entry>Default parameter value</entry>
+<entry><code class="python" lang="python">
+def function_name(parameter_1 = 100):
+  # Function body
+</code></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+</content>
 </document>
