@@ -88,47 +88,10 @@
     <media alt="">
     <image mime-type="image/png" src="../../media/FPO.jpg"/>
     </media>
+    <caption>[Caption: caption neecaption</caption>
     </figure>
-    <para id="para-00029">Aubrey Lawson, Wiley</para>
-    <para id="para-00030">Aubrey Lawson is a CS Content Developer at zyBooks. She received her bachelor's and master's degrees in Computer Science from Clemson University, and her Ph.D. research focuses on CS education.</para>
-    <figure class="unnumbered" id="fig-00002">
-    <media alt="">
-    <image mime-type="image/png" src="../../media/FPO.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00031">Chris Mayfield, James Madison University</para>
-    <para id="para-00032">Chris Mayfield, Ph.D., is a Professor of Computer Science at James Madison University. His research focuses on CS education and professional development at the undergraduate and high school levels. He received a Ph.D. in Computer Science from Purdue University and bachelor’s degrees in CS and German from the University of Utah.</para>
-    <figure class="unnumbered" id="fig-00003">
-    <media alt="">
-    <image mime-type="image/png" src="../../media/FPO.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00033">Narges Norouzi, UC Berkeley</para>
-    <para id="para-00034">Narges Norouzi received her MS and Ph.D. from the University of Toronto, focusing on applied deep learning. She has since been involved in working on applied machine learning projects with a focus on biology and education. Her CS education research focuses on using artificial intelligence in the classroom to close the equity gap and leading student-centered programs that promote equity and access.</para>
-    <figure class="unnumbered" id="fig-00004">
-    <media alt="">
-    <image mime-type="image/png" src="../../media/FPO.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00035">Udayan Das</para>
-    <para id="para-00036">Udayan Das, Ph.D. is an Associate Professor and Program Director of Computer Science at Saint Mary's College of California. He received his Ph.D. in Computer Science and a Master's in Computer Engineering from the Illinois Institute of Technology. His research interests include Wireless Networks, Computer Science education and broadening participation in computing, and knowledge graph backed language models for technical document processing. He is also strongly committed to incorporating ethics into Computer Science and Engineering education and the Computer Science program that he has developed and launched at Saint Mary's College of California centers ethics and social justice while teaching students to be high quality computing professionals.</para>
-    </section>
-    <section id="sect-00015">
-    <title>Contributing Authors</title>
-    <figure class="unnumbered" id="fig-00005">
-    <media alt="">
-    <image mime-type="image/png" src="../../media/FPO.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00037">Yamuna Rajasekhar, Wiley</para>
-    <para id="para-00038">Yamuna Rajasekhar, Ph.D., is Director of Content, Authoring, and Research at Wiley. She works across disciplines on research strategy, authoring pedagogy and training, and content development for Computer Science and IT. She received her M.S. and Ph.D. from University of North Carolina at Charlotte, focusing on Computer Engineering education. Prior to joining Wiley as a content author, Yamuna was an assistant professor of Computer Engineering at Miami University, where her research was focused on assistive technology with embedded systems and Computer Engineering education.</para>
-    <figure class="unnumbered" id="fig-00006">
-    <media alt="">
-    <image mime-type="image/png" src="../../media/FPO.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00039">Reed Kanemaru, Wiley</para>
-    <para id="para-00040">Reed Kanemaru earned a BS in Computer Science from University of California, Riverside in 2020 and an MS in Computer Science from University of California, Riverside in 2021. Since graduating, he has worked as a Content/Software Developer at zyBooks, A Wiley Brand.</para>
+   
+
     </section>
     <section id="sect-00016">
     <title>Academic Integrity</title>
