@@ -22,16 +22,20 @@
     <para id="para-00003">The code below demonstrates simple operations for modifying a list.</para>
     <para id="para-00004">Line 8 shows the <code class="python inline-code">append()</code> operation, line 12 shows the <code class="python inline-code">remove()</code> operation, and line 16 shows the <code class="python inline-code">pop()</code> operation. Since the <code class="python inline-code">pop()</code> operation removes the last element, no parameter is needed.</para>
     <code class="python" lang="python">
-    """Operations for adding and removing elements from a list."""<newline/>
+    """Operations for adding and removing elements from a list."""
+
     # Create a list of students working on a project
     student_list = ["Jamie", "Vicky", "DeShawn", "Tae"]
-    print(student_list)<newline/>
+    print(student_list)
+
     # Another student joins the project. The student must be added to the list.
     student_list.append("Ming")
-    print(student_list)<newline/>
+    print(student_list)
+
     # The student "Jamie" withdraws the project. Jamie must be removed from the list.
     student_list.remove("Jamie")
-    print(student_list)<newline/>
+    print(student_list)
+    
     # Suppose "Ming" had to be removed from the list for some reason, a pop() operation can be used.
     student_list.pop()
     print(student_list)
@@ -74,7 +78,7 @@
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Iterating lists</title>
-    <para id="para-00010">For the following questions consider the list:<newline/>
+    <para id="para-00010">For the following questions consider the list:
     <code class="python inline-code">my_list = [2, 3, 5, 7, 9]</code></para>
     <exercise id="exer-00004">
     <problem id="prob-00004">

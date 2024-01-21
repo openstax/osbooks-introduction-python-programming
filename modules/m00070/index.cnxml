@@ -96,11 +96,13 @@
     <para id="para-00010">The code below demonstrates how to iterate a list-of-lists.</para>
     <para id="para-00011">The outer loop on line 9 goes element by element for the larger list. Each element in the larger list is a list. The inner loop on line 10 iterates through each element in each nested list.</para>
     <code class="python" lang="python">
-    """Iterating a list-of-lists."""<newline/>
+    """Iterating a list-of-lists."""
+
     # Create a list of numbers
     list1 = [[1, 2, 3],
             [1, 4, 9],
-            [1, 8, 27]]<newline/>
+            [1, 8, 27]]
+    
     # Iterating the list-of-lists
     for row in list1:
       for num in row:

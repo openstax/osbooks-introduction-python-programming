@@ -21,20 +21,27 @@
     <example id="exam-00001">
     <title>Common list operations</title>
     <code class="python" lang="python">
-    """Common list operations."""<newline/>
+    """Common list operations."""
+
     # Set up a list of number
-    snum_list = [28, 92, 17, 3, -5, 999, 1]<newline/>
+    snum_list = [28, 92, 17, 3, -5, 999, 1]
+
     # Set up a list of words
-    city_list = ["New York", "Missoula", "Chicago", "Bozeman", "Birmingham", "Austin", "Sacramento"]<newline/>
+    city_list = ["New York", "Missoula", "Chicago", "Bozeman", "Birmingham", "Austin", "Sacramento"]
+
     # Usage of the max() funtion
-    print(max(num_list))<newline/>
+    print(max(num_list))
+
     # max() function works for strings as well
-    print(max(city_list))<newline/>
+    print(max(city_list))
+    
     # Usage of the min() funtion which also works for strings
-    print(min(num_list))<newline/>
-    print(min(city_list))<newline/>
+    print(min(num_list))
+
+    print(min(city_list))
+
     # sum() only works for a list of numbers
-    print(sum(num_list))<newline/><newline/>
+    print(sum(num_list))
     </code>
     <para id="para-00004">The above code's output is:</para>
     <code class="python" lang="python">

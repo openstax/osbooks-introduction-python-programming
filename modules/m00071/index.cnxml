@@ -26,7 +26,8 @@
     <para id="para-00007">Creating a list of squares using a for loop.</para>
     <code class="python" lang="python">
     # Create an empty List.
-    squares_list = []<newline/>
+    squares_list = []
+
     # Add items to a list, as squares of numbers starting at 0 and ending at 9.
     for i in range(10):
       squares_list.append(i*i)
@@ -42,7 +43,8 @@
     <para id="para-00010">A list comprehension can be used to create a list based on another list. In line 6, the for loop is written on the list <code class="python inline-code">poem_lines</code>.</para>
     <code class="python" lang="python">
     # Create a list of words
-    words_list = ["one", "two", "red", "blue"]<newline/>
+    words_list = ["one", "two", "red", "blue"]
+    
     # Use a list comprehension to create a new list called poem_lines
     # Inserting the word "fish" attached to each word in words_list
     poem_lines = [w + " fish" for w in words_list]

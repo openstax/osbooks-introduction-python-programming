@@ -65,7 +65,7 @@
     <figure id="fig-00001">
     <title>The diamond problem.</title>
     <media alt="">
-    <image mime-type="image/jpg" src="../../media/Python_13_5_image1.png"/>
+    <image mime-type="image/jpg" src="../../media/Python_13_05_001.png"/>
     </media>
     <caption>If both Dessert and BakedGood override a Food method, the overridden Food method that ApplePie inherits is ambiguous. Thus, diamond shaped inheritance should be avoided.</caption>
     </figure>

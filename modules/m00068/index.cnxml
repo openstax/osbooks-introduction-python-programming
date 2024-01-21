@@ -55,15 +55,19 @@
     <code class="python" lang="python">
     # Setup a list of numbers
     num_list = [38, 92, 23, 16]
-    print(num_list)<newline/>
+    print(num_list)
+
     # Sort the list
     num_list.sort()
-    print(num_list)<newline/>
+    print(num_list)
+
     # Setup a list of words
-    dance_list = ["Stepping", "Ballet", "Salsa", "Kathak", "Hopak", "Flamenco", "Dabke"]<newline/>
+    dance_list = ["Stepping", "Ballet", "Salsa", "Kathak", "Hopak", "Flamenco", "Dabke"]
+
     # Reverse the list
     dance_list.reverse()
-    print(dance_list)<newline/>
+    print(dance_list)
+
     # Sort the list
     dance_list.sort()
     print(dance_list)
@@ -78,7 +82,7 @@
     </example>
     <note class="learning-questions" id="note-00003">
     <title>sort() and reverse() methods</title>
-    <para id="para-00009">Use the following list for the questions below.<newline/>
+    <para id="para-00009">Use the following list for the questions below.
     <code class="python inline-code">board_games = ["go", "chess", "scrabble", "checkers"]</code></para>
     <exercise id="exer-00004">
     <problem id="prob-00004">
