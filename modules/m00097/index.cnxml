@@ -55,7 +55,7 @@
     <note class="learning-questions" id="note-00004">
     <title>Using super()</title>
     <para id="para-00007">Consider the following program.</para>
-    <code class="python" lang="python">
+    <code class="python line-numbering" lang="python">
     class Polygon:
       def __init__(self, num_sides=3):
         self.num_sides = num_sides<newline/>

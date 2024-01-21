@@ -73,7 +73,7 @@
     <note class="learning-questions" id="note-00004">
     <title>instances and __init__()</title>
     <para id="para-00010">Consider the example below:</para>
-    <code class="python" lang="python">
+    <code class="python line-numbering" lang="python">
     class Rectangle:
       def __init__(self):
         self.length = 1
