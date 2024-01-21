@@ -151,7 +151,7 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_06_06_Coin-combinations.html"/>
     </media>
     </note>
-    <note class="practice-program" id="note-00005">
+    <!-- <note class="practice-program" id="note-00005">
     <title>Generate random coin toss</title>
     <para id="para-00017">Write a recursive function combi_H_T() that given a certain number of coin tosses generates a sequence of heads ('H') and tails ('T') generated at random.</para>
     <para id="para-00018">Ex: For 5 coin tosses the program may print the output shown below.</para>
@@ -161,6 +161,6 @@
     <media alt="generate_random_coin_toss_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_06_07_Generate-random-coin-toss.html"/>
     </media>
-    </note>
+    </note>-->
     </content>
 </document>

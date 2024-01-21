@@ -148,8 +148,8 @@
     <title>United countries</title>
     <para id="para-00022">Write a program that prompts the user to input a word and a filename. The program should print each line of the file that contains the word. Here is an example run of the program (user input in bold):</para>
     <code class="python" lang="python">
-    Enter a word: United
-    Enter a filename: countries.csv
+    Enter a word: <emphasis effect="bold">United</emphasis>
+    Enter a filename: <emphasis effect="bold">countries.csv</emphasis>
     United Arab Emirates,9890402,83600,118
     United Kingdom,67886011,241930,281
     United States of America,331002651,9147420,36
@@ -158,11 +158,11 @@
     <para id="para-00024">The user might incorrectly type the filename (Ex: <!--<kbd>-->countries.txt<!--</kbd>--> instead of <!--<kbd>-->countries.csv<!--</kbd>-->). Your program should output an error message if the file is not found, and keep prompting the user to input a filename until the file is found:</para>
     <code class="python" lang="python">
     ...
-    Enter a filename: countries
+    Enter a filename: <emphasis effect="bold">countries</emphasis>
     File not found: countries
-    Enter a filename: countries.txt
+    Enter a filename: <emphasis effect="bold">countries.txt</emphasis>
     File not found: countries.txt
-    Enter a filename: countries.csv
+    Enter a filename: <emphasis effect="bold">countries.csv</emphasis>
     ...
     </code>
     <para id="para-00025">Hint: Try to open the file specified by the user. A <code class="python inline-code">FileNotFoundError</code> is raised if the filename is invalid.</para>

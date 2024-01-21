@@ -111,7 +111,7 @@
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_02_Simple-Searching.html"/>
     </media>
     </note>
-    <note class="practice-program" id="note-00006">
+    <!-- <note class="practice-program" id="note-00006">
     <title>More complex searching</title>
     <para id="para-00019">Write a program that counts the number of times 23 is found in the list and prints each index where 23 was found. Your output should look as shown below.</para>
     <code class="python" lang="python">
@@ -120,6 +120,6 @@
     <media alt="more_complex_searching_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_03_More-complex-searching.html"/>
     </media>
-    </note>
+    </note>-->
     </content>
 </document>
