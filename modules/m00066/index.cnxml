@@ -78,8 +78,8 @@
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Iterating lists</title>
-    <para id="para-00010">For the following questions consider the list:
-    <code class="python inline-code">my_list = [2, 3, 5, 7, 9]</code></para>
+    <para id="para-00010">For the following questions consider the list:</para>
+    <code class="python" lang="python">my_list = [2, 3, 5, 7, 9]</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch09-m01-p04"/></para>

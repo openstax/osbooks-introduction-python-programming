@@ -30,8 +30,10 @@
 <row>
 <entry>
 <code class="python" lang="python">
-# (key, value) in dictionary.items()<newline/>
-movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+# (key, value) in dictionary.items()
+
+movies = {"The godfather": 1974, "Interstellar": 2014}
+
 print(("Interstellar", 2014) in movies.items())
 </code>
 </entry>
@@ -55,8 +57,10 @@ print(("Interstellar", 2014) in movies.items())
 <row>
 <entry>
 <code class="python" lang="python">
-# dictionary[key] operand test_value<newline/>
-movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+# dictionary[key] operand test_value
+
+movies = {"The godfather": 1974, "Interstellar": 2014}
+
 print(movies["The godfather"] &lt; 2000)
 </code>
 </entry>
@@ -80,8 +84,10 @@ print(movies["The godfather"] &lt; 2000)
 <row>
 <entry>
 <code class="python" lang="python">
-# key in dictionary.keys()<newline/>
-movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+# key in dictionary.keys()
+
+movies = {"The godfather": 1974, "Interstellar": 2014}
+
 print("Interstellar" in movies.keys())
 </code>
 </entry>
@@ -104,8 +110,10 @@ print("Interstellar" in movies.keys())
 <row>
 <entry>
 <code class="python" lang="python">
-# value in dictionary.values()<newline/>
-movies = {"The godfather": 1974, "Interstellar": 2014}<newline/>
+# value in dictionary.values()
+
+movies = {"The godfather": 1974, "Interstellar": 2014}
+
 print(2014 in movies.values())
 </code>
 </entry>
@@ -146,7 +154,8 @@ print(2014 in movies.values())
     <title>A for loop over a dictionary retrieves each key in the dictionary.</title>
     <code class="python" lang="python">
     for key in dictionary: # Loop expression
-      # Statements to execute in the loop<newline/>
+      # Statements to execute in the loop
+
     # Statements to execute after the loop
     </code>
     </note>
@@ -164,7 +173,8 @@ print(2014 in movies.values())
 <row>
 <entry>
 <code class="python" lang="python">
-zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
+
 for key, value in zip_codes.items():
   print(key, value)
 </code>
@@ -192,7 +202,8 @@ Mountain View 94030</code>
 <row>
 <entry>
 <code class="python" lang="python">
-zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
+
 for key in zip_codes.keys():
   print(key)
 </code>
@@ -221,7 +232,8 @@ Mountain View
 <row>
 <entry>
 <code class="python" lang="python">
-zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}<newline/>
+zip_codes = {"Berkeley": 94709, "Santa Cruz": 95064, "Mountain View": 94030}
+
 for value in zip_codes.values():
   print(value)
 </code>

@@ -165,17 +165,23 @@
 class Account:
   def __init__(self, name="", amount=0):
     self.name = name
-    self.amount = amount<newline/>
+    self.amount = amount
+
   def __str__(self):
-    return f"{self.name}: ${self.amount}"<newline/>
+    return f"{self.name}: ${self.amount}"
+
   def __lt__(self, other):
-    return self.amount &lt; other.amount<newline/>
+    return self.amount &lt; other.amount
+
   def __gt__(self, other):
-    return self.amount > other.amount<newline/>
+    return self.amount > other.amount
+
   def __eq__(self, other):
-    return self.amount == other.amount<newline/>
+    return self.amount == other.amount
+
 acct_a = Account("Ashe", 6492)
-acct_b = Account("Bevins", 5210)<newline/>
+acct_b = Account("Bevins", 5210)
+
 print(acct_a &lt; acct_b)
 print(acct_a > acct_b)
 acct_a.amount = 5210

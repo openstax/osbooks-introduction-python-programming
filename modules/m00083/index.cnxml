@@ -54,11 +54,14 @@
       self.make = make
       self.model = model
       self.year = year
-      self.max_mph = max_mph<newline/>
+      self.max_mph = max_mph
+
     def max_kmh(self):
-      return self.max_mph * 1.609344<newline/>
+      return self.max_mph * 1.609344
+
     def update_max(self, speed):
-      self.max_mph = speed<newline/>
+      self.max_mph = speed
+
   car_1 = ProductionCar('McLaren', 'Speedtail', 2020) # car_1.max_mph is 0.0
   car_1.update_max(250.0) # car_1.max_mph is 250.0
   print(car_1.make, car_1.model, 'reaches', car_1.max_mph, 'mph (',
@@ -71,22 +74,26 @@
   <code class="python" lang="python">
   class CoffeeOrder:
     loc = 'Cafe Coffee'
-    cls_id = 1<newline/>
+    cls_id = 1
+
     def __init__(self, size=16, milk=False, sugar=False):
       self.order_id = CoffeeOrder.cls_id
       self.cup_size = size
       self.with_milk = milk
       self.with_sugar = sugar
-      CoffeeOrder.cls_id += 1<newline/>
+      CoffeeOrder.cls_id += 1
+
     def change(self, milk, sugar):
       self.with_milk = milk
-      self.with_sugar = sugar<newline/>
+      self.with_sugar = sugar
+
     def print_order(self):
       print(CoffeeOrder.loc,'Order', self.order_id, ':', self.cup_size, 'oz')
       if self.with_milk:
         print('\twith milk')
       if self.with_sugar:
-        print('\twith sugar')<newline/>
+        print('\twith sugar')
+  
   order_1 = CoffeeOrder(8)
   order_2 = CoffeeOrder(8, True, False)
   order_1.change(False, True)

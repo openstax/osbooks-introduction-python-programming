@@ -49,7 +49,8 @@ class ClassName:
 <entry><code class="python" lang="python">
 class ClassName:
   class_attr_1 = [value]
-  class_attr_2 = [value]<newline/>
+  class_attr_2 = [value]
+
   def __init__(self):
     instance_attr_1 = [value]
     instance_attr_2 = [value]
@@ -58,13 +59,16 @@ class ClassName:
 <row>
 <entry>Methods (instance)</entry>
 <entry><code class="python" lang="python">
-class ClassName:<newline/>
+class ClassName:
+
   def __init__(self):
     instance_attr_1 = [value]
     instance_attr_2 = [value]
-    instance_attr_3 = [value]<newline/>
+    instance_attr_3 = [value]
+
   def method_1(self, val1, val2):
-    # Access/change attributes<newline/>
+    # Access/change attributes
+
   def method_2(self):
     # Access/change attributes</code></entry>
 </row>
@@ -80,7 +84,8 @@ instance_2.method_2()</code></entry>
 <entry>Overloaded multiplication operator</entry>
 <entry><code class="python" lang="python">
 class ClassName:
-  # Other methods<newline/>
+  # Other methods
+
   def __mul__(self, other):
     return ClassName(self.instance_attr_3 * other.instance_attr_3)</code></entry>
 </row>

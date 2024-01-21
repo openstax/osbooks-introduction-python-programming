@@ -66,7 +66,8 @@
     </code>
     <para id="para-00010">main.py</para>
     <code class="python" lang="python">
-    import character as c<newline/>
+    import character as c
+    
     bard_level = c.Level(1)
     bard_XP = c.XP(0)
     bard_XP.add_xp(300)

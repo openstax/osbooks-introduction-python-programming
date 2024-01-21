@@ -34,7 +34,8 @@
         self.breed = 'domestic short hair'
         self.age = 1
       def print_info(self):
-        print(self.name, 'is a ', self.age, 'yr old', self.breed)<newline/>
+        print(self.name, 'is a ', self.age, 'yr old', self.breed)
+    
     pet_1 = Cat()
     pet_2 = Cat()
     </code>
@@ -78,7 +79,8 @@
         self.length = 1
         self.width = 1
       def area(self):
-        return self.length * self.width<newline/>
+        return self.length * self.width
+    
     room_1 = Rectangle()
     room_1.length = 10
     room_1.width = 15

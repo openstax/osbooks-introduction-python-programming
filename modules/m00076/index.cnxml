@@ -64,11 +64,12 @@
     <title>String template formatting for course enrollment requests</title>
     <para id="para-00009">A dictionary object with items <code class="python inline-code">{"a": 97, "b": 98, "c": 99}</code> is created. Functions <code class="python inline-code">keys()</code>, <code class="python inline-code">values()</code>, and <code class="python inline-code">items()</code> are called to obtain keys, values, and items in the dictionary, respectively. <code class="python inline-code">list()</code> is also used to convert the output to a <code class="python inline-code">list</code> object.</para>
     <code class="python" lang="python">
-    dictionary_object = {"a": 97, "b": 98, "c": 99}<newline/>
+    dictionary_object = {"a": 97, "b": 98, "c": 99}
+
     print(dictionary_object.keys())
     print(list(dictionary_object.keys()))
     print(dictionary_object.values())
-    print(dictionary_object.items())<newline/>
+    print(dictionary_object.items())
     </code>
     <para id="para-00010">The above code's output is:</para>
     <code class="python" lang="python">

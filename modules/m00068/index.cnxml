@@ -82,8 +82,8 @@
     </example>
     <note class="learning-questions" id="note-00003">
     <title>sort() and reverse() methods</title>
-    <para id="para-00009">Use the following list for the questions below.
-    <code class="python inline-code">board_games = ["go", "chess", "scrabble", "checkers"]</code></para>
+    <para id="para-00009">Use the following list for the questions below.</para>
+    <code class="python" lang="python">board_games = ["go", "chess", "scrabble", "checkers"]</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch09-m03-p04"/></para>
