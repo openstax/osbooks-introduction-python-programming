@@ -22,7 +22,8 @@
     <title>Finding the nth Fibonacci number</title>
     <para id="para-00005">The Fibonacci function recursion is more complex with the value at n depending on 2 function calls with smaller values.</para>
     <code class="python" lang="python">
-    """ Recursive Fibonacci function """<newline/>
+    """ Recursive Fibonacci function """
+
     def fib(n):
       # Base case
       if n == 0 or n == 1:
@@ -33,9 +34,10 @@
       # Error case
       else:
         print("Fibonacci numbers begin at 0.")
-        return<newline/>
+        return
+
     # Test code
-    print(fib(7))<newline/></code>
+    print(fib(7))</code>
     <para id="para-00006">The above code's output is:</para>
     <code class="python" lang="python">
     13
@@ -73,16 +75,18 @@
     <example id="exam-00002">
     <title>Finding the GCD</title>
     <code class="python" lang="python">
-    """ Find GCD using recursive implementation of Euclid's method """<newline/>
+    """ Find GCD using recursive implementation of Euclid's method """
+
     def gcd(a, b):
       if a == b: # Base case
         return a
       elif a &lt; b: # Recursive case
         return gcd(a, b - a)
       else:
-        return gcd(a - b, a)<newline/>
+        return gcd(a - b, a)
+
     # Test code
-    print(gcd(24, 30))<newline/>
+    print(gcd(24, 30))
     </code>
     <para id="para-00012">The above code's output is:</para>
     <code class="python" lang="python">
