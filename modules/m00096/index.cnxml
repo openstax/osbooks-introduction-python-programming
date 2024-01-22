@@ -60,17 +60,21 @@
       def __init__(self):
         Employee.count += 1
         self.e_id = Employee.count
-        self.hire_year = 2023<newline/>
+        self.hire_year = 2023
+
       def emp_display(self):
-        print(f"Employee {self.e_id} hired in {self.hire_year}")<newline/>
+        print(f"Employee {self.e_id} hired in {self.hire_year}")
+
     class Developer(Employee):
       def __init__(self):
         Employee.count += 1
         self.e_id = Employee.count
         self.hire_year = 2023
-        self.lang_xp = ["Python", "C++", "Java"]<newline/>
+        self.lang_xp = ["Python", "C++", "Java"]
+
       def dev_display(self):
-        print(f"Proficient in {self.lang_xp}")<newline/>
+        print(f"Proficient in {self.lang_xp}")
+    
     emp_1 = Employee()
     dev_1 = Developer()
     </code>

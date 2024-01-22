@@ -30,15 +30,18 @@
     <code class="python" lang="python">
     class A:
       def __init__(self, a_attr=2):
-        self.a_attr = a_attr<newline/>
+        self.a_attr = a_attr
+
     class B:
       def __init__(self, b_attr=4):
-        self.b_attr = b_attr<newline/>
+        self.b_attr = b_attr
+
     class C(A, B):
       def __init__(self, a_attr=5, b_attr=10, c_attr=20):
         A.__init__(self, a_attr)
         B.__init__(self, b_attr)
-        self.c_attr = c_attr<newline/>
+        self.c_attr = c_attr
+
     b_inst = B(2)
     c_inst = C(1, 2)
     </code>
@@ -83,13 +86,17 @@
     <code class="python" lang="python">
     class Plant:
       def photosynth(self):
-        print("Photosynthesizing")<newline/>
+        print("Photosynthesizing")
+
       def eat(self):
-        print("Eating")<newline/>
+        print("Eating")
+
     class Rose(Plant):
-      pass<newline/>
+      pass
+
     class Pitcher(Plant):
-      pass<newline/>
+      pass
+    
     class VenusFlyTrap(Plant):
       pass
     </code>

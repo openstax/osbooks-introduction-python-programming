@@ -45,30 +45,37 @@
     <code class="python" lang="python">
     class ChoirMember:
       def display(self):
-        print("Current choir member")<newline/>
+        print("Current choir member")
+
     class Soprano(ChoirMember):
       def display(self):
         super().display()
-        print("Part: Soprano")<newline/>
+        print("Part: Soprano")
+
     class Soprano1(Soprano):
       def display(self):
         super().display()
-        print("Division: Soprano 1")<newline/>
+        print("Division: Soprano 1")
+
     class Alto(ChoirMember):
       def display(self):
         super().display()
-        print("Part: Alto")<newline/>
+        print("Part: Alto")
+
     class Tenor(ChoirMember):
       def display(self):
         super().display()
-        print("Part: Tenor")<newline/>
+        print("Part: Tenor")
+
     class Bass(ChoirMember):
       def display(self):
         super().display()
-        print("Part: Bass")<newline/>
+        print("Part: Bass")
+
     mem_10 = Alto()
     mem_13 = Tenor()
-    mem_15 = Soprano1()<newline/>
+    mem_15 = Soprano1()
+
     mem_10.display()
     print()
     mem_13.display()
@@ -78,9 +85,11 @@
     <para id="para-00006">The code's output is:</para>
     <code class="python" lang="python">
     Current choir member
-    Part: Alto<newline/>
+    Part: Alto
+
     Current choir member
-    Part: Tenor<newline/>
+    Part: Tenor
+
     Current choir member
     Part: Soprano
     Division: Soprano 1
@@ -92,19 +101,23 @@
     <code class="python" lang="python">
     class A:
       def __init__(self, a_attr=0):
-        self.a_attr = a_attr<newline/>
+        self.a_attr = a_attr
+
     class B(A):
       def __init__(self, a_attr=0, b_attr=0):
         super().__init__(a_attr)
-        self.b_attr = b_attr<newline/>
+        self.b_attr = b_attr
+
     class C(A):
       def __init__(self, a_attr=0, c_attr=0):
         super().__init__(a_attr)
-        self.c_attr = c_attr<newline/>
+        self.c_attr = c_attr
+
     class D(B):
       def __init__(self, a_attr=0, b_attr=0, d_attr=0):
         super().__init__(a_attr, b_attr)
-        self.d_attr = d_attr<newline/>
+        self.d_attr = d_attr
+    
     b_inst = B(2)
     c_inst = C(c_attr=4)
     d_inst = D(6, 7)

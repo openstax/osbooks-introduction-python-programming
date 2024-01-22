@@ -50,7 +50,8 @@
     <para id="para-00008">In Python, a subclass is created by including the superclass name at the top of the subclass's definition in parentheses:</para>
     <code class="python" lang="python">
     class SuperClass:
-        # SuperClass attributes and methods<newline/>
+        # SuperClass attributes and methods
+    
     class SubClass(SuperClass):
         # SubClass attributes and methods
     </code>

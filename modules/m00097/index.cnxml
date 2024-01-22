@@ -58,16 +58,19 @@
     <code class="python line-numbering" lang="python">
     class Polygon:
       def __init__(self, num_sides=3):
-        self.num_sides = num_sides<newline/>
+        self.num_sides = num_sides
+
     class Rectangle(Polygon):
       def __init__(self, ln=1, wd=1):
         super().__init__(4)
         self.length = ln
-        self.width = wd<newline/>
+        self.width = wd
+
     class Square(Rectangle):
       def __init__(self, side=1):
         super().__init__(side, side)
-        self.side = side<newline/>
+        self.side = side
+
     sq_1 = Square(5)
     print(sq_1.num_sides)</code>
     <exercise id="exer-00004">
@@ -101,15 +104,19 @@
     <code class="python" lang="python">
     class Plant:
       def display(self):
-        print("I'm a plant")<newline/>
+        print("I'm a plant")
+
     class Mint(Plant):
       def display(self):
-        print("I'm a mint")<newline/>
+        print("I'm a mint")
+
     class Lavender(Mint):
       def display(self):
-        print("I'm a lavender")<newline/>
+        print("I'm a lavender")
+
     mint_1 = Mint()
-    mint_1.display()<newline/>
+    mint_1.display()
+
     lavender_1 = Lavender()
     lavender_1.display()
     </code>
@@ -128,12 +135,14 @@
       def calc_tax(self):
         print("Calculating tax")
         total = 0.10 * self.value # To replace with calculation
-        return total<newline/>
+        return total
+
     class ContractTax:
       def calc_tax(self):
         print("Calculating contracts tax")
         total = 0.15 * self.value # To replace with calculation
-        return total<newline/>
+        return total
+    
     my_tax = ContractTax()
     my_tax.calc_tax()
     </code>

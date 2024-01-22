@@ -34,7 +34,8 @@
 <entry>Define a subclass</entry>
 <entry><code class="python" lang="python">
 class SuperClass:
-  pass<newline/>
+  pass
+
 class SubClass(SuperClass):
   pass</code></entry>
 </row>
@@ -51,7 +52,8 @@ class SubClass(SuperClass):
 <entry><code class="python" lang="python">
 class SuperClass:
   def display(self):
-    print('Superclass method')<newline/>
+    print('Superclass method')
+
 class SubClass(SuperClass):
   def display(self): # Same name as superclass method
     print('Subclass method')</code></entry>
@@ -61,13 +63,15 @@ class SubClass(SuperClass):
 <entry><code class="python" lang="python">
 class SuperClass:
   def display(self):
-    print('Superclass method')<newline/>
+    print('Superclass method')
+
 class SubClass1(SuperClass):
   def display(self):
     print('Subclass 1 method ')
 class SubClass2(SuperClass):
   def display(self):
-  print('Subclass 2 method')<newline/>
+  print('Subclass 2 method')
+
 class SubClass3(SuperClass):
   def display(self):
     print('Subclass 3 method')</code></entry>
@@ -76,9 +80,11 @@ class SubClass3(SuperClass):
 <entry>Implement multiple inheritance</entry>
 <entry><code class="python" lang="python">
 class SuperClass1:
-    pass<newline/>
+    pass
+
 class SuperClass2:
-    pass<newline/>
+    pass
+
 class SubClass(SuperClass1, SuperClass2):
     pass</code></entry>
 </row>
