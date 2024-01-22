@@ -35,13 +35,15 @@
     <title>DataFrame indexing</title>
     <para id="para-00004">Given the following code, respond to the following questions.</para>
     <code class="python" lang="python">
-    import pandas as pd<newline/>
+    import pandas as pd
+
     # Create sample data
     data = {
       "A": ["a", "b", "c", "d"],
       "B": [12, 20, 5, -10],
       "C": ["C", "C", "C", "C"]
-    }<newline/>
+    }
+
     df = pd.DataFrame(data)</code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
@@ -79,13 +81,15 @@
     <title>DataFrame slicing and filtering</title>
     <para id="para-00010">Given the following code, respond to the following questions.</para>
     <code class="python" lang="python">
-    import pandas as pd<newline/>
+    import pandas as pd
+
     # Create sample data
     data = {
       "A": [1, 2, 3, 4],
       "B": [5, 6, 7, 8],
       "C": [9, 10, 11, 12]
-    }<newline/>
+    }
+
     df = pd.DataFrame(data)</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
@@ -120,13 +124,15 @@
     <para id="para-00016">To define a null value in a DataFrame, you can use the <code class="python inline-code">np.nan</code> value from the NumPy library. Assuming that the following code is given, the table below outlines examples of identifying and removing <code class="python inline-code">Null</code> entries.</para>
     <code class="python" lang="python">
     import pandas as pd
-    import numpy as np<newline/>
+    import numpy as np
+
     # Create sample data
     data = {
       "Column 1": ["A", "B", "C", "D", "E"],
       "Column 2": [np.NAN, 200, 500, 0, -10],
       "Column 3": [True, True, False, np.NaN, np.NaN]
-    }<newline/>
+    }
+    
     df = pd.DataFrame(data)</code>
     <table summary=" " id="table-00101">
       <title/>

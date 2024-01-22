@@ -105,16 +105,20 @@
 </row>
 <row>
 <entry><code class="python" lang="python">
-import matplotlib.pyplot as plt<newline/>
+import matplotlib.pyplot as plt
+
 # Data
 categories = ["Course A", "Course B", "Course C"]
-values = [25, 40, 30]<newline/>
+values = [25, 40, 30]
+
 # Create the bar chart
-fig = plt.bar(categories, values)<newline/>
+fig = plt.bar(categories, values)
+
 # Customize the chart
 plt.title("Number of students in each course')
 plt.xlabel("Courses")
-plt.ylabel("Number of students")<newline/>
+plt.ylabel("Number of students")
+
 # Display the chart
 plt.show()</code></entry>
 <entry><media display="inline" alt="Bar chart example">
@@ -145,17 +149,21 @@ plt.show()</code></entry>
 </row>
 <row>
 <entry><code class="python" lang="python">
-import matplotlib.pyplot as plt<newline/>
+import matplotlib.pyplot as plt
+
 # Data
 month = ["Jan", "Feb", "Mar", "Apr", "May"]
-inflation = [6.41, 6.04, 4.99, 4.93, 4.05]<newline/>
+inflation = [6.41, 6.04, 4.99, 4.93, 4.05]
+
 # Create the line chart
 plt.plot(month, inflation, marker="o", 
-linestyle="-", color="blue")<newline/>
+linestyle="-", color="blue")
+
 # Customize the chart
 plt.title("Inflation trend in 2023")
 plt.xlabel("Month")
-plt.ylabel("Inflation")<newline/>
+plt.ylabel("Inflation")
+
 # Display the chart
 plt.show()
 </code></entry>
@@ -187,16 +195,20 @@ plt.show()
 </row>
 <row>
 <entry><code class="python" lang="python">
-import matplotlib.pyplot as plt<newline/>
+import matplotlib.pyplot as plt
+
 # Data
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-y = [10, 8, 6, 4, 2, 5, 7, 9, 3, 1]<newline/>
+y = [10, 8, 6, 4, 2, 5, 7, 9, 3, 1]
+
 # Create the scatter plot
-plt.scatter(x, y, marker="o", color="red")<newline/>
+plt.scatter(x, y, marker="o", color="red")
+
 # Customize the chart
 plt.title("Scatter Plot Example")
 plt.xlabel("X")
-plt.ylabel("Y")<newline/>
+plt.ylabel("Y")
+
 # Display the chart
 plt.show()</code></entry>
 <entry><media display="inline" alt="Scatter plot example">
@@ -227,15 +239,19 @@ plt.show()</code></entry>
 <row>
 <entry><code class="python" lang="python">
 import matplotlib.pyplot as plt
-import numpy as np<newline/>
+import numpy as np
+
 # Data: random 1000 samples
-data = np.random.randn(1000)<newline/>
+data = np.random.randn(1000)
+
 # Create the histogram
-plt.hist(data, bins=30, edgecolor="black")<newline/>
+plt.hist(data, bins=30, edgecolor="black")
+
 # Customize the chart
 plt.title("Histogram of random values")
 plt.xlabel("Values")
-plt.ylabel("Frequency")<newline/>
+plt.ylabel("Frequency")
+
 # Display the chart
 plt.show()</code></entry>
 <entry><media display="inline" alt="Histogram plot example">
@@ -267,15 +283,19 @@ plt.show()</code></entry>
 <row>
 <entry><code class="python" lang="python">
 import matplotlib.pyplot as plt
-import numpy as np<newline/>
+import numpy as np
+
 # Data: random 100 samples
-data = [np.random.normal(0, 5, 100)]<newline/>
+data = [np.random.normal(0, 5, 100)]
+
 # Create the box plot
-plt.boxplot(data)<newline/>
+plt.boxplot(data)
+
 # Customize the chart
 plt.title("Box Plot of random values")
 plt.xlabel("Data Distribution")
-plt.ylabel("Values")<newline/>
+plt.ylabel("Values")
+
 # Display the chart
 plt.show()</code></entry>
 <entry><media display="inline" alt="Box plot example">
@@ -302,16 +322,20 @@ plt.show()</code></entry>
 <entry>Bar plot</entry>
 <entry><para id="para-00013"><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</para></entry>
 <entry><code class="python" lang="python">
-import matplotlib.pyplot as plt<newline/>
+import matplotlib.pyplot as plt
+
 # Data
 categories = ["Course A", "Course B", "Course C"]
-values = [25, 40, 30]<newline/>
+values = [25, 40, 30]
+
 # Create the bar chart
-fig = plt.bar(categories, values)<newline/>
+fig = plt.bar(categories, values)
+
 # Customize the chart
 plt.title("Number of students in each course')
 plt.xlabel("Courses")
-plt.ylabel("Number of students")<newline/>
+plt.ylabel("Number of students")
+
 # Display the chart
 plt.show()</code></entry>
 <entry><media display="inline" alt="Bar chart example">
@@ -323,16 +347,20 @@ plt.show()</code></entry>
     <entry>Line plot</entry>
     <entry><para id="para-00014"><code class="python inline-code">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</para></entry>
     <entry><code class="python" lang="python">
-    import matplotlib.pyplot as plt<newline/>
+    import matplotlib.pyplot as plt
+
     # Data
     month = ["Jan", "Feb", "Mar", "Apr", "May"]
-    inflation = [6.41, 6.04, 4.99, 4.93, 4.05]<newline/>
+    inflation = [6.41, 6.04, 4.99, 4.93, 4.05]
+
     # Create the line chart
-    plt.plot(month, inflation, marker="o", linestyle="-", color="blue")<newline/>
+    plt.plot(month, inflation, marker="o", linestyle="-", color="blue")
+
     # Customize the chart
     plt.title("Inflation trend in 2023")
     plt.xlabel("Month")
-    plt.ylabel("Inflation")<newline/>
+    plt.ylabel("Inflation")
+
     # Display the chart
     plt.show()
     </code></entry>
@@ -344,16 +372,20 @@ plt.show()</code></entry>
     <entry>Scatter plot</entry>
     <entry><para id="para-00015"><code class="python inline-code">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots points representing <code class="python inline-code">(x, y)</code> pairs.</para></entry>
     <entry><code class="python" lang="python">
-    import matplotlib.pyplot as plt<newline/>
+    import matplotlib.pyplot as plt
+
     # Data
     x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    y = [10, 8, 6, 4, 2, 5, 7, 9, 3, 1]<newline/>
+    y = [10, 8, 6, 4, 2, 5, 7, 9, 3, 1]
+
     # Create the scatter plot
-    plt.scatter(x, y, marker="o", color="red")<newline/>
+    plt.scatter(x, y, marker="o", color="red")
+
     # Customize the chart
     plt.title("Scatter Plot Example")
     plt.xlabel("X")
-    plt.ylabel("Y")<newline/>
+    plt.ylabel("Y")
+
     # Display the chart
     plt.show()</code></entry>
     <entry><media display="inline" alt="Scatter plot example">
@@ -365,15 +397,19 @@ plt.show()</code></entry>
     <entry><para id="para-00016"><code class="python inline-code">plt.hist(x)</code> function takes in one input <code class="python inline-code">x</code>, and plots a histogram of values in <code class="python inline-code">x</code> to show distribution or trend.</para></entry>
     <entry><code class="python" lang="python">
     import matplotlib.pyplot as plt
-    import numpy as np<newline/>
+    import numpy as np
+
     # Data: random 1000 samples
-    data = np.random.randn(1000)<newline/>
+    data = np.random.randn(1000)
+
     # Create the histogram
-    plt.hist(data, bins=30, edgecolor="black")<newline/>
+    plt.hist(data, bins=30, edgecolor="black")
+
     # Customize the chart
     plt.title("Histogram of random values")
     plt.xlabel("Values")
-    plt.ylabel("Frequency")<newline/>
+    plt.ylabel("Frequency")
+
     # Display the chart
     plt.show()</code></entry>
     <entry><media display="inline" alt="Histogram example">
@@ -385,15 +421,19 @@ plt.show()</code></entry>
     <entry><para id="para-00017"><code class="python inline-code">plt.boxplot(x)</code> function takes in one input <code class="python inline-code">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code">x</code>.</para></entry>
     <entry><code class="python" lang="python">
     import matplotlib.pyplot as plt
-    import numpy as np<newline/>
+    import numpy as np
+
     # Data: random 100 samples
-    data = [np.random.normal(0, 5, 100)]<newline/>
+    data = [np.random.normal(0, 5, 100)]
+
     # Create the box plot
-    plt.boxplot(data)<newline/>
+    plt.boxplot(data)
+
     # Customize the chart
     plt.title("Box Plot of random values")
     plt.xlabel("Data Distribution")
-    plt.ylabel("Values")<newline/>
+    plt.ylabel("Values")
+    
     # Display the chart
     plt.show()</code></entry>
     <entry><media display="inline" alt="boxplot example">

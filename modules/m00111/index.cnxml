@@ -119,15 +119,18 @@
 <row>
 <entry>DataFrame from a Dictionary</entry>
 <entry><code class="python" lang="python">
-import pandas as pd<newline/>
+import pandas as pd
+
 # Create a dictionary of columns
 data = {
   "Name": ["Emma", "Gireeja", "Sophia"],
   "Age": [15, 28, 22],
   "City": ["Dubai", "London", "San Jose"]
-}<newline/>
+}
+
 # Create a DataFrame from the dictionary
-df = pd.DataFrame(data)<newline/>
+df = pd.DataFrame(data)
+
 # Display the DataFrame
 df</code></entry>
 <entry>
@@ -169,17 +172,21 @@ df</code></entry>
 <row>
 <entry>DataFrame from a list</entry>
 <entry><code class="python" lang="python">
-import pandas as pd<newline/>
+import pandas as pd
+
 # Create a list of rows
 data = [
   ["Emma", 15, "Dubai"],
   ["Gireeja", 28, "London"],
   ["Sophia", 22, "San Jose"]
-]<newline/>
+]
+
 # Define column labels
-columns = ["Name", "Age", "City"]<newline/>
+columns = ["Name", "Age", "City"]
+
 # Create a DataFrame from list using column labels
-df = pd.DataFrame(data, columns=columns)<newline/>
+df = pd.DataFrame(data, columns=columns)
+
 # Display the DataFrame
 df</code></entry>
 <entry>
@@ -222,17 +229,21 @@ df</code></entry>
 <entry>DataFrame from a NumPy array</entry>
 <entry><code class="python" lang="python">
 import numpy as np
-import pandas as pd<newline/>
+import pandas as pd
+
 # Create a NumPy array
 data = np.array([
   [1, 0, 0],
   [0, 1, 0],
   [2, 3, 4]
-])<newline/>
+])
+
 # Define column labels
-columns = ["A", "B", "C"]<newline/>
+columns = ["A", "B", "C"]
+
 # Create a DataFrame from the NumPy array
-df = pd.DataFrame(data, columns=columns)<newline/>
+df = pd.DataFrame(data, columns=columns)
+
 # Display the DataFrame
 df</code></entry>
 <entry>
@@ -275,9 +286,11 @@ df</code></entry>
 <row>
 <entry>DataFrame from a CSV file</entry>
 <entry><code class="python" lang="python">
-import pandas as pd<newline/>
+import pandas as pd
+
 # Read the CSV file into a DataFrame
-df = pd.read_csv("data.csv")<newline/>
+df = pd.read_csv("data.csv")
+
 # Display the DataFrame
 df</code></entry>
 <entry>The content of the CSV file will be printed in a tabular format.</entry>
@@ -286,9 +299,11 @@ df</code></entry>
 <row>
 <entry>DataFrame from a Excel file</entry>
 <entry><code class="python" lang="python">
-import pandas as pd<newline/>
+import pandas as pd
+
 # Read the Excel file into a DataFrame
-df = pd.read_excel("data.xlsx")<newline/>
+df = pd.read_excel("data.xlsx")
+
 # Display the DataFrame
 df</code></entry>
 <entry>The content of the Excel file will be printed in a tabular format.</entry>
@@ -321,7 +336,8 @@ df</code></entry>
     <para id="para-00013">Pandas library provides functions and techniques to explore, manipulate, and gain insights from the data. Assuming that the following code is given, some key functions that can be used to analyze a DataFrame are listed in the table below.</para>
     <code class="python" lang="python">
     import pandas as pd
-    import numpy as np<newline/>
+    import numpy as np
+    
     # Create a sample DataFrame
     days = {
       'Season': ['Summer', 'Summer', 'Fall', 'Winter', 'Fall', 'Winter'],

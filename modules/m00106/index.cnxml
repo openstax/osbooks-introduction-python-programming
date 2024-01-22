@@ -21,20 +21,24 @@
     <title>Invalid pizza size</title>
     <para id="para-00003">The following class represents a pizza for sale. The <code class="python inline-code">SIZES</code> dictionary maps an abbreviation to a size's name and price. Line 11 checks if the size received by the constructor is in the dictionary. Line 12 raises a <code class="python inline-code">ValueError</code> with specific error message.</para>
     <code class="python" lang="python">
-    class Pizza:<newline/>
+    class Pizza:
+
         SIZES = {
             "S": ("Small", 5.99),
             "M": ("Medium", 7.99),
             "L": ("Large", 9.99),
             "XL": ("X-Large", 11.99),
-        }<newline/>
+        }
+
         def __init__(self, size):
             if size not in Pizza.SIZES:
               raise ValueError(f"Unknown size '{size}'")
-            self.size = size<newline/>
+            self.size = size
+
         def __str__(self):
             name, price = Pizza.SIZES[self.size]
-            return f"{name} pizza for ${price}"<newline/>
+            return f"{name} pizza for ${price}"
+    
     if __name__ == "__main__":
         p1 = Pizza("L")
         print(p1)

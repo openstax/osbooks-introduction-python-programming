@@ -61,27 +61,35 @@
     91
     </code>
     <code class="python" lang="python">
-    """Demonstrating read() and readlines()"""<newline/>
+    """Demonstrating read() and readlines()"""
+
     # Using read()
     # Open the file and associate with a file object
-    infile = open("input.txt")<newline/>
+    infile = open("input.txt")
+
     # Read the contents of the file into a string
-    str1 = infile.read()<newline/>
+    str1 = infile.read()
+
     # Print str1
     print("Result of using read():")
-    print(str1)<newline/>
+    print(str1)
+
     # Always close the file once done using the file
-    infile.close()<newline/>
+    infile.close()
+    
     # Using read()
     # Open the file and associate with a file object
-    infile2 = open("input.txt")<newline/>
+    infile2 = open("input.txt")
+
     # Read the contents of the file into a string list
-    str_list = infile2.readlines()<newline/>
+    str_list = infile2.readlines()
+
     # Printing the third item in the string list.
     print("Result of using readlines() printing the third item in the string list:")
-    print(str_list[2])<newline/>
+    print(str_list[2])
+
     # Always close the file once done using the file
-    infile2.close()<newline/>
+    infile2.close()
     </code>
     <para id="para-00009">The code's output is:</para>
     <code class="python" lang="python">
@@ -135,7 +143,7 @@
     </note>
     <note class="practice-program" id="note-00006">
     <title>Reading from a file line by line.</title>
-    <para id="para-00016">The file input.txt is shown. The file represents a set of integers. Line 1 of the file specifies how many integers follow. Write a program that reads from this file and determines the average of the numbers following the first line.</para><newline/>
+    <para id="para-00016">The file input.txt is shown. The file represents a set of integers. Line 1 of the file specifies how many integers follow. Write a program that reads from this file and determines the average of the numbers following the first line.</para>
     <para id="para-00017">input.txt</para>
     <code class="python" lang="python">
     n: 5

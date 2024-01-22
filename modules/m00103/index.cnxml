@@ -77,27 +77,36 @@
     <example id="exam-00001">
     <title>Writing and appending to a file.</title>
     <code class="python" lang="python">
-    """Operations for writing and appending to files."""<newline/>
+    """Operations for writing and appending to files."""
+
     # Create a new file
-    opfile = open("output.txt", 'w')<newline/>
+    opfile = open("output.txt", 'w')
+
     # Writing to the file
-    opfile.write("Writing to a new file.")<newline/>
+    opfile.write("Writing to a new file.")
+
     # To add another line the newline character must be used
-    opfile.write("\nSecond line.")<newline/>
+    opfile.write("\nSecond line.")
+
     # Ensure changes are saved by closing the file
-    opfile.close()<newline/>
+    opfile.close()
+
     # Read and display the contents of the file
     infile = open("output.txt")
     print("\nRead the original file:\n")
     print(infile.read())
-    infile.close()<newline/><newline/>
+    infile.close()
+
     # Reopen the file in append mode to add to the file
-    opfile = open("output.txt", 'a')<newline/>
+    opfile = open("output.txt", 'a')
+
     # Note the use of newline characters
     opfile.write("\nAdding to the file.")
-    opfile.write("\nAdding another line.")<newline/>
+    opfile.write("\nAdding another line.")
+
     # Ensure changes are saved by closing the file
-    opfile.close()<newline/>
+    opfile.close()
+
     # Read and display the contents of the modified file
     infile = open("output.txt")
     print("\nRead the modified file:\n")
@@ -105,11 +114,14 @@
     infile.close()
     </code>
     <para id="para-00011">The code's output is:</para>
-    <code class="python" lang="python"><newline/>
-    Read the original file:<newline/>
+    <code class="python" lang="python">
+    Read the original file:
+
     Writing to a new file.
-    Second line.<newline/>
-    Read the modified file:<newline/>
+    Second line.
+
+    Read the modified file:
+
     Writing to a new file.
     Second line.
     Adding to the file.
@@ -153,7 +165,7 @@
     <note class="practice-program" id="note-00005">
     <title>Writing to an existing file</title>
     <para id="para-00017">Add 2 lines of text to the file called out.log, such that out.log has 3 lines after the code executes.</para>
-    <newline/>
+    
     <para id="para-00018">Hint: Don't forget that you need a newline character.</para>
     <media alt="writing_to_an_existing_file_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_03_04_Writing-to-an-existing-file.html"/>

@@ -24,19 +24,19 @@
     <tgroup cols="3">
     <thead>
     <row>
-    <entry>Operating System<newline/><newline/></entry>
+    <entry>Operating System</entry>
     <entry>File location</entry>
     <entry><para id="para-00101"><code class="python inline-code">open()</code> function example</para></entry>
     </row>
     </thead>
     <tbody>
     <row>
-    <entry>Mac<newline/><newline/></entry>
+    <entry>Mac</entry>
     <entry><para id="para-00102"><code class="python inline-code">/users/student/</code></para></entry>
     <entry><para id="para-00103"><code class="python inline-code">fileobj = open("/users/student/output.txt")</code></para></entry>
     </row>
     <row>
-    <entry>Linux<newline/><newline/></entry>
+    <entry>Linux</entry>
     <entry><para id="para-00104"><code class="python inline-code">/usr/code/</code></para></entry>
     <entry><para id="para-00105"><code class="python inline-code">fileobj = open("/usr/code/output.txt")</code></para></entry>
     </row>
@@ -93,17 +93,21 @@
     <code class="python" lang="python">
     """Processing a CSV file."""
     # Open the CSV file for reading
-    file_obj = open("books.csv")<newline/>
+    file_obj = open("books.csv")
+
     # Rows are separated by newline \n characters, so readlines() can be used to read in all rows into a string list
-    csv_rows = file_obj.readlines()<newline/>
-    list_csv = []<newline/>
+    csv_rows = file_obj.readlines()
+
+    list_csv = []
+
     # Remove \n characters from each row and split by comma and save into a 2D structure
     for row in csv_rows:
       # Remove \n character
       row = row.strip("\n")
       # Split using commas
       cells = row.split(",")
-      list_csv.append(cells)<newline/>
+      list_csv.append(cells)
+    
     # Print result
     print(list_csv)
     </code>
