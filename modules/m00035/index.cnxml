@@ -100,7 +100,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><emphasis effect="italics">else statement</emphasis></entry>
+    <entry>else statement</entry>
     <entry><code class="python" lang="python">
     # Statements before
 
@@ -113,7 +113,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><emphasis effect="italics">elif statement</emphasis></entry>
+    <entry>elif statement</entry>
     <entry><code class="python" lang="python">
     # Statements before
 
