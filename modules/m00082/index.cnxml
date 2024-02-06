@@ -179,7 +179,7 @@
     Jules Laurent
     </code>
     <para id="para-00026">The output is:</para>
-    <code class="python" lang="python">
+    <code>
     Passenger Jules Laurent departs on flight # 2121 at 11:45 from KEF D22B in seat 12B
     </code>
     <media alt="creating_a_class_for_an_airline_s_flight_tickets_program">
