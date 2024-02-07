@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Understand the concept of sorting.</item>
-    <item>Use built-in <code class="python inline-code">sort()</code> and <code class="python inline-code">reverse()</code> methods.</item>
+    <item>Use built-in <code class="python inline-code" lang="python">sort()</code> and <code class="python inline-code" lang="python">reverse()</code> methods.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -44,11 +44,11 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title>Using <code class="python inline-code">sort()</code> and <code class="python inline-code">reverse()</code></title>
+    <title>Using <code class="python inline-code" lang="python">sort()</code> and <code class="python inline-code" lang="python">reverse()</code></title>
     <para id="para-00007">Python provides methods for arranging elements in a list.
     <list id="list-00002">
-    <item>The <code class="python inline-code">sort()</code> method arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters leading to unexpected results. Ex: 'A' is ordered before 'a' in ascending order but so is 'G', thus "Gail" comes before "apple".</item>
-    <item>The <code class="python inline-code">reverse()</code> method reverses the elements in a list.</item>
+    <item>The <code class="python inline-code" lang="python">sort()</code> method arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters leading to unexpected results. Ex: 'A' is ordered before 'a' in ascending order but so is 'G', thus "Gail" comes before "apple".</item>
+    <item>The <code class="python inline-code" lang="python">reverse()</code> method reverses the elements in a list.</item>
     </list></para>
     <example id="exam-00001">
     <title>Sorting and reversing lists</title>

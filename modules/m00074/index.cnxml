@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Describe the structure of a dictionary object.</item>
-    <item>Use <code class="python inline-code">type()</code> to identify the type of a dictionary object.</item>
+    <item>Use <code class="python inline-code" lang="python">type()</code> to identify the type of a dictionary object.</item>
     <item>Explain why a dictionary object does not have duplicate key values.</item>
     </list>
     </section>
@@ -26,7 +26,7 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Dictionary basics</title>
-    <para id="para-00003">Given the dictionary object <code class="python inline-code">days = {"Sunday": 1, "Monday": 2, "Tuesday": 3}</code>, answer the following questions.</para>
+    <para id="para-00003">Given the dictionary object <code class="python inline-code" lang="python">days = {"Sunday": 1, "Monday": 2, "Tuesday": 3}</code>, answer the following questions.</para>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch10-m01-p01"/></para>
@@ -55,7 +55,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Dictionary type and properties</title>
-    <para id="para-00008">Given the dictionary object <code class="python inline-code">encoding = {"a": 97, "b": 98, "A": 65, "B": 66}</code>, answer the following questions.</para>
+    <para id="para-00008">Given the dictionary object <code class="python inline-code" lang="python">encoding = {"a": 97, "b": 98, "A": 65, "B": 66}</code>, answer the following questions.</para>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch10-m01-p04"/></para>

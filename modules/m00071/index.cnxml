@@ -18,11 +18,11 @@
     <title>List comprehensions</title>
     <para id="para-00002">A <term id="term-00001">list comprehension</term> is a Python statement to compactly create a new list using a pattern.</para>
     <para id="para-00003">The general form of a list comprehension statement is shown below.</para>
-    <para id="para-00004"><code class="python inline-code">list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">iterable</emphasis>]</code></para>
-    <para id="para-00005"><code class="python inline-code">list_name</code> refers to the name of a new list which can be anything and the <code class="python inline-code">for</code> is the for loop keyword. Expression defines what will become part of the new list. <code class="python inline-code">loop_variable</code> is an iterator and <code class="python inline-code">iterable</code> is an object which can be iterated such as a list or string.</para>
+    <para id="para-00004"><code class="python inline-code" lang="python">list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">iterable</emphasis>]</code></para>
+    <para id="para-00005"><code class="python inline-code" lang="python">list_name</code> refers to the name of a new list which can be anything and the <code class="python inline-code" lang="python">for</code> is the for loop keyword. Expression defines what will become part of the new list. <code class="python inline-code" lang="python">loop_variable</code> is an iterator and <code class="python inline-code" lang="python">iterable</code> is an object which can be iterated such as a list or string.</para>
     <example id="exam-00001">
     <title>Creating a new list with a list comprehension.</title>
-    <para id="para-00006">A list comprehension shown below in the second code has the same effect as the regular for loop shown in the first code. The resultant list is <code class="python inline-code">[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</code> in both cases.</para>
+    <para id="para-00006">A list comprehension shown below in the second code has the same effect as the regular for loop shown in the first code. The resultant list is <code class="python inline-code" lang="python">[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</code> in both cases.</para>
     <para id="para-00007">Creating a list of squares using a for loop.</para>
     <code class="python" lang="python">
     # Create an empty List.
@@ -36,11 +36,11 @@
     <code class="python" lang="python">
     square_list = [i*i for i in range(10)]
     </code>
-    <para id="para-00009">The expression <code class="python inline-code">i*i</code> is applied for each value of the loop_variable <code class="python inline-code">i</code>.</para>
+    <para id="para-00009">The expression <code class="python inline-code" lang="python">i*i</code> is applied for each value of the loop_variable <code class="python inline-code" lang="python">i</code>.</para>
     </example>
     <example id="exam-00002">
     <title>A Dr. Seuss poem</title>
-    <para id="para-00010">A list comprehension can be used to create a list based on another list. In line 6, the for loop is written on the list <code class="python inline-code">poem_lines</code>.</para>
+    <para id="para-00010">A list comprehension can be used to create a list based on another list. In line 6, the for loop is written on the list <code class="python inline-code" lang="python">poem_lines</code>.</para>
     <code class="python" lang="python">
     # Create a list of words
     words_list = ["one", "two", "red", "blue"]
@@ -81,8 +81,8 @@
     <section id="sect-00003">
     <title>Filtering using list comprehensions</title>
     <para id="para-00015">List comprehensions can be used to filter items from a given list. A <emphasis effect="italics">condition</emphasis> is added to the list comprehension.</para>
-    <para id="para-00016"><code class="python inline-code">list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">container</emphasis> if <emphasis effect="italics">condition</emphasis>]</code></para>
-    <para id="para-00017">In a filter list comprehension, an element is added into <code class="python inline-code">list_name</code> only if the condition is met.</para>
+    <para id="para-00016"><code class="python inline-code" lang="python">list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">container</emphasis> if <emphasis effect="italics">condition</emphasis>]</code></para>
+    <para id="para-00017">In a filter list comprehension, an element is added into <code class="python inline-code" lang="python">list_name</code> only if the condition is met.</para>
     <note class="guided-slides" id="note-00002">
     <title>Filtering a list</title>
     <media alt="filtering_list_slides">

@@ -10,17 +10,17 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Modify a list using <code class="python inline-code">append()</code>, <code class="python inline-code">remove()</code>, and <code class="python inline-code">pop()</code> list operations.</item>
+    <item>Modify a list using <code class="python inline-code" lang="python">append()</code>, <code class="python inline-code" lang="python">remove()</code>, and <code class="python inline-code" lang="python">pop()</code> list operations.</item>
     <item>Search a list using a for loop.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Using list operations to modify a list</title>
-    <para id="para-00002">An <code class="python inline-code">append()</code> operation is used to add an element to the end of a list. In programming, <term id="term-00001">append</term> means add to the end. A <code class="python inline-code">remove()</code> operation removes the specified element from a list. A <code class="python inline-code">pop()</code> operation removes the last item of a list.</para>
+    <para id="para-00002">An <code class="python inline-code" lang="python">append()</code> operation is used to add an element to the end of a list. In programming, <term id="term-00001">append</term> means add to the end. A <code class="python inline-code" lang="python">remove()</code> operation removes the specified element from a list. A <code class="python inline-code" lang="python">pop()</code> operation removes the last item of a list.</para>
     <example id="exam-00001">
     <title>Simple operations to modify a list</title>
     <para id="para-00003">The code below demonstrates simple operations for modifying a list.</para>
-    <para id="para-00004">Line 8 shows the <code class="python inline-code">append()</code> operation, line 12 shows the <code class="python inline-code">remove()</code> operation, and line 16 shows the <code class="python inline-code">pop()</code> operation. Since the <code class="python inline-code">pop()</code> operation removes the last element, no parameter is needed.</para>
+    <para id="para-00004">Line 8 shows the <code class="python inline-code" lang="python">append()</code> operation, line 12 shows the <code class="python inline-code" lang="python">remove()</code> operation, and line 16 shows the <code class="python inline-code" lang="python">pop()</code> operation. Since the <code class="python inline-code" lang="python">pop()</code> operation removes the last element, no parameter is needed.</para>
     <code class="python" lang="python">
     """Operations for adding and removing elements from a list."""
 

@@ -39,7 +39,7 @@ print(("Interstellar", 2014) in movies.items())
 </entry>
 </row>
 <row>
-<entry><para id="para-00101"><code class="python inline-code">True</code></para></entry>
+<entry><para id="para-00101"><code class="python inline-code" lang="python">True</code></para></entry>
 </row>
 </tbody>
 </tgroup>
@@ -66,7 +66,7 @@ print(movies["The godfather"] &lt; 2000)
 </entry>
 </row>
 <row>
-<entry><para id="para-00102"><code class="python inline-code">True</code></para></entry>
+<entry><para id="para-00102"><code class="python inline-code" lang="python">True</code></para></entry>
 </row>
 </tbody>
 </tgroup>
@@ -93,7 +93,7 @@ print("Interstellar" in movies.keys())
 </entry>
 </row>
 <row>
-<entry><para id="para-00103"><code class="python inline-code">True</code></para></entry>
+<entry><para id="para-00103"><code class="python inline-code" lang="python">True</code></para></entry>
 </row>
 </tbody>
 </tgroup>
@@ -119,7 +119,7 @@ print(2014 in movies.values())
 </entry>
 </row>
 <row>
-<entry><para id="para-00104"><code class="python inline-code">True</code></para></entry>
+<entry><para id="para-00104"><code class="python inline-code" lang="python">True</code></para></entry>
 </row>
 </tbody>
 </tgroup>
@@ -129,7 +129,7 @@ print(2014 in movies.values())
 
     <note class="learning-questions" id="note-00001">
     <title>Conditionals on dictionaries</title>
-    <para id="para-00003">Given the dictionary <code class="python inline-code">fruit_count = {"apple": 2, "orange": 5, "pomegranate": 1}</code>, answer the following questions.</para>
+    <para id="para-00003">Given the dictionary <code class="python inline-code" lang="python">fruit_count = {"apple": 2, "orange": 5, "pomegranate": 1}</code>, answer the following questions.</para>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch10-m04-p01"/></para>
@@ -149,7 +149,7 @@ print(2014 in movies.values())
     </section>
     <section id="sect-00003">
     <title>Looping on a dictionary</title>
-    <para id="para-00007">Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a dictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using <code class="python inline-code">keys()</code> function and are passed to the loop variable one at a time. When looping over items using <code class="python inline-code">items()</code> function, both the key and value for each item are passed to the loop variable.</para>
+    <para id="para-00007">Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a dictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using <code class="python inline-code" lang="python">keys()</code> function and are passed to the loop variable one at a time. When looping over items using <code class="python inline-code" lang="python">items()</code> function, both the key and value for each item are passed to the loop variable.</para>
     <note id="note-00002">
     <title>A for loop over a dictionary retrieves each key in the dictionary.</title>
     <code class="python" lang="python">

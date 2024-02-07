@@ -9,14 +9,14 @@
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
     <item>A dictionary in Python is a container object including key-value pairs.</item>
-    <item>The <code class="python inline-code">dict</code> type implements a dictionary in Python.</item>
+    <item>The <code class="python inline-code" lang="python">dict</code> type implements a dictionary in Python.</item>
     <item>A dictionary cannot have duplicate keys. </item>
     <item>Dictionary is a mutable object but keys in the dictionary must be immutable objects.</item>
-    <item>A dictionary can be created using curly braces or the <code class="python inline-code">dict()</code> method.</item>
-    <item>Values in the dictionary can be obtained through square bracket notation or the <code class="python inline-code">get()</code> method.</item>
-    <item>Dictionary items, keys, and values can be obtained using <code class="python inline-code">items()</code>, <code class="python inline-code">keys()</code>, and <code class="python inline-code">values()</code> methods, respectively.</item>
-    <item>Existing items can be modified or new items can be added to a dictionary using square brackets notation or the <code class="python inline-code">update()</code> method.</item>
-    <item>Items can be removed from a dictionary using the <code class="python inline-code">del</code> keyword or the <code class="python inline-code">pop()</code> method.</item>
+    <item>A dictionary can be created using curly braces or the <code class="python inline-code" lang="python">dict()</code> method.</item>
+    <item>Values in the dictionary can be obtained through square bracket notation or the <code class="python inline-code" lang="python">get()</code> method.</item>
+    <item>Dictionary items, keys, and values can be obtained using <code class="python inline-code" lang="python">items()</code>, <code class="python inline-code" lang="python">keys()</code>, and <code class="python inline-code" lang="python">values()</code> methods, respectively.</item>
+    <item>Existing items can be modified or new items can be added to a dictionary using square brackets notation or the <code class="python inline-code" lang="python">update()</code> method.</item>
+    <item>Items can be removed from a dictionary using the <code class="python inline-code" lang="python">del</code> keyword or the <code class="python inline-code" lang="python">pop()</code> method.</item>
     <item>Conditional statements can be used with a dictionary to check if a dictionary contains specific keys, values, or key-value pairs.</item>
     <item>Looping on a dictionary can be done by iterating over keys, values, or items.</item>
     <item>Nested dictionaries are dictionaries that are stored as values within another dictionary.</item>
@@ -40,7 +40,7 @@ my_dict = {key1:value1, key2:value2}
 </code></entry>
 </row>
 <row>
-<entry><para id="para-00101">Dictionary creation using the <code class="python inline-code">dict()</code> method</para></entry>
+<entry><para id="para-00101">Dictionary creation using the <code class="python inline-code" lang="python">dict()</code> method</para></entry>
 <entry><code class="python" lang="python">
 # Using a list
 my_list = [(key1, value1), (key2, value2)]

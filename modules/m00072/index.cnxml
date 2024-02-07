@@ -9,11 +9,11 @@
     <section id="sect-00001">
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
-    <item>Lists are mutable and can be easily modified by using <code class="python inline-code">append()</code>, <code class="python inline-code">remove()</code>, and <code class="python inline-code">pop()</code> operations.</item>
+    <item>Lists are mutable and can be easily modified by using <code class="python inline-code" lang="python">append()</code>, <code class="python inline-code" lang="python">remove()</code>, and <code class="python inline-code" lang="python">pop()</code> operations.</item>
     <item>Lists are iterable and can be iterated using an iterator or element indexes.</item>
-    <item>The <code class="python inline-code">sort()</code> operation arranges the elements of a list in ascending order if all the elements of the list are of the same type.</item>
-    <item>The <code class="python inline-code">reverse()</code> operation reverses a list.</item>
-    <item>The <code class="python inline-code">copy()</code> method is used to create a copy of a list.</item>
+    <item>The <code class="python inline-code" lang="python">sort()</code> operation arranges the elements of a list in ascending order if all the elements of the list are of the same type.</item>
+    <item>The <code class="python inline-code" lang="python">reverse()</code> operation reverses a list.</item>
+    <item>The <code class="python inline-code" lang="python">copy()</code> method is used to create a copy of a list.</item>
     <item>Lists have built-in functions for finding the maximum, minimum, and summation of a list for a list with only numeric values.</item>
     <item>Lists can be nested to represent multidimensional data.</item>
     <item>A list comprehension is a compact way of creating a new list, which can be used to filter items from an existing list.</item>
@@ -30,39 +30,39 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00102"><code class="python inline-code">append(element)</code></para></entry>
+    <entry><para id="para-00102"><code class="python inline-code" lang="python">append(element)</code></para></entry>
     <entry>Adds the specified element to the end of a list.</entry>
     </row>
     <row>
-    <entry><para id="para-00103"><code class="python inline-code">remove(element)</code></para></entry>
+    <entry><para id="para-00103"><code class="python inline-code" lang="python">remove(element)</code></para></entry>
     <entry>Removes the specified element from the list if the element exists.</entry>
     </row>
     <row>
-    <entry><para id="para-00104"><code class="python inline-code">pop()</code></para></entry>
+    <entry><para id="para-00104"><code class="python inline-code" lang="python">pop()</code></para></entry>
     <entry>Removes the last element of a list.</entry>
     </row>
     <row>
-    <entry><para id="para-00105"><code class="python inline-code">max(list)</code></para></entry>
+    <entry><para id="para-00105"><code class="python inline-code" lang="python">max(list)</code></para></entry>
     <entry>Returns the maximum element of the list specified.</entry>
     </row>
     <row>
-    <entry><para id="para-00106"><code class="python inline-code">min(list)</code></para></entry>
+    <entry><para id="para-00106"><code class="python inline-code" lang="python">min(list)</code></para></entry>
     <entry>Returns the maximum element of the list specified.</entry>
     </row>
     <row>
-    <entry><para id="para-00107"><code class="python inline-code">sum(list)</code></para></entry>
+    <entry><para id="para-00107"><code class="python inline-code" lang="python">sum(list)</code></para></entry>
     <entry>Returns the summation of a list composed of numbers.</entry>
     </row>
     <row>
-    <entry><para id="para-00108"><code class="python inline-code">sort()</code></para></entry>
+    <entry><para id="para-00108"><code class="python inline-code" lang="python">sort()</code></para></entry>
     <entry>Sorts a list on which the method is called in ascending order.</entry>
     </row>
     <row>
-    <entry><para id="para-00109"><code class="python inline-code">reverse()</code></para></entry>
+    <entry><para id="para-00109"><code class="python inline-code" lang="python">reverse()</code></para></entry>
     <entry>Reverses the order of elements in a list.</entry>
     </row>
     <row>
-    <entry><para id="para-00110"><code class="python inline-code">copy()</code></para></entry>
+    <entry><para id="para-00110"><code class="python inline-code" lang="python">copy()</code></para></entry>
     <entry>Makes a complete copy of a list.</entry>
     </row>
     </tbody>
