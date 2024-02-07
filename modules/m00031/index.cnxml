@@ -17,7 +17,7 @@
     </section>
     <section id="sect-00002">
     <title>Precedence</title>
-    <para id="para-00002">When an expression has multiple operators, which operator is evaluated first? Precedence rules provide the priority level of operators. Operators with the highest precedence execute first. Ex: <code class="python inline-code">1 + 2 * 3</code> is <code class="python inline-code">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code">(1 + 2) * 3</code> is <code class="python inline-code">9</code>, because parentheses take precedence over multiplication.</para>
+    <para id="para-00002">When an expression has multiple operators, which operator is evaluated first? Precedence rules provide the priority level of operators. Operators with the highest precedence execute first. Ex: <code class="python inline-code" lang="python">1 + 2 * 3</code> is <code class="python inline-code" lang="python">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code" lang="python">(1 + 2) * 3</code> is <code class="python inline-code" lang="python">9</code>, because parentheses take precedence over multiplication.</para>
     <table summary=" " id="table-00001">
     <title>Operator precedence from highest to lowest</title>
     <tgroup cols="2">
@@ -151,18 +151,18 @@
     <para id="para-00017">The PEP 8 style guide recommends consistent spacing around operators to avoid extraneous and confusing whitespace.</para>
     <list id="list-00002">
     <item>Avoid multiple spaces and an unequal amount of whitespace around operators with two operands.<newline/>
-    Avoid: <code class="python inline-code">x= y * 44</code><newline/>
-    Better: <code class="python inline-code">x = y * 44</code></item>
+    Avoid: <code class="python inline-code" lang="python">x= y * 44</code><newline/>
+    Better: <code class="python inline-code" lang="python">x = y * 44</code></item>
     <item>Avoid spaces immediately inside parentheses.<newline/>
-    Avoid: <code class="python inline-code">x = ( 4 * y )</code><newline/>
-    Better: <code class="python inline-code">x = (4 * y)</code></item>
+    Avoid: <code class="python inline-code" lang="python">x = ( 4 * y )</code><newline/>
+    Better: <code class="python inline-code" lang="python">x = (4 * y)</code></item>
     <item>Surround the following operators with one space: assignment, augment assignment, comparison, boolean.<newline/>
-    Avoid: <code class="python inline-code">x= y&lt;44</code><newline/>
-    Better: <code class="python inline-code">x = y &lt; 44</code></item>
+    Avoid: <code class="python inline-code" lang="python">x= y&lt;44</code><newline/>
+    Better: <code class="python inline-code" lang="python">x = y &lt; 44</code></item>
     <item>Consider adding whitespace around operators with lower priority.<newline/>
     Avoid:
-    <code class="python inline-code">x = 5 * z+20</code><newline/>
-    Better: <code class="python inline-code">x = 5*z + 20</code></item>
+    <code class="python inline-code" lang="python">x = 5 * z+20</code><newline/>
+    Better: <code class="python inline-code" lang="python">x = 5*z + 20</code></item>
     </list>
     </note>
     </section>

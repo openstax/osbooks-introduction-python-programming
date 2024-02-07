@@ -19,7 +19,7 @@
     </section>
     <section id="sect-00002">
     <title>bool data type</title>
-    <para id="para-00002">People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza? Ex: True or False: I like pineapple on pizza. The response is a boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for boolean, represents a binary value of either True or False. <code class="python inline-code">True</code> and <code class="python inline-code">False</code> are keywords, and capitalization is required.</para>
+    <para id="para-00002">People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza? Ex: True or False: I like pineapple on pizza. The response is a boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for boolean, represents a binary value of either True or False. <code class="python inline-code" lang="python">True</code> and <code class="python inline-code" lang="python">False</code> are keywords, and capitalization is required.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Crosswalk sign</title>
     <media alt="crosswalk_sign_slides">
@@ -71,8 +71,8 @@
     <para id="para-00010">Deciding whether a value is True or False is helpful when writing programs/statements based on decisions. Converting data types to booleans can seem unintuitive at first. Ex: Is "ice cream" True? But the conversion is actually simple.</para>
     <para id="para-00011"><term id="term-00002">bool()</term> converts a value to a boolean value, True or False.
     <list id="list-00002">
-    <item><code class="python inline-code">True</code>: any non-zero number, any non-empty string</item>
-    <item><code class="python inline-code">False</code>: 0, empty string</item>
+    <item><code class="python inline-code" lang="python">True</code>: any non-zero number, any non-empty string</item>
+    <item><code class="python inline-code" lang="python">False</code>: 0, empty string</item>
     </list></para>
     <note class="guided-slides" id="note-00003">
     <title>Converting integers, floats, and strings using bool()</title>
@@ -110,7 +110,7 @@
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Converting booleans to numeric types and strings</title>
-    <para id="para-00017">Given <code class="python inline-code">is_on = True</code>, what is the value of each expression?</para>
+    <para id="para-00017">Given <code class="python inline-code" lang="python">is_on = True</code>, what is the value of each expression?</para>
     <exercise id="exer-00012">
     <problem id="prob-00012">
     <para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch04-m01-p12"/></para>
@@ -182,7 +182,7 @@
     </note>
     <note id="note-00008">
     <title>= vs ==</title>
-    <para id="para-00030">A common mistake is using '=' for comparison instead of '=='. Ex: <code class="python inline-code">is_zero = num=0</code> will always assign is_zero and num with 0, regardless of num's original value. '=' performs assignment and will modify the variable. '==' performs comparison, does not modify the variable, and produces True or False.</para>
+    <para id="para-00030">A common mistake is using '=' for comparison instead of '=='. Ex: <code class="python inline-code" lang="python">is_zero = num=0</code> will always assign is_zero and num with 0, regardless of num's original value. '=' performs assignment and will modify the variable. '==' performs comparison, does not modify the variable, and produces True or False.</para>
     </note>
     <note id="note-00009">
       <title>Exploring further</title>

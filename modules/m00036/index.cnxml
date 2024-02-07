@@ -13,6 +13,6 @@
     <caption>credit: modification of work "Quantum Computing", by Kevin Dooley/Flickr, CC BY 2.0</caption>
     </figure>
     <para id="para-00001">A <term id="term-00001"><emphasis effect="italics">loop</emphasis></term> is a code block that runs a set of statements while a given condition is true. A loop is often used for performing a repeating task. Ex: The software on a phone repeatedly checks to see if the phone is idle. Once the time set by a user is reached, the phone is locked. Loops can also be used for iterating over lists like student names in a roster, and printing the names one at a time.</para>
-    <para id="para-00002">In this chapter two types of loops, <code class="python inline-code">for</code> loop and <code class="python inline-code">while</code> loop, are introduced. This chapter also introduces <code class="python inline-code">break</code> and <code class="python inline-code">continue</code> statements for controlling a loop's execution.</para>
+    <para id="para-00002">In this chapter two types of loops, <code class="python inline-code" lang="python">for</code> loop and <code class="python inline-code" lang="python">while</code> loop, are introduced. This chapter also introduces <code class="python inline-code" lang="python">break</code> and <code class="python inline-code" lang="python">continue</code> statements for controlling a loop's execution.</para>
     </content>
 </document>

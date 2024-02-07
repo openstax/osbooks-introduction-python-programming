@@ -10,8 +10,8 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Explain the <code class="python inline-code">for</code> loop construct.</item>
-    <item>Use a <code class="python inline-code">for</code> loop to implement repeating tasks.</item>
+    <item>Explain the <code class="python inline-code" lang="python">for</code> loop construct.</item>
+    <item>Use a <code class="python inline-code" lang="python">for</code> loop to implement repeating tasks.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -53,8 +53,8 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title><code class="python inline-code">Range()</code> function in for loop</title>
-    <para id="para-00007">A <code class="python inline-code">for</code> loop can be used for iteration and counting. The <code class="python inline-code">range()</code> function is a common approach for implementing counting in a <code class="python inline-code">for</code> loop. A <term id="term-00003">range()</term> function generates a sequence of integers between the two numbers given a step size. This integer sequence is inclusive of the start and exclusive of the end of the sequence. The <code class="python inline-code">range()</code> function can take up to three input values. Examples are provided in the table below.</para>
+    <title><code class="python inline-code" lang="python">Range()</code> function in for loop</title>
+    <para id="para-00007">A <code class="python inline-code" lang="python">for</code> loop can be used for iteration and counting. The <code class="python inline-code" lang="python">range()</code> function is a common approach for implementing counting in a <code class="python inline-code" lang="python">for</code> loop. A <term id="term-00003">range()</term> function generates a sequence of integers between the two numbers given a step size. This integer sequence is inclusive of the start and exclusive of the end of the sequence. The <code class="python inline-code" lang="python">range()</code> function can take up to three input values. Examples are provided in the table below.</para>
     <table summary=" " id="table-00001">
     <title>Using the range() function.</title>
     <tgroup cols="4">
@@ -68,51 +68,51 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00015"><code class="python inline-code">range(end)</code></para></entry>
+    <entry><para id="para-00015"><code class="python inline-code" lang="python">range(end)</code></para></entry>
     <entry><para id="para-00016"><list id="list-00002">
-    <item>Generates a sequence beginning at <code class="python inline-code">0</code> until <code class="python inline-code">end</code>.</item>
-    <item>Step size: <code class="python inline-code">1</code></item>
+    <item>Generates a sequence beginning at <code class="python inline-code" lang="python">0</code> until <code class="python inline-code" lang="python">end</code>.</item>
+    <item>Step size: <code class="python inline-code" lang="python">1</code></item>
     </list></para></entry>
-    <entry><para id="para-00017"><code class="python inline-code">range(4)</code></para></entry>
-    <entry><para id="para-00018"><code class="python inline-code">0, 1, 2, 3</code></para></entry>
+    <entry><para id="para-00017"><code class="python inline-code" lang="python">range(4)</code></para></entry>
+    <entry><para id="para-00018"><code class="python inline-code" lang="python">0, 1, 2, 3</code></para></entry>
     </row>
     <row>
-    <entry morerows="2"><para id="para-00019"><code class="python inline-code">range(start, end)</code></para></entry>
+    <entry morerows="2"><para id="para-00019"><code class="python inline-code" lang="python">range(start, end)</code></para></entry>
     <entry morerows="2"><para id="para-00020">
     <list id="list-00003">
-    <item>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code>.</item>
-    <item>Step size: <code class="python inline-code">1</code></item>
+    <item>Generates a sequence beginning at <code class="python inline-code" lang="python">start</code> until <code class="python inline-code" lang="python">end</code>.</item>
+    <item>Step size: <code class="python inline-code" lang="python">1</code></item>
     </list></para></entry>
-    <entry><para id="para-00021"><code class="python inline-code">range(0, 3)</code></para></entry>
-    <entry><para id="para-00022"><code class="python inline-code">0, 1, 2</code></para></entry>
+    <entry><para id="para-00021"><code class="python inline-code" lang="python">range(0, 3)</code></para></entry>
+    <entry><para id="para-00022"><code class="python inline-code" lang="python">0, 1, 2</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00023"><code class="python inline-code">range(2, 6)</code></para></entry>
-    <entry><para id="para-00024"><code class="python inline-code">2, 3, 4, 5</code></para></entry>
+    <entry><para id="para-00023"><code class="python inline-code" lang="python">range(2, 6)</code></para></entry>
+    <entry><para id="para-00024"><code class="python inline-code" lang="python">2, 3, 4, 5</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00025"><code class="python inline-code">range(-13, -9)</code></para></entry>
-    <entry><para id="para-00026"><code class="python inline-code">-13, -12, -11, -10</code></para></entry>
+    <entry><para id="para-00025"><code class="python inline-code" lang="python">range(-13, -9)</code></para></entry>
+    <entry><para id="para-00026"><code class="python inline-code" lang="python">-13, -12, -11, -10</code></para></entry>
     </row>
     <row>
-    <entry morerows="3"><para id="para-00027"><code class="python inline-code">range(start, end, step)</code></para></entry>
+    <entry morerows="3"><para id="para-00027"><code class="python inline-code" lang="python">range(start, end, step)</code></para></entry>
     <entry morerows="3"><para id="para-00028"><list id="list-00004">
-    <item>Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code>.</item>
-    <item>Step size: <code class="python inline-code">step</code></item></list></para></entry>
-    <entry><para id="para-00029"><code class="python inline-code">range(0, 4, 1)</code></para></entry>
-    <entry><para id="para-00030"><code class="python inline-code">0, 1, 2, 3</code></para></entry>
+    <item>Generates a sequence beginning at <code class="python inline-code" lang="python">start</code> until <code class="python inline-code" lang="python">end</code>.</item>
+    <item>Step size: <code class="python inline-code" lang="python">step</code></item></list></para></entry>
+    <entry><para id="para-00029"><code class="python inline-code" lang="python">range(0, 4, 1)</code></para></entry>
+    <entry><para id="para-00030"><code class="python inline-code" lang="python">0, 1, 2, 3</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00031"><code class="python inline-code">range(1, 7, 2)</code></para></entry>
-    <entry><para id="para-00032"><code class="python inline-code">1, 3, 5</code></para></entry>
+    <entry><para id="para-00031"><code class="python inline-code" lang="python">range(1, 7, 2)</code></para></entry>
+    <entry><para id="para-00032"><code class="python inline-code" lang="python">1, 3, 5</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00033"><code class="python inline-code">range(3, -2, -1)</code></para></entry>
-    <entry><para id="para-00034"><code class="python inline-code">3, 2, 1, 0, -1</code></para></entry>
+    <entry><para id="para-00033"><code class="python inline-code" lang="python">range(3, -2, -1)</code></para></entry>
+    <entry><para id="para-00034"><code class="python inline-code" lang="python">3, 2, 1, 0, -1</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00035"><code class="python inline-code">range(10, 0, -4)</code></para></entry>
-    <entry><para id="para-00036"><code class="python inline-code">10, 6, 2</code></para></entry>
+    <entry><para id="para-00035"><code class="python inline-code" lang="python">range(10, 0, -4)</code></para></entry>
+    <entry><para id="para-00036"><code class="python inline-code" lang="python">10, 6, 2</code></para></entry>
     </row>
     </tbody>
     </tgroup>

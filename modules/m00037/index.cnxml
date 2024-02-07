@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Explain the loop construct in Python.</item>
-    <item>Use a <code class="python inline-code">while</code> loop to implement repeating tasks.</item>
+    <item>Use a <code class="python inline-code" lang="python">while</code> loop to implement repeating tasks.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -63,7 +63,7 @@
     </section>
     <section id="sect-00003">
     <title>Counting with a while loop</title>
-    <para id="para-00007">A <code class="python inline-code">while</code> loop can be used to count up or down. A counter variable can be used in the loop expression to determine the number of iterations executed. Ex: A programmer may want to print all even numbers between 1 and 20. The task can be done by using a counter initialized with 1. In each iteration the counter's value is increased by one, and a condition can check whether the counter's value is an even number or not. The change in the counter's value in each iteration is called the <term id="term-00002">step size</term>. The step size can be any positive or negative value. If the step size is a positive number, the counter counts in ascending order, and if the step size is a negative number, the counter counts in descending order.</para>
+    <para id="para-00007">A <code class="python inline-code" lang="python">while</code> loop can be used to count up or down. A counter variable can be used in the loop expression to determine the number of iterations executed. Ex: A programmer may want to print all even numbers between 1 and 20. The task can be done by using a counter initialized with 1. In each iteration the counter's value is increased by one, and a condition can check whether the counter's value is an even number or not. The change in the counter's value in each iteration is called the <term id="term-00002">step size</term>. The step size can be any positive or negative value. If the step size is a positive number, the counter counts in ascending order, and if the step size is a negative number, the counter counts in descending order.</para>
     <example id="exam-00001">
     <title>A program printing all odd numbers between 1 and 10.</title>
     <code class="python" lang="python">

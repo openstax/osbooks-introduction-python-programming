@@ -8,13 +8,13 @@
   <content>
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
-    <item>A <code class="python inline-code">while</code> loop runs a set of statements, known as the loop body, while a given condition, known as the loop expression, is true.</item>
-    <item>A <code class="python inline-code">for</code> loop can be used to iterate over elements of a container object.</item>
-    <item>A <code class="python inline-code">range()</code> function generates a sequence of integers between the two numbers given a step size. </item>
+    <item>A <code class="python inline-code" lang="python">while</code> loop runs a set of statements, known as the loop body, while a given condition, known as the loop expression, is true.</item>
+    <item>A <code class="python inline-code" lang="python">for</code> loop can be used to iterate over elements of a container object.</item>
+    <item>A <code class="python inline-code" lang="python">range()</code> function generates a sequence of integers between the two numbers given a step size. </item>
     <item>A nested loop has one or more loops within the body of another loop.</item>
-    <item>A <code class="python inline-code">break</code> statement is used within a <code class="python inline-code">for</code> or a <code class="python inline-code">while</code> loop to allow the program execution to exit the loop once a given condition is triggered.</item>
-    <item>A <code class="python inline-code">continue</code> statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely.</item>
-    <item>A loop <code class="python inline-code">else</code> statement runs after the loop's execution is completed without being interrupted by a <code class="python inline-code">break</code> statement.</item>
+    <item>A <code class="python inline-code" lang="python">break</code> statement is used within a <code class="python inline-code" lang="python">for</code> or a <code class="python inline-code" lang="python">while</code> loop to allow the program execution to exit the loop once a given condition is triggered.</item>
+    <item>A <code class="python inline-code" lang="python">continue</code> statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely.</item>
+    <item>A loop <code class="python inline-code" lang="python">else</code> statement runs after the loop's execution is completed without being interrupted by a <code class="python inline-code" lang="python">break</code> statement.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write programs with loop constructs. The programming practice below ties together most topics presented in the chapter.</para>
     <table summary=" " id="table-00001">
@@ -28,23 +28,23 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00006"><code class="python inline-code">range(end)</code></para></entry>
+    <entry><para id="para-00006"><code class="python inline-code" lang="python">range(end)</code></para></entry>
     <entry>Generates a sequence beginning at 0 until end with step size of 1.</entry>
     </row>
     <row>
-    <entry><para id="para-00007"><code class="python inline-code">range(start, end)</code></para></entry>
-    <entry><para id="para-00015">Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with step size of 1.</para></entry>
+    <entry><para id="para-00007"><code class="python inline-code" lang="python">range(start, end)</code></para></entry>
+    <entry><para id="para-00015">Generates a sequence beginning at <code class="python inline-code" lang="python">start</code> until <code class="python inline-code" lang="python">end</code> with step size of 1.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00008"><code class="python inline-code">range(start, end, s)</code></para></entry>
-    <entry><para id="para-00016">Generates a sequence beginning at <code class="python inline-code">start</code> until <code class="python inline-code">end</code> with the step size of <code class="python inline-code">s</code>.</para></entry>
+    <entry><para id="para-00008"><code class="python inline-code" lang="python">range(start, end, s)</code></para></entry>
+    <entry><para id="para-00016">Generates a sequence beginning at <code class="python inline-code" lang="python">start</code> until <code class="python inline-code" lang="python">end</code> with the step size of <code class="python inline-code" lang="python">s</code>.</para></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Loop constructs</emphasis></entry>
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><para id="para-00009"><code class="python inline-code">while</code> loop</para></entry>
+    <entry><para id="para-00009"><code class="python inline-code" lang="python">while</code> loop</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     while expression:
@@ -54,7 +54,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><para id="para-00010"><code class="python inline-code">for</code> loop</para></entry>
+    <entry><para id="para-00010"><code class="python inline-code" lang="python">for</code> loop</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     for loop_variable in container:
@@ -64,7 +64,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><para id="para-00011">Nested <code class="python inline-code">while</code> loop</para></entry>
+    <entry><para id="para-00011">Nested <code class="python inline-code" lang="python">while</code> loop</para></entry>
     <entry><code class="python" lang="python">
     while outer_loop_expression:
       # outer loop body (1)
@@ -76,7 +76,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><para id="para-00012"><code class="python inline-code">break</code> statement</para></entry>
+    <entry><para id="para-00012"><code class="python inline-code" lang="python">break</code> statement</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     while loop_expression:
@@ -89,7 +89,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><para id="para-00013"><code class="python inline-code">continue</code> statement</para></entry>
+    <entry><para id="para-00013"><code class="python inline-code" lang="python">continue</code> statement</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     while loop_expression:
@@ -102,7 +102,7 @@
     </code></entry>
     </row>
     <row>
-    <entry><para id="para-00014">Loop <code class="python inline-code">else</code> statement</para></entry>
+    <entry><para id="para-00014">Loop <code class="python inline-code" lang="python">else</code> statement</para></entry>
     <entry><code class="python" lang="python">
     # initialization
     for loop_expression:

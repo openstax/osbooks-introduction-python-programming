@@ -28,7 +28,7 @@
     </note>
     <note id="note-00002">
     <title>Using boolean variables</title>
-    <para id="para-00005">A boolean variable already has a value of True or False and can be used directly in a condition rather than using the equality operator. Ex: <code class="python inline-code">if is_raining == True:</code> can be simplified to <code class="python inline-code">if is_raining:</code>.</para>
+    <para id="para-00005">A boolean variable already has a value of True or False and can be used directly in a condition rather than using the equality operator. Ex: <code class="python inline-code" lang="python">if is_raining == True:</code> can be simplified to <code class="python inline-code" lang="python">if is_raining:</code>.</para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Using if statements</title>

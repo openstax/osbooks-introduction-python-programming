@@ -10,8 +10,8 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Implement nested <code class="python inline-code">while</code> loops.</item>
-    <item>Implement nested <code class="python inline-code">for</code> loops.</item>
+    <item>Implement nested <code class="python inline-code" lang="python">while</code> loops.</item>
+    <item>Implement nested <code class="python inline-code" lang="python">for</code> loops.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -65,7 +65,7 @@
     </section>
     <section id="sect-00003">
     <title>Nested for loops</title>
-    <para id="para-00008">A nested <code class="python inline-code">for</code> loop can be implemented and used in the same way as a nested <code class="python inline-code">while</code> loop. A <code class="python inline-code">for</code> loop is a preferable option in cases that a loop is used for counting purposes using a <code class="python inline-code">range()</code> function or when iterating over a container object, including nested situations. Ex: ​​Iterating over multiple course rosters. The outer loop iterates over different courses, and the inner loop iterates over the names in each course roster.</para>
+    <para id="para-00008">A nested <code class="python inline-code" lang="python">for</code> loop can be implemented and used in the same way as a nested <code class="python inline-code" lang="python">while</code> loop. A <code class="python inline-code" lang="python">for</code> loop is a preferable option in cases that a loop is used for counting purposes using a <code class="python inline-code" lang="python">range()</code> function or when iterating over a container object, including nested situations. Ex: ​​Iterating over multiple course rosters. The outer loop iterates over different courses, and the inner loop iterates over the names in each course roster.</para>
     <note class="guided-slides" id="note-00003">
     <title>Nested for loops</title>
     <media alt="nested_for_loops_slides">
@@ -92,7 +92,7 @@
     </note>
     <note id="note-00005">
     <title>Mixed loops</title>
-    <para id="para-00012">The two <code class="python inline-code">for</code> and <code class="python inline-code">while</code> loop constructs can also be mixed in a nested loop construct. Ex: Printing even numbers less than a given number in a list. The outer loop can be implemented using a <code class="python inline-code">for</code> loop iterating over the provided list, and the inner loop iterates over all even numbers less than a given number from the list using a <code class="python inline-code">while</code> loop.</para>
+    <para id="para-00012">The two <code class="python inline-code" lang="python">for</code> and <code class="python inline-code" lang="python">while</code> loop constructs can also be mixed in a nested loop construct. Ex: Printing even numbers less than a given number in a list. The outer loop can be implemented using a <code class="python inline-code" lang="python">for</code> loop iterating over the provided list, and the inner loop iterates over all even numbers less than a given number from the list using a <code class="python inline-code" lang="python">while</code> loop.</para>
     <code class="python" lang="python">
     numbers = [12, 5, 3]
     
