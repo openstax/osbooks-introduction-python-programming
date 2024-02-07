@@ -22,8 +22,8 @@
     price = float(input())
     total = quantity * price
     print(total)</code>
-  <para id="para-00022"><code class="python inline-code">quantity</code> is an integer, and <code class="python inline-code">price</code> is a float. So what is the data type of <code class="python inline-code">total</code>? For input 3 and 5.0, <code class="python inline-code">total</code> is a float, and the program prints 15.0.</para>
-    <para id="para-00003">Combining an integer and a float produces a float. A float is by default printed with at least one figure after the decimal point and has as many figures as needed to represent the value. Note: Division using the <code class="python inline-code">/</code> operator always produces a float.</para>
+  <para id="para-00022"><code class="python inline-code" lang="python">quantity</code> is an integer, and <code class="python inline-code" lang="python">price</code> is a float. So what is the data type of <code class="python inline-code" lang="python">total</code>? For input 3 and 5.0, <code class="python inline-code" lang="python">total</code> is a float, and the program prints 15.0.</para>
+    <para id="para-00003">Combining an integer and a float produces a float. A float is by default printed with at least one figure after the decimal point and has as many figures as needed to represent the value. Note: Division using the <code class="python inline-code" lang="python">/</code> operator always produces a float.</para>
     <note class="guided-slides" id="note-00001">
     <title>Operations combining integers and floats</title>
     <media alt="combining_int_float_slides">
@@ -127,7 +127,7 @@
     </note>
     <note class="practice-program" id="note-00006">
     <title>Print n times</title>
-    <para id="para-00021">Write a program that reads in two strings, <code class="python inline-code">str1</code> and <code class="python inline-code">str2</code>, and an integer, <code class="python inline-code">count</code>. Concatenate the two strings with a space in between and a newline (<code class="python inline-code">"\n"</code>) at the end. Print the resulting string <code class="python inline-code">count</code> times.</para>
+    <para id="para-00021">Write a program that reads in two strings, <code class="python inline-code" lang="python">str1</code> and <code class="python inline-code" lang="python">str2</code>, and an integer, <code class="python inline-code" lang="python">count</code>. Concatenate the two strings with a space in between and a newline (<code class="python inline-code" lang="python">"\n"</code>) at the end. Print the resulting string <code class="python inline-code" lang="python">count</code> times.</para>
     <media alt="print_n_times_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_04_05_Print-n-times.html"/>
     </media>

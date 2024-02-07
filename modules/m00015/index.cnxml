@@ -18,10 +18,10 @@
     <title>Division and modulo</title>
     <para id="para-00002">Python provides two ways to divide numbers:</para>
     <list id="list-00002">
-    <item><term id="term-00001">True division</term> (<code class="python inline-code">/</code>) converts numbers to floats before dividing. Ex: <code class="python inline-code">7 / 4</code> becomes <code class="python inline-code">7.0 / 4.0</code>, resulting in <code class="python inline-code">1.75</code>.</item>
-    <item><term id="term-00002">Floor division</term> (<code class="python inline-code">//</code>) computes the quotient, or the number of times divided. Ex: <code class="python inline-code">7 // 4</code> is <code class="python inline-code">1</code>, because 4 goes into 7 one time, remainder 3. The <term id="term-00003">modulo operator</term> (<code class="python inline-code">%</code>) computes the remainder. Ex: <code class="python inline-code">7 % 4</code> is <code class="python inline-code">3</code>.</item>
+    <item><term id="term-00001">True division</term> (<code class="python inline-code" lang="python">/</code>) converts numbers to floats before dividing. Ex: <code class="python inline-code" lang="python">7 / 4</code> becomes <code class="python inline-code" lang="python">7.0 / 4.0</code>, resulting in <code class="python inline-code" lang="python">1.75</code>.</item>
+    <item><term id="term-00002">Floor division</term> (<code class="python inline-code" lang="python">//</code>) computes the quotient, or the number of times divided. Ex: <code class="python inline-code" lang="python">7 // 4</code> is <code class="python inline-code" lang="python">1</code>, because 4 goes into 7 one time, remainder 3. The <term id="term-00003">modulo operator</term> (<code class="python inline-code" lang="python">%</code>) computes the remainder. Ex: <code class="python inline-code" lang="python">7 % 4</code> is <code class="python inline-code" lang="python">3</code>.</item>
     </list>
-    <para id="para-00003">Note: The <code class="python inline-code">%</code> operator is traditionally pronounced "mod" (short for "modulo"). Ex: When reading <code class="python inline-code">7 % 4</code> out loud, a programmer would say "seven mod four."</para>
+    <para id="para-00003">Note: The <code class="python inline-code" lang="python">%</code> operator is traditionally pronounced "mod" (short for "modulo"). Ex: When reading <code class="python inline-code" lang="python">7 % 4</code> out loud, a programmer would say "seven mod four."</para>
     <note class="guided-slides" id="note-00001">
     <title>Quotient and remainder</title>
     <media alt="quotient_remainder_slides">
@@ -58,10 +58,10 @@
     <para id="para-00008">Division is useful for converting from one unit of measure to another. To convert from centimeters to meters, a variable is divided by 100. Ex: 300 centimeters, divided by 100, is 3 meters.</para>
     <para id="para-00009">Amounts often do not divide evenly as integers. 193 centimeters is 1.93 meters, or 1 meter and 93 centimeters. A program can use floor division and modulo to separate the units:</para>
     <list id="list-00003">
-    <item>The quotient, 1 meter, is <code class="python inline-code">193 // 100</code>.</item>
-    <item>The remainder, 93 centimeters, is <code class="python inline-code">193 % 100</code>.</item>
+    <item>The quotient, 1 meter, is <code class="python inline-code" lang="python">193 // 100</code>.</item>
+    <item>The remainder, 93 centimeters, is <code class="python inline-code" lang="python">193 % 100</code>.</item>
     </list>
-    <para id="para-00010">Programs often use floor division and modulo together. If one line of code floor divides by <code class="python inline-code">m</code>, the next line will likely modulo by <code class="python inline-code">m</code>. The unit <code class="python inline-code">m</code> by which an amount is divided is called the <term id="term-00004">modulus</term>. Ex: When converting centimeters to meters, the modulus is 100.</para>
+    <para id="para-00010">Programs often use floor division and modulo together. If one line of code floor divides by <code class="python inline-code" lang="python">m</code>, the next line will likely modulo by <code class="python inline-code" lang="python">m</code>. The unit <code class="python inline-code" lang="python">m</code> by which an amount is divided is called the <term id="term-00004">modulus</term>. Ex: When converting centimeters to meters, the modulus is 100.</para>
     <note class="guided-slides" id="note-00003">
     <title>Money and time</title>
     <media alt="money_time_slides">
@@ -99,7 +99,7 @@
     </code>
     <para id="para-00016">The arrival hour must be between 0 and 23. Ex: Adding 120 minutes to 23:00 should be 1:00, not 25:00. The arrival minute must be between 0 and 59. Ex: Adding 20 minutes to 8:55 should be 9:15, not 8:75.</para>
     <para id="para-00017">Hint: Multiply the current hour by 60 to convert from hours to minutes. Then calculate the arrival time, in total minutes, as an integer.</para>
-    <para id="para-00018">Your code must not use Python keywords from later chapters, such as <code class="python inline-code">if</code> or <code class="python inline-code">while</code>. The solution requires only addition, multiplication, division, and modulo.</para>
+    <para id="para-00018">Your code must not use Python keywords from later chapters, such as <code class="python inline-code" lang="python">if</code> or <code class="python inline-code" lang="python">while</code>. The solution requires only addition, multiplication, division, and modulo.</para>
     <media alt="arrival_time_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_06_09_Arrival-time.html"/>
     </media>
@@ -122,8 +122,8 @@
      Nickels: 0
      Pennies: 4
     </code>
-    <para id="para-00022">Hint: Calculate the total change, in cents, as an integer. Use the <code class="python inline-code"><emphasis effect="bold">round()</emphasis></code> function to avoid floating-point errors.</para>
-    <para id="para-00023">Your code must not use Python keywords from later chapters, such as <code class="python inline-code"><emphasis effect="bold"><emphasis effect="bold">if</emphasis></emphasis></code> or <code class="python inline-code"><emphasis effect="bold">while</emphasis></code>. The solution requires only subtraction, multiplication, division, and modulo.</para>
+    <para id="para-00022">Hint: Calculate the total change, in cents, as an integer. Use the <code class="python inline-code" lang="python"><emphasis effect="bold">round()</emphasis></code> function to avoid floating-point errors.</para>
+    <para id="para-00023">Your code must not use Python keywords from later chapters, such as <code class="python inline-code" lang="python"><emphasis effect="bold"><emphasis effect="bold">if</emphasis></emphasis></code> or <code class="python inline-code" lang="python"><emphasis effect="bold">while</emphasis></code>. The solution requires only subtraction, multiplication, division, and modulo.</para>
     <media alt="change_machine_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_06_08_Change-machine.html"/>
     </media>

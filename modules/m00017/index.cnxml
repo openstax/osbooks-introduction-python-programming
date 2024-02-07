@@ -31,7 +31,7 @@
     print( name,"should visit" , place+ "!")
     </code></item>
     </list>
-    <para id="para-00003">One might argue that missing or extra spaces do not matter. After all, the two programs above run exactly the same way. However, the "poor spacing" version is more difficult to read. Code like <code class="python inline-code">name=input</code> and <code class="python inline-code">place+</code> might lead to confusion.</para>
+    <para id="para-00003">One might argue that missing or extra spaces do not matter. After all, the two programs above run exactly the same way. However, the "poor spacing" version is more difficult to read. Code like <code class="python inline-code" lang="python">name=input</code> and <code class="python inline-code" lang="python">place+</code> might lead to confusion.</para>
     <para id="para-00004">Good programmers write code that is as easy to read as possible. That way, other programmers are more likely to understand the code. To encourage consistency, the Python community has a set of guidelines about where to put spaces and blank lines, what to name variables, how to break up long lines, and other important topics.</para>
     <note id="note-00001">
     <title>Python style guide</title>
@@ -50,36 +50,36 @@
     <tbody>
     <row>
     <entry>Parentheses: no space before or after.</entry>
-    <entry><para id="para-00105"><code class="python inline-code">print("Go team!")</code></para></entry>
-    <entry><para id="para-00106"><code class="python inline-code">print ("Go team!")</code><newline/>
-    <code class="python inline-code">print( "Go team!" )</code></para></entry>
+    <entry><para id="para-00105"><code class="python inline-code" lang="python">print("Go team!")</code></para></entry>
+    <entry><para id="para-00106"><code class="python inline-code" lang="python">print ("Go team!")</code><newline/>
+    <code class="python inline-code" lang="python">print( "Go team!" )</code></para></entry>
     </row>
     <row>
     <entry>Commas: no space before, one space after.</entry>
-    <entry><para id="para-00107"><code class="python inline-code">print("Hello", name)</code></para></entry>
-    <entry><para id="para-00108"><code class="python inline-code">print("Hello" , name)</code><newline/>
-    <code class="python inline-code">print("Hello",name)</code></para></entry>
+    <entry><para id="para-00107"><code class="python inline-code" lang="python">print("Hello", name)</code></para></entry>
+    <entry><para id="para-00108"><code class="python inline-code" lang="python">print("Hello" , name)</code><newline/>
+    <code class="python inline-code" lang="python">print("Hello",name)</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00028">Assignment: one space before and after the <code class="python inline-code">=</code>.</para></entry>
-    <entry><para id="para-00109"><code class="python inline-code">name = input("Your name? ")</code></para></entry>
-    <entry><para id="para-00110"><code class="python inline-code">name=input("Your name? ")</code><newline/>
-    <code class="python inline-code">name= input("Your name? ")</code><newline/>
-    <code class="python inline-code">name =input("Your name? ")</code></para></entry>
+    <entry><para id="para-00028">Assignment: one space before and after the <code class="python inline-code" lang="python">=</code>.</para></entry>
+    <entry><para id="para-00109"><code class="python inline-code" lang="python">name = input("Your name? ")</code></para></entry>
+    <entry><para id="para-00110"><code class="python inline-code" lang="python">name=input("Your name? ")</code><newline/>
+    <code class="python inline-code" lang="python">name= input("Your name? ")</code><newline/>
+    <code class="python inline-code" lang="python">name =input("Your name? ")</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00029">Concatenation: one space before and after the <code class="python inline-code">+</code>.</para></entry>
-    <entry><para id="para-00111"><code class="python inline-code">print("Hi", name + "!")</code></para></entry>
-    <entry><para id="para-00112"><code class="python inline-code">print("Hi", name+"!")</code><newline/>
-    <code class="python inline-code">print("Hi", name+ "!")</code><newline/>
-    <code class="python inline-code">print("Hi", name +"!")</code></para></entry>
+    <entry><para id="para-00029">Concatenation: one space before and after the <code class="python inline-code" lang="python">+</code>.</para></entry>
+    <entry><para id="para-00111"><code class="python inline-code" lang="python">print("Hi", name + "!")</code></para></entry>
+    <entry><para id="para-00112"><code class="python inline-code" lang="python">print("Hi", name+"!")</code><newline/>
+    <code class="python inline-code" lang="python">print("Hi", name+ "!")</code><newline/>
+    <code class="python inline-code" lang="python">print("Hi", name +"!")</code></para></entry>
     </row>
     <row>
     <entry>Arithmetic: use space to show lower precedence.</entry>
-    <entry><para id="para-00113"><code class="python inline-code">x**2 + 5*x - 8</code></para></entry>
-    <entry><para id="para-00114"><code class="python inline-code">x ** 2 + 5 * x - 8</code><newline/>
-    <code class="python inline-code">x ** 2+5 * x-8</code><newline/>
-    <code class="python inline-code">x**2+5*x-8</code></para></entry>
+    <entry><para id="para-00113"><code class="python inline-code" lang="python">x**2 + 5*x - 8</code></para></entry>
+    <entry><para id="para-00114"><code class="python inline-code" lang="python">x ** 2 + 5 * x - 8</code><newline/>
+    <code class="python inline-code" lang="python">x ** 2+5 * x-8</code><newline/>
+    <code class="python inline-code" lang="python">x**2+5*x-8</code></para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -123,7 +123,7 @@
            "decent respect to the opinions of mankind requires that they "
            "should declare the causes which impel them to the separation.")
     </code>
-    <para id="para-00014">For convenience, Python automatically concatenates multiple strings. The <code class="python inline-code">+</code> operator is not required in this situation.</para>
+    <para id="para-00014">For convenience, Python automatically concatenates multiple strings. The <code class="python inline-code" lang="python">+</code> operator is not required in this situation.</para>
     <note class="guided-slides" id="note-00003">
     <title>String concatenation</title>
     <media alt="string_concat_slides">
@@ -153,7 +153,7 @@
     <title>Multi-line statements</title>
     <para id="para-00018">Most statements in a Python program need only one line of code. But occasionally, longer statements need to span multiple lines. Python provides two ways to write multi-line statements:</para>
     <list id="list-00003">
-    <item><para id="para-00019">Explicit line joining, using <code class="python inline-code">\</code> characters:</para>
+    <item><para id="para-00019">Explicit line joining, using <code class="python inline-code" lang="python">\</code> characters:</para>
     <code class="python" display="block" lang="python">
     decl = "The unanimous Declaration of the thirteen united States of " \
             "America, When in the Course of human events, it becomes " \

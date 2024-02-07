@@ -17,8 +17,8 @@
     <section id="sect-00002">
     <title>Importing modules</title>
     <para id="para-00002">Python comes with an extensive <link url="https://openstax.org/r/100pythlibrary">standard library</link> of modules. A <term id="term-00001">module</term> is previously written code that can be imported in a program. The <term id="term-00002">import statement</term> defines a variable for accessing code in a module. Import statements often appear at the beginning of a program.</para>
-    <para id="para-00003">The standard library also defines built-in functions such as <code class="python inline-code">print()</code>, <code class="python inline-code">input()</code>, and <code class="python inline-code">float()</code>. A <term id="term-00003">built-in function</term> is always available and does not need to be imported. The complete <link url="https://openstax.org/r/100builtin">list of built-in functions</link> is available in Python's official documentation.</para>
-    <para id="para-00004">A commonly used module in the standard library is the <link url="https://openstax.org/r/100mathmodule">math module</link>. This module defines functions such as <code class="python inline-code">sqrt()</code> (square root). To call <code class="python inline-code">sqrt()</code>, a program must <code class="python inline-code">import math</code> and use the resulting <code class="python inline-code">math</code> variable followed by a dot. Ex: <code class="python inline-code">math.sqrt(25)</code> evaluates to <code class="python inline-code">5.0</code>.</para>
+    <para id="para-00003">The standard library also defines built-in functions such as <code class="python inline-code" lang="python">print()</code>, <code class="python inline-code" lang="python">input()</code>, and <code class="python inline-code" lang="python">float()</code>. A <term id="term-00003">built-in function</term> is always available and does not need to be imported. The complete <link url="https://openstax.org/r/100builtin">list of built-in functions</link> is available in Python's official documentation.</para>
+    <para id="para-00004">A commonly used module in the standard library is the <link url="https://openstax.org/r/100mathmodule">math module</link>. This module defines functions such as <code class="python inline-code" lang="python">sqrt()</code> (square root). To call <code class="python inline-code" lang="python">sqrt()</code>, a program must <code class="python inline-code" lang="python">import math</code> and use the resulting <code class="python inline-code" lang="python">math</code> variable followed by a dot. Ex: <code class="python inline-code" lang="python">math.sqrt(25)</code> evaluates to <code class="python inline-code" lang="python">5.0</code>.</para>
     <para id="para-00005">The following program imports and uses the math module, and uses built-in functions for input and output.</para>
     <example id="exam-00001">
     <title>Calculating the distance between two points</title>
@@ -74,17 +74,17 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00016"><code class="python inline-code">math.e</code></para></entry>
+    <entry><para id="para-00016"><code class="python inline-code" lang="python">math.e</code></para></entry>
     <entry><m:math><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mn>2.71828</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>Euler's number; the base of the natural logarithm.</entry>
     </row>
     <row>
-    <entry><para id="para-00017"><code class="python inline-code">math.pi</code></para></entry>
+    <entry><para id="para-00017"><code class="python inline-code" lang="python">math.pi</code></para></entry>
     <entry><m:math><m:mrow><m:mi>π</m:mi><m:mo>=</m:mo><m:mn>3.14159</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>The ratio of the circumference to the diameter of a circle.</entry>
     </row>
     <row>
-    <entry><para id="para-00018"><code class="python inline-code">math.tau</code></para></entry>
+    <entry><para id="para-00018"><code class="python inline-code" lang="python">math.tau</code></para></entry>
     <entry><m:math><m:mrow><m:mi>τ</m:mi><m:mo>=</m:mo><m:mn>6.28318</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
     <entry>The ratio of the circumference to the radius of a circle.
     Tau is equal to 2π.</entry>
@@ -110,64 +110,64 @@
     <entry namest="c1" nameend="c3"><emphasis effect="bold">Number-theoretic</emphasis></entry>
     </row>
     <row>
-    <entry><para id="para-00019"><code class="python inline-code">math.ceil(x)</code></para></entry>
+    <entry><para id="para-00019"><code class="python inline-code" lang="python">math.ceil(x)</code></para></entry>
     <entry>The ceiling of x: the smallest integer greater than or equal to x.</entry>
-    <entry><para id="para-00020"><code class="python inline-code">math.ceil(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">8</code><newline/>
-    <code class="python inline-code">math.ceil(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">-7</code></para></entry>
+    <entry><para id="para-00020"><code class="python inline-code" lang="python">math.ceil(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">8</code><newline/>
+    <code class="python inline-code" lang="python">math.ceil(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-7</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00021"><code class="python inline-code">math.floor(x)</code></para></entry>
+    <entry><para id="para-00021"><code class="python inline-code" lang="python">math.floor(x)</code></para></entry>
     <entry>The floor of x: the largest integer less than or equal to x.</entry>
-    <entry><para id="para-00022"><code class="python inline-code">math.floor(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">7</code><newline/>
-    <code class="python inline-code">math.floor(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">-8</code></para></entry>
+    <entry><para id="para-00022"><code class="python inline-code" lang="python">math.floor(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">7</code><newline/>
+    <code class="python inline-code" lang="python">math.floor(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-8</code></para></entry>
     </row>
     <row>
     <entry namest="c1" nameend="c3"><emphasis effect="bold">Power and logarithmic</emphasis></entry>
     </row>
     <row>
-    <entry><para id="para-00023"><code class="python inline-code">math.log(x)</code></para></entry>
+    <entry><para id="para-00023"><code class="python inline-code" lang="python">math.log(x)</code></para></entry>
     <entry>The natural logarithm of x (to base e).</entry>
-    <entry><para id="para-00024"><code class="python inline-code">math.log(math.e)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.log(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">ValueError: math domain error</code></para></entry>
+    <entry><para id="para-00024"><code class="python inline-code" lang="python">math.log(math.e)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code><newline/>
+    <code class="python inline-code" lang="python">math.log(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">ValueError: math domain error</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00025"><code class="python inline-code">math.log(x, base)</code></para></entry>
+    <entry><para id="para-00025"><code class="python inline-code" lang="python">math.log(x, base)</code></para></entry>
     <entry>The logarithm of x to the given base.</entry>
-    <entry><para id="para-00026"><code class="python inline-code">math.log(8, 2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">3.0</code><newline/>
-    <code class="python inline-code">math.log(10000, 10)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">4.0</code></para></entry>
+    <entry><para id="para-00026"><code class="python inline-code" lang="python">math.log(8, 2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">3.0</code><newline/>
+    <code class="python inline-code" lang="python">math.log(10000, 10)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">4.0</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00027"><code class="python inline-code">math.pow(x, y)</code></para></entry>
-    <entry><para id="para-00028">x raised to the power y. Unlike the <code class="python inline-code">**</code> operator, <code class="python inline-code">math.pow()</code> converts x and y to type float.</para></entry>
-    <entry><para id="para-00029"><code class="python inline-code">math.pow(3, 0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.pow(3, 3)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">27.0</code></para></entry>
+    <entry><para id="para-00027"><code class="python inline-code" lang="python">math.pow(x, y)</code></para></entry>
+    <entry><para id="para-00028">x raised to the power y. Unlike the <code class="python inline-code" lang="python">**</code> operator, <code class="python inline-code" lang="python">math.pow()</code> converts x and y to type float.</para></entry>
+    <entry><para id="para-00029"><code class="python inline-code" lang="python">math.pow(3, 0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code><newline/>
+    <code class="python inline-code" lang="python">math.pow(3, 3)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">27.0</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00030"><code class="python inline-code">math.sqrt(x)</code></para></entry>
+    <entry><para id="para-00030"><code class="python inline-code" lang="python">math.sqrt(x)</code></para></entry>
     <entry>The square root of x.</entry>
-    <entry><para id="para-00031"><code class="python inline-code">math.sqrt(9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">3.0</code><newline/>
-    <code class="python inline-code">math.sqrt(-9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">ValueError: math domain error</code></para></entry>
+    <entry><para id="para-00031"><code class="python inline-code" lang="python">math.sqrt(9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">3.0</code><newline/>
+    <code class="python inline-code" lang="python">math.sqrt(-9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">ValueError: math domain error</code></para></entry>
     </row>
     <row>
     <entry namest="c1" nameend="c3"><emphasis effect="bold">Trigonometric</emphasis></entry>
     </row>
     <row>
-    <entry><para id="para-00032"><code class="python inline-code">math.cos(x)</code></para></entry>
+    <entry><para id="para-00032"><code class="python inline-code" lang="python">math.cos(x)</code></para></entry>
     <entry>The cosine of x radians.</entry>
-    <entry><para id="para-00033"><code class="python inline-code">math.cos(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">1.0</code><newline/>
-    <code class="python inline-code">math.cos(math.pi)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">-1.0</code></para></entry>
+    <entry><para id="para-00033"><code class="python inline-code" lang="python">math.cos(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code><newline/>
+    <code class="python inline-code" lang="python">math.cos(math.pi)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-1.0</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00034"><code class="python inline-code">math.sin(x)</code></para></entry>
+    <entry><para id="para-00034"><code class="python inline-code" lang="python">math.sin(x)</code></para></entry>
     <entry>The sine of x radians.</entry>
-    <entry><para id="para-00035"><code class="python inline-code">math.sin(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">0.0</code><newline/>
-    <code class="python inline-code">math.sin(math.pi/2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">1.0</code></para></entry>
+    <entry><para id="para-00035"><code class="python inline-code" lang="python">math.sin(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.0</code><newline/>
+    <code class="python inline-code" lang="python">math.sin(math.pi/2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code></para></entry>
     </row>
     <row>
-    <entry><para id="para-00036"><code class="python inline-code">math.tan(x)</code></para></entry>
+    <entry><para id="para-00036"><code class="python inline-code" lang="python">math.tan(x)</code></para></entry>
     <entry>The tangent of x radians.</entry>
-    <entry><para id="para-00037"><code class="python inline-code">math.tan(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">0.0</code><newline/>
-    <code class="python inline-code">math.tan(math.pi/4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code">0.999</code><newline/>
+    <entry><para id="para-00037"><code class="python inline-code" lang="python">math.tan(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.0</code><newline/>
+    <code class="python inline-code" lang="python">math.tan(math.pi/4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.999</code><newline/>
     (Round-off error; the result should be 1.0.)</para></entry>
     </row>
     </tbody>
@@ -354,7 +354,7 @@
 </m:msup>
 <m:mi>h</m:mi></m:mrow>
 </m:math></equation><newline/>
-    Write the code for these two formulas in the program below. Hint: Your solution should use both <code class="python inline-code">math.pi</code> and <code class="python inline-code">math.tau</code>. Test your program using the following values for <emphasis effect="italics">r</emphasis> and <emphasis effect="italics">h</emphasis>:</para>
+    Write the code for these two formulas in the program below. Hint: Your solution should use both <code class="python inline-code" lang="python">math.pi</code> and <code class="python inline-code" lang="python">math.tau</code>. Test your program using the following values for <emphasis effect="italics">r</emphasis> and <emphasis effect="italics">h</emphasis>:</para>
     <table summary=" " id="table-00004">
     <tgroup cols="4">
     <colspec colnum="1" colname="c1"/>

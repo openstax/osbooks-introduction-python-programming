@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Implicit type conversion</title>
-    <para id="para-00002">Common operations update a variable such that the variable's data type needs to be changed. Ex: A GPS first assigns <code class="python inline-code">distance</code> with 250, an integer. After a wrong turn, the GPS assigns <code class="python inline-code">distance</code> with 252.5, a float. The Python interpreter uses <term id="term-00001">implicit type conversion</term> to automatically convert one data type to another. Once <code class="python inline-code">distance</code> is assigned with 252.5, the interpreter will convert <code class="python inline-code">distance</code> from an integer to a float without the programmer needing to specify the conversion.</para>
+    <para id="para-00002">Common operations update a variable such that the variable's data type needs to be changed. Ex: A GPS first assigns <code class="python inline-code" lang="python">distance</code> with 250, an integer. After a wrong turn, the GPS assigns <code class="python inline-code" lang="python">distance</code> with 252.5, a float. The Python interpreter uses <term id="term-00001">implicit type conversion</term> to automatically convert one data type to another. Once <code class="python inline-code" lang="python">distance</code> is assigned with 252.5, the interpreter will convert <code class="python inline-code" lang="python">distance</code> from an integer to a float without the programmer needing to specify the conversion.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Book ratings</title>
     <media alt="book_ratings_slides">
