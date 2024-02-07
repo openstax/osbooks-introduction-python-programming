@@ -96,7 +96,7 @@ item2 = input("Item #2: ")
 <section id="sect-00004">
 <title>Documentation</title>
 <para id="para-00013">Python programs may optionally begin with a string known as a docstring. A <term id="term-00002">docstring</term> is documentation written for others who will use the program but not necessarily read the source code. Most of the official documentation at <link url="https://openstax.org/r/100docstrings">docs.python.org</link> is generated from docstrings.</para>
-<para id="para-00014">Documentation can be long, so docstrings are generally written as multi-line strings (<code class="python inline-code" lang="python">"""</code>). Common elements of a docstring include a one-line summary, a blank line, and a longer description.</para>
+<para id="para-00014">Documentation can be long, so docstrings are generally written as multi-line strings <code class="python inline-code" lang="python">(""")</code>. Common elements of a docstring include a one-line summary, a blank line, and a longer description.</para>
 <note class="guided-slides" id="note-00004">
 <title>Vacations docstring</title>
 <media alt="docstring_slides">
@@ -136,7 +136,7 @@ item2 = input("Item #2: ")
 </note>
 <note class="practice-program" id="note-00007">
 <title>Gravity calculation</title>
-<para id="para-00019">Write a docstring for the following program. The first line of the docstring should explain, in one short sentence, what the program is. The second line of the docstring should be blank. The third and subsequent lines should include a longer explanation of what the program does. At the end of the docstring, add a line that says "Author: " followed by your name.</para>
+<para id="para-00019">Write a docstring for the following program. The first line of the docstring should explain, in one short sentence, what the program is. The second line of the docstring should be blank. The third and subsequent lines should include a longer explanation of what the program does. At the end of the docstring, add a line that says <code class="python inline-code" lang="python">"Author: "</code> followed by your name.</para>
 <media alt="gravity_calculation_program">
 <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_08_12_Gravity-calculation.html"/>
 </media>

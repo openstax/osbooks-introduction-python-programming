@@ -173,9 +173,9 @@
 <title>Values and types</title>
 <para id="para-00019">Write a Python computer program that:
 <list list-type="enumerated" id="list-00003">
-<item>Defines an integer variable named 'int_a' and assigns 'int_a' with the value 10.</item>
-<item>Defines a floating-point variable named 'float_a' and assigns 'float_a' with the value 10.0.</item>
-<item>Defines a string variable named 'string_a' and assigns 'string_a' with the string value "10".</item>
+<item>Defines an integer variable named <code class="python inline-code" lang="python">'int_a'</code> and assigns <code class="python inline-code" lang="python">'int_a'</code> with the value <code class="python inline-code" lang="python">10</code>.</item>
+<item>Defines a floating-point variable named <code class="python inline-code" lang="python">'float_a'</code> and assigns <code class="python inline-code" lang="python">'float_a'</code> with the value <code class="python inline-code" lang="python">10.0</code>.</item>
+<item>Defines a string variable named <code class="python inline-code" lang="python">'string_a'</code> and assigns <code class="python inline-code" lang="python">'string_a'</code> with the string value <code class="python inline-code" lang="python">"10"</code>.</item>
 <item>Prints the value of each of the three variables along with their type.</item>
 </list></para>
 <media alt="values_and_types_program">
@@ -186,10 +186,10 @@
 <title>Meters to feet</title>
 <para id="para-00020">Write a Python computer program that:
 <list list-type="enumerated" id="list-00004">
-<item>Assigns the integer value 10 to a variable, meters.</item>
-<item>Assigns the floating-point value 3.28 to a variable, meter2feet.</item>
-<item>Calculates 10 meters in feet by multiplying meter by meter2feet. Store the result in a variable, feet.</item>
-<item>Prints the content of variable feet in the output.</item>
+<item>Assigns the integer value <code class="python inline-code" lang="python">10</code> to a variable, <code class="python inline-code" lang="python">meters</code>.</item>
+<item>Assigns the floating-point value <code class="python inline-code" lang="python">3.28</code> to a variable, <code class="python inline-code" lang="python">meter2feet</code>.</item>
+<item>Calculates 10 meters in feet by multiplying <code class="python inline-code" lang="python">meter</code> by <code class="python inline-code" lang="python">meter2feet</code>. Store the result in a variable, <code class="python inline-code" lang="python">feet</code>.</item>
+<item>Prints the content of variable <code class="python inline-code" lang="python">feet</code> in the output.</item>
 </list></para>
 <media alt="meters_to_feet_program">
 <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_06_08_Meters-to-feet.html"/>

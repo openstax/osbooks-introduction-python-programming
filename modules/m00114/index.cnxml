@@ -29,19 +29,19 @@
       </thead>
       <tbody>
       <row>
-      <entry>print(values)</entry>
+      <entry><code class="python inline-code" lang="python">print(values)</code></entry>
       <entry>Outputs one or more values, each separated by a space, to the user.</entry>
       </row>
       <row>
-      <entry>input(prompt)</entry>
+      <entry><code class="python inline-code" lang="python">input(prompt)</code></entry>
       <entry><para id="para-00118">If present, <code class="python inline-code" lang="python">prompt</code> is output to the user. The function then reads a line of input from the user.</para></entry>
       </row>
       <row>
-      <entry>len(string)</entry>
+      <entry><code class="python inline-code" lang="python">len(string)</code></entry>
       <entry>Returns the length (the number of characters) of a string.</entry>
       </row>
       <row>
-      <entry>type(value)</entry>
+      <entry><code class="python inline-code" lang="python">type(value)</code></entry>
       <entry><para id="para-00119">Returns the type (or class) of a value. Ex: <code class="python inline-code" lang="python">type(123)</code> is <code class="python inline-code" lang="python">&lt;class 'int'></code>.</para></entry>
       </row>
       <row>
