@@ -9,7 +9,7 @@
   <col:content>
     <col:module document="m00116"/>
     <col:subcollection>
-      <md:title>Statements</md:title>
+      <md:title>Chapter 1: Statements</md:title>
       <col:content>
         <col:module document="m00001"/>
         <col:module document="m00002"/>
@@ -24,7 +24,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Expressions</md:title>
+      <md:title>Chapter 2: Expressions</md:title>
       <col:content>
         <col:module document="m00010"/>
         <col:module document="m00011"/>
@@ -39,7 +39,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Objects</md:title>
+      <md:title>Chapter 3: Objects</md:title>
       <col:content>
         <col:module document="m00020"/>
         <col:module document="m00021"/>
@@ -51,7 +51,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Decisions</md:title>
+      <md:title>Chapter 4: Decisions</md:title>
       <col:content>
         <col:module document="m00027"/>
         <col:module document="m00028"/>
@@ -65,7 +65,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Loops</md:title>
+      <md:title>Chapter 5: Loops</md:title>
       <col:content>
         <col:module document="m00036"/>
         <col:module document="m00037"/>
@@ -77,7 +77,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Functions</md:title>
+      <md:title>Chapter 6: Functions</md:title>
       <col:content>
         <col:module document="m00043"/>
         <col:module document="m00044"/>
@@ -90,7 +90,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Modules</md:title>
+      <md:title>Chapter 7: Modules</md:title>
       <col:content>
         <col:module document="m00051"/>
         <col:module document="m00052"/>
@@ -102,7 +102,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Strings</md:title>
+      <md:title>Chapter 8: Strings</md:title>
       <col:content>
         <col:module document="m00058"/>
         <col:module document="m00059"/>
@@ -114,7 +114,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Lists</md:title>
+      <md:title>Chapter 9: Lists</md:title>
       <col:content>
         <col:module document="m00065"/>
         <col:module document="m00066"/>
@@ -126,7 +126,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Dictionaries</md:title>
+      <md:title>Chapter 10: Dictionaries</md:title>
       <col:content>
         <col:module document="m00073"/>
         <col:module document="m00074"/>
@@ -138,7 +138,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Classes</md:title>
+      <md:title>Chapter 11: Classes</md:title>
       <col:content>
         <col:module document="m00080"/>
         <col:module document="m00081"/>
@@ -150,7 +150,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Recursion</md:title>
+      <md:title>Chapter 12: Recursion</md:title>
       <col:content>
         <col:module document="m00087"/>
         <col:module document="m00088"/>
@@ -162,7 +162,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Inheritance</md:title>
+      <md:title>Chapter 13: Inheritance</md:title>
       <col:content>
         <col:module document="m00094"/>
         <col:module document="m00095"/>
@@ -174,7 +174,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Files</md:title>
+      <md:title>Chapter 14: Files</md:title>
       <col:content>
         <col:module document="m00101"/>
         <col:module document="m00102"/>
@@ -186,7 +186,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Data Science</md:title>
+      <md:title>Chapter 15: Data Science</md:title>
       <col:content>
         <col:module document="m00108"/>
         <col:module document="m00109"/>
