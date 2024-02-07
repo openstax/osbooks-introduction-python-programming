@@ -9,11 +9,11 @@
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
     <item>Expressions and statements can be run interactively using a shell.</item>
-    <item>Input strings can be converted to other types. Ex: <code class="python inline-code">int(input())</code></item>
-    <item>Strings can be concatenated with other types. Ex: <code class="python inline-code">"$" + str(cost)</code></item>
+    <item>Input strings can be converted to other types. Ex: <code class="python inline-code" lang="python">int(input())</code></item>
+    <item>Strings can be concatenated with other types. Ex: <code class="python inline-code" lang="python">"$" + str(cost)</code></item>
     <item>Floats are subject to round-off and overflow errors.</item>
-    <item>Integers can be divided exactly using <code class="python inline-code">//</code> and <code class="python inline-code">%</code>.</item>
-    <item>Modules like <code class="python inline-code">math</code> provide many useful functions.</item>
+    <item>Integers can be divided exactly using <code class="python inline-code" lang="python">//</code> and <code class="python inline-code" lang="python">%</code>.</item>
+    <item>Modules like <code class="python inline-code" lang="python">math</code> provide many useful functions.</item>
     <item>Formatting long lines helps improve readability.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write programs that ask for input of mixed types, perform mathematical calculations, and output results with better formatting. The programming practice below ties together most topics presented in the chapter.</para>
@@ -29,51 +29,51 @@
     <tbody>
     <row>
     <entry>abs(x)</entry>
-    <entry><para id="para-00100">Returns the absolute value of <code class="python inline-code">x</code>.</para></entry>
+    <entry><para id="para-00100">Returns the absolute value of <code class="python inline-code" lang="python">x</code>.</para></entry>
     </row>
     <row>
     <entry>int(x)</entry>
-    <entry><para id="para-00101">Converts <code class="python inline-code">x</code> (a string or float) to an integer.</para></entry>
+    <entry><para id="para-00101">Converts <code class="python inline-code" lang="python">x</code> (a string or float) to an integer.</para></entry>
     </row>
     <row>
     <entry>float(x)</entry>
-    <entry><para id="para-00102">Converts <code class="python inline-code">x</code> (a string or integer) to a float.</para></entry>
+    <entry><para id="para-00102">Converts <code class="python inline-code" lang="python">x</code> (a string or integer) to a float.</para></entry>
     </row>
     <row>
     <entry>str(x)</entry>
-    <entry><para id="para-00103">Converts <code class="python inline-code">x</code> (a float or integer) to a string.</para></entry>
+    <entry><para id="para-00103">Converts <code class="python inline-code" lang="python">x</code> (a float or integer) to a string.</para></entry>
     </row>
     <row>
     <entry>round(x, ndigits)</entry>
-    <entry><para id="para-00104">Rounds <code class="python inline-code">x</code> to <code class="python inline-code">ndigits</code> places after the decimal point. If <code class="python inline-code">ndigits</code> is omitted, returns the nearest integer to <code class="python inline-code">x</code>.</para></entry>
+    <entry><para id="para-00104">Rounds <code class="python inline-code" lang="python">x</code> to <code class="python inline-code" lang="python">ndigits</code> places after the decimal point. If <code class="python inline-code" lang="python">ndigits</code> is omitted, returns the nearest integer to <code class="python inline-code" lang="python">x</code>.</para></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Operator</emphasis></entry>
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><para id="para-00105"><code class="python inline-code">s * n</code><newline/>
+    <entry><para id="para-00105"><code class="python inline-code" lang="python">s * n</code><newline/>
     (repetition)</para></entry>
-    <entry><para id="para-00106">Creates a string with <code class="python inline-code">n</code> copies of <code class="python inline-code">s</code>.
-    Ex: <code class="python inline-code">"Ha" * 3</code> is <code class="python inline-code">"HaHaHa"</code>.</para></entry>
+    <entry><para id="para-00106">Creates a string with <code class="python inline-code" lang="python">n</code> copies of <code class="python inline-code" lang="python">s</code>.
+    Ex: <code class="python inline-code" lang="python">"Ha" * 3</code> is <code class="python inline-code" lang="python">"HaHaHa"</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00107"><code class="python inline-code">x / y</code><newline/>
+    <entry><para id="para-00107"><code class="python inline-code" lang="python">x / y</code><newline/>
     (real division)</para></entry>
-    <entry><para id="para-00108">Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the entire result as a float.
-    Ex: <code class="python inline-code">7 / 4</code> is <code class="python inline-code">1.75</code>.</para></entry>
+    <entry><para id="para-00108">Divides <code class="python inline-code" lang="python">x</code> by <code class="python inline-code" lang="python">y</code> and returns the entire result as a float.
+    Ex: <code class="python inline-code" lang="python">7 / 4</code> is <code class="python inline-code" lang="python">1.75</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00109"><code class="python inline-code">x // y</code><newline/>
+    <entry><para id="para-00109"><code class="python inline-code" lang="python">x // y</code><newline/>
     (floor division)</para></entry>
-    <entry><para id="para-00110">Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the quotient as an integer.
-    Ex: <code class="python inline-code">7 // 4</code> is <code class="python inline-code">1</code>.</para></entry>
+    <entry><para id="para-00110">Divides <code class="python inline-code" lang="python">x</code> by <code class="python inline-code" lang="python">y</code> and returns the quotient as an integer.
+    Ex: <code class="python inline-code" lang="python">7 // 4</code> is <code class="python inline-code" lang="python">1</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00111"><code class="python inline-code">x % y</code><newline/>
+    <entry><para id="para-00111"><code class="python inline-code" lang="python">x % y</code><newline/>
     (modulo)</para></entry>
-    <entry><para id="para-00112">Divides <code class="python inline-code">x</code> by <code class="python inline-code">y</code> and returns the remainder as an integer.
-    Ex: <code class="python inline-code">7 % 4</code> is <code class="python inline-code">3</code>.</para></entry>
+    <entry><para id="para-00112">Divides <code class="python inline-code" lang="python">x</code> by <code class="python inline-code" lang="python">y</code> and returns the remainder as an integer.
+    Ex: <code class="python inline-code" lang="python">7 % 4</code> is <code class="python inline-code" lang="python">3</code>.</para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -90,7 +90,7 @@
     <item>2 cups sourdough starter</item>
     <item>1/2 cup lukewarm water</item>
     </list>
-    <para id="para-00004">Write a program that inputs the following variables: <code class="python inline-code">bread_weight</code> (float), <code class="python inline-code">serving_size</code> (float), and <code class="python inline-code">num_guests</code> (int). The output will look like the following:</para>
+    <para id="para-00004">Write a program that inputs the following variables: <code class="python inline-code" lang="python">bread_weight</code> (float), <code class="python inline-code" lang="python">serving_size</code> (float), and <code class="python inline-code" lang="python">num_guests</code> (int). The output will look like the following:</para>
     <code class="python" lang="python">
     For 25 people, you will need 3.90625 loaves of bread:
 
@@ -101,7 +101,7 @@
     &#160;&#160;7.8125 cups sourdough starter
     &#160;&#160;1.953125 cups lukewarm water
     </code>
-    <para id="para-00005">In the above output, <code class="python inline-code">bread_weight</code> is 16.0 ounces, <code class="python inline-code">serving_size</code> is 2.5 ounces, and <code class="python inline-code">num_guests</code> is 25 people. Use these three variables to calculate the number of loaves needed.</para>
+    <para id="para-00005">In the above output, <code class="python inline-code" lang="python">bread_weight</code> is 16.0 ounces, <code class="python inline-code" lang="python">serving_size</code> is 2.5 ounces, and <code class="python inline-code" lang="python">num_guests</code> is 25 people. Use these three variables to calculate the number of loaves needed.</para>
     <para id="para-00006">Make sure your output matches the above example exactly. Notice that each line of the ingredients begins with two spaces.</para>
     <media alt="baking_bread_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_10_14_Baking-bread.html"/>
