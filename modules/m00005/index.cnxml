@@ -10,15 +10,15 @@
 <title>Learning objectives</title>
 <para id="para-00021">By the end of this section you should be able to</para>
 <list id="list-00001">
-<item>Use the built-in len() function to get a string's length.</item>
+<item>Use the built-in <code class="python inline-code" lang="python">len()</code> function to get a string's length.</item>
 <item>Concatenate string literals and variables using the + operator.</item>
 
 </list>
 </section>
 <section id="sect-00002">
 <title>Quote marks</title>
-<para id="para-00001">A string is a sequence of characters enclosed by matching single (') or double (") quotes. Ex: "Happy birthday!" and '21' are both strings.</para>
-<para id="para-00002">To include a single quote (') in a string, enclose the string with matching double quotes ("). Ex: "Won't this work?" To include a double quote ("), enclose the string with matching single quotes ('). Ex: 'They said "Try it!", so I did'.</para>
+<para id="para-00001">A string is a sequence of characters enclosed by matching single (') or double (") quotes. Ex: <code class="python inline-code" lang="python">"Happy birthday!"</code> and <code class="python inline-code" lang="python">'21'</code> are both strings.</para>
+<para id="para-00002">To include a single quote (') in a string, enclose the string with matching double quotes ("). Ex: <code class="python inline-code" lang="python">"Won't this work?"</code> To include a double quote ("), enclose the string with matching single quotes ('). Ex: <code class="python inline-code" lang="python">'They said "Try it!", so I did'</code>.</para>
 <table summary=" " id="table-00001">
 <title>Rules for strings</title>
 <tgroup cols="2">
@@ -30,24 +30,24 @@
 </thead>
 <tbody>
 <row>
-<entry>"17" or '17'</entry>
-<entry>17</entry>
+<entry><code class="python inline-code" lang="python">"17" or '17'</code></entry>
+<entry><code class="python inline-code" lang="python">17</code></entry>
 </row>
 <row>
-<entry>"seventeen" or 'seventeen'</entry>
-<entry>seventeen</entry>
+<entry><code class="python inline-code" lang="python">"seventeen" or 'seventeen'</code></entry>
+<entry><code class="python inline-code" lang="python">seventeen</code></entry>
 </row>
 <row>
-<entry>"Where?" or 'Where?'</entry>
-<entry>"Where?'</entry>
+<entry><code class="python inline-code" lang="python">"Where?" or 'Where?'</code></entry>
+<entry><code class="python inline-code" lang="python">"Where?'</code></entry>
 </row>
 <row>
-<entry>"I hope you aren't sad."</entry>
-<entry>'I hope you aren't sad.'</entry>
+<entry><code class="python inline-code" lang="python">"I hope you aren't sad."</code></entry>
+<entry><code class="python inline-code" lang="python">'I hope you aren't sad.'</code></entry>
 </row>
 <row>
-<entry>'The teacher said "Correct!" '</entry>
-<entry>"The teacher said "Correct!" "</entry>
+<entry><code class="python inline-code" lang="python">'The teacher said "Correct!" '</code></entry>
+<entry><code class="python inline-code" lang="python">"The teacher said "Correct!" "</code></entry>
 </row>
 </tbody>
 </tgroup>
