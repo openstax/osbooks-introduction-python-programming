@@ -56,57 +56,57 @@
 <table summary=" " id="table-00001">
 <title>Keywords</title>
 <tgroup cols="5">
-<tbody>
-<row>
-<entry>False</entry>
-<entry>await</entry>
-<entry>else</entry>
-<entry>import</entry>
-<entry>pass</entry>
-</row>
-<row>
-<entry>None</entry>
-<entry>break</entry>
-<entry>except</entry>
-<entry>in</entry>
-<entry>raise</entry>
-</row>
-<row>
-<entry>True</entry>
-<entry>class</entry>
-<entry>finally</entry>
-<entry>is</entry>
-<entry>return</entry>
-</row>
-<row>
-<entry>and</entry>
-<entry>continue</entry>
-<entry>for</entry>
-<entry>lambda</entry>
-<entry>try</entry>
-</row>
-<row>
-<entry>as</entry>
-<entry>def</entry>
-<entry>from</entry>
-<entry>nonlocal</entry>
-<entry>while</entry>
-</row>
-<row>
-<entry>assert</entry>
-<entry>del</entry>
-<entry>global</entry>
-<entry>not</entry>
-<entry>with</entry>
-</row>
-<row>
-<entry>asynch</entry>
-<entry>elif</entry>
-<entry>if</entry>
-<entry>or</entry>
-<entry>yield</entry>
-</row>
-</tbody>
+  <tbody>
+    <row>
+    <entry><code class="python inline-code" lang="python">False</code></entry>
+    <entry><code class="python inline-code" lang="python">await</code></entry>
+    <entry><code class="python inline-code" lang="python">else</code></entry>
+    <entry><code class="python inline-code" lang="python">import</code></entry>
+    <entry><code class="python inline-code" lang="python">pass</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code" lang="python">None</code></entry>
+    <entry><code class="python inline-code" lang="python">break</code></entry>
+    <entry><code class="python inline-code" lang="python">except</code></entry>
+    <entry><code class="python inline-code" lang="python">in</code></entry>
+    <entry><code class="python inline-code" lang="python">raise</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code" lang="python">True</code></entry>
+    <entry><code class="python inline-code" lang="python">class</code></entry>
+    <entry><code class="python inline-code" lang="python">finally</code></entry>
+    <entry><code class="python inline-code" lang="python">is</code></entry>
+    <entry><code class="python inline-code" lang="python">return</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code" lang="python">and</code></entry>
+    <entry><code class="python inline-code" lang="python">continue</code></entry>
+    <entry><code class="python inline-code" lang="python">for</code></entry>
+    <entry><code class="python inline-code" lang="python">lambda</code></entry>
+    <entry><code class="python inline-code" lang="python">try</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code" lang="python">as</code></entry>
+    <entry><code class="python inline-code" lang="python">def</code></entry>
+    <entry><code class="python inline-code" lang="python">from</code></entry>
+    <entry><code class="python inline-code" lang="python">nonlocal</code></entry>
+    <entry><code class="python inline-code" lang="python">while</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code" lang="python">assert</code></entry>
+    <entry><code class="python inline-code" lang="python">del</code></entry>
+    <entry><code class="python inline-code" lang="python">global</code></entry>
+    <entry><code class="python inline-code" lang="python">not</code></entry>
+    <entry><code class="python inline-code" lang="python">with</code></entry>
+    </row>
+    <row>
+    <entry><code class="python inline-code" lang="python">asynch</code></entry>
+    <entry><code class="python inline-code" lang="python">elif</code></entry>
+    <entry><code class="python inline-code" lang="python">if</code></entry>
+    <entry><code class="python inline-code" lang="python">or</code></entry>
+    <entry><code class="python inline-code" lang="python">yield</code></entry>
+    </row>
+    </tbody>
 </tgroup>
 <caption/>
 </table>
@@ -139,12 +139,12 @@
 <title>Final score</title>
 <para id="para-00014">Write a Python computer program that
 <list id="list-00002">
-<item>creates a variable, team1, assigned with the value, "Liverpool"</item>
-<item>creates a variable, team2, assigned with the value, "Chelsea"</item>
-<item>creates a variable, score1, assigned with the value, 4</item>
-<item>creates a variable, score2, assigned with the value, 3</item>
-<item>prints team1, "versus", and team2 as a single line of output</item>
-<item>prints "Final score: ", score1, "to", score2 as a single line of output</item>
+<item>creates a variable, <code class="python inline-code" lang="python">team1</code>, assigned with the value, <code class="python inline-code" lang="python">"Liverpool"</code></item>
+<item>creates a variable, <code class="python inline-code" lang="python">team2</code>, assigned with the value, <code class="python inline-code" lang="python">"Chelsea"</code></item>
+<item>creates a variable, <code class="python inline-code" lang="python">score1</code>, assigned with the value, <code class="python inline-code" lang="python">4</code></item>
+<item>creates a variable, <code class="python inline-code" lang="python">score2</code>, assigned with the value, <code class="python inline-code" lang="python">3</code></item>
+<item>prints <code class="python inline-code" lang="python">team1</code>, <code class="python inline-code" lang="python">"versus"</code>, and <code class="python inline-code" lang="python">team2</code> as a single line of output</item>
+<item>prints <code class="python inline-code" lang="python">"Final score: "</code>, <code class="python inline-code" lang="python">score1</code>, <code class="python inline-code" lang="python">"to"</code>, <code class="python inline-code" lang="python">score2</code> as a single line of output</item>
 </list></para>
 <media alt="final_score_program">
 <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_04_04_Final-score.html"/>
