@@ -155,15 +155,15 @@
     <title>European vacation</title>
     <para id="para-00014">Write a program that uses the <code class="python inline-code" lang="python">conversion</code> module from the previous exercise to complete a short story. The program's output should match the following example (input in bold).</para>
     <code class="python" lang="python">
-    How fast were you driving? 180
+    How fast were you driving? <code class="python inline-code" lang="python">180</code>
     Woah, that's like 112 mph!
-    What was the temperature? 35
+    What was the temperature? <code class="python inline-code" lang="python">35</code>
     That's 95 degrees Fahrenheit!
     </code>
     <para id="para-00015">Notice this exercise requires two files:</para>
     <list list-type="enumerated" id="list-00003">
     <item><emphasis effect="italics">european.py</emphasis>, the main program. Input and output statements are provided as a starting point. Edit the lines with TODO comments to use the conversion module.</item>
-    <item><emphasis effect="italics">conversion.py</emphasis>, the other module. Copy and paste your code from the previous exercise. Import this module in european.py after the docstring.</item>
+    <item><emphasis effect="italics">conversion.py</emphasis>, the other module. Copy and paste your code from the previous exercise. Import this module in <emphasis effect="italics">european.py</emphasis> after the docstring.</item>
     </list>
     <media alt="european_vacation_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_02_02_European-vacation.html"/>

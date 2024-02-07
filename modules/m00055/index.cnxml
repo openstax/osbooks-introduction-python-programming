@@ -10,7 +10,7 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Use the help() function to explore a module's contents.</item>
+    <item>Use the <code class="python inline-code" lang="python">help()</code> function to explore a module's contents.</item>
     <item>Identify portions of code included in the documentation.</item>
     </list>
     </section>
@@ -122,7 +122,7 @@
     </section>
     <section id="sect-00004">
     <title>Module documentation</title>
-    <para id="para-00013">The builtin <code class="python inline-code" lang="python">help()</code> function provides a summary of a module's functions and data. Calling <emphasis effect="italics">help(module_name)</emphasis> in a shell is a convenient way to learn about a module.</para>
+    <para id="para-00013">The builtin <code class="python inline-code" lang="python">help()</code> function provides a summary of a module's functions and data. Calling <code class="python inline-code" lang="python">help(module_name)</code> in a shell is a convenient way to learn about a module.</para>
     <example id="exam-00001">
     <title>Output of help(colors) in a shell.</title>
     <para id="para-00014">The documentation below is automatically generated from the docstrings in <emphasis effect="italics">colors.py</emphasis>.</para>
@@ -187,10 +187,10 @@
     <para id="para-00018">The <code class="python inline-code" lang="python">random</code> and <code class="python inline-code" lang="python">statistics</code> modules are useful for running scientific experiments. You can become familiar with these two modules by skimming their documentation.</para>
     <para id="para-00019">Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
     <list id="list-00003">
-    <item>import random</item>
-    <item>help(random)</item>
-    <item>import statistics</item>
-    <item>help(statistics)</item>
+    <item><code class="python inline-code" lang="python">import random</code></item>
+    <item><code class="python inline-code" lang="python">help(random)</code></item>
+    <item><code class="python inline-code" lang="python">import statistics</code></item>
+    <item><code class="python inline-code" lang="python">help(statistics)</code></item>
     </list>
     <para id="para-00020">Many shell environments, including the one on python.org, display the output of <code class="python inline-code" lang="python">help()</code> one page at a time. Use the navigation keys on the keyboard (up/down arrows, page up/down, home/end) to read the documentation. When you are finished reading, press the Q key ("quit") to return to the Python shell.</para>
     </note>
@@ -198,12 +198,12 @@
     <title>Help on functions</title>
     <para id="para-00021">The <code class="python inline-code" lang="python">help()</code> function can be called on specific functions in a module. Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Type the following lines, one at a time, into the shell.</para>
     <list id="list-00004">
-    <item>import random</item>
-    <item>help(random.randint)</item>
-    <item>help(random.choice)</item>
-    <item>import statistics</item>
-    <item>help(statistics.median)</item>
-    <item>help(statistics.mode)</item>
+    <item><code class="python inline-code" lang="python">import random</code></item>
+    <item><code class="python inline-code" lang="python">help(random.randint)</code></item>
+    <item><code class="python inline-code" lang="python">help(random.choice)</code></item>
+    <item><code class="python inline-code" lang="python">import statistics</code></item>
+    <item><code class="python inline-code" lang="python">help(statistics.median)</code></item>
+    <item><code class="python inline-code" lang="python">help(statistics.mode)</code></item>
     </list>
     <para id="para-00022">Remember to use the navigation keys on the keyboard, and press the Q key ("quit") to return to the Python shell.</para>
     </note>
