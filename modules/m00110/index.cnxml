@@ -17,12 +17,12 @@
     </section>
     <section id="sect-00002">
     <title>NumPy library</title>
-    <para id="para-00002"><term id="term-00001">NumPy</term> (Numerical Python) is a Python library that provides support for efficient numerical operations on large, multi-dimensional arrays and serves as a fundamental building block for data analysis in Python. The conventional alias for importing NumPy is <code class="python inline-code">np</code>. In other words, NumPy is imported as <code class="python inline-code">import numpy as np</code>. NumPy implements the <term id="term-00002">ndarray</term> object that allows the creation of a multi-dimensional array of homogeneous data types (columns with the same data type) and efficient data processing. An <code class="python inline-code">ndarray</code> object can have any number of dimensions and can store elements of various numeric data types. To create a NumPy <code class="python inline-code">ndarray</code> object, one of the following options can be used:</para>
+    <para id="para-00002"><term id="term-00001">NumPy</term> (Numerical Python) is a Python library that provides support for efficient numerical operations on large, multi-dimensional arrays and serves as a fundamental building block for data analysis in Python. The conventional alias for importing NumPy is <code class="python inline-code" lang="python">np</code>. In other words, NumPy is imported as <code class="python inline-code" lang="python">import numpy as np</code>. NumPy implements the <term id="term-00002">ndarray</term> object that allows the creation of a multi-dimensional array of homogeneous data types (columns with the same data type) and efficient data processing. An <code class="python inline-code" lang="python">ndarray</code> object can have any number of dimensions and can store elements of various numeric data types. To create a NumPy <code class="python inline-code" lang="python">ndarray</code> object, one of the following options can be used:</para>
     <list id="list-00002">
-    <item>Creating an <code class="python inline-code">ndarray</code> by converting a Python list or tuple using the <code class="python inline-code">np.array()</code> function.</item>
-    <item>Using built-in functions like <code class="python inline-code">np.zeros()</code> and <code class="python inline-code">np.ones()</code> for creating an array of all zeros or all ones, respectively.</item>
-    <item>Generating an array with random numbers using <code class="python inline-code">np.random.rand(n, m)</code>, where <code class="python inline-code">n</code> and <code class="python inline-code">m</code> are the number of rows and columns, respectively.</item>
-    <item>Loading data from a file. Ex: <code class="python inline-code">np.genfromtxt('data.csv', delimiter=',')</code></item>
+    <item>Creating an <code class="python inline-code" lang="python">ndarray</code> by converting a Python list or tuple using the <code class="python inline-code" lang="python">np.array()</code> function.</item>
+    <item>Using built-in functions like <code class="python inline-code" lang="python">np.zeros()</code> and <code class="python inline-code" lang="python">np.ones()</code> for creating an array of all zeros or all ones, respectively.</item>
+    <item>Generating an array with random numbers using <code class="python inline-code" lang="python">np.random.rand(n, m)</code>, where <code class="python inline-code" lang="python">n</code> and <code class="python inline-code" lang="python">m</code> are the number of rows and columns, respectively.</item>
+    <item>Loading data from a file. Ex: <code class="python inline-code" lang="python">np.genfromtxt('data.csv', delimiter=',')</code></item>
     </list>
     <note class="guided-slides" id="note-00001">
     <title>Creating an ndarray object</title>
@@ -51,7 +51,7 @@
     </section>
     <section id="sect-00003">
     <title>NumPy operations</title>
-    <para id="para-00006">In addition to the <code class="python inline-code">ndarray</code> data type, NumPy's operations provide optimized performance for large-scale computation. The key features of NumPy include:</para>
+    <para id="para-00006">In addition to the <code class="python inline-code" lang="python">ndarray</code> data type, NumPy's operations provide optimized performance for large-scale computation. The key features of NumPy include:</para>
     <list id="list-00003">
     <item>Mathematical Operations: NumPy provides a range of mathematical functions and operations that can be applied to entire arrays or specific elements. These operations include arithmetic, trigonometric, exponential, and logarithmic functions.</item>
     <item>Array Manipulation: NumPy provides various functions to manipulate the shape, size, and structure of arrays. These include reshaping, transposing, concatenating, splitting, and adding or removing elements from arrays.</item>

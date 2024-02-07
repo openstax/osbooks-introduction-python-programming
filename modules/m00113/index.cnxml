@@ -84,7 +84,7 @@
     </section>
     <section id="sect-00003">
     <title>Data visualization tools</title>
-    <para id="para-00006">Many Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. Some of the most commonly-used frameworks are <code class="python inline-code">Matplotlib</code>, <code class="python inline-code">Plotly</code>, and <code class="python inline-code">Seaborn</code>. Here, some useful functionalities of <code class="python inline-code">Matplotlib</code> are summarized.</para>
+    <para id="para-00006">Many Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. Some of the most commonly-used frameworks are <code class="python inline-code" lang="python">Matplotlib</code>, <code class="python inline-code" lang="python">Plotly</code>, and <code class="python inline-code" lang="python">Seaborn</code>. Here, some useful functionalities of <code class="python inline-code" lang="python">Matplotlib</code> are summarized.</para>
 <table summary=" " id="table-00101">
 <title>Matplotlib functionalities. Bar plot.</title>
 <tgroup cols="2">
@@ -97,7 +97,7 @@
 <tbody>
 <row>
 <entry>Bar plot</entry>
-<entry><para id="para-00113"><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</para></entry>     
+<entry><para id="para-00113"><code class="python inline-code" lang="python">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">height</code>, and plots bars for each <code class="python inline-code" lang="python">x</code> value with the height given in the <code class="python inline-code" lang="python">height</code> variable.</para></entry>     
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -141,7 +141,7 @@ plt.show()</code></entry>
 <tbody>
 <row>
 <entry>Line plot</entry>
-<entry><para id="para-00114"><code class="python inline-code">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</para></entry>
+<entry><para id="para-00114"><code class="python inline-code" lang="python">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots lines connecting pairs of <code class="python inline-code" lang="python">(x, y)</code> value pairs.</para></entry>
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -187,7 +187,7 @@ plt.show()
 <tbody>
 <row>
 <entry>Scatter plot</entry>
-<entry><para id="para-00115"><code class="python inline-code">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots points representing <code class="python inline-code">(x, y)</code> pairs.</para></entry>      
+<entry><para id="para-00115"><code class="python inline-code" lang="python">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots points representing <code class="python inline-code" lang="python">(x, y)</code> pairs.</para></entry>      
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -230,7 +230,7 @@ plt.show()</code></entry>
 <tbody>
 <row>
 <entry>Histogram plot</entry>
-<entry><para id="para-00116"><code class="python inline-code">plt.hist(x)</code> function takes in one input <code class="python inline-code">x</code>, and plots a histogram of values in <code class="python inline-code">x</code> to show distribution or trend.</para></entry>
+<entry><para id="para-00116"><code class="python inline-code" lang="python">plt.hist(x)</code> function takes in one input <code class="python inline-code" lang="python">x</code>, and plots a histogram of values in <code class="python inline-code" lang="python">x</code> to show distribution or trend.</para></entry>
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -274,7 +274,7 @@ plt.show()</code></entry>
 <tbody>
 <row>
 <entry>Box plot</entry>
-<entry><para id="para-00117"><code class="python inline-code">plt.boxplot(x)</code> function takes in one input <code class="python inline-code">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code">x</code>.</para></entry>
+<entry><para id="para-00117"><code class="python inline-code" lang="python">plt.boxplot(x)</code> function takes in one input <code class="python inline-code" lang="python">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code" lang="python">x</code>.</para></entry>
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -320,7 +320,7 @@ plt.show()</code></entry>
 <tbody>
 <row>
 <entry>Bar plot</entry>
-<entry><para id="para-00013"><code class="python inline-code">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">height</code>, and plots bars for each <code class="python inline-code">x</code> value with the height given in the <code class="python inline-code">height</code> variable.</para></entry>
+<entry><para id="para-00013"><code class="python inline-code" lang="python">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">height</code>, and plots bars for each <code class="python inline-code" lang="python">x</code> value with the height given in the <code class="python inline-code" lang="python">height</code> variable.</para></entry>
 <entry><code class="python" lang="python">
 import matplotlib.pyplot as plt
 
@@ -345,7 +345,7 @@ plt.show()</code></entry>
 </row>
 <row>
     <entry>Line plot</entry>
-    <entry><para id="para-00014"><code class="python inline-code">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots lines connecting pairs of <code class="python inline-code">(x, y)</code> value pairs.</para></entry>
+    <entry><para id="para-00014"><code class="python inline-code" lang="python">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots lines connecting pairs of <code class="python inline-code" lang="python">(x, y)</code> value pairs.</para></entry>
     <entry><code class="python" lang="python">
     import matplotlib.pyplot as plt
 
@@ -370,7 +370,7 @@ plt.show()</code></entry>
     </row>
     <row>
     <entry>Scatter plot</entry>
-    <entry><para id="para-00015"><code class="python inline-code">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code">x</code> and <code class="python inline-code">y</code>, and plots points representing <code class="python inline-code">(x, y)</code> pairs.</para></entry>
+    <entry><para id="para-00015"><code class="python inline-code" lang="python">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots points representing <code class="python inline-code" lang="python">(x, y)</code> pairs.</para></entry>
     <entry><code class="python" lang="python">
     import matplotlib.pyplot as plt
 
@@ -394,7 +394,7 @@ plt.show()</code></entry>
     </row>
     <row>
     <entry>Histogram plot</entry>
-    <entry><para id="para-00016"><code class="python inline-code">plt.hist(x)</code> function takes in one input <code class="python inline-code">x</code>, and plots a histogram of values in <code class="python inline-code">x</code> to show distribution or trend.</para></entry>
+    <entry><para id="para-00016"><code class="python inline-code" lang="python">plt.hist(x)</code> function takes in one input <code class="python inline-code" lang="python">x</code>, and plots a histogram of values in <code class="python inline-code" lang="python">x</code> to show distribution or trend.</para></entry>
     <entry><code class="python" lang="python">
     import matplotlib.pyplot as plt
     import numpy as np
@@ -418,7 +418,7 @@ plt.show()</code></entry>
     </row>
     <row>
     <entry>Box plot</entry>
-    <entry><para id="para-00017"><code class="python inline-code">plt.boxplot(x)</code> function takes in one input <code class="python inline-code">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code">x</code>.</para></entry>
+    <entry><para id="para-00017"><code class="python inline-code" lang="python">plt.boxplot(x)</code> function takes in one input <code class="python inline-code" lang="python">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code" lang="python">x</code>.</para></entry>
     <entry><code class="python" lang="python">
     import matplotlib.pyplot as plt
     import numpy as np
@@ -463,7 +463,7 @@ plt.show()</code></entry>
     </note>
     <note id="note-00004">
     <title>Exploring further</title>
-    <para id="para-00010">Please refer to the following user guide for more information about <code class="python inline-code">Matplotlib</code>, <code class="python inline-code">Plotly</code>, and <code class="python inline-code">Seaborn</code> libraries.</para>
+    <para id="para-00010">Please refer to the following user guide for more information about <code class="python inline-code" lang="python">Matplotlib</code>, <code class="python inline-code" lang="python">Plotly</code>, and <code class="python inline-code" lang="python">Seaborn</code> libraries.</para>
     <list id="list-00002">
     <item><link url="https://openstax.org/r/100matplotguide">Matplotlib User Guide</link></item>
     <item><link url="https://openstax.org/r/100plotlyguide">Plotly User Guide</link></item>

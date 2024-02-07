@@ -17,7 +17,7 @@
     </section>
     <section id="sect-00002">
     <title>Multiple inheritance basics</title>
-    <para id="para-00002"><term id="term-00001">Multiple inheritance</term> is a type of inheritance in which one class inherits from multiple classes. A class inherited from multiple classes has all superclasses listed in the class definition inheritance list. Ex: <code class="python inline-code">class SubClass(SuperClass_1, SuperClass_2)</code>.</para>
+    <para id="para-00002"><term id="term-00001">Multiple inheritance</term> is a type of inheritance in which one class inherits from multiple classes. A class inherited from multiple classes has all superclasses listed in the class definition inheritance list. Ex: <code class="python inline-code" lang="python">class SubClass(SuperClass_1, SuperClass_2)</code>.</para>
     <note class="guided-slides" id="note-00001">
     <title>Multiple inheritance organization</title>
     <media alt="multiple_inheritance_organization_slides">
@@ -76,7 +76,7 @@
     <list id="list-00002">
     <item>Has no superclass</item>
     <item>Has attributes and methods to be added to a subclass</item>
-    <item>Isn't instantiated (Ex: Given MyMixin class, <code class="python inline-code">my_inst = MyMixin()</code> should never be used.)</item>
+    <item>Isn't instantiated (Ex: Given MyMixin class, <code class="python inline-code" lang="python">my_inst = MyMixin()</code> should never be used.)</item>
     </list>
     <para id="para-00009"><term id="term-00003">Mixin classes</term> are used in multiple inheritance to add functionality to a subclass without adding inheritance concerns.</para>
     <note class="learning-questions" id="note-00003">

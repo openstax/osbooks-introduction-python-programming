@@ -12,9 +12,9 @@
     <list id="list-00001">
     <item>Object-oriented programming involves grouping related fields and procedures into objects using data abstraction and encapsulation.</item>
     <item>Classes define a type of object with attributes and methods.</item>
-    <item>Instances of a class type represent objects and are created using <code class="python inline-code">__init__()</code>.</item>
+    <item>Instances of a class type represent objects and are created using <code class="python inline-code" lang="python">__init__()</code>.</item>
     <item>Attributes may belong to the instance (unique for each instance) or the class (shared by all instances).</item>
-    <item>Instance methods have the first parameter <code class="python inline-code">self</code> to access the specific instance.</item>
+    <item>Instance methods have the first parameter <code class="python inline-code" lang="python">self</code> to access the specific instance.</item>
     <item>Python uses magic methods to perform "under the hood" actions for users. Magic methods always start and end with double underscores.</item>
     <item>Python allows overloading of existing operators for user-defined classes.</item>
     <item>Classes can be imported from modules by name and can be renamed using aliases.</item>

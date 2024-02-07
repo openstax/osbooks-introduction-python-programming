@@ -16,7 +16,7 @@
   </section>
   <section id="sect-00002">
   <title>More about __init__()</title>
-  <para id="para-00002">In Python, __init__() is the special method that creates instances. <code class="python inline-code">__init__()</code> must have the calling instance, <code class="python inline-code">self</code>, as the first parameter and can have any number of other parameters with or without default parameter values.</para>
+  <para id="para-00002">In Python, __init__() is the special method that creates instances. <code class="python inline-code" lang="python">__init__()</code> must have the calling instance, <code class="python inline-code" lang="python">self</code>, as the first parameter and can have any number of other parameters with or without default parameter values.</para>
   <note class="guided-slides" id="note-00001">
   <title>Creating patient vital signs instances</title>
   <media alt="creating_instances_slides">
