@@ -10,7 +10,7 @@
       <title/>
       <para id="para-00017">This chapter introduced the basics of programming in Python, including:</para>
       <list id="list-00002">
-      <item><code class="python inline-code">print()</code> and <code class="python inline-code">input()</code></item>
+      <item><code class="python inline-code" lang="python">print()</code> and <code class="python inline-code" lang="python">input()</code></item>
       <item>Variables and assignment</item>
       <item>Strings, integers, and floats</item>
       <item>Arithmetic, concatenation</item>
@@ -34,7 +34,7 @@
       </row>
       <row>
       <entry>input(prompt)</entry>
-      <entry><para id="para-00118">If present, <code class="python inline-code">prompt</code> is output to the user. The function then reads a line of input from the user.</para></entry>
+      <entry><para id="para-00118">If present, <code class="python inline-code" lang="python">prompt</code> is output to the user. The function then reads a line of input from the user.</para></entry>
       </row>
       <row>
       <entry>len(string)</entry>
@@ -42,63 +42,63 @@
       </row>
       <row>
       <entry>type(value)</entry>
-      <entry><para id="para-00119">Returns the type (or class) of a value. Ex: <code class="python inline-code">type(123)</code> is <code class="python inline-code">&lt;class 'int'></code>.</para></entry>
+      <entry><para id="para-00119">Returns the type (or class) of a value. Ex: <code class="python inline-code" lang="python">type(123)</code> is <code class="python inline-code" lang="python">&lt;class 'int'></code>.</para></entry>
       </row>
       <row>
       <entry><emphasis effect="bold">Operator</emphasis></entry>
       <entry><emphasis effect="bold">Description</emphasis></entry>
       </row>
       <row>
-      <entry><para id="para-00120"><code class="python inline-code">=</code><newline/>
+      <entry><para id="para-00120"><code class="python inline-code" lang="python">=</code><newline/>
       (assignment)</para></entry>
       <entry>Assigns (or updates) the value of a variable. In Python, variables begin to exist when assigned for the first time.</entry>
       </row>
       <row>
-      <entry><para id="para-00121"><code class="python inline-code">+</code><newline/>
+      <entry><para id="para-00121"><code class="python inline-code" lang="python">+</code><newline/>
       (concatenation)</para></entry>
       <entry>Appends the contents of two strings, resulting in a new string.</entry>
       </row>
       <row>
-      <entry><para id="para-00122"><code class="python inline-code">+</code><newline/>
+      <entry><para id="para-00122"><code class="python inline-code" lang="python">+</code><newline/>
       (addition)</para></entry>
       <entry>Adds the values of two numbers.</entry>
       </row>
       <row>
-      <entry><para id="para-00123"><code class="python inline-code">-</code><newline/>
+      <entry><para id="para-00123"><code class="python inline-code" lang="python">-</code><newline/>
       (subtraction)</para></entry>
       <entry>Subtracts the value of one number from another.</entry>
       </row>
       <row>
-      <entry><para id="para-00124"><code class="python inline-code">*</code><newline/>
+      <entry><para id="para-00124"><code class="python inline-code" lang="python">*</code><newline/>
       (multiplication)</para></entry>
       <entry>Multiplies the values of two numbers.</entry>
       </row>
       <row>
-      <entry><para id="para-00125"><code class="python inline-code">/</code><newline/>
+      <entry><para id="para-00125"><code class="python inline-code" lang="python">/</code><newline/>
       (division)</para></entry>
       <entry>Divides the value of one number from another.</entry>
       </row>
       <row>
-      <entry><para id="para-00126"><code class="python inline-code">**</code><newline/>
+      <entry><para id="para-00126"><code class="python inline-code" lang="python">**</code><newline/>
       (exponentiation)</para></entry>
-      <entry><para id="para-00226">Raises a number to a power. Ex: <code class="python inline-code">3**2</code> is three squared.</para></entry>
+      <entry><para id="para-00226">Raises a number to a power. Ex: <code class="python inline-code" lang="python">3**2</code> is three squared.</para></entry>
       </row>
       <row>
       <entry><emphasis effect="bold">Syntax</emphasis></entry>
       <entry><emphasis effect="bold">Description</emphasis></entry>
       </row>
       <row>
-      <entry><para id="para-00127"><code class="python inline-code">#</code><newline/>
+      <entry><para id="para-00127"><code class="python inline-code" lang="python">#</code><newline/>
       (comment)</para></entry>
       <entry>All text is ignored from the # symbol to the end of the line.</entry>
       </row>
       <row>
-      <entry><para id="para-00128"><code class="python inline-code">'</code> or <code class="python inline-code">"</code><newline/>
+      <entry><para id="para-00128"><code class="python inline-code" lang="python">'</code> or <code class="python inline-code" lang="python">"</code><newline/>
       (string)</para></entry>
-      <entry><para id="para-00129">Strings may be written using either kind of quote. Ex: <code class="python inline-code">'A'</code> and <code class="python inline-code">"A"</code> represent the same string. By convention, this book uses double quotes (<code class="python inline-code">"</code>) for most strings.</para></entry>
+      <entry><para id="para-00129">Strings may be written using either kind of quote. Ex: <code class="python inline-code" lang="python">'A'</code> and <code class="python inline-code" lang="python">"A"</code> represent the same string. By convention, this book uses double quotes (<code class="python inline-code" lang="python">"</code>) for most strings.</para></entry>
       </row>
       <row>
-      <entry><para id="para-00228"><code class="python inline-code">"""</code><newline/>
+      <entry><para id="para-00228"><code class="python inline-code" lang="python">"""</code><newline/>
       (Docstring)</para></entry>
       <entry><para id="para-00229">Used for documentation, often in multi-line strings, to summarize a program's purpose or usage</para></entry>
       </row>
@@ -109,7 +109,7 @@
       </section>
     <note class="practice-program" id="note-00005">
     <title>Fun facts</title>
-    <para id="para-00019">Write a program that assigns a variable named <code class="python inline-code">number</code> to any integer of your choice. Ex: <code class="python inline-code">number = 74</code>. Then use this variable to calculate and output the following results:</para>
+    <para id="para-00019">Write a program that assigns a variable named <code class="python inline-code" lang="python">number</code> to any integer of your choice. Ex: <code class="python inline-code" lang="python">number = 74</code>. Then use this variable to calculate and output the following results:</para>
     <code class="python" lang="python">
     74 squared is 5476
     74 cubed is 405224
@@ -118,7 +118,7 @@
     74 minus 456 is -382
     </code>
     <para id="para-00020">Run the program multiple times, using a different integer each time. Your output should be mathematically correct for any integer that you choose.</para>
-    <para id="para-00021">The point of this exercise is to perform basic arithmetic within a print statement. Do not use any other variables besides <code class="python inline-code">number</code>. Your program should have only one assignment statement (at the beginning).</para>
+    <para id="para-00021">The point of this exercise is to perform basic arithmetic within a print statement. Do not use any other variables besides <code class="python inline-code" lang="python">number</code>. Your program should have only one assignment statement (at the beginning).</para>
     <media alt="fun_facts_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_10_13_Fun-facts.html"/>
     </media>
@@ -133,7 +133,7 @@
     Noun: <emphasis effect="bold">pancake</emphasis>
     Noun: <emphasis effect="bold">field</emphasis>
     </code>
-    <para id="para-00024">Use <code class="python inline-code">input()</code> to display each prompt exactly as shown. The user's input should be on the same line as the prompt. Each colon must be followed by exactly one space. After reading the input, the program should output the following three lines:</para>
+    <para id="para-00024">Use <code class="python inline-code" lang="python">input()</code> to display each prompt exactly as shown. The user's input should be on the same line as the prompt. Each colon must be followed by exactly one space. After reading the input, the program should output the following three lines:</para>
     <code class="python" lang="python">
     A vacation is when you take a trip to some <emphasis effect="bold">tranquil</emphasis> place with your <emphasis effect="bold">scandalous</emphasis> family.
     Usually you go to some place that is near a/an <emphasis effect="bold">pancake</emphasis> or up on a/an <emphasis effect="bold">field</emphasis>.

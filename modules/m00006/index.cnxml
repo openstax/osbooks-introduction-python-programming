@@ -25,7 +25,7 @@
 </note>
 <note class="learning-questions" id="note-00002">
 <title>Integers, floats, and strings</title>
-<para id="para-00002">Assume that <code class="python inline-code">x = 1</code>, <code class="python inline-code">y = 2.0</code>, and <code class="python inline-code">s = "32"</code>.</para>
+<para id="para-00002">Assume that <code class="python inline-code" lang="python">x = 1</code>, <code class="python inline-code" lang="python">y = 2.0</code>, and <code class="python inline-code" lang="python">s = "32"</code>.</para>
 <exercise id="exer-00001">
 <problem id="prob-00001">
 <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch01-m05-p01"/></para>
@@ -61,7 +61,7 @@
 </note>
 <note class="learning-questions" id="note-00004">
 <title>Applying arithmetic operators</title>
-<para id="para-00008">Assume that <code class="python inline-code">x = 7</code>, <code class="python inline-code">y = 20</code>, and <code class="python inline-code">z = 2</code>.</para>
+<para id="para-00008">Assume that <code class="python inline-code" lang="python">x = 7</code>, <code class="python inline-code" lang="python">y = 20</code>, and <code class="python inline-code" lang="python">z = 2</code>.</para>
 <exercise id="exer-00004">
 <problem id="prob-00004">
 <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch01-m05-p04"/></para>
@@ -91,7 +91,7 @@
 </section>
 <section id="sect-00004">
 <title>Operator precedence</title>
-<para id="para-00014">When a calculation has multiple operators, each operator is evaluated in order of <term id="term-00002">precedence</term>. Ex: <code class="python inline-code">1 + 2 * 3</code> is <code class="python inline-code">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code">(1 + 2) * 3</code> is <code class="python inline-code">9</code>, because parentheses take precedence over multiplication.</para>
+<para id="para-00014">When a calculation has multiple operators, each operator is evaluated in order of <term id="term-00002">precedence</term>. Ex: <code class="python inline-code" lang="python">1 + 2 * 3</code> is <code class="python inline-code" lang="python">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code" lang="python">(1 + 2) * 3</code> is <code class="python inline-code" lang="python">9</code>, because parentheses take precedence over multiplication.</para>
 <table summary=" " id="table-00001">
 <title>Operator precedence from highest to lowest</title>
 <tgroup cols="4">
@@ -105,34 +105,34 @@
 </thead>
 <tbody>
 <row>
-<entry><para id="para-00022"><code class="python inline-code">()</code></para></entry>
+<entry><para id="para-00022"><code class="python inline-code" lang="python">()</code></para></entry>
 <entry>Parentheses</entry>
-<entry><para id="para-00023"><code class="python inline-code">(1 + 2) * 3</code></para></entry>
-<entry><para id="para-00024"><code class="python inline-code">9</code></para></entry>
+<entry><para id="para-00023"><code class="python inline-code" lang="python">(1 + 2) * 3</code></para></entry>
+<entry><para id="para-00024"><code class="python inline-code" lang="python">9</code></para></entry>
 </row>
 <row>
-<entry><para id="para-00025"><code class="python inline-code">**</code></para></entry>
+<entry><para id="para-00025"><code class="python inline-code" lang="python">**</code></para></entry>
 <entry>Exponentiation</entry>
-<entry><para id="para-00026"><code class="python inline-code">2 ** 4</code></para></entry>
-<entry><para id="para-00027"><code class="python inline-code">16</code></para></entry>
+<entry><para id="para-00026"><code class="python inline-code" lang="python">2 ** 4</code></para></entry>
+<entry><para id="para-00027"><code class="python inline-code" lang="python">16</code></para></entry>
 </row>
 <row>
-<entry><para id="para-00028"><code class="python inline-code">+</code>, <code class="python inline-code">-</code></para></entry>
+<entry><para id="para-00028"><code class="python inline-code" lang="python">+</code>, <code class="python inline-code" lang="python">-</code></para></entry>
 <entry>Positive, Negative</entry>
-<entry><para id="para-00029"><code class="python inline-code">-math.pi</code></para></entry>
-<entry><para id="para-00030"><code class="python inline-code">-3.14159</code></para></entry>
+<entry><para id="para-00029"><code class="python inline-code" lang="python">-math.pi</code></para></entry>
+<entry><para id="para-00030"><code class="python inline-code" lang="python">-3.14159</code></para></entry>
 </row>
 <row>
-<entry><para id="para-00031"><code class="python inline-code">*</code>, <code class="python inline-code">/</code></para></entry>
+<entry><para id="para-00031"><code class="python inline-code" lang="python">*</code>, <code class="python inline-code" lang="python">/</code></para></entry>
 <entry>Multiplication, Division</entry>
-<entry><para id="para-00032"><code class="python inline-code">2 * 3</code></para></entry>
-<entry><para id="para-00033"><code class="python inline-code">6</code></para></entry>
+<entry><para id="para-00032"><code class="python inline-code" lang="python">2 * 3</code></para></entry>
+<entry><para id="para-00033"><code class="python inline-code" lang="python">6</code></para></entry>
 </row>
 <row>
-<entry><para id="para-00034"><code class="python inline-code">+</code>, <code class="python inline-code">-</code></para></entry>
+<entry><para id="para-00034"><code class="python inline-code" lang="python">+</code>, <code class="python inline-code" lang="python">-</code></para></entry>
 <entry>Addition, Subtraction</entry>
-<entry><para id="para-00035"><code class="python inline-code">1 + 2</code></para></entry>
-<entry><para id="para-00036"><code class="python inline-code">3</code></para></entry>
+<entry><para id="para-00035"><code class="python inline-code" lang="python">1 + 2</code></para></entry>
+<entry><para id="para-00036"><code class="python inline-code" lang="python">3</code></para></entry>
 </row>
 </tbody>
 </tgroup>

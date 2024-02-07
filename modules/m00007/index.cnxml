@@ -23,14 +23,14 @@
 <item>The type of error (Ex: SyntaxError).</item>
 <item>Additional details about the error.</item>
 </list>
-<para id="para-00004">Ex: Typing <code class="python inline-code">print "Hello!"</code> without parentheses is a syntax error. In Python, parentheses are required to use <code class="python inline-code">print</code>. When attempting to run <code class="python inline-code">print "Hello!"</code>, Python displays the following error:</para>
+<para id="para-00004">Ex: Typing <code class="python inline-code" lang="python">print "Hello!"</code> without parentheses is a syntax error. In Python, parentheses are required to use <code class="python inline-code" lang="python">print</code>. When attempting to run <code class="python inline-code" lang="python">print "Hello!"</code>, Python displays the following error:</para>
 <code class="python" lang="python">Traceback (most recent call last):
   File "/home/student/Desktop/example.py", line 1
     print "Hello"
                 ^
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
 </code>
-<para id="para-00005">The caret character (<code class="python inline-code">^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown, because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
+<para id="para-00005">The caret character (<code class="python inline-code" lang="python">^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown, because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
 <para id="para-00006">Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
 <note class="guided-slides" id="note-00001">
 <title>Incorrect variable name</title>
@@ -78,24 +78,24 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
 </thead>
 <tbody>
 <row>
-<entry><para id="para-00111"><code class="python inline-code">print("Have a nice day!"</code></para></entry>
+<entry><para id="para-00111"><code class="python inline-code" lang="python">print("Have a nice day!"</code></para></entry>
 <entry>SyntaxError: unexpected EOF while parsing</entry>
 <entry>The closing parenthesis is missing. Python is surprised to reach the end of file (EOF) before this line is complete.</entry>
 </row>
 <row>
-<entry><para id="para-00112"><code class="python inline-code">word = input("Type a word: )</code></para></entry>
+<entry><para id="para-00112"><code class="python inline-code" lang="python">word = input("Type a word: )</code></para></entry>
 <entry>SyntaxError: EOL while scanning string literal</entry>
 <entry>The closing quote marks are missing. As a result, the string does not terminate before the end of line (EOL).</entry>
 </row>
 <row>
-<entry><para id="para-00113"><code class="python inline-code">print("You typed:", w<emphasis effect="bold">i</emphasis>rd)</code></para></entry>
+<entry><para id="para-00113"><code class="python inline-code" lang="python">print("You typed:", w<emphasis effect="bold">i</emphasis>rd)</code></para></entry>
 <entry>NameError: name 'wird' is not defined</entry>
-<entry><para id="para-00114">The spelling of <code class="python inline-code">word</code> is incorrect. The programmer accidentally typed the wrong key.</para></entry>
+<entry><para id="para-00114">The spelling of <code class="python inline-code" lang="python">word</code> is incorrect. The programmer accidentally typed the wrong key.</para></entry>
 </row>
 <row>
-<entry><para id="para-00115"><code class="python inline-code">print<emphasis effect="bold">s</emphasis>("You typed:", word)</code></para></entry>
+<entry><para id="para-00115"><code class="python inline-code" lang="python">print<emphasis effect="bold">s</emphasis>("You typed:", word)</code></para></entry>
 <entry>NameError: name 'prints' is not defined</entry>
-<entry><para id="para-00116">The spelling of <code class="python inline-code">print</code> is incorrect. The programmer accidentally typed an extra letter.</para></entry>
+<entry><para id="para-00116">The spelling of <code class="python inline-code" lang="python">print</code> is incorrect. The programmer accidentally typed an extra letter.</para></entry>
 </row>
 <row>
 <entry>

@@ -104,8 +104,8 @@ print("What is your favorite song?")
 song = input()
 print("Cool! I like", song, "too.")
 </code></item>
-<item>The modified program reads two lines of input: <code class="python inline-code">name</code> and <code class="python inline-code">song</code>. Add your favorite song to the Input box below your name, and run the program again.</item>
-<item>The next section of the book will explain how <code class="python inline-code">print()</code> and <code class="python inline-code">input()</code> work. Feel free to experiment with this code until you are ready to move on.</item>
+<item>The modified program reads two lines of input: <code class="python inline-code" lang="python">name</code> and <code class="python inline-code" lang="python">song</code>. Add your favorite song to the Input box below your name, and run the program again.</item>
+<item>The next section of the book will explain how <code class="python inline-code" lang="python">print()</code> and <code class="python inline-code" lang="python">input()</code> work. Feel free to experiment with this code until you are ready to move on.</item>
 </list>
 <media alt="favorite_song_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_02_01_Favorite-song.html"/>

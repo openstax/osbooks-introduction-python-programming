@@ -16,13 +16,13 @@
 </section>
 <section id="sect-00002">
 <title>The hash character</title>
-<para id="para-00002"><term id="term-00001">Comments</term> are short phrases that explain what the code is doing. Ex: Lines 1, 8, and 10 in the following program contain comments. Each comment begins with a hash character (<code class="python inline-code">#</code>). All text from the hash character to the end of the line is ignored when running the program. In contrast, hash characters inside of strings are treated as regular text. Ex: The string <code class="python inline-code">"Item #1: "</code> does not contain a comment.</para>
+<para id="para-00002"><term id="term-00001">Comments</term> are short phrases that explain what the code is doing. Ex: Lines 1, 8, and 10 in the following program contain comments. Each comment begins with a hash character (<code class="python inline-code" lang="python">#</code>). All text from the hash character to the end of the line is ignored when running the program. In contrast, hash characters inside of strings are treated as regular text. Ex: The string <code class="python inline-code" lang="python">"Item #1: "</code> does not contain a comment.</para>
 <para id="para-00003">When writing comments:</para>
 <list id="list-00002">
-<item>The <code class="python inline-code">#</code> character should be followed by a single space.
-Ex: <code class="python inline-code"># End of menu</code> is easier to read than <code class="python inline-code">#End of menu</code>.</item>
+<item>The <code class="python inline-code" lang="python">#</code> character should be followed by a single space.
+Ex: <code class="python inline-code" lang="python"># End of menu</code> is easier to read than <code class="python inline-code" lang="python">#End of menu</code>.</item>
 <item>Comments should explain the purpose of the code, not just repeat the code itself.
-Ex: <code class="python inline-code"># Get the user's preferences</code> is more descriptive than <code class="python inline-code"># Input item1 and item2</code>.</item>
+Ex: <code class="python inline-code" lang="python"># Get the user's preferences</code> is more descriptive than <code class="python inline-code" lang="python"># Input item1 and item2</code>.</item>
 </list>
 <example id="exam-00001">
 <title>Program with three comments</title>
@@ -96,7 +96,7 @@ item2 = input("Item #2: ")
 <section id="sect-00004">
 <title>Documentation</title>
 <para id="para-00013">Python programs may optionally begin with a string known as a docstring. A <term id="term-00002">docstring</term> is documentation written for others who will use the program but not necessarily read the source code. Most of the official documentation at <link url="https://openstax.org/r/100docstrings">docs.python.org</link> is generated from docstrings.</para>
-<para id="para-00014">Documentation can be long, so docstrings are generally written as multi-line strings (<code class="python inline-code">"""</code>). Common elements of a docstring include a one-line summary, a blank line, and a longer description.</para>
+<para id="para-00014">Documentation can be long, so docstrings are generally written as multi-line strings (<code class="python inline-code" lang="python">"""</code>). Common elements of a docstring include a one-line summary, a blank line, and a longer description.</para>
 <note class="guided-slides" id="note-00004">
 <title>Vacations docstring</title>
 <media alt="docstring_slides">
