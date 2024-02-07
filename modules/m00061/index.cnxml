@@ -47,7 +47,7 @@
     </section>
     <section id="sect-00003">
     <title>For loop using in operator</title>
-    <para id="para-00006">The <code class="python inline-code">in</code> operator can be used to iterate over characters in a string using a <code class="python inline-code">for</code> loop. In each for loop iteration, one character is read and will be the loop variable for that iteration.</para>
+    <para id="para-00006">The <code class="python inline-code" lang="python">in</code> operator can be used to iterate over characters in a string using a <code class="python inline-code" lang="python">for</code> loop. In each for loop iteration, one character is read and will be the loop variable for that iteration.</para>
     <note class="guided-slides" id="note-00003">
     <title>for loop using in operator</title>
     <media alt="for_loop_in_operator_slides">
@@ -131,10 +131,10 @@
     </section>
     <section id="sect-00006">
     <title>index() function</title>
-    <para id="para-00018">The <term id="term-00004">index()</term> function performs similar to the find() function in which the function returns the index of the first occurrence of a substring in a given string. The <code class="python inline-code">index()</code> function assumes that the substring exists in the given string, otherwise, throws a <code class="python inline-code">ValueError</code>.</para>
+    <para id="para-00018">The <term id="term-00004">index()</term> function performs similar to the find() function in which the function returns the index of the first occurrence of a substring in a given string. The <code class="python inline-code" lang="python">index()</code> function assumes that the substring exists in the given string, otherwise, throws a <code class="python inline-code" lang="python">ValueError</code>.</para>
     <example id="exam-00001">
     <title>Getting the time's minute portion</title>
-    <para id="para-00019">Consider a time value is given as part of a string using the format of <code class="python inline-code">"hh:mm"</code> with <code class="python inline-code">"hh"</code> representing the hour and <code class="python inline-code">"mm"</code> representing the minutes. To retrieve only the string's minute portion the following code can be used:</para>
+    <para id="para-00019">Consider a time value is given as part of a string using the format of <code class="python inline-code" lang="python">"hh:mm"</code> with <code class="python inline-code" lang="python">"hh"</code> representing the hour and <code class="python inline-code" lang="python">"mm"</code> representing the minutes. To retrieve only the string's minute portion the following code can be used:</para>
     <code class="python" lang="python">
     time_string = "The time is 12:50"
     index = time_string.index(":")

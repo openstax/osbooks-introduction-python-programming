@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Returning from a function</title>
-    <para id="para-00002">When a function finishes, the function returns and provides a result to the calling code. A <term id="term-00001">return statement</term> finishes the function execution and can specify a value to return to the function's caller. Functions introduced so far have not had a return statement, which is the same as returning <code class="python inline-code">None</code>, representing no value.</para>
+    <para id="para-00002">When a function finishes, the function returns and provides a result to the calling code. A <term id="term-00001">return statement</term> finishes the function execution and can specify a value to return to the function's caller. Functions introduced so far have not had a return statement, which is the same as returning <code class="python inline-code" lang="python">None</code>, representing no value.</para>
     <note class="guided-slides" id="note-00001">
     <title>Returning a value from a function</title>
     <media alt="returning_value_from_function_slides">

@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>String comparison</title>
-    <para id="para-00002">String values can be compared using logical operators (<code class="python inline-code">&lt;</code>, <code class="python inline-code">&lt;=</code>, <code class="python inline-code">></code>, <code class="python inline-code">>=</code>, <code class="python inline-code">==</code>, <code class="python inline-code">!=</code>) and membership operators (<code class="python inline-code">in</code> and <code class="python inline-code">not in</code>). When comparing two string values, the matching characters in two string values are compared sequentially until a decision is reached. For comparing two characters, ASCII values are used to apply logical operators.</para>
+    <para id="para-00002">String values can be compared using logical operators (<code class="python inline-code" lang="python">&lt;</code>, <code class="python inline-code" lang="python">&lt;=</code>, <code class="python inline-code" lang="python">></code>, <code class="python inline-code" lang="python">>=</code>, <code class="python inline-code" lang="python">==</code>, <code class="python inline-code" lang="python">!=</code>) and membership operators (<code class="python inline-code" lang="python">in</code> and <code class="python inline-code" lang="python">not in</code>). When comparing two string values, the matching characters in two string values are compared sequentially until a decision is reached. For comparing two characters, ASCII values are used to apply logical operators.</para>
     <table summary=" " id="table-00001">
     <title>Comparing string values.</title>
     <tgroup cols="5">
@@ -31,46 +31,46 @@
     </thead>
     <tbody>
     <row>
-    <entry><para id="para-00014"><code class="python inline-code">></code> or <code class="python inline-code">>=</code></para></entry>
+    <entry><para id="para-00014"><code class="python inline-code" lang="python">></code> or <code class="python inline-code" lang="python">>=</code></para></entry>
     <entry>Checks whether the first string value is greater than (or greater than or equal to) the second string value.</entry>
-    <entry><para id="para-00015"><code class="python inline-code">"c" &gt; "d"</code></para></entry>
-    <entry><para id="para-00016"><code class="python inline-code">False</code></para></entry>
-    <entry><para id="para-00017">When comparing <code class="python inline-code">"c"</code> operand to <code class="python inline-code">"d"</code> operand, the ASCII value for <code class="python inline-code">"c"</code> is smaller than the ASCII value for <code class="python inline-code">"d"</code>. Therefore, <code class="python inline-code">"c" &lt; "d"</code> and the expression <code class="python inline-code">"c" &gt; "d"</code> evaluates to False.</para></entry>
+    <entry><para id="para-00015"><code class="python inline-code" lang="python">"c" &gt; "d"</code></para></entry>
+    <entry><para id="para-00016"><code class="python inline-code" lang="python">False</code></para></entry>
+    <entry><para id="para-00017">When comparing <code class="python inline-code" lang="python">"c"</code> operand to <code class="python inline-code" lang="python">"d"</code> operand, the ASCII value for <code class="python inline-code" lang="python">"c"</code> is smaller than the ASCII value for <code class="python inline-code" lang="python">"d"</code>. Therefore, <code class="python inline-code" lang="python">"c" &lt; "d"</code> and the expression <code class="python inline-code" lang="python">"c" &gt; "d"</code> evaluates to False.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00018"><code class="python inline-code">&lt;</code> or <code class="python inline-code">&lt;=</code></para></entry>
+    <entry><para id="para-00018"><code class="python inline-code" lang="python">&lt;</code> or <code class="python inline-code" lang="python">&lt;=</code></para></entry>
     <entry>Checks whether the first string value is less than (or less than or equal to) the second string value.</entry>
-    <entry><para id="para-00019"><code class="python inline-code">"ab" &lt; "ac"</code></para></entry>
-    <entry><para id="para-00020"><code class="python inline-code">True</code></para></entry>
-    <entry><para id="para-00021">When comparing <code class="python inline-code">"ab"</code> operand to <code class="python inline-code">"ac"</code> operand, the first characters are the same, but the second character of <code class="python inline-code">"ab"</code> is less than the second character in <code class="python inline-code">"ac"</code> and as such <code class="python inline-code">"ab" &lt; "ac"</code>.</para></entry>
+    <entry><para id="para-00019"><code class="python inline-code" lang="python">"ab" &lt; "ac"</code></para></entry>
+    <entry><para id="para-00020"><code class="python inline-code" lang="python">True</code></para></entry>
+    <entry><para id="para-00021">When comparing <code class="python inline-code" lang="python">"ab"</code> operand to <code class="python inline-code" lang="python">"ac"</code> operand, the first characters are the same, but the second character of <code class="python inline-code" lang="python">"ab"</code> is less than the second character in <code class="python inline-code" lang="python">"ac"</code> and as such <code class="python inline-code" lang="python">"ab" &lt; "ac"</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00022"><code class="python inline-code">==</code></para></entry>
+    <entry><para id="para-00022"><code class="python inline-code" lang="python">==</code></para></entry>
     <entry>Checks whether two string values are equal.</entry>
-    <entry><para id="para-00023"><code class="python inline-code">"aa" == "aa"</code></para></entry>
-    <entry><para id="para-00024"><code class="python inline-code">True</code></para></entry>
+    <entry><para id="para-00023"><code class="python inline-code" lang="python">"aa" == "aa"</code></para></entry>
+    <entry><para id="para-00024"><code class="python inline-code" lang="python">True</code></para></entry>
     <entry>Since all characters in the first operand and the second operand are the same, the two string values are equal.</entry>
     </row>
     <row>
-    <entry><para id="para-00025"><code class="python inline-code">!=</code></para></entry>
+    <entry><para id="para-00025"><code class="python inline-code" lang="python">!=</code></para></entry>
     <entry>Checks whether two string values are not equal.</entry>
-    <entry><para id="para-00026"><code class="python inline-code">"a" != "b"</code></para></entry>
-    <entry><para id="para-00027"><code class="python inline-code">True</code></para></entry>
-    <entry><para id="para-00028">The two operands contain different string values (<code class="python inline-code">"a"</code> vs. <code class="python inline-code">"b"</code>), and the result of checking whether the two are not the same evaluates to True.</para></entry>
+    <entry><para id="para-00026"><code class="python inline-code" lang="python">"a" != "b"</code></para></entry>
+    <entry><para id="para-00027"><code class="python inline-code" lang="python">True</code></para></entry>
+    <entry><para id="para-00028">The two operands contain different string values (<code class="python inline-code" lang="python">"a"</code> vs. <code class="python inline-code" lang="python">"b"</code>), and the result of checking whether the two are not the same evaluates to True.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00029"><code class="python inline-code">in</code></para></entry>
+    <entry><para id="para-00029"><code class="python inline-code" lang="python">in</code></para></entry>
     <entry>Checks whether the second operand contains the first operand.</entry>
-    <entry><para id="para-00030"><code class="python inline-code">"a" in "bc"</code></para></entry>
-    <entry><para id="para-00031"><code class="python inline-code">False</code></para></entry>
-    <entry><para id="para-00032">Since string <code class="python inline-code">"bc"</code> does not contain string <code class="python inline-code">"a"</code>, the output of <code class="python inline-code">"a" in "bc"</code> evaluates to False.</para></entry>
+    <entry><para id="para-00030"><code class="python inline-code" lang="python">"a" in "bc"</code></para></entry>
+    <entry><para id="para-00031"><code class="python inline-code" lang="python">False</code></para></entry>
+    <entry><para id="para-00032">Since string <code class="python inline-code" lang="python">"bc"</code> does not contain string <code class="python inline-code" lang="python">"a"</code>, the output of <code class="python inline-code" lang="python">"a" in "bc"</code> evaluates to False.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00033"><code class="python inline-code">not in</code></para></entry>
+    <entry><para id="para-00033"><code class="python inline-code" lang="python">not in</code></para></entry>
     <entry>Checks whether the second operand does not contain the first operand.</entry>
-    <entry><para id="para-00034"><code class="python inline-code">"a" not in "bc"</code></para></entry>
-    <entry><para id="para-00035"><code class="python inline-code">True</code></para></entry>
-    <entry><para id="para-00036">Since string <code class="python inline-code">"bc"</code> does not contain string <code class="python inline-code">"a"</code>, the output of <code class="python inline-code">"a" not in "bc"</code> evaluates to True.</para></entry>
+    <entry><para id="para-00034"><code class="python inline-code" lang="python">"a" not in "bc"</code></para></entry>
+    <entry><para id="para-00035"><code class="python inline-code" lang="python">True</code></para></entry>
+    <entry><para id="para-00036">Since string <code class="python inline-code" lang="python">"bc"</code> does not contain string <code class="python inline-code" lang="python">"a"</code>, the output of <code class="python inline-code" lang="python">"a" not in "bc"</code> evaluates to True.</para></entry>
     </row>
     </tbody>
     </tgroup>

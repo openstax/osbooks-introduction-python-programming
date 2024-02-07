@@ -17,8 +17,8 @@
     </section>
     <section id="sect-00002">
     <title>String indexing</title>
-    <para id="para-00002">A string is a type of sequence. A string is made up of a sequence of characters indexed from left to right starting at 0. For a string variable <code class="python inline-code">s</code>, the left-most character is indexed 0 and the right-most character is indexed <code class="python inline-code">len(s) - 1</code>. Ex: The length of the string "Cloud" is 5, so the last index is 4.</para>
-    <para id="para-00003">Negative indexing can also be used to refer to characters from right to left starting at -1. For a string variable <code class="python inline-code">s</code>, the left-most character is indexed <code class="python inline-code">-len(s)</code> and the right-most character is indexed -1. Ex: The length of the string "flower" is 6, so the index of the first character with negative indexing is -6.</para>
+    <para id="para-00002">A string is a type of sequence. A string is made up of a sequence of characters indexed from left to right starting at 0. For a string variable <code class="python inline-code" lang="python">s</code>, the left-most character is indexed 0 and the right-most character is indexed <code class="python inline-code" lang="python">len(s) - 1</code>. Ex: The length of the string "Cloud" is 5, so the last index is 4.</para>
+    <para id="para-00003">Negative indexing can also be used to refer to characters from right to left starting at -1. For a string variable <code class="python inline-code" lang="python">s</code>, the left-most character is indexed <code class="python inline-code" lang="python">-len(s)</code> and the right-most character is indexed -1. Ex: The length of the string "flower" is 6, so the index of the first character with negative indexing is -6.</para>
     <note class="guided-slides" id="note-00001">
     <title>String indexing</title>
     <media alt="string_indexing_slides">
@@ -46,10 +46,10 @@
     </section>
     <section id="sect-00003">
     <title>String slicing</title>
-    <para id="para-00007"><term id="term-00001">String slicing</term> is used when a programmer must get access to a sequence of characters. Here, a string slicing operator can be used. When <code class="python inline-code">[a:b]</code> is used with the name of a string variable, a sequence of characters starting from index <code class="python inline-code">a</code> (inclusive) up to index <code class="python inline-code">b</code> (exclusive) is returned. Both <code class="python inline-code">a</code> and <code class="python inline-code">b</code> are optional. If <code class="python inline-code">a</code> or <code class="python inline-code">b</code> are not provided, the default values are 0 and <code class="python inline-code">len(string)</code>, respectively.</para>
+    <para id="para-00007"><term id="term-00001">String slicing</term> is used when a programmer must get access to a sequence of characters. Here, a string slicing operator can be used. When <code class="python inline-code" lang="python">[a:b]</code> is used with the name of a string variable, a sequence of characters starting from index <code class="python inline-code" lang="python">a</code> (inclusive) up to index <code class="python inline-code" lang="python">b</code> (exclusive) is returned. Both <code class="python inline-code" lang="python">a</code> and <code class="python inline-code" lang="python">b</code> are optional. If <code class="python inline-code" lang="python">a</code> or <code class="python inline-code" lang="python">b</code> are not provided, the default values are 0 and <code class="python inline-code" lang="python">len(string)</code>, respectively.</para>
     <example id="exam-00001">
     <title>Getting the minutes</title>
-    <para id="para-00008">Consider a time value is given as <code class="python inline-code">"hh:mm"</code> with <code class="python inline-code">"hh"</code> representing the hour and <code class="python inline-code">"mm"</code> representing the minutes. To retrieve only the string's minutes portion the following code can be used:</para>
+    <para id="para-00008">Consider a time value is given as <code class="python inline-code" lang="python">"hh:mm"</code> with <code class="python inline-code" lang="python">"hh"</code> representing the hour and <code class="python inline-code" lang="python">"mm"</code> representing the minutes. To retrieve only the string's minutes portion the following code can be used:</para>
     <code class="python" lang="python">
     time_string = "13:46"
     minutes = time_string[3:5]
@@ -62,7 +62,7 @@
     </example>
     <example id="exam-00002">
     <title>Getting the hour</title>
-    <para id="para-00010">Consider a time value is given as <code class="python inline-code">"hh:mm"</code> with <code class="python inline-code">"hh"</code> representing the hour and <code class="python inline-code">"mm"</code> representing the minutes. To retrieve only the string's hour portion the following code can be used:</para>
+    <para id="para-00010">Consider a time value is given as <code class="python inline-code" lang="python">"hh:mm"</code> with <code class="python inline-code" lang="python">"hh"</code> representing the hour and <code class="python inline-code" lang="python">"mm"</code> representing the minutes. To retrieve only the string's hour portion the following code can be used:</para>
     <code class="python" lang="python">
     time_string = "14:50"
     hour = time_string[:2]

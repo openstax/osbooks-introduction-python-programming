@@ -45,7 +45,7 @@
     </section>
     <section id="sect-00003">
     <title>Defining a function</title>
-    <para id="para-00006">A function is defined using the <term id="term-00002">def</term> keyword. The first line contains <code class="python inline-code">def</code> followed by the function name (in snake case), parentheses (with any parameters--discussed later), and a colon. The indented body begins with a documentation string describing the function's task and contains the function statements. A function must be defined before the function is called.</para>
+    <para id="para-00006">A function is defined using the <term id="term-00002">def</term> keyword. The first line contains <code class="python inline-code" lang="python">def</code> followed by the function name (in snake case), parentheses (with any parameters--discussed later), and a colon. The indented body begins with a documentation string describing the function's task and contains the function statements. A function must be defined before the function is called.</para>
     <note class="guided-slides" id="note-00003">
     <title>Example: Welcome message function</title>
     <media alt="welcome_message_slides">

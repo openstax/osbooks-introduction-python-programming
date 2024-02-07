@@ -131,7 +131,7 @@
     for temp in wknd_temps:
       print(f"{temp:.2f}{deg_sign}{metric}", end=" ")
     </code>
-    <para id="para-00016">The output is <code class="python inline-code">9.44°F 10.56°F 6.67°F</code>. type was changed to "C" in the function but didn't keep the change outside of the function. Why is the list argument change kept and not the string argument change? (Hint: A list is mutable. A string is immutable.)</para>
+    <para id="para-00016">The output is <code class="python inline-code" lang="python">9.44°F 10.56°F 6.67°F</code>. type was changed to "C" in the function but didn't keep the change outside of the function. Why is the list argument change kept and not the string argument change? (Hint: A list is mutable. A string is immutable.)</para>
     </example>
     <note class="guided-slides" id="note-00004">
     <title>Exploring a faulty function</title>
