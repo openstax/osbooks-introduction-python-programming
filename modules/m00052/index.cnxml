@@ -155,9 +155,9 @@
     <title>European vacation</title>
     <para id="para-00014">Write a program that uses the <code class="python inline-code" lang="python">conversion</code> module from the previous exercise to complete a short story. The program's output should match the following example (input in bold).</para>
     <code class="python" lang="python">
-    How fast were you driving? <code class="python inline-code" lang="python">180</code>
+    How fast were you driving? 180
     Woah, that's like 112 mph!
-    What was the temperature? <code class="python inline-code" lang="python">35</code>
+    What was the temperature? 35
     That's 95 degrees Fahrenheit!
     </code>
     <para id="para-00015">Notice this exercise requires two files:</para>
