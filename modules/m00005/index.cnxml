@@ -145,8 +145,8 @@
   <title>Name length</title>
   <para id="para-00019">Write a program that asks the user to input their first and last name separately. Use the following prompts (example input in bold):</para>
   <code class="python" lang="python">
-  What is your first name? <emphasis effect="bold">Alan</emphasis>
-  What is your last name? <emphasis effect="bold">Turing</emphasis>
+  What is your first name? Alan
+  What is your last name? Turing
   </code> 
   <para id="para-00020">The program should then output the length of each name. Based on the example input above, the output would be:  </para> 
   <code class="python" lang="python">
