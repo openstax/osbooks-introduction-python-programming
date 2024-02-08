@@ -1,1 +1,0 @@
-window.parameters = {"files": [{"name": "main.py", "contents": null, "solution": "num = int(input())\n\nis_even = (num % 2 == 0)\nprint(num, \"is even:\", is_even)"}], "input": "6", "showSolution": true};
