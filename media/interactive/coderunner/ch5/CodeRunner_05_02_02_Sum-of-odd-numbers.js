@@ -1,1 +1,0 @@
-window.parameters = {"files": [{"name": "main.py", "contents": "n1 = int(input())\nn2 = int(input())\n\n# TODO: while statement\n", "solution": "n1 = int(input())\nn2 = int(input())\n \nindex = n1\ntotal = 0\nwhile index <= n2:\n    if index % 2 != 0:\n        total += index\n    index += 1\n \nprint(total)"}], "input": "10\n20", "showSolution": true};
