@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "hopper_quote.py", "contents": null, "solution": "print(\"\\\"To me programming is more than an important practical art.\")\nprint(\"It is also a gigantic undertaking in the foundations of knowledge.\\\"\")\nprint(\"\\t-- Grace Hopper\")\n"}], "input": null, "showSolution": true};
