@@ -142,7 +142,7 @@ key_2:{key21:value21, key22:value22}
     
     <note class="practice-program" id="note-00001">
     <title>Even and odd values</title>
-    <para id="para-00003">Given a list, create a dictionary with two keys, "even" and "odd". The values associated with each key must be the list of corresponding even and odd values in the given list.</para>
+    <para id="para-00003">Given a list, create a dictionary with two keys, <code class="python inline-code" lang="python">"even"</code> and <code class="python inline-code" lang="python">"odd"</code>. The values associated with each key must be the list of corresponding even and odd values in the given list.</para>
     <code class="python" lang="python">
     Input:
     input_list = [3, 5, 6, 1]

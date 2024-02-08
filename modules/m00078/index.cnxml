@@ -140,7 +140,7 @@ Maryam Samimi</code>
     </note>
     <note class="practice-program" id="note-00006">
     <title>Restructuring the company data</title>
-    <para id="para-00012">Suppose you have a dictionary that contains information about employees at a company. Each employee is identified by an ID number, and their information includes their name, department, and salary. You want to create a nested dictionary that groups employees by department so that you can easily see the names and salaries of all employees in each department. Write a Python program that given a dictionary, employees, outputs a nested dictionary, dept_employees, that groups employees by department.</para>
+    <para id="para-00012">Suppose you have a dictionary that contains information about employees at a company. Each employee is identified by an ID number, and their information includes their name, department, and salary. You want to create a nested dictionary that groups employees by department so that you can easily see the names and salaries of all employees in each department. Write a Python program that given a dictionary, <code class="python inline-code" lang="python">employees</code>, outputs a nested dictionary, <code class="python inline-code" lang="python">dept_employees</code>, that groups employees by department.</para>
     <code class="python" lang="python">
     Input:
     employees = {

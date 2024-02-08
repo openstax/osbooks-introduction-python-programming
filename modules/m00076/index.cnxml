@@ -177,14 +177,14 @@
    
     <note class="practice-program" id="note-00006">
     <title>Create a dictionary of cars step-by-step</title>
-    <para id="para-00023">Follow the steps below to create a dictionary of cars and modify it step-by-step.</para>
+    <para id="para-00023">Follow the steps below to create a dictionary of <code class="python inline-code" lang="python">cars</code> and modify it step-by-step.</para>
     <list list-type="enumerated" id="list-00006">
     <item>Create an empty dictionary.</item>
-    <item>Add a key-value pair of "Mustang": 10.</item>
-    <item>Add another key-value pair of "Volt": 3.</item>
+    <item>Add a key-value pair of <code class="python inline-code" lang="python">"Mustang": 10</code>.</item>
+    <item>Add another key-value pair of <code class="python inline-code" lang="python">"Volt": 3</code>.</item>
     <item>Print the dictionary.</item>
-    <item>Modify the value associated with key "Mustang" to be equal to 2.</item>
-    <item>Delete key "Volt" and the associated value.</item>
+    <item>Modify the value associated with key <code class="python inline-code" lang="python">"Mustang"</code> to be equal to <code class="python inline-code" lang="python">2</code>.</item>
+    <item>Delete key <code class="python inline-code" lang="python">"Volt"</code> and the associated value.</item>
     <item>Print the dictionary content.</item>
     </list>
     <code class="python" lang="python">

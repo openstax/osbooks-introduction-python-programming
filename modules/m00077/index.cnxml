@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Write a conditional statement to check for a key/value.</item>
-    <item>Write a for loop to iterate over elements of a dictionary.</item>
+    <item>Write a <code class="python inline-code" lang="python">for</code> loop to iterate over elements of a dictionary.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -292,7 +292,7 @@ for value in zip_codes.values():
     </note>
     <note class="practice-program" id="note-00005">
     <title>Calculate the total number of fruits</title>
-    <para id="para-00012">Given a fruit_count dictionary that contains information about fruits and the count of each fruit, calculate the total number of fruits across all fruit types.</para>
+    <para id="para-00012">Given a <code class="python inline-code" lang="python">fruit_count</code> dictionary that contains information about fruits and the count of each fruit, calculate the total number of fruits across all fruit types.</para>
     <code class="python" lang="python">
     Input:
     fruit_count = {"banana": 2, "orange": 5, "peach": 5}
