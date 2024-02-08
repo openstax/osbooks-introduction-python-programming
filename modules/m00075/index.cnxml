@@ -93,7 +93,7 @@
     
     <note class="practice-program" id="note-00005">
     <title>Personal information dictionary</title>
-    <para id="para-00011">Create a dictionary, my_info, with three key-value pairs with keys being 'first name', 'last name', and 'age' and values being corresponding information about yourself. Then, print my_info.</para>
+    <para id="para-00011">Create a dictionary, <code class="python inline-code" lang="python">my_info</code>, with three key-value pairs with keys being <code class="python inline-code" lang="python">'first name'</code>, <code class="python inline-code" lang="python">'last name'</code>, and <code class="python inline-code" lang="python">'age'</code> and values being corresponding information about yourself. Then, print <code class="python inline-code" lang="python">my_info</code>.</para>
     <media alt="Personal_information_dictionary_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_03_02_Personal-information-dictionary.html"/>
     </media>
