@@ -1,0 +1,1 @@
+window.parameters = {"files": [{"name": "product_float.py", "contents": "x = input(\"Enter the first integer: \")\ny = input(\"Enter the second integer: \")", "solution": "x = input(\"Enter the first integer: \")\ny = input(\"Enter the second integer: \")\n\nproduct = int(x) * int(y)\nprint(float(product))\n"}], "input": "6\n4", "showSolution": true};
