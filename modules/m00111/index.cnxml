@@ -471,7 +471,7 @@ df</code></entry>
 </row>
 <row>
 <entry><para id="para-00016"><code class="python inline-code" lang="python">tail(n)</code></para></entry>
-<entry>The function allows for viewing the last n rows. If a value is not passed, the last 5 rows will be shown.</entry>
+<entry>The function allows for viewing the last <code class="python inline-code" lang="python">n</code> rows. If a value is not passed, the last 5 rows will be shown.</entry>
 <entry><code class="python" lang="python">df.tail(3)</code></entry>
 <entry>
 <table class="unnumbered" summary=" " id="table-00108">

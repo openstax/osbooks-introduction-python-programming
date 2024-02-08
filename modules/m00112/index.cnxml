@@ -121,7 +121,7 @@
     <item><code class="python inline-code" lang="python">dropna()</code>: The <code class="python inline-code" lang="python">dropna()</code> function can be used to drop rows with <code class="python inline-code" lang="python">Null</code> values.</item>
     <item><code class="python inline-code" lang="python">fillna()</code>: The <code class="python inline-code" lang="python">fillna()</code> function can be used to substitute <code class="python inline-code" lang="python">Null</code> values with a given value. Ex: <code class="python inline-code" lang="python">df.fillna(df.mean())</code> replaces all <code class="python inline-code" lang="python">Null</code> values with the average value of the specific column.</item>
     </list>
-    <para id="para-00016">To define a null value in a DataFrame, you can use the <code class="python inline-code" lang="python">np.nan</code> value from the NumPy library. Assuming that the following code is given, the table below outlines examples of identifying and removing <code class="python inline-code" lang="python">Null</code> entries.</para>
+    <para id="para-00016">To define a <code class="python inline-code" lang="python">null</code> value in a DataFrame, you can use the <code class="python inline-code" lang="python">np.nan</code> value from the NumPy library. Assuming that the following code is given, the table below outlines examples of identifying and removing <code class="python inline-code" lang="python">Null</code> entries.</para>
     <code class="python" lang="python">
     import pandas as pd
     import numpy as np
@@ -250,7 +250,7 @@ df.isnull()
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image2.png"/>
     </media>-->
 </entry>
-<entry><para id="para-00017"><code class="python inline-code" lang="python">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been Null.</para></entry>
+<entry><para id="para-00017"><code class="python inline-code" lang="python">df.isnull()</code> returns a Boolean array with Boolean values representing whether each entry has been <code class="python inline-code" lang="python">Null</code>.</para></entry>
 </row>
 <row>
 <entry><code class="python" lang="python">fillna()</code></entry>
@@ -306,7 +306,7 @@ df["Column 2"].fillna(df["Column 2"]
     <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image1.png"/></media>-->
 </entry>
-<entry><para id="para-00018">Null values in <code class="python inline-code" lang="python">Column 2</code> are replaced with the mean of non-Null values in the column.</para></entry>
+<entry><para id="para-00018"><code class="python inline-code" lang="python">Null</code> values in <code class="python inline-code" lang="python">Column 2</code> are replaced with the mean of non-<code class="python inline-code" lang="python">Null</code> values in the column.</para></entry>
 </row>
 <row>
 <entry><code class="python" lang="python">dropna()</code></entry>
@@ -350,7 +350,7 @@ df = df.dropna()</code></entry>
     <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image3.png"/></media>-->
 </entry>
-<entry>All rows containing a Null value are removed from the DataFrame.</entry>
+<entry>All rows containing a <code class="python inline-code" lang="python">Null</code> value are removed from the DataFrame.</entry>
 </row>
 </tbody>
 </tgroup>

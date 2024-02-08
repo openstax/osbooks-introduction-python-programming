@@ -84,7 +84,7 @@
     </section>
     <section id="sect-00003">
     <title>Data visualization tools</title>
-    <para id="para-00006">Many Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. Some of the most commonly-used frameworks are <code class="python inline-code" lang="python">Matplotlib</code>, <code class="python inline-code" lang="python">Plotly</code>, and <code class="python inline-code" lang="python">Seaborn</code>. Here, some useful functionalities of <code class="python inline-code" lang="python">Matplotlib</code> are summarized.</para>
+    <para id="para-00006">Many Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. Some of the most commonly-used frameworks are Matplotlib, Plotly, and Seaborn. Here, some useful functionalities of <code class="python inline-code" lang="python">Matplotlib</code> are summarized.</para>
 <table summary=" " id="table-00101">
 <title>Matplotlib functionalities. Bar plot.</title>
 <tgroup cols="2">
@@ -463,7 +463,7 @@ plt.show()</code></entry>
     </note>
     <note id="note-00004">
     <title>Exploring further</title>
-    <para id="para-00010">Please refer to the following user guide for more information about <code class="python inline-code" lang="python">Matplotlib</code>, <code class="python inline-code" lang="python">Plotly</code>, and <code class="python inline-code" lang="python">Seaborn</code> libraries.</para>
+    <para id="para-00010">Please refer to the following user guide for more information about Matplotlib, Plotly, and Seaborn libraries.</para>
     <list id="list-00002">
     <item><link url="https://openstax.org/r/100matplotguide">Matplotlib User Guide</link></item>
     <item><link url="https://openstax.org/r/100plotlyguide">Plotly User Guide</link></item>

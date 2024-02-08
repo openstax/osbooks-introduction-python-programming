@@ -12,21 +12,21 @@
     <item>Data science life-cycle is the framework followed by data scientists to complete a data science project.</item>
     <item>Data science life-cycle includes 1) data acquisition, 2) data exploration, 3) data analysis, and 4) reporting.</item>
     <item>Google Colab is a cloud-based Jupyter Notebook environment that allows you to write, run, and share Python code online.</item>
-    <item><code class="python inline-code" lang="python">NumPy</code> (Numerical Python) is a Python library that provides support for efficient numerical operations on large, multi-dimensional arrays and serves as a fundamental building block for data analysis in Python.</item>
-    <item><code class="python inline-code" lang="python">NumPy</code> implements an <code class="python inline-code" lang="python">ndarray</code> object that allows the creation of multi-dimensional arrays of homogeneous data types and efficient data processing.</item>
-    <item><code class="python inline-code" lang="python">NumPy</code> provides functionalities for mathematical operations, array manipulation, and linear algebra operations.</item>
-    <item><code class="python inline-code" lang="python">Pandas</code> is an open-source Python library used for data cleaning, processing, and analysis.</item>
-    <item><code class="python inline-code" lang="python">Pandas</code> provides <code class="python inline-code" lang="python">Series</code> and <code class="python inline-code" lang="python">DataFrame</code> data structures, data processing functionality, and integration with other libraries.</item>
+    <item>NumPy (Numerical Python) is a Python library that provides support for efficient numerical operations on large, multi-dimensional arrays and serves as a fundamental building block for data analysis in Python.</item>
+    <item>NumPy implements an <code class="python inline-code" lang="python">ndarray</code> object that allows the creation of multi-dimensional arrays of homogeneous data types and efficient data processing.</item>
+    <item>NumPy provides functionalities for mathematical operations, array manipulation, and linear algebra operations.</item>
+    <item>Pandas is an open-source Python library used for data cleaning, processing, and analysis.</item>
+    <item>Pandas provides Series and DataFrame data structures, data processing functionality, and integration with other libraries.</item>
     <item>Exploratory Data Analysis (EDA) is the task of analyzing the data to gain insights, identify patterns, and understand the underlying structure of the data.</item>
     <item>A feature is an individual variable or attribute that is calculated from the raw data in the dataset.</item>
     <item>Data indexing can be used to select and access specific rows and columns.</item>
-    <item>Data slicing refers to selecting a subset of rows and/or columns from a <code class="python inline-code" lang="python">DataFrame</code>.</item>
+    <item>Data slicing refers to selecting a subset of rows and/or columns from a DataFrame.</item>
     <item>Data filtering involves selecting rows or columns based on certain conditions.</item>
     <item>Missing values in a dataset can occur when data is not available or was not recorded properly.</item>
     <item>Data visualization has a crucial role in data science to understand the data.</item>
     <item>Different types of visualizations may include bar plot, line plot, scatter plot, histogram plot, and boxplot.</item>
-    <item>Several Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. These libraries include <code class="python inline-code" lang="python">Matplotlib</code>, <code class="python inline-code" lang="python">Seaborn</code>, and <code class="python inline-code" lang="python">Plotly</code>.</item>
-    <item>The conventional aliases for importing <code class="python inline-code" lang="python">NumPy</code>, <code class="python inline-code" lang="python">Pandas</code>, and <code class="python inline-code" lang="python">Matplotlib.pyplot</code> are <code class="python inline-code" lang="python">np</code>, <code class="python inline-code" lang="python">pd</code>, and <code class="python inline-code" lang="python">plt</code>, respectively.</item>
+    <item>Several Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. These libraries include Matplotlib, Seaborn, and Plotly.</item>
+    <item>The conventional aliases for importing NumPy, Pandas, and Matplotlib.pyplot are <code class="python inline-code" lang="python">np</code>, <code class="python inline-code" lang="python">pd</code>, and <code class="python inline-code" lang="python">plt</code>, respectively.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write programs to create data structures to store different datasets and explore and visualize datasets.</para>
     <table summary=" " id="table-00001">
@@ -61,19 +61,19 @@
     </row>
     <row>
     <entry><para id="para-00010"><code class="python inline-code" lang="python">pd.DataFrame()</code></para></entry>
-    <entry><para id="para-00011">Creates a <code class="python inline-code" lang="python">DataFrame</code> from a list, dictionary, or an array.</para></entry>
+    <entry><para id="para-00011">Creates a DataFrame from a list, dictionary, or an array.</para></entry>
     </row>
     <row>
     <entry><para id="para-00012"><code class="python inline-code" lang="python">pd.read_csv()</code></para></entry>
-    <entry><para id="para-00013">Creates a <code class="python inline-code" lang="python">DataFrame</code> from a CSV file.</para></entry>
+    <entry><para id="para-00013">Creates a DataFrame from a CSV file.</para></entry>
     </row>
     <row>
     <entry><para id="para-00014"><code class="python inline-code" lang="python">df.head()</code></para></entry>
-    <entry><para id="para-00015">Returns the first few rows of a <code class="python inline-code" lang="python">DataFrame</code>.</para></entry>
+    <entry><para id="para-00015">Returns the first few rows of a DataFrame.</para></entry>
     </row>
     <row>
     <entry><para id="para-00016"><code class="python inline-code" lang="python">df.tail()</code></para></entry>
-    <entry><para id="para-00017">Returns the last few rows of a <code class="python inline-code" lang="python">DataFrame</code>.</para></entry>
+    <entry><para id="para-00017">Returns the last few rows of a DataFrame.</para></entry>
     </row>
     <row>
     <entry><para id="para-00018"><code class="python inline-code" lang="python">df.info()</code></para></entry>
@@ -113,15 +113,15 @@
     </row>
     <row>
     <entry><para id="para-00029"><code class="python inline-code" lang="python">df.isnull()</code></para></entry>
-    <entry>Returns a Boolean array with Boolean values representing whether each entry has been Null.</entry>
+    <entry>Returns a Boolean array with Boolean values representing whether each entry has been <code class="python inline-code" lang="python">Null</code>.</entry>
     </row>
     <row>
     <entry><para id="para-00030"><code class="python inline-code" lang="python">fillna()</code></para></entry>
-    <entry>Replaces Null values.</entry>
+    <entry>Replaces <code class="python inline-code" lang="python">Null</code> values.</entry>
     </row>
     <row>
     <entry><para id="para-00031"><code class="python inline-code" lang="python">dropna()</code></para></entry>
-    <entry>Removes all rows containing a Null value.</entry>
+    <entry>Removes all rows containing a <code class="python inline-code" lang="python">Null</code> value.</entry>
     </row>
     <row>
     <entry><para id="para-00032"><code class="python inline-code" lang="python">plt.bar(x, height)</code></para></entry>
