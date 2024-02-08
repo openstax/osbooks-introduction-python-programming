@@ -44,7 +44,7 @@
     <tgroup cols="4">
     <thead>
     <row>
-    <entry></entry>
+    <entry/>
     <entry>Name</entry>
     <entry>Age</entry>
     <entry>City</entry>
@@ -139,7 +139,7 @@ df</code></entry>
 <tgroup cols="4">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Name</entry>
 <entry>Age</entry>
 <entry>City</entry>
@@ -195,7 +195,7 @@ df</code></entry>
 <tgroup cols="4">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Name</entry>
 <entry>Age</entry>
 <entry>City</entry>
@@ -252,7 +252,7 @@ df</code></entry>
 <tgroup cols="4">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>A</entry>
 <entry>B</entry>
 <entry>C</entry>
@@ -352,7 +352,7 @@ df</code></entry>
 <tgroup cols="5">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Season</entry>
 <entry>Month</entry>
 <entry>Month-day</entry>
@@ -429,7 +429,7 @@ df</code></entry>
 <tgroup cols="5">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Season</entry>
 <entry>Month</entry>
 <entry>Month-day</entry>
@@ -471,7 +471,7 @@ df</code></entry>
 </row>
 <row>
 <entry><para id="para-00016"><code class="python inline-code" lang="python">tail(n)</code></para></entry>
-<entry>The function allows for viewing the last <code class="python inline-code" lang="python">n</code> rows. If a value is not passed, the last 5 rows will be shown.</entry>
+<entry><para id="para-00027">The function allows for viewing the last <code class="python inline-code" lang="python">n</code> rows. If a value is not passed, the last 5 rows will be shown.</para></entry>
 <entry><code class="python" lang="python">df.tail(3)</code></entry>
 <entry>
 <table class="unnumbered" summary=" " id="table-00108">
@@ -479,7 +479,7 @@ df</code></entry>
 <tgroup cols="5">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Season</entry>
 <entry>Month</entry>
 <entry>Month-day</entry>
@@ -546,7 +546,7 @@ memory usage: 320.0+ bytes
 <tgroup cols="3">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Month-day</entry>
 <entry>Year</entry>
 </row>

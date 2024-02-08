@@ -113,15 +113,15 @@
     </row>
     <row>
     <entry><para id="para-00029"><code class="python inline-code" lang="python">df.isnull()</code></para></entry>
-    <entry>Returns a Boolean array with Boolean values representing whether each entry has been <code class="python inline-code" lang="python">Null</code>.</entry>
+    <entry><para id="para-00042">Returns a Boolean array with Boolean values representing whether each entry has been <code class="python inline-code" lang="python">Null</code>.</para></entry>
     </row>
     <row>
     <entry><para id="para-00030"><code class="python inline-code" lang="python">fillna()</code></para></entry>
-    <entry>Replaces <code class="python inline-code" lang="python">Null</code> values.</entry>
+    <entry><para id="para-00043">Replaces <code class="python inline-code" lang="python">Null</code> values.</para></entry>
     </row>
     <row>
     <entry><para id="para-00031"><code class="python inline-code" lang="python">dropna()</code></para></entry>
-    <entry>Removes all rows containing a <code class="python inline-code" lang="python">Null</code> value.</entry>
+    <entry><para id="para-00044">Removes all rows containing a <code class="python inline-code" lang="python">Null</code> value.</para></entry>
     </row>
     <row>
     <entry><para id="para-00032"><code class="python inline-code" lang="python">plt.bar(x, height)</code></para></entry>

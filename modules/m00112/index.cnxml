@@ -139,7 +139,7 @@
       <tgroup cols="4">
       <thead>
       <row>
-        <entry></entry>
+        <entry/>
         <entry>Column 1</entry>
         <entry>Column 2</entry>
         <entry>Column 3</entry>
@@ -207,7 +207,7 @@ df.isnull()
 <tgroup cols="4">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Column 1</entry>
 <entry>Column 2</entry>
 <entry>Column 3</entry>
@@ -264,7 +264,7 @@ df["Column 2"].fillna(df["Column 2"]
 <tgroup cols="4">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Column 1</entry>
 <entry>Column 2</entry>
 <entry>Column 3</entry>
@@ -320,7 +320,7 @@ df = df.dropna()</code></entry>
 <tgroup cols="4">
 <thead>
 <row>
-<entry></entry>
+<entry/>
 <entry>Column 1</entry>
 <entry>Column 2</entry>
 <entry>Column 3</entry>
@@ -350,7 +350,7 @@ df = df.dropna()</code></entry>
     <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image3.png"/></media>-->
 </entry>
-<entry>All rows containing a <code class="python inline-code" lang="python">Null</code> value are removed from the DataFrame.</entry>
+<entry><para id="para-00024">All rows containing a <code class="python inline-code" lang="python">Null</code> value are removed from the DataFrame.</para></entry>
 </row>
 </tbody>
 </tgroup>
