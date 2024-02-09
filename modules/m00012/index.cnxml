@@ -45,11 +45,11 @@
     </section>
     <section id="sect-00003">
     <title>Explicit type conversion</title>
-    <para id="para-00007">A programmer often needs to change data types to perform an operation. Ex: A program should read in two values using input() and sum the values. Remember input() reads in values as strings. A programmer can use <term id="term-00002">explicit type conversion</term> to convert one data type to another.</para>
+    <para id="para-00007">A programmer often needs to change data types to perform an operation. Ex: A program should read in two values using <code class="python inline-code" lang="python">input()</code> and sum the values. Remember <code class="python inline-code" lang="python">input()</code> reads in values as strings. A programmer can use <term id="term-00002">explicit type conversion</term> to convert one data type to another.</para>
     <list id="list-00002">
-    <item><term id="term-00003">int()</term> converts a data type to an integer. Any fractional part is removed. Ex: int(5.9) produces 5.</item>
-    <item><term id="term-00004">float()</term> converts a data type to a float. Ex: float(2) produces 2.0.</item>
-    <item><term id="term-00005">str()</term> converts a data type to a string. Ex: str(3.14) produces "3.14".</item>
+    <item><term id="term-00003">int()</term> converts a data type to an integer. Any fractional part is removed. Ex: <code class="python inline-code" lang="python">int(5.9)</code> produces <code class="python inline-code" lang="python">5</code>.</item>
+    <item><term id="term-00004">float()</term> converts a data type to a float. Ex: <code class="python inline-code" lang="python">float(2)</code> produces <code class="python inline-code" lang="python">2.0</code>.</item>
+    <item><term id="term-00005">str()</term> converts a data type to a string. Ex: <code class="python inline-code" lang="python">str(3.14)</code> produces <code class="python inline-code" lang="python">"3.14"</code>.</item>
     </list>
     <note class="guided-slides" id="note-00003">
     <title>Example: Ordering pizza</title>
@@ -73,7 +73,7 @@
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Using int(), float(), and str()</title>
-    <para id="para-00011">Given x = 4.5 and y = int(x), what is the value of each expression?</para>
+    <para id="para-00011">Given <code class="python inline-code" lang="python">x = 4.5</code> and <code class="python inline-code" lang="python">y = int(x)</code>, what is the value of each expression?</para>
     <exercise id="exer-00006">
     <problem id="prob-00006">
     <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch02-m02-p06"/></para>
@@ -101,11 +101,11 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Cups of water</title>
-    <para id="para-00016">The following program should read in the ounces of water the user drank today and compute the number of cups drank and the number of cups left to drink based on a daily goal. Assume a cup contains 8 ounces. Fix the code to calculate cups_drank and cups_left and match the following:</para>
+    <para id="para-00016">The following program should read in the ounces of water the user drank today and compute the number of cups drank and the number of cups left to drink based on a daily goal. Assume a cup contains 8 ounces. Fix the code to calculate <code class="python inline-code" lang="python">cups_drank</code> and <code class="python inline-code" lang="python">cups_left</code> and match the following:</para>
     <list id="list-00003">
-    <item>ounces is an integer representing the ounces the user drank</item>
-    <item>cups_drank is a float representing the number of cups of water drank</item>
-    <item>cups_left is an integer representing the number of cups of water left to drink (rounded down) out of the daily goal of 8 cups</item>
+    <item><code class="python inline-code" lang="python">ounces</code> is an integer representing the ounces the user drank</item>
+    <item><code class="python inline-code" lang="python">cups_drank</code> is a float representing the number of cups of water drank</item>
+    <item><code class="python inline-code" lang="python">cups_left</code> is an integer representing the number of cups of water left to drink (rounded down) out of the daily goal of 8 cups</item>
     </list>
     <media alt="cups_of_water_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch2/CodeRunner_02_03_02_Cups-of-water.html"/>
