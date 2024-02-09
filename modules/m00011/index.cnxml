@@ -75,50 +75,49 @@
     </exercise>
     </note>
     </section>
-
     <note class="practice-program" id="note-00005">
     <title>Exploring the shell</title>
     <para id="para-00013">Running code interactively is a great way to learn how Python works. Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Then enter any Python code, one line at a time, to see the result. Here are a few expressions to try:</para>
     <list id="list-00003">
-    <item>x = 5</item>
-    <item>3*x - 5</item>
-    <item>3 * (x-5)</item>
-    <item>x</item>
-    <item>type(1)</item>
-    <item>type('1')</item>
-    <item>str(1)</item>
-    <item>int('1')</item>
-    <item>abs(-5)</item>
-    <item>abs(5)</item>
-    <item>len("Yo")</item>
-    <item>len("HoHo")</item>
-    <item>round(9.49)</item>
-    <item>round(9.50)</item>
+    <item><code class="python inline-code" lang="python">x = 5</code></item>
+    <item><code class="python inline-code" lang="python">3*x - 5</code></item>
+    <item><code class="python inline-code" lang="python">3 * (x-5)</code></item>
+    <item><code class="python inline-code" lang="python">x</code></item>
+    <item><code class="python inline-code" lang="python">type(1)</code></item>
+    <item><code class="python inline-code" lang="python">type('1')</code></item>
+    <item><code class="python inline-code" lang="python">str(1)</code></item>
+    <item><code class="python inline-code" lang="python">int('1')</code></item>
+    <item><code class="python inline-code" lang="python">abs(-5)</code></item>
+    <item><code class="python inline-code" lang="python">abs(5)</code></item>
+    <item><code class="python inline-code" lang="python">len("Yo")</code></item>
+    <item><code class="python inline-code" lang="python">len("HoHo")</code></item>
+    <item><code class="python inline-code" lang="python">round(9.49)</code></item>
+    <item><code class="python inline-code" lang="python">round(9.50)</code></item>
     </list>
-    <para id="para-00014">Note: These functions (type, str, int, abs, len, and round) will be explored in more detail later in the chapter. You can read more about the <link url="https://openstax.org/r/100builtin">built-in functions</link> in the Python documentation.</para>
+    <para id="para-00014">Note: These functions (<code class="python inline-code" lang="python">type</code>, <code class="python inline-code" lang="python">str</code>, <code class="python inline-code" lang="python">int</code>, <code class="python inline-code" lang="python">abs</code>, <code class="python inline-code" lang="python">len</code>, and <code class="python inline-code" lang="python">round</code>) will be explored in more detail later in the chapter. You can read more about the <link url="https://openstax.org/r/100builtin">built-in functions</link> in the Python documentation.</para>
     </note>
     <note class="practice-program" id="note-00006">
     <title>Correcting mistakes</title>
     <para id="para-00015">Open a Python shell on your computer, or use the one at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Run the following two statements in the shell:</para>
     <list id="list-00004">
-    <item>x = 123</item>
-    <item>y = 456</item>
+    <item><code class="python inline-code" lang="python">x = 123</code></item>
+    <item><code class="python inline-code" lang="python">y = 456</code></item>
     </list>
     <para id="para-00016">Making mistakes is common while typing in a shell. The following lines include typos and other errors. For each line: (1) run the line in a shell to see the result; (2) press the up arrow to repeat the line; and (3) edit the line to get the correct result.</para>
     <list id="list-00005">
-    <item>print("Easy as", X)</item>
-    <item>print("y divided by 2 is", y / 0)</item>
-    <item>name = intput("What is your name? ")</item>
-    <item>print(name, "is", int(name), "letters long.")</item>
-    <item>print("That's all folks!)</item>
+    <item><code class="python inline-code" lang="python">print("Easy as", X)</code></item>
+    <item><code class="python inline-code" lang="python">print("y divided by 2 is", y / 0)</code></item>
+    <item><code class="python inline-code" lang="python">name = intput("What is your name? ")</code></item>
+    <item><code class="python inline-code" lang="python">print(name, "is", int(name), "letters long.")</code></item>
+    <item><code class="python inline-code" lang="python">print("That's all folks!)</code></item>
     </list>
     <para id="para-00017">The expected output, after correcting typos, should look like:</para>
     <list id="list-00006">
-    <item>Easy as 123</item>
-    <item>y divided by 2 is 228.0</item>
-    <item>(no error/output)</item>
-    <item>Stacie is 6 letters long.</item>
-    <item>That's all folks!</item>
+    <item><code class="python inline-code" lang="python">Easy as 123</code></item>
+    <item><code class="python inline-code" lang="python">y divided by 2 is 228.0</code></item>
+    <item><code class="python inline-code" lang="python">(no error/output)</code></item>
+    <item><code class="python inline-code" lang="python">Stacie is 6 letters long.</code></item>
+    <item><code class="python inline-code" lang="python">That's all folks!</code></item>
     </list>
     </note>
     </content>
