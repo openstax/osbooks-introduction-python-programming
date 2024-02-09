@@ -111,13 +111,13 @@
     </row>
     <row>
     <entry><para id="para-00019"><code class="python inline-code" lang="python">math.ceil(x)</code></para></entry>
-    <entry>The ceiling of x: the smallest integer greater than or equal to x.</entry>
+    <entry>The ceiling of <code class="python inline-code" lang="python">x</code>: the smallest integer greater than or equal to <code class="python inline-code" lang="python">x</code>.</entry>
     <entry><para id="para-00020"><code class="python inline-code" lang="python">math.ceil(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">8</code><newline/>
     <code class="python inline-code" lang="python">math.ceil(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-7</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00021"><code class="python inline-code" lang="python">math.floor(x)</code></para></entry>
-    <entry>The floor of x: the largest integer less than or equal to x.</entry>
+    <entry>The floor of <code class="python inline-code" lang="python">x</code>: the largest integer less than or equal to <code class="python inline-code" lang="python">x</code>.</entry>
     <entry><para id="para-00022"><code class="python inline-code" lang="python">math.floor(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">7</code><newline/>
     <code class="python inline-code" lang="python">math.floor(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-8</code></para></entry>
     </row>
@@ -126,25 +126,25 @@
     </row>
     <row>
     <entry><para id="para-00023"><code class="python inline-code" lang="python">math.log(x)</code></para></entry>
-    <entry>The natural logarithm of x (to base e).</entry>
+    <entry>The natural logarithm of <code class="python inline-code" lang="python">x</code> (to base e).</entry>
     <entry><para id="para-00024"><code class="python inline-code" lang="python">math.log(math.e)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code><newline/>
     <code class="python inline-code" lang="python">math.log(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">ValueError: math domain error</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00025"><code class="python inline-code" lang="python">math.log(x, base)</code></para></entry>
-    <entry>The logarithm of x to the given base.</entry>
+    <entry>The logarithm of <code class="python inline-code" lang="python">x</code> to the given base.</entry>
     <entry><para id="para-00026"><code class="python inline-code" lang="python">math.log(8, 2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">3.0</code><newline/>
     <code class="python inline-code" lang="python">math.log(10000, 10)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">4.0</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00027"><code class="python inline-code" lang="python">math.pow(x, y)</code></para></entry>
-    <entry><para id="para-00028">x raised to the power y. Unlike the <code class="python inline-code" lang="python">**</code> operator, <code class="python inline-code" lang="python">math.pow()</code> converts x and y to type float.</para></entry>
+    <entry><para id="para-00028"><code class="python inline-code" lang="python">x</code> raised to the power <code class="python inline-code" lang="python">y</code>. Unlike the <code class="python inline-code" lang="python">**</code> operator, <code class="python inline-code" lang="python">math.pow()</code> converts <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> to type float.</para></entry>
     <entry><para id="para-00029"><code class="python inline-code" lang="python">math.pow(3, 0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code><newline/>
     <code class="python inline-code" lang="python">math.pow(3, 3)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">27.0</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00030"><code class="python inline-code" lang="python">math.sqrt(x)</code></para></entry>
-    <entry>The square root of x.</entry>
+    <entry>The square root of <code class="python inline-code" lang="python">x</code>.</entry>
     <entry><para id="para-00031"><code class="python inline-code" lang="python">math.sqrt(9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">3.0</code><newline/>
     <code class="python inline-code" lang="python">math.sqrt(-9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">ValueError: math domain error</code></para></entry>
     </row>
@@ -153,19 +153,19 @@
     </row>
     <row>
     <entry><para id="para-00032"><code class="python inline-code" lang="python">math.cos(x)</code></para></entry>
-    <entry>The cosine of x radians.</entry>
+    <entry>The cosine of <code class="python inline-code" lang="python">x</code> radians.</entry>
     <entry><para id="para-00033"><code class="python inline-code" lang="python">math.cos(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code><newline/>
     <code class="python inline-code" lang="python">math.cos(math.pi)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-1.0</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00034"><code class="python inline-code" lang="python">math.sin(x)</code></para></entry>
-    <entry>The sine of x radians.</entry>
+    <entry>The sine of <code class="python inline-code" lang="python">x</code> radians.</entry>
     <entry><para id="para-00035"><code class="python inline-code" lang="python">math.sin(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.0</code><newline/>
     <code class="python inline-code" lang="python">math.sin(math.pi/2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00036"><code class="python inline-code" lang="python">math.tan(x)</code></para></entry>
-    <entry>The tangent of x radians.</entry>
+    <entry>The tangent of <code class="python inline-code" lang="python">x</code> radians.</entry>
     <entry><para id="para-00037"><code class="python inline-code" lang="python">math.tan(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.0</code><newline/>
     <code class="python inline-code" lang="python">math.tan(math.pi/4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.999</code><newline/>
     (Round-off error; the result should be 1.0.)</para></entry>
@@ -288,47 +288,47 @@
     </row>
     </thead>
     <tbody>
-    <row>
-    <entry>a</entry>
-    <entry>b</entry>
-    <entry>c</entry>
-    <entry>x1</entry>
-    <entry>x2</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>0</entry>
-    <entry>-4</entry>
-    <entry>2.0</entry>
-    <entry>-2.0</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>2</entry>
-    <entry>-3</entry>
-    <entry>1.0</entry>
-    <entry>-3.0</entry>
-    </row>
-    <row>
-    <entry>2</entry>
-    <entry>1</entry>
-    <entry>-1</entry>
-    <entry>0.5</entry>
-    <entry>-1.0</entry>
-    </row>
-    <row>
-    <entry>0</entry>
-    <entry>1</entry>
-    <entry>1</entry>
-    <entry namest="c4" nameend="c5">division by zero</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>0</entry>
-    <entry>1</entry>
-    <entry namest="c4" nameend="c5">math domain error</entry>
-    </row>
-    </tbody>
+      <row>
+      <entry><code class="python inline-code" lang="python">a</code></entry>
+      <entry><code class="python inline-code" lang="python">b</code></entry>
+      <entry><code class="python inline-code" lang="python">c</code></entry>
+      <entry><code class="python inline-code" lang="python">x1</code></entry>
+      <entry><code class="python inline-code" lang="python">x2</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry><code class="python inline-code" lang="python">0</code></entry>
+      <entry><code class="python inline-code" lang="python">-4</code></entry>
+      <entry><code class="python inline-code" lang="python">2.0</code></entry>
+      <entry><code class="python inline-code" lang="python">-2.0</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry><code class="python inline-code" lang="python">2</code></entry>
+      <entry><code class="python inline-code" lang="python">-3</code></entry>
+      <entry><code class="python inline-code" lang="python">1.0</code></entry>
+      <entry><code class="python inline-code" lang="python">-3.0</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">2</code></entry>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry><code class="python inline-code" lang="python">-1</code></entry>
+      <entry><code class="python inline-code" lang="python">0.5</code></entry>
+      <entry><code class="python inline-code" lang="python">-1.0</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">0</code></entry>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry namest="c4" nameend="c5"><code class="python inline-code" lang="python">division by zero</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry><code class="python inline-code" lang="python">0</code></entry>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry namest="c4" nameend="c5"><code class="python inline-code" lang="python">math domain error</code></entry>
+      </row>
+      </tbody>
     </tgroup>
     </table>
     <media alt="quadratic_formula_program">
@@ -368,43 +368,43 @@
     </row>
     </thead>
     <tbody>
-    <row>
-    <entry>r</entry>
-    <entry>h</entry>
-    <entry>area</entry>
-    <entry>volume</entry>
-    </row>
-    <row>
-    <entry>0</entry>
-    <entry>0</entry>
-    <entry>0.0</entry>
-    <entry>0.0</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>1</entry>
-    <entry>12.57</entry>
-    <entry>3.14</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>2</entry>
-    <entry>18.85</entry>
-    <entry>6.28</entry>
-    </row>
-    <row>
-    <entry>2.5</entry>
-    <entry>4.8</entry>
-    <entry>114.67</entry>
-    <entry>94.25</entry>
-    </row>
-    <row>
-    <entry>3.1</entry>
-    <entry>7.0</entry>
-    <entry>196.73</entry>
-    <entry>211.33</entry>
-    </row>
-    </tbody>
+      <row>
+      <entry><code class="python inline-code" lang="python">r</code></entry>
+      <entry><code class="python inline-code" lang="python">h</code></entry>
+      <entry><code class="python inline-code" lang="python">area</code></entry>
+      <entry><code class="python inline-code" lang="python">volume</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">0</code></entry>
+      <entry><code class="python inline-code" lang="python">0</code></entry>
+      <entry><code class="python inline-code" lang="python">0.0</code></entry>
+      <entry><code class="python inline-code" lang="python">0.0</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry><code class="python inline-code" lang="python">12.57</code></entry>
+      <entry><code class="python inline-code" lang="python">3.14</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">1</code></entry>
+      <entry><code class="python inline-code" lang="python">2</code></entry>
+      <entry><code class="python inline-code" lang="python">18.85</code></entry>
+      <entry><code class="python inline-code" lang="python">6.28</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">2.5</code></entry>
+      <entry><code class="python inline-code" lang="python">4.8</code></entry>
+      <entry><code class="python inline-code" lang="python">114.67</code></entry>
+      <entry><code class="python inline-code" lang="python">94.25</code></entry>
+      </row>
+      <row>
+      <entry><code class="python inline-code" lang="python">3.1</code></entry>
+      <entry><code class="python inline-code" lang="python">7.0</code></entry>
+      <entry><code class="python inline-code" lang="python">196.73</code></entry>
+      <entry><code class="python inline-code" lang="python">211.33</code></entry>
+      </row>
+      </tbody>
     </tgroup>
     </table>
     <media alt="cylinder_formulas_program">

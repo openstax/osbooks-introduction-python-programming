@@ -28,23 +28,23 @@
     </thead>
     <tbody>
     <row>
-    <entry>abs(x)</entry>
+    <entry><code class="python inline-code" lang="python">abs(x)</code></entry>
     <entry><para id="para-00100">Returns the absolute value of <code class="python inline-code" lang="python">x</code>.</para></entry>
     </row>
     <row>
-    <entry>int(x)</entry>
+    <entry><code class="python inline-code" lang="python">int(x)</code></entry>
     <entry><para id="para-00101">Converts <code class="python inline-code" lang="python">x</code> (a string or float) to an integer.</para></entry>
     </row>
     <row>
-    <entry>float(x)</entry>
+    <entry><code class="python inline-code" lang="python">float(x)</code></entry>
     <entry><para id="para-00102">Converts <code class="python inline-code" lang="python">x</code> (a string or integer) to a float.</para></entry>
     </row>
     <row>
-    <entry>str(x)</entry>
+    <entry><code class="python inline-code" lang="python">str(x)</code></entry>
     <entry><para id="para-00103">Converts <code class="python inline-code" lang="python">x</code> (a float or integer) to a string.</para></entry>
     </row>
     <row>
-    <entry>round(x, ndigits)</entry>
+    <entry><code class="python inline-code" lang="python">round(x, ndigits)</code></entry>
     <entry><para id="para-00104">Rounds <code class="python inline-code" lang="python">x</code> to <code class="python inline-code" lang="python">ndigits</code> places after the decimal point. If <code class="python inline-code" lang="python">ndigits</code> is omitted, returns the nearest integer to <code class="python inline-code" lang="python">x</code>.</para></entry>
     </row>
     <row>
