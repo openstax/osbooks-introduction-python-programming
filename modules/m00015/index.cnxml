@@ -122,8 +122,8 @@
      Nickels: 0
      Pennies: 4
     </code>
-    <para id="para-00022">Hint: Calculate the total change, in cents, as an integer. Use the <code class="python inline-code" lang="python"><emphasis effect="bold">round()</emphasis></code> function to avoid floating-point errors.</para>
-    <para id="para-00023">Your code must not use Python keywords from later chapters, such as <code class="python inline-code" lang="python"><emphasis effect="bold"><emphasis effect="bold">if</emphasis></emphasis></code> or <code class="python inline-code" lang="python"><emphasis effect="bold">while</emphasis></code>. The solution requires only subtraction, multiplication, division, and modulo.</para>
+    <para id="para-00022">Hint: Calculate the total change, in cents, as an integer. Use the <code class="python inline-code" lang="python">round()</code> function to avoid floating-point errors.</para>
+    <para id="para-00023">Your code must not use Python keywords from later chapters, such as <code class="python inline-code" lang="python">if</code> or <code class="python inline-code" lang="python">while</code>. The solution requires only subtraction, multiplication, division, and modulo.</para>
     <media alt="change_machine_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_06_08_Change-machine.html"/>
     </media>

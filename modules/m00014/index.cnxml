@@ -84,7 +84,7 @@ OverflowError: (34, 'Numerical result out of range')
     </section>
     <section id="sect-00003">
     <title>Floating point round() function</title>
-    <para id="para-00010">Python's <term id="term-00003">round()</term> function is used to round a floating-point number to a given number of decimal places. The function requires two arguments. The first argument is the number to be rounded. The second argument decides the number of decimal places to which the number is rounded. If the second argument is not provided, the number will be rounded to the closest integer. The round() function can be used to mitigate floating-point errors.</para>
+    <para id="para-00010">Python's <term id="term-00003">round()</term> function is used to round a floating-point number to a given number of decimal places. The function requires two arguments. The first argument is the number to be rounded. The second argument decides the number of decimal places to which the number is rounded. If the second argument is not provided, the number will be rounded to the closest integer. The <code class="python inline-code" lang="python">round()</code> function can be used to mitigate floating-point errors.</para>
     <para id="para-00011">Ex:</para>
     <list id="list-00002">
     <item><code class="python inline-code" lang="python">round(2.451, 2) = 2.45</code></item>
