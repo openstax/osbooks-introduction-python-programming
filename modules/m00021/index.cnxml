@@ -200,31 +200,31 @@
     <entry><code class="python" lang="python">\n</code></entry>
     <entry>A newline character that indicates the end of a line of text.</entry>
     <entry><code class="python" lang="python">print("Escape\nsequence!")</code></entry>
-    <entry>Escape<newline/>sequence!</entry>
+    <entry><code class="python" lang="python">Escape<newline/>sequence!</code></entry>
     </row>
     <row>
     <entry><code class="python" lang="python">\t</code></entry>
     <entry>A tab character; useful for indenting paragraphs or aligning text on multiple lines.</entry>
     <entry><code class="python" lang="python">print("Escape\tsequence!")</code></entry>
-    <entry>Escape    sequence!</entry>
+    <entry><code class="python" lang="python">Escape    sequence!</code></entry>
     </row>
     <row>
     <entry><code class="python" lang="python">\'</code></entry>
     <entry>A single quote; an alternative to enclosing the string in double quotes.</entry>
     <entry><code class="python" lang="python">print('I\'ll try my best!')</code></entry>
-    <entry>I'll try my best</entry>
+    <entry><code class="python" lang="python">I'll try my best</code></entry>
     </row>
     <row>
     <entry><code class="python" lang="python">\"</code></entry>
     <entry>A double quote; an alternative to enclosing the string in single quotes.</entry>
     <entry><code class="python" lang="python">print("I heard you said \"Yes\"")</code></entry>
-    <entry>I heard you said "Yes"</entry>
+    <entry><code class="python" lang="python">I heard you said "Yes"</code></entry>
     </row>
     <row>
     <entry><code class="python" lang="python">\\</code></entry>
     <entry>A backslash character.</entry>
     <entry><code class="python" lang="python">print("This prints a \\")</code></entry>
-    <entry>This prints a \</entry>
+    <entry><code class="python" lang="python">This prints a \</code></entry>
     </row>
     </tbody>
     </tgroup>
