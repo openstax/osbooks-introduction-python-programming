@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>F-strings</title>
-    <para id="para-00002">A <term id="term-00001">formatted string literal</term> (or <term id="term-00002">f-string</term>) is a string literal that is prefixed with 'f' or 'F'. A <term id="term-00003">replacement field</term> is an expression in curly braces (<code class="python inline-code" lang="python">{}</code>) inside an f-string. Ex: The string <code class="python inline-code" lang="python">f"Good morning, {first} {last}!"</code> has two replacement fields: one for a first name, and one for a last name. F-strings provide a convenient way to combine multiple values into one string.</para>
+    <para id="para-00002">A <term id="term-00001">formatted string literal</term> (or <term id="term-00002">f-string</term>) is a string literal that is prefixed with <code class="python inline-code" lang="python">'f'</code> or <code class="python inline-code" lang="python">'F'</code>. A <term id="term-00003">replacement field</term> is an expression in curly braces (<code class="python inline-code" lang="python">{}</code>) inside an f-string. Ex: The string <code class="python inline-code" lang="python">f"Good morning, {first} {last}!"</code> has two replacement fields: one for a first name, and one for a last name. F-strings provide a convenient way to combine multiple values into one string.</para>
     <note class="guided-slides" id="note-00001">
     <title>Printing an f-string</title>
     <media alt="printing_f_string_slides">
@@ -134,10 +134,10 @@
     <title>Mad lib (f-string)</title>
     <para id="para-00011">A "<link url="https://openstax.org/r/100fstring">mad lib</link>" is a funny story that uses words provided by a user. The following mad lib is based on four words (user input in bold):</para>
     <code class="python" lang="python">
-    Enter a name: Buster
-    Enter a noun: dog
-    Enter an adjective: super
-    Verb ending in -ing: swimming
+    Enter a name: <code class="inline-code"><emphasis effect="bold">Buster</emphasis></code>
+    Enter a noun: <code class="inline-code"><emphasis effect="bold">dog</emphasis></code>
+    Enter an adjective: <code class="inline-code"><emphasis effect="bold">super</emphasis></code>
+    Verb ending in -ing: <code class="inline-code"><emphasis effect="bold">swimming</emphasis></code>
     
     Buster, the super dog, likes to go swimming.
     </code>
@@ -150,11 +150,11 @@
     <title>Wage calculator</title>
     <para id="para-00013">You just landed a part-time job and would like to calculate how much money you will earn. Write a program that inputs the time you start working, the time you stop working, and your hourly pay rate (example input in bold):</para>
     <code class="python" lang="python">
-    Starting hour: 9
-    Starting minute: 30
-    Stopping hour: 11
-    Stopping minute: 0
-    Hourly rate: 15
+    Starting hour: <code class="inline-code"><emphasis effect="bold">9</emphasis></code>
+    Starting minute: <code class="inline-code"><emphasis effect="bold">30</emphasis></code>
+    Stopping hour: <code class="inline-code"><emphasis effect="bold">11</emphasis></code>
+    Stopping minute: <code class="inline-code"><emphasis effect="bold">0</emphasis></code>
+    Hourly rate: <code class="inline-code"><emphasis effect="bold">15</emphasis></code>
     </code>
     <para id="para-00014">Based on the user input, your program should calculate and display the following results:</para>
     <code class="python" lang="python">

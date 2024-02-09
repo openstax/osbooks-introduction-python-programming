@@ -101,14 +101,14 @@ data_13: ('Aimee Perry', 96, [94, 100, 97, 93])
   
     <note class="practice-program" id="note-00005">
     <title>Creating a tuple from a list</title>
-    <para id="para-00011">Suppose a programmer wants to create a tuple from a list to prevent future changes. The tuple() function creates a tuple from an object like a list. Ex: my_tuple = tuple(my_list) creates a tuple from the list my_list. Update the program below to create a tuple final_grades from the list grades.</para>
+    <para id="para-00011">Suppose a programmer wants to create a tuple from a list to prevent future changes. The <code class="python inline-code" lang="python">tuple()</code> function creates a tuple from an object like a list. Ex: <code class="python inline-code" lang="python">my_tuple = tuple(my_list)</code> creates a tuple from the list <code class="python inline-code" lang="python">my_list</code>. Update the program below to create a tuple <code class="python inline-code" lang="python">final_grades</code> from the list grades.</para>
     <media alt="creating_a_tuple_from_a_list_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_06_06_Creating-a-tuple-from-a-list.html"/>
     </media>  
     </note>
     <note class="practice-program" id="note-00006">
     <title>Creating a tuple with user input</title>
-    <para id="para-00012">Write a program that reads in two strings and two integers from input and creates a tuple, my_data, with the four values.</para>
+    <para id="para-00012">Write a program that reads in two strings and two integers from input and creates a tuple, <code class="python inline-code" lang="python">my_data</code>, with the four values.</para>
     <para id="para-00013">Given input:</para>
     <code class="python" lang="python">
     x

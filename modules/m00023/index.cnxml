@@ -87,7 +87,7 @@
     </note>
     <note id="note-00006">
     <title>Exploring further</title>
-    <para id="para-00015">As shown in a memory diagram, variables and objects are two separate ideas. Calling a function like id() or type() returns information about an object, not a variable. In fact, a variable doesn't have an identity or a type, as shown in this example:</para>
+    <para id="para-00015">As shown in a memory diagram, variables and objects are two separate ideas. Calling a function like <code class="python inline-code" lang="python">id()</code> or <code class="python inline-code" lang="python">type()</code> returns information about an object, not a variable. In fact, a variable doesn't have an identity or a type, as shown in this example:</para>
     <code class="python" lang="python">
     >>> rating = 10&#160;&#160;# Integer object somewhere in memory.
     >>> type(rating)

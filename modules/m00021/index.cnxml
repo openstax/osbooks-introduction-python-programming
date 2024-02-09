@@ -267,8 +267,8 @@
     <para id="para-00018">During the Roman Empire, Julius Caesar (100–44 BCE) used a simple technique to encrypt private messages. Each letter of the message was replaced with the third next letter of the alphabet. Ex: If the message was CAT, the C became F, the A became D, and the T became W, resulting in the message FDW. This technique is known as a shift cipher, because each letter is shifted by some amount. In Caesar's case, the amount was 3, but other amounts (besides 0) would work too.</para>
     <para id="para-00019">Write a program that prompts the user to input the following two values (example input in bold):</para>
     <code class="python" lang="python">
-    Enter a 3-letter word: CAT
-    Shift by how many letters? 3
+    Enter a 3-letter word: <code class="inline-code"><emphasis effect="bold">CAT</emphasis></code>
+    Shift by how many letters? <code class="inline-code"><emphasis effect="bold">3</emphasis></code>
     </code>
     <para id="para-00020">The program should then shift each letter of the word by the desired amount. Based on the example above, the output would be:</para>
     <code class="python" lang="python">
