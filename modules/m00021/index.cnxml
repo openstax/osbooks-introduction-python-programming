@@ -200,7 +200,7 @@
     <entry><code class="python" lang="python">\n</code></entry>
     <entry>A newline character that indicates the end of a line of text.</entry>
     <entry><code class="python" lang="python">print("Escape\nsequence!")</code></entry>
-    <entry><code class="python" lang="python">Escape</code><newline/><code class="python" lang="python">sequence!</code></entry>
+    <entry><para id="para-00022"><code class="python" lang="python">Escape</code><newline/><code class="python" lang="python">sequence!</code></para></entry>
     </row>
     <row>
     <entry><code class="python" lang="python">\t</code></entry>
