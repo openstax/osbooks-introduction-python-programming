@@ -10,7 +10,7 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Create a class with instance attributes, class attributes, and the __init__() method</item>
+    <item>Create a class with instance attributes, class attributes, and the <code class="python inline-code" lang="python">__init__()</code> method</item>
     <item>Use a class definition to create class instances to represent objects</item>
     </list>
     </section>
