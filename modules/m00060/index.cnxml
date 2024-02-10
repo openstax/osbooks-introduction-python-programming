@@ -17,8 +17,8 @@
     </section>
     <section id="sect-00002">
     <title>String indexing</title>
-    <para id="para-00002">A string is a type of sequence. A string is made up of a sequence of characters indexed from left to right starting at 0. For a string variable <code class="python inline-code" lang="python">s</code>, the left-most character is indexed 0 and the right-most character is indexed <code class="python inline-code" lang="python">len(s) - 1</code>. Ex: The length of the string "Cloud" is 5, so the last index is 4.</para>
-    <para id="para-00003">Negative indexing can also be used to refer to characters from right to left starting at -1. For a string variable <code class="python inline-code" lang="python">s</code>, the left-most character is indexed <code class="python inline-code" lang="python">-len(s)</code> and the right-most character is indexed -1. Ex: The length of the string "flower" is 6, so the index of the first character with negative indexing is -6.</para>
+    <para id="para-00002">A string is a type of sequence. A string is made up of a sequence of characters indexed from left to right starting at 0. For a string variable <code class="python inline-code" lang="python">s</code>, the left-most character is indexed 0 and the right-most character is indexed <code class="python inline-code" lang="python">len(s) - 1</code>. Ex: The length of the string <code class="python inline-code" lang="python">"Cloud"</code> is 5, so the last index is 4.</para>
+    <para id="para-00003">Negative indexing can also be used to refer to characters from right to left starting at -1. For a string variable <code class="python inline-code" lang="python">s</code>, the left-most character is indexed <code class="python inline-code" lang="python">-len(s)</code> and the right-most character is indexed -1. Ex: The length of the string <code class="python inline-code" lang="python">"flower"</code> is 6, so the index of the first character with negative indexing is -6.</para>
     <note class="guided-slides" id="note-00001">
     <title>String indexing</title>
     <media alt="string_indexing_slides">
@@ -123,14 +123,15 @@
    
     <note class="practice-program" id="note-00006">
     <title>Changing the greeting message</title>
-    <para id="para-00019">Given the string "Hello my fellow classmates" containing a greeting message, print the first word by getting the beginning of the string up to (and including) the 5th character. Change the first word in the string to "Hi" instead of "hello" and print the greeting message again.</para>
+    <para id="para-00019">Given the string <code class="python inline-code" lang="python">"Hello my fellow
+       classmates"</code> containing a greeting message, print the first word by getting the beginning of the string up to (and including) the 5th character. Change the first word in the string to <code class="python inline-code" lang="python">"Hi"</code> instead of <code class="python inline-code" lang="python">"hello"</code> and print the greeting message again.</para>
     <media alt="changing_the_greeting_message_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_03_03_Changing-the-greeting-message.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00007">
     <title>Editing the string at specified locations</title>
-    <para id="para-00020">Given a string variable, string_variable, and a list of indices, remove characters at the specified indices and print the resulting string.</para>
+    <para id="para-00020">Given a string variable, <code class="python inline-code" lang="python">string_variable</code>, and a list of indices, remove characters at the specified indices and print the resulting string.</para>
     <code class="python" lang="python">
     Input:
     string_variable = "great"

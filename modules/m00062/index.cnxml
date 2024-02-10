@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Format a string template using input arguments.</item>
-    <item>Use format() function to generate numerical formats based on a given template.</item>
+    <item>Use <code class="python inline-code" lang="python">format()</code> function to generate numerical formats based on a given template.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -33,7 +33,7 @@
     <para id="para-00004">In the example above, replacement fields are 1) the name of the individual the request is being made to 2) title of the course, and 3) the name of the instructor. To create a template, replacement fields can be added with <code class="python inline-code" lang="python">{}</code> to show a placeholder for user input. The <term id="term-00003">format()</term> function is used to pass inputs for replacement fields in a string template.</para>
     <example id="exam-00002">
     <title>String template formatting for course enrollment requests</title>
-    <para id="para-00005">String template with replacement fields is defined below to create string values with different input arguments. The format() function is used to pass inputs to the template in the same order.</para>
+    <para id="para-00005">String template with replacement fields is defined below to create string values with different input arguments. The <code class="python inline-code" lang="python">format()</code> function is used to pass inputs to the template in the same order.</para>
     <code class="python" lang="python">
     s = "Dear {}, I'd like to take {} course with Prof. {}."
 
@@ -129,7 +129,7 @@
     <para id="para-00019">Numbered replacement fields can use argument's values for multiple replacement fields by using the same argument index. Example below illustrates how an argument is used for more than one numbered replacement fields.</para>
     <example id="exam-00004">
     <title>Numbered replacement field to build a phrase</title>
-    <para id="para-00020">Numbered replacement fields are used in this example to build phrases like "very very cold" or "very hot".</para>
+    <para id="para-00020">Numbered replacement fields are used in this example to build phrases like <code class="python inline-code" lang="python">"very very cold"</code> or <code class="python inline-code" lang="python">"very hot"</code>.</para>
     <code class="python" lang="python">
     template1 = "{0} {0} {1}"
     template2 = "{0} {1}"
@@ -232,12 +232,12 @@
     </section>
     <section id="sect-00007">
     <title>Formatting numbers</title>
-    <para id="para-00029">The format() function can be used to format numerical values. Numerical values can be padded to have a given minimum length, precision, and sign character. The syntax for modifying numeric values follows the <code class="python inline-code" lang="python">{[index]:[width][.precision][type]}</code> structure. In the given syntax,</para>
+    <para id="para-00029">The <code class="python inline-code" lang="python">format()</code> function can be used to format numerical values. Numerical values can be padded to have a given minimum length, precision, and sign character. The syntax for modifying numeric values follows the <code class="python inline-code" lang="python">{[index]:[width][.precision][type]}</code> structure. In the given syntax,</para>
     <list id="list-00002">
     <item>The <code class="python inline-code" lang="python">index</code> field refers to the index of the argument.</item>
     <item>The <code class="python inline-code" lang="python">width</code> field refers to the minimum length of the string.</item>
     <item>The <code class="python inline-code" lang="python">precision</code> field refers to the floating-point precision of the given number.</item>
-    <item>The <code class="python inline-code" lang="python">type</code> field shows the type of the input that is passed to the format() function. Floating-point and decimal inputs are identified by <code class="python inline-code" lang="python">'f'</code> and <code class="python inline-code" lang="python">'d'</code>, respectively. String values are also identified by <code class="python inline-code" lang="python">'s'</code>.</item>
+    <item>The <code class="python inline-code" lang="python">type</code> field shows the type of the input that is passed to the <code class="python inline-code" lang="python">format()</code> function. Floating-point and decimal inputs are identified by <code class="python inline-code" lang="python">'f'</code> and <code class="python inline-code" lang="python">'d'</code>, respectively. String values are also identified by <code class="python inline-code" lang="python">'s'</code>.</item>
     </list>
     <para id="para-00030">The table below summarizes formatting options for modifying numeric values.</para>
     <table summary=" " id="table-00003">
