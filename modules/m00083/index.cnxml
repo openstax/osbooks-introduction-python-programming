@@ -10,13 +10,13 @@
   <title>Learning objectives</title>
   <para id="para-00001">By the end of this section you should be able to</para>
   <list id="list-00001">
-  <item>Create and implement __init__() with multiple parameters including default parameter values</item>
+  <item>Create and implement <code class="python inline-code" lang="python">__init__()</code> with multiple parameters including default parameter values</item>
   <item>Describe which information an instance method has access to and can modify</item>
   </list>
   </section>
   <section id="sect-00002">
   <title>More about __init__()</title>
-  <para id="para-00002">In Python, __init__() is the special method that creates instances. <code class="python inline-code" lang="python">__init__()</code> must have the calling instance, <code class="python inline-code" lang="python">self</code>, as the first parameter and can have any number of other parameters with or without default parameter values.</para>
+  <para id="para-00002">In Python, <code class="python inline-code" lang="python">__init__()</code> is the special method that creates instances. <code class="python inline-code" lang="python">__init__()</code> must have the calling instance, <code class="python inline-code" lang="python">self</code>, as the first parameter and can have any number of other parameters with or without default parameter values.</para>
   <note class="guided-slides" id="note-00001">
   <title>Creating patient vital signs instances</title>
   <media alt="creating_instances_slides">

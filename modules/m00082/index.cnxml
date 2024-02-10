@@ -63,7 +63,7 @@
     </section>
     <section id="sect-00003">
     <title>Creating instances with __init__()</title>
-    <para id="para-00009">___init___() is a special method that is called every time a new instance of a class is created. <term id="term-00003">self</term> refers to the instance of a class and is used in class methods to access the specific instance that called the method. <code class="python inline-code" lang="python">__init__()</code> uses self to define and initialize the instance's attributes.</para>
+    <para id="para-00009"><code class="python inline-code" lang="python">___init___()</code> is a special method that is called every time a new instance of a class is created. <term id="term-00003">self</term> refers to the instance of a class and is used in class methods to access the specific instance that called the method. <code class="python inline-code" lang="python">__init__()</code> uses <code class="python inline-code" lang="python">self</code> to define and initialize the instance's attributes.</para>
     <note class="guided-slides" id="note-00003">
     <title>Creating multiple coffee orders and changing attributes</title>
     <media alt="creating_changing_attributes_slides">
@@ -149,7 +149,7 @@
    
     <note class="practice-program" id="note-00007">
     <title>Creating a class for an airline's flight tickets</title>
-    <para id="para-00021">Write a class, FlightTicket, as described below. Default values follow the attributes. Then create a flight ticket and assign each instance attribute with values read from input.</para>
+    <para id="para-00021">Write a class, <code class="python inline-code" lang="python">FlightTicket</code>, as described below. Default values follow the attributes. Then create a flight ticket and assign each instance attribute with values read from input.</para>
     <para id="para-00022">Instance attributes:</para>
     <list id="list-00002">
     <item>flight_num: 1</item>
@@ -166,8 +166,8 @@
     </list>
     <para id="para-00024">Method:</para>
     <list id="list-00004">
-    <item>__init__(): initializes the instance attributes</item>
-    <item>print_info(): prints ticket information (provided in template)</item>
+    <item><code class="python inline-code" lang="python">__init__()</code>: initializes the instance attributes</item>
+    <item><code class="python inline-code" lang="python">print_info()</code>: prints ticket information (provided in template)</item>
     </list>
     <para id="para-00025">Given input:</para>
     <code class="python" lang="python">
@@ -188,7 +188,7 @@
     </note>
     <note class="practice-program" id="note-00008">
     <title>Creating a class for fantasy books</title>
-    <para id="para-00027">Write a class, Book, as described below. Then create two instances and assign each instance attribute with values read from input.</para>
+    <para id="para-00027">Write a class, <code class="python inline-code" lang="python">Book</code>, as described below. Then create two instances and assign each instance attribute with values read from input.</para>
     <para id="para-00028">Instance attributes:</para>
     <list id="list-00005">
     <item>title: ''</item>
@@ -202,8 +202,8 @@
     </list>
     <para id="para-00030">Method:</para>
     <list id="list-00007">
-    <item>__init__(): initializes the instance attributes</item>
-    <item>print_info(): prints book information (provided in template)</item>
+    <item><code class="python inline-code" lang="python">__init__()</code>: initializes the instance attributes</item>
+    <item><code class="python inline-code" lang="python">print_info()</code>: prints book information (provided in template)</item>
     </list>
     <para id="para-00031">Given input:</para>
     <code class="python" lang="python">
