@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Magic methods and customizing</title>
-    <para id="para-00002"><term id="term-00001">Magic methods</term> are special methods that perform actions for users, typically out of view of users. Magic methods are also called dunder methods, since the methods must start and end with double underscores (__). Ex: __init__() is a magic method used alongside __new__() to create a new instance and initialize attributes with a simple line like <code class="python inline-code" lang="python">eng = Engineer()</code>. A programmer can explicitly define a magic method in a user-defined class to customize the method's behavior.</para>
+    <para id="para-00002"><term id="term-00001">Magic methods</term> are special methods that perform actions for users, typically out of view of users. Magic methods are also called dunder methods, since the methods must start and end with double underscores (__). Ex: <code class="python inline-code" lang="python">__init__()</code> is a magic method used alongside <code class="python inline-code" lang="python">__new__()</code> to create a new instance and initialize attributes with a simple line like <code class="python inline-code" lang="python">eng = Engineer()</code>. A programmer can explicitly define a magic method in a user-defined class to customize the method's behavior.</para>
     <note class="guided-slides" id="note-00001">
     <title>Customizing __str__() in a user-defined class, Engineer</title>
     <media alt="customizing_str_user_defined_class_slides">
@@ -63,27 +63,27 @@
     <tbody>
     <row>
     <entry>+ (Addition)</entry>
-    <entry>__add__(self, other)</entry>
+    <entry><code class="python inline-code" lang="python">__add__(self, other)</code></entry>
     </row>
     <row>
     <entry>- (Subtraction)</entry>
-    <entry>__sub__(self, other)</entry>
+    <entry><code class="python inline-code" lang="python">__sub__(self, other)</code></entry>
     </row>
     <row>
     <entry>* (Multiplication)</entry>
-    <entry>__mul__(self, other)</entry>
+    <entry><code class="python inline-code" lang="python">__mul__(self, other)</code></entry>
     </row>
     <row>
     <entry>/ (Division)</entry>
-    <entry>__truediv__(self, other)</entry>
+    <entry><code class="python inline-code" lang="python">__truediv__(self, other)</code></entry>
     </row>
     <row>
     <entry>% (Modulo)</entry>
-    <entry>__mod__(self, other)</entry>
+    <entry><code class="python inline-code" lang="python">__mod__(self, other)</code></entry>
     </row>
     <row>
     <entry>** (Power)</entry>
-    <entry>__pow__(self, other)</entry>
+    <entry><code class="python inline-code" lang="python">__pow__(self, other)</code></entry>
     </row>
     </tbody>
     </tgroup>
@@ -122,27 +122,27 @@
 <tbody>
 <row>
 <entry>&lt; (Less than)</entry>
-<entry>__lt__(self, other)</entry>
+<entry><code class="python inline-code" lang="python">__lt__(self, other)</code></entry>
 </row>
 <row>
 <entry>> (Greater than)</entry>
-<entry>__gt__(self, other)</entry>
+<entry><code class="python inline-code" lang="python">__gt__(self, other)</code></entry>
 </row>
 <row>
 <entry>&lt;= (Less than or equal)</entry>
-<entry>__le__(self, other)</entry>
+<entry><code class="python inline-code" lang="python">__le__(self, other)</code></entry>
 </row>
 <row>
 <entry>>= (Greater than or equal)</entry>
-<entry>__ge__(self, other)</entry>
+<entry><code class="python inline-code" lang="python">__ge__(self, other)</code></entry>
 </row>
 <row>
 <entry>== (Equal)</entry>
-<entry>__eq__(self, other)</entry>
+<entry><code class="python inline-code" lang="python">__eq__(self, other)</code></entry>
 </row>
 <row>
 <entry>!= (Not equal)</entry>
-<entry>__ne__(self, other)</entry>
+<entry><code class="python inline-code" lang="python">__ne__(self, other)</code></entry>
 </row>
 </tbody>
 </tgroup>
@@ -188,9 +188,9 @@ acct_a.amount = 5210
 print(acct_a == acct_b)</code>
 </entry>
 <entry>
-False<newline/>
-True<newline/>
-True
+  <code class="python inline-code" lang="python">False</code><newline/>
+  <code class="python inline-code" lang="python">True</code><newline/>
+  <code class="python inline-code" lang="python">True</code>
 </entry>
 </row>
 </tbody>
@@ -220,10 +220,10 @@ True
     
     <note class="practice-program" id="note-00006">
     <title>Combining exercise logs</title>
-    <para id="para-00015">The ExerciseLog class has two instance attributes: e_type, the type of exercise, and duration, the time spent exercising.</para>
-    <para id="para-00016">Overload the + operator to combine two ExerciseLogs such that:</para>
+    <para id="para-00015">The <code class="python inline-code" lang="python">ExerciseLog</code> class has two instance attributes: <code class="python inline-code" lang="python">e_type</code>, the type of exercise, and <code class="python inline-code" lang="python">duration</code>, the time spent exercising.</para>
+    <para id="para-00016">Overload the + operator to combine two <code class="python inline-code" lang="python">ExerciseLogs</code> such that:</para>
     <list id="list-00002">
-    <item>If the exercise types are different, combine them with " and " in between. Else, use the same type and don't duplicate.</item>
+    <item>If the exercise types are different, combine them with <code class="python inline-code" lang="python">" and "</code> in between. Else, use the same type and don't duplicate.</item>
     <item>Add durations together.</item>
     </list>
     <para id="para-00017">Given input:</para>
@@ -243,8 +243,8 @@ True
     </note>
     <note class="practice-program" id="note-00007">
     <title>Expanding the Account class</title>
-    <para id="para-00019">Using isinstance() allows the programmer to define different behaviors depending on an object's type. The first parameter is the object, and the second parameter is the type or class. Ex: isinstance(my_var, int) returns True if my_var is an integer.</para>
-    <para id="para-00020">Expand the existing Account example so that the addition operator can also be used to add an integer value to an Account's amount attribute.</para>
+    <para id="para-00019">Using <code class="python inline-code" lang="python">isinstance()</code> allows the programmer to define different behaviors depending on an object's type. The first parameter is the object, and the second parameter is the type or class. Ex: <code class="python inline-code" lang="python">isinstance(my_var, int)</code> returns <code class="python inline-code" lang="python">True</code> if <code class="python inline-code" lang="python">my_var</code> is an integer.</para>
+    <para id="para-00020">Expand the existing <code class="python inline-code" lang="python">Account</code> example so that the addition operator can also be used to add an integer value to an <code class="python inline-code" lang="python">Account'</code>s amount attribute.</para>
     <media alt="expanding_the_account_class_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_05_05_Expanding-the-Account-class.html"/>
     </media>

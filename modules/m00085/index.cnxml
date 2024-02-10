@@ -49,7 +49,7 @@
     <example id="exam-00001">
       <title>Using aliasing to import character.</title>
     
-    <para id="para-00009">character.py</para>
+    <para id="para-00009"><emphasis effect="italics">character.py</emphasis></para>
     <code class="python" lang="python">
     class Level:
       def __init__(self, level=1):
@@ -64,7 +64,7 @@
       def add_xp(self, num):
         ...
     </code>
-    <para id="para-00010">main.py</para>
+    <para id="para-00010"><emphasis effect="italics">main.py</emphasis></para>
     <code class="python" lang="python">
     import character as c
     

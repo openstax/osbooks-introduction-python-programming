@@ -118,7 +118,7 @@
   
   <note class="practice-program" id="note-00004">
   <title>Creating a class for vending machines</title>
-  <para id="para-00012">Write a class, VendingMachine, as described below. Default values follow the attributes. Ex: count's default value is 0. Create a vending machine using a value read from input and call instance methods.</para>
+  <para id="para-00012">Write a class, <code class="python inline-code" lang="python">VendingMachine</code>, as described below. Default values follow the attributes. Ex: <code class="python inline-code" lang="python">count'</code>s default value is <code class="python inline-code" lang="python">0</code>. Create a vending machine using a value read from input and call instance methods.</para>
   <para id="para-00013">Instance attributes:</para>
   <list id="list-00002">
   <item>count: 0</item>
@@ -126,10 +126,10 @@
   </list>
   <para id="para-00014">Methods:</para>
   <list id="list-00003">
-  <item>__init__(num): initializes count and max with num parameter </item>
-  <item>refill(): assigns count with max's value and prints 'Refilled'</item>
-  <item>sell(order): assigns count with the value of count minus order and prints 'Sold: [order]'</item>
-  <item>print_stock(): prints 'Current stock: [count]'</item>
+  <item><code class="python inline-code" lang="python">__init__(num)</code>: initializes count and max with <code class="python inline-code" lang="python">num</code> parameter</item>
+  <item><code class="python inline-code" lang="python">refill()</code>: assigns <code class="python inline-code" lang="python">count</code> with <code class="python inline-code" lang="python">max'</code>s value and prints <code class="python inline-code" lang="python">'Refilled'</code></item>
+  <item><code class="python inline-code" lang="python">sell(order)</code>: assigns <code class="python inline-code" lang="python">count</code> with the value of <code class="python inline-code" lang="python">count</code> minus <code class="python inline-code" lang="python">order</code> and prints <code class="python inline-code" lang="python">'Sold: [order]'</code></item>
+  <item><code class="python inline-code" lang="python">print_stock()</code>: prints <code class="python inline-code" lang="python">'Current stock: [count]'</code></item>
   </list>
   <para id="para-00015">Given input:</para>
   <code class="python" lang="python">
