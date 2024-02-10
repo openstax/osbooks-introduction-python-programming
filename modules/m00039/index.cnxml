@@ -110,7 +110,7 @@
     <note class="practice-program" id="note-00006">
     <title>Printing a triangle of numbers</title>
     <para id="para-00013">Write a program that prints the following output.</para>
-    <code class="python" lang="python" display="block">
+    <code class="python" lang="python">
      1 2 3 4 5 6 7 8 9
      1 2 3 4 5 6 7 8
      1 2 3 4 5 6 7
