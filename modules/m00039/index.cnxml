@@ -25,7 +25,7 @@
     </note>
     <example id="exam-00001">
     <title>Available appointments.</title>
-    <para id="para-00003">Consider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available appointments can use a nested for loop where the outer loop iterates over the hours, and the inner loop iterates over the minutes. This example prints time in hours and minutes in the time between 8 am and 10 am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the inner loop iterates over the time's minute portion between 0 and 59.</para>
+    <para id="para-00003">Consider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available appointments can use a nested <code class="python inline-code" lang="python">for</code> loop where the outer loop iterates over the hours, and the inner loop iterates over the minutes. This example prints time in hours and minutes in the time between 8 am and 10 am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the inner loop iterates over the time's minute portion between 0 and 59.</para>
     <code class="python" lang="python">
     hour = 8
     minute = 0
@@ -110,25 +110,24 @@
     <note class="practice-program" id="note-00006">
     <title>Printing a triangle of numbers</title>
     <para id="para-00013">Write a program that prints the following output.</para>
-    <code class="python" lang="python">
-    1 2 3 4 5 6 7 8 9
-    1 2 3 4 5 6 7 8
-    1 2 3 4 5 6 7
-    1 2 3 4 5 6
-    1 2 3 4 5
-    1 2 3 4
-    1 2 3
-    1 2
-    1
-    </code>
-    <para id="para-00014">Finish!</para>
+    <code class="python inline-code" lang="python">1 2 3 4 5 6 7 8
+       9</code>
+    <code class="python inline-code" lang="python">1 2 3 4 5 6 7 8</code>
+    <code class="python inline-code" lang="python">1 2 3 4 5 6 7</code>
+    <code class="python inline-code" lang="python">1 2 3 4 5 6</code>
+    <code class="python inline-code" lang="python">1 2 3 4 5</code>
+    <code class="python inline-code" lang="python">1 2 3 4</code>
+    <code class="python inline-code" lang="python">1 2 3</code>
+    <code class="python inline-code" lang="python">1 2</code>
+    <code class="python inline-code" lang="python">1</code>
+    <para id="para-00014"><code class="python inline-code" lang="python">Finish!</code></para>
     <media alt="printing_a_triangle_of_numbers_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_04_05_Printing-a-triangle-of-numbers.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00007">
     <title>Printing two triangles</title>
-    <para id="para-00015">Write a program that prints the following output using nested while and for loops.</para>
+    <para id="para-00015">Write a program that prints the following output using nested <code class="python inline-code" lang="python">while</code> and <code class="python inline-code" lang="python">for</code> loops.</para>
     <code class="python" lang="python">
     ****
     ***
