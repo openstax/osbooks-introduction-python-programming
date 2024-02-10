@@ -38,7 +38,7 @@ class ClassName:
 </code></entry>
 </row>
 <row>
-<entry>__init__()</entry>
+<entry><code class="python" lang="python">__init__()</code></entry>
 <entry><code class="python" lang="python">
 class ClassName:
   def __init__(self):
