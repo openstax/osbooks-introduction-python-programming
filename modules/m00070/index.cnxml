@@ -275,9 +275,9 @@
     </m:mfenced></m:mrow>
     </m:math>
     </equation><newline/>
-    <para id="para-00017">In the result matrix each element is calculated according to the position of the element. Result at position [i][j] is calculated using row i from the first matrix, W, and column j from the second matrix, Z.</para>
+    <para id="para-00017">In the result matrix each element is calculated according to the position of the element. Result at position <code class="python inline-code" lang="python">[i][j]</code> is calculated using row <code class="python inline-code" lang="python">i</code> from the first matrix, W, and column <code class="python inline-code" lang="python">j</code> from the second matrix, Z.</para>
     <para id="para-00018">Ex:</para>
-    <para id="para-00019">result[1][2] = (row 1 in W) times (column 2 in Z)</para>
+    <para id="para-00019"><code class="python inline-code" lang="python">result[1][2]</code> = (row 1 in W) times (column 2 in Z)</para>
     <equation id="eq-00004">
     <m:math>
     <m:mrow>
