@@ -102,7 +102,7 @@
     
     <note class="practice-program" id="note-00004">
     <title>Copy</title>
-    <para id="para-00012">Make a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in each list and print those sentences (no need to add periods at the end of the sentences).</para>
+    <para id="para-00012">Make a copy of <code class="python inline-code" lang="python">word_list</code> called wisdom. Sort the list called wisdom. Create a sentence using the words in each list and print those sentences (no need to add periods at the end of the sentences).</para>
     <media alt="copy_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_04_05_Copy.html"/>
     </media>

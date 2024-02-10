@@ -47,7 +47,7 @@
     <title>Using <code class="python inline-code" lang="python">sort()</code> and <code class="python inline-code" lang="python">reverse()</code></title>
     <para id="para-00007">Python provides methods for arranging elements in a list.
     <list id="list-00002">
-    <item>The <code class="python inline-code" lang="python">sort()</code> method arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters leading to unexpected results. Ex: 'A' is ordered before 'a' in ascending order but so is 'G', thus "Gail" comes before "apple".</item>
+    <item>The <code class="python inline-code" lang="python">sort()</code> method arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters leading to unexpected results. Ex: <code class="python inline-code" lang="python">'A'</code> is ordered before <code class="python inline-code" lang="python">'a'</code> in ascending order but so is <code class="python inline-code" lang="python">'G'</code>, thus <code class="python inline-code" lang="python">"Gail"</code> comes before <code class="python inline-code" lang="python">"apple"</code>.</item>
     <item>The <code class="python inline-code" lang="python">reverse()</code> method reverses the elements in a list.</item>
     </list></para>
     <example id="exam-00001">
