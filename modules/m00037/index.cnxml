@@ -115,8 +115,8 @@
   
     <note class="practice-program" id="note-00005">
     <title>Reading inputs in a while loop.</title>
-    <para id="para-00012">Write a program that takes user inputs in a <code class="python inline-code" lang="python">while</code> loop until the user enters <code class="python inline-code" lang="python">'begin'</code>. Test the code with the given input values to check that the loop does not terminate until the input is <code class="python inline-code" lang="python">'begin'</code>. Once the input <code class="python inline-code" lang="python">'begin'</code> is received, print "<code class="python inline-code" lang="python">The while loop
-       condition has been met.</code>"</para>
+    <para id="para-00012">Write a program that takes user inputs in a <code class="python inline-code" lang="python">while</code> loop until the user enters <code class="python inline-code" lang="python">'begin'</code>. Test the code with the given input values to check that the loop does not terminate until the input is <code class="python inline-code" lang="python">'begin'</code>. Once the input <code class="python inline-code" lang="python">'begin'</code> is received, print <code class="python inline-code" lang="python">"The while loop
+       condition has been met."</code></para>
     <para id="para-00014">Enter different input words to see when the <code class="python inline-code" lang="python">while</code> loop condition is met.</para>
     <media alt="reading_inputs_in_a_while_loop_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_02_01_Reading-inputs-in-a-while-loop.html"/>
