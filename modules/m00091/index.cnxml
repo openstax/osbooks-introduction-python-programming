@@ -93,7 +93,7 @@
     6
     </code>
     </example>
-    <!-- <note class="learning-questions" id="note-00003">
+    <note class="learning-questions" id="note-00003">
     <title>GCD</title>
     <exercise id="exer-00004">
     <problem id="prob-00004">
@@ -115,7 +115,7 @@
     <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch12-m04-p07"/></para>
     </problem>
     </exercise>
-    </note>-->
+    </note>
     </section>
    
     <note class="practice-program" id="note-00004">
