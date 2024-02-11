@@ -10,14 +10,14 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Identify the branches taken in an if-elif and if-elif-else statement</item>
+    <item>Identify the branches taken in an <code class="python inline-code" lang="python">if-elif</code> and <code class="python inline-code" lang="python">if-elif-else</code> statement</item>
     <item>Create a chained decision statement to evaluate multiple conditions</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>elif</title>
     <para id="para-00002">Sometimes, a complicated decision is based on more than a single condition. Ex: A travel planning site reviews the layovers on an itinerary. If a layover is greater than 24 hours, the site should suggest accommodations. <emphasis effect="italics">Else if</emphasis> the layover is less than 1 hour, the site should alert for a possible missed connection.</para>
-    <para id="para-00003">Two separate if statements do not guarantee that only one branch is taken and might result in both branches being taken. Ex: The program below attempts to add a curve based on the input test score. If the input is 60, both if statements are incorrectly executed, and the resulting score is 75.</para>
+    <para id="para-00003">Two separate <code class="python inline-code" lang="python">if</code> statements do not guarantee that only one branch is taken and might result in both branches being taken. Ex: The program below attempts to add a curve based on the input test score. If the input is <code class="python inline-code" lang="python">60</code>, both <code class="python inline-code" lang="python">if</code> statements are incorrectly executed, and the resulting score is 75.</para>
     <code class="python" lang="python">
     score = int(input())
     if score &lt; 70:
@@ -26,8 +26,8 @@
     if 70 &lt;= score &lt; 85:
       score += 5
     </code>
-    <para id="para-00004">Chaining decision statements with elif allows the programmer to check for multiple conditions. An <term id="term-00001">elif</term>, short for else if, statement, checks a condition when the prior decision statement's condition is false. An elif statement is part of a chain and must follow an if (or elif) statement.</para>
-    <para id="para-00021">if-elif statement template</para>
+    <para id="para-00004">Chaining decision statements with <code class="python inline-code" lang="python">elif</code> allows the programmer to check for multiple conditions. An <term id="term-00001">elif</term>, short for else if, statement, checks a condition when the prior decision statement's condition is false. An <code class="python inline-code" lang="python">elif</code> statement is part of a chain and must follow an <code class="python inline-code" lang="python">if</code> (or <code class="python inline-code" lang="python">elif</code>) statement.</para>
+    <para id="para-00021"><code class="python inline-code" lang="python">if-elif</code> statement template</para>
     <code class="python" lang="python">
     # Statements before
 
@@ -75,7 +75,7 @@
     </section>
     <section id="sect-00003">
     <title>if-elif-else statements</title>
-    <para id="para-00010">Elifs can be chained with an if-else statement to create a more complex decision statement. Ex: A program shows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or two) places. Else if the piece is a bishop, show diagonal moves. Else if...(finish for the rest of the pieces).</para>
+    <para id="para-00010">Elifs can be chained with an <code class="python inline-code" lang="python">if-else</code> statement to create a more complex decision statement. Ex: A program shows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or two) places. Else if the piece is a bishop, show diagonal moves. Else if...(finish for the rest of the pieces).</para>
     <note class="guided-slides" id="note-00003">
     <title>Example: Possible chess moves</title>
     <media alt="chess_moves_slides">
@@ -109,7 +109,7 @@
     
     <note class="practice-program" id="note-00005">
     <title>Crochet hook size conversion</title>
-    <para id="para-00015">Write a program that reads in a crochet hook's US size and computes the metric diameter in millimeters. (A subset of sizes is used.) If the input does not match B-G, the diameter should be assigned with -1.0. Ex: If the input is D, the output is "3.25 mm".</para>
+    <para id="para-00015">Write a program that reads in a crochet hook's US size and computes the metric diameter in millimeters. (A subset of sizes is used.) If the input does not match B-G, the diameter should be assigned with -1.0. Ex: If the input is <code class="python inline-code" lang="python">D</code>, the output is <code class="python inline-code" lang="python">"3.25 mm"</code>.</para>
     <para id="para-00016">Size conversions for US size: mm</para>
     <list id="list-00002">
     <item>B : 2.25</item>

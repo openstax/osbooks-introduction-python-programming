@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Conditional expressions</title>
-    <para id="para-00002">A <term id="term-00001">conditional expression</term> (also known as a "ternary operator") is a simplified, single-line version of an if-else statement.</para>
+    <para id="para-00002">A <term id="term-00001">conditional expression</term> (also known as a "ternary operator") is a simplified, single-line version of an <code class="python inline-code" lang="python">if-else</code> statement.</para>
     <para id="para-00013">Conditional expression template</para>
     <code class="python" lang="python">
     expression_if_true if condition else expression_if_false
@@ -62,8 +62,8 @@
 
     <note class="practice-program" id="note-00003">
     <title>Ping values</title>
-    <para id="para-00011">Write a program that reads in an integer, ping, and prints ping_report, a string indicating whether the ping is low to average or too high. ping values under 150 have a ping_report of "low to average". ping values of 150 and higher have a ping_report of "too high". Use a conditional expression to assign ping_report.</para>
-    <para id="para-00012">Ex: If the input is 30, the output is "Ping is low to average".</para>
+    <para id="para-00011">Write a program that reads in an integer, <code class="python inline-code" lang="python">ping</code>, and prints <code class="python inline-code" lang="python">ping_report</code>, a string indicating whether the ping is low to average or too high. <code class="python inline-code" lang="python">ping</code> values under 150 have a <code class="python inline-code" lang="python">ping_report</code> of <code class="python inline-code" lang="python">"low to average"</code>. <code class="python inline-code" lang="python">ping</code> values of 150 and higher have a <code class="python inline-code" lang="python">ping_report</code> of <code class="python inline-code" lang="python">"too high"</code>. Use a conditional expression to assign <code class="python inline-code" lang="python">ping_report</code>.</para>
+    <para id="para-00012">Ex: If the input is <code class="python inline-code" lang="python">30</code>, the output is <code class="python inline-code" lang="python">"Ping is low to average"</code>.</para>
     <media alt="ping_values_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_08_08_Ping-values.html"/>
     </media>
