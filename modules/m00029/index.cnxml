@@ -10,16 +10,16 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Identify which operations are performed when a program with <code class="python inline-code" lang="python">if</code> and <code class="python inline-code" lang="python">if-else</code> statements is run</item>
-    <item>Identify the components of an <code class="python inline-code" lang="python">if</code> and <code class="python inline-code" lang="python">if-else</code> statement and the necessary formatting</item>
-    <item>Create an <code class="python inline-code" lang="python">if-else</code> statement to perform an operation when a condition is true and another operation otherwise</item>
+    <item>Identify which operations are performed when a program with if and if-else statements is run</item>
+    <item>Identify the components of an if and if-else statement and the necessary formatting</item>
+    <item>Create an if-else statement to perform an operation when a condition is true and another operation otherwise</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>if statement</title>
     <para id="para-00002">If the weather is rainy, grab an umbrella! People make decisions based on conditions like if the weather is rainy, and programs also perform operations based on conditions like a variable's value. Ex: A program adds 2 numbers. If the result is negative, the program prints an error.</para>
     <para id="para-00003">A <term id="term-00001">condition</term> is an expression that evaluates to True or False. An <term id="term-00002">if statement</term> is a decision-making structure that contains a condition and a body of statements. If the condition is true, the body is executed. If the condition is false, the body is not executed.</para>
-    <para id="para-00004">The <code class="python inline-code" lang="python">if</code> statement's body must be grouped together and have one level of indentation. The PEP 8 style guide recommends 4 spaces per indentation level. The Python interpreter will produce an error if the body is empty.</para>
+    <para id="para-00004">The if statement's body must be grouped together and have one level of indentation. The PEP 8 style guide recommends 4 spaces per indentation level. The Python interpreter will produce an error if the body is empty.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Quantity check</title>
     <media alt="quantity_check_slides">
@@ -28,7 +28,7 @@
     </note>
     <note id="note-00002">
     <title>Using boolean variables</title>
-    <para id="para-00005">A boolean variable already has a value of <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code> and can be used directly in a condition rather than using the equality operator. Ex: <code class="python inline-code" lang="python">if is_raining == True:</code> can be simplified to <code class="python inline-code" lang="python">if is_raining:</code>.</para>
+    <para id="para-00005">A boolean variable already has a value of True or False and can be used directly in a condition rather than using the equality operator. Ex: <code class="python inline-code" lang="python">if is_raining == True:</code> can be simplified to <code class="python inline-code" lang="python">if is_raining:</code>.</para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Using if statements</title>
@@ -61,9 +61,9 @@
     </section>
     <section id="sect-00003">
     <title>if-else statement</title>
-    <para id="para-00011">An <code class="python inline-code" lang="python">if</code> statement defines actions to be performed when a condition is true. What if an action needs to be performed only when the condition is false? Ex: If the restaurant is less than a mile away, we'll walk. Else, we'll drive.</para>
-    <para id="para-00012">An <term id="term-00003">else statement</term> is used with an <code class="python inline-code" lang="python">if</code> statement and contains a body of statements that is executed when the <code class="python inline-code" lang="python">if</code> statement's condition is False. When an <code class="python inline-code" lang="python">if-else</code> statement is executed, one and only one of the branches is taken. That is, the body of the <code class="python inline-code" lang="python">if</code> or the body of the <code class="python inline-code" lang="python">else</code> is executed. Note: The <code class="python inline-code" lang="python">else</code> statement is at the same level of indentation as the <code class="python inline-code" lang="python">if</code> statement, and the body is indented.</para>
-    <para id="para-00020"><code class="python inline-code" lang="python">if-else</code> statement template</para>
+    <para id="para-00011">An if statement defines actions to be performed when a condition is true. What if an action needs to be performed only when the condition is false? Ex: If the restaurant is less than a mile away, we'll walk. Else, we'll drive.</para>
+    <para id="para-00012">An <term id="term-00003">else statement</term> is used with an if statement and contains a body of statements that is executed when the if statement's condition is False. When an if-else statement is executed, one and only one of the branches is taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the same level of indentation as the if statement, and the body is indented.</para>
+    <para id="para-00020">if-else statement template</para>
     <code class="python line-numbering" lang="python">
     # Statements before
 
@@ -109,7 +109,7 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Converting temperature units</title>
-    <para id="para-00017">The following program reads in a temperature as a float and the unit as a string: "f" for Fahrenheit or "c" for Celsius.</para><para id="para-00018">Calculate <code class="python inline-code" lang="python">new_temp</code>, the result of converting temp from Fahrenheit to Celsius or Celsius to Fahrenheit based on unit. Calculate <code class="python inline-code" lang="python">new_unit</code>: "c" if unit is "f" and "f" if unit is "c".</para>
+    <para id="para-00017">The following program reads in a temperature as a float and the unit as a string: "f" for Fahrenheit or "c" for Celsius.</para><para id="para-00018">Calculate new_temp, the result of converting temp from Fahrenheit to Celsius or Celsius to Fahrenheit based on unit. Calculate new_unit: "c" if unit is "f" and "f" if unit is "c".</para>
     <para id="para-00019">Conversion formulas:
     <list id="list-00002">
     <item>degrees Celsius = (degrees Fahrenheit - 32) * 5/9</item>

@@ -10,8 +10,8 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Describe the execution paths of programs with nested <code class="python inline-code" lang="python">if-else</code> statements</item>
-    <item>Implement a program with nested <code class="python inline-code" lang="python">if-else</code> statements</item>
+    <item>Describe the execution paths of programs with nested if-else statements</item>
+    <item>Implement a program with nested if-else statements</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -84,7 +84,7 @@
    
     <note class="practice-program" id="note-00003">
     <title>Meal orders</title>
-    <para id="para-00010">Write a program that reads in a string, <code class="python inline-code" lang="python">"lunch"</code> or <code class="python inline-code" lang="python">"dinner"</code>, representing the menu choice and an integer, <code class="python inline-code" lang="python">1</code>, <code class="python inline-code" lang="python">2</code>, or <code class="python inline-code" lang="python">3</code>, representing the user's meal choice. The program then prints the user's meal choice.</para>
+    <para id="para-00010">Write a program that reads in a string, "lunch" or "dinner", representing the menu choice and an integer, 1, 2, or 3, representing the user's meal choice. The program then prints the user's meal choice.</para>
     <para id="para-00011">Lunch Meal Options</para>
     <list id="list-00002">
     <item>1: Caesar salad</item>
@@ -98,11 +98,11 @@
     <item>3: Mushroom risotto</item>
     </list>
     <para id="para-00013">Ex: If the input is:<newline/>
-    <code class="python inline-code" lang="python">lunch</code> <newline/>
-    <code class="python inline-code" lang="python">3</code> <newline/>
+    lunch <newline/>
+    3 <newline/>
     </para>
     <para id="para-00014">The output is:<newline/>
-    <code class="python inline-code" lang="python">Your order: Butternut squash soup</code></para>
+    Your order: Butternut squash soup</para>
     <media alt="programming_practice_-Meal-orders_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_07_07_Programming-practice_-Meal-orders.html"/>
     </media>

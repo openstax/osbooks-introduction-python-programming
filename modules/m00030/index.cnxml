@@ -18,8 +18,8 @@
     </section>
     <section id="sect-00002">
     <title>Logical operator: and</title>
-    <para id="para-00002">Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that <code class="python inline-code" lang="python">hour &#62;= 9</code> and <code class="python inline-code" lang="python">hour &#60; 17</code>. A <term id="term-00001">logical operator</term> takes condition operand(s) and produces <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.</para>
-    <para id="para-00003">Python has 3 logical operators: <emphasis effect="italics">and</emphasis>, <emphasis effect="italics">or</emphasis>, and <emphasis effect="italics">not</emphasis>. The <term id="term-00002">and</term> operator takes 2 condition operands and returns <code class="python inline-code" lang="python">True</code> if both conditions are True.</para>
+    <para id="para-00002">Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that hour &#62;= 9 and hour &#60; 17. A <term id="term-00001">logical operator</term> takes condition operand(s) and produces True or False.</para>
+    <para id="para-00003">Python has 3 logical operators: <emphasis effect="italics">and</emphasis>, <emphasis effect="italics">or</emphasis>, and <emphasis effect="italics">not</emphasis>. The <term id="term-00002">and</term> operator takes 2 condition operands and returns True if both conditions are True.</para>
     <table summary=" " id="table-00001">
     <title>Truth table: p and q</title>
     <tgroup cols="3">
@@ -32,24 +32,24 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
+    <entry>True</entry>
+    <entry>True</entry>
+    <entry>True</entry>
     </row>
     <row>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
+    <entry>True</entry>
+    <entry>False</entry>
+    <entry>False</entry>
     </row>
     <row>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
+    <entry>False</entry>
+    <entry>True</entry>
+    <entry>False</entry>
     </row>
     <row>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
+    <entry>False</entry>
+    <entry>False</entry>
+    <entry>False</entry>
     </row>
     </tbody>
     </tgroup>
@@ -86,7 +86,7 @@
     </section>
     <section id="sect-00003">
     <title>Logical operator: or</title>
-    <para id="para-00008">Sometimes a decision only requires one condition to be true. Ex: If a student is in the band or choir, they will perform in the spring concert. The <term id="term-00003">or</term> operator takes 2 condition operands and returns <code class="python inline-code" lang="python">True</code> if either condition is <code class="python inline-code" lang="python">True</code>.</para>
+    <para id="para-00008">Sometimes a decision only requires one condition to be true. Ex: If a student is in the band or choir, they will perform in the spring concert. The <term id="term-00003">or</term> operator takes 2 condition operands and returns True if either condition is True.</para>
     <table summary=" " id="table-00002">
     <title>Truth table: p or q</title>
     <tgroup cols="3">
@@ -99,24 +99,24 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
+    <entry>True</entry>
+    <entry>True</entry>
+    <entry>True</entry>
     </row>
     <row>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
+    <entry>True</entry>
+    <entry>False</entry>
+    <entry>True</entry>
     </row>
     <row>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
+    <entry>False</entry>
+    <entry>True</entry>
+    <entry>True</entry>
     </row>
     <row>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
+    <entry>False</entry>
+    <entry>False</entry>
+    <entry>False</entry>
     </row>
     </tbody>
     </tgroup>
@@ -148,8 +148,8 @@
     </section>
     <section id="sect-00004">
     <title>Logical operator: not</title>
-    <para id="para-00012">If the computer is not on, press the power button. The <term id="term-00004">not</term> operator takes 1 condition operand and returns <code class="python inline-code" lang="python">True</code> when the operand is False and returns <code class="python inline-code" lang="python">False</code> when the operand is True.</para>
-    <para id="para-00013"><emphasis effect="italics">not</emphasis> is a useful operator that can make a condition more readable and can be used to toggle a boolean's value. Ex: <code class="python inline-code" lang="python">is_on = not is_on</code>.</para>
+    <para id="para-00012">If the computer is not on, press the power button. The <term id="term-00004">not</term> operator takes 1 condition operand and returns True when the operand is False and returns False when the operand is True.</para>
+    <para id="para-00013"><emphasis effect="italics">not</emphasis> is a useful operator that can make a condition more readable and can be used to toggle a boolean's value. Ex: is_on = not is_on.</para>
     <table summary=" " id="table-00003">
     <title>Truth table: not p</title>
     <tgroup cols="2">
@@ -161,12 +161,12 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
+    <entry>True</entry>
+    <entry>False</entry>
     </row>
     <row>
-    <entry><code class="python inline-code" lang="python">False</code></entry>
-    <entry><code class="python inline-code" lang="python">True</code></entry>
+    <entry>False</entry>
+    <entry>True</entry>
     </row>
     </tbody>
     </tgroup>
