@@ -61,7 +61,7 @@
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/inheritance-subclasses"/>
     </media>
     </note>
-    <note class="learning-questions" id="note-00004">
+    <!-- <note class="learning-questions" id="note-00004">
     <title>Creating subclasses</title>
     <exercise id="exer-00004">
     <problem id="prob-00004">
@@ -83,7 +83,7 @@
     <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch13-m01-p07"/></para>
     </problem>
     </exercise>
-    </note>
+    </note>-->
     <note id="note-00005">
     <title>Alternative inheritance terms</title>
     <para id="para-00013">Python documentation for inheritance uses multiple terms to refer to the class that is inherited from and the class that inherits. This book uses superclass/subclass throughout for consistency.</para>
