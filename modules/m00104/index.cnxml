@@ -16,11 +16,11 @@
     </section>
     <section id="sect-00002">
     <title>Opening a file at any location</title>
-    <para id="para-00002">When only the filename is used as the argument to the <code class="python inline-code" lang="python">open()</code> function the file must be in the same folder as the Python file which is executing. Ex: If files.py has a line <code class="python inline-code" lang="python">fileobj = open("file1.txt")</code> then for the line of code to execute successfully, the file1.txt file should be in the same folder as files.py.</para>
+    <para id="para-00002">When only the filename is used as the argument to the <code class="python inline-code" lang="python">open()</code> function the file must be in the same folder as the Python file which is executing. Ex: If files.py has a line <code class="python inline-code" lang="python">fileobj = open("file1.txt")</code> then for the line of code to execute successfully, the file1.txt file should be in the same folder as <emphasis effect="italics">files.py</emphasis>.</para>
     <para id="para-00003">Often a programmer needs to open files from other folders than the one in which the Python file exists. A <term id="term-00001">path</term> uniquely identifies a folder location on a computer. The path can be used along with filename to open a file in any folder location. Ex: To open a file named logfile.log located in <code class="python inline-code" lang="python">/users/turtle/desktop</code> the following can be used:</para>
     <para id="para-00004"><code class="python inline-code" lang="python">fileobj = open("/users/turtle/desktop/logfile.log")</code></para>
     <table summary=" " id="table-00001">
-    <title>Modes for open() function.</title>
+    <title>Modes for <code class="python inline-code" lang="python">open()</code> function.</title>
     <tgroup cols="3">
     <thead>
     <row>
@@ -47,11 +47,11 @@
     </row>
     </tbody>
     </tgroup>
-    <caption>In each of the following cases, a file called output.txt is located in a different folder than the Python folder. Windows uses backslash \ characters instead of slash / characters for the path. If the backslash is included directly in open() then an additional backslash is needed for Python to understand the location correctly.</caption>
+    <caption>In each of the following cases, a file called output.txt is located in a different folder than the Python folder. Windows uses backslash \ characters instead of slash / characters for the path. If the backslash is included directly in <code class="python inline-code" lang="python">open()</code> then an additional backslash is needed for Python to understand the location correctly.</caption>
     </table>
     <note class="learning-questions" id="note-00001">
     <title>Opening files at different locations</title>
-    <para id="para-00005">For each question assume that the Python file executing the open() function is not in the same folder as the out.txt file.</para>
+    <para id="para-00005">For each question assume that the Python file executing the <code class="python inline-code" lang="python">open()</code> function is not in the same folder as the out.txt file.</para>
     <para id="para-00006">Each question indicates the location of out.txt and the type of computer and the desired mode for opening the file. Choose which option is best for opening out.txt.</para>
     <exercise id="exer-00001">
     <problem id="prob-00001">
@@ -84,7 +84,7 @@
     <media alt="">
     <image mime-type="image/jpg" src="../../media/Python_14_3_image1.png"/>
     </media>
-    <caption>A CSV file is simply a text file with rows separated by newline \n characters and cells separated by commas. </caption>
+    <caption>A CSV file is simply a text file with rows separated by newline <code class="python inline-code" lang="python">\n</code> characters and cells separated by commas. </caption>
     </figure>
     <para id="para-00112">Raw text of the file:</para>
     <para id="para-00113"><code class="python inline-code" lang="python">Title, Author, Pages\n1984, George Orwell, 268\nJane Eyre, Charlotte Bronte, 532\nWalden, Henry David Thoreau, 156\nMoby Dick, Herman Melville, 538</code></para>

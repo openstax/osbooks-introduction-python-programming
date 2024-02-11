@@ -77,7 +77,7 @@ try:
 except ValueError:
     # Statements
 </code></entry>
-<entry>Try to run statements that might raise a ValueError. If a ValueError is raised, run other statements.</entry>
+<entry>Try to run statements that might raise a <code class="python inline-code" lang="python">ValueError</code>. If a <code class="python inline-code" lang="python">ValueError</code> is raised, run other statements.</entry>
 </row>
 <row>
 <entry><code class="python" lang="python">
@@ -86,19 +86,19 @@ try:
 except ValueError as err:
     # Statements
 </code></entry>
-<entry><para id="para-00016">Try to run statements that might raise a ValueError. If a ValueError is raised, run other statements. The variable <code class="python inline-code" lang="python">err</code> contains more details about the ValueError.</para></entry>
+<entry><para id="para-00016">Try to run statements that might raise a <code class="python inline-code" lang="python">ValueError</code>. If a <code class="python inline-code" lang="python">ValueError</code> is raised, run other statements. The variable <code class="python inline-code" lang="python">err</code> contains more details about the <code class="python inline-code" lang="python">ValueError</code>.</para></entry>
 </row>
 <row>
 <entry><code class="python" lang="python">
 raise ValueError
 </code></entry>
-<entry>Raises a ValueError with no specific error message.</entry>
+<entry>Raises a <code class="python inline-code" lang="python">ValueError</code> with no specific error message.</entry>
 </row>
 <row>
 <entry><code class="python" lang="python">
 raise ValueError("number is prime")
 </code></entry>
-<entry>Raises a ValueError with the message "number is prime".</entry>
+<entry>Raises a <code class="python inline-code" lang="python">ValueError</code> with the message <code class="python inline-code" lang="python">"number is prime"</code>.</entry>
 </row>
 </tbody>
 </tgroup>
