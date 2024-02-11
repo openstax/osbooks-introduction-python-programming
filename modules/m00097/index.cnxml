@@ -24,7 +24,7 @@
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/overriding-superclass"/>
     </media>
     </note>
-    <!-- <note class="learning-questions" id="note-00002">
+    <note class="learning-questions" id="note-00002">
     <title>Overriding methods</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
@@ -41,7 +41,7 @@
     <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch13-m03-p03"/></para>
     </problem>
     </exercise>
-    </note>-->
+    </note>
     </section>
     <section id="sect-00003">
     <title>super()</title>
