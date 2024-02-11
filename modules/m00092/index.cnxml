@@ -67,7 +67,7 @@
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/binary-search"/>
     </media>
     </note>
-    <note class="learning-questions" id="note-00002">
+    <!-- <note class="learning-questions" id="note-00002">
     <title>Binary search</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
@@ -89,7 +89,7 @@
     <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch12-m05-p04"/></para>
     </problem>
     </exercise>
-    </note>
+    </note>-->
     </section>
     <section id="sect-00003">
     <title>Solving 3 towers</title>
