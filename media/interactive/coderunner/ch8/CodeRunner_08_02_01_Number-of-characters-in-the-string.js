@@ -1,1 +1,0 @@
-window.parameters = {"files": [{"name": "main.py", "contents": "s_input =  \"Today is a great DAY!\"\n\n\n", "solution": "s_input =  \"Today is a great DAY!\"\n\nprint(s_input.lower())\nprint(s_input.upper())\n\nprint(len(s_input))\n"}], "input": null, "showSolution": true};
