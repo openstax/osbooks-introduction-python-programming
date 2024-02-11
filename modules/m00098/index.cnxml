@@ -142,11 +142,11 @@
     
     <note class="practice-program" id="note-00004">
     <title>Overriding methods</title>
-    <para id="para-00011">Define 3 classes: <code class="python inline-code" lang="python">Instrument</code>, <code class="python inline-code" lang="python">Woodwind</code>, and <code class="python inline-code" lang="python">String</code>.</para>
+    <para id="para-00011">Define 3 classes: Instrument, Woodwind, and String.</para>
     <list id="list-00002">
-    <item><code class="python inline-code" lang="python">Instrument</code> has instance attribute <code class="python inline-code" lang="python">owner</code>, with default value of 'unknown'.</item>
-    <item><code class="python inline-code" lang="python">Woodwind</code> inherits from <code class="python inline-code" lang="python">Instrument</code> and has instance attribute <code class="python inline-code" lang="python">material</code> with default value of 'wood'.</item>
-    <item><code class="python inline-code" lang="python">String</code> inherits from <code class="python inline-code" lang="python">Instrument</code> and has instance attribute <code class="python inline-code" lang="python">num_strings</code>, with default value of 4.</item>
+    <item>Instrument has instance attribute owner, with default value of 'unknown'.</item>
+    <item>Woodwind inherits from Instrument and has instance attribute material with default value of 'wood'.</item>
+    <item>String inherits from Instrument and has instance attribute num_strings, with default value of 4.</item>
     </list>
     <para id="para-00012">The output should match:</para>
     <code class="python" lang="python">
