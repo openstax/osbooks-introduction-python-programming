@@ -16,11 +16,11 @@
     <section id="sect-00002">
     <title>Fibonacci sequence using recursion</title>
     <para id="para-00002">The Fibonacci sequence is a sequence in which each number in the sequence is the sum of the previous 2 numbers in the sequence.The first two numbers being 0 and 1. Thus, starting from 0 and 1, the third number is 0+1=1, the next number is 1+1=2. The sequence of numbers is 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... .</para>
-    <para id="para-00003">Recursion can be used to calculate the nth Fibonacci number. 0 and 1 are the base cases. Thereafter the nth number is given by adding the (n-1)th and (n-2)th number. Thus, <code class="python inline-code" lang="python">fib(n) = fib(n-1) + fib(n-2)</code>, which is a recursive definition ending with base cases, <code class="python inline-code" lang="python">f(0) = 0</code>, and <code class="python inline-code" lang="python">f(1) = 1</code>.</para>
-    <para id="para-00004">For a recursion that calls multiple functions in the recursive case, tracing how the recursion proceeds is useful. A structure used to trace the calls made by a recursive function is called a <term id="term-00001">recursion tree</term>. The animation below traces the recursion tree for a call to a recursive function to calculate the Fibonacci number for <code class="python inline-code" lang="python">n = 5</code>.</para>
+    <para id="para-00003">Recursion can be used to calculate the nth Fibonacci number. 0 and 1 are the base cases. Thereafter the nth number is given by adding the (n-1)th and (n-2)th number. Thus, fib(n) = fib(n-1) + fib(n-2), which is a recursive definition ending with base cases, f(0) = 0, and f(1) = 1.</para>
+    <para id="para-00004">For a recursion that calls multiple functions in the recursive case, tracing how the recursion proceeds is useful. A structure used to trace the calls made by a recursive function is called a <term id="term-00001">recursion tree</term>. The animation below traces the recursion tree for a call to a recursive function to calculate the Fibonacci number for n = 5.</para>
     <example id="exam-00001">
     <title>Finding the nth Fibonacci number</title>
-    <para id="para-00005">The Fibonacci function recursion is more complex with the value at <code class="python inline-code" lang="python">n</code> depending on 2 function calls with smaller values.</para>
+    <para id="para-00005">The Fibonacci function recursion is more complex with the value at n depending on 2 function calls with smaller values.</para>
     <code class="python" lang="python">
     """ Recursive Fibonacci function """
 
@@ -120,17 +120,17 @@
    
     <note class="practice-program" id="note-00004">
     <title>Recursive power</title>
-    <para id="para-00017">Write a recursive <code class="python inline-code" lang="python">power()</code> function, such that given an integer <code class="python inline-code" lang="python">x</code> and a positive integer <code class="python inline-code" lang="python">y</code>, <code class="python inline-code" lang="python">power(x, y)</code> returns <code class="python inline-code" lang="python">x</code> raised to <code class="python inline-code" lang="python">y</code>.</para>
-    <para id="para-00018">Ex: <code class="python inline-code" lang="python">power(3, 4)</code> returns <code class="python inline-code" lang="python">81</code>.</para>
+    <para id="para-00017">Write a recursive power() function, such that given an integer x and a positive integer y, power(x, y) returns x raised to y.</para>
+    <para id="para-00018">Ex: power(3, 4) returns 81.</para>
     <media alt="recursive_power_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_05_04_Recursive-power.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00005">
     <title>Recursive power (with any integer power)</title>
-    <para id="para-00019">Write a <code class="python inline-code" lang="python">recursive rec_pow()</code> function such that given 2 integers <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> returns <code class="python inline-code" lang="python">x</code> raised to <code class="python inline-code" lang="python">y</code>.</para>
-    <para id="para-00020">(Note: this is an extension of the above problem but now works for any integer value of <code class="python inline-code" lang="python">y</code>, positive or negative. How should the recursive function change to deal with a negative value of <code class="python inline-code" lang="python">y</code>?)</para>
-    <para id="para-00021">Ex: <code class="python inline-code" lang="python">rec_pow(2, -4)</code> returns <code class="python inline-code" lang="python">0.0625</code>.</para>
+    <para id="para-00019">Write a recursive rec_pow() function such that given 2 integers x and y returns x raised to y.</para>
+    <para id="para-00020">(Note: this is an extension of the above problem but now works for any integer value of y, positive or negative. How should the recursive function change to deal with a negative value of y?)</para>
+    <para id="para-00021">Ex: rec_pow(2, -4) returns 0.0625.</para>
     <media alt="recursive_power_(with_any_integer_power)_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_05_05_Recursive-power-(with-any-integer-power).html"/>
     </media>

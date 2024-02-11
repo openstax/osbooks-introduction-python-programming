@@ -149,7 +149,7 @@
     
     <note class="practice-program" id="note-00004">
     <title>Coin combinations</title>
-    <para id="para-00015">Write a recursive function <code class="python inline-code" lang="python">print_H_T()</code> that produces all possible combinations of heads (<code class="python inline-code" lang="python">'H'</code>) and tails (<code class="python inline-code" lang="python">'T'</code>) for a given number of coin tosses.</para>
+    <para id="para-00015">Write a recursive function print_H_T() that produces all possible combinations of heads ('H') and tails ('T') for a given number of coin tosses.</para>
     <para id="para-00016">Ex: For 3 coins the program should print the output shown below.</para>
     <code class="python" lang="python">
     HHH
