@@ -17,11 +17,7 @@
     <section id="sect-00002">
     <title>Runtime errors</title>
     <para id="para-00002">Various errors may occur when reading a file:</para>
-    <list id="list-00002">
-    <item><code class="python inline-code" lang="python">FileNotFoundError</code>: The filename or path is invalid.</item>
-    <item><code class="python inline-code" lang="python">IndexError</code>/<code class="python inline-code" lang="python"><term id="term-00001">ValueError</term></code>: The file's format is invalid.</item>
-    <item>Other errors caused by invalid contents of a file.</item>
-    </list>
+    
     <para id="para-00003">When an error occurs, the program terminates with an error message.</para>
     <example id="exam-00001">
     <title>Typo in a file</title>
