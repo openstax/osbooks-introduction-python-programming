@@ -13,7 +13,7 @@
     <item>Inheritance describes an is-a relationship between classes. One class, the subclass, inherits from another class, the superclass.</item>
     <item>Subclasses can access inherited attributes and methods directly.</item>
     <item>Subclasses can override superclass methods to change or add functionality.</item>
-    <item>super() allows a subclass to access the methods of the superclass.</item>
+    <item><code class="python inline-code" lang="python">super()</code> allows a subclass to access the methods of the superclass.</item>
     <item>Polymorphism describes a single representation for multiple forms and is applied in Python to define multiple methods with the same name and allow the same method to take different arguments.</item>
     <item>Hierarchical inheritance is a type of inheritance in which multiple classes inherit from a single superclass.</item>
     <item>Multiple inheritance is a type of inheritance in which one class inherits from multiple classes.</item>
@@ -40,7 +40,7 @@ class SubClass(SuperClass):
   pass</code></entry>
 </row>
 <row>
-<entry>Define a subclass's __init__() using super()</entry>
+<entry><para id="para-00003">Define a subclass's <code class="python inline-code" lang="python">__init__()</code> using <code class="python inline-code" lang="python">super()</code></para></entry>
 <entry><code class="python" lang="python">
 class SubClass(SuperClass):
   def __init__(self):

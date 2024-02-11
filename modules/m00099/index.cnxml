@@ -64,24 +64,24 @@
     </section>
     <section id="sect-00003">
     <title>The diamond problem and mixin classes</title>
-    <para id="para-00007">Multiple inheritance should be implemented with care. The <term id="term-00002">diamond problem</term> occurs when a class inherits from multiple classes that share a common superclass. Ex: Dessert and BakedGood both inherit from Food, and ApplePie inherits from Dessert and BakedGood.</para>
+    <para id="para-00007">Multiple inheritance should be implemented with care. The <term id="term-00002">diamond problem</term> occurs when a class inherits from multiple classes that share a common superclass. Ex: <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code> both inherit from <code class="python inline-code" lang="python">Food</code>, and <code class="python inline-code" lang="python">ApplePie</code> inherits from <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code>.</para>
     <figure id="fig-00001">
     <title>The diamond problem.</title>
     <media alt="">
     <image mime-type="image/jpg" src="../../media/Python_13_05_001.png"/>
     </media>
-    <caption>If both Dessert and BakedGood override a Food method, the overridden Food method that ApplePie inherits is ambiguous. Thus, diamond shaped inheritance should be avoided.</caption>
+    <caption>If both <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code> override a <code class="python inline-code" lang="python">Food</code> method, the overridden <code class="python inline-code" lang="python">Food</code> method that <code class="python inline-code" lang="python">ApplePie</code> inherits is ambiguous. Thus, diamond shaped inheritance should be avoided.</caption>
     </figure>
     <para id="para-00008">Mixin classes promote modularity and can remove the diamond problem. A mixin class:</para>
     <list id="list-00002">
     <item>Has no superclass</item>
     <item>Has attributes and methods to be added to a subclass</item>
-    <item>Isn't instantiated (Ex: Given MyMixin class, <code class="python inline-code" lang="python">my_inst = MyMixin()</code> should never be used.)</item>
+    <item>Isn't instantiated (Ex: Given <code class="python inline-code" lang="python">MyMixin</code> class, <code class="python inline-code" lang="python">my_inst = MyMixin()</code> should never be used.)</item>
     </list>
     <para id="para-00009"><term id="term-00003">Mixin classes</term> are used in multiple inheritance to add functionality to a subclass without adding inheritance concerns.</para>
     <note class="learning-questions" id="note-00003">
     <title>Creating a mixin class</title>
-    <para id="para-00010">The following code isn't correct, as not all plants are carnivorous. Follow the programmer through the programmer's edits to improve the program. Note: Rose, Pitcher, and VenusFlyTrap represent plants that all photosynthesize. Pitcher and VenusFlyTrap represent plants that are also carnivorous and can eat.</para>
+    <para id="para-00010">The following code isn't correct, as not all plants are carnivorous. Follow the programmer through the programmer's edits to improve the program. Note: <code class="python inline-code" lang="python">Rose</code>, <code class="python inline-code" lang="python">Pitcher</code>, and <code class="python inline-code" lang="python">VenusFlyTrap</code> represent plants that all photosynthesize. <code class="python inline-code" lang="python">Pitcher</code> and <code class="python inline-code" lang="python">VenusFlyTrap</code> represent plants that are also carnivorous and can eat.</para>
     <para id="para-00011">A pass statement is used in Python to indicate that code is to be written later and prevents certain errors that would result if no code or a comment was used instead.</para>
     <code class="python" lang="python">
     class Plant:
@@ -120,11 +120,11 @@
    
     <note class="practice-program" id="note-00004">
     <title>Fixing the diamond problem with  a mixin class</title>
-    <para id="para-00015">The program below represents multiple inheritance and has the diamond problem. Edit the program to use a mixin class, OnlineMixin. OnlineMixin:</para>
+    <para id="para-00015">The program below represents multiple inheritance and has the diamond problem. Edit the program to use a mixin class, <code class="python inline-code" lang="python">OnlineMixin</code>. <code class="python inline-code" lang="python">OnlineMixin</code>:</para>
     <list id="list-00003">
-    <item>Replaces OnlineShop</item>
-    <item>Is a superclass of FoodFast</item>
-    <item>Has one method, process_online(), which prints "Connecting to server" and is called by FoodFast's process_order()</item>
+    <item>Replaces <code class="python inline-code" lang="python">OnlineShop</code></item>
+    <item>Is a superclass of <code class="python inline-code" lang="python">FoodFast</code></item>
+    <item>Has one method, <code class="python inline-code" lang="python">process_online()</code>, which prints <code class="python inline-code" lang="python">"Connecting to server"</code> and is called by <code class="python inline-code" lang="python">FoodFast'</code>s <code class="python inline-code" lang="python">process_order()</code></item>
     </list>
     <para id="para-00016">The output should match:</para>
     <code class="python" lang="python">
