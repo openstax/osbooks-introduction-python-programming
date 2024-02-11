@@ -68,8 +68,8 @@
     </section>
     <section id="sect-00003">
     <title>Type conversion with bool()</title>
-    <para id="para-00010">Deciding whether a value is True or False is helpful when writing programs/statements based on decisions. Converting data types to booleans can seem unintuitive at first. Ex: Is "ice cream" True? But the conversion is actually simple.</para>
-    <para id="para-00011"><term id="term-00002">bool()</term> converts a value to a boolean value, True or False.
+    <para id="para-00010">Deciding whether a value is True or False is helpful when writing programs/statements based on decisions. Converting data types to booleans can seem unintuitive at first. Ex: <code class="python inline-code" lang="python">Is "ice cream" True?</code> But the conversion is actually simple.</para>
+    <para id="para-00011"><term id="term-00002">bool()</term> converts a value to a boolean value, <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.
     <list id="list-00002">
     <item><code class="python inline-code" lang="python">True</code>: any non-zero number, any non-empty string</item>
     <item><code class="python inline-code" lang="python">False</code>: 0, empty string</item>
@@ -130,7 +130,7 @@
     </section>
     <section id="sect-00004">
     <title>Comparison operators</title>
-    <para id="para-00021">Programmers often have to answer questions like "Is the current user the admin?" A programmer may want to compare a string variable, user, to the string, "admin". <term id="term-00003">Comparison operators</term> are used to compare values, and the result is either True or False. Ex: is_admin = (user == "admin"). user is compared with "admin" using the == operator, which tests for equality. The boolean variable, is_admin, is assigned with the boolean result.</para>
+    <para id="para-00021">Programmers often have to answer questions like "Is the current user the admin?" A programmer may want to compare a string variable, user, to the string, "admin". <term id="term-00003">Comparison operators</term> are used to compare values, and the result is either True or False. Ex: <code class="python inline-code" lang="python">is_admin = (user == "admin")</code>. <code class="python inline-code" lang="python">user</code> is compared with <code class="python inline-code" lang="python">"admin"</code> using the == operator, which tests for equality. The boolean variable, <code class="python inline-code" lang="python">is_admin</code>, is assigned with the boolean result.</para>
     <para id="para-00022">The 6 comparison operators:
     <list id="list-00003">
     <item>equal to: <term id="term-00004">==</term></item>
@@ -148,7 +148,7 @@
     </note>
     <note class="learning-questions" id="note-00007">
     <title>Comparing values</title>
-    <para id="para-00023">For each new variable, what is the value of compare_result?</para>
+    <para id="para-00023">For each new variable, what is the value of <code class="python inline-code" lang="python">compare_result</code>?</para>
     <exercise id="exer-00015">
     <problem id="prob-00015">
     <para id="para-00024"><link class="os-embed" url="#exercise/CPL-ch04-m01-p15"/></para>
@@ -182,7 +182,7 @@
     </note>
     <note id="note-00008">
     <title>= vs ==</title>
-    <para id="para-00030">A common mistake is using '=' for comparison instead of '=='. Ex: <code class="python inline-code" lang="python">is_zero = num=0</code> will always assign is_zero and num with 0, regardless of num's original value. '=' performs assignment and will modify the variable. '==' performs comparison, does not modify the variable, and produces True or False.</para>
+    <para id="para-00030">A common mistake is using '=' for comparison instead of '=='. Ex: <code class="python inline-code" lang="python">is_zero = num=0</code> will always assign <code class="python inline-code" lang="python">is_zero</code> and <code class="python inline-code" lang="python">num</code> with <code class="python inline-code" lang="python">0</code>, regardless of num's original value. '=' performs assignment and will modify the variable. '==' performs comparison, does not modify the variable, and produces <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.</para>
     </note>
     <note id="note-00009">
       <title>Exploring further</title>
@@ -194,14 +194,14 @@
     <note class="practice-program" id="note-00010">
       <title>Friday boolean</title>
       <para id="para-00032">"It's Friday, I'm in love" -- from Friday I'm in Love, a song released by the Cure in 1992.</para>
-      <para id="para-00033">Write a program that reads in the day of the week. Assign the boolean variable, in_love, with the result of whether the day is Friday or not.</para>
+      <para id="para-00033">Write a program that reads in the day of the week. Assign the boolean variable, <code class="python inline-code" lang="python">in_love</code>, with the result of whether the day is Friday or not.</para>
       <media alt="programming_practice_-Friday_boolean_program">
       <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_01_Programming-practice_-Friday-boolean.html"/>
       </media>
       </note>
       <note class="practice-program" id="note-00011">
       <title>Even numbers</title>
-      <para id="para-00034">Write a program that reads in an integer and prints whether the integer is even or not. Remember, a number is even if number % 2 == 0. Ex: If the input is 6, the output is "6 is even: True".</para>
+      <para id="para-00034">Write a program that reads in an integer and prints whether the integer is even or not. Remember, a number is even if number % 2 == 0. Ex: If the input is <code class="python inline-code" lang="python">6</code>, the output is <code class="python inline-code" lang="python">"6 is even: True"</code>.</para>
       <media alt="programming_practice_-Even_numbers_program">
       <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_02_Programming-practice_-Even-numbers.html"/>
       </media>
