@@ -11,12 +11,12 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Implement a subclass that accesses inherited attributes from the superclass.</item>
-    <item>Write a subclass's __init__() that inherits superclass instance attributes and creates new instance attributes.</item>
+    <item>Write a subclass's <code class="python inline-code" lang="python">__init__()</code> that inherits superclass instance attributes and creates new instance attributes.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Creating a simple subclass</title>
-    <para id="para-00002">Subclasses have access to the attributes inherited from the superclass. When the subclass's __init__() isn't explicitly defined, the superclass's __init__() method is called. Accessing both types of attributes uses the same syntax.</para>
+    <para id="para-00002">Subclasses have access to the attributes inherited from the superclass. When the subclass's <code class="python inline-code" lang="python">__init__()</code> isn't explicitly defined, the superclass's <code class="python inline-code" lang="python">__init__()</code> method is called. Accessing both types of attributes uses the same syntax.</para>
     <note class="guided-slides" id="note-00001">
     <title>Defining a simple subclass</title>
     <media alt="simple_subclass_slides">
@@ -44,7 +44,7 @@
     </section>
     <section id="sect-00003">
     <title>Using __init__() to create and inherit instance attributes</title>
-    <para id="para-00006">A programmer often wants a subclass to have new instance attributes as well as those inherited from the superclass. Explicitly defining a subclass's __init__() involves defining instance attributes and assigning instance attributes inherited from the superclass.</para>
+    <para id="para-00006">A programmer often wants a subclass to have new instance attributes as well as those inherited from the superclass. Explicitly defining a subclass's <code class="python inline-code" lang="python">__init__()</code> involves defining instance attributes and assigning instance attributes inherited from the superclass.</para>
     <note class="guided-slides" id="note-00003">
     <title>Defining __init__() in a subclass</title>
     <media alt="init_in_a_subclass_slides">
@@ -53,7 +53,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Accessing a subclass's attributes</title>
-    <para id="para-00007">Consider the Employee and Developer example code:</para>
+    <para id="para-00007">Consider the <code class="python inline-code" lang="python">Employee</code> and <code class="python inline-code" lang="python">Developer</code> example code:</para>
     <code class="python" lang="python">
     class Employee:
       count = 0
@@ -98,12 +98,12 @@
    
     <note class="practice-program" id="note-00005">
     <title>Creating a subclass with an instance attribute</title>
-    <para id="para-00011">Given class Dessert, create a class, Cupcake, inherited from Dessert. Cupcake class methods:</para>
+    <para id="para-00011">Given class <code class="python inline-code" lang="python">Dessert</code>, create a class, <code class="python inline-code" lang="python">Cupcake</code>, inherited from <code class="python inline-code" lang="python">Dessert</code>. <code class="python inline-code" lang="python">Cupcake</code> class methods:</para>
     <list id="list-00002">
-    <item>__init__(self): Initializes inherited instance attribute ingredients with ["butter", "sugar", "eggs", "flour"] and initializes instance attribute frosting with 'buttercream'</item>
-    <item>display(self): Prints a cupcake's ingredients and frosting</item>
+    <item><code class="python inline-code" lang="python">__init__(self)</code>: Initializes inherited instance attribute ingredients with ["butter", "sugar", "eggs", "flour"] and initializes instance attribute frosting with 'buttercream'</item>
+    <item><code class="python inline-code" lang="python">display(self)</code>: Prints a cupcake's ingredients and frosting</item>
     </list>
-    <para id="para-00012">Then call the display() method on a new Cupcake object. The output should match:</para>
+    <para id="para-00012">Then call the <code class="python inline-code" lang="python">display()</code> method on a new <code class="python inline-code" lang="python">Cupcake</code> object. The output should match:</para>
     <code class="python" lang="python">
     Made with ["butter", "sugar", "eggs", "flour"] and topped with buttercream frosting
     </code>
