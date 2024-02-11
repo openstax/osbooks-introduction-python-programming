@@ -24,7 +24,7 @@
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/representing-with-class"/>
     </media>
     </note>
-    <!--<note class="learning-questions" id="note-00002">
+    <note class="learning-questions" id="note-00002">
     <title>Classes and instances</title>
     <para id="para-00004">Consider the example below:</para>
     <code class="python" lang="python">
@@ -59,7 +59,7 @@
     <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch11-m02-p04"/></para>
     </problem>
     </exercise>
-    </note>-->
+    </note>
     </section>
     <section id="sect-00003">
     <title>Creating instances with __init__()</title>
