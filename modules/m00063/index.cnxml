@@ -18,7 +18,7 @@
     <title>Split() function</title>
     <para id="para-00002">A string in Python can be broken into substrings given a <term id="term-00001">delimiter</term>. A delimiter is also referred to as a separator. The <term id="term-00002">split()</term> function, when applied to a string, splits the string into substrings by using the given argument as a delimiter. Ex: <code class="python inline-code" lang="python">"1-2".split('-')</code> returns a list of substrings <code class="python inline-code" lang="python">["1", "2"]</code>. When no arguments are given to the <code class="python inline-code" lang="python">split()</code> function, white space characters are used as delimiters. Ex: <code class="python inline-code" lang="python">"1\t2\n3 4".split()</code> returns <code class="python inline-code" lang="python">["1", "2", "3", "4"]</code>.</para>
     <note class="guided-slides" id="note-00001">
-    <title>Split() function for breaking down the string into tokens</title>
+    <title>Split() for breaking down the string into tokens</title>
     <media alt="split_function_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/split-function"/>
     </media>
@@ -46,7 +46,7 @@
     <title>join() function</title>
     <para id="para-00006">The <term id="term-00003">join()</term> function is the inverse of the <code class="python inline-code" lang="python">split()</code> function in which a list of string values are concatenated together to form one output string. When joining string elements in the list, the delimiter is added in-between elements. Ex: <code class="python inline-code" lang="python">','.join(["this", "is", "great"])</code> returns <code class="python inline-code" lang="python">"this,is,great"</code>.</para>
     <note class="guided-slides" id="note-00003">
-    <title>join() function for combining tokens into one string</title>
+    <title>join() for combining tokens into one string</title>
     <media alt="join_function_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/join-function"/>
     </media>
