@@ -470,7 +470,7 @@ window.addEventListener('load', async() => {
         inputfun: () => new Promise(resolve => resolve(inputLines.shift())),
         nonreadopen: true,
         output: text => {
-            output.value += text.replace(/</g, '&lt;');
+            output.value += text;
         },
         read: filename => {
             const file = Sk.builtinFiles?.files[filename] ??
