@@ -32,17 +32,17 @@
     </thead>
     <tbody>
     <row>
-    <entry>'r'</entry>
+    <entry><code class="python inline-code" lang="python">'r'</code></entry>
     <entry>Read mode:<newline/>Open the specified file for reading. <newline/>If the file does not exist an error occurs.<newline/>When no mode parameter is used the default is to open a file in read mode.</entry>
     <entry><para id="para-00102"><code class="python inline-code" lang="python">fileobj = open("input.txt")</code><newline/>same as:<newline/><code class="python inline-code" lang="python">fileobj = open("input.txt", 'r')</code></para></entry>
     </row>
     <row>
-    <entry>'w'</entry>
+    <entry><code class="python inline-code" lang="python">'w'</code></entry>
     <entry>Write mode:<newline/>Open the specified file for writing. <newline/>If the file does not exist, then the file is created. <newline/> If the file already exists, the contents of the file are overwritten.</entry>
     <entry><para id="para-00103"><code class="python inline-code" lang="python">fileobj = open("output.txt", 'w')</code></para></entry>
     </row>
     <row>
-    <entry>'a'</entry>
+    <entry><code class="python inline-code" lang="python">'a'</code></entry>
     <entry>Append mode:<newline/>Open the specified file for appending which means to add information to the end of the existing file. <newline/>If the file does not exist, then the file is created.</entry>
     <entry><para id="para-00104"><code class="python inline-code" lang="python">fileobj = open("log.txt", 'a')</code></para></entry>
     </row>
@@ -72,7 +72,7 @@
     <section id="sect-00003">
     <title>Using <code class="python inline-code" lang="python">write()</code> and <code class="python inline-code" lang="python">close()</code></title>
     <para id="para-00008">The <code class="python inline-code" lang="python"><term id="term-00002">write()</term></code> function is used to write to an already opened file. The <code class="python inline-code" lang="python">write()</code> function only takes a string parameter. Other variable types must be cast to string before writing using <code class="python inline-code" lang="python">write()</code>.</para>
-    <para id="para-00009">The <code class="python inline-code" lang="python">write()</code> function also does not automatically add a newline character as the <code class="python inline-code" lang="python">print()</code> function does. A newline must be added explicitly by adding a newline ('\n') character.</para>
+    <para id="para-00009">The <code class="python inline-code" lang="python">write()</code> function also does not automatically add a newline character as the <code class="python inline-code" lang="python">print()</code> function does. A newline must be added explicitly by adding a newline <code class="python inline-code" lang="python">('\n')</code> character.</para>
     <para id="para-00010">The <code class="python inline-code" lang="python">write()</code> function writes automatically to a temporary store called the file buffer. To ensure that the information is written to a file, the <code class="python inline-code" lang="python">close()</code> function must be used. The <code class="python inline-code" lang="python">close()</code> function finalizes changes and closes the file.</para>
     <example id="exam-00001">
     <title>Writing and appending to a file.</title>
@@ -157,7 +157,7 @@
  
     <note class="practice-program" id="note-00004">
     <title>Writing to a new file</title>
-    <para id="para-00016">Write a line of text to a file called out.txt. (Don't forget to use close(). out.txt should only have the line of text that you have written.)</para>
+    <para id="para-00016">Write a line of text to a file called out.txt. (Don't forget to use <code class="python inline-code" lang="python">close()</code>. <code class="python inline-code" lang="python">out.txt</code> should only have the line of text that you have written.)</para>
     <media alt="writing_to_a_new_file_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_03_03_Writing-to-a-new-file.html"/>
     </media>
