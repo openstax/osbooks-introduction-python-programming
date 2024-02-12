@@ -11,13 +11,13 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Write overridden methods to change behavior of inherited methods.</item>
-    <item>Use super() to access superclass methods.</item>
+    <item>Use <code class="python inline-code" lang="python">super()</code> to access superclass methods.</item>
     <item>Identify applications of polymorphism in method and function use.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Overriding methods</title>
-    <para id="para-00002">Sometimes a programmer wants to change the functions a subclass inherits. Mint is a subclass that has the same functionality as Plant, except for one function. A subclass can <term id="term-00001">override</term> a superclass method by defining a method with the same name as the superclass method.</para>
+    <para id="para-00002">Sometimes a programmer wants to change the functions a subclass inherits. <code class="python inline-code" lang="python">Mint</code> is a subclass that has the same functionality as <code class="python inline-code" lang="python">Plant</code>, except for one function. A subclass can <term id="term-00001">override</term> a superclass method by defining a method with the same name as the superclass method.</para>
     <note class="guided-slides" id="note-00001">
     <title>Overriding a superclass method</title>
     <media alt="overriding_superclass_slides">
@@ -45,7 +45,7 @@
     </section>
     <section id="sect-00003">
     <title>super()</title>
-    <para id="para-00006">super() is a special method that provides a temporary superclass object instance for a subclass to use. super() is commonly used to call superclass methods from a subclass. super() is commonly used in a subclass's __init__() to assign inherited instance attributes. Ex: <code class="python inline-code" lang="python">super().__init__()</code>.</para>
+    <para id="para-00006"><code class="python inline-code" lang="python">super()</code> is a special method that provides a temporary superclass object instance for a subclass to use. <code class="python inline-code" lang="python">super()</code> is commonly used to call superclass methods from a subclass. <code class="python inline-code" lang="python">super()</code> is commonly used in a subclass's <code class="python inline-code" lang="python">__init__()</code> to assign inherited instance attributes. Ex: <code class="python inline-code" lang="python">super().__init__()</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Using super() to call the superclass __init__() method</title>
     <media alt="using_super_slides">
@@ -100,7 +100,7 @@
     <para id="para-00012"><term id="term-00002">Polymorphism</term> is the concept of having many forms. In programming, a single name can be used for multiple functionalities. Within inheritance, polymorphism is the basis of method overriding, as multiple methods have the same name.</para>
     <example id="exam-00001">
     <title>Polymorphism and inheritance</title>
-    <para id="para-00013">The name display() maps to multiple methods. The class type of the calling object determines which display() method is executed.</para>
+    <para id="para-00013">The name <code class="python inline-code" lang="python">display()</code> maps to multiple methods. The class type of the calling object determines which <code class="python inline-code" lang="python">display()</code> method is executed.</para>
     <code class="python" lang="python">
     class Plant:
       def display(self):
@@ -129,7 +129,7 @@
     <para id="para-00015">Polymorphism can also be used with methods of unrelated classes. The class type of the calling object determines the method executed.</para>
     <example id="exam-00002">
     <title>Polymorphism and methods</title>
-    <para id="para-00016">Tax and ContractTax are unrelated classes that each define calc_tax(). calc_tax() isn't overridden as ContractTax isn't inherited from Tax.</para>
+    <para id="para-00016"><code class="python inline-code" lang="python">Tax</code> and <code class="python inline-code" lang="python">ContractTax</code> are unrelated classes that each define <code class="python inline-code" lang="python">calc_tax()</code>. <code class="python inline-code" lang="python">calc_tax()</code> isn't overridden as <code class="python inline-code" lang="python">ContractTax</code> isn't inherited from <code class="python inline-code" lang="python">Tax</code>.</para>
     <code class="python" lang="python">
     class Tax:
       def calc_tax(self):
@@ -154,7 +154,7 @@
     <para id="para-00018">Polymorphism allows methods to be called with different parameter types. Many built-in operators and functions have this utility.</para>
     <example id="exam-00003">
     <title>Polymorphism and functions</title>
-    <para id="para-00019">len() can be called with multiple types, including lists and strings.</para>
+    <para id="para-00019"><code class="python inline-code" lang="python">len()</code> can be called with multiple types, including lists and strings.</para>
     <code class="python" lang="python">
     tree_list = ["ash", "hazel", "oak", "yew"]
     tree_1 = tree_list[0]
@@ -184,7 +184,7 @@
     
     <note class="practice-program" id="note-00006">
     <title>Overriding methods</title>
-    <para id="para-00023">Given the Pet class, create a Bird class inherited from Pet and a Finch class inherited from Bird. Override the display() method in Bird and Finch such that the program output is:</para>
+    <para id="para-00023">Given the <code class="python inline-code" lang="python">Pet</code> class, create a <code class="python inline-code" lang="python">Bird</code> class inherited from <code class="python inline-code" lang="python">Pet</code> and a <code class="python inline-code" lang="python">Finch</code> class inherited from <code class="python inline-code" lang="python">Bird</code>. Override the <code class="python inline-code" lang="python">display()</code> method in <code class="python inline-code" lang="python">Bird</code> and <code class="python inline-code" lang="python">Finch</code> such that the program output is:</para>
     <code class="python" lang="python">
     Pet type: Bird
     Bird type: Finch
@@ -195,18 +195,18 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Using super()</title>
-    <para id="para-00024">Given the Employee class, create a Developer class inherited from Employee with methods __init__() and print_info() such that:</para>
-    <para id="para-00025">__init__()</para>
+    <para id="para-00024">Given the <code class="python inline-code" lang="python">Employee</code> class, create a <code class="python inline-code" lang="python">Developer</code> class inherited from <code class="python inline-code" lang="python">Employee</code> with methods <code class="python inline-code" lang="python">__init__()</code> and <code class="python inline-code" lang="python">print_info()</code> such that:</para>
+    <para id="para-00025"><code class="python inline-code" lang="python">__init__()</code></para>
     <list id="list-00002">
-    <item>Uses super() to call Employee's __init__() to initialize e_id and hire_year</item>
-    <item>Assigns lang_xp with list parameter lang_xp. lang_xp's default value is []</item>
+    <item>Uses <code class="python inline-code" lang="python">super()</code> to call <code class="python inline-code" lang="python">Employee'</code>s <code class="python inline-code" lang="python">__init__()</code> to initialize <code class="python inline-code" lang="python">e_id</code> and <code class="python inline-code" lang="python">hire_year</code></item>
+    <item>Assigns <code class="python inline-code" lang="python">lang_xp</code> with list parameter <code class="python inline-code" lang="python">lang_xp. lang_xp'</code>s default value is <code class="python inline-code" lang="python">[]</code></item>
     </list>
-    <para id="para-00026">print_info()</para>
+    <para id="para-00026"><code class="python inline-code" lang="python">print_info()</code></para>
     <list id="list-00003">
-    <item>Uses super() to print e_id and hire_year.</item>
-    <item>Prints "Language(s):" followed by lang_xp</item>
+    <item>Uses <code class="python inline-code" lang="python">super()</code> to print <code class="python inline-code" lang="python">e_id</code> and <code class="python inline-code" lang="python">hire_year</code>.</item>
+    <item>Prints <code class="python inline-code" lang="python">"Language(s):"</code> followed by <code class="python inline-code" lang="python">lang_xp</code></item>
     </list>
-    <para id="para-00027">Developer class has one method update_codebase() that prints 'Employee has updated the codebase'. Then use the Developer instance, python_dev, to call print_company() and update_codebase().</para>
+    <para id="para-00027"><code class="python inline-code" lang="python">Developer</code> class has one method <code class="python inline-code" lang="python">update_codebase()</code> that prints <code class="python inline-code" lang="python">'Employee has updated the codebase'</code>. Then use the <code class="python inline-code" lang="python">Developer</code> instance, <code class="python inline-code" lang="python">python_dev</code>, to call <code class="python inline-code" lang="python">print_company()</code> and <code class="python inline-code" lang="python">update_codebase()</code>.</para>
     <media alt="using_super()_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_04_05_Using-super().html"/>
     </media>
