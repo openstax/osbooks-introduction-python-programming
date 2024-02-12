@@ -25,7 +25,6 @@ window.addEventListener('load', async() => {
         border: thin solid #D5D5D5;
         border-radius: 3px;
         width: 100%;
-        margin: 10px;
     }
 
     label {
