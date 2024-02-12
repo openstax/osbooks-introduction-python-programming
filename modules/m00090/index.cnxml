@@ -48,7 +48,7 @@
     <section id="sect-00003">
     <title>Recursion with lists</title>
     <para id="para-00008">The animation below shows a recursive way to check whether two lists contain the same items but in different order.</para>
-    <para id="para-00009">The count() function returns a count of the number of items in a list that match the given item, and returns 0 otherwise. Ex: For <code class="python inline-code" lang="python">list_num = [1, 3, 3, 4]</code>, <code class="python inline-code" lang="python">list_num.count(3)</code> returns 2.</para>
+    <para id="para-00009">The <code class="python inline-code" lang="python">count()</code> function returns a count of the number of items in a list that match the given item, and returns <code class="python inline-code" lang="python">0</code> otherwise. Ex: For <code class="python inline-code" lang="python">list_num = [1, 3, 3, 4]</code>, <code class="python inline-code" lang="python">list_num.count(3)</code> returns <code class="python inline-code" lang="python">2</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Checking list permutations</title>
     <media alt="checking_list_permutations_slides">
@@ -57,7 +57,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>List permutations</title>
-    <para id="para-00010">Refer to the above animation. What would permu_check() return for each pair of lists below?</para>
+    <para id="para-00010">Refer to the above animation. What would <code class="python inline-code" lang="python">permu_check()</code> return for each pair of lists below?</para>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch12-m03-p04"/></para>

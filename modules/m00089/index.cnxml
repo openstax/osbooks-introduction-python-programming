@@ -18,10 +18,10 @@
     <title>Calculating a factorial</title>
     <para id="para-00002">The factorial of a positive integer is defined as the product of the integer and the positive integers less than the integer.</para>
     <para id="para-00003">Ex: <code class="python inline-code" lang="python">5! = 5 * 4 * 3 * 2 * 1</code></para>
-    <para id="para-00004">Written as a general equation for a positive integer n: <code class="python inline-code" lang="python"> n! = n * (n - 1) * (n - 2) * . . . * 1</code></para>
-    <para id="para-00005">The above formula for the factorial of n results in a recursive formula:
+    <para id="para-00004">Written as a general equation for a positive integer <code class="python inline-code" lang="python">n:</code> <code class="python inline-code" lang="python"> n! = n * (n - 1) * (n - 2) * . . . * 1</code></para>
+    <para id="para-00005">The above formula for the factorial of <code class="python inline-code" lang="python">n</code> results in a recursive formula:
     <code class="python inline-code" lang="python">n! = n * (n - 1)!</code></para>
-    <para id="para-00006">Thus, the factorial of n depends upon the value of the factorial at n-1. The factorial of n can be found by repeating the factorial of n - 1 until (n - 1)! = 1! (we know that 1! = 1). This result can be used to build the overall solution as seen in the animation below.</para>
+    <para id="para-00006">Thus, the factorial of <code class="python inline-code" lang="python">n</code> depends upon the value of the factorial at <code class="python inline-code" lang="python">n-1</code>. The factorial of <code class="python inline-code" lang="python">n</code> can be found by repeating the factorial of <code class="python inline-code" lang="python">n - 1</code> until <code class="python inline-code" lang="python">(n - 1)! = 1!</code> (we know that <code class="python inline-code" lang="python">1! = 1</code>). This result can be used to build the overall solution as seen in the animation below.</para>
     <note class="guided-slides" id="note-00001">
     <title>Finding the factorial of 5</title>
     <media alt="finding_factorial_slides">
@@ -56,10 +56,10 @@
     <section id="sect-00003">
     <title>Defining a recursive function</title>
     <para id="para-00012">Recursive algorithms are written in Python as functions. In a recursive function different actions are performed according to the input parameter value. A critical part of a recursive function is that the function must call itself.</para>
-    <para id="para-00013">A value for which the recursion applies is called the <term id="term-00001">recursive case</term>. In the recursive case, the function calls itself with a smaller portion of the input parameter. Ex: In the recursive function factorial(), the initial parameter is an integer n. In the function's recursive case, the argument passed to factorial() is n-1, which is smaller than n.</para>
-    <para id="para-00014">A value of n for which the solution is known is called the <term id="term-00002">base case</term>. The base case stops the recursion. A recursive algorithm must include a base case otherwise the algorithm may result in an infinite computation.</para>
-    <para id="para-00015">To calculate a factorial, a recursive function, factorial() is defined with an integer input parameter, n. When n > 1 the recursive case applies. The factorial() calls itself with a smaller argument, n-1. When n == 1, the solution is known because 1! is 1, therefore n==1 is a base case.</para>
-    <para id="para-00016">Note: 0! Is defined to be 1, therefore n == 0 is a second base case for factorial().When n is less than 1 an error is returned.</para>
+    <para id="para-00013">A value for which the recursion applies is called the <term id="term-00001">recursive case</term>. In the recursive case, the function calls itself with a smaller portion of the input parameter. Ex: In the recursive function <code class="python inline-code" lang="python">factorial()</code>, the initial parameter is an integer <code class="python inline-code" lang="python">n</code>. In the function's recursive case, the argument passed to <code class="python inline-code" lang="python">factorial()</code> is <code class="python inline-code" lang="python">n-1</code>, which is smaller than <code class="python inline-code" lang="python">n</code>.</para>
+    <para id="para-00014">A value of <code class="python inline-code" lang="python">n</code> for which the solution is known is called the <term id="term-00002">base case</term>. The base case stops the recursion. A recursive algorithm must include a base case otherwise the algorithm may result in an infinite computation.</para>
+    <para id="para-00015">To calculate a factorial, a recursive function, <code class="python inline-code" lang="python">factorial()</code> is defined with an integer input parameter, <code class="python inline-code" lang="python">n</code>. When <code class="python inline-code" lang="python">n > 1</code> the recursive case applies. The <code class="python inline-code" lang="python">factorial()</code> calls itself with a smaller argument, <code class="python inline-code" lang="python">n-1</code>. When <code class="python inline-code" lang="python">n == 1</code>, the solution is known because <code class="python inline-code" lang="python">1!</code> is <code class="python inline-code" lang="python">1</code>, therefore <code class="python inline-code" lang="python">n==1</code> is a base case.</para>
+    <para id="para-00016">Note: <code class="python inline-code" lang="python">0!</code> Is defined to be <code class="python inline-code" lang="python">1</code>, therefore <code class="python inline-code" lang="python">n == 0</code> is a second base case for <code class="python inline-code" lang="python">factorial()</code>. When <code class="python inline-code" lang="python">n</code> is less than <code class="python inline-code" lang="python">1</code> an error is returned.</para>
     <note class="guided-slides" id="note-00003">
     <title>Factorial using recursion</title>
     <media alt="factorial_recursion_slides">
@@ -68,7 +68,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Programming recursion</title>
-    <para id="para-00017">For the questions below, the function rec_fact() is another recursive function that calculates a factorial. What is the result of each definition of rec_fact() if n = 17 is the initial input parameter?</para>
+    <para id="para-00017">For the questions below, the function <code class="python inline-code" lang="python">rec_fact()</code> is another recursive function that calculates a factorial. What is the result of each definition of <code class="python inline-code" lang="python">rec_fact()</code> if <code class="python inline-code" lang="python">n = 17</code> is the initial input parameter?</para>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch12-m02-p05"/></para>
@@ -94,7 +94,7 @@
    
     <note class="practice-program" id="note-00005">
     <title>Recursive summation</title>
-    <para id="para-00022">Write a program that uses a recursive function to calculate the summation of numbers from 0 to a user specified positive integer n.</para>
+    <para id="para-00022">Write a program that uses a recursive function to calculate the summation of numbers from 0 to a user specified positive integer <code class="python inline-code" lang="python">n</code>.</para>
     <media alt="recursive_summation_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_03_01_Recursive-summation.html"/>
     </media>
