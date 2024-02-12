@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Returning from a function</title>
-    <para id="para-00002">When a function finishes, the function returns and provides a result to the calling code. A <term id="term-00001">return statement</term> finishes the function execution and can specify a value to return to the function's caller. Functions introduced so far have not had a return statement, which is the same as returning <code class="python inline-code" lang="python">None</code>, representing no value.</para>
+    <para id="para-00002">When a function finishes, the function returns and provides a result to the calling code. A <term id="term-00001">return statement</term> finishes the function execution and can specify a value to return to the function's caller. Functions introduced so far have not had a <code class="python inline-code" lang="python">return</code> statement, which is the same as returning <code class="python inline-code" lang="python">None</code>, representing no value.</para>
     <note class="guided-slides" id="note-00001">
     <title>Returning a value from a function</title>
     <media alt="returning_value_from_function_slides">
@@ -44,8 +44,8 @@
     </section>
     <section id="sect-00003">
     <title>Using multiple return statements</title>
-    <para id="para-00006">Functions that have multiple execution paths may use multiple return statements. Ex: A function with an if-else statement may have two return statements for each branch. Return statements always end the function and return control flow to the calling code.</para>
-    <para id="para-00007">In the figure below, calc_mpg() takes in miles driven and gallons of gas used and calculates a car's miles per gallon. calc_mpg() checks if gallons is 0 (to avoid division by 0) and if so returns -1, a value often used to indicate a problem.</para>
+    <para id="para-00006">Functions that have multiple execution paths may use multiple <code class="python inline-code" lang="python">return</code> statements. Ex: A function with an <code class="python inline-code" lang="python">if-else</code> statement may have two <code class="python inline-code" lang="python">return</code> statements for each branch. <code class="python inline-code" lang="python">Return</code> statements always end the function and return control flow to the calling code.</para>
+    <para id="para-00007">In the figure below, <code class="python inline-code" lang="python">calc_mpg()</code> takes in miles driven and gallons of gas used and calculates a car's miles per gallon. <code class="python inline-code" lang="python">calc_mpg()</code> checks if gallons is <code class="python inline-code" lang="python">0</code> (to avoid division by 0) and if so returns <code class="python inline-code" lang="python">-1</code>, a value often used to indicate a problem.</para>
 <table summary=" " id="table-00001">
 <title>Calculating miles-per-gallon and checking for division by zero</title>
 <tgroup cols="1">
@@ -115,8 +115,8 @@ Car 2's mpg is -1
    
     <note class="practice-program" id="note-00006">
     <title>Estimated days alive</title>
-    <para id="para-00013">Write a function days_alive() that takes in an age in years and outputs the estimated days the user has been alive as an integer. Assume each year has 365.24 days. Use round(), which takes a number and returns the nearest whole number.</para>
-    <para id="para-00014">Then write a main program that reads in a user's age and outputs the result of days_alive().</para>
+    <para id="para-00013">Write a function <code class="python inline-code" lang="python">days_alive()</code> that takes in an age in years and outputs the estimated days the user has been alive as an integer. Assume each year has 365.24 days. Use <code class="python inline-code" lang="python">round()</code>, which takes a number and returns the nearest whole number.</para>
+    <para id="para-00014">Then write a main program that reads in a user's age and outputs the result of <code class="python inline-code" lang="python">days_alive()</code>.</para>
     <para id="para-00015">Given input:</para>
     <code class="python" lang="python">
     21
@@ -131,7 +131,7 @@ Car 2's mpg is -1
     </note>
     <note class="practice-program" id="note-00007">
     <title>Averaging lists</title>
-    <para id="para-00017">Write a function avg_list() that takes in a list and returns the average of the list values.</para>
+    <para id="para-00017">Write a function <code class="python inline-code" lang="python">avg_list()</code> that takes in a list and returns the average of the list values.</para>
     <media alt="averaging_lists_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_06_09_Averaging-lists.html"/>
     </media>

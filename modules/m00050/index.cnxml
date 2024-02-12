@@ -18,7 +18,7 @@
     <item>Function calls can use keyword arguments to map values using parameter names in any order.</item>
     <item>Functions can define default parameter values to allow for optional arguments in function calls.</item>
     <item>Python uses a pass-by-object-reference system to assign parameters with the object values referenced by the arguments.</item>
-    <item>Functions can use return statements to return values back to the calling code.</item>
+    <item>Functions can use <code class="python inline-code" lang="python">return</code> statements to return values back to the calling code.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write functions that have any number of parameters and return a value and programs that call functions using keyword arguments and optional arguments.</para>
 <table summary=" " id="table-00001">

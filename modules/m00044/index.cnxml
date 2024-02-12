@@ -17,7 +17,7 @@
     </section>
     <section id="sect-00002">
     <title>Calling a function</title>
-    <para id="para-00002">Throughout the book, functions have been called to perform tasks. Ex: print() prints values, and sqrt() calculates the square root. A <term id="term-00001">function</term> is a named, reusable block of code that performs a task when called.</para>
+    <para id="para-00002">Throughout the book, functions have been called to perform tasks. Ex: <code class="python inline-code" lang="python">print()</code> prints values, and <code class="python inline-code" lang="python">sqrt()</code> calculates the square root. A <term id="term-00001">function</term> is a named, reusable block of code that performs a task when called.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Simple math program</title>
     <media alt="simple_math_slides">
@@ -103,7 +103,7 @@
     
     <note class="practice-program" id="note-00007">
     <title>Cinema concession stand</title>
-    <para id="para-00015">Write a function, concessions(), that prints the food and drink options at a cinema.</para>
+    <para id="para-00015">Write a function, <code class="python inline-code" lang="python">concessions()</code>, that prints the food and drink options at a cinema.</para>
     <para id="para-00016">Given:</para>
     <code class="python" lang="python">
     concessions()
@@ -121,14 +121,14 @@
     </note>
     <note class="practice-program" id="note-00008">
     <title>Terms and conditions prompt</title>
-    <para id="para-00018">Write a function terms() that asks the user to accept the terms and conditions, reads in Y/N, and outputs a response. In the main program, read in the number of users and call terms() for each user.</para>
-    <para id="para-00019">Given inputs 1 and "Y", the output is:</para>
+    <para id="para-00018">Write a function <code class="python inline-code" lang="python">terms()</code> that asks the user to accept the terms and conditions, reads in <code class="python inline-code" lang="python">Y/N</code>, and outputs a response. In the main program, read in the number of users and call <code class="python inline-code" lang="python">terms()</code> for each user.</para>
+    <para id="para-00019">Given inputs <code class="python inline-code" lang="python">1</code> and <code class="python inline-code" lang="python">"Y"</code>, the output is:</para>
     <code class="python" lang="python">
     Do you accept the terms and conditions?
     Y
     Thank you for accepting.
     </code>
-    <para id="para-00020">Given inputs 2, "N", and "Y", the output is:</para>
+    <para id="para-00020">Given inputs <code class="python inline-code" lang="python">2</code>, <code class="python inline-code" lang="python">"N"</code>, and <code class="python inline-code" lang="python">"Y"</code>, the output is:</para>
     <code class="python" lang="python">
     Do you accept the terms and conditions?
     N

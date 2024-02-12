@@ -75,14 +75,14 @@
    
     <note class="practice-program" id="note-00005">
     <title>Updated terms and conditions prompt</title>
-    <para id="para-00011">Write an updated function terms() that asks the user to accept the terms and conditions, reads in Y/N, and outputs a response by calling accepted() or rejected().  accepted() prints "Thank you for accepting the terms." rejected() prints "You have rejected the terms. Thank you."</para>
-    <para id="para-00012">Given inputs 2, "Y" and "N", the output is:</para>
+    <para id="para-00011">Write an updated function <code class="python inline-code" lang="python">terms()</code> that asks the user to accept the terms and conditions, reads in <code class="python inline-code" lang="python">Y/N</code>, and outputs a response by calling <code class="python inline-code" lang="python">accepted()</code> or <code class="python inline-code" lang="python">rejected()</code>.  <code class="python inline-code" lang="python">accepted()</code> prints <code class="python inline-code" lang="python">"Thank you for accepting the terms."</code> <code class="python inline-code" lang="python">rejected()</code> prints <code class="python inline-code" lang="python">"You have rejected the terms. Thank you."</code></para>
+    <para id="para-00012">Given inputs <code class="python inline-code" lang="python">2</code>, <code class="python inline-code" lang="python">"Y"</code> and <code class="python inline-code" lang="python">"N"</code>, the output is:</para>
     <code class="python" lang="python">
     Do you accept the terms and conditions?
     Y
     Thank you for accepting the terms.
     </code>
-    <para id="para-00013">Given a function call to terms() and input "N", the output is:</para>
+    <para id="para-00013">Given a function call to <code class="python inline-code" lang="python">terms()</code> and input <code class="python inline-code" lang="python">"N"</code>, the output is:</para>
     <code class="python" lang="python">
     Do you accept the terms and conditions?
     N
@@ -96,12 +96,12 @@
     <title>Laundromat information</title>
     <para id="para-00014">Write a program that uses 3 functions to print information about a laundromat, Liam's Laundry:</para>
     <list id="list-00002">
-    <item>laundromat_info(): Prints the name, Liam's Laundry, and hours of operation, 7a - 11p,  and calls washers_open() and dryers_open()</item>
-    <item>washers_open(): Reads an integer, assigns washer_count with the value, and prints washer_count</item>
-    <item>dryers_open(): Reads an integer, assigns dryer_count with the value, and prints dryer_count</item>
+    <item><code class="python inline-code" lang="python">laundromat_info()</code>: Prints the name, Liam's Laundry, and hours of operation, 7a - 11p,  and calls <code class="python inline-code" lang="python">washers_open()</code> and <code class="python inline-code" lang="python">dryers_open()</code></item>
+    <item><code class="python inline-code" lang="python">washers_open()</code>: Reads an integer, assigns <code class="python inline-code" lang="python">washer_count</code> with the value, and prints <code class="python inline-code" lang="python">washer_count</code></item>
+    <item><code class="python inline-code" lang="python">dryers_open()</code>: Reads an integer, assigns <code class="python inline-code" lang="python">dryer_count</code> with the value, and prints <code class="python inline-code" lang="python">dryer_count</code></item>
     </list>
-    <para id="para-00015">The main program should just call laundromat_info().</para>
-    <para id="para-00016">Given inputs 50 and 40, the output is:</para>
+    <para id="para-00015">The main program should just call <code class="python inline-code" lang="python">laundromat_info()</code>.</para>
+    <para id="para-00016">Given inputs <code class="python inline-code" lang="python">50</code> and <code class="python inline-code" lang="python">40</code>, the output is:</para>
     <code class="python" lang="python">
     Liam's Laundry
     7a - 11p

@@ -81,7 +81,7 @@
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Using both local and global variables</title>
-    <para id="para-00011">Consider the following variations on the example program with the input, 9.</para>
+    <para id="para-00011">Consider the following variations on the example program with the input, <code class="python inline-code" lang="python">9</code>.</para>
     <exercise id="exer-00007">
     <problem id="prob-00007">
     <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch06-m03-p07"/></para>
@@ -105,20 +105,20 @@
    
     <note class="practice-program" id="note-00008">
     <title>Battle royale game launch</title>
-    <para id="para-00016">Write a program that reads in a selected game mode and calls one of two functions to launch the game. If the input is "br", call battle_royale(). Otherwise, call practice().</para>
-    <para id="para-00017">battle_royale():</para>
+    <para id="para-00016">Write a program that reads in a selected game mode and calls one of two functions to launch the game. If the input is <code class="python inline-code" lang="python">"br"</code>, call <code class="python inline-code" lang="python">battle_royale()</code>. Otherwise, call <code class="python inline-code" lang="python">practice()</code>.</para>
+    <para id="para-00017"><code class="python inline-code" lang="python">battle_royale()</code>:</para>
     <list id="list-00002">
     <item>Reads in the number of players.</item>
     <item>Computes the number of teammates still needed. A full team is 3 players.</item>
-    <item>Calls the function find_teammates() with the calculated number.</item>
-    <item>Prints "Match starting..."</item>
+    <item>Calls the function <code class="python inline-code" lang="python">find_teammates()</code> with the calculated number.</item>
+    <item>Prints <code class="python inline-code" lang="python">"Match starting..."</code></item>
     </list>
-    <para id="para-00018">practice():</para>
+    <para id="para-00018"><code class="python inline-code" lang="python">practice()</code>:</para>
     <list id="list-00003">
     <item>Reads in a string representing the desired map.</item>
-    <item>Prints "Launching practice on [desired map]"</item>
+    <item>Prints <code class="python inline-code" lang="python">"Launching practice on [desired map]"</code></item>
     </list>
-    <para id="para-00019">Note find_teammates() is provided and does not need to be edited.</para>
+    <para id="para-00019">Note <code class="python inline-code" lang="python">find_teammates()</code> is provided and does not need to be edited.</para>
     <para id="para-00020">Given input:</para>
     <code class="python" lang="python">
     br

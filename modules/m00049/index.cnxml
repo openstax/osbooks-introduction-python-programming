@@ -56,7 +56,7 @@
     </section>
     <section id="sect-00003">
     <title>Default parameter values</title>
-    <para id="para-00008">Functions can define default parameter values to use if a positional or keyword argument is not provided for the parameter. Ex: <code class="python inline-code" lang="python">def season(m, d, hemi="N"):</code> defines a default value of "N" for the hemi parameter. Note: Default parameter values are only defined once to be used by the function, so mutable objects (such as lists) should not be used as default values.</para>
+    <para id="para-00008">Functions can define default parameter values to use if a positional or keyword argument is not provided for the parameter. Ex: <code class="python inline-code" lang="python">def season(m, d, hemi="N"):</code> defines a default value of <code class="python inline-code" lang="python">"N"</code> for the hemi parameter. Note: Default parameter values are only defined once to be used by the function, so mutable objects (such as lists) should not be used as default values.</para>
     <para id="para-00009">The physics example below calculates weight as a force in Newtons given mass in kilograms and acceleration in <m:math><m:mrow><m:mfrac><m:mi>m</m:mi><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>. Gravity on Earth is 9.8 <m:math><m:mrow><m:mfrac><m:mi>m</m:mi><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>, and gravity on Mars is 3.7 <m:math><m:mrow><m:mfrac><m:mi>m</m:mi><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Using default parameter values</title>
@@ -66,7 +66,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Using default parameter values</title>
-    <para id="para-00010">Consider the following, updated version of greeting():</para>
+    <para id="para-00010">Consider the following, updated version of <code class="python inline-code" lang="python">greeting()</code>:</para>
     <code class="python" lang="python">
     def greeting(msg, name="Friend", count=1):
       i = 0
@@ -97,11 +97,11 @@
     
     <note class="practice-program" id="note-00006">
     <title>Stream donations</title>
-    <para id="para-00015">Write a function, donate(), that lets an online viewer send a donation to a streamer. donate() has 3 parameters:
+    <para id="para-00015">Write a function, <code class="python inline-code" lang="python">donate()</code>, that lets an online viewer send a donation to a streamer. <code class="python inline-code" lang="python">donate()</code> has 3 parameters:
     <list id="list-00002">
-    <item>amount: amount to donate, default value: 5</item>
-    <item>name: donor's name, default value: "Anonymous"</item>
-    <item>msg: donor's message, default value: ""</item>
+    <item><code class="python inline-code" lang="python">amount</code>: amount to donate, default value: 5</item>
+    <item><code class="python inline-code" lang="python">name</code>: donor's name, default value: "Anonymous"</item>
+    <item><code class="python inline-code" lang="python">msg</code>: donor's message, default value: ""</item>
     </list></para>
     <para id="para-00016">Given:</para>
     <code class="python" lang="python">
