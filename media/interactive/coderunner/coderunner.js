@@ -11,7 +11,6 @@ window.addEventListener('load', async() => {
         display: flex;
         flex-direction: column;
         height: 100%;
-        margin 10px;
     }
 
     .editors-container {
