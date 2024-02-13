@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Floating-point errors</title>
-    <para id="para-00101">Computers store information using 0s and 1s. All information must be converted to a string of 0s and 1s. Ex: 5 is converted to 101. Since only 2 values 0 or 1 are allowed the format is called binary.</para>
+    <para id="para-00101">Computers store information using 0's and 1's. All information must be converted to a string of 0's and 1's. Ex: 5 is converted to 101. Since only two values, 0 or 1, are allowed the format is called binary.</para>
     <para id="para-00002">Floating-point values are stored as binary by Python. The conversion of a floating point number to the underlying binary results in specific types of floating-point errors.</para>
     <para id="para-00003">A <term id="term-00001">round-off error</term> occurs when floating-point values are stored erroneously as an approximation. The difference between an approximation of a value used in computation and the correct (true) value is called a round-off error.</para>
        <para id="para-00004">Ex: Storing the float (0.1)<sub>10</sub> results in binary values that actually produce (0.1000000000000000055511151231257827021181583404541015625)<sub>10</sub> when converted back, which is not exactly equal to <code class="python inline-code" lang="python">(0.1)<sub>10</sub></code>.</para>
@@ -39,7 +39,7 @@ print(f'{0.4:.30f}') # prints 0.4
 </row>
 </tbody>
 </tgroup>
-<caption>(The example above shows a formatted string or f-string which are introduced in the Objects chapter.)</caption>
+<caption>(The example above shows a formatted string or f-string, which are introduced in the <link document="m00020">Objects</link> chapter.)</caption>
 </table>
     <para id="para-00005">An <term id="term-00002">overflow error</term> occurs when a value is too large to be stored. The maximum and minimum floating-point values that can be represented are <m:math><m:mrow><m:mtext>1</m:mtext><m:mtext>.8</m:mtext><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup></m:mrow></m:math>, respectively. Attempting to store a floating-point value outside the range <m:math><m:mrow><m:mo>(</m:mo><m:mo>&#x2212;</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>,</m:mo><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>308</m:mn></m:mrow></m:msup><m:mo>)</m:mo></m:mrow></m:math> leads to an overflow error.</para>
     <para id="para-00006">Below, <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>256</m:mn></m:mrow></m:msup></m:mrow></m:math> and <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>512</m:mn></m:mrow></m:msup></m:mrow></m:math> can be represented, but <m:math><m:mrow><m:mtext>3</m:mtext><m:msup><m:mrow><m:mtext>.0</m:mtext></m:mrow><m:mrow><m:mn>1024</m:mn></m:mrow></m:msup></m:mrow></m:math> is too large and causes an overflow error.</para>
@@ -123,7 +123,7 @@ OverflowError: (34, 'Numerical result out of range')
    
     <note class="practice-program" id="note-00004">
     <title>Inaccurate tips</title>
-    <para id="para-00016">The following code calculates the tip amount, given a bill amount and the tip ratio. Experiment with the following bill amount and tip ratios and see if any inaccuracies may result in calculating the tip amount.</para>
+    <para id="para-00016">The following code calculates the tip amount, given a bill amount and the tip ratio. Experiment with the following bill amounts and tip ratios and see if any inaccuracies may result in calculating the tip amount.</para>
     <list id="list-00003">
     <item>bill amount: 22.70 and 33.33</item>
     <item>tip ratio: 0.15, 0.18, and 0.20</item>

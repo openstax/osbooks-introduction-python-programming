@@ -63,7 +63,7 @@
     <title>Mathematical functions</title>
     <para id="para-00009">Commonly used math functions and constants are shown below. The complete <link url="https://openstax.org/r/100mathmodule">math module listing</link> is available in Python's official documentation.</para>
     <table summary=" " id="table-00001">
-    <title>Example constants in the math module</title>
+    <title>Example constants in the math module.</title>
     <tgroup cols="3">
     <thead>
     <row>
@@ -76,7 +76,7 @@
     <row>
     <entry><para id="para-00016"><code class="python inline-code" lang="python">math.e</code></para></entry>
     <entry><m:math><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mn>2.71828</m:mn><m:mo>…</m:mo></m:mrow></m:math></entry>
-    <entry>Euler's number; the base of the natural logarithm.</entry>
+    <entry>Euler's number: the base of the natural logarithm.</entry>
     </row>
     <row>
     <entry><para id="para-00017"><code class="python inline-code" lang="python">math.pi</code></para></entry>
@@ -93,7 +93,7 @@
     </tgroup>
     </table>
     <table summary=" " id="table-00002">
-    <title>Example functions in the math module</title>
+    <title>Example functions in the math module.</title>
     <tgroup cols="3">
     <colspec colnum="1" colname="c1"/>
     <colspec colnum="2" colname="c2"/>

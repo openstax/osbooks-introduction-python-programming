@@ -94,7 +94,7 @@
 
     <note class="practice-program" id="note-00006">
     <title>Grade average</title>
-    <para id="para-00015">The following program computes the average of 3 predefined exam grades and prints the average twice. Improve the program to read the 3 grades from input and print the average as first a float and then an integer using explicit type conversion. Ignore any differences that occur due to rounding.</para>
+    <para id="para-00015">The following program computes the average of three predefined exam grades and prints the average twice. Improve the program to read the three grades from input and print the average first as a float, and then as an integer, using explicit type conversion. Ignore any differences that occur due to rounding.</para>
     <media alt="grade_average_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch2/CodeRunner_02_03_01_Grade-average.html"/>
     </media>
@@ -103,9 +103,9 @@
     <title>Cups of water</title>
     <para id="para-00016">The following program should read in the ounces of water the user drank today and compute the number of cups drank and the number of cups left to drink based on a daily goal. Assume a cup contains 8 ounces. Fix the code to calculate <code class="python inline-code" lang="python">cups_drank</code> and <code class="python inline-code" lang="python">cups_left</code> and match the following:</para>
     <list id="list-00003">
-    <item><code class="python inline-code" lang="python">ounces</code> is an integer representing the ounces the user drank</item>
-    <item><code class="python inline-code" lang="python">cups_drank</code> is a float representing the number of cups of water drank</item>
-    <item><code class="python inline-code" lang="python">cups_left</code> is an integer representing the number of cups of water left to drink (rounded down) out of the daily goal of 8 cups</item>
+    <item><code class="python inline-code" lang="python">ounces</code> is an integer representing the ounces the user drank.</item>
+    <item><code class="python inline-code" lang="python">cups_drank</code> is a float representing the number of cups of water drank.</item>
+    <item><code class="python inline-code" lang="python">cups_left</code> is an integer representing the number of cups of water left to drink (rounded down) out of the daily goal of 8 cups.</item>
     </list>
     <media alt="cups_of_water_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch2/CodeRunner_02_03_02_Cups-of-water.html"/>

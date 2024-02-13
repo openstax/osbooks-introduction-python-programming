@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Recommended spacing</title>
-    <para id="para-00002">Most spaces in Python code are ignored when running programs, however spaces at the start of a line are very important. The following two programs are equivalent:</para>
+    <para id="para-00002">Most spaces in Python code are ignored when running programs; however, spaces at the start of a line are very important. The following two programs are equivalent:</para>
     <list id="list-00002">
     <item>Good spacing:
     <code display="block" class="python" lang="python">
@@ -38,7 +38,7 @@
     <para id="para-00005"><link url="https://openstax.org/r/100PEP8">PEP 8</link> is the official style guide for Python. <term id="term-00001">PEP</term> stands for Python Enhancement Proposal. Members of the Python community write PEPs to document best practices and propose new features. The table below is based on guidelines from PEP 8 under the heading <link url="https://openstax.org/r/100whitespace">Whitespace in Expressions and Statements</link>.</para>
     </note>
     <table summary=" " id="table-00001">
-    <title>Guidelines for spaces</title>
+    <title>Guidelines for spaces.</title>
     <tgroup cols="3">
     <thead>
     <row>
@@ -151,7 +151,7 @@
     </section>
     <section id="sect-00004">
     <title>Multi-line statements</title>
-    <para id="para-00018">Most statements in a Python program need only one line of code. But occasionally, longer statements need to span multiple lines. Python provides two ways to write multi-line statements:</para>
+    <para id="para-00018">Most statements in a Python program need only one line of code. But occasionally longer statements need to span multiple lines. Python provides two ways to write multi-line statements:</para>
     <list id="list-00003">
     <item><para id="para-00019">Explicit line joining, using <code class="python inline-code" lang="python">\</code> characters:</para>
     <code class="python" display="block" lang="python">

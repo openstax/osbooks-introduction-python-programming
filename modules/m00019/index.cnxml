@@ -9,8 +9,8 @@
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
     <item>Expressions and statements can be run interactively using a shell.</item>
-    <item>Input strings can be converted to other types. Ex: <code class="python inline-code" lang="python">int(input())</code></item>
-    <item>Strings can be concatenated with other types. Ex: <code class="python inline-code" lang="python">"$" + str(cost)</code></item>
+    <item>Input strings can be converted to other types. Ex: <code class="python inline-code" lang="python">int(input())</code>.</item>
+    <item>Strings can be concatenated with other types. Ex: <code class="python inline-code" lang="python">"$" + str(cost)</code>.</item>
     <item>Floats are subject to round-off and overflow errors.</item>
     <item>Integers can be divided exactly using <code class="python inline-code" lang="python">//</code> and <code class="python inline-code" lang="python">%</code>.</item>
     <item>Modules like <code class="python inline-code" lang="python">math</code> provide many useful functions.</item>
@@ -18,7 +18,7 @@
     </list>
     <para id="para-00002">At this point, you should be able to write programs that ask for input of mixed types, perform mathematical calculations, and output results with better formatting. The programming practice below ties together most topics presented in the chapter.</para>
     <table summary=" " id="table-00001">
-    <title>Chapter 2 reference</title>
+    <title>Chapter 2 reference.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -53,25 +53,25 @@
     </row>
     <row>
     <entry><para id="para-00105"><code class="python inline-code" lang="python">s * n</code><newline/>
-    (repetition)</para></entry>
+    (Repetition)</para></entry>
     <entry><para id="para-00106">Creates a string with <code class="python inline-code" lang="python">n</code> copies of <code class="python inline-code" lang="python">s</code>.
     Ex: <code class="python inline-code" lang="python">"Ha" * 3</code> is <code class="python inline-code" lang="python">"HaHaHa"</code>.</para></entry>
     </row>
     <row>
     <entry><para id="para-00107"><code class="python inline-code" lang="python">x / y</code><newline/>
-    (real division)</para></entry>
+    (Real division)</para></entry>
     <entry><para id="para-00108">Divides <code class="python inline-code" lang="python">x</code> by <code class="python inline-code" lang="python">y</code> and returns the entire result as a float.
     Ex: <code class="python inline-code" lang="python">7 / 4</code> is <code class="python inline-code" lang="python">1.75</code>.</para></entry>
     </row>
     <row>
     <entry><para id="para-00109"><code class="python inline-code" lang="python">x // y</code><newline/>
-    (floor division)</para></entry>
+    (Floor division)</para></entry>
     <entry><para id="para-00110">Divides <code class="python inline-code" lang="python">x</code> by <code class="python inline-code" lang="python">y</code> and returns the quotient as an integer.
     Ex: <code class="python inline-code" lang="python">7 // 4</code> is <code class="python inline-code" lang="python">1</code>.</para></entry>
     </row>
     <row>
     <entry><para id="para-00111"><code class="python inline-code" lang="python">x % y</code><newline/>
-    (modulo)</para></entry>
+    (Modulo)</para></entry>
     <entry><para id="para-00112">Divides <code class="python inline-code" lang="python">x</code> by <code class="python inline-code" lang="python">y</code> and returns the remainder as an integer.
     Ex: <code class="python inline-code" lang="python">7 % 4</code> is <code class="python inline-code" lang="python">3</code>.</para></entry>
     </row>

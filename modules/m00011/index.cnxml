@@ -16,8 +16,8 @@
     </section>
     <section id="sect-00002">
     <title>The interpreter</title>
-    <para id="para-00002">Python is a high-level language, meaning that the source code is intended for humans to understand. Computers, on the other hand, understand only low-level machine code made up of 1s and 0s. Programs written in high-level languages must be translated into machine code to run. This translation process can happen all at once or a little at a time, depending on the language.</para>
-    <para id="para-00003">Python is an interpreted language: the source code is translated one line at a time, while the program is running. The Python <term id="term-00001">interpreter</term> translates source code into machine code and runs the resulting program. If and when an error occurs, the interpreter stops translating the source code and displays an error message.</para>
+    <para id="para-00002">Python is a high-level language, meaning that the source code is intended for humans to understand. Computers, on the other hand, understand only low-level machine code made up of 1's and 0's. Programs written in high-level languages must be translated into machine code to run. This translation process can happen all at once, or a little at a time, depending on the language.</para>
+    <para id="para-00003">Python is an interpreted language: the source code is translated one line at a time while the program is running. The Python <term id="term-00001">interpreter</term> translates source code into machine code and runs the resulting program. If and when an error occurs, the interpreter stops translating the source code and displays an error message.</para>
     <para id="para-00004">Most development environments include a Python shell for experimenting with code interactively. A <term id="term-00002">shell</term>, also called a console or terminal, is a program that allows direct interaction with an interpreter. The interpreter usually runs an entire program all at once. But the interpreter can run one line of code at a time within a Python shell.</para>
     <note class="guided-slides" id="note-00001">
     <title>Running a Python shell</title>
@@ -94,7 +94,7 @@
     <item><code class="python inline-code" lang="python">round(9.49)</code></item>
     <item><code class="python inline-code" lang="python">round(9.50)</code></item>
     </list>
-    <para id="para-00014">Note: These functions (<code class="python inline-code" lang="python">type</code>, <code class="python inline-code" lang="python">str</code>, <code class="python inline-code" lang="python">int</code>, <code class="python inline-code" lang="python">abs</code>, <code class="python inline-code" lang="python">len</code>, and <code class="python inline-code" lang="python">round</code>) will be explored in more detail later in the chapter. You can read more about the <link url="https://openstax.org/r/100builtin">built-in functions</link> in the Python documentation.</para>
+    <para id="para-00014">Note: These functions (<code class="python inline-code" lang="python">type</code>, <code class="python inline-code" lang="python">str</code>, <code class="python inline-code" lang="python">int</code>, <code class="python inline-code" lang="python">len</code>, and <code class="python inline-code" lang="python">round</code>) will be explored in more detail later in the chapter. You can read more about the <link url="https://openstax.org/r/100builtin">built-in functions</link> in the Python documentation.</para>
     </note>
     <note class="practice-program" id="note-00006">
     <title>Correcting mistakes</title>
@@ -103,7 +103,7 @@
     <item><code class="python inline-code" lang="python">x = 123</code></item>
     <item><code class="python inline-code" lang="python">y = 456</code></item>
     </list>
-    <para id="para-00016">Making mistakes is common while typing in a shell. The following lines include typos and other errors. For each line: (1) run the line in a shell to see the result; (2) press the up arrow to repeat the line; and (3) edit the line to get the correct result.</para>
+    <para id="para-00016">Making mistakes is common while typing in a shell. The following lines include typos and other errors. For each line: (1) run the line in a shell to see the result, (2) press the up arrow to repeat the line, and (3) edit the line to get the correct result.</para>
     <list id="list-00005">
     <item><code class="python inline-code" lang="python">print("Easy as", X)</code></item>
     <item><code class="python inline-code" lang="python">print("y divided by 2 is", y / 0)</code></item>

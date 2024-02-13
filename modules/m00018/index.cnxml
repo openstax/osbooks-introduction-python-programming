@@ -17,10 +17,10 @@
     <section id="sect-00002">
     <title>Fields and applications</title>
     <para id="para-00002">Learning Python opens the door to many programming-related careers. Example job titles include software engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer science (CS), information technology (IT), or a related field. However, programming is not limited to these fields and careers.</para>
-    <para id="para-00003">Many professionals use Python to support the work they do. Python programs can automate tasks and solve problems quickly. Table <link target-id="table-00001"/> shows a few examples of Python outside of computing fields. Knowing how to program is a useful skill that can enhance any career.</para>
-    <para id="para-00004">Python is a versatile language that supports many kinds of applications. Table <link target-id="table-00002"/> shows a few examples of programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language to learn. A supportive community of professionals and enthusiasts is ready to help.</para>
+    <para id="para-00003">Many professionals use Python to support the work they do. Python programs can automate tasks and solve problems quickly. <link target-id="table-00001"/> shows a few examples of Python outside of computing fields. Knowing how to program is a useful skill that can enhance any career.</para>
+    <para id="para-00004">Python is a versatile language that supports many kinds of applications. <link target-id="table-00002"/> shows a few examples of programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language to learn. A supportive community of professionals and enthusiasts is ready to help.</para>
     <table summary=" " id="table-00001">
-    <title>Python outside of CS and IT</title>
+    <title>Python outside of CS and IT.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -53,7 +53,7 @@
     </tgroup>
     </table>
     <table summary=" " id="table-00002">
-    <title>Applications built with Python</title>
+    <title>Applications built with Python.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -105,7 +105,7 @@
     </note>
     <note id="note-00002">
     <title>Exploring further</title>
-    <para id="para-00008">For more examples of applications that can be built with Python, see <link url="https://openstax.org/r/100top12apps"> Top 12 Fascinating Python Applications in Real-World</link> by Rohit Sharma. For more information about Python related careers, see <link url="https://openstax.org/r/100careers"> What Does a Python Developer Do?</link> in BrainStation's career guide.</para>
+    <para id="para-00008">For more examples of applications that can be built with Python, see <link url="https://openstax.org/r/100top12apps"> "Top 12 Fascinating Python Applications in Real-World"</link> by Rohit Sharma. For more information about Python related careers, see <link url="https://openstax.org/r/100careers"> "What Does a Python Developer Do?"</link> in BrainStation's career guide.</para>
     </note>
     </section>
     </content>

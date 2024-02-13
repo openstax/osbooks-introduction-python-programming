@@ -72,7 +72,7 @@
     <section id="sect-00003">
     <title>Combining numeric types and strings</title>
     <para id="para-00011">Easy type conversion in Python can lead a programmer to assume that any data type can be combined with another. Ex: Noor's program reads in a number from input and uses the number in a calculation. This results in an error in the program because the <code class="python inline-code" lang="python">input()</code> function by default stores the number as a string. Strings and numeric data types are incompatible for addition, subtraction, and division. One of the operands needs to be explicitly converted depending on the goal of arithmetic or string concatenation.</para>
-    <para id="para-00012">The * operator also serves as the repetition operator, which accepts a string operand and an integer operand and repeats the string. Ex: <code class="python inline-code" lang="python">'banjo' * 3</code> produces <code class="python inline-code" lang="python">'banjobanjobanjo'</code>.</para>
+    <para id="para-00012">The * operator also serves as the repetition operator, which accepts a string operand and an integer operand and repeats the string. Ex: <code class="python inline-code" lang="python">"banjo" * 3</code> produces <code class="python inline-code" lang="python">"banjobanjobanjo"</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Adding a string and an integer</title>
     <media alt="adding_str_int_slides">
@@ -120,7 +120,7 @@
     </section>
     <note class="practice-program" id="note-00005">
     <title>After the point</title>
-    <para id="para-00020">Write a program that reads in a string of digits that represent the digits after the decimal point of a number, num. Concatenate the input string together with <code class="python inline-code" lang="python">'.'</code> and <code class="python inline-code" lang="python">num</code>, and print the result. Ex: If input is <code class="python inline-code" lang="python">345</code>, the program will print <code class="python inline-code" lang="python">2.345</code>.</para>
+    <para id="para-00020">Write a program that reads in a string of digits that represents the digits after the decimal point of a number, num. Concatenate the input string together with <code class="python inline-code" lang="python">'.'</code> and <code class="python inline-code" lang="python">num</code>, and print the result. Ex: If input is <code class="python inline-code" lang="python">345</code>, the program will print <code class="python inline-code" lang="python">2.345</code>.</para>
     <media alt="after_the_point_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_04_04_After-the-point.html"/>
     </media>
