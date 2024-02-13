@@ -163,6 +163,8 @@
     Payment: $22.50
     </code>
     <para id="para-00015">For this exercise, you need to write code that (1) calculates the total payment and (2) formats the three output lines. Use f-strings and format specifiers to display two-digit minutes, one decimal place for hours, and two decimal places for payment. The input code has been provided as a starting point.</para>
+    <para id="para-0015">Assume the use of a 24 hour clock, ex: 16:10 is used instead of 4:15 pm.</para>
+    
     <media alt="wage_calculator_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_03_04_Wage-calculator.html"/>
     </media>

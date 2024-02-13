@@ -201,7 +201,7 @@
       </note>
       <note class="practice-program" id="note-00011">
       <title>Even numbers</title>
-      <para id="para-00034">Write a program that reads in an integer and prints whether the integer is even or not. Remember, a number is even if number % 2 == 0. Ex: If the input is <code class="python inline-code" lang="python">6</code>, the output is <code class="python inline-code" lang="python">"6 is even: True"</code>.</para>
+      <para id="para-00034">Write a program that reads in an integer and prints whether the integer is even or not. Remember, a number is even if the number is divisible by 2. To test this use number % 2 == 0. Ex: If the input is <code class="python inline-code" lang="python">6</code>, the output is <code class="python inline-code" lang="python">"6 is even: True"</code>.</para>
       <media alt="programming_practice_-Even_numbers_program">
       <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_02_Programming-practice_-Even-numbers.html"/>
       </media>
