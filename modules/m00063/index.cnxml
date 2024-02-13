@@ -85,7 +85,7 @@
     </note>
     <note class="practice-program" id="note-00006">
     <title>Lunch order</title>
-    <para id="para-00011">Use the <code class="python inline-code" lang="python">join()</code> function to repeat back a user's order at a restaurant, separated by commas. The user will input each food item on a separate line. When finished ordering, the user will enter a blank line. The output depends on how many items the user orders:</para>
+    <para id="para-00011">Use the <code class="python inline-code" lang="python">join()</code> method to repeat back a user's order at a restaurant, separated by commas. The user will input each food item on a separate line. When finished ordering, the user will enter a blank line. The output depends on how many items the user orders:</para>
     <list id="list-00002">
     <item>If the user inputs nothing, the program outputs:<newline/>
     <code class="python inline-code" lang="python">You ordered nothing</code>.</item>

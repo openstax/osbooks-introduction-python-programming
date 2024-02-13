@@ -137,7 +137,7 @@
     
     <note class="practice-program" id="note-00003">
     <title>Number of characters in the string</title>
-    <para id="para-00012">A string variable, <code class="python inline-code" lang="python">s_input</code>, is defined. Use <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> functions to convert the string to lowercase and uppercase and print results in the output. Also, print the number of characters in the string, including space characters.</para>
+    <para id="para-00012">A string variable, <code class="python inline-code" lang="python">s_input</code>, is defined. Use <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> to convert the string to lowercase and uppercase and print results in the output. Also, print the number of characters in the string, including space characters.</para>
     <media alt="number_of_characters_in_the_string_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_02_01_Number-of-characters-in-the-string.html"/>
     </media>
