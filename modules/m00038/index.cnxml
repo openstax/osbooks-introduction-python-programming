@@ -181,7 +181,7 @@ while i &lt; 50:
     </media>
     </note>
     <note class="practice-program" id="note-00005">
-    <title>Odd and even numbers</title>
+    <title>Sequences</title>
     <para id="para-00014">Write a program that reads two integer values <code class="python inline-code" lang="python">n1</code> and <code class="python inline-code" lang="python">n2</code> with <code class="python inline-code" lang="python">n1 &lt; n2</code>, and performs the following tasks:
     <list list-type="enumerated" id="list-00005">
     <item>prints all even numbers between the two provided numbers (inclusive of both), in ascending order.</item>
@@ -195,7 +195,8 @@ while i &lt; 50:
     2 4 6 8
     3 5 7
     </code>
-    <media alt="odd_and_even_numbers_program">
+    <para id="para-0014">Note: the program should return an error message if the second number is smaller than the first.</para>
+    <media alt="sequences_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_03_04_Sequences.html"/>
     </media>
     </note>

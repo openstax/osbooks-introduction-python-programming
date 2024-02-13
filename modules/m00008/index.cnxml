@@ -26,7 +26,7 @@ Ex: <code class="python inline-code" lang="python"># Get the user's preferences<
 </list>
 <example id="exam-00001">
 <title>Program with three comments</title>
-<code class="python" lang="python">
+<code class="python line-numbering" lang="python">
 # Display the menu options
 print("Lunch Menu")
 print("----------")
