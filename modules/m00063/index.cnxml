@@ -73,10 +73,10 @@
     
     <note class="practice-program" id="note-00005">
     <title>Unique and comma-separated words</title>
-    <para id="para-00010">Write a program that accepts a comma separated sequence of words as input and prints words in separate lines. Ex: Given the string <code class="python inline-code" lang="python">"happy,happy,face"</code>, the output would be:</para>
+    <para id="para-00010">Write a program that accepts a comma separated sequence of words as input and prints words in separate lines. Ex: Given the string <code class="python inline-code" lang="python">"happy,smiling,face"</code>, the output would be:</para>
     <code class="python" lang="python">
     happy
-    happy
+    smiling
     face
     </code>
     <media alt="unique_and_comma_separated_words_program">

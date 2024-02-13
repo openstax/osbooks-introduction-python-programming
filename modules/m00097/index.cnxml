@@ -199,14 +199,14 @@
     <para id="para-00025"><code class="python inline-code" lang="python">__init__()</code></para>
     <list id="list-00002">
     <item>Uses <code class="python inline-code" lang="python">super()</code> to call <code class="python inline-code" lang="python">Employee'</code>s <code class="python inline-code" lang="python">__init__()</code> to initialize <code class="python inline-code" lang="python">e_id</code> and <code class="python inline-code" lang="python">hire_year</code></item>
-    <item>Assigns <code class="python inline-code" lang="python">lang_xp</code> with list parameter <code class="python inline-code" lang="python">lang_xp. lang_xp'</code>s default value is <code class="python inline-code" lang="python">[]</code></item>
+    <item>Assigns <code class="python inline-code" lang="python">lang_xp</code> with list parameter <code class="python inline-code" lang="python">lang_xp</code>.</item>
     </list>
     <para id="para-00026"><code class="python inline-code" lang="python">print_info()</code></para>
     <list id="list-00003">
     <item>Uses <code class="python inline-code" lang="python">super()</code> to print <code class="python inline-code" lang="python">e_id</code> and <code class="python inline-code" lang="python">hire_year</code>.</item>
     <item>Prints <code class="python inline-code" lang="python">"Language(s):"</code> followed by <code class="python inline-code" lang="python">lang_xp</code></item>
     </list>
-    <para id="para-00027"><code class="python inline-code" lang="python">Developer</code> class has one method <code class="python inline-code" lang="python">update_codebase()</code> that prints <code class="python inline-code" lang="python">'Employee has updated the codebase'</code>. Then use the <code class="python inline-code" lang="python">Developer</code> instance, <code class="python inline-code" lang="python">python_dev</code>, to call <code class="python inline-code" lang="python">print_company()</code> and <code class="python inline-code" lang="python">update_codebase()</code>.</para>
+    
     <media alt="using_super()_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_04_05_Using-super().html"/>
     </media>
