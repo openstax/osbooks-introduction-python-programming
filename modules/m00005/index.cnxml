@@ -20,7 +20,7 @@
 <para id="para-00001">A string is a sequence of characters enclosed by matching single (') or double (") quotes. Ex: <code class="python inline-code" lang="python">"Happy birthday!"</code> and <code class="python inline-code" lang="python">'21'</code> are both strings.</para>
 <para id="para-00002">To include a single quote (') in a string, enclose the string with matching double quotes ("). Ex: <code class="python inline-code" lang="python">"Won't this work?"</code> To include a double quote ("), enclose the string with matching single quotes ('). Ex: <code class="python inline-code" lang="python">'They said "Try it!", so I did'</code>.</para>
 <table summary=" " id="table-00001">
-<title>Rules for strings</title>
+<title>Rules for strings.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -162,12 +162,12 @@
 
 <note class="practice-program" id="note-00006">
 <title>Punctuation</title>
-<para id="para-00018">Write a Python computer program that
+<para id="para-00018">Write a Python computer program that:
 <list id="list-00002">
-<item>assigns the string <code class="python" lang="python">"Freda"</code> to a variable, <code class="python" lang="python">name</code></item>
-<item>assigns the string <code class="python" lang="python">"happy"</code> to a variable, <code class="python" lang="python">feel</code></item>
-<item>prints the string <code class="python" lang="python">"Hi Freda!"</code> with a single <code class="python" lang="python">print()</code> function using the variable, <code class="python" lang="python">name</code></item>
-<item>prints the string <code class="python" lang="python">"I'm glad you feel happy."</code> with a single <code class="python" lang="python">print()</code> function using the variable, <code class="python" lang="python">feel</code></item>
+<item>Assigns the string <code class="python" lang="python">"Freda"</code> to a variable, <code class="python" lang="python">name</code>.</item>
+<item>Assigns the string <code class="python" lang="python">"happy"</code> to a variable, <code class="python" lang="python">feel</code>.</item>
+<item>Prints the string <code class="python" lang="python">"Hi Freda!"</code> with a single <code class="python" lang="python">print()</code> function using the variable <code class="python" lang="python">name</code>.</item>
+<item>Prints the string <code class="python" lang="python">"I'm glad you feel happy."</code> with a single <code class="python" lang="python">print()</code> function using the variable <code class="python" lang="python">feel</code>.</item>
 </list></para>
 <media alt="punctuation_program">
 <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_05_05_Punctuation.html"/>

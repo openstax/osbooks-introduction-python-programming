@@ -16,8 +16,8 @@
 </section>
 <section id="sect-00002">
 <title>Assignment statement</title>
-<para id="para-00001">Variables allow programs to refer to values using names rather than memory locations. Ex: <code class="python inline-code" lang="python">age</code> refers to a person's age, and <code class="python inline-code" lang="python">birth</code> refers to a person's birthday.</para>
-<para id="para-00002">A statement can set a variable to a value using the <term id="term-00003">assignment operator</term> (<term id="term-00006">=</term>). Note that this is different from the equal sign of mathematics. Ex: <code class="python inline-code" lang="python">age = 6</code> or <code class="python inline-code" lang="python">birth = "May 15"</code>. The left side of the assignment statement is a variable, and the right side is the value with which the variable is assigned. </para>
+<para id="para-00001">Variables allow programs to refer to values using names rather than memory locations. Ex: <code class="python inline-code" lang="python">age</code> refers to a person's age, and <code class="python inline-code" lang="python">date of birth</code> refers to a person's birthday.</para>
+<para id="para-00002">A statement can set a variable to a value using the <term id="term-00003">assignment operator</term> (<term id="term-00006">=</term>). Note that this is different from the equal sign of mathematics. Ex: <code class="python inline-code" lang="python">age = 6</code> or <code class="python inline-code" lang="python">birth = "May 15"</code>. The left side of the assignment statement is a variable, and the right side is the value the variable is assigned. </para>
 <note class="guided-slides" id="note-00001">
 <title>Assigning and using variables</title>
 <media alt="using_variables_slides">
@@ -50,9 +50,9 @@
 </section>
 <section id="sect-00003">
 <title>Variable naming rules</title>
-<para id="para-00007">A variable name can consist of letters, digits, and underscores and be of any length. The name cannot start with a digit. Ex: <code class="python inline-code" lang="python">101class</code> is invalid. Also letter case matters. Ex: <code class="python inline-code" lang="python">Total</code> is different from <code class="python inline-code" lang="python">total</code>. Python's style guide recommends writing variable names in <term id="term-00004">snake case</term>, which is all lowercase with underscores in between each word, such as <code class="python inline-code" lang="python">first_name</code> or <code class="python inline-code" lang="python">total_price</code>.</para>
+<para id="para-00007">A variable name can consist of letters, digits, and underscores and be of any length. The name cannot start with a digit. Ex: <code class="python inline-code" lang="python">101class</code> is invalid. Also, letter case matters. Ex: <code class="python inline-code" lang="python">Total</code> is different from <code class="python inline-code" lang="python">total</code>. Python's style guide recommends writing variable names in <term id="term-00004">snake case</term>, which is all lowercase with underscores in between each word, such as <code class="python inline-code" lang="python">first_name</code> or <code class="python inline-code" lang="python">total_price</code>.</para>
 <para id="para-00008">A name should be short and descriptive, so words are preferred over single characters in programs for readability. Ex: A variable named <code class="python inline-code" lang="python">count</code> indicates the variable's purpose better than a variable named <code class="python inline-code" lang="python">c</code>.</para>
-<para id="para-00009">Python has reserved words, known as <term id="term-00005">keywords</term>, that have special functions and cannot be used as names for variables (or other objects).</para>
+<para id="para-00009">Python has reserved words, known as <term id="term-00005">keywords</term>, which have special functions and cannot be used as names for variables (or other objects).</para>
 <table summary=" " id="table-00001">
 <title>Keywords</title>
 <tgroup cols="5">
@@ -137,14 +137,14 @@
 
 <note class="practice-program" id="note-00004">
 <title>Final score</title>
-<para id="para-00014">Write a Python computer program that
+<para id="para-00014">Write a Python computer program that:
 <list id="list-00002">
-<item>creates a variable, <code class="python inline-code" lang="python">team1</code>, assigned with the value, <code class="python inline-code" lang="python">"Liverpool"</code></item>
-<item>creates a variable, <code class="python inline-code" lang="python">team2</code>, assigned with the value, <code class="python inline-code" lang="python">"Chelsea"</code></item>
-<item>creates a variable, <code class="python inline-code" lang="python">score1</code>, assigned with the value, <code class="python inline-code" lang="python">4</code></item>
-<item>creates a variable, <code class="python inline-code" lang="python">score2</code>, assigned with the value, <code class="python inline-code" lang="python">3</code></item>
-<item>prints <code class="python inline-code" lang="python">team1</code>, <code class="python inline-code" lang="python">"versus"</code>, and <code class="python inline-code" lang="python">team2</code> as a single line of output</item>
-<item>prints <code class="python inline-code" lang="python">"Final score: "</code>, <code class="python inline-code" lang="python">score1</code>, <code class="python inline-code" lang="python">"to"</code>, <code class="python inline-code" lang="python">score2</code> as a single line of output</item>
+<item>Creates a variable, <code class="python inline-code" lang="python">team1</code>, assigned with the value <code class="python inline-code" lang="python">"Liverpool"</code>.</item>
+<item>Creates a variable, <code class="python inline-code" lang="python">team2</code>, assigned with the value <code class="python inline-code" lang="python">"Chelsea"</code>.</item>
+<item>Creates a variable <code class="python inline-code" lang="python">score1</code>, assigned with the value <code class="python inline-code" lang="python">4</code>.</item>
+<item>Creates a variable, <code class="python inline-code" lang="python">score2</code>, assigned with the value <code class="python inline-code" lang="python">3</code>.</item>
+<item>Prints <code class="python inline-code" lang="python">team1</code>, <code class="python inline-code" lang="python">"versus"</code>, and <code class="python inline-code" lang="python">team2</code> as a single line of output.</item>
+<item>Prints <code class="python inline-code" lang="python">"Final score: "</code>, <code class="python inline-code" lang="python">score1</code>, <code class="python inline-code" lang="python">"to"</code>, <code class="python inline-code" lang="python">score2</code> as a single line of output.</item>
 </list></para>
 <media alt="final_score_program">
 <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_04_04_Final-score.html"/>

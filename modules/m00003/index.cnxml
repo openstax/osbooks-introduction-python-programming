@@ -20,7 +20,7 @@
     <para id="para-00003">Multiple values, separated by commas, can be printed in the same statement. By default, each value is separated by a space character in the output. The <code class="python inline-code" lang="python">sep</code> option can be used to change this behavior.</para>
     <para id="para-00004">By default, the <code class="python inline-code" lang="python">print()</code> function adds a newline character at the end of the output. A <term id="term-00003">newline</term> character tells the display to move to the next line. The <code class="python inline-code" lang="python">end</code> option can be used to continue printing on the same line.</para>
     <table summary=" " id="table-00001">
-    <title>Example uses of print()</title>
+    <title>Example uses of <code class="python inline-code" lang="python">print()</code>.</title>
     <tgroup cols="2">
     <thead>
     <row>
