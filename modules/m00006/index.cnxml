@@ -16,7 +16,7 @@
 </section>
 <section id="sect-00002">
 <title>Numeric data types</title>
-<para id="para-00001">Python supports two basic number formats, integer and floating-point. An integer represents a whole number, and a floating-point format represents a decimal number. The format a language uses to represent data is called a <emphasis effect="italics"><term id="term-00101">data type</term></emphasis>. In addition to integer and floating-point types, programming languages typically have a string type for representing text.</para>
+<para id="para-00001">Python supports two basic number formats, integer and floating-point. An integer represents a whole number, and a floating-point format represents a decimal number. The format a language uses to represent data is called a <term id="term-00101">data type</term>. In addition to integer and floating-point types, programming languages typically have a string type for representing text.</para>
 <note class="guided-slides" id="note-00001">
 <title>Integer and floating-point</title>
 <media alt="integer-and-floating-point_slides">
@@ -46,7 +46,7 @@
 <section id="sect-00003">
 <title>Basic arithmetic</title>
 <para id="para-00006"><term id="term-00001">Arithmetic operators</term> are used to perform mathematical operations like addition, subtraction, multiplication, and division.</para>
-<para id="para-00007">4 basic arithmetic operators exist in Python:
+<para id="para-00007">Four basic arithmetic operators exist in Python:
 <list list-type="enumerated" id="list-00002">
 <item>Addition (+)</item>
 <item>Subtraction (-)</item>
@@ -91,9 +91,9 @@
 </section>
 <section id="sect-00004">
 <title>Operator precedence</title>
-<para id="para-00014">When a calculation has multiple operators, each operator is evaluated in order of <term id="term-00002">precedence</term>. Ex: <code class="python inline-code" lang="python">1 + 2 * 3</code> is <code class="python inline-code" lang="python">7</code>, because multiplication takes precedence over addition. However, <code class="python inline-code" lang="python">(1 + 2) * 3</code> is <code class="python inline-code" lang="python">9</code>, because parentheses take precedence over multiplication.</para>
+<para id="para-00014">When a calculation has multiple operators, each operator is evaluated in order of <term id="term-00002">precedence</term>. Ex: <code class="python inline-code" lang="python">1 + 2 * 3</code> is <code class="python inline-code" lang="python">7</code> because multiplication takes precedence over addition. However, <code class="python inline-code" lang="python">(1 + 2) * 3</code> is <code class="python inline-code" lang="python">9</code> because parentheses take precedence over multiplication.</para>
 <table summary=" " id="table-00001">
-<title>Operator precedence from highest to lowest</title>
+<title>Operator precedence from highest to lowest.</title>
 <tgroup cols="4">
 <thead>
 <row>
@@ -118,19 +118,19 @@
 </row>
 <row>
 <entry><para id="para-00028"><code class="python inline-code" lang="python">+</code>, <code class="python inline-code" lang="python">-</code></para></entry>
-<entry>Positive, Negative</entry>
+<entry>Positive, negative</entry>
 <entry><para id="para-00029"><code class="python inline-code" lang="python">-math.pi</code></para></entry>
 <entry><para id="para-00030"><code class="python inline-code" lang="python">-3.14159</code></para></entry>
 </row>
 <row>
 <entry><para id="para-00031"><code class="python inline-code" lang="python">*</code>, <code class="python inline-code" lang="python">/</code></para></entry>
-<entry>Multiplication, Division</entry>
+<entry>Multiplication, division</entry>
 <entry><para id="para-00032"><code class="python inline-code" lang="python">2 * 3</code></para></entry>
 <entry><para id="para-00033"><code class="python inline-code" lang="python">6</code></para></entry>
 </row>
 <row>
 <entry><para id="para-00034"><code class="python inline-code" lang="python">+</code>, <code class="python inline-code" lang="python">-</code></para></entry>
-<entry>Addition, Subtraction</entry>
+<entry>Addition, subtraction</entry>
 <entry><para id="para-00035"><code class="python inline-code" lang="python">1 + 2</code></para></entry>
 <entry><para id="para-00036"><code class="python inline-code" lang="python">3</code></para></entry>
 </row>

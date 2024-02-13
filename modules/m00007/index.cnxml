@@ -16,7 +16,7 @@
 </section>
 <section id="sect-00002">
 <title>How to read errors</title>
-<para id="para-00002">A natural part of programming is making mistakes. Even experienced programmers make mistakes when writing code. Errors may result when mistakes are made when writing code. The computer requires very specific instructions telling the computer what to do. If the instructions are not clear then the computer does not know what to do and gives back an error.</para>
+<para id="para-00002">A natural part of programming is making mistakes. Even experienced programmers make mistakes when writing code. Errors may result when mistakes are made when writing code. The computer requires very specific instructions telling the computer what to do. If the instructions are not clear, then the computer does not know what to do and gives back an error.</para>
 <para id="para-00003">When an error occurs, Python displays a message with the following information:</para>
 <list list-type="enumerated" id="list-00002">
 <item>The line number of the error.</item>
@@ -30,7 +30,7 @@
                 ^
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")?
 </code>
-<para id="para-00005">The caret character (<code class="python inline-code" lang="python">^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown, because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
+<para id="para-00005">The caret character (<code class="python inline-code" lang="python">^</code>) shows where Python found the error. Sometimes the error may be located one or two lines before where the caret symbol is shown because Python may not have discovered the error until then. <term id="term-00001">Traceback</term> is a Python report of the location and type of error. The word traceback suggests a programmer trace back in the code to find the error if the error is not seen right away.</para>
 <para id="para-00006">Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
 <note class="guided-slides" id="note-00001">
 <title>Incorrect variable name</title>
@@ -67,7 +67,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
 <title>Common types of errors</title>
 <para id="para-00011">Different types of errors may occur when running Python programs. When an error occurs, knowing the type of error gives insight about how to correct the error. The following table shows examples of mistakes that anyone could make when programming.</para>
 <table summary=" " id="table-00001">
-<title>Simple mistakes</title>
+<title>Simple mistakes.</title>
 <tgroup cols="3">
 <thead>
 <row>

@@ -10,16 +10,16 @@
       <title/>
       <para id="para-00017">This chapter introduced the basics of programming in Python, including:</para>
       <list id="list-00002">
-      <item><code class="python inline-code" lang="python">print()</code> and <code class="python inline-code" lang="python">input()</code></item>
-      <item>Variables and assignment</item>
-      <item>Strings, integers, and floats</item>
-      <item>Arithmetic, concatenation</item>
-      <item>Common error messages</item>
-      <item>Comments and docstrings</item>
+      <item><code class="python inline-code" lang="python">print()</code> and <code class="python inline-code" lang="python">input()</code>.</item>
+      <item>Variables and assignment.</item>
+      <item>Strings, integers, and floats.</item>
+      <item>Arithmetic, concatenation.</item>
+      <item>Common error messages.</item>
+      <item>Comments and docstrings.</item>
       </list>
       <para id="para-00018">At this point, you should be able to write programs that ask for input, perform simple calculations, and output the results. The programming practice below ties together most topics presented in the chapter.</para>
       <table summary=" " id="table-00001">
-      <title>Chapter 1 reference</title>
+      <title>Chapter 1 reference.</title>
       <tgroup cols="2">
       <thead>
       <row>
@@ -50,37 +50,37 @@
       </row>
       <row>
       <entry><para id="para-00120"><code class="python inline-code" lang="python">=</code><newline/>
-      (assignment)</para></entry>
+      (Assignment)</para></entry>
       <entry>Assigns (or updates) the value of a variable. In Python, variables begin to exist when assigned for the first time.</entry>
       </row>
       <row>
       <entry><para id="para-00121"><code class="python inline-code" lang="python">+</code><newline/>
-      (concatenation)</para></entry>
+      (Concatenation)</para></entry>
       <entry>Appends the contents of two strings, resulting in a new string.</entry>
       </row>
       <row>
       <entry><para id="para-00122"><code class="python inline-code" lang="python">+</code><newline/>
-      (addition)</para></entry>
+      (Addition)</para></entry>
       <entry>Adds the values of two numbers.</entry>
       </row>
       <row>
       <entry><para id="para-00123"><code class="python inline-code" lang="python">-</code><newline/>
-      (subtraction)</para></entry>
+      (Subtraction)</para></entry>
       <entry>Subtracts the value of one number from another.</entry>
       </row>
       <row>
       <entry><para id="para-00124"><code class="python inline-code" lang="python">*</code><newline/>
-      (multiplication)</para></entry>
+      (Multiplication)</para></entry>
       <entry>Multiplies the values of two numbers.</entry>
       </row>
       <row>
       <entry><para id="para-00125"><code class="python inline-code" lang="python">/</code><newline/>
-      (division)</para></entry>
-      <entry>Divides the value of one number from another.</entry>
+      (Division)</para></entry>
+      <entry>Divides the value of one number by another.</entry>
       </row>
       <row>
       <entry><para id="para-00126"><code class="python inline-code" lang="python">**</code><newline/>
-      (exponentiation)</para></entry>
+      (Exponentiation)</para></entry>
       <entry><para id="para-00226">Raises a number to a power. Ex: <code class="python inline-code" lang="python">3**2</code> is three squared.</para></entry>
       </row>
       <row>
@@ -89,18 +89,18 @@
       </row>
       <row>
       <entry><para id="para-00127"><code class="python inline-code" lang="python">#</code><newline/>
-      (comment)</para></entry>
+      (Comment)</para></entry>
       <entry>All text is ignored from the # symbol to the end of the line.</entry>
       </row>
       <row>
       <entry><para id="para-00128"><code class="python inline-code" lang="python">'</code> or <code class="python inline-code" lang="python">"</code><newline/>
-      (string)</para></entry>
+      (String)</para></entry>
       <entry><para id="para-00129">Strings may be written using either kind of quote. Ex: <code class="python inline-code" lang="python">'A'</code> and <code class="python inline-code" lang="python">"A"</code> represent the same string. By convention, this book uses double quotes (<code class="python inline-code" lang="python">"</code>) for most strings.</para></entry>
       </row>
       <row>
       <entry><para id="para-00228"><code class="python inline-code" lang="python">"""</code><newline/>
       (Docstring)</para></entry>
-      <entry><para id="para-00229">Used for documentation, often in multi-line strings, to summarize a program's purpose or usage</para></entry>
+      <entry><para id="para-00229">Used for documentation, often in multi-line strings, to summarize a program's purpose or usage.</para></entry>
       </row>
       </tbody>
       </tgroup>
@@ -109,7 +109,7 @@
       </section>
     <note class="practice-program" id="note-00005">
     <title>Fun facts</title>
-    <para id="para-00019">Write a program that assigns a variable named <code class="python inline-code" lang="python">number</code> to any integer of your choice. Ex: <code class="python inline-code" lang="python">number = 74</code>. Then use this variable to calculate and output the following results:</para>
+    <para id="para-00019">Write a program that assigns a variable named <code class="python inline-code" lang="python">number</code> to any integer of your choice. Ex: <code class="python inline-code" lang="python">number = 74</code>. Then, use this variable to calculate and output the following results:</para>
     <code class="python" lang="python">
     74 squared is 5476
     74 cubed is 405224

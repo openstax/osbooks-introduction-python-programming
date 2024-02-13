@@ -125,7 +125,7 @@ item2 = input("Item #2: ")
 
 <note class="practice-program" id="note-00006">
 <title>Whose birthday</title>
-<para id="para-00018">Add two comments to the following program: one for the input, and one for the output. Separate the input and output with a blank line. Then compare your comments with the sample solution, and ask yourself the following questions:</para>
+<para id="para-00018">Add two comments to the following program: one for the input, and one for the output. Separate the input and output with a blank line. Then, compare your comments with the sample solution, and ask yourself the following questions:</para>
 <list id="list-00004">
 <item>Are your comments longer or shorter? Why?</item>
 <item>Is the formatting of your comments correct?</item>
