@@ -111,13 +111,13 @@
     </row>
     <row>
     <entry><para id="para-00019"><code class="python inline-code" lang="python">math.ceil(x)</code></para></entry>
-    <entry>The ceiling of <code class="python inline-code" lang="python">x</code>: the smallest integer greater than or equal to <code class="python inline-code" lang="python">x</code>.</entry>
-    <entry><para id="para-00020"><code class="python inline-code" lang="python">math.ceil(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">8</code><newline/>
+    <entry><para id="para-00020">The ceiling of <code class="python inline-code" lang="python">x</code>: the smallest integer greater than or equal to <code class="python inline-code" lang="python">x</code>.</para></entry>
+    <entry><para id="para-0020"><code class="python inline-code" lang="python">math.ceil(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">8</code><newline/>
     <code class="python inline-code" lang="python">math.ceil(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-7</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00021"><code class="python inline-code" lang="python">math.floor(x)</code></para></entry>
-    <entry>The floor of <code class="python inline-code" lang="python">x</code>: the largest integer less than or equal to <code class="python inline-code" lang="python">x</code>.</entry>
+    <entry><para id="para-0021">The floor of <code class="python inline-code" lang="python">x</code>: the largest integer less than or equal to <code class="python inline-code" lang="python">x</code>.</para></entry>
     <entry><para id="para-00022"><code class="python inline-code" lang="python">math.floor(7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">7</code><newline/>
     <code class="python inline-code" lang="python">math.floor(-7.4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-8</code></para></entry>
     </row>
@@ -126,13 +126,13 @@
     </row>
     <row>
     <entry><para id="para-00023"><code class="python inline-code" lang="python">math.log(x)</code></para></entry>
-    <entry>The natural logarithm of <code class="python inline-code" lang="python">x</code> (to base e).</entry>
+    <entry><para id="para-0023">The natural logarithm of <code class="python inline-code" lang="python">x</code> (to base e).</para></entry>
     <entry><para id="para-00024"><code class="python inline-code" lang="python">math.log(math.e)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code><newline/>
     <code class="python inline-code" lang="python">math.log(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">ValueError: math domain error</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00025"><code class="python inline-code" lang="python">math.log(x, base)</code></para></entry>
-    <entry>The logarithm of <code class="python inline-code" lang="python">x</code> to the given base.</entry>
+    <entry><para id="para-0024">The logarithm of <code class="python inline-code" lang="python">x</code> to the given base.</para></entry>
     <entry><para id="para-00026"><code class="python inline-code" lang="python">math.log(8, 2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">3.0</code><newline/>
     <code class="python inline-code" lang="python">math.log(10000, 10)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">4.0</code></para></entry>
     </row>
@@ -144,7 +144,7 @@
     </row>
     <row>
     <entry><para id="para-00030"><code class="python inline-code" lang="python">math.sqrt(x)</code></para></entry>
-    <entry>The square root of <code class="python inline-code" lang="python">x</code>.</entry>
+    <entry><para id="para-0025">The square root of <code class="python inline-code" lang="python">x</code>.</para></entry>
     <entry><para id="para-00031"><code class="python inline-code" lang="python">math.sqrt(9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">3.0</code><newline/>
     <code class="python inline-code" lang="python">math.sqrt(-9)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">ValueError: math domain error</code></para></entry>
     </row>
@@ -153,19 +153,19 @@
     </row>
     <row>
     <entry><para id="para-00032"><code class="python inline-code" lang="python">math.cos(x)</code></para></entry>
-    <entry>The cosine of <code class="python inline-code" lang="python">x</code> radians.</entry>
+    <entry><para id="para-0026">The cosine of <code class="python inline-code" lang="python">x</code> radians.</para></entry>
     <entry><para id="para-00033"><code class="python inline-code" lang="python">math.cos(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code><newline/>
     <code class="python inline-code" lang="python">math.cos(math.pi)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">-1.0</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00034"><code class="python inline-code" lang="python">math.sin(x)</code></para></entry>
-    <entry>The sine of <code class="python inline-code" lang="python">x</code> radians.</entry>
+    <entry><para id="para-0027">The sine of <code class="python inline-code" lang="python">x</code> radians.</para></entry>
     <entry><para id="para-00035"><code class="python inline-code" lang="python">math.sin(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.0</code><newline/>
     <code class="python inline-code" lang="python">math.sin(math.pi/2)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">1.0</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00036"><code class="python inline-code" lang="python">math.tan(x)</code></para></entry>
-    <entry>The tangent of <code class="python inline-code" lang="python">x</code> radians.</entry>
+    <entry><para id="para-0028">The tangent of <code class="python inline-code" lang="python">x</code> radians.</para></entry>
     <entry><para id="para-00037"><code class="python inline-code" lang="python">math.tan(0)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.0</code><newline/>
     <code class="python inline-code" lang="python">math.tan(math.pi/4)</code> <m:math><m:mo>→</m:mo></m:math> <code class="python inline-code" lang="python">0.999</code><newline/>
     (Round-off error; the result should be 1.0.)</para></entry>
