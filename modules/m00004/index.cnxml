@@ -16,7 +16,7 @@
 </section>
 <section id="sect-00002">
 <title>Assignment statement</title>
-<para id="para-00001">Variables allow programs to refer to values using names rather than memory locations. Ex: <code class="python inline-code" lang="python">age</code> refers to a person's age, and <code class="python inline-code" lang="python">date of birth</code> refers to a person's birthday.</para>
+<para id="para-00001">Variables allow programs to refer to values using names rather than memory locations. Ex: <code class="python inline-code" lang="python">age</code> refers to a person's age, and <code class="python inline-code" lang="python">birth</code> refers to a person's date of birth.</para>
 <para id="para-00002">A statement can set a variable to a value using the <term id="term-00003">assignment operator</term> (<term id="term-00006">=</term>). Note that this is different from the equal sign of mathematics. Ex: <code class="python inline-code" lang="python">age = 6</code> or <code class="python inline-code" lang="python">birth = "May 15"</code>. The left side of the assignment statement is a variable, and the right side is the value the variable is assigned. </para>
 <note class="guided-slides" id="note-00001">
 <title>Assigning and using variables</title>
