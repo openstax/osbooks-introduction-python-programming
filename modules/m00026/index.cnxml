@@ -17,7 +17,7 @@
     <item>A tuple is similar to a list, but uses parentheses and cannot be changed once created.</item>
     </list>
     <table summary=" " id="table-00001">
-    <title>Chapter 3 reference</title>
+    <title>Chapter 3 reference.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -32,7 +32,7 @@
       </row>
       <row>
       <entry><code class="python" lang="python">chr(i)</code></entry>
-      <entry>Converts a Unicode code point (integer) into a 1-character string.</entry>
+      <entry>Converts a Unicode code point (integer) into a One-character string.</entry>
       </row>
       <row>
       <entry><code class="python" lang="python">'\n'</code></entry>

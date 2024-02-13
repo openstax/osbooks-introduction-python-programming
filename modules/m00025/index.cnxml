@@ -19,7 +19,7 @@
     <title>Creating tuples and accessing elements</title>
     <para id="para-00002">A <term id="term-00001">tuple</term> is a sequence of comma separated values that can contain elements of different types. A tuple must be created with commas between values, and conventionally the sequence is surrounded by parentheses. Each element is accessed by index, starting with the first element at index 0.</para>    
 <table summary=" " id="table-00001">
-<title>Example tuples</title>
+<title>Example tuples.</title>
 <tgroup cols="1">
 <tbody>
 <row>

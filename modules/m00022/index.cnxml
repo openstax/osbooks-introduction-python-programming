@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>F-strings</title>
-    <para id="para-00002">A <term id="term-00001">formatted string literal</term> (or <term id="term-00002">f-string</term>) is a string literal that is prefixed with <code class="python inline-code" lang="python">'f'</code> or <code class="python inline-code" lang="python">'F'</code>. A <term id="term-00003">replacement field</term> is an expression in curly braces (<code class="python inline-code" lang="python">{}</code>) inside an f-string. Ex: The string <code class="python inline-code" lang="python">f"Good morning, {first} {last}!"</code> has two replacement fields: one for a first name, and one for a last name. F-strings provide a convenient way to combine multiple values into one string.</para>
+    <para id="para-00002">A <term id="term-00001">formatted string literal</term> (or <term id="term-00002">f-string</term>) is a string literal that is prefixed with <code class="python inline-code" lang="python">"f"</code> or <code class="python inline-code" lang="python">"F"</code>. A <term id="term-00003">replacement field</term> is an expression in curly braces (<code class="python inline-code" lang="python">{}</code>) inside an f-string. Ex: The string <code class="python inline-code" lang="python">f"Good morning, {first} {last}!"</code> has two replacement fields: one for a first name, and one for a last name. F-strings provide a convenient way to combine multiple values into one string.</para>
     <note class="guided-slides" id="note-00001">
     <title>Printing an f-string</title>
     <media alt="printing_f_string_slides">
@@ -47,7 +47,7 @@
     <para id="para-00006">Programs often need to display numbers in a specific format. Ex: When displaying the time, minutes are formatted as two-digit integers. If the hour is 9 and the minute is 5, then the time is "9:05" (not "9:5").</para>
     <para id="para-00007">In an f-string, a replacement field may include a format specifier introduced by a colon. A <term id="term-00004">format specifier</term> defines how a value should be formatted for display. Ex: In the string <code class="python inline-code" lang="python">f"{hour}:{minute:02d}"</code>, the format specifier for <code class="python inline-code" lang="python">minute</code> is <code class="python inline-code" lang="python">02d</code>.</para>
     <table summary=" " id="table-00001">
-    <title>Example format specifiers</title>
+    <title>Example format specifiers.</title>
     <tgroup cols="4">
     <thead>
     <row>
@@ -60,49 +60,49 @@
     <tbody>
     <row>
     <entry><para id="para-00107"><code class="python inline-code" lang="python">d</code></para></entry>
-    <entry>Decimal integer (default integer format)</entry>
+    <entry>Decimal integer (default integer format).</entry>
     <entry><para id="para-00108"><code class="python inline-code" lang="python">f"{12345678:d}"</code></para></entry>
     <entry><para id="para-00109"><code class="python inline-code" lang="python">'12345678'</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00110"><code class="python inline-code" lang="python">,d</code></para></entry>
-    <entry>Decimal integer, with comma separators</entry>
+    <entry>Decimal integer, with comma separators.</entry>
     <entry><para id="para-00111"><code class="python inline-code" lang="python">f"{12345678:,d}"</code></para></entry>
     <entry><para id="para-00112"><code class="python inline-code" lang="python">'12,345,678'</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00113"><code class="python inline-code" lang="python">10d</code></para></entry>
-    <entry>Decimal integer, at least 10 characters wide</entry>
+    <entry>Decimal integer, at least 10 characters wide.</entry>
     <entry><para id="para-00114"><code class="python inline-code" lang="python">f"{12345678:10d}"</code></para></entry>
     <entry><para id="para-00115"><code class="python inline-code" lang="python">'  12345678'</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00116"><code class="python inline-code" lang="python">010d</code></para></entry>
-    <entry>Decimal integer, at least 10 characters wide, with leading zeros</entry>
+    <entry>Decimal integer, at least 10 characters wide, with leading zeros.</entry>
     <entry><para id="para-00117"><code class="python inline-code" lang="python">f"{12345678:010d}"</code></para></entry>
     <entry><para id="para-00118"><code class="python inline-code" lang="python">'0012345678'</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00119"><code class="python inline-code" lang="python">f</code></para></entry>
-    <entry>Fixed-point (default is 6 decimal places)</entry>
+    <entry>Fixed-point (default is 6 decimal places).</entry>
     <entry><para id="para-00120"><code class="python inline-code" lang="python">f"{math.pi:f}"</code></para></entry>
     <entry><para id="para-00121"><code class="python inline-code" lang="python">'3.141593'</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00122"><code class="python inline-code" lang="python">.4f</code></para></entry>
-    <entry>Fixed-point, rounded to 4 decimal places</entry>
+    <entry>Fixed-point, rounded to 4 decimal places.</entry>
     <entry><para id="para-00123"><code class="python inline-code" lang="python">f"{math.pi:.4f}"</code></para></entry>
     <entry><para id="para-00124"><code class="python inline-code" lang="python">'3.1416'</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00125"><code class="python inline-code" lang="python">8.4f</code></para></entry>
-    <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide</entry>
+    <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide.</entry>
     <entry><para id="para-00126"><code class="python inline-code" lang="python">f"{math.pi:8.4f}"</code></para></entry>
     <entry><para id="para-00127"><code class="python inline-code" lang="python">'  3.1416'</code></para></entry>
     </row>
     <row>
     <entry><para id="para-00128"><code class="python inline-code" lang="python">08.4f</code></para></entry>
-    <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide, with leading zeros</entry>
+    <entry>Fixed-point, rounded to 4 decimal places, at least 8 characters wide, with leading zeros.</entry>
     <entry><para id="para-00129"><code class="python inline-code" lang="python">f"{math.pi:08.4f}"</code></para></entry>
     <entry><para id="para-00130"><code class="python inline-code" lang="python">'003.1416'</code></para></entry>
     </row>
@@ -132,7 +132,7 @@
    
     <note class="practice-program" id="note-00004">
     <title>Mad lib (f-string)</title>
-    <para id="para-00011">A "<link url="https://openstax.org/r/100fstring">mad lib</link>" is a funny story that uses words provided by a user. The following mad lib is based on four words (user input in bold):</para>
+    <para id="para-00011">A <link url="https://openstax.org/r/100fstring">mad lib</link> is a funny story that uses words provided by a user. The following mad lib is based on four words (user input in bold):</para>
     <code class="python" lang="python">
     Enter a name: <code class="inline-code"><emphasis effect="bold">Buster</emphasis></code>
     Enter a noun: <code class="inline-code"><emphasis effect="bold">dog</emphasis></code>
@@ -162,7 +162,7 @@
     Total hours: 1.5
     Payment: $22.50
     </code>
-    <para id="para-00015">For this exercise, you need to write code that (1) calculates the total payment and (2) formats the three output lines. Use f-strings and format specifiers to display 2-digit minutes, 1 decimal place for hours, and 2 decimal places for payment. The input code has been provided as a starting point.</para>
+    <para id="para-00015">For this exercise, you need to write code that (1) calculates the total payment and (2) formats the three output lines. Use f-strings and format specifiers to display two-digit minutes, one decimal place for hours, and two decimal places for payment. The input code has been provided as a starting point.</para>
     <media alt="wage_calculator_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_03_04_Wage-calculator.html"/>
     </media>
