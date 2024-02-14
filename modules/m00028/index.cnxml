@@ -10,16 +10,16 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Explain a boolean value</item>
-    <item>Use bool variables to store boolean values</item>
-    <item>Demonstrate converting integers, floats, and strings to booleans</item>
-    <item>Demonstrate converting booleans to integers, floats, and strings</item>
-    <item>Use comparison operators to compare integers, floats, and strings</item>
+    <item>Explain a Boolean value.</item>
+    <item>Use bool variables to store Boolean values.</item>
+    <item>Demonstrate converting integers, floats, and strings to Booleans.</item>
+    <item>Demonstrate converting Booleans to integers, floats, and strings.</item>
+    <item>Use comparison operators to compare integers, floats, and strings.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>bool data type</title>
-    <para id="para-00002">People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza? Ex: True or False: I like pineapple on pizza. The response is a boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for boolean, represents a binary value of either True or False. <code class="python inline-code" lang="python">True</code> and <code class="python inline-code" lang="python">False</code> are keywords, and capitalization is required.</para>
+    <para id="para-00002">People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza? Ex: True or false: I like pineapple on pizza. The response is a Boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for Boolean, represents a binary value of either True or False. <code class="python inline-code" lang="python">true</code> and <code class="python inline-code" lang="python">false</code> are keywords, and capitalization is required.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Crosswalk sign</title>
     <media alt="crosswalk_sign_slides">
@@ -27,7 +27,7 @@
     </media>
     </note>
     <note class="learning-questions" id="note-00002">
-    <title>Using boolean variables</title>
+    <title>Using Boolean variables</title>
     <para id="para-00003">Consider the following code:</para>
     <code class="python" lang="python">
     is_fruit = "True"
