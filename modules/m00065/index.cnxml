@@ -12,7 +12,7 @@
     </media>
     <caption>credit: modification of work "Budget and Bills" by Alabama Extension/Flickr, Public Domain</caption>
   </figure>
-    <para id="para-00001">Programmers often work on collections of data. Lists are a useful way of collecting data elements. Python lists are extremely flexible, and unlike strings, a list's contents can be changed.</para>
-    <para id="para-00002">Chapter 3 introduced lists. This chapter explores operations that can be performed on lists.</para>
+    <para id="para-00001">Programmers often work on collections of data. Lists are a useful way of collecting data elements. Python lists are extremely flexible, and, unlike strings, a list's contents can be changed.</para>
+    <para id="para-00002">The <link document="m00020">Objects</link> chapter introduced lists. This chapter explores operations that can be performed on lists.</para>
     </content>
 </document>

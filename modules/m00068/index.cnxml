@@ -17,7 +17,7 @@
     <section id="sect-00002">
     <title>Sorting</title>
     <para id="para-00002">Ordering elements in a sequence is often useful. <term id="term-00001">Sorting</term> is the task of arranging elements in a sequence in ascending or descending order.</para>
-    <para id="para-00003">Sorting can work on numerical or non-numerical data. When ordering text, dictionary order is used. Ex: "bat" comes before "cat", because 'b' comes before 'c'.</para>
+    <para id="para-00003">Sorting can work on numerical or non-numerical data. When ordering text, dictionary order is used. Ex: "bat" comes before "cat" because "b" comes before "c".</para>
     <note class="guided-slides" id="note-00001">
     <title>Sorting</title>
     <media alt="sorting_slides">
@@ -47,7 +47,7 @@
     <title>Using <code class="python inline-code" lang="python">sort()</code> and <code class="python inline-code" lang="python">reverse()</code></title>
     <para id="para-00007">Python provides methods for arranging elements in a list.
     <list id="list-00002">
-    <item>The <code class="python inline-code" lang="python">sort()</code> method arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters leading to unexpected results. Ex: <code class="python inline-code" lang="python">'A'</code> is ordered before <code class="python inline-code" lang="python">'a'</code> in ascending order but so is <code class="python inline-code" lang="python">'G'</code>, thus <code class="python inline-code" lang="python">"Gail"</code> comes before <code class="python inline-code" lang="python">"apple"</code>.</item>
+    <item>The <code class="python inline-code" lang="python">sort()</code> method arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters, leading to unexpected results. Ex: <code class="python inline-code" lang="python">"A"</code> is ordered before <code class="python inline-code" lang="python">"a"</code> in ascending order but so is <code class="python inline-code" lang="python">"G"</code>; thus, <code class="python inline-code" lang="python">"Gail"</code> comes before <code class="python inline-code" lang="python">"apple"</code>.</item>
     <item>The <code class="python inline-code" lang="python">reverse()</code> method reverses the elements in a list.</item>
     </list></para>
     <example id="exam-00001">

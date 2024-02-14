@@ -18,8 +18,8 @@
     <section id="sect-00002">
     <title>List-of-lists</title>
     <para id="para-00002">Lists can be made of any type of element. A list element can also be a list. Ex: <code class="python inline-code" lang="python">[2, [3, 5], 17]</code> is a valid list with the list <code class="python inline-code" lang="python">[3, 5]</code> being the element at index 1.</para>
-    <para id="para-00003">When a list is an element inside a larger list, the list is called a <term id="term-00001">nested list</term>. Nested lists are useful for expressing multidimensional data. When each of the elements of a larger list is smaller lists, the larger list is called a <term id="term-00002">list-of-lists</term>.</para>
-    <para id="para-00004">Ex: A table can be stored as a 2-dimensional list-of-lists, where each row of data is a list in the list-of-lists.</para>
+    <para id="para-00003">When a list is an element inside a larger list, it is called a <term id="term-00001">nested list</term>. Nested lists are useful for expressing multidimensional data. When each of the elements of a larger list is a smaller list, the larger list is called a <term id="term-00002">list-of-lists</term>.</para>
+    <para id="para-00004">Ex: A table can be stored as a two-dimensional list-of-lists, where each row of data is a list in the list-of-lists.</para>
     <note class="guided-slides" id="note-00001">
     <title>List-of-lists</title>
     <media alt="list_of_lists_slides">
@@ -28,7 +28,7 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Lists</title>
-    <para id="para-00005">For each of the following questions consider the following matrix:</para><newline/>
+    <para id="para-00005">For each of the questions below, consider the following matrix:</para><newline/>
     <equation id="eq-00001"><m:math>
     <m:mrow>
     <m:mtext>mat A</m:mtext><m:mo>=</m:mo><m:mfenced close="]" open="[">
@@ -90,7 +90,7 @@
     </section>
     <section id="sect-00003">
     <title>Using nested loops to iterate nested lists</title>
-    <para id="para-00009">A nested loop structure can be used to iterate a list-of-lists. For a 2-dimensional list-of-lists, an outer <code class="python inline-code" lang="python">for</code> loop can be used for rows, and an inner <code class="python inline-code" lang="python">for</code> loop can be used for columns.</para>
+    <para id="para-00009">A nested loop structure can be used to iterate a list-of-lists. For a two-dimensional list-of-lists, an outer <code class="python inline-code" lang="python">for</code> loop can be used for rows, and an inner <code class="python inline-code" lang="python">for</code> loop can be used for columns.</para>
     <example id="exam-00001">
     <title>Iterating a list-of-lists</title>
     <para id="para-00010">The code below demonstrates how to iterate a list-of-lists.</para>
@@ -118,7 +118,7 @@
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Iterating a list-of-lists</title>
-    <para id="para-00013">For each question below consider the following list:</para>
+    <para id="para-00013">For each question below, consider the following list:</para>
     <code class="python" lang="python">my_list = [[7, 4, 5, 12],
           [24, 3, 9, 16],
           [12, 8, 91, -5]]</code>
@@ -137,7 +137,7 @@
    
     <note class="practice-program" id="note-00004">
     <title>Matrix multiplication</title>
-    <para id="para-00016">Write a program that calculates the matrix multiplication product of the matrices matW and matZ below and prints out the result. The expected result is shown.</para>
+    <para id="para-00016">Write a program that calculates the matrix multiplication product of the matrices matW and matZ below and prints the result. The expected result is shown.</para>
     <equation id="eq-00002">
     <m:math>
     <m:mrow>
@@ -275,7 +275,7 @@
     </m:mfenced></m:mrow>
     </m:math>
     </equation><newline/>
-    <para id="para-00017">In the result matrix each element is calculated according to the position of the element. Result at position <code class="python inline-code" lang="python">[i][j]</code> is calculated using row <code class="python inline-code" lang="python">i</code> from the first matrix, W, and column <code class="python inline-code" lang="python">j</code> from the second matrix, Z.</para>
+    <para id="para-00017">In the result matrix, each element is calculated according to the position of the element. The result at position <code class="python inline-code" lang="python">[i][j]</code> is calculated using row <code class="python inline-code" lang="python">i</code> from the first matrix, W, and column <code class="python inline-code" lang="python">j</code> from the second matrix, Z.</para>
     <para id="para-00018">Ex:</para>
     <para id="para-00019"><code class="python inline-code" lang="python">result[1][2]</code> = (row 1 in W) times (column 2 in Z)</para>
     <equation id="eq-00004">

@@ -19,9 +19,9 @@
     <para id="para-00002">A <term id="term-00001">list comprehension</term> is a Python statement to compactly create a new list using a pattern.</para>
     <para id="para-00003">The general form of a list comprehension statement is shown below.</para>
     <para id="para-00004"><code class="python inline-code" lang="python">list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">iterable</emphasis>]</code></para>
-    <para id="para-00005"><code class="python inline-code" lang="python">list_name</code> refers to the name of a new list which can be anything and the <code class="python inline-code" lang="python">for</code> is the <code class="python inline-code" lang="python">for</code> loop keyword. Expression defines what will become part of the new list. <code class="python inline-code" lang="python">loop_variable</code> is an iterator and <code class="python inline-code" lang="python">iterable</code> is an object which can be iterated such as a list or string.</para>
+    <para id="para-00005"><code class="python inline-code" lang="python">list_name</code> refers to the name of a new list, which can be anything, and the <code class="python inline-code" lang="python">for</code> is the <code class="python inline-code" lang="python">for</code> loop keyword. An expression defines what will become part of the new list. <code class="python inline-code" lang="python">loop_variable</code> is an iterator, and <code class="python inline-code" lang="python">iterable</code> is an object that can be iterated, such as a list or string.</para>
     <example id="exam-00001">
-    <title>Creating a new list with a list comprehension.</title>
+    <title>Creating a new list with a list comprehension</title>
     <para id="para-00006">A list comprehension shown below in the second code has the same effect as the regular <code class="python inline-code" lang="python">for</code> loop shown in the first code. The resultant list is <code class="python inline-code" lang="python">[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</code> in both cases.</para>
     <para id="para-00007">Creating a list of squares using a <code class="python inline-code" lang="python">for</code> loop.</para>
     <code class="python" lang="python">
@@ -91,7 +91,7 @@
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Filtering using list comprehensions</title>
-    <para id="para-00018">For each code using list comprehension select the correct resultant list in <code class="python inline-code" lang="python">new_list</code>.</para>
+    <para id="para-00018">For each code using list comprehension, select the correct resultant list in <code class="python inline-code" lang="python">new_list</code>.</para>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch09-m06-p04"/></para>
@@ -111,15 +111,15 @@
     </section>
     
     <note class="practice-program" id="note-00004">
-    <title>Selecting 5 letter words</title>
-    <para id="para-00022">Write a program that creates a list of only 5 letter words from the given list and prints out the new list.</para>
+    <title>Selecting five-letter words</title>
+    <para id="para-00022">Write a program that creates a list of only five-letter words from the given list and prints the new list.</para>
     <media alt="selecting_5_letter_words_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_06_07_Selecting-5-letter-words.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00005">
-    <title>Books starting with 'A'</title>
-    <para id="para-00023">Write a program that selects words that begin with an 'A' in the given list. Make sure the new list is then sorted in dictionary order. Finally, print the new sorted list.</para>
+    <title>Books starting with "A"</title>
+    <para id="para-00023">Write a program that selects words that begin with an "A" in the given list. Make sure the new list is then sorted in dictionary order. Finally, print the new sorted list.</para>
     <media alt="books_starting_with_a_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_06_08_Books-starting-with-_A_.html"/>
     </media>

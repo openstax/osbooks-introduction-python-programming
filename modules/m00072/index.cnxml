@@ -11,16 +11,16 @@
     <list id="list-00001">
     <item>Lists are mutable and can be easily modified by using <code class="python inline-code" lang="python">append()</code>, <code class="python inline-code" lang="python">remove()</code>, and <code class="python inline-code" lang="python">pop()</code> operations.</item>
     <item>Lists are iterable and can be iterated using an iterator or element indexes.</item>
-    <item>The <code class="python inline-code" lang="python">sort()</code> operation arranges the elements of a list in ascending order if all the elements of the list are of the same type.</item>
+    <item>The <code class="python inline-code" lang="python">sort()</code> operation arranges the elements of a list in ascending order if all elements of the list are of the same type.</item>
     <item>The <code class="python inline-code" lang="python">reverse()</code> operation reverses a list.</item>
     <item>The <code class="python inline-code" lang="python">copy()</code> method is used to create a copy of a list.</item>
-    <item>Lists have built-in functions for finding the maximum, minimum, and summation of a list for a list with only numeric values.</item>
+    <item>Lists have built-in functions for finding the maximum, minimum, and summation of a list for lists with only numeric values.</item>
     <item>Lists can be nested to represent multidimensional data.</item>
     <item>A list comprehension is a compact way of creating a new list, which can be used to filter items from an existing list.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write programs using lists.</para>
     <table summary=" " id="table-00001">
-    <title>Chapter 9 reference</title>
+    <title>Chapter 9 reference.</title>
     <tgroup cols="2">
     <thead>
     <row>

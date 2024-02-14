@@ -32,11 +32,11 @@
     student_list.append("Ming")
     print(student_list)
 
-    # The student "Jamie" withdraws the project. Jamie must be removed from the list.
+    # "Jamie" withdraws from the project. Jamie must be removed from the list.
     student_list.remove("Jamie")
     print(student_list)
     
-    # Suppose "Ming" had to be removed from the list for some reason, a pop() operation can be used.
+    # Suppose "Ming" had to be removed from the list. A pop() operation can be used since Ming is last in the list.
     student_list.pop()
     print(student_list)
     </code>
@@ -69,7 +69,7 @@
     </section>
     <section id="sect-00003">
     <title>Iterating lists</title>
-    <para id="para-00009">An iterative for loop can be used to iterate through a list. Alternatively, lists can also be iterated using list indexes with a counting for loop. The animation below shows both ways of iterating a list.</para>
+    <para id="para-00009">An iterative for loop can be used to iterate through a list. Alternatively, lists can be iterated using list indexes with a counting for loop. The animation below shows both ways of iterating a list.</para>
     <note class="guided-slides" id="note-00002">
     <title>Using len() to get the length of a list</title>
     <media alt="len_function_slides">
@@ -78,7 +78,7 @@
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Iterating lists</title>
-    <para id="para-00010">For the following questions consider the list:</para>
+    <para id="para-00010">For the following questions, consider the list:</para>
     <code class="python" lang="python">my_list = [2, 3, 5, 7, 9]</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
@@ -103,14 +103,14 @@
     <para id="para-00014">Create a list of sports played on a college campus. The sports to be included are baseball, football, tennis, and table tennis.</para>
     <para id="para-00015">Next, add volleyball to the list.</para>
     <para id="para-00016">Next, remove <code class="python inline-code" lang="python">"football"</code> from the list and add <code class="python inline-code" lang="python">"soccer"</code> to the list.</para>
-    <para id="para-00017">Show list contents after each modification.</para>
+    <para id="para-00017">Show the list contents after each modification.</para>
     <media alt="sports_list_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_01_Sports-list.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00005">
     <title>Simple Searching</title>
-    <para id="para-00018">Write a program that prints <code class="python inline-code" lang="python">"found!"</code> if <code class="python inline-code" lang="python">"Soccer"</code> is found in the given list.</para>
+    <para id="para-00018">Write a program that prints <code class="python inline-code" lang="python">"found!"</code> if <code class="python inline-code" lang="python">"soccer"</code> is found in the given list.</para>
     <media alt="simple_searching_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_02_Simple-Searching.html"/>
     </media>
