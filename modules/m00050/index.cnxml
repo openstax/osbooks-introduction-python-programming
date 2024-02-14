@@ -20,9 +20,9 @@
     <item>Python uses a pass-by-object-reference system to assign parameters with the object values referenced by the arguments.</item>
     <item>Functions can use <code class="python inline-code" lang="python">return</code> statements to return values back to the calling code.</item>
     </list>
-    <para id="para-00002">At this point, you should be able to write functions that have any number of parameters and return a value and programs that call functions using keyword arguments and optional arguments.</para>
+    <para id="para-00002">At this point, you should be able to write functions that have any number of parameters and return a value, and programs that call functions using keyword arguments and optional arguments.</para>
 <table summary=" " id="table-00001">
-<title>Chapter 6 reference</title>
+<title>Chapter 6 reference.</title>
 <tgroup cols="2">
 <thead>
 <row>
