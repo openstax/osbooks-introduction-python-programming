@@ -48,8 +48,21 @@
     <title>Concise text and video-based animations</title>
     <para id="para-00011">Most of the section's content is organized in subsections. Each subsection begins with concise text to introduce a new concept, define key terms, and provide context. The concept is then explained in detail using video-based animations and interactive learning questions.</para>
     <para id="para-00012">Animation videos use a step-by-step approach to show the execution of Python code. Explanations for each step describe Python syntax, show how fundamental programming concepts are used, illustrate how variables are assigned , emphasize how code executes line by line, apply problem solving to create programs, and more.</para>
-    <para id="para-00013">"Displaying output to the user" <link url="https://www.youtube.com/embed/S5yhPLL0m6E?si=Ns8gOt2KiV1lDWen">https://www.youtube.com/embed/S5yhPLL0m6E?si=Ns8gOt2KiV1lDWen</link></para>
-    </section>
+    <para id="para-00013">"Displaying output to the user"</para>
+    <note class="guided-slides" id="note-00001">
+      <title>Displaying output to the user</title>
+      <media alt="displaying_output_video">
+      <iframe width="660" height="371.4" src="https://www.openstax.org/r/displaying-output"/>
+      </media>
+      </note></section>
+      <section  id="sect-110">
+        <para id="para-0113">"Displaying output to the user"</para>
+        <figure class="unnumbered" id="fig-00001">
+          <media alt="displaying_output_video">
+            <iframe width="660" height="371.4" src="https://www.openstax.org/r/displaying-output"/>
+            </media>
+          </figure>
+        </section>
     <section id="sect-00010">
     <title>Learning questions</title>
     <para id="para-00014">After introducing a new concept with concise text and explaining the concept with a video-based animation, each subsection includes engagement in the form of learning questions. These questions reinforce the concepts taught, explain concepts in more depth, directly address misconceptions and errors commonly made by new programmers, and teach related concepts.</para>
@@ -84,7 +97,7 @@
     <title>About the Authors</title>
     <section id="sect-00014">
     <title>Authors</title>
-    <figure class="unnumbered" id="fig-00001">
+    <figure class="unnumbered" id="fig-00002">
     <media alt="">
     <image mime-type="image/png" src="../../media/FPO.jpg"/>
     </media>
