@@ -12,7 +12,7 @@
     </media>
     <caption>credit: modification of work "Fork In The Road", by Ian Sane/Flickr, CC BY 2.0</caption>
     </figure>
-    <para id="para-00001">The Python interpreter follows a single path of execution when executing a program. What if a programmer wants to define multiple possible paths? Ex: Instead of always taking the right path, a program uses the path width to decide which path to take. If the left path is wider, take the right path. Else, take the left path.</para>
-    <para id="para-00002">A <term id="term-00001">branch</term> is a group of statements that execute based on a condition. Chapter 2 introduced expressions. Chapter 4 explores how expressions can be used as conditions to make decisions in programs.</para>
+    <para id="para-00001">The Python interpreter follows a single path of execution when executing a program. What if a programmer wants to define multiple possible paths? Ex: Instead of always taking the left path, a program uses the path width to decide which path to take. If the left path is wider, take the right path. Else, take the left path.</para>
+    <para id="para-00002">A <term id="term-00001">branch</term> is a group of statements that execute based on a condition. The <link document="m00010">Expressions</link> chapter introduced expressions. This chapter explores how expressions can be used as conditions to make decisions in programs.</para>
     </content>
 </document>
