@@ -18,14 +18,14 @@
     <title>Nested loops</title>
     <para id="para-00002">A <term id="term-00001">nested loop</term> has one or more loops within the body of another loop. The two loops are referred to as <term id="term-00002">outer loop</term> and <term id="term-00003">inner loop</term>. The outer loop controls the number of the inner loop's full execution. More than one inner loop can exist in a nested loop.</para>
     <note class="guided-slides" id="note-00001">
-    <title>Nested for loops</title>
+    <title>Nested while loops</title>
     <media alt="nested_while_loops_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/nested-while-loops"/>
     </media>
     </note>
     <example id="exam-00001">
-    <title>Available appointments.</title>
-    <para id="para-00003">Consider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available appointments can use a nested <code class="python inline-code" lang="python">for</code> loop where the outer loop iterates over the hours, and the inner loop iterates over the minutes. This example prints time in hours and minutes in the time between 8 am and 10 am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the inner loop iterates over the time's minute portion between 0 and 59.</para>
+    <title>Available appointments</title>
+    <para id="para-00003">Consider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available appointments can use a nested <code class="python inline-code" lang="python">for</code> loop where the outer loop iterates over the hours, and the inner loop iterates over the minutes. This example prints time in hours and minutes in the range between 8:00am and 10:00am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the inner loop iterates over the time's minute portion between 0 and 59.</para>
     <code class="python" lang="python">
     hour = 8
     minute = 0
@@ -65,7 +65,7 @@
     </section>
     <section id="sect-00003">
     <title>Nested for loops</title>
-    <para id="para-00008">A nested <code class="python inline-code" lang="python">for</code> loop can be implemented and used in the same way as a nested <code class="python inline-code" lang="python">while</code> loop. A <code class="python inline-code" lang="python">for</code> loop is a preferable option in cases that a loop is used for counting purposes using a <code class="python inline-code" lang="python">range()</code> function or when iterating over a container object, including nested situations. Ex: ​​Iterating over multiple course rosters. The outer loop iterates over different courses, and the inner loop iterates over the names in each course roster.</para>
+    <para id="para-00008">A nested <code class="python inline-code" lang="python">for</code> loop can be implemented and used in the same way as a nested <code class="python inline-code" lang="python">while</code> loop. A <code class="python inline-code" lang="python">for</code> loop is a preferable option in cases where a loop is used for counting purposes using a <code class="python inline-code" lang="python">range()</code> function, or when iterating over a container object, including nested situations. Ex: ​​Iterating over multiple course rosters. The outer loop iterates over different courses, and the inner loop iterates over the names in each course roster.</para>
     <note class="guided-slides" id="note-00003">
     <title>Nested for loops</title>
     <media alt="nested_for_loops_slides">
@@ -109,7 +109,7 @@
  
     <note class="practice-program" id="note-00006">
     <title>Printing a triangle of numbers</title>
-    <para id="para-00013">Write a program that prints the following output.</para>
+    <para id="para-00013">Write a program that prints the following output:</para>
     <code class="python" lang="python">
      1 2 3 4 5 6 7 8 9
      1 2 3 4 5 6 7 8
@@ -127,7 +127,7 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Printing two triangles</title>
-    <para id="para-00015">Write a program that prints the following output using nested <code class="python inline-code" lang="python">while</code> and <code class="python inline-code" lang="python">for</code> loops.</para>
+    <para id="para-00015">Write a program that prints the following output using nested <code class="python inline-code" lang="python">while</code> and <code class="python inline-code" lang="python">for</code> loops:</para>
     <code class="python" lang="python">
     ****
     ***

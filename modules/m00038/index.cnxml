@@ -25,7 +25,7 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>For loop over a string container</title>
-    <para id="para-00003">A string variable can be considered as a container of multiple characters, and hence can be iterated on. Given the following code, please answer the questions.</para>
+    <para id="para-00003">A string variable can be considered a container of multiple characters, and hence can be iterated on. Given the following code, answer the questions.</para>
     <code class="python" lang="python">
     str_var = "A string"
 
@@ -118,7 +118,7 @@
     </tgroup>
     </table>
     <example id="exam-00001">
-    <title>Two programs printing all integer multiples of 5 less than 50. (Notice the compactness of the <code class="python inline-code" lang="python">for</code> construction compared to the <code class="python inline-code" lang="python">while</code>.)</title>
+    <title>Two programs printing all integer multiples of 5 less than 50 (Notice the compactness of the <code class="python inline-code" lang="python">for</code> construction compared to the <code class="python inline-code" lang="python">while</code>)</title>
 <table summary=" " id="table-00002">
 <tgroup cols="1">
 <tbody>
@@ -182,10 +182,10 @@ while i &lt; 50:
     </note>
     <note class="practice-program" id="note-00005">
     <title>Sequences</title>
-    <para id="para-00014">Write a program that reads two integer values <code class="python inline-code" lang="python">n1</code> and <code class="python inline-code" lang="python">n2</code> with <code class="python inline-code" lang="python">n1 &lt; n2</code>, and performs the following tasks:
+    <para id="para-00014">Write a program that reads two integer values, <code class="python inline-code" lang="python">n1</code> and <code class="python inline-code" lang="python">n2</code>, with <code class="python inline-code" lang="python">n1 &lt; n2</code>, and performs the following tasks:
     <list list-type="enumerated" id="list-00005">
-    <item>prints all even numbers between the two provided numbers (inclusive of both), in ascending order.</item>
-    <item>prints all odd numbers between the two provided numbers (exclusive of both), in descending order.</item>
+    <item>Prints all even numbers between the two provided numbers (inclusive of both), in ascending order.</item>
+    <item>Prints all odd numbers between the two provided numbers (exclusive of both), in descending order.</item>
     </list></para>
     <code class="python" lang="python">
     Input: 2 8
