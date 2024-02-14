@@ -29,7 +29,7 @@
     </note>
     <note class="learning-questions" id="note-00002">
     <title>While loop example</title>
-    <para id="para-00003">Fibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The Fibonacci sequence starts with two ones: 1, 1, 2, 3, …. Consider the following code that prints all Fibonacci numbers less than 20, and answer the following questions.</para>
+    <para id="para-00003">Fibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The Fibonacci sequence starts with two ones: 1, 1, 2, 3, . . . . Consider the following code that prints all Fibonacci numbers less than 20, and answer the following questions.</para>
     <code class="python" lang="python">
     # Initializing the first two Fibonacci numbers
     f = 1
@@ -63,9 +63,9 @@
     </section>
     <section id="sect-00003">
     <title>Counting with a while loop</title>
-    <para id="para-00007">A <code class="python inline-code" lang="python">while</code> loop can be used to count up or down. A counter variable can be used in the loop expression to determine the number of iterations executed. Ex: A programmer may want to print all even numbers between 1 and 20. The task can be done by using a counter initialized with 1. In each iteration the counter's value is increased by one, and a condition can check whether the counter's value is an even number or not. The change in the counter's value in each iteration is called the <term id="term-00002">step size</term>. The step size can be any positive or negative value. If the step size is a positive number, the counter counts in ascending order, and if the step size is a negative number, the counter counts in descending order.</para>
+    <para id="para-00007">A <code class="python inline-code" lang="python">while</code> loop can be used to count up or down. A counter variable can be used in the loop expression to determine the number of iterations executed. Ex: A programmer may want to print all even numbers between 1 and 20. The task can be done by using a counter initialized with 1. In each iteration, the counter's value is increased by one, and a condition can check whether the counter's value is an even number or not. The change in the counter's value in each iteration is called the <term id="term-00002">step size</term>. The step size can be any positive or negative value. If the step size is a positive number, the counter counts in ascending order, and if the step size is a negative number, the counter counts in descending order.</para>
     <example id="exam-00001">
-    <title>A program printing all odd numbers between 1 and 10.</title>
+    <title>A program printing all odd numbers between 1 and 10</title>
     <code class="python" lang="python">
     # Initialization
     counter = 1
@@ -86,7 +86,7 @@
     </note>
     <note class="learning-questions" id="note-00004">
     <title>while loop counting examples</title>
-    <para id="para-00008">Given the code, please answer the following questions.</para>
+    <para id="para-00008">Given the code, answer the following questions.</para>
     <code class="python" lang="python">
     n = 4
     while n > 0:
@@ -114,16 +114,16 @@
     </section>
   
     <note class="practice-program" id="note-00005">
-    <title>Reading inputs in a while loop.</title>
-    <para id="para-00012">Write a program that takes user inputs in a <code class="python inline-code" lang="python">while</code> loop until the user enters <code class="python inline-code" lang="python">'begin'</code>. Test the code with the given input values to check that the loop does not terminate until the input is <code class="python inline-code" lang="python">'begin'</code>. Once the input <code class="python inline-code" lang="python">'begin'</code> is received, print <code class="python inline-code" lang="python">"The while loop
-       condition has been met."</code></para>
+    <title>Reading inputs in a while loop</title>
+    <para id="para-00012">Write a program that takes user inputs in a <code class="python inline-code" lang="python">while</code> loop until the user enters <code class="python inline-code" lang="python">"begin"</code>. Test the code with the given input values to check that the loop does not terminate until the input is <code class="python inline-code" lang="python">"begin"</code>. Once the input <code class="python inline-code" lang="python">"begin"</code> is received, print <code class="python inline-code" lang="python">"The while loop
+       condition has been met."</code>.</para>
     <para id="para-00014">Enter different input words to see when the <code class="python inline-code" lang="python">while</code> loop condition is met.</para>
     <media alt="reading_inputs_in_a_while_loop_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_02_01_Reading-inputs-in-a-while-loop.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00006">
-    <title>Sum of odd numbers.</title>
+    <title>Sum of odd numbers</title>
     <para id="para-00013">Write a program that reads two integer values, <code class="python inline-code" lang="python">n1</code> and <code class="python inline-code" lang="python">n2</code>. Use a <code class="python inline-code" lang="python">while</code> loop to calculate the sum of odd numbers between <code class="python inline-code" lang="python">n1</code> and <code class="python inline-code" lang="python">n2</code> (inclusive of <code class="python inline-code" lang="python">n1</code> and <code class="python inline-code" lang="python">n2</code>). Remember, a number is odd if <code class="python inline-code" lang="python">number % 2 != 0</code>.</para>
     <media alt="sum_of_odd_numbers_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_02_02_Sum-of-odd-numbers.html"/>
