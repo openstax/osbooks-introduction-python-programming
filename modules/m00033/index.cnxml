@@ -10,13 +10,13 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Describe the execution paths of programs with nested <code class="python inline-code" lang="python">if-else</code> statements</item>
-    <item>Implement a program with nested <code class="python inline-code" lang="python">if-else</code> statements</item>
+    <item>Describe the execution paths of programs with nested <code class="python inline-code" lang="python">if-else</code> statements.</item>
+    <item>Implement a program with nested <code class="python inline-code" lang="python">if-else</code> statements.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Nested decision statements</title>
-    <para id="para-00002">Suppose a programmer is writing a program that reads in a game ID and player count and prints if the user has the right number of players for the game.</para>
+    <para id="para-00002">Suppose a programmer is writing a program that reads in a game ID and player count and prints whether the user has the right number of players for the game.</para>
     <para id="para-00003">The programmer may start with:</para>
     <code class="python" lang="python">
     if game == 1 and players &lt; 2:
@@ -84,7 +84,7 @@
    
     <note class="practice-program" id="note-00003">
     <title>Meal orders</title>
-    <para id="para-00010">Write a program that reads in a string, <code class="python inline-code" lang="python">"lunch"</code> or <code class="python inline-code" lang="python">"dinner"</code>, representing the menu choice and an integer, <code class="python inline-code" lang="python">1</code>, <code class="python inline-code" lang="python">2</code>, or <code class="python inline-code" lang="python">3</code>, representing the user's meal choice. The program then prints the user's meal choice.</para>
+    <para id="para-00010">Write a program that reads in a string, <code class="python inline-code" lang="python">"lunch"</code> or <code class="python inline-code" lang="python">"dinner"</code>, representing the menu choice, and an integer, <code class="python inline-code" lang="python">1</code>, <code class="python inline-code" lang="python">2</code>, or <code class="python inline-code" lang="python">3</code>, representing the user's meal choice. The program then prints the user's meal choice.</para>
     <para id="para-00011">Lunch Meal Options</para>
     <list id="list-00002">
     <item>1: Caesar salad</item>

@@ -75,7 +75,7 @@
     </section>
     <section id="sect-00003">
     <title>if-elif-else statements</title>
-    <para id="para-00010">Elifs can be chained with an <code class="python inline-code" lang="python">if-else</code> statement to create a more complex decision statement. Ex: A program shows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or two) places. Else if the piece is a bishop, show diagonal moves. Else if...(finish for the rest of the pieces).</para>
+    <para id="para-00010">Elifs can be chained with an <code class="python inline-code" lang="python">if-else</code> statement to create a more complex decision statement. Ex: A program shows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or two) places. Else if the piece is a bishop, show diagonal moves. Else if . . . (finish for the rest of the pieces).</para>
     <note class="guided-slides" id="note-00003">
     <title>Example: Possible chess moves</title>
     <media alt="chess_moves_slides">
@@ -127,13 +127,13 @@
     <title>Color wavelengths</title>
     <para id="para-00017">Write a program that reads in an integer representing a visible light wavelength in nanometers. Print the corresponding color using the following inclusive ranges:</para>
     <list id="list-00003">
-    <item>'Violet': 380–449</item>
-    <item>'Blue': 450–484</item>
-    <item>'Cyan': 485–499</item>
-    <item>'Green': 500–564</item>
-    <item>'Yellow': 565–589</item>
-    <item>'Orange': 590–624</item>
-    <item>'Red': 625–750</item>
+    <item>Violet: 380–449</item>
+    <item>Blue: 450–484</item>
+    <item>Cyan: 485–499</item>
+    <item>Green: 500–564</item>
+    <item>Yellow: 565–589</item>
+    <item>Orange: 590–624</item>
+    <item>Red: 625–750</item>
     </list>
     <para id="para-00018">Assume the input is within the visible light spectrum, 380-750 inclusive.</para>
     <para id="para-00019">Given input:</para>

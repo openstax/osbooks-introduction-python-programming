@@ -10,14 +10,14 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Identify the components of a conditional expression</item>
-    <item>Create a conditional expression</item>
+    <item>Identify the components of a conditional expression.</item>
+    <item>Create a conditional expression.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Conditional expressions</title>
     <para id="para-00002">A <term id="term-00001">conditional expression</term> (also known as a "ternary operator") is a simplified, single-line version of an <code class="python inline-code" lang="python">if-else</code> statement.</para>
-    <para id="para-00013">Conditional expression template</para>
+    <para id="para-00013">Conditional expression template:</para>
     <code class="python" lang="python">
     expression_if_true if condition else expression_if_false
     </code>
