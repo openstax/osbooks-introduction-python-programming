@@ -29,7 +29,7 @@
     <tbody>
     <row>
     <entry><para id="para-00006"><code class="python inline-code" lang="python">range(end)</code></para></entry>
-    <entry>Generates a sequence beginning at 0 until end with step size of 1.</entry>
+    <entry>Generates a sequence beginning at 0 until <code class="python inline-code" lang="python">end</code> with step size of 1.</entry>
     </row>
     <row>
     <entry><para id="para-00007"><code class="python inline-code" lang="python">range(start, end)</code></para></entry>
@@ -123,7 +123,7 @@
     <note class="practice-program" id="note-00001">
     <title>Prime numbers</title>
     <para id="para-00003">Write a program that takes in a positive integer number (<code class="python inline-code" lang="python">N</code>) and prints out the first <code class="python inline-code" lang="python">N</code> prime numbers on separate lines.</para>
-     <para id="para-00005">Note: a prime number is a number that is not divisible by any positive number larger than 1. To check if a number is prime, the condition of <code class="python inline-code" lang="python">number % i != 0</code> can be checked for <code class="python inline-code" lang="python">i</code> greater than <code class="python inline-code" lang="python">1</code> and less than <code class="python inline-code" lang="python">number</code>.</para>
+     <para id="para-00005">Note: A prime number is a number that is not divisible by any positive number larger than 1. To check whether a <code class="python inline-code" lang="python">number</code> is prime, the condition of <code class="python inline-code" lang="python">number % i != 0</code> can be checked for <code class="python inline-code" lang="python">i</code> greater than <code class="python inline-code" lang="python">1</code> and less than <code class="python inline-code" lang="python">number</code>.</para>
     <para id="para-00004">Ex: if <code class="python inline-code" lang="python">N = 6</code>, the output is:</para>
     <code class="python" lang="python">
     2
