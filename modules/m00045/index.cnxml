@@ -75,7 +75,7 @@
    
     <note class="practice-program" id="note-00005">
     <title>Updated terms and conditions prompt</title>
-    <para id="para-00011">Write an updated function <code class="python inline-code" lang="python">terms()</code> that asks the user to accept the terms and conditions, reads in <code class="python inline-code" lang="python">Y/N</code>, and outputs a response by calling <code class="python inline-code" lang="python">accepted()</code> or <code class="python inline-code" lang="python">rejected()</code>.  <code class="python inline-code" lang="python">accepted()</code> prints <code class="python inline-code" lang="python">"Thank you for accepting the terms."</code> <code class="python inline-code" lang="python">rejected()</code> prints <code class="python inline-code" lang="python">"You have rejected the terms. Thank you."</code></para>
+    <para id="para-00011">Write an updated function, <code class="python inline-code" lang="python">terms()</code>, that asks the user to accept the terms and conditions, reads in <code class="python inline-code" lang="python">Y/N</code>, and outputs a response by calling <code class="python inline-code" lang="python">accepted()</code> or <code class="python inline-code" lang="python">rejected()</code>.  <code class="python inline-code" lang="python">accepted()</code> prints <code class="python inline-code" lang="python">"Thank you for accepting the terms."</code> and <code class="python inline-code" lang="python">rejected()</code> prints <code class="python inline-code" lang="python">"You have rejected the terms. Thank you."</code>.</para>
     <para id="para-00012">Given inputs <code class="python inline-code" lang="python">2</code>, <code class="python inline-code" lang="python">"Y"</code> and <code class="python inline-code" lang="python">"N"</code>, the output is:</para>
     <code class="python" lang="python">
     Do you accept the terms and conditions?
@@ -94,7 +94,7 @@
     </note>
     <note class="practice-program" id="note-00006">
     <title>Laundromat information</title>
-    <para id="para-00014">Write a program that uses 3 functions to print information about a laundromat, Liam's Laundry:</para>
+    <para id="para-00014">Write a program that uses three functions to print information about a laundromat, Liam's Laundry:</para>
     <list id="list-00002">
     <item><code class="python inline-code" lang="python">laundromat_info()</code>: Prints the name, Liam's Laundry, and hours of operation, 7a - 11p,  and calls <code class="python inline-code" lang="python">washers_open()</code> and <code class="python inline-code" lang="python">dryers_open()</code></item>
     <item><code class="python inline-code" lang="python">washers_open()</code>: Reads an integer, assigns <code class="python inline-code" lang="python">washer_count</code> with the value, and prints <code class="python inline-code" lang="python">washer_count</code></item>

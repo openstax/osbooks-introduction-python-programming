@@ -10,13 +10,13 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Identify the scope of a program's variables</item>
-    <item>Discuss the impact of a variable's scope</item>
+    <item>Identify the scope of a program's variables.</item>
+    <item>Discuss the impact of a variable's scope.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Global scope</title>
-    <para id="para-00002">A variable's <term id="term-00001">scope</term> is the part of a program where the variable can be accessed. A variable created outside of a function has <term id="term-00002">global scope</term> and can be accessed anywhere in the program. A Python program begins in the global scope, and the global scope lasts for the entire program execution.</para>
+    <para id="para-00002">A variable's <term id="term-00001">scope</term> is the part of a program where the variable can be accessed. A variable created outside of a function has <term id="term-00002">global scope</term> and can be accessed anywhere in the program. A Python program begins in global scope, and the global scope lasts for the entire program execution.</para>
     <note class="guided-slides" id="note-00001">
     <title>Global variables in a program with a function</title>
     <media alt="global_variables_slides">
@@ -72,7 +72,7 @@
     </section>
     <section id="sect-00004">
     <title>Using local and global variables together</title>
-    <para id="para-00010">Python allows global and local variables to have the same name, which can lead to unexpected program behavior. A function treats a variable edited within the function as a local variable unless told otherwise. To edit a global variable inside a function, the variable must be declared with the global keyword.</para>
+    <para id="para-00010">Python allows global and local variables to have the same name, which can lead to unexpected program behavior. A function treats a variable edited within the function as a local variable unless told otherwise. To edit a global variable inside a function, the variable must be declared with the <code class="python inline-code" lang="python">global</code> keyword.</para>
     <note class="guided-slides" id="note-00005">
     <title>Editing global variables in a program with a function</title>
     <media alt="editing_global_variables_slides">
@@ -81,7 +81,7 @@
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Using both local and global variables</title>
-    <para id="para-00011">Consider the following variations on the example program with the input, <code class="python inline-code" lang="python">9</code>.</para>
+    <para id="para-00011">Consider the following variations on the example program with the input <code class="python inline-code" lang="python">9</code>.</para>
     <exercise id="exer-00007">
     <problem id="prob-00007">
     <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch06-m03-p07"/></para>
@@ -111,14 +111,14 @@
     <item>Reads in the number of players.</item>
     <item>Computes the number of teammates still needed. A full team is 3 players.</item>
     <item>Calls the function <code class="python inline-code" lang="python">find_teammates()</code> with the calculated number.</item>
-    <item>Prints <code class="python inline-code" lang="python">"Match starting..."</code></item>
+    <item>Prints <code class="python inline-code" lang="python">"Match starting . . ."</code>.</item>
     </list>
     <para id="para-00018"><code class="python inline-code" lang="python">practice()</code>:</para>
     <list id="list-00003">
     <item>Reads in a string representing the desired map.</item>
-    <item>Prints <code class="python inline-code" lang="python">"Launching practice on [desired map]"</code></item>
+    <item>Prints <code class="python inline-code" lang="python">"Launching practice on [desired map]"</code>.</item>
     </list>
-    <para id="para-00019">Note <code class="python inline-code" lang="python">find_teammates()</code> is provided and does not need to be edited.</para>
+    <para id="para-00019">Note: <code class="python inline-code" lang="python">find_teammates()</code> is provided and does not need to be edited.</para>
     <para id="para-00020">Given input:</para>
     <code class="python" lang="python">
     br
