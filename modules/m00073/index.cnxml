@@ -12,6 +12,6 @@
     </media>
     <caption>credit: modification of work "Dictionary", by Caleb Roenigk/Flickr, CC BY 2.0</caption>
     </figure>
-    <para id="para-00001">A Python <term id="term-00001">dictionary</term> is a data type for storing the data in key-value pair format. In this chapter, the dictionary data type is introduced. This chapter also introduces ways to use dictionaries in the code, including looping over dictionary items and performing conditional statements on a dictionary.</para>
+    <para id="para-00001">A Python <term id="term-00001">dictionary</term> is a data type for storing the data in a key-value pair format. In this chapter, the dictionary data type is introduced. This chapter also introduces ways to use dictionaries, including looping over dictionary items and performing conditional statements on a dictionary.</para>
     </content>
 </document>

@@ -18,7 +18,7 @@
     <title>Conditionals for dictionary</title>
     <para id="para-00002">Conditional statements can be used with dictionaries to check if certain keys, values, or dictionary items exist in the dictionary or if a value satisfies a particular condition.</para>
     <example id="exam-00001">
-      <title>Templates and examples of a conditional statement on a dictionary.</title>
+      <title>Templates and examples of a conditional statement on a dictionary</title>
 <table summary=" " id="table-00001">
 <tgroup cols="1">
 <thead>
@@ -149,9 +149,9 @@ print(2014 in movies.values())
     </section>
     <section id="sect-00003">
     <title>Looping on a dictionary</title>
-    <para id="para-00007">Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a dictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using <code class="python inline-code" lang="python">keys()</code> function and are passed to the loop variable one at a time. When looping over items using <code class="python inline-code" lang="python">items()</code> function, both the key and value for each item are passed to the loop variable.</para>
+    <para id="para-00007">Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a dictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the <code class="python inline-code" lang="python">keys()</code> function and are passed to the loop variable one at a time. When looping over items using the <code class="python inline-code" lang="python">items()</code> function, both the key and value for each item are passed to the loop variable.</para>
     <note id="note-00002">
-    <title>A for loop over a dictionary retrieves each key in the dictionary.</title>
+    <title>A for loop over a dictionary retrieves each key in the dictionary</title>
     <code class="python" lang="python">
     for key in dictionary: # Loop expression
       # Statements to execute in the loop
@@ -161,7 +161,7 @@ print(2014 in movies.values())
     </note>
 
     <example id="exam-00002">
-      <title>Iterating over a dictionary.</title>
+      <title>Iterating over a dictionary</title>
 <table summary=" " id="table-00005">
 <tgroup cols="1">
 <thead>

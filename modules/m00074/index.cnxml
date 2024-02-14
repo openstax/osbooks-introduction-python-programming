@@ -17,7 +17,7 @@
     </section>
     <section id="sect-00002">
     <title>Dictionaries</title>
-    <para id="para-00002">A <term id="term-00001">dictionary</term> in Python is a container object including key-value pairs. An example of a <term id="term-00002">key-value</term> item is words in an English dictionary with corresponding definitions.</para>
+    <para id="para-00002">A <term id="term-00001">dictionary</term> in Python is a container object including key-value pairs. An example of a <term id="term-00002">key-value</term> item is a word in an English dictionary with its corresponding definition.</para>
     <note class="guided-slides" id="note-00001">
     <title>Dictionaries</title>
     <media alt="dictionaries_slides">
@@ -46,7 +46,7 @@
     </section>
     <section id="sect-00003">
     <title>Dictionary type and properties</title>
-    <para id="para-00007">The <term id="term-00003">dict</term> type implements a dictionary in Python. Since a dictionary object is used to lookup values using keys, a dictionary object cannot hold duplicate key values.</para>
+    <para id="para-00007">The <term id="term-00003">dict</term> type implements a dictionary in Python. Since a dictionary object is used to look up values using keys, a dictionary object cannot hold duplicate key values.</para>
     <note class="guided-slides" id="note-00003">
     <title>Dictionary properties</title>
     <media alt="dictionary_properties_slides">
@@ -76,7 +76,7 @@
   
     <note class="practice-program" id="note-00005">
     <title>Investigate variable types</title>
-    <para id="para-00012">Given the variables in the code below, examine variables' types.</para>
+    <para id="para-00012">Given the variables in the code below, examine the variables' types.</para>
     <media alt="investigate_variable_types_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_02_01_Investigate-variable-types.html"/>
     </media>

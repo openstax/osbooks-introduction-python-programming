@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Nested dictionaries</title>
-    <para id="para-00002">As described before, Python dictionaries are a type of data structure that allows for storing data in key-value pairs. <term id="term-00001">Nested dictionaries</term> are dictionaries that are stored as values within another dictionary. Ex: An organizational chart with keys being different departments and values being dictionaries of employees in a given department. For storing employee information in a department, a dictionary can be used with keys being employee IDs and values being employee names. The figure below outlines the structure of such nested dictionaries and how nested values can be accessed.</para>
+    <para id="para-00002">As described before, Python dictionaries are a type of data structure that allows for storing data in key-value pairs. <term id="term-00001">Nested dictionaries</term> are dictionaries that are stored as values within another dictionary. Ex: An organizational chart with keys being different departments and values being dictionaries of employees in a given department. For storing employee information in a department, a dictionary can be used with keys being employee IDs and values being employee names. The tables below outline the structure of such nested dictionaries and how nested values can be accessed.</para>
     
 <example id="exam-00001">
 <title>Defining nested dictionaries and accessing elements</title>
@@ -97,10 +97,10 @@ Maryam Samimi</code>
     </section>
     <section id="sect-00003">
     <title>Dictionary comprehension</title>
-    <para id="para-00006"><term id="term-00002">Dictionary comprehension</term> is a concise and efficient way to create a dictionary in Python. With dictionary comprehension, elements of an iterable object are transformed into key-value pairs. The syntax of dictionary comprehension is similar to a list comprehension, but instead of using square brackets, curly braces are used to define a dictionary.</para>
+    <para id="para-00006"><term id="term-00002">Dictionary comprehension</term> is a concise and efficient way to create a dictionary in Python. With dictionary comprehension, elements of an iterable object are transformed into key-value pairs. The syntax of dictionary comprehension is similar to list comprehension, but instead of using square brackets, curly braces are used to define a dictionary.</para>
     <para id="para-00007">Here is a general syntax for dictionary comprehension:</para>
     <note id="note-00002">
-    <title>Syntax for dictionary comprehension.</title>
+    <title>Syntax for dictionary comprehension</title>
     <code class="python" lang="python">
     {key_expression: value_expression for element in iterable}
     </code>
@@ -140,7 +140,7 @@ Maryam Samimi</code>
     </note>
     <note class="practice-program" id="note-00006">
     <title>Restructuring the company data</title>
-    <para id="para-00012">Suppose you have a dictionary that contains information about employees at a company. Each employee is identified by an ID number, and their information includes their name, department, and salary. You want to create a nested dictionary that groups employees by department so that you can easily see the names and salaries of all employees in each department. Write a Python program that given a dictionary, <code class="python inline-code" lang="python">employees</code>, outputs a nested dictionary, <code class="python inline-code" lang="python">dept_employees</code>, that groups employees by department.</para>
+    <para id="para-00012">Suppose you have a dictionary that contains information about employees at a company. Each employee is identified by an ID number, and their information includes their name, department, and salary. You want to create a nested dictionary that groups employees by department so that you can easily see the names and salaries of all employees in each department. Write a Python program that when given a dictionary, <code class="python inline-code" lang="python">employees</code>, outputs a nested dictionary, <code class="python inline-code" lang="python">dept_employees</code>, which groups employees by department.</para>
     <code class="python" lang="python">
     Input:
     employees = {

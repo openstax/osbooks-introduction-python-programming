@@ -21,10 +21,10 @@
     <title>Accessing dictionary items</title>
     <para id="para-00002">In Python, values associated with keys in a dictionary can be accessed using the keys as indexes. Here are two ways to access dictionary items in Python:
     <list id="list-00002">
-    <item>Square bracket notation: Square brackets <code class="python inline-code" lang="python">[]</code> with the key inside accesses the value associated with that key. If the key is not found, an exception will be thrown.</item>
-    <item><code class="python inline-code" lang="python">get()</code> method: <code class="python inline-code" lang="python">get()</code> method is called with the key as an argument to access the value associated with that key. If the key is not found, the method returns <code class="python inline-code" lang="python">None</code> by default or a default value specified as the second argument.</item>
+    <item>Square bracket notation: Square brackets <code class="python inline-code" lang="python">[]</code> with the key inside access the value associated with that key. If the key is not found, an exception will be thrown.</item>
+    <item><code class="python inline-code" lang="python">get()</code> method: The <code class="python inline-code" lang="python">get()</code> method is called with the key as an argument to access the value associated with that key. If the key is not found, the method returns <code class="python inline-code" lang="python">None</code> by default, or a default value specified as the second argument.</item>
     </list></para>
-    <para id="para-00003">Ex: In the code below, a dictionary object <code class="python inline-code" lang="python">my_dict</code> is initialized with items <code class="python inline-code" lang="python">{"apple": 2, "banana": 3, "orange": 4}</code>. The square bracket notation and <code class="python inline-code" lang="python">get()</code> method are used to access values associated with keys <code class="python inline-code" lang="python">"banana"</code> and <code class="python inline-code" lang="python">"apple"</code>, respectively. When accessing the dictionary to obtain key <code class="python inline-code" lang="python">"pineapple"</code>, <code class="python inline-code" lang="python">-1</code> is returned since the key does not exist in the dictionary.</para>
+    <para id="para-00003">Ex: In the code below, a dictionary object <code class="python inline-code" lang="python">my_dict</code> is initialized with items <code class="python inline-code" lang="python">{"apple": 2, "banana": 3, "orange": 4}</code>. The square bracket notation and <code class="python inline-code" lang="python">get()</code> method are used to access values associated with the keys <code class="python inline-code" lang="python">"banana"</code> and <code class="python inline-code" lang="python">"apple"</code>, respectively. When accessing the dictionary to obtain the key <code class="python inline-code" lang="python">"pineapple"</code>, <code class="python inline-code" lang="python">-1</code> is returned since the key does not exist in the dictionary.</para>
     <code class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     print(my_dict["banana"]) # Prints: 3
@@ -59,7 +59,7 @@
     </section>
     <section id="sect-00003">
     <title>Obtaining dictionary keys and values</title>
-    <para id="para-00008">Dictionary keys, values, and both keys and values can be obtained using <code class="python inline-code" lang="python">keys()</code>, <code class="python inline-code" lang="python">values()</code>, and <code class="python inline-code" lang="python">items()</code> function calls, respectively. The return type of <code class="python inline-code" lang="python">keys()</code>, <code class="python inline-code" lang="python">values()</code>, and <code class="python inline-code" lang="python">items()</code> are <code class="python inline-code" lang="python">dict_keys</code>, <code class="python inline-code" lang="python">dict_values</code>, and <code class="python inline-code" lang="python">dict_items</code>, which can be converted to a <code class="python inline-code" lang="python">list</code> object using list constructor <code class="python inline-code" lang="python">list()</code>.</para>
+    <para id="para-00008">Dictionary keys, values, and both keys and values can be obtained using <code class="python inline-code" lang="python">keys()</code>, <code class="python inline-code" lang="python">values()</code>, and <code class="python inline-code" lang="python">items()</code> function calls, respectively. The return type of <code class="python inline-code" lang="python">keys()</code>, <code class="python inline-code" lang="python">values()</code>, and <code class="python inline-code" lang="python">items()</code> are <code class="python inline-code" lang="python">dict_keys</code>, <code class="python inline-code" lang="python">dict_values</code>, and <code class="python inline-code" lang="python">dict_items</code>, which can be converted to a <code class="python inline-code" lang="python">list</code> object using the list constructor <code class="python inline-code" lang="python">list()</code>.</para>
     <example id="exam-00001">
     <title>String template formatting for course enrollment requests</title>
     <para id="para-00009">A dictionary object with items <code class="python inline-code" lang="python">{"a": 97, "b": 98, "c": 99}</code> is created. Functions <code class="python inline-code" lang="python">keys()</code>, <code class="python inline-code" lang="python">values()</code>, and <code class="python inline-code" lang="python">items()</code> are called to obtain keys, values, and items in the dictionary, respectively. <code class="python inline-code" lang="python">list()</code> is also used to convert the output to a <code class="python inline-code" lang="python">list</code> object.</para>
@@ -101,16 +101,16 @@
     </section>
     <section id="sect-00004">
     <title>Dictionary mutability</title>
-    <para id="para-00015">In Python, a dictionary is a mutable data type, which means that dictionary's content can be modified after creation. Dictionary items can be added, updated, or deleted from a dictionary after a dictionary object is created.</para>
+    <para id="para-00015">In Python, a dictionary is a mutable data type, which means that a dictionary's content can be modified after creation. Dictionary items can be added, updated, or deleted from a dictionary after a dictionary object is created.</para>
     <para id="para-00016">To add an item to a dictionary, either the square bracket notation or <code class="python inline-code" lang="python">update()</code> function can be used.</para>
     <list id="list-00003">
-    <item>Square bracket notation: When using square brackets to access a new key object and assign a value to the key, the new key-value pair will be added to the dictionary.
+    <item>Square bracket notation: When using square brackets to create a new key object and assign a value to the key, the new key-value pair will be added to the dictionary.
     <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict["pineapple"] = 1
     print(my_dict) # Prints: {"apple": 2, "banana": 3, "orange": 4, "pineapple": 1}
     </code></item>
-    <item><code class="python inline-code" lang="python">update()</code> method: <code class="python inline-code" lang="python">update()</code> method can be called with additional key-value pairs to update the dictionary content.
+    <item><code class="python inline-code" lang="python">update()</code> method: the <code class="python inline-code" lang="python">update()</code> method can be called with additional key-value pairs to update the dictionary content.
     <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict.update({"pineapple": 1, "cherry": 0})
