@@ -66,11 +66,11 @@
     <title>The diamond problem and mixin classes</title>
     <para id="para-00007">Multiple inheritance should be implemented with care. The <term id="term-00002">diamond problem</term> occurs when a class inherits from multiple classes that share a common superclass. Ex: <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code> both inherit from <code class="python inline-code" lang="python">Food</code>, and <code class="python inline-code" lang="python">ApplePie</code> inherits from <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code>.</para>
     <figure id="fig-00001">
-    <title>The diamond problem.</title>
+    <title/>
     <media alt="">
     <image mime-type="image/jpg" src="../../media/Python_13_05_001.png"/>
     </media>
-    <caption>If both <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code> override a <code class="python inline-code" lang="python">Food</code> method, the overridden <code class="python inline-code" lang="python">Food</code> method that <code class="python inline-code" lang="python">ApplePie</code> inherits is ambiguous. Thus, diamond shaped inheritance should be avoided.</caption>
+    <caption><emphasis effect="bold">The diamond problem. </emphasis>If both <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code> override a <code class="python inline-code" lang="python">Food</code> method, the overridden <code class="python inline-code" lang="python">Food</code> method that <code class="python inline-code" lang="python">ApplePie</code> inherits is ambiguous. Thus, diamond shaped inheritance should be avoided.</caption>
     </figure>
     <para id="para-00008">Mixin classes promote modularity and can remove the diamond problem. A mixin class:</para>
     <list id="list-00002">

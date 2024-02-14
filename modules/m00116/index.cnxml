@@ -55,15 +55,7 @@
       <iframe width="660" height="371.4" src="https://www.openstax.org/r/displaying-output"/>
       </media>
       </note></section>
-      
-      <section  id="sect-110">
-        
-        <figure class="unnumbered" id="fig-00001">
-          <media alt="displaying_output_video">
-            <iframe width="660" height="371.4" src="https://www.openstax.org/r/displaying-output"/>
-            </media>
-          </figure>
-        </section>
+  
     <section id="sect-00010">
     <title>Learning questions</title>
     <para id="para-00014">After introducing a new concept with concise text and explaining the concept with a video-based animation, each subsection includes engagement in the form of learning questions. These questions reinforce the concepts taught, explain concepts in more depth, directly address misconceptions and errors commonly made by new programmers, and teach related concepts.</para>
@@ -111,7 +103,7 @@
     <title>Academic Integrity</title>
     <para id="para-00041">Academic integrity builds trust, understanding, equity, and genuine learning. While students may encounter significant challenges in their courses and their lives, doing their own work and maintaining a high degree of authenticity will result in meaningful outcomes that will extend far beyond their college career. Faculty, administrators, resource providers, and students should work together to maintain a fair and positive experience.</para>
     <para id="para-00042">We realize that students benefit when academic integrity ground rules are established early in the course. To that end, OpenStax has created an interactive to aid with academic integrity discussions in your course.</para>
-    <figure id="fig-00007">
+    <figure class="unnumbered" id="fig-00007">
     <media alt="">
     <image mime-type="image/png" src="../../media/OSX_Preface_AcademicIntegritySliderv3-1-column.jpg"/>
     </media>

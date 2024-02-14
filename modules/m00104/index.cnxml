@@ -80,11 +80,11 @@
     <para id="para-00011">In Python, files are read from and written to as Unicode by default. Many common file formats use Unicode such as text files (.txt), Python code files (.py), and other code files (.c,.java).</para>
     <para id="para-00012">Comma separated value (CSV, .csv) files are often used for storing tabular data. These files store cells of information as Unicode separated by commas. CSV files can be read using methods learned thus far as seen in the example below.</para>
     <figure id="fig-00001">
-    <title>CSV files</title>
+    <title/>
     <media alt="">
     <image mime-type="image/jpg" src="../../media/Python_14_3_image1.png"/>
     </media>
-    <caption>A CSV file is simply a text file with rows separated by newline <code class="python inline-code" lang="python">\n</code> characters and cells separated by commas. </caption>
+    <caption><emphasis effect="bold">CSV files. </emphasis>A CSV file is simply a text file with rows separated by newline <code class="python inline-code" lang="python">\n</code> characters and cells separated by commas. </caption>
     </figure>
     <para id="para-00112">Raw text of the file:</para>
     <para id="para-00113"><code class="python inline-code" lang="python">Title, Author, Pages\n1984, George Orwell, 268\nJane Eyre, Charlotte Bronte, 532\nWalden, Henry David Thoreau, 156\nMoby Dick, Herman Melville, 538</code></para>
