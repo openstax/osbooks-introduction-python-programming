@@ -77,10 +77,10 @@
 
     <note class="practice-program" id="note-00006">
     <title>Side effects</title>
-    <para id="para-00011">This exercise is a continuation of the "Missing imports" exercise. Previously, you added missing import statements to the top of the program. Modify the program to prevent side effects when importing the program as a module:</para>
+    <para id="para-00011">This exercise is a continuation of the "Missing imports" exercise. Previously, you added missing import statements to the top of the program. Now, modify the program to prevent side effects when importing the program as a module:</para>
     <list list-type="enumerated" id="list-00002">
     <item>Add <code class="python inline-code" lang="python">if __name__ == "__main__"</code> at the end.</item>
-    <item>Move all test code under that if statement.</item>
+    <item>Move all test code under that <code class="python inline-code" lang="python">if</code> statement.</item>
     </list>
     <para id="para-00012">The program should run without errors and produce the same output as before.</para>
     <media alt="side_effects_program">

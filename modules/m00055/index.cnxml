@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Colors on websites</title>
-    <para id="para-00002">This section introduces an example module for working with <link url="https://openstax.org/r/100htmlcolors">HTML colors</link>. HyperText Markup Language (_HTML_) is used to design websites and graphical applications. Web browsers like Chrome and Safari read HTML and display the corresponding contents. Ex: The HTML code <code class="python inline-code" lang="python">&lt;p style="color: Red">Look out!&lt;/p></code> represents a paragraph with red text.</para>
+    <para id="para-00002">This section introduces an example module for working with <link url="https://openstax.org/r/100htmlcolors">HTML colors</link>. HyperText Markup Language (HTML) is used to design websites and graphical applications. Web browsers like Chrome and Safari read HTML and display the corresponding contents. Ex: The HTML code <code class="python inline-code" lang="python">&lt;p style="color: Red">Look out!&lt;/p></code> represents a paragraph with red text.</para>
     <para id="para-00003">HTML defines 140 standard <link url="https://openstax.org/r/100colornames">color names</link>. Additional colors can be specified using a hexadecimal format: <code class="python inline-code" lang="python">#RRGGBB</code>. The digits RR, GG, and BB represent the red, green, and blue components of the color. Ex: <code class="python inline-code" lang="python">#DC143C</code> is 220 red + 20 green + 60 blue, which is the color <code class="python inline-code" lang="python">Crimson</code>.</para>
     <para id="para-00004">Red, green, and blue values range from 0 to 255 (or 00 to FF in hexadecimal). Lower values specify darker colors, and higher values specify lighter colors. Ex: <code class="python inline-code" lang="python">#008000</code> is the color <code class="python inline-code" lang="python">Green</code>, and <code class="python inline-code" lang="python">#00FF00</code> is the color <code class="python inline-code" lang="python">Lime</code>.</para>
     <note class="guided-slides" id="note-00001">
@@ -122,9 +122,9 @@
     </section>
     <section id="sect-00004">
     <title>Module documentation</title>
-    <para id="para-00013">The builtin <code class="python inline-code" lang="python">help()</code> function provides a summary of a module's functions and data. Calling <code class="python inline-code" lang="python">help(module_name)</code> in a shell is a convenient way to learn about a module.</para>
+    <para id="para-00013">The built-in <code class="python inline-code" lang="python">help()</code> function provides a summary of a module's functions and data. Calling <code class="python inline-code" lang="python">help(module_name)</code> in a shell is a convenient way to learn about a module.</para>
     <example id="exam-00001">
-    <title>Output of help(colors) in a shell.</title>
+    <title>Output of help(colors) in a shell</title>
     <para id="para-00014">The documentation below is automatically generated from the docstrings in <emphasis effect="italics">colors.py</emphasis>.</para>
     <code class="python" lang="python">
     >>> <emphasis effect="bold">help(colors)</emphasis>

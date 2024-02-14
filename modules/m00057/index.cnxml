@@ -15,7 +15,7 @@
     <item>Python comes with over 200 built-in modules and hundreds of thousands of third-party modules. Programmers can search for modules on <link url="https://openstax.org/r/100docstrings">docs.python.org</link> and <link url="https://openstax.org/r/100pypi">pypi.org</link>.</item>
     </list>
     <table summary=" " id="table-00001">
-    <title>Chapter 7 reference</title>
+    <title>Chapter 7 reference.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -34,7 +34,7 @@
     </row>
     <row>
     <entry><para id="para-00004"><code class="python inline-code" lang="python">if __name__ == "__main__":</code></para></entry>
-    <entry>A line of code found at the end of many modules. This statement indicates what code to run if the module is executed as a program (or in other words, what code <emphasis effect="italics">not</emphasis> to run if this module is imported by another program).</entry>
+    <entry>A line of code found at the end of many modules. This statement indicates what code to run if the module is executed as a program (in other words, what code <emphasis effect="italics">not</emphasis> to run if this module is imported by another program).</entry>
     </row>
     <row>
     <entry><para id="para-00005"><code class="python inline-code" lang="python">help(module_name)</code></para></entry>

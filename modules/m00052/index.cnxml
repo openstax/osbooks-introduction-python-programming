@@ -153,7 +153,7 @@
     </note>
     <note class="practice-program" id="note-00005">
     <title>European vacation</title>
-    <para id="para-00014">Write a program that uses the <code class="python inline-code" lang="python">conversion</code> module from the previous exercise to complete a short story. The program's output should match the following example (input in bold).</para>
+    <para id="para-00014">Write a program that uses the <code class="python inline-code" lang="python">conversion</code> module from the previous exercise to complete a short story. The program's output should match the following example (input in bold):</para>
     <code class="python" lang="python">
     How fast were you driving? 180
     Woah, that's like 112 mph!

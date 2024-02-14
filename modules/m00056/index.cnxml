@@ -19,7 +19,7 @@
     <para id="para-00002">The <term id="term-00001">Python Standard Library</term> is a collection of built-in functions and modules that support common programming tasks. Ex: The <code class="python inline-code" lang="python">math</code> module provides functions like <code class="python inline-code" lang="python">sqrt()</code> and constants like <code class="python inline-code" lang="python">pi</code>. Python's official documentation includes a <link url="https://openstax.org/r/100pythlibrary">library reference</link> and a <link url="https://openstax.org/r/100200modules">module index</link> for becoming familiar with the standard library.</para>
     <para id="para-00003">For decades, Python has maintained a "<link url="https://openstax.org/r/100batteries">batteries included</link>" philosophy. This philosophy means that the standard library should come with everything most programmers need. In fact, the standard library includes over 200 built-in modules!</para>
     <table summary=" " id="table-00001">
-    <title>Example built-in modules in the standard library</title>
+    <title>Example built-in modules in the standard library.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -97,7 +97,7 @@
     <para id="para-00009">PyPI allows anyone to develop and share modules with the Python community. Module authors include individuals, large companies, and non-profit organizations. PyPI helps programmers install modules and receive updates.</para>
     <para id="para-00010">Most software available on PyPI is free and open source. PyPI is supported by the <link url="https://openstax.org/r/100foundation">Python Software Foundation</link> and is maintained by an independent group of developers.</para>
     <table summary=" " id="table-00002">
-    <title>Example third-party modules available from PyPI</title>
+    <title>Example third-party modules available from PyPI.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -192,7 +192,7 @@
     <title>Exploring further</title>
     <para id="para-00015">Programming blogs often highlight PyPI modules to demonstrate the usefulness of Python. The following examples provide more background information about the modules listed above.</para>
     <list id="list-00002">
-    <item><link url="https://openstax.org/r/100simplelearn">Top 10 Python Libraries for Data Science for 2023</link></item>
+    <item><link url="https://openstax.org/r/100simplelearn">Top 20 Python Libraries for Data Science for 2023</link></item>
     <item><link url="https://openstax.org/r/100library2022">24 Best Python Libraries You Should Check in 2022</link></item>
     <item><link url="https://openstax.org/r/100packages2021">Most Popular Python Packages in 2021</link></item>
     </list>
