@@ -10,18 +10,18 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Explain the purpose of logical operators</item>
-    <item>Describe the truth tables for and, or, and not</item>
-    <item>Create expressions with logical operators</item>
-    <item>Interpret if-else statements with conditions using logical operators</item>
+    <item>Explain the purpose of logical operators.</item>
+    <item>Describe the truth tables for <code class="python inline-code" lang="python">and</code>, <code class="python inline-code" lang="python">or</code>, and <code class="python inline-code" lang="python">not</code>.</item>
+    <item>Create expressions with logical operators.</item>
+    <item>Interpret <code class="python inline-code" lang="python">if-else</code> statements with conditions using logical operators.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Logical operator: and</title>
     <para id="para-00002">Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that <code class="python inline-code" lang="python">hour &#62;= 9</code> and <code class="python inline-code" lang="python">hour &#60; 17</code>. A <term id="term-00001">logical operator</term> takes condition operand(s) and produces <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.</para>
-    <para id="para-00003">Python has 3 logical operators: <emphasis effect="italics">and</emphasis>, <emphasis effect="italics">or</emphasis>, and <emphasis effect="italics">not</emphasis>. The <term id="term-00002">and</term> operator takes 2 condition operands and returns <code class="python inline-code" lang="python">True</code> if both conditions are True.</para>
+    <para id="para-00003">Python has three logical operators: <emphasis effect="italics">and</emphasis>, <emphasis effect="italics">or</emphasis>, and <emphasis effect="italics">not</emphasis>. The <term id="term-00002">and</term> operator takes two condition operands and returns <code class="python inline-code" lang="python">True</code> if both conditions are true.</para>
     <table summary=" " id="table-00001">
-    <title>Truth table: p and q</title>
+    <title>Truth table: p and q.</title>
     <tgroup cols="3">
     <thead>
     <row>
@@ -86,9 +86,9 @@
     </section>
     <section id="sect-00003">
     <title>Logical operator: or</title>
-    <para id="para-00008">Sometimes a decision only requires one condition to be true. Ex: If a student is in the band or choir, they will perform in the spring concert. The <term id="term-00003">or</term> operator takes 2 condition operands and returns <code class="python inline-code" lang="python">True</code> if either condition is <code class="python inline-code" lang="python">True</code>.</para>
+    <para id="para-00008">Sometimes a decision only requires one condition to be true. Ex: If a student is in the band or choir, they will perform in the spring concert. The <term id="term-00003">or</term> operator takes two condition operands and returns <code class="python inline-code" lang="python">True</code> if either condition is <code class="python inline-code" lang="python">true</code>.</para>
     <table summary=" " id="table-00002">
-    <title>Truth table: p or q</title>
+    <title>Truth table: p or q.</title>
     <tgroup cols="3">
     <thead>
     <row>
@@ -148,10 +148,10 @@
     </section>
     <section id="sect-00004">
     <title>Logical operator: not</title>
-    <para id="para-00012">If the computer is not on, press the power button. The <term id="term-00004">not</term> operator takes 1 condition operand and returns <code class="python inline-code" lang="python">True</code> when the operand is False and returns <code class="python inline-code" lang="python">False</code> when the operand is True.</para>
-    <para id="para-00013"><emphasis effect="italics">not</emphasis> is a useful operator that can make a condition more readable and can be used to toggle a boolean's value. Ex: <code class="python inline-code" lang="python">is_on = not is_on</code>.</para>
+    <para id="para-00012">If the computer is not on, press the power button. The <term id="term-00004">not</term> operator takes one condition operand and returns <code class="python inline-code" lang="python">True</code> when the operand is false and returns <code class="python inline-code" lang="python">False</code> when the operand is true.</para>
+    <para id="para-00013"><emphasis effect="italics">not</emphasis> is a useful operator that can make a condition more readable and can be used to toggle a Boolean's value. Ex: <code class="python inline-code" lang="python">is_on = not is_on</code>.</para>
     <table summary=" " id="table-00003">
-    <title>Truth table: not p</title>
+    <title>Truth table: not p.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -200,7 +200,7 @@
     <note class="practice-program" id="note-00007">
     <title>Speed limits</title>
     <para id="para-00017">Write a program that reads in a car's speed as an integer and checks if the car's speed is within the freeway limits. A car's speed must be at least 45 mph but no greater than 70 mph on the freeway.</para>
-    <para id="para-00018">If the speed is within the limits, print "Good driving". Else, print "Follow the speed limits"</para>
+    <para id="para-00018">If the speed is within the limits, print "Good driving". Else, print "Follow the speed limits".</para>
     <media alt="speed_limits_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_04_05_Speed-limits.html"/>
     </media>
