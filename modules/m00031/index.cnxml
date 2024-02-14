@@ -156,7 +156,7 @@
     <item>Avoid spaces immediately inside parentheses.<newline/>
     Avoid: <code class="python inline-code" lang="python">x = ( 4 * y )</code><newline/>
     Better: <code class="python inline-code" lang="python">x = (4 * y)</code></item>
-    <item>Surround the following operators with one space: assignment, augment assignment, comparison, boolean.<newline/>
+    <item>Surround the following operators with one space: assignment, augment assignment, comparison, Boolean.<newline/>
     Avoid: <code class="python inline-code" lang="python">x= y&lt;44</code><newline/>
     Better: <code class="python inline-code" lang="python">x = y &lt; 44</code></item>
     <item>Consider adding whitespace around operators with lower priority.<newline/>
