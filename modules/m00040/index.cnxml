@@ -17,7 +17,7 @@
     <section id="sect-00002">
     <title>Break</title>
     <para id="para-00002">A <term id="term-00001">break</term> statement is used within a <code class="python inline-code" lang="python">for</code> or a <code class="python inline-code" lang="python">while</code> loop to allow the program execution to exit the loop once a given condition is triggered. A <code class="python inline-code" lang="python">break</code> statement can be used to improve runtime efficiency when further loop execution is not required.</para>
-    <para id="para-00003">Ex: A loop that looks for the character <code class="python inline-code" lang="python">'a'</code> in a given string called <code class="python inline-code" lang="python">user_string</code>. The loop below is a regular <code class="python inline-code" lang="python">for</code> loop for going through all the characters of <code class="python inline-code" lang="python">user_string</code>. If the character is found, the break statement takes execution out of the <code class="python inline-code" lang="python">for</code> loop. Since the task has been accomplished the rest of the <code class="python inline-code" lang="python">for</code> loop execution is bypassed.</para>
+    <para id="para-00003">Ex: A loop that looks for the character <code class="python inline-code" lang="python">"a"</code> in a given string called <code class="python inline-code" lang="python">user_string</code>. The loop below is a regular <code class="python inline-code" lang="python">for</code> loop for going through all the characters of <code class="python inline-code" lang="python">user_string</code>. If the character is found, the break statement takes execution out of the <code class="python inline-code" lang="python">for</code> loop. Since the task has been accomplished, the rest of the <code class="python inline-code" lang="python">for</code> loop execution is bypassed.</para>
     <code class="python" lang="python">
     user_string = "This is a string."
     for i in range(len(user_string)):
@@ -26,7 +26,7 @@
     &#160;&#160;&#160;&#160;break
     </code>
     <note class="guided-slides" id="note-00001">
-    <title>Break statement in a while loop.</title>
+    <title>Break statement in a while loop</title>
     <media alt="while_break_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/while-break"/>
     </media>
@@ -44,7 +44,7 @@
     </code>
     </note>
     <note class="learning-questions" id="note-00003">
-    <title>Using a break statement.</title>
+    <title>Using a break statement</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch05-m04-p01"/></para>
@@ -64,15 +64,15 @@
     </section>
     <section id="sect-00003">
     <title>Continue</title>
-    <para id="para-00008">A <term id="term-00003">continue</term> statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely. A <code class="python inline-code" lang="python">continue</code> statement can be used in a <code class="python inline-code" lang="python">for</code> or a <code class="python inline-code" lang="python">while</code> loop. After the <code class="python inline-code" lang="python">continue</code> statement's execution, the loop expression will be evaluated again and the loop will continue from the loop's expression. A <code class="python inline-code" lang="python">continue</code> statement facilitates loop's control and readability.</para>
+    <para id="para-00008">A <term id="term-00003">continue</term> statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely. A <code class="python inline-code" lang="python">continue</code> statement can be used in a <code class="python inline-code" lang="python">for</code> or a <code class="python inline-code" lang="python">while</code> loop. After the <code class="python inline-code" lang="python">continue</code> statement's execution, the loop expression will be evaluated again and the loop will continue from the loop's expression. A <code class="python inline-code" lang="python">continue</code> statement facilitates the loop's control and readability.</para>
         <note class="guided-slides" id="note-00004">
-    <title>Continue statement in a while loop.</title>
+    <title>Continue statement in a while loop</title>
     <media alt="while_control_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/while-control"/>
     </media>
     </note>
     <note class="learning-questions" id="note-00005">
-    <title>Using a continue statement.</title>
+    <title>Using a continue statement</title>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch05-m04-p04"/></para>
@@ -87,14 +87,14 @@
     </section>
     
     <note class="practice-program" id="note-00006">
-    <title>Using break control statement in a loop.</title>
-    <para id="para-00013">Write a program that reads a string value and prints <code class="python inline-code" lang="python">"Found"</code> if the string contains a space character, else prints <code class="python inline-code" lang="python">"Not found"</code>.</para>
+    <title>Using break control statement in a loop</title>
+    <para id="para-00013">Write a program that reads a string value and prints <code class="python inline-code" lang="python">"Found"</code> if the string contains a space character. Else, prints <code class="python inline-code" lang="python">"Not found"</code>.</para>
     <media alt="using_break_control_statement_in_a_loop_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_05_07_Using-break-control-statement-in-a-loop.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00007">
-    <title>Using a continue statement in a loop.</title>
+    <title>Using a continue statement in a loop</title>
     <para id="para-00014">Complete the following code so that the program calculates the sum of all the numbers in list <code class="python inline-code" lang="python">my_list</code> that are greater than or equal to 5.</para>
     <media alt="using_a_continue_statement_in_a_loop_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_05_08_Using-a-continue-statement-in-a-loop.html"/>
