@@ -26,7 +26,7 @@
     <note class="learning-questions" id="note-00002">
     <title>Arguments and parameters</title>
     <para id="para-00003">Consider the following:</para>
-    <code class="python" lang="python">
+    <code class="python line-numbering" lang="python">
     def print_welcome(name):
       print(f"Welcome {name}!")
 

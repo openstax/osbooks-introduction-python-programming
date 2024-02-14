@@ -95,7 +95,7 @@
     <title>Iterating a list-of-lists</title>
     <para id="para-00010">The code below demonstrates how to iterate a list-of-lists.</para>
     <para id="para-00011">The outer loop on line 9 goes element by element for the larger list. Each element in the larger list is a list. The inner loop on line 10 iterates through each element in each nested list.</para>
-    <code class="python" lang="python">
+    <code class="python line-numbering" lang="python">
     """Iterating a list-of-lists."""
 
     # Create a list of numbers

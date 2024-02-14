@@ -27,7 +27,8 @@
     snum_list = [28, 92, 17, 3, -5, 999, 1]
 
     # Set up a list of words
-    city_list = ["New York", "Missoula", "Chicago", "Bozeman", "Birmingham", "Austin", "Sacramento"]
+    city_list = ["New York", "Missoula", "Chicago", "Bozeman", 
+    "Birmingham", "Austin", "Sacramento"]
 
     # Usage of the max() funtion
     print(max(num_list))

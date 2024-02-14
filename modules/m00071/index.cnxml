@@ -41,7 +41,7 @@
     <example id="exam-00002">
     <title>A Dr. Seuss poem</title>
     <para id="para-00010">A list comprehension can be used to create a list based on another list. In line 6, the <code class="python inline-code" lang="python">for</code> loop is written on the list <code class="python inline-code" lang="python">poem_lines</code>.</para>
-    <code class="python" lang="python">
+    <code class="python line-numbering" lang="python">
     # Create a list of words
     words_list = ["one", "two", "red", "blue"]
     
