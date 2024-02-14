@@ -62,8 +62,8 @@
     <section id="sect-00003">
     <title>if-else statement</title>
     <para id="para-00011">An <code class="python inline-code" lang="python">if</code> statement defines actions to be performed when a condition is true. What if an action needs to be performed only when the condition is false? Ex: If the restaurant is less than a mile away, we'll walk. Else, we'll drive.</para>
-    <para id="para-00012">An <term id="term-00003">else statement</term> is used with an <code class="python inline-code" lang="python">if</code> statement and contains a body of statements that is executed when the <code class="python inline-code" lang="python">if</code> statement's condition is False. When an <code class="python inline-code" lang="python">if-else</code> statement is executed, one and only one of the branches is taken. That is, the body of the <code class="python inline-code" lang="python">if</code> or the body of the <code class="python inline-code" lang="python">else</code> is executed. Note: The <code class="python inline-code" lang="python">else</code> statement is at the same level of indentation as the <code class="python inline-code" lang="python">if</code> statement, and the body is indented.</para>
-    <para id="para-00020"><code class="python inline-code" lang="python">if-else</code> statement template</para>
+    <para id="para-00012">An <term id="term-00003">else statement</term> is used with an <code class="python inline-code" lang="python">if</code> statement and contains a body of statements that is executed when the <code class="python inline-code" lang="python">if</code> statement's condition is false. When an <code class="python inline-code" lang="python">if-else</code> statement is executed, one and only one of the branches is taken. That is, the body of the <code class="python inline-code" lang="python">if</code> or the body of the <code class="python inline-code" lang="python">else</code> is executed. Note: The <code class="python inline-code" lang="python">else</code> statement is at the same level of indentation as the <code class="python inline-code" lang="python">if</code> statement, and the body is indented.</para>
+    <para id="para-00020"><code class="python inline-code" lang="python">if-else</code> statement template:</para>
     <code class="python line-numbering" lang="python">
     # Statements before
 
@@ -102,7 +102,7 @@
   
     <note class="practice-program" id="note-00006">
     <title>Improved division</title>
-    <para id="para-00016">The following program divides 2 integers. Division by 0 produces an error. Modify the program to read in a new denominator (with no prompt) if the denominator is 0.</para>
+    <para id="para-00016">The following program divides two integers. Division by 0 produces an error. Modify the program to read in a new denominator (with no prompt) if the denominator is 0.</para>
     <media alt="improved_division_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_03_03_Improved-division.html"/>
     </media>
@@ -112,8 +112,8 @@
     <para id="para-00017">The following program reads in a temperature as a float and the unit as a string: "f" for Fahrenheit or "c" for Celsius.</para><para id="para-00018">Calculate <code class="python inline-code" lang="python">new_temp</code>, the result of converting temp from Fahrenheit to Celsius or Celsius to Fahrenheit based on unit. Calculate <code class="python inline-code" lang="python">new_unit</code>: "c" if unit is "f" and "f" if unit is "c".</para>
     <para id="para-00019">Conversion formulas:
     <list id="list-00002">
-    <item>degrees Celsius = (degrees Fahrenheit - 32) * 5/9</item>
-    <item>degrees Fahrenheit = (degrees Celsius * 5/9) + 32</item>
+    <item>Degrees Celsius = (degrees Fahrenheit - 32) * 5/9</item>
+    <item>Degrees Fahrenheit = (degrees Celsius * 5/9) + 32</item>
     </list></para>
     <media alt="converting_temperature_units_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_03_04_Converting-temperature-units.html"/>
