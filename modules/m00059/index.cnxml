@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Compare strings using logical and membership operators.</item>
-    <item>Use <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> string functions to convert string values to lowercase and uppercase characters.</item>
+    <item>Use <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> string methods to convert string values to lowercase and uppercase characters.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -35,7 +35,7 @@
     <entry>Checks whether the first string value is greater than (or greater than or equal to) the second string value.</entry>
     <entry><para id="para-00015"><code class="python inline-code" lang="python">"c" &gt; "d"</code></para></entry>
     <entry><para id="para-00016"><code class="python inline-code" lang="python">False</code></para></entry>
-    <entry><para id="para-00017">When comparing <code class="python inline-code" lang="python">"c"</code> operand to <code class="python inline-code" lang="python">"d"</code> operand, the ASCII value for <code class="python inline-code" lang="python">"c"</code> is smaller than the ASCII value for <code class="python inline-code" lang="python">"d"</code>. Therefore, <code class="python inline-code" lang="python">"c" &lt; "d"</code> and the expression <code class="python inline-code" lang="python">"c" &gt; "d"</code> evaluates to False.</para></entry>
+    <entry><para id="para-00017">When comparing <code class="python inline-code" lang="python">"c"</code> operand to <code class="python inline-code" lang="python">"d"</code> operand, the ASCII value for <code class="python inline-code" lang="python">"c"</code> is smaller than the ASCII value for <code class="python inline-code" lang="python">"d"</code>. Therefore, <code class="python inline-code" lang="python">"c" &lt; "d"</code>. The expression <code class="python inline-code" lang="python">"c" &gt; "d"</code> evaluates to False.</para></entry>
     </row>
     <row>
     <entry><para id="para-00018"><code class="python inline-code" lang="python">&lt;</code> or <code class="python inline-code" lang="python">&lt;=</code></para></entry>
@@ -95,18 +95,18 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title>lower() and upper() functions</title>
-    <para id="para-00006">Python has many useful functions for modifying strings, two of which are <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> functions. The <term id="term-00001">lower()</term> function returns the converted alphabetical characters to lowercase, and <term id="term-00002">upper()</term> function returns the converted alphabetical characters to uppercase. Both the <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> functions do <emphasis effect="bold">not</emphasis> modify the string.</para>
+    <title>lower() and upper()</title>
+    <para id="para-00006">Python has many useful methods for modifying strings, two of which are <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> methods. The <term id="term-00001">lower()</term> method returns the converted alphabetical characters to lowercase, and the <term id="term-00002">upper()</term> method returns the converted alphabetical characters to uppercase. Both the <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> methods do <emphasis effect="italics">not</emphasis> modify the string.</para>
     <example id="exam-00001">
-    <title>Converting characters in a string.</title>
-    <para id="para-00007">In the example below, the <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> string functions are called on the string variable <code class="python inline-code" lang="python">x</code> to convert all characters to lowercase and uppercase, respectively.</para>
+    <title>Converting characters in a string</title>
+    <para id="para-00007">In the example below, the <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> string methods are called on the string variable <code class="python inline-code" lang="python">x</code> to convert all characters to lowercase and uppercase, respectively.</para>
     <code class="python" lang="python">
     x = "Apples"
 
-    # The lower() function converts a string to all lowercase characters
+    # The lower() method converts a string to all lowercase characters
     print(x.lower())
 
-    # The upper() function converts a string to all uppercase characters
+    # The upper() method converts a string to all uppercase characters
     print(x.upper())
     </code>
     <para id="para-00008">The above code's output is:</para>
@@ -116,7 +116,7 @@
     </code>
     </example>
     <note class="learning-questions" id="note-00002">
-    <title>Using lower() and upper() string functions</title>
+    <title>Using lower() and upper()</title>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch08-m01-p04"/></para>
@@ -137,15 +137,15 @@
     
     <note class="practice-program" id="note-00003">
     <title>Number of characters in the string</title>
-    <para id="para-00012">A string variable, <code class="python inline-code" lang="python">s_input</code>, is defined. Use <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> to convert the string to lowercase and uppercase and print results in the output. Also, print the number of characters in the string, including space characters.</para>
+    <para id="para-00012">A string variable, <code class="python inline-code" lang="python">s_input</code>, is defined. Use <code class="python inline-code" lang="python">lower()</code> and <code class="python inline-code" lang="python">upper()</code> to convert the string to lowercase and uppercase, and print the results in the output. Also, print the number of characters in the string, including space characters.</para>
     <media alt="number_of_characters_in_the_string_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_02_01_Number-of-characters-in-the-string.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00004">
     <title>What is my character?</title>
-    <para id="para-00013">Given the string, <code class="python inline-code" lang="python">s_input</code>, which is a 1-character string object, if the character is between <code class="python inline-code" lang="python">'a'</code> and <code class="python inline-code" lang="python">'t'</code> or <code class="python inline-code" lang="python">'A'</code> and <code class="python inline-code" lang="python">'T'</code>, print <code class="python inline-code" lang="python">True</code>. Otherwise, print <code class="python inline-code" lang="python">False</code>.<newline/>
-    Hint: You can convert <code class="python inline-code" lang="python">s_input</code> to lowercase and check if <code class="python inline-code" lang="python">s_input</code> is between <code class="python inline-code" lang="python">'a'</code> and <code class="python inline-code" lang="python">'t'</code>.</para>
+    <para id="para-00013">Given the string, <code class="python inline-code" lang="python">s_input</code>, which is a one-character string object, if the character is between <code class="python inline-code" lang="python">"a"</code> and <code class="python inline-code" lang="python">"t"</code> or <code class="python inline-code" lang="python">"A"</code> and <code class="python inline-code" lang="python">"T"</code>, print <code class="python inline-code" lang="python">True</code>. Otherwise, print <code class="python inline-code" lang="python">False</code>.<newline/>
+    Hint: You can convert <code class="python inline-code" lang="python">s_input</code> to lowercase and check if <code class="python inline-code" lang="python">s_input</code> is between <code class="python inline-code" lang="python">"a"</code> and <code class="python inline-code" lang="python">"t"</code>.</para>
     <media alt="what_is_my_character_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_02_02_What-is-my-character_.html"/>
     </media>

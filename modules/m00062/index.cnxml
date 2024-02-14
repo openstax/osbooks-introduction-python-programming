@@ -11,12 +11,12 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Format a string template using input arguments.</item>
-    <item>Use <code class="python inline-code" lang="python">format()</code> function to generate numerical formats based on a given template.</item>
+    <item>Use <code class="python inline-code" lang="python">format()</code> to generate numerical formats based on a given template.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>String format specification</title>
-    <para id="para-00002">Python provides string substitutions syntax for formatting strings with input arguments. <term id="term-00001">Formatting string</term> includes specifying string pattern rules and modifying the string according to the formatting specification. Examples of formatting strings include using patterns for building different string values and specifying modification rules for string's length and alignment.</para>
+    <para id="para-00002">Python provides string substitutions syntax for formatting strings with input arguments. <term id="term-00001">Formatting string</term> includes specifying string pattern rules and modifying the string according to the formatting specification. Examples of formatting strings include using patterns for building different string values and specifying modification rules for the string's length and alignment.</para>
     </section>
     <section id="sect-00003">
     <title>String formatting with replacement fields</title>
@@ -24,18 +24,18 @@
     <example id="exam-00001">
     <title>String values from the same template</title>
     <code class="python" lang="python">
-    Dear John, I'd like to take programming course with Prof. Potter.
+    Dear John, I'd like to take a programming course with Prof. Potter.
 
-    Dear Kishwar, I'd like to take math course with Prof. Robinson.
+    Dear Kishwar, I'd like to take a math course with Prof. Robinson.
     </code>
     </example>
 
-    <para id="para-00004">In the example above, replacement fields are 1) the name of the individual the request is being made to 2) title of the course, and 3) the name of the instructor. To create a template, replacement fields can be added with <code class="python inline-code" lang="python">{}</code> to show a placeholder for user input. The <term id="term-00003">format()</term> function is used to pass inputs for replacement fields in a string template.</para>
+    <para id="para-00004">In the example above, replacement fields are 1) the name of the individual the request is being made to, 2) title of the course, and 3) the name of the instructor. To create a template, replacement fields can be added with <code class="python inline-code" lang="python">{}</code> to show a placeholder for user input. The <term id="term-00003">format()</term> method is used to pass inputs for replacement fields in a string template.</para>
     <example id="exam-00002">
     <title>String template formatting for course enrollment requests</title>
-    <para id="para-00005">String template with replacement fields is defined below to create string values with different input arguments. The <code class="python inline-code" lang="python">format()</code> function is used to pass inputs to the template in the same order.</para>
+    <para id="para-00005">A string template with replacement fields is defined below to create string values with different input arguments. The <code class="python inline-code" lang="python">format()</code> method is used to pass inputs to the template in the same order.</para>
     <code class="python" lang="python">
-    s = "Dear {}, I'd like to take {} course with Prof. {}."
+    s = "Dear {}, I'd like to take a {} course with Prof. {}."
 
     print(s)
     print(s.format("John", "programming", "Potter"))
@@ -43,9 +43,9 @@
     </code>
     <para id="para-00006">The above code's output is:</para>
     <code class="python" lang="python">
-    Dear {}, I'd like to take {} course with Prof. {}.
-    Dear John, I'd like to take programming course with Prof. Potter.
-    Dear Kishwar, I'd like to take math course with Prof. Robinson.
+    Dear {}, I'd like to take a {} course with Prof. {}.
+    Dear John, I'd like to take a programming course with Prof. Potter.
+    Dear Kishwar, I'd like to take a math course with Prof. Robinson.
     </code>
     </example>
     <note class="learning-questions" id="note-00002">
@@ -125,8 +125,8 @@
     </section>
     <section id="sect-00005">
     <title>Numbered replacement fields</title>
-    <para id="para-00018">Python's string <code class="python inline-code" lang="python">format()</code> function can use positional ordering to match the numbered arguments. The replacement fields that use the positional ordering of arguments are called <term id="term-00005">numbered replacement fields</term>. The indexing of the arguments starts from 0. Ex: <code class="python inline-code" lang="python">print("{1}{0}".format("Home", "Welcome"))</code> outputs string value <code class="python inline-code" lang="python">"Welcome Home"</code> as the first argument, <code class="python inline-code" lang="python">"Home"</code>, is at index 0 and the second argument, <code class="python inline-code" lang="python">"Welcome"</code>, is at index 1. Replacing these arguments in the order of <code class="python inline-code" lang="python">"{1}{0}"</code> creates string <code class="python inline-code" lang="python">"Welcome Home"</code>.</para>
-    <para id="para-00019">Numbered replacement fields can use argument's values for multiple replacement fields by using the same argument index. Example below illustrates how an argument is used for more than one numbered replacement fields.</para>
+    <para id="para-00018">Python's string <code class="python inline-code" lang="python">format()</code> method can use positional ordering to match the numbered arguments. The replacement fields that use the positional ordering of arguments are called <term id="term-00005">numbered replacement fields</term>. The indexing of the arguments starts from 0. Ex: <code class="python inline-code" lang="python">print("{1}{0}".format("Home", "Welcome"))</code> outputs the string value <code class="python inline-code" lang="python">"Welcome Home"</code> as the first argument. <code class="python inline-code" lang="python">"Home"</code> is at index 0, and the second argument, <code class="python inline-code" lang="python">"Welcome"</code>, is at index 1. Replacing these arguments in the order of <code class="python inline-code" lang="python">"{1}{0}"</code> creates the string <code class="python inline-code" lang="python">"Welcome Home"</code>.</para>
+    <para id="para-00019">Numbered replacement fields can use argument's values for multiple replacement fields by using the same argument index. The example below illustrates how an argument is used for more than one numbered replacement field.</para>
     <example id="exam-00004">
     <title>Numbered replacement field to build a phrase</title>
     <para id="para-00020">Numbered replacement fields are used in this example to build phrases like <code class="python inline-code" lang="python">"very very cold"</code> or <code class="python inline-code" lang="python">"very hot"</code>.</para>
@@ -146,7 +146,7 @@
     </section>
     <section id="sect-00006">
     <title>String length and alignment formatting</title>
-    <para id="para-00022">Formatting the string length may be needed for standardizing the output style when multiple string values of the same context are being created and printed. Example below shows a use case of string formatting in printing a table with minimum-length columns and specific alignment.</para>
+    <para id="para-00022">Formatting the string length may be needed for standardizing the output style when multiple string values of the same context are being created and printed. The example below shows a use case of string formatting in printing a table with minimum-length columns and specific alignment.</para>
     <example id="exam-00005">
       <title>Numbered replacement field to build a phrase</title>
     <para id="para-00035">A formatted table of a class roster</para>
@@ -159,11 +159,11 @@
     </code>
     </example>
 
-    <para id="para-00023">In the example above, the table is formatted into 3 columns. The first column takes up 15 characters and is left-aligned. The second column uses 25 characters and is center-aligned, and the last column uses 2 characters and is right aligned. Alignment and length format specifications controls are used to create the formatted table above.</para>
+    <para id="para-00023">In the example above, the table is formatted into three columns. The first column takes up 15 characters and is left-aligned. The second column uses 25 characters and is center-aligned, and the last column uses two characters and is right aligned. Alignment and length format specifications controls are used to create the formatted table.</para>
     <para id="para-00024">The field width in string format specification is used to specify the minimum length of the given string. If the string is shorter than the given minimum length, the string will be padded by space characters. A <term id="term-00006">field width</term> is included in the format specification field using an integer after a colon. Ex: <code class="python inline-code" lang="python">{name:15}</code> specifies that the minimum length of the string values that are passed to the <code class="python inline-code" lang="python">name</code> field is 15.</para>
-    <para id="para-00025">Since the field width can be used to specify the minimum length of a string, the string can be padded with space characters from right, left, or both to be left-aligned, right-aligned, and centered, respectively. The <term id="term-00007">string alignment type</term> is specified using <code class="python inline-code" lang="python">&lt;</code>, <code class="python inline-code" lang="python">></code>, or <code class="python inline-code" lang="python">^</code>characters after the colon when field length is specified. Ex: <code class="python inline-code" lang="python">{name:^20}</code> specifies a named replacement field with the minimum length of 20 characters which is center-aligned.</para>
+    <para id="para-00025">Since the field width can be used to specify the minimum length of a string, the string can be padded with space characters from right, left, or both to be left-aligned, right-aligned, and centered, respectively. The <term id="term-00007">string alignment type</term> is specified using <code class="python inline-code" lang="python">&lt;</code>, <code class="python inline-code" lang="python">></code>, or <code class="python inline-code" lang="python">^</code>characters after the colon when field length is specified. Ex: <code class="python inline-code" lang="python">{name:^20}</code> specifies a named replacement field with the minimum length of 20 characters that is center-aligned.</para>
     <table summary=" " id="table-00002">
-    <title>String alignment formatting</title>
+    <title>String alignment formatting.</title>
     <tgroup cols="4">
     <thead>
     <row>
@@ -232,16 +232,16 @@
     </section>
     <section id="sect-00007">
     <title>Formatting numbers</title>
-    <para id="para-00029">The <code class="python inline-code" lang="python">format()</code> function can be used to format numerical values. Numerical values can be padded to have a given minimum length, precision, and sign character. The syntax for modifying numeric values follows the <code class="python inline-code" lang="python">{[index]:[width][.precision][type]}</code> structure. In the given syntax,</para>
+    <para id="para-00029">The <code class="python inline-code" lang="python">format()</code> method can be used to format numerical values. Numerical values can be padded to have a given minimum length, precision, and sign character. The syntax for modifying numeric values follows the <code class="python inline-code" lang="python">{[index]:[width][.precision][type]}</code> structure. In the given syntax,</para>
     <list id="list-00002">
     <item>The <code class="python inline-code" lang="python">index</code> field refers to the index of the argument.</item>
     <item>The <code class="python inline-code" lang="python">width</code> field refers to the minimum length of the string.</item>
     <item>The <code class="python inline-code" lang="python">precision</code> field refers to the floating-point precision of the given number.</item>
-    <item>The <code class="python inline-code" lang="python">type</code> field shows the type of the input that is passed to the <code class="python inline-code" lang="python">format()</code> function. Floating-point and decimal inputs are identified by <code class="python inline-code" lang="python">'f'</code> and <code class="python inline-code" lang="python">'d'</code>, respectively. String values are also identified by <code class="python inline-code" lang="python">'s'</code>.</item>
+    <item>The <code class="python inline-code" lang="python">type</code> field shows the type of the input that is passed to the <code class="python inline-code" lang="python">format()</code> method. Floating-point and decimal inputs are identified by <code class="python inline-code" lang="python">"f"</code> and <code class="python inline-code" lang="python">"d"</code>, respectively. String values are also identified by <code class="python inline-code" lang="python">"s"</code>.</item>
     </list>
     <para id="para-00030">The table below summarizes formatting options for modifying numeric values.</para>
     <table summary=" " id="table-00003">
-    <title>Numerical formatting options</title>
+    <title>Numerical formatting options.</title>
     <tgroup cols="3">
     <thead>
     <row>
@@ -254,27 +254,27 @@
     <row>
     <entry><para id="para-00049"><code class="python inline-code" lang="python">print("{:.7f}".format(0.9795))</code></para></entry>
     <entry><para id="para-00050"><code class="python inline-code" lang="python">0.9795000</code></para></entry>
-    <entry><para id="para-00051">The format specification <code class="python inline-code" lang="python">.7</code> shows the output must have 7 decimal places. The <code class="python inline-code" lang="python">f</code> specification is an identifier of floating-point formatting.</para></entry>
+    <entry><para id="para-00051">The format specification <code class="python inline-code" lang="python">.7</code> shows the output must have seven decimal places. The <code class="python inline-code" lang="python">f</code> specification is an identifier of floating-point formatting.</para></entry>
     </row>
     <row>
     <entry><para id="para-00052"><code class="python inline-code" lang="python">print("{:.3f}".format(12))</code></para></entry>
     <entry><para id="para-00053"><code class="python inline-code" lang="python">12.000</code></para></entry>
-    <entry><para id="para-00054">The format specification <code class="python inline-code" lang="python">.3</code> shows the output must have 3 decimal places. The <code class="python inline-code" lang="python">f</code> specification is an identifier of floating-point formatting.</para></entry>
+    <entry><para id="para-00054">The format specification <code class="python inline-code" lang="python">.3</code> shows the output must have three decimal places. The <code class="python inline-code" lang="python">f</code> specification is an identifier of floating-point formatting.</para></entry>
     </row>
     <row>
     <entry><para id="para-00055"><code class="python inline-code" lang="python">print("{:+.2f}".format(4))</code></para></entry>
     <entry><para id="para-00056"><code class="python inline-code" lang="python">+4.00</code></para></entry>
-    <entry><para id="para-00057">The format specification <code class="python inline-code" lang="python">.2</code> shows the output must have 2 decimal places. The <code class="python inline-code" lang="python">f</code> specification is an identifier of floating-point formatting. The <code class="python inline-code" lang="python">+</code> sign before the precision specification adds a sign character to the output.</para></entry>
+    <entry><para id="para-00057">The format specification <code class="python inline-code" lang="python">.2</code> shows the output must have two decimal places. The <code class="python inline-code" lang="python">f</code> specification is an identifier of floating-point formatting. The <code class="python inline-code" lang="python">+</code> sign before the precision specification adds a sign character to the output.</para></entry>
     </row>
     <row>
     <entry><para id="para-00058"><code class="python inline-code" lang="python">print("{:0>5d}".format(5))</code></para></entry>
     <entry><para id="para-00059"><code class="python inline-code" lang="python">00005</code></para></entry>
-    <entry><para id="para-00060">The format specification <code class="python inline-code" lang="python">0>5</code> defines the width field as 5 and hence the output must have a minimum length of 5 and if the number has less than 5 digits, the number must be padded with 0's from the left side. The <code class="python inline-code" lang="python">d</code> specification is an identifier of a decimal number formatting.</para></entry>
+    <entry><para id="para-00060">The format specification <code class="python inline-code" lang="python">0>5</code> defines the width field as 5, and thus the output must have a minimum length of 5. And, if the number has fewer than five digits, the number must be padded with 0's from the left side. The <code class="python inline-code" lang="python">d</code> specification is an identifier of a decimal number formatting.</para></entry>
     </row>
     <row>
     <entry><para id="para-00061"><code class="python inline-code" lang="python">print("{:.3s}".format("12.50"))</code></para></entry>
     <entry><para id="para-00062"><code class="python inline-code" lang="python">12.</code></para></entry>
-    <entry><para id="para-00063">The format specification <code class="python inline-code" lang="python">.3</code> shows the output will have 3 characters. The <code class="python inline-code" lang="python">s</code> specification is an identifier of string formatting.</para></entry>
+    <entry><para id="para-00063">The format specification <code class="python inline-code" lang="python">.3</code> shows the output will have three characters. The <code class="python inline-code" lang="python">s</code> specification is an identifier of string formatting.</para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -301,7 +301,7 @@
     
     <note class="practice-program" id="note-00007">
     <title>Formatting a list of numbers</title>
-    <para id="para-00034">Given a list of numbers (floating-point or integer), print numbers with 2 decimal place precision and at least 6 characters.</para>
+    <para id="para-00034">Given a list of numbers (floating-point or integer), print numbers with two decimal place precision and at least six characters.</para>
     <code class="python" lang="python">
     Input: [12.5, 2]
     </code>

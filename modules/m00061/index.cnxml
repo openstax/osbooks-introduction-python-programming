@@ -10,16 +10,16 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Use <code class="python inline-code" lang="python">in</code> operator to identify if a given string contains a substring.</item>
-    <item>Call <code class="python inline-code" lang="python">count()</code> function to count the number of substrings in a given string.</item>
-    <item>Search a string to find a substring using the <code class="python inline-code" lang="python">find()</code> function.</item>
-    <item>Use <code class="python inline-code" lang="python">index()</code> function to find the index of the first occurrence of a substring in a given string.</item>
-    <item>Write for loop on strings using in operator.</item>
+    <item>Use the <code class="python inline-code" lang="python">in</code> operator to identify whether a given string contains a substring.</item>
+    <item>Call the <code class="python inline-code" lang="python">count()</code> method to count the number of substrings in a given string.</item>
+    <item>Search a string to find a substring using the <code class="python inline-code" lang="python">find()</code> method.</item>
+    <item>Use the <code class="python inline-code" lang="python">index()</code> method to find the index of the first occurrence of a substring in a given string.</item>
+    <item>Write a for loop on strings using in operator.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>in operator</title>
-    <para id="para-00002">The <term id="term-00001">in</term> boolean operator can be used to check if a string contains another string. In returns <code class="python inline-code" lang="python">True</code> if the first string exists in the second string, <code class="python inline-code" lang="python">False</code> otherwise.</para>
+    <para id="para-00002">The <term id="term-00001">in</term> Boolean operator can be used to check if a string contains another string. <code class="python inline-code" lang="python">in</code> returns <code class="python inline-code" lang="python">True</code> if the first string exists in the second string, <code class="python inline-code" lang="python">False</code> otherwise.</para>
     <note class="guided-slides" id="note-00001">
     <title>What is in the phrase?</title>
     <media alt="what_in_phrase_slides">
@@ -74,8 +74,8 @@
     </note>
     </section>
     <section id="sect-00004">
-    <title>count() function</title>
-    <para id="para-00010">The <term id="term-00002">count()</term> function counts the number of occurrences of a substring in a given string. If the given substring does not exist in the given string, the value of <code class="python inline-code" lang="python">0</code> is returned.</para>
+    <title>count()</title>
+    <para id="para-00010">The <term id="term-00002">count()</term> method counts the number of occurrences of a substring in a given string. If the given substring does not exist in the given string, the value <code class="python inline-code" lang="python">0</code> is returned.</para>
     <note class="guided-slides" id="note-00005">
     <title>Counting the number of occurrences of a substring</title>
     <media alt="counting_substrings_slides">
@@ -83,7 +83,7 @@
     </media>
     </note>
     <note class="learning-questions" id="note-00006">
-    <title>count() function to count the number of substrings</title>
+    <title>Using count() to count the number of substrings</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch08-m03-p07"/></para>
@@ -102,8 +102,8 @@
     </note>
     </section>
     <section id="sect-00005">
-    <title>find() function</title>
-    <para id="para-00014">The <term id="term-00003">find()</term> function returns the index of the first occurrence of a substring in a given string. If the substring does not exist in the given string, the value of <code class="python inline-code" lang="python">-1</code> is returned.</para>
+    <title>find()</title>
+    <para id="para-00014">The <term id="term-00003">find()</term> method returns the index of the first occurrence of a substring in a given string. If the substring does not exist in the given string, the value of <code class="python inline-code" lang="python">-1</code> is returned.</para>
     <note class="guided-slides" id="note-00007">
     <title>Finding the first index of a substring</title>
     <media alt="finding_substring_index_slides">
@@ -111,7 +111,7 @@
     </media>
     </note>
     <note class="learning-questions" id="note-00008">
-    <title>Using find() function to locate a substring</title>
+    <title>Using find() to locate a substring</title>
     <exercise id="exer-00010">
     <problem id="prob-00010">
     <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch08-m03-p10"/></para>
@@ -130,11 +130,11 @@
     </note>
     </section>
     <section id="sect-00006">
-    <title>index() function</title>
-    <para id="para-00018">The <term id="term-00004">index()</term> function performs similar to the <code class="python inline-code" lang="python">find()</code> function in which the function returns the index of the first occurrence of a substring in a given string. The <code class="python inline-code" lang="python">index()</code> function assumes that the substring exists in the given string, otherwise, throws a <code class="python inline-code" lang="python">ValueError</code>.</para>
+    <title>index()</title>
+    <para id="para-00018">The <term id="term-00004">index()</term> method performs similarly to the <code class="python inline-code" lang="python">find()</code> method in which the method returns the index of the first occurrence of a substring in a given string. The <code class="python inline-code" lang="python">index()</code> method assumes that the substring exists in the given string; otherwise, throws a <code class="python inline-code" lang="python">ValueError</code>.</para>
     <example id="exam-00001">
     <title>Getting the time's minute portion</title>
-    <para id="para-00019">Consider a time value is given as part of a string using the format of <code class="python inline-code" lang="python">"hh:mm"</code> with <code class="python inline-code" lang="python">"hh"</code> representing the hour and <code class="python inline-code" lang="python">"mm"</code> representing the minutes. To retrieve only the string's minute portion the following code can be used:</para>
+    <para id="para-00019">Consider a time value is given as part of a string using the format of <code class="python inline-code" lang="python">"hh:mm"</code> with <code class="python inline-code" lang="python">"hh"</code> representing the hour and <code class="python inline-code" lang="python">"mm"</code> representing the minutes. To retrieve only the string's minute portion, the following code can be used:</para>
     <code class="python" lang="python">
     time_string = "The time is 12:50"
     index = time_string.index(":")
@@ -146,7 +146,7 @@
     </code>
     </example>
     <note class="learning-questions" id="note-00009">
-    <title>Using index() function to locate a substring</title>
+    <title>Using index() to locate a substring</title>
     <exercise id="exer-00013">
     <problem id="prob-00013">
     <para id="para-00021"><link class="os-embed" url="#exercise/CPL-ch08-m03-p13"/></para>
@@ -167,7 +167,7 @@
     
     <note class="practice-program" id="note-00010">
     <title>Finding all spaces</title>
-    <para id="para-00024">Write a program that given a string, counts the number of space characters in the string. Also, print the given string with all spaces removed.</para>
+    <para id="para-00024">Write a program that, given a string, counts the number of space characters in the string. Also, print the given string with all spaces removed.</para>
     <code class="python" lang="python">
     Input: "This is great"
     </code>

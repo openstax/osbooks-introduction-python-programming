@@ -16,11 +16,11 @@
     </list>
     <para id="para-00002">At this point, you should be able to write programs dealing with string values.</para>
     <table summary=" " id="table-00001">
-    <title>Chapter 8 reference</title>
+    <title>Chapter 8 reference.</title>
     <tgroup cols="2">
     <thead>
     <row>
-    <entry>Function</entry>
+    <entry>Method</entry>
     <entry>Description</entry>
     </row>
     </thead>
@@ -31,11 +31,11 @@
     </row>
     <row>
     <entry><para id="para-00004"><code class="python inline-code" lang="python">upper()</code></para></entry>
-    <entry>Convert characters in the string to uppercase.</entry>
+    <entry>Returns uppercase characters.</entry>
     </row>
     <row>
     <entry><para id="para-00005"><code class="python inline-code" lang="python">lower()</code></para></entry>
-    <entry>Convert characters in the string to lowercase.</entry>
+    <entry>Returns lowercase characters.</entry>
     </row>
     <row>
     <entry><para id="para-00006"><code class="python inline-code" lang="python">count()</code></para></entry>
@@ -51,22 +51,22 @@
     </row>
     <row>
     <entry><para id="para-00009"><code class="python inline-code" lang="python">format()</code></para></entry>
-    <entry>Is used to create strings with specified patterns using arguments.</entry>
+    <entry>Used to create strings with specified patterns using arguments.</entry>
     </row>
     <row>
     <entry><para id="para-00010"><code class="python inline-code" lang="python">join()</code></para></entry>
-    <entry>Takes a list of string values and combines string values into one string by placing a given separator in between values.</entry>
+    <entry>Takes a list of string values and combines string values into one string by placing a given separator between values.</entry>
     </row>
     <row>
     <entry><para id="para-00011"><code class="python inline-code" lang="python">split()</code></para></entry>
-    <entry>Separates a string into tokens based on a given separator string. If no separator string is provided, white space characters are used as separators.</entry>
+    <entry>Separates a string into tokens based on a given separator string. If no separator string is provided, blank space characters are used as separators.</entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Operator</emphasis></entry>
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><para id="para-00012"><code class="python inline-code" lang="python">in</code> loop</para></entry>
+    <entry><para id="para-00012"><code class="python inline-code" lang="python">in</code></para></entry>
     <entry>Checks if a substring exists in a string.</entry>
     </row>
     <row>

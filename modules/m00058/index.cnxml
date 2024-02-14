@@ -12,6 +12,6 @@
     </media>
     <caption>credit: modification of work "Project 366 #65: 050316 A Night On The Tiles", by Pete/Flickr, CC BY 2.0</caption>
     </figure>
-    <para id="para-00001">A <term id="term-00001">string</term> is a sequence of characters. Python provides useful methods for processing string values. In this chapter, string methods will be demonstrated including, comparing string values, string slicing, searching, testing, formatting, and modifying.</para>
+    <para id="para-00001">A <term id="term-00001">string</term> is a sequence of characters. Python provides useful methods for processing string values. In this chapter, string methods will be demonstrated including comparing string values, string slicing, searching, testing, formatting, and modifying.</para>
     </content>
 </document>

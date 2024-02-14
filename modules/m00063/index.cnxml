@@ -10,13 +10,13 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Use <code class="python inline-code" lang="python">split()</code> function to split a string into substrings.</item>
-    <item>Combine objects in a list into a string using <code class="python inline-code" lang="python">join()</code> function.</item>
+    <item>Use the <code class="python inline-code" lang="python">split()</code> method to split a string into substrings.</item>
+    <item>Combine objects in a list into a string using <code class="python inline-code" lang="python">join()</code> method.</item>
     </list>
     </section>
     <section id="sect-00002">
-    <title>Split() function</title>
-    <para id="para-00002">A string in Python can be broken into substrings given a <term id="term-00001">delimiter</term>. A delimiter is also referred to as a separator. The <term id="term-00002">split()</term> function, when applied to a string, splits the string into substrings by using the given argument as a delimiter. Ex: <code class="python inline-code" lang="python">"1-2".split('-')</code> returns a list of substrings <code class="python inline-code" lang="python">["1", "2"]</code>. When no arguments are given to the <code class="python inline-code" lang="python">split()</code> function, white space characters are used as delimiters. Ex: <code class="python inline-code" lang="python">"1\t2\n3 4".split()</code> returns <code class="python inline-code" lang="python">["1", "2", "3", "4"]</code>.</para>
+    <title>Split()</title>
+    <para id="para-00002">A string in Python can be broken into substrings given a <term id="term-00001">delimiter</term>. A delimiter is also referred to as a separator. The <term id="term-00002">split()</term> method, when applied to a string, splits the string into substrings by using the given argument as a delimiter. Ex: <code class="python inline-code" lang="python">"1-2".split('-')</code> returns a list of substrings <code class="python inline-code" lang="python">["1", "2"]</code>. When no arguments are given to the <code class="python inline-code" lang="python">split()</code> method, blank space characters are used as delimiters. Ex: <code class="python inline-code" lang="python">"1\t2\n3 4".split()</code> returns <code class="python inline-code" lang="python">["1", "2", "3", "4"]</code>.</para>
     <note class="guided-slides" id="note-00001">
     <title>Split() for breaking down the string into tokens</title>
     <media alt="split_function_slides">
@@ -24,7 +24,7 @@
     </media>
     </note>
     <note class="learning-questions" id="note-00002">
-    <title>Examples of string delimiters and split() function</title>
+    <title>Examples of string delimiters and split() method</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch08-m05-p01"/></para>
@@ -43,8 +43,8 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title>join() function</title>
-    <para id="para-00006">The <term id="term-00003">join()</term> function is the inverse of the <code class="python inline-code" lang="python">split()</code> function in which a list of string values are concatenated together to form one output string. When joining string elements in the list, the delimiter is added in-between elements. Ex: <code class="python inline-code" lang="python">','.join(["this", "is", "great"])</code> returns <code class="python inline-code" lang="python">"this,is,great"</code>.</para>
+    <title>join()</title>
+    <para id="para-00006">The <term id="term-00003">join()</term> method is the inverse of the <code class="python inline-code" lang="python">split()</code> method: a list of string values are concatenated together to form one output string. When joining string elements in the list, the delimiter is added in-between elements. Ex: <code class="python inline-code" lang="python">','.join(["this", "is", "great"])</code> returns <code class="python inline-code" lang="python">"this,is,great"</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>join() for combining tokens into one string</title>
     <media alt="join_function_slides">
@@ -52,7 +52,7 @@
     </media>
     </note>
     <note class="learning-questions" id="note-00004">
-    <title>Applying join() function on list of string values</title>
+    <title>Applying join() method on list of string values</title>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch08-m05-p04"/></para>
@@ -73,7 +73,7 @@
     
     <note class="practice-program" id="note-00005">
     <title>Unique and comma-separated words</title>
-    <para id="para-00010">Write a program that accepts a comma separated sequence of words as input and prints words in separate lines. Ex: Given the string <code class="python inline-code" lang="python">"happy,smiling,face"</code>, the output would be:</para>
+    <para id="para-00010">Write a program that accepts a comma-separated sequence of words as input, and prints words in separate lines. Ex: Given the string <code class="python inline-code" lang="python">"happy,smiling,face"</code>, the output would be:</para>
     <code class="python" lang="python">
     happy
     smiling
@@ -89,14 +89,14 @@
     <list id="list-00002">
     <item>If the user inputs nothing, the program outputs:<newline/>
     <code class="python inline-code" lang="python">You ordered nothing</code>.</item>
-    <item>If the user inputs 1 item (Ex: eggs), the program outputs:<newline/>
+    <item>If the user inputs one item (Ex: eggs), the program outputs:<newline/>
     <code class="python inline-code" lang="python">You ordered eggs</code>.</item>
-    <item>If the user inputs 2 items (Ex: eggs, ham), the program outputs:<newline/>
+    <item>If the user inputs two items (Ex: eggs, ham), the program outputs:<newline/>
     <code class="python inline-code" lang="python">You ordered eggs and ham</code>.</item>
-    <item>If the user inputs 3+ items (Ex: eggs, ham, toast), the program outputs:<newline/>
+    <item>If the user inputs three or more items (Ex: eggs, ham, toast), the program outputs:<newline/>
     <code class="python inline-code" lang="python">You ordered eggs, ham, and toast</code>.</item>
     </list>
-    <para id="para-00012">In the general case with 3+ items, each item should be separated by a comma and a space. The word "and" should be appended before the last item.</para>
+    <para id="para-00012">In the general case with three or more items, each item should be separated by a comma and a space. The word "and" should be added before the last item.</para>
     <media alt="lunch_order_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_06_08_Lunch-order.html"/>
     </media>
