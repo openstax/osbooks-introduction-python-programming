@@ -82,7 +82,7 @@
     <note class="learning-questions" id="note-00003">
     <title>Creating a mixin class</title>
     <para id="para-00010">The following code isn't correct, as not all plants are carnivorous. Follow the programmer through the programmer's edits to improve the program. Note: <code class="python inline-code" lang="python">Rose</code>, <code class="python inline-code" lang="python">Pitcher</code>, and <code class="python inline-code" lang="python">VenusFlyTrap</code> represent plants that all photosynthesize. <code class="python inline-code" lang="python">Pitcher</code> and <code class="python inline-code" lang="python">VenusFlyTrap</code> represent plants that are also carnivorous and can eat.</para>
-    <para id="para-00011">A pass statement is used in Python to indicate that code is to be written later and prevents certain errors that would result if no code or a comment was used instead.</para>
+    <para id="para-00011">A pass statement is used in Python to indicate that code is to be written later and prevents certain errors that would result if no code was written or a comment was used instead.</para>
     <code class="python" lang="python">
     class Plant:
       def photosynth(self):
@@ -119,12 +119,12 @@
     </section>
    
     <note class="practice-program" id="note-00004">
-    <title>Fixing the diamond problem with  a mixin class</title>
+    <title>Fixing the diamond problem with a mixin class</title>
     <para id="para-00015">The program below represents multiple inheritance and has the diamond problem. Edit the program to use a mixin class, <code class="python inline-code" lang="python">OnlineMixin</code>. <code class="python inline-code" lang="python">OnlineMixin</code>:</para>
     <list id="list-00003">
-    <item>Replaces <code class="python inline-code" lang="python">OnlineShop</code></item>
-    <item>Is a superclass of <code class="python inline-code" lang="python">FoodFast</code></item>
-    <item>Has one method, <code class="python inline-code" lang="python">process_online()</code>, which prints <code class="python inline-code" lang="python">"Connecting to server"</code> and is called by <code class="python inline-code" lang="python">FoodFast'</code>s <code class="python inline-code" lang="python">process_order()</code></item>
+    <item>Replaces <code class="python inline-code" lang="python">OnlineShop</code>.</item>
+    <item>Is a superclass of <code class="python inline-code" lang="python">FoodFast</code>.</item>
+    <item>Has one method, <code class="python inline-code" lang="python">process_online()</code>, which prints <code class="python inline-code" lang="python">"Connecting to server"</code> and is called by <code class="python inline-code" lang="python">FoodFast'</code>s <code class="python inline-code" lang="python">process_order()</code>.</item>
     </list>
     <para id="para-00016">The output should match:</para>
     <code class="python" lang="python">

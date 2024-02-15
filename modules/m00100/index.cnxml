@@ -19,9 +19,9 @@
     <item>Multiple inheritance is a type of inheritance in which one class inherits from multiple classes.</item>
     <item>Mixin classes are used in multiple inheritance to add functionality to a subclass without adding inheritance concerns.</item>
     </list>
-    <para id="para-00002">At this point, you should be able to write subclasses that inherit instance attributes and methods and have unique attributes and overridden methods. You should also be able to create hierarchical inheritance relationships and multiple inheritance relationships between classes.</para>
+    <para id="para-00002">At this point, you should be able to write subclasses that inherit instance attributes and methods, and subclasses that have unique attributes and overridden methods. You should also be able to create hierarchical inheritance relationships and multiple inheritance relationships between classes.</para>
 <table summary=" " id="table-00001">
-<title>Chapter 13 reference</title>
+<title>Chapter 13 reference.</title>
 <tgroup cols="2">
 <thead>
 <row>
