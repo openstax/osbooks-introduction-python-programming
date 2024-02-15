@@ -157,7 +157,7 @@
  
     <note class="practice-program" id="note-00004">
     <title>Writing to a new file</title>
-    <para id="para-00016">Write a line of text to a file called <emphasis effect="italics">out.txt</emphasis>. Don't forget to use <code class="python inline-code" lang="python">close()</code>. <code class="python inline-code" lang="python"><emphasis effect="italics">out.txt</emphasis></code> should only have the line of text that you have written.</para>
+    <para id="para-00016">Write a line of text to a file called <emphasis effect="italics">out.txt</emphasis>. Don't forget to use <code class="python inline-code" lang="python">close()</code>. <emphasis effect="italics">out.txt</emphasis> should only have the line of text that you have written.</para>
     <media alt="writing_to_a_new_file_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_03_03_Writing-to-a-new-file.html"/>
     </media>
