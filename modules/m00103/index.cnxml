@@ -157,14 +157,14 @@
  
     <note class="practice-program" id="note-00004">
     <title>Writing to a new file</title>
-    <para id="para-00016">Write a line of text to a file called out.txt. (Don't forget to use <code class="python inline-code" lang="python">close()</code>. <code class="python inline-code" lang="python">out.txt</code> should only have the line of text that you have written.)</para>
+    <para id="para-00016">Write a line of text to a file called <emphasis effect="italics">out.txt</emphasis>. Don't forget to use <code class="python inline-code" lang="python">close()</code>. <code class="python inline-code" lang="python"><emphasis effect="italics">out.txt</emphasis></code> should only have the line of text that you have written.</para>
     <media alt="writing_to_a_new_file_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_03_03_Writing-to-a-new-file.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00005">
     <title>Writing to an existing file</title>
-    <para id="para-00017">Add 2 lines of text to the file called out.log, such that out.log has 3 lines after the code executes.</para>
+    <para id="para-00017">Add two lines of text to the file called <emphasis effect="italics">out.log</emphasis>, such that <emphasis effect="italics">out.log</emphasis> has three lines after the code executes.</para>
     
     <para id="para-00018">Hint: Don't forget that you need a newline character.</para>
     <media alt="writing_to_an_existing_file_program">
