@@ -28,7 +28,7 @@
     </section>
     <section id="sect-00006">
     <title>Format</title>
-    <para id="para-00007">You can access this textbook for free in web view or PDF through OpenStax.org, and for a low cost in print. The web view is the recommended format because it is the most accessible&#8212;including being WCAG 2.0 AA compliant&#8212;and most current. Print versions are available for individual purchase, or they may be ordered through your campus bookstore.</para>
+    <para id="para-00007">You can access this textbook for free in web view or PDF through OpenStax.org, and for a low cost in print. The web view is the recommended format because it is the most accessible—including being WCAG 2.0 AA compliant—and most current. Print versions are available for individual purchase, or they may be ordered through your campus bookstore.</para>
     </section>
     </section>
     <section id="sect-00007">
@@ -93,8 +93,48 @@
     </media>
     <caption><emphasis effect="bold">Senior contributing authors, left to right: Aubrey Lawson, Chris Mayfield, Narges Norouzi, and Udayan Das</emphasis>.</caption>
     </figure>
-   
-
+    <para id="para-00013"><emphasis effect="bold">Aubrey Lawson, Wiley</emphasis></para>
+    <para id="para-00018">Aubrey Lawson is a CS Content Developer at zyBooks. She received her bachelor's and master's degrees in Computer Science from Clemson University, and her PhD research focuses on CS education.</para>
+    <para id="para-00019"><emphasis effect="bold">Chris Mayfield, James Madison University</emphasis></para>
+    <para id="para-00020">Chris Mayfield, PhD, is a Professor of Computer Science at James Madison University. His research focuses on CS education and professional development at the undergraduate and high school levels. He received a PhD in Computer Science from Purdue University and bachelor’s degrees in CS and German from the University of Utah.</para>
+    <para id="para-00021"><emphasis effect="bold">Narges Norouzi, UC Berkeley</emphasis></para>
+    <para id="para-00022">Narges Norouzi received her MS and PhD from the University of Toronto, focusing on applied deep learning. She has since been involved in working on applied machine learning projects with a focus on biology and education. Her CS education research focuses on using artificial intelligence in the classroom to close the equity gap and leading student-centered programs that promote equity and access.</para>
+    <para id="para-00029"><emphasis effect="bold">Udayan Das, Saint Mary's College of California</emphasis></para>
+    <para id="para-00030">Udayan Das, PhD, is an Associate Professor and Program Director of Computer Science at Saint Mary's College of California. He received his PhD in Computer Science and a master's in Computer Engineering from the Illinois Institute of Technology. His research interests include wireless networks, computer science education and broadening participation in computing, and knowledge graph backed language models for technical document processing. He is also strongly committed to incorporating ethics into computer science and engineering education, and the Computer Science program that he has developed and launched at Saint Mary's College of California centers ethics and social justice while teaching students to be high-quality computing professionals.</para>
+    </section>
+    <section id="sect-00015">
+    <title>Contributing Authors</title>
+    <figure id="fig-00001" class="unnumbered">
+    <media alt="Headshots of Yamuna Rajasekhar and Reed Kanemaru, left to right.">
+    <!--<image mime-type="image/png" src="../../media/OSX_CPL_Preface_CAs.jpg"/>-->
+    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    </media>
+    <caption><emphasis effect="bold">Contributing authors, left to right: Yamuna Rajasekhar and Reed Kanemaru</emphasis>.</caption>
+    </figure>
+    <para id="para-00031"><emphasis effect="bold">Yamuna Rajasekhar, Wiley</emphasis></para>
+    <para id="para-00032">Yamuna Rajasekhar, PhD, is Director of Content, Authoring, and Research at Wiley. She works across disciplines on research strategy, authoring pedagogy and training, and content development for Computer Science and IT. She received her MS and PhD from University of North Carolina at Charlotte, focusing on Computer Engineering education. Prior to joining Wiley as a content author, Yamuna was an Assistant Professor of Computer Engineering at Miami University, where her research was focused on assistive technology with embedded systems and Computer Engineering education.</para>
+    <para id="para-00033"><emphasis effect="bold">Reed Kanemaru, Wiley</emphasis></para>
+    <para id="para-00034">Reed Kanemaru earned a BS in Computer Science from University of California, Riverside in 2020 and an MS in Computer Science from University of California, Riverside in 2021. Since graduating, he has worked as a Content/Software Developer at zyBooks.</para>
+    </section>
+    <section id="sect-00019">
+    <title>Reviewers</title>
+    <para id="para-00035">Mel Akhimiemona, Community College of Baltimore County</para>
+    <para id="para-00036">Doina Bein, Cal State Fullerton</para>
+    <para id="para-00037">Phillip Bradford, University of Connecticut</para>
+    <para id="para-00038">James Braman, Community College of Baltimore County</para>
+    <para id="para-00039">Robert Burrows, College of DuPage</para>
+    <para id="para-00040">Deena Engel, New York University</para>
+    <para id="para-00047">Gabriel Ferrer, Hendrix College</para>
+    <para id="para-00048">Nazli Hardy, Millersville University</para>
+    <para id="para-00049">Matthew Hertz, University at Buffalo</para>
+    <para id="para-00050">Rania Hodhod, Columbus State University</para>
+    <para id="para-00051">Akira Kawaguchi, The City College of New York</para>
+    <para id="para-00052">Kevin Lin, University of Washington</para>
+    <para id="para-00053">Matin Pirouz, Fresno State</para>
+    <para id="para-00054">Muhammad Rahman, Clayton State University</para>
+    <para id="para-00055">Jerry Reed, Valencia College</para>
+    <para id="para-00056">Kathleen Tamerlano, Cuyahoga Community College</para>
+    <para id="para-00057">Linda Tansil</para>
     </section>
     <section id="sect-00016">
     <title>Academic Integrity</title>
@@ -104,14 +144,14 @@
     <media alt="">
     <image mime-type="image/png" src="../../media/OSX_Preface_AcademicIntegritySliderv3-1-column.jpg"/>
     </media>
-    <caption>attribution: Copyright Rice University, OpenStax, under CC BY 4.0 license</caption>
+    <caption>attribution: Copyright Rice University, OpenStax, under CC BY 4.0 license Visit our <link url="https://www.openstax.org/r/academic-integrity-slider">academic integrity slider</link>. Click and drag icons along the continuum to align these practices with your institution and course policies. You may then include the graphic on your syllabus, present it in your first course meeting, or create a handout for students.</caption>
     </figure>
-    <para id="para-00043">Visit our <link url="https://www.openstax.org/r/academic-integrity-slider">academic integrity slider</link>. Click and drag icons along the continuum to align these practices with your institution and course policies.You may then include the graphic on your syllabus, present it in your first course meeting, or create a handout for students.</para>
+    <para id="para-00043"/>
     <para id="para-00044">At OpenStax we are also developing resources supporting authentic learning experiences and assessment. Please visit this book's page for updates. For an in-depth review of academic integrity strategies, we highly recommend visiting the International Center of Academic Integrity (ICAI) website at <link url="https://academicintegrity.org/">https://academicintegrity.org/</link>.</para>
     </section>
     <section id="sect-00017">
     <title>Community Hubs</title>
-    <para id="para-00045">OpenStax partners with the Institute for the Study of Knowledge Management in Education (ISKME) to offer Community Hubs on OER Commons--a platform for instructors to share community-created resources that support OpenStax books, free of charge. Through our Community Hubs, instructors can upload their own materials or download resources to use in their own courses, including additional ancillaries, teaching material, multimedia, and relevant course content. We encourage instructors to join the hubs for the subjects most relevant to your teaching and research as an opportunity both to enrich your courses and to engage with other faculty. To reach the Community Hubs, visit <link url="https://learn.zybooks.com/zybook/OpenStaxPythonDev/chapter/20/section/www.oercommons.org/hubs/openstax">www.oercommons.org/hubs/openstax</link>.</para>
+    <para id="para-00045">OpenStax partners with the Institute for the Study of Knowledge Management in Education (ISKME) to offer Community Hubs on OER Commons—a platform for instructors to share community-created resources that support OpenStax books, free of charge. Through our Community Hubs, instructors can upload their own materials or download resources to use in their own courses, including additional ancillaries, teaching material, multimedia, and relevant course content. We encourage instructors to join the hubs for the subjects most relevant to your teaching and research as an opportunity both to enrich your courses and to engage with other faculty. To reach the Community Hubs, visit <link url="https://learn.zybooks.com/zybook/OpenStaxPythonDev/chapter/20/section/www.oercommons.org/hubs/openstax">www.oercommons.org/hubs/openstax</link>.</para>
     </section>
     <section id="sect-00018">
     <title>Technology partners</title>
