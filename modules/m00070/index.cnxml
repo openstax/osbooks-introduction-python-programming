@@ -281,7 +281,7 @@
     <equation id="eq-00004">
     <m:math>
     <m:mrow>
-    <m:mtext>result</m:mtext><m:mo stretchy="false">[</m:mo><m:mtext>1</m:mtext><m:mo stretchy="false">]</m:mo><m:mo stretchy="false">[</m:mo><m:mtext>2</m:mtext><m:mo stretchy="false">]</m:mo><m:mo>=</m:mo><m:mfenced close="]" open="[">
+    <m:mtext>result</m:mtext><m:mo stretchy="false">[</m:mo><m:mtext>1</m:mtext><m:mo stretchy="false">]</m:mo><m:mo stretchy="false">[</m:mo><m:mtext>2</m:mtext><m:mo stretchy="false">]</m:mo><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mfenced close="]" open="[">
     <m:mrow>
     <m:mtable equalrows="true" equalcolumns="true">
     <m:mtr>
@@ -297,7 +297,7 @@
     </m:mtd>
     </m:mtr>
     </m:mtable></m:mrow>
-    </m:mfenced><m:mo>*</m:mo><m:mfenced close="]" open="[">
+    </m:mfenced><m:mspace width="0.2em"/><m:mo>*</m:mo><m:mspace width="0.2em"/><m:mfenced close="]" open="[">
     <m:mrow>
     <m:mtable equalrows="true" equalcolumns="true">
     <m:mtr>
@@ -321,11 +321,16 @@
     </m:math>
     </equation>
     <newline/><newline/>
-    
+    <!--<equation id="eq-00005">
+      <m:math>
+      <m:mrow>
+      <m:mtext>result</m:mtext><m:mo stretchy="false">[</m:mo><m:mtext>1</m:mtext><m:mo stretchy="false">]</m:mo><m:mo stretchy="false">[</m:mo><m:mtext>2</m:mtext><m:mo stretchy="false">]</m:mo><m:mtext>=2*5+</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>-9</m:mtext><m:mo stretchy="false">)</m:mo><m:mtext>*9+7*19=10-81+133=62</m:mtext></m:mrow>
+      </m:math>
+      </equation>-->
     <equation id="eq-00005">
     <m:math>
     <m:mrow>
-    <m:mtext>result</m:mtext><m:mo stretchy="false">[</m:mo><m:mtext>1</m:mtext><m:mo stretchy="false">]</m:mo><m:mo stretchy="false">[</m:mo><m:mtext>2</m:mtext><m:mo stretchy="false">]</m:mo><m:mtext>=2*5+</m:mtext><m:mo stretchy="false">(</m:mo><m:mtext>-9</m:mtext><m:mo stretchy="false">)</m:mo><m:mtext>*9+7*19=10-81+133=62</m:mtext></m:mrow>
+    <m:mtext>result</m:mtext><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo stretchy="false">]</m:mo><m:mo stretchy="false">[</m:mo><m:mn>2</m:mn><m:mo stretchy="false">]</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>*</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>-9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>*</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>*</m:mo><m:mn>19</m:mn><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>-</m:mo><m:mn>81</m:mn><m:mo>+</m:mo><m:mn>133</m:mn><m:mo>=</m:mo><m:mn>62</m:mn></m:mrow>
     </m:math>
     </equation>
     <media alt="matrix_multiplication_program">
