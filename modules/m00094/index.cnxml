@@ -12,7 +12,7 @@
     </media>
     <caption>credit: modification of work "Don't stare...only sheep dogs stare...", by Bernard Spragg. NZ/Flickr, Public Domain</caption>
     </figure>
-    <para id="para-00001">Real-world entities are often described in relation to other entities. Ex: A finch is a type of bird. So classes, which represent types of real-world entities, can be related to each other.</para>
+    <para id="para-00001">Real-world entities are often described in relation to other entities. Ex: A finch is a type of bird. Similarly, classes, which represent types of real-world entities, can be related to each other.</para>
     <para id="para-00002">Inheritance describes the relationship in which one class is a type of another class. Classes within inheritance relationships can inherit attributes and methods from other classes without needing to redefine everything. Thus, inheritance in object-oriented programming reduces redundancy and promotes modularity.</para>
     </content>    
 </document>
