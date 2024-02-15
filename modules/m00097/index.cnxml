@@ -132,23 +132,31 @@
     <para id="para-00016"><code class="python inline-code" lang="python">Tax</code> and <code class="python inline-code" lang="python">ContractTax</code> are unrelated classes that each define <code class="python inline-code" lang="python">calc_tax()</code>. <code class="python inline-code" lang="python">calc_tax()</code> isn't overridden as <code class="python inline-code" lang="python">ContractTax</code> isn't inherited from <code class="python inline-code" lang="python">Tax</code>.</para>
     <code class="python" lang="python">
     class Tax:
+      def __init__(self, value):
+        self.value = value
+  
       def calc_tax(self):
         print("Calculating tax")
-        total = 0.10 * self.value # To replace with calculation
+        total = 0.10 * self.value  # To replace with calculation
         return total
-
+  
     class ContractTax:
+      def __init__(self, value):
+        self.value = value
+  
       def calc_tax(self):
-        print("Calculating contracts tax")
-        total = 0.15 * self.value # To replace with calculation
-        return total
-    
-    my_tax = ContractTax()
-    my_tax.calc_tax()
+          print("Calculating contracts tax")
+          total = 0.15 * self.value  # To replace with calculation
+          return total
+  
+    my_tax = ContractTax(value=1000)  # Replace 1000 with any value
+    result = my_tax.calc_tax()
+    print(f"Total tax: ${result}")
     </code>
     <para id="para-00017">The code's output is:</para>
     <code class="python" lang="python">
     Calculating contracts tax
+    Total tax: $150.00
     </code>
     </example>
     <para id="para-00018">Polymorphism allows methods to be called with different parameter types. Many built-in operators and functions have this utility.</para>
@@ -198,13 +206,13 @@
     <para id="para-00024">Given the <code class="python inline-code" lang="python">Employee</code> class, create a <code class="python inline-code" lang="python">Developer</code> class inherited from <code class="python inline-code" lang="python">Employee</code> with methods <code class="python inline-code" lang="python">__init__()</code> and <code class="python inline-code" lang="python">print_info()</code> such that:</para>
     <para id="para-00025"><code class="python inline-code" lang="python">__init__()</code></para>
     <list id="list-00002">
-    <item>Uses <code class="python inline-code" lang="python">super()</code> to call <code class="python inline-code" lang="python">Employee'</code>s <code class="python inline-code" lang="python">__init__()</code> to initialize <code class="python inline-code" lang="python">e_id</code> and <code class="python inline-code" lang="python">hire_year</code></item>
+    <item>Uses <code class="python inline-code" lang="python">super()</code> to call <code class="python inline-code" lang="python">Employee'</code>s <code class="python inline-code" lang="python">__init__()</code> to initialize <code class="python inline-code" lang="python">e_id</code> and <code class="python inline-code" lang="python">hire_year</code>.</item>
     <item>Assigns <code class="python inline-code" lang="python">lang_xp</code> with list parameter <code class="python inline-code" lang="python">lang_xp</code>.</item>
     </list>
     <para id="para-00026"><code class="python inline-code" lang="python">print_info()</code></para>
     <list id="list-00003">
     <item>Uses <code class="python inline-code" lang="python">super()</code> to print <code class="python inline-code" lang="python">e_id</code> and <code class="python inline-code" lang="python">hire_year</code>.</item>
-    <item>Prints <code class="python inline-code" lang="python">"Language(s):"</code> followed by <code class="python inline-code" lang="python">lang_xp</code></item>
+    <item>Prints <code class="python inline-code" lang="python">"Language(s):"</code> followed by <code class="python inline-code" lang="python">lang_xp</code>.</item>
     </list>
     
     <media alt="using_super()_program">
