@@ -16,15 +16,15 @@
     </section>
     <section id="sect-00002">
     <title>Recursion</title>
-    <para id="para-00002"><term id="term-00001">Recursion</term> is a problem solving technique which uses the solution to a simpler version of the problem to solve the bigger problem. In turn, the same technique can be applied to the simpler version.</para>
+    <para id="para-00002"><term id="term-00001">Recursion</term> is a problem solving technique that uses the solution to a simpler version of the problem to solve the bigger problem. In turn, the same technique can be applied to the simpler version.</para>
     <note class="guided-slides" id="note-00001">
-    <title>3 towers</title>
+    <title>Three Towers</title>
     <media alt="towers_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/towers"/>
     </media>
     </note>
     <note class="learning-questions" id="note-00002">
-    <title>3 towers and recursion</title>
+    <title>Three Towers and recursion</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch12-m01-p01"/></para>
@@ -44,15 +44,15 @@
     </section>
     <section id="sect-00003">
     <title>Recursion to find a complete solution</title>
-    <para id="para-00005">The recursion process continues until the problem is small enough, at which point the solution is known or can be easily found. The larger solution can then be built systematically by successively building ever larger solutions until the complete problem is solved.</para>
+    <para id="para-00005">The recursion process continues until the problem is small enough, at which point the solution is known or can easily be found. The larger solution can then be built systematically by successively building ever larger solutions until the complete problem is solved.</para>
     <note class="guided-slides" id="note-00003">
-    <title>Solving 3 towers</title>
+    <title>Solving Three Towers</title>
     <media alt="solving_3_towers_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/solving-3-towers"/>
     </media>
     </note>
     <note class="learning-questions" id="note-00004">
-    <title>Solving 3 towers</title>
+    <title>Solving Three Towers</title>
     <exercise id="exer-00003">
     <problem id="prob-00003">
     <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch12-m01-p04"/></para>

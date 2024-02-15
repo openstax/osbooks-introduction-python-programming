@@ -19,11 +19,11 @@
     <item>Use the built-in <code class="python inline-code" lang="python">count()</code> list function.</item>
     <item>Define a recursive function to generate Fibonacci numbers.</item>
     <item>Use recursion to efficiently search a list.</item>
-    <item>Demonstrate a solution to the 3 towers problem.</item>
+    <item>Demonstrate a solution to the Three Towers problem.</item>
     </list>
     <para id="para-00002">At this point, you should be able to solve problems using recursion.</para>
     <table summary=" " id="table-00001">
-    <title>Chapter 12 reference</title>
+    <title>Chapter 12 reference.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -34,7 +34,7 @@
     <tbody>
     <row>
     <entry><para id="para-00003"><code class="python inline-code" lang="python">count(element)</code></para></entry>
-    <entry><para id="para-00004">Returns the number of times the element exists on the list on which the <code class="python inline-code" lang="python">count()</code> function is called..</para></entry>
+    <entry><para id="para-00004">Returns the number of times the element exists on the list on which the <code class="python inline-code" lang="python">count()</code> function is called.</para></entry>
     </row>
     </tbody>
     </tgroup>

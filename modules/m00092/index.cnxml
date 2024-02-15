@@ -11,16 +11,16 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Use recursion to efficiently search a list.</item>
-    <item>Demonstrate a solution to the 3 towers problem.</item>
+    <item>Demonstrate a solution to the Three Towers problem.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Binary search</title>
     <para id="para-00002">Searching a sorted list usually involves looking at each item. If the item being searched is not found, then the search can take a long time.</para>
-    <para id="para-00003">Binary search is a recursive algorithm used to efficiently search sorted lists. In each recursive step about half the items are discarded as not being potential matches and so the search proceeds much faster.</para>
-    <para id="para-00004">Binary search begins by checking the middle element of the list. If the search key is found, the algorithm returns the matching location (base case). Otherwise, the search is repeated on approximately half the list. If the key is greater than the middle, then the key must be on the right half and vice versa. The process continues by checking the middle element of the remaining half of the list.</para>
+    <para id="para-00003">A binary search is a recursive algorithm used to efficiently search sorted lists. In each recursive step, about half the items are discarded as not being potential matches, so the search proceeds much faster.</para>
+    <para id="para-00004">A binary search begins by checking the middle element of the list. If the search key is found, the algorithm returns the matching location (base case). Otherwise, the search is repeated on approximately half the list. If the key is greater than the middle element, then the key must be on the right half, and vice versa. The process continues by checking the middle element of the remaining half of the list.</para>
     <example id="exam-00001">
-    <title>Binary Search</title>
+    <title>Binary search</title>
     <code class="python" lang="python">
     """ Binary Search """
 
@@ -62,7 +62,7 @@
     </code>
     </example>
     <note class="guided-slides" id="note-00001">
-    <title>Binary search.</title>
+    <title>Binary search</title>
     <media alt="binary_search_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/binary-search"/>
     </media>
@@ -92,11 +92,11 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title>Solving 3 towers</title>
-    <para id="para-00010">As discussed in an earlier section the 3 towers problem can be solved using recursion. The solution depends upon calling the solution to the next smaller problem twice. As shown below in the code example, the recursive solution can solve the problem for any number of rings.</para>
+    <title>Solving Three Towers</title>
+    <para id="para-00010">As discussed in an earlier section, the Three Towers problem can be solved using recursion. The solution depends on calling the solution to the next smaller problem twice. As shown in the code example below, the recursive solution can solve the problem for any number of rings.</para>
     <example id="exam-00002">
     <title>Solving N towers</title>
-    <para id="para-00011">Solution to 3 towers is simple with recursion. In the code below rings are numbered from the top down. The smallest ring is 1, the next ring is 2, and when solving for 3 rings the bottom ring is 3.</para>
+    <para id="para-00011">The solution to Three Towers is simple with recursion. In the code below, rings are numbered from the top down. The smallest ring is 1, the next ring is 2, and when solving for three rings, the bottom ring is 3.</para>
     <code class="python" lang="python">
     """ Solving the towers problem recursively """
 
@@ -133,7 +133,7 @@
     </code>
     </example>
     <note class="learning-questions" id="note-00003">
-    <title>Solving 3 towers</title>
+    <title>Solving Three Towers</title>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch12-m05-p05"/></para>
@@ -149,8 +149,8 @@
     
     <note class="practice-program" id="note-00004">
     <title>Coin combinations</title>
-    <para id="para-00015">Write a recursive function <code class="python inline-code" lang="python">print_H_T()</code> that produces all possible combinations of heads (<code class="python inline-code" lang="python">'H'</code>) and tails (<code class="python inline-code" lang="python">'T'</code>) for a given number of coin tosses.</para>
-    <para id="para-00016">Ex: For 3 coins the program should print the output shown below.</para>
+    <para id="para-00015">Write a recursive function <code class="python inline-code" lang="python">print_H_T()</code> that produces all possible combinations of heads (<code class="python inline-code" lang="python">"H"</code>) and tails (<code class="python inline-code" lang="python">"T"</code>) for a given number of coin tosses.</para>
+    <para id="para-00016">Ex: For three coins, the program should print the output shown below.</para>
     <code class="python" lang="python">
     HHH
     HHT

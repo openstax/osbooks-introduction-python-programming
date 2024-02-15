@@ -12,13 +12,13 @@
     <list id="list-00001">
     <item>Demonstrate the use of recursion to solve a string problem.</item>
     <item>Demonstrate the use of recursion to solve a list problem.</item>
-    <item>Use built-in <code class="python inline-code" lang="python">count()</code> list function.</item>
+    <item>Use the built-in <code class="python inline-code" lang="python">count()</code> list function.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Recursion with strings</title>
-    <para id="para-00002">A word that is spelled the same forwards and backwards is called a palindrome. Ex: racecar.</para>
-    <para id="para-00003">Recursion can be used to identify if a given word is a palindrome.</para>
+    <para id="para-00002">A word that is spelled the same forward and backward is called a palindrome. Ex: racecar.</para>
+    <para id="para-00003">Recursion can be used to identify whether a given word is a palindrome.</para>
     <note class="guided-slides" id="note-00001">
     <title>Identifying a palindrome</title>
     <media alt="identifying_palindrome_slides">
@@ -89,7 +89,7 @@
     <note class="practice-program" id="note-00005">
     <title>Remove duplicates</title>
     <para id="para-00016">Write a recursive <code class="python inline-code" lang="python">rem_dup()</code> function that removes duplicates from a list.</para>
-    <para id="para-00017">Ex: List <code class="python inline-code" lang="python">[5, 5, 2, 1, 3, 1, 6]</code> should result in an output list <code class="python inline-code" lang="python">[5, 2, 1, 3, 6]</code></para>
+    <para id="para-00017">Ex: List <code class="python inline-code" lang="python">[5, 5, 2, 1, 3, 1, 6]</code> should result in an output list <code class="python inline-code" lang="python">[5, 2, 1, 3, 6]</code>.</para>
     <media alt="remove_duplicates_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_04_03_Remove-duplicates.html"/>
     </media>
