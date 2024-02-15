@@ -132,7 +132,7 @@ plt.show()</code></entry>
 </table>
     
 <table summary=" " id="table-00102">
-<title>Matplotlib functionalities. Line plot.</title>
+<title>Matplotlib functionalities.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -175,10 +175,12 @@ plt.show()
 </entry>
 </row>
 </tbody>
-</tgroup></table>
+</tgroup>
+<caption>Line plot.</caption>
+</table>
 
 <table summary=" " id="table-00103">
-<title>Matplotlib functionalities. Scatter plot.</title>
+<title>Matplotlib functionalities.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -218,10 +220,11 @@ plt.show()</code></entry>
 </entry>
 </row>
 </tbody>
-</tgroup></table> 
+</tgroup>
+<caption>Scatter plot.</caption></table> 
 
 <table summary=" " id="table-00104">
-<title>Matplotlib functionalities. Histogram plot.</title>
+<title>Matplotlib functionalities.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -262,10 +265,11 @@ plt.show()</code></entry>
 </entry>
 </row>
 </tbody>
-</tgroup></table>
+</tgroup>
+<caption>Histogram plot.</caption></table>
 
 <table summary=" " id="table-00105">
-<title>Matplotlib functionalities. Box plot.</title>
+<title>Matplotlib functionalities.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -306,7 +310,9 @@ plt.show()</code></entry>
 </entry>
 </row>
 </tbody>
-</tgroup></table>
+</tgroup>
+<caption>Box plot.</caption>
+</table>
 
 <!--<table summary=" " id="table-00002">
 <title>Matplotlib functionalities.</title>
