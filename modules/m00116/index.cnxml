@@ -20,34 +20,34 @@
     </section>
     <section id="sect-00004">
     <title>Art attribution</title>
-    <para id="para-00005">In <emphasis effect="italics">Introduction to Programming with Python</emphasis>, most photos and third-party illustrations contain attribution to their creator, rights holder, host platform, and/or license within the caption. Because the art is openly licensed, anyone may reuse the art as long as they provide the same attribution to its original source. To maximize readability and content flow, some art does not include attribution in the text. This art is part of the public domain or under a CC0 or similar license, and can be reused without attribution. For illustrations (e.g. graphs, charts, etc.) that are not credited, use the following attribution: Copyright Rice University, OpenStax, under [CC BY 4.0 / CC BY-NC-SA 4.0] license.</para>
+    <para id="para-00005">In <emphasis effect="italics">Introduction to Programming with Python</emphasis>, most photos and third-party illustrations contain attribution to their creator, rights holder, host platform, and/or license within the caption. Because the art is openly licensed, anyone may reuse the art as long as they provide the same attribution to its original source. To maximize readability and content flow, some art does not include attribution in the text. This art is part of the public domain or under a CC0 or similar license, and can be reused without attribution. For illustrations (e.g. graphs, charts, etc.) that are not credited, use the following attribution: Copyright Rice University, OpenStax, under CC BY 4.0 license.</para>
     </section>
     <section id="sect-00005">
     <title>Errata</title>
-    <para id="para-00006">All OpenStax textbooks undergo a rigorous review process. However, like any professional-grade textbook, errors sometimes occur. In addition, the wide range of topics, data, and legal circumstances in sociology change frequently, and portions of the textbook may become out of date. Since our books are web-based, we can make updates periodically when deemed pedagogically necessary. If you have a correction to suggest, submit it through the link on your book page on OpenStax.org. Subject matter experts review all errata suggestions. OpenStax is committed to remaining transparent about all updates, so you will also find a list of past and pending errata changes on your book page on OpenStax.org.</para>
+    <para id="para-00006">All OpenStax textbooks undergo a rigorous review process. However, like any professional-grade textbook, errors sometimes occur. Since our books are web-based, we can make updates periodically when deemed pedagogically necessary. If you have a correction to suggest, submit it through the link on your book page on OpenStax.org. Subject matter experts review all errata suggestions. OpenStax is committed to remaining transparent about all updates, so you will also find a list of past and pending errata changes on your book page on OpenStax.org.</para>
     </section>
     <section id="sect-00006">
     <title>Format</title>
-    <para id="para-00007">You can access this textbook for free in web view or PDF through OpenStax.org, and for a low cost in print. The web view is the recommended format because it is the most accessible--including being WCAG 2.0 AA compliant--and most current. Print versions are available for individual purchase, or they may be ordered through your campus bookstore.</para>
+    <para id="para-00007">You can access this textbook for free in web view or PDF through OpenStax.org, and for a low cost in print. The web view is the recommended format because it is the most accessible&#8212;including being WCAG 2.0 AA compliant&#8212;and most current. Print versions are available for individual purchase, or they may be ordered through your campus bookstore.</para>
     </section>
     </section>
     <section id="sect-00007">
     <title>About <emphasis effect="italics">Introduction to Programming with Python</emphasis></title>
-    <para id="para-00008">OpenStax's <emphasis effect="italics">Introduction to Programming with Python</emphasis> is an interactive textbook that teaches basic programming concepts, problem solving skills, and the Python language using hands-on activities. The content is organized in chapters, with each chapter containing 6–8 sections.</para>
+    <para id="para-00008">OpenStax's <emphasis effect="italics">Introduction to Programming with Python</emphasis> is an interactive textbook that teaches basic programming concepts, problem-solving skills, and the Python language using hands-on activities. The content is organized in chapters, with each chapter containing 6–8 sections.</para>
     <para id="para-00009">Each section follows the pattern:</para>
     <list id="list-00001">
     <item>Learning objectives</item>
     <item>1–3 subsections</item>
     <item>Programming practice</item>
     </list>
-    <para id="para-00010">The learning objectives are designed to help readers identify the section's focus. Each objective completes the sentence, "At the end of this section, the reader will be able to…" The programming practice aligns with the learning objectives and gives readers an opportunity to apply concepts learned in the section.</para>
+    <para id="para-00010">The learning objectives are designed to help readers identify the section's focus. Each objective completes the sentence, "By the end of this section you should be able to". The programming practice aligns with the learning objectives and gives readers an opportunity to apply concepts learned in the section.</para>
     </section>
     <section id="sect-00008">
     <title>Pedagogical Foundation</title>
     <section id="sect-00009">
     <title>Concise text and video-based animations</title>
     <para id="para-00011">Most of the section's content is organized in subsections. Each subsection begins with concise text to introduce a new concept, define key terms, and provide context. The concept is then explained in detail using video-based animations and interactive learning questions.</para>
-    <para id="para-00012">Animation videos use a step-by-step approach to show the execution of Python code. Explanations for each step describe Python syntax, show how fundamental programming concepts are used, illustrate how variables are assigned , emphasize how code executes line by line, apply problem solving to create programs, and more.</para>
+    <para id="para-00012">Animation videos use a step-by-step approach to show the execution of Python code. Explanations for each step describe Python syntax, show how fundamental programming concepts are used, illustrate how variables are assigned, emphasize how code executes line by line, apply problem solving to create programs, and more.</para>
     
     <note class="guided-slides" id="note-00001">
       <title>Displaying output to the user</title>
@@ -65,17 +65,14 @@
     <section id="sect-00011">
     <title>Programming practice exercises</title>
     <para id="para-00017">Each section ends with 1 or 2 practice programs. This book includes an integrated programming environment, known as the "OpenStax Python code runner," that allows readers to write programs directly in the browser. The code runner requires the reader to pre-enter any input before running a program.</para>
-    <para id="para-00018">The following program reads an hourly pay from the user input, calculates the weekly pay based on a 40-hour work week, and outputs the result. The user input has been prepopulated with the value 15.</para>
-    <para id="para-00019">NOTE:</para>
-    <para id="para-00020">Insert programming practice module available in shared Rice Gdrive https://drive.google.com/drive/folders/1iOXpII3UIkWYaTtkKzCRY8ssPEmfF4TK?usp=drive_link</para>
-    <para id="para-00021">CodeRunner_Pre_01_01_Weekly-pay.htm (https://drive.google.com/file/d/1D6OHdjBmJ5oLMy9aek374gzMJ4vSnquU/view?usp=drive_link)</para>
-    <para id="para-00022">CodeRunner_Pre_01_01_Weekly-pay.js (https://drive.google.com/file/d/1KM_yhP_rwBbOtBEgjH5o4Q-ZJ65ytxKN/view?usp=drive_link)</para>
+
+
     </section>
     <section id="sect-00012">
     <title>Conventions used in this book</title>
     <para id="para-00023">The following typographical conventions are used throughout the book:</para>
     <para id="para-00024"><emphasis effect="bold">Bold</emphasis><newline/>
-    Indicates vocabulary words when first defined in the chapter. A summary of all definitions can be found by clicking the menu icon (upper left) and selecting "Search zyBook."</para>
+    Indicates vocabulary words when first defined in the chapter.</para>
     <para id="para-00025"><emphasis effect="italics">Italic</emphasis><newline/>
     Indicates emphasized text, filenames, and file extensions.</para>
     <para id="para-00026"><code>Constant width</code><newline/>
@@ -89,12 +86,12 @@
     <section id="sect-00013">
     <title>About the Authors</title>
     <section id="sect-00014">
-    <title>Authors</title>
+    <title>Senior Contributing Authors</title>
     <figure class="unnumbered" id="fig-00002">
-    <media alt="">
+    <media alt="Headshots of Aubrey Lawson, Chris Mayfield, Narges Norouzi, and Udayan Das, left to right.">
     <image mime-type="image/png" src="../../media/FPO.jpg"/>
     </media>
-    <caption>[Caption: caption needed]</caption>
+    <caption><emphasis effect="bold">Senior contributing authors, left to right: Aubrey Lawson, Chris Mayfield, Narges Norouzi, and Udayan Das</emphasis>.</caption>
     </figure>
    
 
