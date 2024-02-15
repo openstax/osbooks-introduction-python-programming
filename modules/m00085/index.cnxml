@@ -10,13 +10,13 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Construct an import statement that selectively imports classes</item>
-    <item>Create an alias to import a module</item>
+    <item>Construct an import statement that selectively imports classes.</item>
+    <item>Create an alias to import a module.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>Importing classes from modules</title>
-    <para id="para-00002">Import statements, as discussed in the Modules chapter, allow code from other files, including classes, to be imported into a program. Accessing an imported class depends on whether the whole module is imported or just selected parts.</para>
+    <para id="para-00002">Import statements, as discussed in the <link document="m00051">Modules</link> chapter, allow code from other files, including classes, to be imported into a program. Accessing an imported class depends on whether the whole module is imported or only selected parts.</para>
     <para id="para-00003">Multiple classes can be grouped in a module. For good organization, classes should be grouped in a module only if the grouping enables module reuse, as a key benefit of modules is reusability.</para>
     <note class="guided-slides" id="note-00001">
     <title>Importing classes from files</title>
@@ -47,7 +47,7 @@
     <title>Using aliases</title>
     <para id="para-00007"><term id="term-00001">Aliasing</term> allows the programmer to use an alternative name for imported items. Ex: <code class="python inline-code" lang="python">import triangle as tri</code> allows the program to refer to the triangle module as tri. Aliasing is useful to avoid name collisions but should be used carefully to avoid confusion.</para>
     <example id="exam-00001">
-      <title>Using aliasing to import character.</title>
+      <title>Using aliasing to import character</title>
     
     <para id="para-00009"><emphasis effect="italics">character.py</emphasis></para>
     <code class="python" lang="python">

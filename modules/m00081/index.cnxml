@@ -6,6 +6,14 @@
     <md:uuid>f7c14d3d-ea71-4a5e-8908-22b33a5721b9</md:uuid>
   </metadata>
   <content>
+<section id="sect-00004">
+<title>Learning objectives</title>
+<para id="para-00010">By the end of this section you should be able to</para>
+<list id="list-00001">
+<item>Describe the paradigm of object-oriented programming (OOP).</item>
+<item>Describe the concepts of encapsulation and abstraction as they relate to OOP, and identify the value of each concept.</item>
+</list>
+</section>
     <section id="sect-00001">
     <title>Grouping into objects</title>
     <para id="para-00001"><term id="term-00001">Object-oriented programming</term> (OOP) is a style of programming that groups related fields, or data members, and procedures into objects. Real-world entities are modeled as individual objects that interact with each other. Ex: A social media account can follow other accounts, and accounts can send messages to each other. An account can be modeled as an object in a program.</para>
@@ -54,7 +62,7 @@
     </section>
     <section id="sect-00003">
     <title>Abstraction</title>
-    <para id="para-00007"><term id="term-00003">Abstraction</term> is a key concept in OOP in which a unit's inner workings are hidden from users and other units that don't need to know the inner workings. Ex: A driver doesn't usually need to know their car engine's exact, numerical temperature. So the car has a gauge to display if the engine temperature is within an appropriate range.</para>
+    <para id="para-00007"><term id="term-00003">Abstraction</term> is a key concept in OOP in which a unit's inner workings are hidden from users and other units that don't need to know the inner workings. Ex: A driver doesn't usually need to know their car engine's exact, numerical temperature. So the car has a gauge to display whether the engine temperature is within an appropriate range.</para>
     <note class="guided-slides" id="note-00005">
     <title>Abstracting data in a countdown calculator</title>
     <media alt="abstracting_data_slides">

@@ -15,13 +15,13 @@
     <item>Instances of a class type represent objects and are created using <code class="python inline-code" lang="python">__init__()</code>.</item>
     <item>Attributes may belong to the instance (unique for each instance) or the class (shared by all instances).</item>
     <item>Instance methods have the first parameter <code class="python inline-code" lang="python">self</code> to access the specific instance.</item>
-    <item>Python uses magic methods to perform "under the hood" actions for users. Magic methods always start and end with double underscores.</item>
+    <item>Python uses magic methods to perform "under-the-hood" actions for users. Magic methods always start and end with double underscores.</item>
     <item>Python allows overloading of existing operators for user-defined classes.</item>
-    <item>Classes can be imported from modules by name and can be renamed using aliases.</item>
+    <item>Classes can be imported from modules by name or can be renamed using aliases.</item>
     </list>
-    <para id="para-00002">At this point, you should be able to write classes that have instance attributes, class attributes, and methods and import classes from modules. You should also be able to overload operators when defining a class.</para>
+    <para id="para-00002">At this point, you should be able to write classes that have instance attributes, class attributes, and methods, and import classes from modules. You should also be able to overload operators when defining a class.</para>
 <table summary=" " id="table-00001">
-<title>Chapter 11 reference</title>
+<title>Chapter 11 reference.</title>
 <tgroup cols="2">
 <thead>
 <row>

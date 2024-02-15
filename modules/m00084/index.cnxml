@@ -10,8 +10,8 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Identify magic methods and describe their purpose</item>
-    <item>Develop overloaded arithmetic and comparison operators for user-defined classes</item>
+    <item>Identify magic methods and describe their purpose.</item>
+    <item>Develop overloaded arithmetic and comparison operators for user-defined classes.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -52,7 +52,7 @@
     </media>
     </note>
     <table summary=" " id="table-00001">
-    <title>Arithmetic operators and magic methods</title>
+    <title>Arithmetic operators and magic methods.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -111,7 +111,7 @@
     <title>Overloading comparison operators</title>
     <para id="para-00010">Comparison operators can also be overloaded like arithmetic operators.</para>
 <table summary=" " id="table-00002">
-<title>Comparison operators and magic methods</title>
+<title>Comparison operators and magic methods.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -129,11 +129,11 @@
 <entry><code class="python inline-code" lang="python">__gt__(self, other)</code></entry>
 </row>
 <row>
-<entry>&lt;= (Less than or equal)</entry>
+<entry>&lt;= (Less than or equal to)</entry>
 <entry><code class="python inline-code" lang="python">__le__(self, other)</code></entry>
 </row>
 <row>
-<entry>>= (Greater than or equal)</entry>
+<entry>>= (Greater than or equal to)</entry>
 <entry><code class="python inline-code" lang="python">__ge__(self, other)</code></entry>
 </row>
 <row>
@@ -148,7 +148,7 @@
 </tgroup>
 </table>
 <example id="exam-00001">
-<title>Overloading comparison operators for the Account class.</title>
+<title>Overloading comparison operators for the Account class</title>
 <table summary=" " id="table-00003">
 <title/>
 <tgroup cols="2">

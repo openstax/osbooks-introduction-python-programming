@@ -10,8 +10,8 @@
   <title>Learning objectives</title>
   <para id="para-00001">By the end of this section you should be able to</para>
   <list id="list-00001">
-  <item>Create and implement <code class="python inline-code" lang="python">__init__()</code> with multiple parameters including default parameter values</item>
-  <item>Describe which information an instance method has access to and can modify</item>
+  <item>Create and implement <code class="python inline-code" lang="python">__init__()</code> with multiple parameters including default parameter values.</item>
+  <item>Describe what information an instance method has access to and can modify.</item>
   </list>
   </section>
   <section id="sect-00002">
@@ -45,7 +45,7 @@
   </section>
   <section id="sect-00003">
   <title>Instance methods</title>
-  <para id="para-00007">An <term id="term-00001">instance method</term> is used to access and modify instance attributes as well as the class attributes. All methods shown so far and most methods defined in a class definition are instance methods.</para>
+  <para id="para-00007">An <term id="term-00001">instance method</term> is used to access and modify instance attributes as well as class attributes. All methods shown so far, and most methods defined in a class definition, are instance methods.</para>
   <example id="exam-00001">
   <title>Instance methods are often used to get and set instance information</title>
   <code class="python" lang="python">
@@ -127,9 +127,9 @@
   <para id="para-00014">Methods:</para>
   <list id="list-00003">
   <item><code class="python inline-code" lang="python">__init__(num)</code>: initializes count and max with <code class="python inline-code" lang="python">num</code> parameter</item>
-  <item><code class="python inline-code" lang="python">refill()</code>: assigns <code class="python inline-code" lang="python">count</code> with <code class="python inline-code" lang="python">max'</code>s value and prints <code class="python inline-code" lang="python">'Refilled'</code></item>
-  <item><code class="python inline-code" lang="python">sell(order)</code>: assigns <code class="python inline-code" lang="python">count</code> with the value of <code class="python inline-code" lang="python">count</code> minus <code class="python inline-code" lang="python">order</code> and prints <code class="python inline-code" lang="python">'Sold: [order]'</code></item>
-  <item><code class="python inline-code" lang="python">print_stock()</code>: prints <code class="python inline-code" lang="python">'Current stock: [count]'</code></item>
+  <item><code class="python inline-code" lang="python">refill()</code>: assigns <code class="python inline-code" lang="python">count</code> with <code class="python inline-code" lang="python">max'</code>s value and prints <code class="python inline-code" lang="python">"Refilled"</code></item>
+  <item><code class="python inline-code" lang="python">sell(order)</code>: assigns <code class="python inline-code" lang="python">count</code> with the value of <code class="python inline-code" lang="python">count</code> minus <code class="python inline-code" lang="python">order</code> and prints <code class="python inline-code" lang="python">"Sold: [order]"</code></item>
+  <item><code class="python inline-code" lang="python">print_stock()</code>: prints <code class="python inline-code" lang="python">"Current stock: [count]"</code></item>
   </list>
   <para id="para-00015">Given input:</para>
   <code class="python" lang="python">

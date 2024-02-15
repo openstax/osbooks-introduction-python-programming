@@ -10,8 +10,8 @@
     <title>Learning objectives</title>
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
-    <item>Create a class with instance attributes, class attributes, and the <code class="python inline-code" lang="python">__init__()</code> method</item>
-    <item>Use a class definition to create class instances to represent objects</item>
+    <item>Create a class with instance attributes, class attributes, and the <code class="python inline-code" lang="python">__init__()</code> method.</item>
+    <item>Use a class definition to create class instances to represent objects.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -114,7 +114,7 @@
     </section>
     <section id="sect-00004">
     <title>Instance attributes vs. class attributes</title>
-    <para id="para-00015">The attributes shown so far have been instance attributes. An <term id="term-00004">instance attribute</term> is a variable that is unique to each instance of a class and is accessed using the format <code class="python inline-code" lang="python">instance_name.attribute_name</code>. Another type of attribute, a <term id="term-00005">class attribute</term>, belongs to the class and is shared by all class instances. Class attributes are accessed using the format, <code class="python inline-code" lang="python">class_name.attribute_name</code>.</para>
+    <para id="para-00015">The attributes shown so far have been instance attributes. An <term id="term-00004">instance attribute</term> is a variable that is unique to each instance of a class and is accessed using the format <code class="python inline-code" lang="python">instance_name.attribute_name</code>. Another type of attribute, a <term id="term-00005">class attribute</term>, belongs to the class and is shared by all class instances. Class attributes are accessed using the format <code class="python inline-code" lang="python">class_name.attribute_name</code>.</para>
     <note class="guided-slides" id="note-00005">
     <title>Using class attributes for shared coffee order information</title>
     <media alt="using_class_attributes_slides">
@@ -153,16 +153,16 @@
     <para id="para-00022">Instance attributes:</para>
     <list id="list-00002">
     <item>flight_num: 1</item>
-    <item>airport: 'JFK'</item>
-    <item>gate: 'T1-1'</item>
-    <item>time: '8:00'</item>
-    <item>seat: '1A'</item>
-    <item>passenger: 'unknown'</item>
+    <item>airport: JFK</item>
+    <item>gate: T1-1</item>
+    <item>time: 8:00</item>
+    <item>seat: 1A</item>
+    <item>passenger: unknown</item>
     </list>
     <para id="para-00023">Class attributes:</para>
     <list id="list-00003">
-    <item>airline: 'Oceanic Airlines'</item>
-    <item>airline_code: 'OA'</item>
+    <item>airline: Oceanic Airlines</item>
+    <item>airline_code: OA</item>
     </list>
     <para id="para-00024">Method:</para>
     <list id="list-00004">
@@ -198,7 +198,7 @@
     </list>
     <para id="para-00029">Class attribute:</para>
     <list id="list-00006">
-    <item>imprint: 'Fantasy Tomes'</item>
+    <item>imprint: Fantasy Tomes</item>
     </list>
     <para id="para-00030">Method:</para>
     <list id="list-00007">
