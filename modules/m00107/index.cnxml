@@ -11,12 +11,12 @@
     <item>Python can read and write data in files using the built-in <code class="python inline-code" lang="python">open()</code> function.</item>
     <item>Due to buffering, changes to a file may not be visible until the file is closed.</item>
     <item>Newline characters need to be removed/added when reading/writing files.</item>
-    <item>Comma separated value (CSV) files are commonly used to represent data.</item>
+    <item>Comma-separate-value (CSV) files are commonly used to represent data.</item>
     <item>Exceptions that cause a program to terminate can be handled using <code class="python inline-code" lang="python">try</code> and <code class="python inline-code" lang="python">except</code>.</item>
     <item>Raising an exception is an alternative way to return from a function when an error occurs.</item>
     </list>
 <table summary=" " id="table-00001">
-<title>Chapter 14 reference</title>
+<title>Chapter 14 reference.</title>
 <tgroup cols="2">
 <thead>
 <row>
