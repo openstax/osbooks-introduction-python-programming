@@ -12,13 +12,13 @@
     <list id="list-00001">
     <item>Identify is-a and has-a relationships between classes.</item>
     <item>Differentiate between a subclass and a superclass.</item>
-    <item>Create a superclass and subclass and instances of each.</item>
+    <item>Create a superclass, subclass, and instances of each.</item>
     </list>
     </section>
     <section id="sect-00002">
     <title>is-a vs has-a relationships</title>
-    <para id="para-00002">Classes are related to each other. An is-a relationship exists between a superclass whose functionality is added to to create a subclass. Ex: A daffodil is a plant. So a <code class="python inline-code" lang="python">Daffodil</code> class inherits from a superclass, <code class="python inline-code" lang="python">Plant</code>.</para>
-    <para id="para-00003">Is-a relationships can be confused with has-a relationships. A has-a relationship exists between a class that contains another class. Ex. An employee has a company-issued laptop. Note: The laptop is not an employee.</para>
+    <para id="para-00002">Classes are related to each other. An is-a relationship exists between a subclass and a superclass. Ex: A daffodil is a plant. A <code class="python inline-code" lang="python">Daffodil</code> class inherits from a superclass, <code class="python inline-code" lang="python">Plant</code>.</para>
+    <para id="para-00003">Is-a relationships can be confused with has-a relationships. A has-a relationship exists between a class that contains another class. Ex: An employee has a company-issued laptop. Note: The laptop is not an employee.</para>
     <note class="guided-slides" id="note-00001">
     <title>is-a relationship between Employee and Developer</title>
     <media alt="is_a_relationship_slides">
@@ -46,8 +46,8 @@
     </section>
     <section id="sect-00003">
     <title>Inheritance in Python</title>
-    <para id="para-00007">Inheritance uses an is-a relationship to inherit a class from a superclass. The subclass inherits all the superclass's attributes and methods and extends the superclass's functionality.</para>
-    <para id="para-00008">In Python, a subclass is created by including the superclass name at the top of the subclass's definition in parentheses:</para>
+    <para id="para-00007">Inheritance uses an is-a relationship to inherit a class from a superclass. The subclass inherits all the superclass's attributes and methods, and extends the superclass's functionality.</para>
+    <para id="para-00008">In Python, a subclass is created by including the superclass name in parentheses at the top of the subclass's definition:</para>
     <code class="python" lang="python">
     class SuperClass:
         # SuperClass attributes and methods
@@ -118,7 +118,7 @@
    
     <note class="practice-program" id="note-00006">
     <title>Employee and Developer classes</title>
-    <para id="para-00014">Given the <code class="python inline-code" lang="python">Employee</code> class, create a <code class="python inline-code" lang="python">Developer</code> class that inherits from <code class="python inline-code" lang="python">Employee</code>. The <code class="python inline-code" lang="python">Developer</code> class has one method <code class="python inline-code" lang="python">update_codebase()</code> that prints <code class="python inline-code" lang="python">"Employee has updated the codebase"</code>. Then use the <code class="python inline-code" lang="python">Developer</code> instance, <code class="python inline-code" lang="python">python_dev</code>, to call <code class="python inline-code" lang="python">print_company()</code> and <code class="python inline-code" lang="python">update_codebase()</code>.</para>
+    <para id="para-00014">Given the <code class="python inline-code" lang="python">Employee</code> class, create a <code class="python inline-code" lang="python">Developer</code> class that inherits from <code class="python inline-code" lang="python">Employee</code>. The <code class="python inline-code" lang="python">Developer</code> class has one method, <code class="python inline-code" lang="python">update_codebase()</code>, which prints <code class="python inline-code" lang="python">"Employee has updated the codebase"</code>. Then, use the <code class="python inline-code" lang="python">Developer</code> instance, <code class="python inline-code" lang="python">python_dev</code>, to call <code class="python inline-code" lang="python">print_company()</code> and <code class="python inline-code" lang="python">update_codebase()</code>.</para>
     <media alt="employee_and_developer_classes_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch13/CodeRunner_13_02_01_Employee-and-Developer-classes.html"/>
     </media>
@@ -127,11 +127,11 @@
     <title>Polygon classes</title>
     <para id="para-00015">Define three classes: <code class="python inline-code" lang="python">Polygon</code>, <code class="python inline-code" lang="python">Rectangle</code>, and <code class="python inline-code" lang="python">Square</code>:</para>
     <list id="list-00002">
-    <item><code class="python inline-code" lang="python">Polygon</code> has method <code class="python inline-code" lang="python">p_disp()</code> that prints <code class="python inline-code" lang="python">"object is a Polygon"</code></item>
-    <item><code class="python inline-code" lang="python">Rectangle</code> inherits from <code class="python inline-code" lang="python">Polygon</code> and has method <code class="python inline-code" lang="python">r_disp()</code> that prints <code class="python inline-code" lang="python">"object is a Rectangle"</code></item>
-    <item><code class="python inline-code" lang="python">Square</code> inherits from <code class="python inline-code" lang="python">Rectangle</code> and has method <code class="python inline-code" lang="python">s_disp()</code> that prints <code class="python inline-code" lang="python">"object is a Square"</code></item>
+    <item><code class="python inline-code" lang="python">Polygon</code> has the method <code class="python inline-code" lang="python">p_disp()</code>, which prints <code class="python inline-code" lang="python">"object is a Polygon"</code>.</item>
+    <item><code class="python inline-code" lang="python">Rectangle</code> inherits from <code class="python inline-code" lang="python">Polygon</code> and has the method <code class="python inline-code" lang="python">r_disp()</code>, which prints <code class="python inline-code" lang="python">"object is a Rectangle"</code>.</item>
+    <item><code class="python inline-code" lang="python">Square</code> inherits from <code class="python inline-code" lang="python">Rectangle</code> and has the method <code class="python inline-code" lang="python">s_disp()</code>, which prints <code class="python inline-code" lang="python">"object is a Square"</code>.</item>
     </list>
-    <para id="para-00016">Create an instance of each class. Then for each instance, call all the methods the instance has access to.</para>
+    <para id="para-00016">Create an instance of each class. Then, for each instance, call all the methods the instance has access to.</para>
     <media alt="polygon_classes_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch13/CodeRunner_13_02_02_Polygon-classes.html"/>
     </media>
