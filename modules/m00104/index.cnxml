@@ -16,11 +16,11 @@
     </section>
     <section id="sect-00002">
     <title>Opening a file at any location</title>
-    <para id="para-00002">When only the filename is used as the argument to the <code class="python inline-code" lang="python">open()</code> function the file must be in the same folder as the Python file which is executing. Ex: If files.py has a line <code class="python inline-code" lang="python">fileobj = open("file1.txt")</code> then for the line of code to execute successfully, the file1.txt file should be in the same folder as <emphasis effect="italics">files.py</emphasis>.</para>
-    <para id="para-00003">Often a programmer needs to open files from other folders than the one in which the Python file exists. A <term id="term-00001">path</term> uniquely identifies a folder location on a computer. The path can be used along with filename to open a file in any folder location. Ex: To open a file named logfile.log located in <code class="python inline-code" lang="python">/users/turtle/desktop</code> the following can be used:</para>
+    <para id="para-00002">When only the filename is used as the argument to the <code class="python inline-code" lang="python">open()</code> function, the file must be in the same folder as the Python file that is executing. Ex: For <code class="python inline-code" lang="python">fileobj = open("file1.txt")</code> in <emphasis effect="italics">files.py</emphasis> to execute successfully, the <emphasis effect="italics">file1.txt</emphasis> file should be in the same folder as <emphasis effect="italics">files.py</emphasis>.</para>
+    <para id="para-00003">Often a programmer needs to open files from folders other than the one in which the Python file exists. A <term id="term-00001">path</term> uniquely identifies a folder location on a computer. The path can be used along with the filename to open a file in any folder location. Ex: To open a file named <emphasis effect="italics">logfile.log</emphasis> located in <code class="python inline-code" lang="python">/users/turtle/desktop</code> the following can be used:</para>
     <para id="para-00004"><code class="python inline-code" lang="python">fileobj = open("/users/turtle/desktop/logfile.log")</code></para>
     <table summary=" " id="table-00001">
-    <title>Modes for <code class="python inline-code" lang="python">open()</code> function.</title>
+    <title>Modes for the <code class="python inline-code" lang="python">open()</code> function.</title>
     <tgroup cols="3">
     <thead>
     <row>
@@ -47,12 +47,12 @@
     </row>
     </tbody>
     </tgroup>
-    <caption>In each of the following cases, a file called output.txt is located in a different folder than the Python folder. Windows uses backslash \ characters instead of slash / characters for the path. If the backslash is included directly in <code class="python inline-code" lang="python">open()</code> then an additional backslash is needed for Python to understand the location correctly.</caption>
+    <caption>In each of the following cases, a file called output.txt is located in a different folder than the Python folder. Windows uses backslash \ characters instead of forward slash / characters for the path. If the backslash is included directly in <code class="python inline-code" lang="python">open()</code>, then an additional backslash is needed for Python to understand the location correctly.</caption>
     </table>
     <note class="learning-questions" id="note-00001">
     <title>Opening files at different locations</title>
-    <para id="para-00005">For each question assume that the Python file executing the <code class="python inline-code" lang="python">open()</code> function is not in the same folder as the out.txt file.</para>
-    <para id="para-00006">Each question indicates the location of out.txt and the type of computer and the desired mode for opening the file. Choose which option is best for opening out.txt.</para>
+    <para id="para-00005">For each question, assume that the Python file executing the <code class="python inline-code" lang="python">open()</code> function is not in the same folder as the <emphasis effect="italics">out.txt</emphasis> file.</para>
+    <para id="para-00006">Each question indicates the location of <emphasis effect="italics">out.txt</emphasis>, and the type of computer, and the desired mode for opening the file. Choose which option is best for opening <emphasis effect="italics">out.txt</emphasis>.</para>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch14-m03-p01"/></para>
@@ -77,19 +77,19 @@
     </section>
     <section id="sect-00003">
     <title>Working with CSV files</title>
-    <para id="para-00011">In Python, files are read from and written to as Unicode by default. Many common file formats use Unicode such as text files (.txt), Python code files (.py), and other code files (.c,.java).</para>
-    <para id="para-00012">Comma separated value (CSV, .csv) files are often used for storing tabular data. These files store cells of information as Unicode separated by commas. CSV files can be read using methods learned thus far as seen in the example below.</para>
+    <para id="para-00011">In Python, files are read from and written to as Unicode by default. Many common file formats use Unicode such as text files (<emphasis effect="italics">.txt</emphasis>), Python code files (<emphasis effect="italics">.py</emphasis>), and other code files (<emphasis effect="italics">.c</emphasis>,<emphasis effect="italics">.java</emphasis>).</para>
+    <para id="para-00012">Comma separated value (CSV, <emphasis effect="italics">.csv</emphasis>) files are often used for storing tabular data. These files store cells of information as Unicode separated by commas. CSV files can be read using methods learned thus far, as seen in the example below.</para>
     <figure id="fig-00001">
     <title/>
     <media alt="">
     <image mime-type="image/jpg" src="../../media/Python_14_3_image1.png"/>
     </media>
-    <caption><emphasis effect="bold">CSV files. </emphasis>A CSV file is simply a text file with rows separated by newline <code class="python inline-code" lang="python">\n</code> characters and cells separated by commas. </caption>
+    <caption><emphasis effect="bold">CSV files.</emphasis> A CSV file is simply a text file with rows separated by newline <code class="python inline-code" lang="python">\n</code> characters and cells separated by commas. </caption>
     </figure>
     <para id="para-00112">Raw text of the file:</para>
     <para id="para-00113"><code class="python inline-code" lang="python">Title, Author, Pages\n1984, George Orwell, 268\nJane Eyre, Charlotte Bronte, 532\nWalden, Henry David Thoreau, 156\nMoby Dick, Herman Melville, 538</code></para>
     <example id="exam-00001">
-    <title>Processing a CSV file.</title>
+    <title>Processing a CSV file</title>
     <code class="python" lang="python">
     """Processing a CSV file."""
     # Open the CSV file for reading
