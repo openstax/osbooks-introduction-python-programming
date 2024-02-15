@@ -98,10 +98,10 @@
    
     <note class="practice-program" id="note-00005">
     <title>Creating a subclass with an instance attribute</title>
-    <para id="para-00011">Given class <code class="python inline-code" lang="python">Dessert</code>, create a class, <code class="python inline-code" lang="python">Cupcake</code>, inherited from <code class="python inline-code" lang="python">Dessert</code>. <code class="python inline-code" lang="python">Cupcake</code> class methods:</para>
+    <para id="para-00011">Given a class <code class="python inline-code" lang="python">Dessert</code>, create a class, <code class="python inline-code" lang="python">Cupcake</code>, inherited from <code class="python inline-code" lang="python">Dessert</code>. <code class="python inline-code" lang="python">Cupcake</code> class methods:</para>
     <list id="list-00002">
-    <item><code class="python inline-code" lang="python">__init__(self)</code>: Initializes inherited instance attribute ingredients with ["butter", "sugar", "eggs", "flour"] and initializes instance attribute frosting with 'buttercream'</item>
-    <item><code class="python inline-code" lang="python">display(self)</code>: Prints a cupcake's ingredients and frosting</item>
+    <item><code class="python inline-code" lang="python">__init__(self)</code>: initializes inherited instance attribute ingredients with ["butter", "sugar", "eggs", "flour"], and initializes instance attribute frosting with "buttercream"</item>
+    <item><code class="python inline-code" lang="python">display(self)</code>: prints a cupcake's ingredients and frosting</item>
     </list>
     <para id="para-00012">Then call the <code class="python inline-code" lang="python">display()</code> method on a new <code class="python inline-code" lang="python">Cupcake</code> object. The output should match:</para>
     <code class="python" lang="python">
