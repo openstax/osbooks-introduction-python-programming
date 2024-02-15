@@ -107,13 +107,16 @@
             return # Exit when the base case is reached
 
         # Recursive case
-        # Call the smaller version of the problem: to move the N-1 stack to the middle tower
+        # Call the smaller version of the problem:
+        # to move the N-1 stack to the middle tower
         three_towers(N-1, source_tower, temp_tower, dest_tower)
 
         # Move the N ring to the destination tower
         print("Move ring", N, "from tower", source_tower, "to tower", dest_tower)
 
-        # Call the smaller version of the problem: to now move the N-1 stack from the middle tower to the destination
+        # Call the smaller version of the problem:
+        # to now move the N-1 stack from the middle tower
+        # to the destination
         three_towers(N-1, temp_tower, dest_tower, source_tower)
 
     # Test code

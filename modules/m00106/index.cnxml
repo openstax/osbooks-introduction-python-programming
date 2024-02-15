@@ -20,7 +20,7 @@
     <example id="exam-00001">
     <title>Invalid pizza size</title>
     <para id="para-00003">The following class represents a pizza for sale. The <code class="python inline-code" lang="python">SIZES</code> dictionary maps an abbreviation to a size's name and price. Line 11 checks if the size received by the constructor is in the dictionary. Line 12 raises a <code class="python inline-code" lang="python">ValueError</code> with specific error message.</para>
-    <code class="python" lang="python">
+    <code class="python line-numbering" lang="python">
     class Pizza:
 
         SIZES = {
