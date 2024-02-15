@@ -155,7 +155,7 @@
     United States of America,331002651,9147420,36
     </code>
     <para id="para-00023">This example uses a file named countries.csv based on the <link url="https://openstax.org/r/100countries">alphabetical list of countries</link> from Worldometer. Each line of the file includes a country's name, population, land area, and population density, separated by commas.</para>
-    <para id="para-00024">The user might incorrectly type the filename (Ex: <!--<kbd>-->countries.txt<!--</kbd>--> instead of <!--<kbd>-->countries.csv<!--</kbd>-->). Your program should output an error message if the file is not found, and keep prompting the user to input a filename until the file is found:</para>
+    <para id="para-00024">The user might incorrectly type the filename (Ex: <!--<kbd>--><emphasis effect="italics">countries.txt</emphasis><!--</kbd>--> instead of <!--<kbd>--><emphasis effect="italics">countries.csv</emphasis><!--</kbd>-->). Your program should output an error message if the file is not found, and keep prompting the user to input a filename until the file is found:</para>
     <code class="python" lang="python">
     ...
     Enter a filename: <emphasis effect="bold">countries</emphasis>

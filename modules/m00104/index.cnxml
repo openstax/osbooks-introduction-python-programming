@@ -136,16 +136,16 @@
     </note>
     <note id="note-00003">
     <title>Exploring further</title>
-    <para id="para-00017">Files such as Word documents (.docx) and PDF documents (.pdf), image formats such as Portable Network Graphics (PNG, .png) and Joint Photographic Experts Group (JPEG, .jpeg or .jpg) as well as many other file types are encoded differently. </para>
-    <para id="para-00018">Some types of non Unicode files can be read using specialized libraries that support the reading and writing of different file types.</para>
+    <para id="para-00017">Files such as Word documents (<emphasis effect="italics">.docx</emphasis>) and PDF documents (<emphasis effect="italics">.pdf</emphasis>), image formats such as Portable Network Graphics (PNG, <emphasis effect="italics">.png</emphasis>) and Joint Photographic Experts Group (JPEG, <emphasis effect="italics">.jpeg</emphasis> or <emphasis effect="italics">.jpg</emphasis>) as well as many other file types are encoded differently.</para>
+    <para id="para-00018">Some types of non-Unicode files can be read using specialized libraries that support the reading and writing of different file types.</para>
     <para id="para-00019"><link url="https://openstax.org/r/100readthedocs">PyPDF</link> is a popular library that can be used to extract information from PDF files.</para>
-    <para id="para-00020"><link url="https://openstax.org/r/100software">BeautifulSoup</link> can be used to extract information from XML and HTML files. XML and HTML files usually contain unicode that have structure provided through the use of angled &lt;> bracket tags.</para>
+    <para id="para-00020"><link url="https://openstax.org/r/100software">BeautifulSoup</link> can be used to extract information from XML and HTML files. XML and HTML files usually contain unicode with structure provided through the use of angled &lt;> bracket tags.</para>
     <para id="para-00021"><link url="https://openstax.org/r/100readwrtedocx">python-docx</link> can be used to read and write DOCX files.</para>
-    <para id="para-00022">Additionally, <link url="https://openstax.org/r/100csvlibrary">csv</link> is a an in-built library that can be used to extract information from CSV files.</para>
+    <para id="para-00022">Additionally, <link url="https://openstax.org/r/100csvlibrary">csv</link> is a built-in library that can be used to extract information from CSV files.</para>
     </note>
     <note class="practice-program" id="note-00004">
     <title>Processing a CSV file</title>
-    <para id="para-00023">The file fe.csv contains scores for a group of students on a final exam. Write a program to display the average score.</para>
+    <para id="para-00023">The file <emphasis effect="italics">fe.csv</emphasis> contains scores for a group of students on a final exam. Write a program to display the average score.</para>
     <media alt="processing_a_CSV_file_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_04_05_Processing-a-CSV-file.html"/>
     </media>
