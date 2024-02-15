@@ -8,29 +8,29 @@
   <content>
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
-    <item>Data science is a multidisciplinary field that combines collection, processing, and analysis of large volumes of data to extract insights and derives informed decision-making.</item>
-    <item>Data science life-cycle is the framework followed by data scientists to complete a data science project.</item>
-    <item>Data science life-cycle includes 1) data acquisition, 2) data exploration, 3) data analysis, and 4) reporting.</item>
-    <item>Google Colab is a cloud-based Jupyter Notebook environment that allows you to write, run, and share Python code online.</item>
+    <item>Data science is a multidisciplinary field that combines collection, processing, and analysis of large volumes of data to extract insights and drive informed decision-making.</item>
+    <item>The data science life cycle is the framework followed by data scientists to complete a data science project.</item>
+    <item>The data science life cycle includes 1) data acquisition, 2) data exploration, 3) data analysis, and 4) reporting.</item>
+    <item>Google Colaboratory is a cloud-based Jupyter Notebook environment that allows programmers to write, run, and share Python code online.</item>
     <item>NumPy (Numerical Python) is a Python library that provides support for efficient numerical operations on large, multi-dimensional arrays and serves as a fundamental building block for data analysis in Python.</item>
     <item>NumPy implements an <code class="python inline-code" lang="python">ndarray</code> object that allows the creation of multi-dimensional arrays of homogeneous data types and efficient data processing.</item>
     <item>NumPy provides functionalities for mathematical operations, array manipulation, and linear algebra operations.</item>
     <item>Pandas is an open-source Python library used for data cleaning, processing, and analysis.</item>
     <item>Pandas provides Series and DataFrame data structures, data processing functionality, and integration with other libraries.</item>
-    <item>Exploratory Data Analysis (EDA) is the task of analyzing the data to gain insights, identify patterns, and understand the underlying structure of the data.</item>
-    <item>A feature is an individual variable or attribute that is calculated from the raw data in the dataset.</item>
+    <item>Exploratory Data Analysis (EDA) is the task of analyzing data to gain insights, identify patterns, and understand the underlying structure of the data.</item>
+    <item>A feature is an individual variable or attribute that is calculated from raw data in a dataset.</item>
     <item>Data indexing can be used to select and access specific rows and columns.</item>
     <item>Data slicing refers to selecting a subset of rows and/or columns from a DataFrame.</item>
     <item>Data filtering involves selecting rows or columns based on certain conditions.</item>
-    <item>Missing values in a dataset can occur when data is not available or was not recorded properly.</item>
-    <item>Data visualization has a crucial role in data science to understand the data.</item>
-    <item>Different types of visualizations may include bar plot, line plot, scatter plot, histogram plot, and boxplot.</item>
+    <item>Missing values in a dataset can occur when data are not available or were not recorded properly.</item>
+    <item>Data visualization has a crucial role in data science for understanding the data.</item>
+    <item>Different types of visualizations include bar plot, line plot, scatter plot, histogram plot, and box plot.</item>
     <item>Several Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. These libraries include Matplotlib, Seaborn, and Plotly.</item>
     <item>The conventional aliases for importing NumPy, Pandas, and Matplotlib.pyplot are <code class="python inline-code" lang="python">np</code>, <code class="python inline-code" lang="python">pd</code>, and <code class="python inline-code" lang="python">plt</code>, respectively.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write programs to create data structures to store different datasets and explore and visualize datasets.</para>
     <table summary=" " id="table-00001">
-    <title>Chapter 15 reference</title>
+    <title>Chapter 15 reference.</title>
     <tgroup cols="2">
     <thead>
     <row>
@@ -77,11 +77,11 @@
     </row>
     <row>
     <entry><para id="para-00018"><code class="python inline-code" lang="python">df.info()</code></para></entry>
-    <entry>Provides a summary of the DataFrame, including the column names, data types, and the number of non-null values.</entry>
+    <entry>Provides a summary of the DataFrame, including the column names, data types, and the number of non-<code class="python inline-code" lang="python">Null</code> values.</entry>
     </row>
     <row>
     <entry><para id="para-00019"><code class="python inline-code" lang="python">df.describe()</code></para></entry>
-    <entry>Generates statistics of the numerical columns like count, mean, standard deviation, minimum, maximum, and quartile.</entry>
+    <entry>Generates the column count, mean, standard deviation, minimum, maximum, and quartiles.</entry>
     </row>
     <row>
     <entry><para id="para-00020"><code class="python inline-code" lang="python">df.value_counts()</code></para></entry>
@@ -97,7 +97,7 @@
     </row>
     <row>
     <entry><para id="para-00023"><code class="python inline-code" lang="python">iloc[]</code></para></entry>
-    <entry>Allows for accessing data in a DataFrame using row/column integer-based indices.</entry>
+    <entry>Allows for accessing data in a DataFrame using row/column integer-based indexes.</entry>
     </row>
     <row>
     <entry><para id="para-00024"><code class="python inline-code" lang="python">df[condition]</code></para></entry>
@@ -125,23 +125,23 @@
     </row>
     <row>
     <entry><para id="para-00032"><code class="python inline-code" lang="python">plt.bar(x, height)</code></para></entry>
-    <entry><para id="para-00033">Takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">height</code>, and plots bars for each <code class="python inline-code" lang="python">x</code> value with the height given in the <code class="python inline-code" lang="python">height</code> variable.</para></entry>
+    <entry><para id="para-00033">Takes in two inputs, <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">height</code>, and plots bars for each <code class="python inline-code" lang="python">x</code> value with the height given in the <code class="python inline-code" lang="python">height</code> variable.</para></entry>
     </row>
     <row>
     <entry><para id="para-00034"><code class="python inline-code" lang="python">plt.plot(x, y)</code></para></entry>
-    <entry><para id="para-00035">Takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots lines connecting pairs of <code class="python inline-code" lang="python">(x, y)</code> value pairs.</para></entry>
+    <entry><para id="para-00035">Takes in two inputs, <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots lines connecting pairs of <code class="python inline-code" lang="python">(x, y)</code> values.</para></entry>
     </row>
     <row>
     <entry><para id="para-00036"><code class="python inline-code" lang="python">plt.scatter(x, y)</code></para></entry>
-    <entry><para id="para-00037">Takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots points representing <code class="python inline-code" lang="python">(x, y)</code> pairs.</para></entry>
+    <entry><para id="para-00037">Takes in two inputs, <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots points representing <code class="python inline-code" lang="python">(x, y)</code> pairs.</para></entry>
     </row>
     <row>
     <entry><para id="para-00038"><code class="python inline-code" lang="python">plt.hist(x)</code></para></entry>
-    <entry><para id="para-00039">Takes in one input <code class="python inline-code" lang="python">x</code>, and plots a histogram of values in <code class="python inline-code" lang="python">x</code> to show distribution or trend.</para></entry>
+    <entry><para id="para-00039">Takes in one input, <code class="python inline-code" lang="python">x</code>, and plots a histogram of values in <code class="python inline-code" lang="python">x</code> to show distribution or trend.</para></entry>
     </row>
     <row>
     <entry><para id="para-00040"><code class="python inline-code" lang="python">plt.boxplot(x)</code></para></entry>
-    <entry><para id="para-00041">Takes in one input <code class="python inline-code" lang="python">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code" lang="python">x</code>.</para></entry>
+    <entry><para id="para-00041">Takes in one input, <code class="python inline-code" lang="python">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code" lang="python">x</code>.</para></entry>
     </row>
     </tbody>
     </tgroup>

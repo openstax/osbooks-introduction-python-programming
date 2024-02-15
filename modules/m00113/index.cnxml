@@ -17,42 +17,42 @@
     </section>
     <section id="sect-00002">
     <title>Why visualization?</title>
-    <para id="para-00002">Data visualization has a crucial role in data science to understand the data. Data visualization can be used in all steps of the data science lifecycle to facilitate data exploration, identify anomalies, understand relationships and trends, and produce reports. Several visualization types are commonly used:</para>
+    <para id="para-00002">Data visualization has a crucial role in data science for understanding the data. Data visualization can be used in all steps of the data science life cycle to facilitate data exploration, identify anomalies, understand relationships and trends, and produce reports. Several visualization types are commonly used:</para>
     <table summary=" " id="table-00001">
-    <title>Common visualization types</title>
+    <title>Common visualization types.</title>
     <tgroup cols="3">
     <thead>
     <row>
-    <entry>Visualization Type</entry>
+    <entry>Visualization type</entry>
     <entry>Description</entry>
-    <entry>Benefits/Common Usage</entry>
+    <entry>Benefits/common usage</entry>
     </row>
     </thead>
     <tbody>
     <row>
     <entry>Bar plot</entry>
     <entry>Rectangular bars</entry>
-    <entry>Compare values across different categories</entry>
+    <entry>Compare values across different categories.</entry>
     </row>
     <row>
     <entry>Line plot</entry>
     <entry>A series of data points connected by line segments</entry>
-    <entry>Visualize trends and changes</entry>
+    <entry>Visualize trends and changes.</entry>
     </row>
     <row>
     <entry>Scatter plot</entry>
-    <entry>Individual data points represent the relationship between two variables</entry>
-    <entry>Identify correlations, clusters, and outliers</entry>
+    <entry>Individual data points representing the relationship between two variables</entry>
+    <entry>Identify correlations, clusters, and outliers.</entry>
     </row>
     <row>
     <entry>Histogram plot</entry>
-    <entry>Rectangular bars represent the distribution of a continuous variable by dividing the variable's range into bins and representing the frequency or count of data within each bin</entry>
-    <entry>Summarizing the distribution of the data</entry>
+    <entry>Rectangular bars representing the distribution of a continuous variable by dividing the variable's range into bins and representing the frequency or count of data within each bin</entry>
+    <entry>Summarizing the distribution of the data.</entry>
     </row>
     <row>
     <entry>Box plot</entry>
     <entry>Rectangular box with whiskers that summarize the distribution of a continuous variable, including the median, quartiles, and outliers</entry>
-    <entry>Summarizing the distribution of the data and comparing different variables</entry>
+    <entry>Summarizing the distribution of the data and comparing different variables.</entry>
     </row>
     </tbody>
     </tgroup>
@@ -84,9 +84,9 @@
     </section>
     <section id="sect-00003">
     <title>Data visualization tools</title>
-    <para id="para-00006">Many Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. Some of the most commonly-used frameworks are Matplotlib, Plotly, and Seaborn. Here, some useful functionalities of <code class="python inline-code" lang="python">Matplotlib</code> are summarized.</para>
+    <para id="para-00006">Many Python data visualization libraries exist that offer a range of capabilities and features to create different plot types. Some of the most commonly used frameworks are Matplotlib, Plotly, and Seaborn. Here, some useful functionalities of <code class="python inline-code" lang="python">Matplotlib</code> are summarized.</para>
 <table summary=" " id="table-00101">
-<title>Matplotlib functionalities. Bar plot.</title>
+<title>Matplotlib functionalities.</title>
 <tgroup cols="2">
 <thead>
 <row>
@@ -97,7 +97,7 @@
 <tbody>
 <row>
 <entry>Bar plot</entry>
-<entry><para id="para-00113"><code class="python inline-code" lang="python">plt.bar(x, height)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">height</code>, and plots bars for each <code class="python inline-code" lang="python">x</code> value with the height given in the <code class="python inline-code" lang="python">height</code> variable.</para></entry>     
+<entry><para id="para-00113">The <code class="python inline-code" lang="python">plt.bar(x, height)</code> function takes in two inputs, <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">height</code>, and plots bars for each <code class="python inline-code" lang="python">x</code> value with the height given in the <code class="python inline-code" lang="python">height</code> variable.</para></entry>     
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -127,7 +127,9 @@ plt.show()</code></entry>
 </entry>
 </row>
 </tbody>
-</tgroup></table>
+</tgroup>
+<caption>Bar plot.</caption>
+</table>
     
 <table summary=" " id="table-00102">
 <title>Matplotlib functionalities. Line plot.</title>
@@ -141,7 +143,7 @@ plt.show()</code></entry>
 <tbody>
 <row>
 <entry>Line plot</entry>
-<entry><para id="para-00114"><code class="python inline-code" lang="python">plt.plot(x, y)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots lines connecting pairs of <code class="python inline-code" lang="python">(x, y)</code> value pairs.</para></entry>
+<entry><para id="para-00114">The <code class="python inline-code" lang="python">plt.plot(x, y)</code> function takes in two inputs, <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots lines connecting pairs of <code class="python inline-code" lang="python">(x, y)</code> values.</para></entry>
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -187,7 +189,7 @@ plt.show()
 <tbody>
 <row>
 <entry>Scatter plot</entry>
-<entry><para id="para-00115"><code class="python inline-code" lang="python">plt.scatter(x, y)</code> function takes in two inputs <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots points representing <code class="python inline-code" lang="python">(x, y)</code> pairs.</para></entry>      
+<entry><para id="para-00115">The <code class="python inline-code" lang="python">plt.scatter(x, y)</code> function takes in two inputs, <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code>, and plots points representing <code class="python inline-code" lang="python">(x, y)</code> pairs.</para></entry>      
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -202,7 +204,7 @@ x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 y = [10, 8, 6, 4, 2, 5, 7, 9, 3, 1]
 
 # Create the scatter plot
-plt.scatter(x, y, marker="o", color="red")
+plt.scatter(x, y, marker="o", color="blue")
 
 # Customize the chart
 plt.title("Scatter Plot Example")
@@ -230,7 +232,7 @@ plt.show()</code></entry>
 <tbody>
 <row>
 <entry>Histogram plot</entry>
-<entry><para id="para-00116"><code class="python inline-code" lang="python">plt.hist(x)</code> function takes in one input <code class="python inline-code" lang="python">x</code>, and plots a histogram of values in <code class="python inline-code" lang="python">x</code> to show distribution or trend.</para></entry>
+<entry><para id="para-00116">The <code class="python inline-code" lang="python">plt.hist(x)</code> function takes in one input, <code class="python inline-code" lang="python">x</code>, and plots a histogram of values in <code class="python inline-code" lang="python">x</code> to show distribution or trend.</para></entry>
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -274,7 +276,7 @@ plt.show()</code></entry>
 <tbody>
 <row>
 <entry>Box plot</entry>
-<entry><para id="para-00117"><code class="python inline-code" lang="python">plt.boxplot(x)</code> function takes in one input <code class="python inline-code" lang="python">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code" lang="python">x</code>.</para></entry>
+<entry><para id="para-00117">The <code class="python inline-code" lang="python">plt.boxplot(x)</code> function takes in one input, <code class="python inline-code" lang="python">x</code>, and represents minimum, maximum, first, second, and third quartiles, as well as outliers in <code class="python inline-code" lang="python">x</code>.</para></entry>
 </row>
 <row>
 <entry><emphasis effect="bold">Example</emphasis></entry>
@@ -463,7 +465,7 @@ plt.show()</code></entry>
     </note>
     <note id="note-00004">
     <title>Exploring further</title>
-    <para id="para-00010">Please refer to the following user guide for more information about Matplotlib, Plotly, and Seaborn libraries.</para>
+    <para id="para-00010">Please refer to the following user guide for more information about the Matplotlib, Plotly, and Seaborn libraries.</para>
     <list id="list-00002">
     <item><link url="https://openstax.org/r/100matplotguide">Matplotlib User Guide</link></item>
     <item><link url="https://openstax.org/r/100plotlyguide">Plotly User Guide</link></item>
@@ -472,7 +474,7 @@ plt.show()</code></entry>
     </note>
     </section>
     <section id="sect-00004">
-    <title>Programming Practice with Google</title>
+    <title>Programming practice with Google</title>
     <para id="para-00011">Use the Google Colaboratory document below to practice a visualization task on a given dataset.</para>
     <para id="para-00012"><link url="https://openstax.org/r/100visualization">Google Colaboratory document</link></para>
     </section>
