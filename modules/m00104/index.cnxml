@@ -52,7 +52,7 @@
     <note class="learning-questions" id="note-00001">
     <title>Opening files at different locations</title>
     <para id="para-00005">For each question, assume that the Python file executing the <code class="python inline-code" lang="python">open()</code> function is not in the same folder as the <emphasis effect="italics">out.txt</emphasis> file.</para>
-    <para id="para-00006">Each question indicates the location of <emphasis effect="italics">out.txt</emphasis>, and the type of computer, and the desired mode for opening the file. Choose which option is best for opening <emphasis effect="italics">out.txt</emphasis>.</para>
+    <para id="para-00006">Each question indicates the location of <emphasis effect="italics">out.txt</emphasis>, the type of computer, and the desired mode for opening the file. Choose which option is best for opening <emphasis effect="italics">out.txt</emphasis>.</para>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch14-m03-p01"/></para>
