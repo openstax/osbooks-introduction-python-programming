@@ -68,8 +68,7 @@
 
     <figure class="unnumbered" id="fig-00003">
       <media alt="A screenshot shows a Try It box titled &#34;Favorite song&#34;. Instructions are provided, followed by a box to input code and run the program.">
-      <!--<image mime-type="image/jpg" src="../../media/OSX_CPL_Preface_CodeRun.jpg"/>-->
-      <image mime-type="image/jpg" src="../../media/FPO.jpg"/>
+      <image mime-type="image/jpg" src="../../media/OSX_CPL_Preface_CodeRun.jpg"/>
       </media>
       <caption>A sample code runner</caption>
       </figure>
@@ -95,7 +94,7 @@
     <title>Senior Contributing Authors</title>
     <figure class="unnumbered" id="fig-00002">
     <media alt="Headshots of Aubrey Lawson, Chris Mayfield, Narges Norouzi, and Udayan Das, left to right.">
-    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    <image mime-type="image/png" src="../../media/OSX_CPL_Preface_SCAs.jpg"/>
     </media>
     <caption><emphasis effect="bold">Senior contributing authors, left to right: Aubrey Lawson, Chris Mayfield, Narges Norouzi, and Udayan Das</emphasis>.</caption>
     </figure>
@@ -112,8 +111,7 @@
     <title>Contributing Authors</title>
     <figure id="fig-00001" class="unnumbered">
     <media alt="Headshots of Yamuna Rajasekhar and Reed Kanemaru, left to right.">
-    <!--<image mime-type="image/png" src="../../media/OSX_CPL_Preface_CAs.jpg"/>-->
-    <image mime-type="image/png" src="../../media/FPO.jpg"/>
+    <image mime-type="image/png" src="../../media/OSX_CPL_Preface_CAs.jpg"/>
     </media>
     <caption><emphasis effect="bold">Contributing authors, left to right: Yamuna Rajasekhar and Reed Kanemaru</emphasis>.</caption>
     </figure>
