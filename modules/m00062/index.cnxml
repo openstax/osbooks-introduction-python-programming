@@ -148,7 +148,7 @@
     <title>String length and alignment formatting</title>
     <para id="para-00022">Formatting the string length may be needed for standardizing the output style when multiple string values of the same context are being created and printed. The example below shows a use case of string formatting in printing a table with minimum-length columns and specific alignment.</para>
     <example id="exam-00005">
-      <title>Numbered replacement field to build a phrase</title>
+      <title>A formatted table of a class roster</title>
     <para id="para-00035">A formatted table of a class roster</para>
     <code class="python" lang="python">
     Student Name              Major          Grade
