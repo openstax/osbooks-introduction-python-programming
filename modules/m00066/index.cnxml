@@ -36,7 +36,8 @@
     student_list.remove("Jamie")
     print(student_list)
     
-    # Suppose "Ming" had to be removed from the list. A pop() operation can be used since Ming is last in the list.
+    # Suppose "Ming" had to be removed from the list. 
+    # A pop() operation can be used since Ming is last in the list.
     student_list.pop()
     print(student_list)
     </code>
