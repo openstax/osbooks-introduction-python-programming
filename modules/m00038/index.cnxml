@@ -124,12 +124,15 @@
 <tbody>
 <row>
 <entry><code class="python" lang="python">
-# For loop condition using range() function to print all multiples of 5 less than 50
+# For loop condition using 
+# range() function to print 
+# all multiples of 5 less than 50
 for i in range(0, 50, 5):
   print(i)
 </code></entry>
 <entry><code class="python" lang="python">
-# While loop implementation of printing multiples of 5 less than 50
+# While loop implementation of printing 
+# multiples of 5 less than 50
     
 # Initialization
 i = 0
