@@ -84,7 +84,7 @@
     <para id="para-00027"><code><emphasis effect="bold">Constant width bold</emphasis></code><newline/>
     Shows commands or keyboard input that should be typed literally by the user.</para>
     <para id="para-00028">Ex:<newline/>
-    Abbreviation for "Example:" Recommended by the zyBooks' Editorial Style Guide.</para>
+    Abbreviation for "Example:"</para>
     </section>
     </section>
     <section id="sect-00013">
@@ -95,7 +95,7 @@
     <media alt="Headshots of Aubrey Lawson, Chris Mayfield, Narges Norouzi, and Udayan Das, left to right.">
     <image mime-type="image/png" src="../../media/OSX_CPL_Preface_SCAs.jpg"/>
     </media>
-    <caption><emphasis effect="bold">Senior contributing authors, left to right: Aubrey Lawson, Chris Mayfield, Narges Norouzi, and Udayan Das</emphasis>.</caption>
+    <caption>Senior contributing authors, left to right: Aubrey Lawson, Chris Mayfield, Narges Norouzi, and Udayan Das.</caption>
     </figure>
     <para id="para-00013"><emphasis effect="bold">Aubrey Lawson, Wiley</emphasis></para>
     <para id="para-00018">Aubrey Lawson is a CS Content Developer at zyBooks. She received her bachelor's and master's degrees in Computer Science from Clemson University, and her PhD research focuses on CS education.</para>
@@ -112,7 +112,7 @@
     <media alt="Headshots of Yamuna Rajasekhar and Reed Kanemaru, left to right.">
     <image mime-type="image/png" src="../../media/OSX_CPL_Preface_CAs.jpg"/>
     </media>
-    <caption><emphasis effect="bold">Contributing authors, left to right: Yamuna Rajasekhar and Reed Kanemaru</emphasis>.</caption>
+    <caption>Contributing authors, left to right: Yamuna Rajasekhar and Reed Kanemaru.</caption>
     </figure>
     <para id="para-00031"><emphasis effect="bold">Yamuna Rajasekhar, Wiley</emphasis></para>
     <para id="para-00032">Yamuna Rajasekhar, PhD, is Director of Content, Authoring, and Research at Wiley. She works across disciplines on research strategy, authoring pedagogy and training, and content development for Computer Science and IT. She received her MS and PhD from University of North Carolina at Charlotte, focusing on Computer Engineering education. Prior to joining Wiley as a content author, Yamuna was an Assistant Professor of Computer Engineering at Miami University, where her research was focused on assistive technology with embedded systems and Computer Engineering education.</para>
