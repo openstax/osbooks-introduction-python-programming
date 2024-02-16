@@ -19,7 +19,7 @@
     <para id="para-00101">Computers store information using 0's and 1's. All information must be converted to a string of 0's and 1's. Ex: 5 is converted to 101. Since only two values, 0 or 1, are allowed the format is called binary.</para>
     <para id="para-00002">Floating-point values are stored as binary by Python. The conversion of a floating point number to the underlying binary results in specific types of floating-point errors.</para>
     <para id="para-00003">A <term id="term-00001">round-off error</term> occurs when floating-point values are stored erroneously as an approximation. The difference between an approximation of a value used in computation and the correct (true) value is called a round-off error.</para>
-       <para id="para-00004">Ex: Storing the float (0.1)<sub>10</sub> results in binary values that actually produce (0.1000000000000000055511151231257827021181583404541015625)<sub>10</sub> when converted back, which is not exactly equal to <code class="python inline-code" lang="python">(0.1)<sub>10</sub></code>.</para>
+       <para id="para-00004">Ex: Storing the float (0.1)<sub>10</sub> results in binary values that actually produce (0.1000000000000000055511151231257827021181583404541015625)<sub>10</sub> when converted back, which is not exactly equal to (0.1)<sub>10</sub>.</para>
 <table summary=" " id="table-00001">
 <title>Round-off error.</title>
 <tgroup cols="1">
