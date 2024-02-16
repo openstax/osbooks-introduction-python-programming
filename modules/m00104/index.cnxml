@@ -20,7 +20,7 @@
     <para id="para-00003">Often a programmer needs to open files from folders other than the one in which the Python file exists. A <term id="term-00001">path</term> uniquely identifies a folder location on a computer. The path can be used along with the filename to open a file in any folder location. Ex: To open a file named <emphasis effect="italics">logfile.log</emphasis> located in <code class="python inline-code" lang="python">/users/turtle/desktop</code> the following can be used:</para>
     <para id="para-00004"><code class="python inline-code" lang="python">fileobj = open("/users/turtle/desktop/logfile.log")</code></para>
     <table summary=" " id="table-00001">
-    <title>Modes for the <code class="python inline-code" lang="python">open()</code> function.</title>
+    <title>Opening files on different paths.</title>
     <tgroup cols="3">
     <thead>
     <row>
