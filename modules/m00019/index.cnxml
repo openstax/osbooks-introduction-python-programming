@@ -93,7 +93,7 @@
    
     
     <para id="para-00004">Write a program that inputs the following variables: <code class="python inline-code" lang="python">bread_weight</code> (float), <code class="python inline-code" lang="python">serving_size</code> (float), and <code class="python inline-code" lang="python">num_guests</code> (int). The output will look like the following:</para>
-    <para id="para-0004">Note: the measures the program comes up with are exact but to bake, the baker would have to use some approximation. Ex: 9.765625 cups all-purpose flour really means 9 and 3/4 cups.</para>
+    <para id="para-0004">Note: The measures the program comes up with are exact, but to bake, the baker would have to use some approximation. Ex: 9.765625 cups all-purpose flour really means 9 and 3/4 cups.</para>
     <code class="python" lang="python">
     For 25 people, you will need 3.90625 loaves of bread:
 

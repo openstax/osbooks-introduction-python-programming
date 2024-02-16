@@ -252,7 +252,7 @@
     <note class="practice-program" id="note-00005">
     <title>Hopper quote</title>
     <para id="para-00016"><link url="https://openstax.org/r/100gracehopper">Grace Hopper</link> (1906–1992) was a famous computer scientist (and rear admiral in the US Navy!) who came up with the idea of machine-independent programming languages. She envisioned a programming language based on English and made many contributions that paved the way for modern programming languages, including Python.</para>
-    <para id="para-00017">Write a program that prints the following text including the quotation marks. Your program may not use single quotes (') anywhere in the code. The last line must be indented with a tab character.</para>
+    <para id="para-00017">Write a program that prints the following text, including the quotation marks. Your program may not use single quotes (') anywhere in the code. The last line must be indented with a tab character.</para>
     <code class="python" lang="python">
     "To me programming is more than an important practical art.
     It is also a gigantic undertaking in the foundations of knowledge."

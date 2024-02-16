@@ -193,7 +193,7 @@ while i &lt; 50:
     <code class="python" lang="python">
     prints
     2 4 6 8
-    3 5 7
+    7 5 3
     </code>
     <para id="para-0014">Note: the program should return an error message if the second number is smaller than the first.</para>
     <media alt="sequences_program">
