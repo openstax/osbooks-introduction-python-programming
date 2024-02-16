@@ -20,7 +20,7 @@
     <example id="exam-00001">
     <title>Simple operations to modify a list</title>
     <para id="para-00003">The code below demonstrates simple operations for modifying a list.</para>
-    <para id="para-00004">Line 8 shows the <code class="python inline-code" lang="python">append()</code> operation, line 12 shows the <code class="python inline-code" lang="python">remove()</code> operation, and line 16 shows the <code class="python inline-code" lang="python">pop()</code> operation. Since the <code class="python inline-code" lang="python">pop()</code> operation removes the last element, no parameter is needed.</para>
+    <para id="para-00004">Line 8 shows the <code class="python inline-code" lang="python">append()</code> operation, line 12 shows the <code class="python inline-code" lang="python">remove()</code> operation, and line 17 shows the <code class="python inline-code" lang="python">pop()</code> operation. Since the <code class="python inline-code" lang="python">pop()</code> operation removes the last element, no parameter is needed.</para>
     <code class="python line-numbering" lang="python">
     """Operations for adding and removing elements from a list."""
 
