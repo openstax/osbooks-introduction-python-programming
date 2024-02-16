@@ -15,10 +15,10 @@
     </list>
     </section>
     <section id="sect-00002">
-    <title>Split()</title>
+    <title>split()</title>
     <para id="para-00002">A string in Python can be broken into substrings given a <term id="term-00001">delimiter</term>. A delimiter is also referred to as a separator. The <term id="term-00002">split()</term> method, when applied to a string, splits the string into substrings by using the given argument as a delimiter. Ex: <code class="python inline-code" lang="python">"1-2".split('-')</code> returns a list of substrings <code class="python inline-code" lang="python">["1", "2"]</code>. When no arguments are given to the <code class="python inline-code" lang="python">split()</code> method, blank space characters are used as delimiters. Ex: <code class="python inline-code" lang="python">"1\t2\n3 4".split()</code> returns <code class="python inline-code" lang="python">["1", "2", "3", "4"]</code>.</para>
     <note class="guided-slides" id="note-00001">
-    <title>Split() for breaking down the string into tokens</title>
+    <title>split() for breaking down the string into tokens</title>
     <media alt="split_function_slides">
     <iframe width="660" height="371.4" src="https://www.openstax.org/r/split-function"/>
     </media>
