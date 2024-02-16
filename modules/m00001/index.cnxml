@@ -16,9 +16,5 @@
 <para id="para-00002">Programs consist of statements to be run one after the other. A <term id="term-00001">statement</term> describes some action to be carried out.</para>
 <para id="para-00003">The statement <code class="python inline-code" lang="python">print("Good morning")</code> instructs Python to output the message <code class="python inline-code" lang="python">"Good morning"</code> to the user. The statement <code class="python inline-code" lang="python">count = 0</code> instructs Python to assign the integer <code class="python inline-code" lang="python">0</code> to the variable <code class="python inline-code"  lang="python">count</code>.</para>
 <para id="para-00004">This chapter introduces statements for input and output, assigning variables, and basic arithmetic. Making mistakes is a normal part of programming, and the chapter includes advice on understanding error messages. The chapter ends with a short history of Python and discusses why Python has become so popular today.</para>
-<section id="sect-00001">
-<title>1.1 Introduction</title>
-<para id="para-00005"/>
-</section>
 </content>
 </document>
