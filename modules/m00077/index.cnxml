@@ -284,7 +284,8 @@ for value in zip_codes.values():
     string_value = "This is a string"
     </code>
     <code class="python" lang="python">
-    Prints {"T": 1, "h": 1, "i": 3, "s": 3, " ": 3, "a": 1, "t": 1, "r": 1, "n": 1, "g": 1}
+    Prints {"T": 1, "h": 1, "i": 3, "s": 3, " ": 3, "a": 1, "t": 1, "r": 1, "n": 1, 
+    "g": 1}
     </code>
     <media alt="character_count_in_a_string_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_05_05_Character-count-in-a-string.html"/>

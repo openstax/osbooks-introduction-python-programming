@@ -218,7 +218,8 @@
     </code>
     <para id="para-00032">The output is:</para>
     <code class="python" lang="python">
-    Lord of the Bracelets by Blake R. R. Brown published by Fantasy Tomes in 1999 with 423 pages
+    Lord of the Bracelets by Blake R. R. Brown published by Fantasy Tomes in 1999 with 
+    423 pages
     A Match of Thrones by Terry R. R. Thomas published by Fantasy Tomes in 2020 with 761
     pages</code>
     <media alt="creating_a_class_for_fantasy_books_program">

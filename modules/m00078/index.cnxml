@@ -155,8 +155,10 @@ Maryam Samimi</code>
     Resulting dictionary:
     
     {
-    "Engineering": {1001: {"name": "Alice", "salary": 75000}, 1003: {"name": "Charlie", "salary": 80000}},
-    "Sales": {1002: {"name": "Bob", "salary": 50000}, 1005: {"name": "Eve", "salary": 55000}},
+    "Engineering": {1001: {"name": "Alice", "salary": 75000}, 1003: {"name": 
+    "Charlie", "salary": 80000}},
+    "Sales": {1002: {"name": "Bob", "salary": 50000}, 1005: {"name": "Eve", 
+    "salary": 55000}},
     "Marketing": {1004: {"name": "Dave", "salary": 60000}}
     }
     </code>
