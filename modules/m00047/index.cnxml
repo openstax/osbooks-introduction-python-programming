@@ -166,7 +166,7 @@
    
     <note class="practice-program" id="note-00006">
     <title>Printing right triangle area</title>
-    <para id="para-00021">Write a function, <code class="python inline-code" lang="python">print_area()</code>, that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where <emphasis effect="italics">b</emphasis> is the base and <emphasis effect="italics">h</emphasis> is the height.</para>
+    <para id="para-00021">Write a function, <code class="python inline-code" lang="python">print_area()</code>, that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where b is the base and h is the height.</para>
     <para id="para-00022">Given input:</para>
     <code class="python" lang="python">
     3

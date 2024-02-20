@@ -85,7 +85,7 @@
     </section>
     <section id="sect-00003">
     <title>Basic input</title>
-    <para id="para-00009">Computer programs often receive input from the user. <term id="term-00004">Input</term> is what a user enters into a program. An input statement, <code class="python inline-code" lang="python"><emphasis effect="italics">variable</emphasis> = input(<emphasis effect="italics">"prompt"</emphasis>)</code>, has three parts:</para>
+    <para id="para-00009">Computer programs often receive input from the user. <term id="term-00004">Input</term> is what a user enters into a program. An input statement, <code class="python inline-code" lang="python">variable = input("prompt")</code>, has three parts:</para>
     <list list-type="enumerated" id="list-00002">
     <item>A <term id="term-00005">variable</term> refers to a value stored in memory. In the statement above, <emphasis effect="italics">variable</emphasis> can be replaced with any name the programmer chooses.</item>
     <item>The <term id="term-00006">input()</term> function reads one line of input from the user. A function is a named, reusable block of code that performs a task when called. The input is stored in the computer's memory and can be accessed later using the variable.</item>
@@ -120,7 +120,7 @@
     <note class="practice-program" id="note-00006">
     <title>Frost poem</title>
     <para id="para-00013">Write a program that uses multiple <code class="python inline-code" lang="python">print()</code> statements to output the following poem by <link url="https://openstax.org/r/100robertfrost">Robert Frost</link>. Each <code class="python inline-code" lang="python">print()</code> statement should correspond to one line of output.</para>
-    <para id="para-00014"><emphasis effect="italics">Tip:</emphasis> You don't need to write the entire program all at once. Try writing the first <code class="python inline-code" lang="python">print()</code> statement, and then click the <emphasis effect="italics">Run</emphasis> button. Then write the next <code class="python inline-code" lang="python">print()</code> statement, and click the <emphasis effect="italics">Run</emphasis> button again. Continue writing and testing the code incrementally until you finish the program.</para>
+    <para id="para-00014"><emphasis effect="italics">Tip:</emphasis> You don't need to write the entire program all at once. Try writing the first <code class="python inline-code" lang="python">print()</code> statement, and then click the Run button. Then write the next <code class="python inline-code" lang="python">print()</code> statement, and click the Run button again. Continue writing and testing the code incrementally until you finish the program.</para>
     <code class="python" lang="python">
     I shall be telling this with a sigh
     Somewhere ages and ages hence:

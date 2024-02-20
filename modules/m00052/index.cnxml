@@ -16,7 +16,7 @@
     </section>
     <section id="sect-00002">
     <title>Defining a module</title>
-    <para id="para-00002">Modules are defined by putting code in a <emphasis effect="italics">.py</emphasis> file. The <code class="python inline-code" lang="python">area</code> module below is in a file named <emphasis effect="italics">area.py</emphasis>. This module provides functions for calculating area.</para>
+    <para id="para-00002">Modules are defined by putting code in a <emphasis effect="italics">.py</emphasis> file. The <code class="python inline-code" lang="python">area</code> module below is in a file named area.py. This module provides functions for calculating area.</para>
     <example id="exam-00001">
     <title>The area module</title>
     <code class="python" lang="python">
@@ -90,7 +90,7 @@
     </section>
     <section id="sect-00003">
     <title>Importing a module</title>
-    <para id="para-00006">The module defined in <emphasis effect="italics">area.py</emphasis> can be used in other programs. When importing the <code class="python inline-code" lang="python">area</code> module, the suffix <emphasis effect="italics">.py</emphasis> is removed:</para>
+    <para id="para-00006">The module defined in <emphasis effect="italics">area.py</emphasis> can be used in other programs. When importing the <code class="python inline-code" lang="python">area</code> module, the suffix .py is removed:</para>
     <code class="python" lang="python">
     import area
     

@@ -18,7 +18,7 @@
     <title>List comprehensions</title>
     <para id="para-00002">A <term id="term-00001">list comprehension</term> is a Python statement to compactly create a new list using a pattern.</para>
     <para id="para-00003">The general form of a list comprehension statement is shown below.</para>
-    <para id="para-00004"><code class="python inline-code" lang="python">list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">iterable</emphasis>]</code></para>
+    <para id="para-00004"><code class="python inline-code" lang="python">list_name = [expression for loop_variable in iterable]</code></para>
     <para id="para-00005"><code class="python inline-code" lang="python">list_name</code> refers to the name of a new list, which can be anything, and the <code class="python inline-code" lang="python">for</code> is the <code class="python inline-code" lang="python">for</code> loop keyword. An expression defines what will become part of the new list. <code class="python inline-code" lang="python">loop_variable</code> is an iterator, and <code class="python inline-code" lang="python">iterable</code> is an object that can be iterated, such as a list or string.</para>
     <example id="exam-00001">
     <title>Creating a new list with a list comprehension</title>
@@ -81,7 +81,7 @@
     <section id="sect-00003">
     <title>Filtering using list comprehensions</title>
     <para id="para-00015">List comprehensions can be used to filter items from a given list. A <emphasis effect="italics">condition</emphasis> is added to the list comprehension.</para>
-    <para id="para-00016"><code class="python inline-code" lang="python">list_name = [<emphasis effect="italics">expression</emphasis> for <emphasis effect="italics">loop_variable</emphasis> in <emphasis effect="italics">container</emphasis> if <emphasis effect="italics">condition</emphasis>]</code></para>
+    <para id="para-00016"><code class="python inline-code" lang="python">list_name = [expression for loop_variable in container if condition]</code></para>
     <para id="para-00017">In a filter list comprehension, an element is added into <code class="python inline-code" lang="python">list_name</code> only if the condition is met.</para>
     <note class="guided-slides" id="note-00002">
     <title>Filtering a list</title>

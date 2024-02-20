@@ -354,7 +354,7 @@
 </m:msup>
 <m:mi>h</m:mi></m:mrow>
 </m:math></equation><newline/>
-    Write the code for these two formulas in the program below. Hint: Your solution should use both <code class="python inline-code" lang="python">math.pi</code> and <code class="python inline-code" lang="python">math.tau</code>. Test your program using the following values for <emphasis effect="italics">r</emphasis> and <emphasis effect="italics">h</emphasis>:</para>
+    Write the code for these two formulas in the program below. Hint: Your solution should use both <code class="python inline-code" lang="python">math.pi</code> and <code class="python inline-code" lang="python">math.tau</code>. Test your program using the following values for r and h:</para>
     <table summary=" " id="table-00004">
     <tgroup cols="4">
     <colspec colnum="1" colname="c1"/>

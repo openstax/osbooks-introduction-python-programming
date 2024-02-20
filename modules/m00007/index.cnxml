@@ -88,12 +88,12 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("test")?
 <entry>The closing quote marks are missing. As a result, the string does not terminate before the end of line (EOL).</entry>
 </row>
 <row>
-<entry><para id="para-00113"><code class="python inline-code" lang="python">print("You typed:", w<emphasis effect="bold">i</emphasis>rd)</code></para></entry>
+<entry><para id="para-00113"><code>print("You typed:", w<emphasis effect="bold">i</emphasis>rd)</code></para></entry>
 <entry><code class="python inline-code" lang="python">NameError: name 'wird' is not defined</code></entry>
 <entry><para id="para-00114">The spelling of <code class="python inline-code" lang="python">word</code> is incorrect. The programmer accidentally typed the wrong key.</para></entry>
 </row>
 <row>
-<entry><para id="para-00115"><code class="python inline-code" lang="python">print<emphasis effect="bold">s</emphasis>("You typed:", word)</code></para></entry>
+<entry><para id="para-00115"><code>print<emphasis effect="bold">s</emphasis>("You typed:", word)</code></para></entry>
 <entry><code class="python inline-code" lang="python">NameError: name 'prints' is not defined</code></entry>
 <entry><para id="para-00116">The spelling of <code class="python inline-code" lang="python">print</code> is incorrect. The programmer accidentally typed an extra letter.</para></entry>
 </row>
