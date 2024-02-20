@@ -133,7 +133,7 @@
     <note class="practice-program" id="note-00004">
     <title>Mad lib (f-string)</title>
     <para id="para-00011">A <link url="https://openstax.org/r/100fstring">mad lib</link> is a funny story that uses words provided by a user. The following mad lib is based on four words (user input in bold):</para>
-    <code class="python" lang="python">
+    <code>
     Enter a name: <code class="inline-code"><emphasis effect="bold">Buster</emphasis></code>
     Enter a noun: <code class="inline-code"><emphasis effect="bold">dog</emphasis></code>
     Enter an adjective: <code class="inline-code"><emphasis effect="bold">super</emphasis></code>
@@ -149,7 +149,7 @@
     <note class="practice-program" id="note-00005">
     <title>Wage calculator</title>
     <para id="para-00013">You just landed a part-time job and would like to calculate how much money you will earn. Write a program that inputs the time you start working, the time you stop working, and your hourly pay rate (example input in bold):</para>
-    <code class="python" lang="python">
+    <code>
     Starting hour: <code class="inline-code"><emphasis effect="bold">9</emphasis></code>
     Starting minute: <code class="inline-code"><emphasis effect="bold">30</emphasis></code>
     Stopping hour: <code class="inline-code"><emphasis effect="bold">11</emphasis></code>
