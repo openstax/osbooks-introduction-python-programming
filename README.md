@@ -9,5 +9,7 @@ The book can be viewed [online](https://openstax.org/details/books/introduction-
 ## License
 This book is available under the [Creative Commons Attribution License](./LICENSE) license.
 
+This book utilizes the OpenStax Python code runner. The code runner is developed by Wiley and is not subject to the CC BY license.
+
 ## Support
 If you would like to support the creation of free textbooks for students, your [donations are welcome](https://riceconnect.rice.edu/donation/support-openstax-banner).

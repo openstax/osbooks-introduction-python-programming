@@ -12,3 +12,6 @@ coderunner.js has 3 dependencies, located in the coderunner_dependencies folder:
 There is a different folder for each chapter. Each such folder contains that chapter's code runner instances.
 
 Each instance is defined by a generic HTML file and a JS file that specifies that instances files, solution, and whether to show the solution.
+
+## LICENSE
+The code runner is developed by Wiley and is not subject to the CC BY license. 
