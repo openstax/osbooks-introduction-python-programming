@@ -8,6 +8,7 @@ The book can be viewed [online](https://openstax.org/details/books/introduction-
 
 ## License
 _Introduction to Python Programming_ is available under the [Creative Commons Attribution License](./LICENSE) license. 
+
 This book utilizes the OpenStax Python Code Runner. The Code Runner is developed by Wiley and is not subject to the CC BY license.
 
 ## Support
