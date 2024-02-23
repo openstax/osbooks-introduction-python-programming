@@ -1,0 +1,81 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "A user enters \"red\" after the following line of code?<br>\n<code class=\"python\">color = input(\"What is your favorite color?\")</code><br>\nWhich will produce the output \"Your favorite color is red.\" ",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\">print(\"Your favorite color is \" + color + !)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The variable color is assigned a string by the input() function, so it does not need to be enclosed with quotes. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\">print(\"Your favorite color is \" + \"color\" + \"!\")</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " Punctuation must be enclosed with quotes as well. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\">print(\"Your favorite color is \" + color + \"!\")</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " Note that space characters must be explicitly included when using the concatenation operator. ",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "caa624ea-e138-445d-9e8a-fa93a178e804"
+}
