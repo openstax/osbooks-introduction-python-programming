@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the code below:\n<pre class=\"python\" lang=\"python\">for i in range(0, len(my_list), 2):\n&nbsp;&nbsp;print(my_list[i], end=' ')\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "2 5 9",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The for loop steps by 2, so elements 2, 5, and 9 are printed, but the \"end\" variable changes how the print statement behaves.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "2 3 5 7 9",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Each element is printed in one line because of the \"end=\" variable.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "2<br>\n5<br>\n9",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The for loop steps by 2 each time so index 0, 2, and 4 are printed. Due to the \"end=\" in the print statement all elements are printed on one line.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "def2f1d2-458c-4e35-8e22-49fed6ca422d",
+  "detailedSolution": "The for loop steps by 2 each time so index 0, 2, and 4 are printed. Due to the \"end=\" in the print statement all elements are printed on one line."
+}
