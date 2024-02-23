@@ -1,0 +1,81 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output if a user enters \"six\" as the input?<br><br>\n\n<code>\n<code class=\"python\">print(\"Please enter a number: \")</code><br>\n<code class=\"python\">number = input()</code><br>\n<code class=\"python\">print(\"Value =\", number)</code>\n</code>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "Value = number",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The obtained input data is stored as the user enters it. So, Python would not convert \"six\" to the numerical 6 even though the user was prompted to enter a number. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Value = 6",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " Since number is outside the double quotes (\"), the input, \"six\", replaces number when the print statement is run. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Value = six",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The obtained input data is stored as the user enters it. So, the retrieved value is displayed exactly as entered by the user. ",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "4ffbcbe4-58e4-4ff7-85f6-924857998545"
+}
