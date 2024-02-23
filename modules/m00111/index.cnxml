@@ -595,7 +595,7 @@ memory usage: 320.0+ bytes
 <row>
 <entry><para id="para-00019"><code class="python inline-code" lang="python">value_counts()</code></para></entry>
 <entry>Counts the occurrences of unique values in a column when a column is passed as an argument and presents them in descending order.</entry>
-<entry><code class="python" lang="python">df.value_counts('Season')</code></entry>
+<entry><code class="python" lang="python">df.value_counts \('Season')</code></entry>
 <entry><code class="python" lang="python">
 Season
 Fall  2
@@ -607,7 +607,7 @@ dtype: int64
 <row>
 <entry><para id="para-00020"><code class="python inline-code" lang="python">unique()</code></para></entry>
 <entry>Returns an array of unique values in a column when called on a column.</entry>
-<entry><code class="python" lang="python">df['Season'].unique()</code></entry>
+<entry><code class="python" lang="python">df['Season'] \.unique()</code></entry>
 <entry><code class="python" lang="python">​​['Summer' 'Fall' 'Winter']</code></entry>
 </row>
 </tbody>
