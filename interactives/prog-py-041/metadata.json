@@ -1,0 +1,13 @@
+{
+  "errata_id": "fb28e856199382878f39564e902199ec2d519bf5dfaa0a4fc79f2198e03b41c7",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "context-cnxmod:e2f6f1ca-d0f3-4d44-8dde-c94f54baef08"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ]
+}
