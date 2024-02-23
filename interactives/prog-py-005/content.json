@@ -1,0 +1,81 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "The parameter, sep=, is used to redefine the default space character that separates multiple output data items. What output is produced by the following statement?<br>\n\n<code class=\"python\">print(\"555\", \"0123\", sep=\"-\")</code>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "555 0123",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The sep= parameter redefines the default space character that separates multiple output data items, not what is printed at the end of the line. What is printed at the end of the line is redefined with the end= parameter. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "5550123-",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The default space character that separates multiple output data items has been redefined with the dash character \"-\". ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "555-0123",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The default space character that separates multiple output data items has been redefined with the dash character \"-\". So the phone number, \"555-0123\", is produced, with a dash separating the 3-digit prefix and the 4-digit line number. ",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "d7cd7921-d403-4dd6-8e76-214182189afe"
+}
