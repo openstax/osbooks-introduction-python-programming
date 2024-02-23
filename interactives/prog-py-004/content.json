@@ -1,0 +1,81 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which lines of code print \"Hello world!\"? ",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\">print(\"Hello\")\nprint(\" world!\")</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The end=\" \" produces a space character after \"world!\". But, there is still a new line character after \"Hello\". So, these two lines would produce the output \"Hello\" and \"world!\" on separate lines. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\">print(\"Hello\")\nprint(\" world!\", end=\" \")</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " By default, the character produced after the parameter string is the new line character. So, these two lines would produce the output \"Hello\" and \"world!\" on separate lines. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\">print(\"Hello\", end=\" \")\nprint(\" world!\")</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The end=\" \" will cause the new line character to be replaced with a space after \"Hello\", producing \"Hello world!\" on the same line. ",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "f343749d-c029-4876-93d3-b68dc2ad27da"
+}
