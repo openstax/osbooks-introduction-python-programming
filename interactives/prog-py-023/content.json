@@ -1,0 +1,81 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which line of code will print\n\n<code>\"Enter\"</code>\n\nand\n\n<code>\"here\"</code>\n\nto the screen on separate lines?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\">print(\"Enter here\")</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " An escape sequence must be enclosed with single (') or double (\") quotes like any string. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\">print(\"Enter\" + \\n + \"here\")</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " Without the newline escape sequence, \\n, this would print both strings on the same line. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\">print(\"Enter\" + \"\\n\" + \"here\")</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Note that\n\n<code class=\"python\">print(\"Enter\\nhere\")</code>\n\nwould produce the same result.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "f4c15e89-1b55-4333-8f43-dc815c3df6c4"
+}
