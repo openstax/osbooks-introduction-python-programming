@@ -1,0 +1,81 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Someone named Sophia enters their name when prompted with<br><br>\n\n<code class=\"python\">print(\"Please enter your name: \")</code><br>\n<code class=\"python\">name=input()</code><br><br>\n\n\nWhat is displayed by <code class=\"python\">print(\"You entered:\", name)</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "You entered:, Sophia",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The print() function will replace the reference, name, with the input data, Sophia, stored in memory. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "You entered: name",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The print() function places the default space character between successive output data items and not the comma that separates them. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "You entered: Sophia",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": " The print() produces the output, \"You entered:\", followed by a space character, followed by the input data, Sophia, that is referenced in memory by name. ",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "c5c39ccc-5fd6-4840-8927-6ce9675e66f6"
+}
