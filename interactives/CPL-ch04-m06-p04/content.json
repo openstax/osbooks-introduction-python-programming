@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given <code class=\"python\" lang=\"python\">x =118</code>, <code class=\"python\" lang=\"python\">y = 300</code>, and <code class=\"python\" lang=\"python\">max = 512</code>, which of the following will execute?\n<pre class=\"python\" lang=\"python\">if x == y:\n&nbsp;&nbsp;# Body 1\nelif x &lt; y:\n&nbsp;&nbsp;# Body 2\n&nbsp;&nbsp;if y &gt;= max:\n&nbsp;&nbsp;&nbsp;&nbsp;# Body 3\nelse:\n&nbsp;&nbsp;# Body 4\nelse:\n&nbsp;&nbsp;# Body 5\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Body 2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The else with Body 4 is not indented and is connected to the preceding if-elif statement. Thus the else with Body 5 is not connected to a statement.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Body 3</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Which if statement is the else statement with Body 5 connected to?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first <code class=\"python\" lang=\"python\">else</code> isn't indented and is treated as the <code class=\"python\" lang=\"python\">else</code> to the original <code class=\"python\" lang=\"python\">if</code>. Thus the second <code class=\"python\" lang=\"python\">else</code> is not connected to an <code class=\"python\" lang=\"python\">if</code> statement and produces an error.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "6037af14-c1e1-4f1a-89ef-f1600fafbf83",
+  "detailedSolution": "The first <code class=\"python\" lang=\"python\">else</code> isn't indented and is treated as the <code class=\"python\" lang=\"python\">else</code> to the original <code class=\"python\" lang=\"python\">if</code>. Thus the second <code class=\"python\" lang=\"python\">else</code> is not connected to an <code class=\"python\" lang=\"python\">if</code> statement and produces an error."
+}
