@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which of the following results in a 2 by 3 <code class=\"python\" lang=\"python\">ndarray</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">import numpy as np\narr = np.array(2, 3)\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">np.array([[1, 2], [1, 2], [1, 2]])</code> creates an <code class=\"python\" lang=\"python\">ndarray</code> of 3 by 2. How to convert a 3 by 2 <code class=\"python\" lang=\"python\">ndarray</code> to a 2 by 3?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">import numpy as np\narr = np.array([[1, 2], [1, 2], [1, 2]])\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When creating an <code class=\"python\" lang=\"python\">ndarray</code> object, dimensions are passed as a tuple.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">import numpy as np\narr = np.array([[1, 2], [1, 2], [1, 2]]).T\n</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">np.array([[1, 2], [1, 2], [1, 2]])</code> creates an <code class=\"python\" lang=\"python\">ndarray</code> of 3 by 2. The <code class=\"python\" lang=\"python\">T</code> operator transposes the array. The transpose operator takes an array of <code class=\"python\" lang=\"python\">m</code> by <code class=\"python\" lang=\"python\">n</code> and converts the array to an <code class=\"python\" lang=\"python\">n</code> by <code class=\"python\" lang=\"python\">m</code> array. The result of applying the transpose operator on the given array is a 2 by 3 array.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "56b3a9eb-2ed2-4407-bb20-d5f92e9e5478",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">np.array([[1, 2], [1, 2], [1, 2]])</code> creates an <code class=\"python\" lang=\"python\">ndarray</code> of 3 by 2. The <code class=\"python\" lang=\"python\">T</code> operator transposes the array. The transpose operator takes an array of <code class=\"python\" lang=\"python\">m</code> by <code class=\"python\" lang=\"python\">n</code> and converts the array to an <code class=\"python\" lang=\"python\">n</code> by <code class=\"python\" lang=\"python\">m</code> array. The result of applying the transpose operator on the given array is a 2 by 3 array."
+}
