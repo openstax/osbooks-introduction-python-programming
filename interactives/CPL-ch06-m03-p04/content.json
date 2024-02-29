@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which variables are local?\n<pre class=\"python\" lang=\"python\">def print_time():\n&nbsp;&nbsp;out_str = \"Time is \" + str(hour) + \":\" + str(min)\n&nbsp;&nbsp;print(out_str)\n\nhour = int(input())\nmin = int(input())\nprint_time()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">hour</code> and <code class=\"python\" lang=\"python\">min</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "out_str is a local variable, but hour and min are declared outside of print_time().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">out_str</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "hour and min are created outside of print_time() and are global.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">hour</code>, <code class=\"python\" lang=\"python\">min</code>, and <code class=\"python\" lang=\"python\">out_str</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">out_str</code> is the only variable declared in <code class=\"python\" lang=\"python\">print_time()</code> and is a local variable.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "9899b173-d1db-427b-866f-164603b19874",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">out_str</code> is the only variable declared in <code class=\"python\" lang=\"python\">print_time()</code> and is a local variable."
+}
