@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<p>How many items does the <code class=\"python\" lang=\"python\">my_dict</code> object contain?</p>\n<code class=\"python\" lang=\"python\">my_dict = {\"a\": 1, \"b\": 2} </code>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">my_dict</code> object has 2 key-value pairs. How many items would that be?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "2",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">my_dict</code> dictionary has more than one item. How many key-value pairs exist in the <code class=\"python\" lang=\"python\">my_dict</code> object?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "4",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Two pairs of items exist in the <code class=\"python\" lang=\"python\">my_dict</code> dictionary. The two pairs are <code class=\"python\" lang=\"python\">\"a\": 1</code> and <code class=\"python\" lang=\"python\">\"b\": 2</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "10affe73-440e-457e-ba16-3965f02be324",
+  "detailedSolution": "Two pairs of items exist in the <code class=\"python\" lang=\"python\">my_dict</code> dictionary. The two pairs are <code class=\"python\" lang=\"python\">\"a\": 1</code> and <code class=\"python\" lang=\"python\">\"b\": 2</code>."
+}
