@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code for the <i>books.csv</i> seen above?\n<pre class=\"python\" lang=\"python\">file_obj = open(\"books.csv\")\n\ncsv_read = file_obj.readline()\n\nprint(csv_read)</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">['Title, Author, Pages\\n', '1984, George Orwell, 268\\n', 'Jane Eyre, Charlotte Bronte, 532\\n', 'Walden, Henry David Thoreau, 156\\n', 'Moby Dick, Herman Melville, 538']</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "This is the result of running line 19 in the code example above. But this result occurs after the processing in lines 6-16 of the example.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">[['Title', ' Author', ' Pages'], ['1984', ' George Orwell', ' 268'], ['Jane Eyre', ' Charlotte Bronte', ' 532'], ['Walden', ' Henry David Thoreau', ' 156'], ['Moby Dick', ' Herman Melville', ' 538']]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The function <code class=\"python\" lang=\"python\">readlines()</code> reads the complete contents of the file books.csv. But line 3 in the code uses <code>readline()</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Title, Author, Pages</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first line of the <i>books.csv</i> is read into <code class=\"python\" lang=\"python\">csv_read</code>. The first line is <code class=\"python\" lang=\"python\">'Title, Author, Pages'</code>, which is the same as the first row.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "0b5d1ef6-6075-459c-86d2-55c49cda09f0",
+  "detailedSolution": "The first line of the <i>books.csv</i> is read into <code class=\"python\" lang=\"python\">csv_read</code>. The first line is <code class=\"python\" lang=\"python\">'Title, Author, Pages'</code>, which is the same as the first row."
+}
