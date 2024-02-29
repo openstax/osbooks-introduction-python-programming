@@ -1,0 +1,19 @@
+{
+  "errata_id": "8ace69689ffb2852ece8cd45823aee23f75a22762469d6c7d4007bb6e128c4bb",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:db4506d3-00fd-4e9e-a2ca-c6bad9bbe97e",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:11-3-instance-methods"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00083"
+  ]
+}
