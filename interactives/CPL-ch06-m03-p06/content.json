@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which functions directly access <code class=\"python\" lang=\"python\">out_str</code>?\n<pre class=\"python\" lang=\"python\">def print_greeting():\n&nbsp;&nbsp;print(\"Good day,\")\n&nbsp;&nbsp;print_time()\n\ndef print_time():\n&nbsp;&nbsp;out_str = \"Time is \" + str(hour) + \":\" + str(min)\n&nbsp;&nbsp;print(out_str)\n\nhour = int(input())\nmin = int(input())\nprint_greeting()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">print_greeting()</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "out_str is local to print_time(), so print_greeting() cannot access out_str directly.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">print_time()</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "print_time() creates out_str. out_str is out of scope in print_greeting() and cannot be accessed directly.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">print_greeting()</code> and <code class=\"python\" lang=\"python\">print_time()</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">print_time()</code> creates <code class=\"python\" lang=\"python\">out_str</code> as a local variable. <code class=\"python\" lang=\"python\">out_str</code> is only in scope in <code class=\"python\" lang=\"python\">print_time()</code> and cannot be accessed elsewhere.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "840ab4f0-e109-4fe0-adea-7ee7ea6d096d",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">print_time()</code> creates <code class=\"python\" lang=\"python\">out_str</code> as a local variable. <code class=\"python\" lang=\"python\">out_str</code> is only in scope in <code class=\"python\" lang=\"python\">print_time()</code> and cannot be accessed elsewhere."
+}
