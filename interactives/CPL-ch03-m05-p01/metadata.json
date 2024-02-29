@@ -1,0 +1,19 @@
+{
+  "errata_id": "43429a6d4db1f86dd799cbfe0fdff28b6ef4b9ae5bbef0411fea391567ad6290",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:7d554cfa-b3f4-4a06-b6d8-5af7d34a2277",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:3-5-tuple-basics"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00025"
+  ]
+}
