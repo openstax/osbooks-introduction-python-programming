@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What does <code class=\"python\" lang=\"python\">order_1</code> represent at the end of the program?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "8 oz coffee",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "order_1 is originally a plain coffee without milk or sugar, but the call to change() assigns the sugar parameter with True.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "8 oz coffee with milk",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "order_1 is originally a coffee without milk or sugar, but the call to change() changes one of the boolean instance attributes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "8 oz coffee with sugar",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">order_1</code> is originally a coffee without milk or sugar, but the call to <code class=\"python\" lang=\"python\">change()</code> adds sugar to the order by assigning <code class=\"python\" lang=\"python\">order_1.with_sugar</code> with <code class=\"python\" lang=\"python\">True</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "d00c7977-658f-4fd9-9f44-8f9b9ee5ee79",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">order_1</code> is originally a coffee without milk or sugar, but the call to <code class=\"python\" lang=\"python\">change()</code> adds sugar to the order by assigning <code class=\"python\" lang=\"python\">order_1.with_sugar</code> with <code class=\"python\" lang=\"python\">True</code>."
+}
