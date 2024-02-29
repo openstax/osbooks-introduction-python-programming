@@ -1,0 +1,19 @@
+{
+  "errata_id": "231c7f8d910cd7ca5b862066858ca8cc7f16a4a15eaa88c2f32bb59b8a9aa22c",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:9b8ccc5a-4690-4ca4-b9da-fa593c1446ad",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:12-1-recursion-basics"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00088"
+  ]
+}
