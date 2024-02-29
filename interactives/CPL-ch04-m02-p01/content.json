@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the following, which part is the condition?\n<pre class=\"python\" lang=\"python\">if age &lt; 12:\n&nbsp;&nbsp;print(\"Discount for children available\")\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">age</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The print statement is the body of the if statement, not the condition of the if statement. The condition comes before the body.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">age &lt; 12</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The variable age is part of the condition.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">print(\"Discount for children available\")</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">age &lt; 12</code> is between <code class=\"python\" lang=\"python\">\"if\"</code> and \":\" and is an expression that evaluates to <code class=\"python\" lang=\"python\">True</code> or <code class=\"python\" lang=\"python\">False</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "d69b1d82-a2ad-4ffa-b553-00e586853dd5",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">age &lt; 12</code> is between <code class=\"python\" lang=\"python\">\"if\"</code> and \":\" and is an expression that evaluates to <code class=\"python\" lang=\"python\">True</code> or <code class=\"python\" lang=\"python\">False</code>."
+}
