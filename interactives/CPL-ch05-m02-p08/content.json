@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of <code class=\"python\" lang=\"python\">range(5, 2)</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">0, 2, 4</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The order of range arguments are important. The first argument, 5, is the sequence's start and the second, 2, is the sequence's end. Hence, the sequence cannot start with a 2.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">2, 3, 4</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When two arguments are provided to the <code class=\"python\" lang=\"python\">range()</code> function, the first one is the sequence's start and the second one is the sequence's end. In the given example, 5 is the start and 2 is the sequence's end, hence the sequence cannot start with a 0.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "empty sequence",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When two arguments are provided to the <code class=\"python\" lang=\"python\">range()</code> function, arguments are considered as <code class=\"python\" lang=\"python\">start</code> and <code class=\"python\" lang=\"python\">end</code> of the sequence, and the step size will be <code class=\"python\" lang=\"python\">1</code>. When step size is positive, the generated sequence will be in ascending order, and hence, <code class=\"python\" lang=\"python\">start</code> must be less than <code class=\"python\" lang=\"python\">end</code>. Otherwise, no sequence will be generated.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5df49253-6de1-4177-8772-549507376ae6",
+  "detailedSolution": "When two arguments are provided to the <code class=\"python\" lang=\"python\">range()</code> function, arguments are considered as <code class=\"python\" lang=\"python\">start</code> and <code class=\"python\" lang=\"python\">end</code> of the sequence, and the step size will be <code class=\"python\" lang=\"python\">1</code>. When step size is positive, the generated sequence will be in ascending order, and hence, <code class=\"python\" lang=\"python\">start</code> must be less than <code class=\"python\" lang=\"python\">end</code>. Otherwise, no sequence will be generated."
+}
