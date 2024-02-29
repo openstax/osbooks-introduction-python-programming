@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Line 16 executes and <code>Square</code>'s <code>__init__()</code> is called on line 12. Line 13 executes and the superclass's <code>__init__()</code> is called. Which line does control flow move to next?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "2",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Control flow moves to a different method before returning and moving on to line 14.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "6",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Square's immediate superclass is Rectangle, not Polygon.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "14",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code>Square</code>'s superclass is <code >Rectangle</code>. <code>Rectangle</code>'s <code>__init__()</code> is called on line 6.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "4ca461b5-0132-4dd0-930e-a49e0bd935bd",
+  "detailedSolution": "<code>Square</code>'s superclass is <code>Rectangle</code>. <code>Rectangle</code>'s <code>__init__()</code> is called on line 6."
+}
