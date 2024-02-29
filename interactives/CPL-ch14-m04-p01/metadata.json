@@ -1,0 +1,19 @@
+{
+  "errata_id": "6381b9a4f2064d0088d4c31386af729a97c2596b66b41480abb3f6f2e447f23c",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:6edc5aae-b01f-44f3-8efd-549d341fe04a",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:14-4-handling-exceptions"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00105"
+  ]
+}
