@@ -1,0 +1,19 @@
+{
+  "errata_id": "9cce1d5bcdcb3d089c8dfb263d621556f67c7da1de09d5666a8027a38cf69f91",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:40bc31f7-2cd5-4022-98d4-f0d510112a70",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:4-7-conditional-expressions"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00034"
+  ]
+}
