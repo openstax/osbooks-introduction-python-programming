@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is <code class=\"python\" lang=\"python\">book_rating'</code>s data type on line 7?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "float",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "book_rating was an integer until line 5, when the variable was assigned with 3.5 and converted to a float by the interpreter.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "integer",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">book_rating</code> was assigned with <code class=\"python\" lang=\"python\">3.5</code> on line 5 and converted from an integer to a float by the interpreter. <code class=\"python\" lang=\"python\">book_rating</code> isn't modified after line 5.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "d28e0cd5-2a63-4f98-b5b5-57efdb0b917c",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">book_rating</code> was assigned with <code class=\"python\" lang=\"python\">3.5</code> on line 5 and converted from an integer to a float by the interpreter. <code class=\"python\" lang=\"python\">book_rating</code> isn't modified after line 5."
+}
