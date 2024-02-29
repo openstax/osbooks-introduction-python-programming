@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "If name is <code class=\"python\" lang=\"python\">\"Ada\"</code>, what does <code class=\"python\" lang=\"python\">print(\"Hello,\" name)</code> output?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Hello,Ada</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "String literals are not automatically concatenated with variables.\nThis output would be correct if the code had a comma: \n<pre class=\"python\" lang=\"python\">print(\"Hello,\", name)</pre>",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Hello, Ada</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "String literals are not automatically concatenated with variables.\nThis output would be correct if the code had a <code class=\"python\" lang=\"python\">+</code> operator:\n<pre class=\"python\" lang=\"python\">print(\"Hello,\" + name)</pre>\n",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">SyntaxError</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The literal <code class=\"python\" lang=\"python\">\"Hello,\"</code> and the variable <code class=\"python\" lang=\"python\">name</code>\ncannot be concatenated without using a <code class=\"python\" lang=\"python\">+</code> operator.\nAlternatively, the two values could be separated by a comma in the print function.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "44a02844-06b4-49f3-8c44-f6452e786a6d",
+  "detailedSolution": "The literal <code class=\"python\" lang=\"python\">\"Hello,\"</code> and the variable <code class=\"python\" lang=\"python\">name</code>\ncannot be concatenated without using a <code class=\"python\" lang=\"python\">+</code> operator.\nAlternatively, the two values could be separated by a comma in the print function."
+}
