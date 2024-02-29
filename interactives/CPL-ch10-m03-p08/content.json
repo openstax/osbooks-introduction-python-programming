@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which option removes the item <code class=\"python\" lang=\"python\">\"Butter Chicken\": \"$18\"</code> from the <code class=\"python\" lang=\"python\">food</code> dictionary?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">food.remove(\"Butter Chicken\")</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">del</code> is not a function and is a keyword. The syntax for deleting an item using del is <code class=\"python\" lang=\"python\">del dictionary[key]</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">del food[\"Butter Chicken\"]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">remove()</code> is not an attribute for a dictionary. To delete an item from a dictionary, <code class=\"python\" lang=\"python\">del</code> keyword or <code class=\"python\" lang=\"python\">pop()</code> method can be used.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">del food.del(\"Butter Chicken\")</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Using the <code class=\"python\" lang=\"python\">del</code> keyword, items can be deleted from a dictionary using the key.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "ce8317b1-8edc-4ed7-bcdd-0bdbc5a81b9e",
+  "detailedSolution": "Using the <code class=\"python\" lang=\"python\">del</code> keyword, items can be deleted from a dictionary using the key."
+}
