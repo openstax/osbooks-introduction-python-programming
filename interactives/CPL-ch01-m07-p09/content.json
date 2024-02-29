@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which docstring is most useful for this program?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">\"\"\"Vacations Madlib.\"\"\"</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "This docstring contains redundant and unnecessary information, including details about variables.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">\"\"\"Vacations Madlib. \n\nThis program asks the user for two adjectives\nand two nouns, which are then used to print\na funny story about a vacation.\n\"\"\"</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "This docstring, although better than nothing, is missing a description.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">\"\"\"Vacations Madlib.\n\nThis program asks the user for two adjectives\nand two nouns, which are then used to print\na funny story about a vacation. The code uses\nfour variables to store the user input: two for\nthe adjectives, and two for the nouns. The\noutput is displayed on seven lines, beginning\nwith a blank line after the input.\n\"\"\"</pre>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The amount of information in this docstring is just right. In most cases, the docstring should not be longer than the code.\n",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "094e5bd3-c092-4947-86d4-e74b8aba80fe",
+  "detailedSolution": "The amount of information in this docstring is just right. In most cases, the docstring should not be longer than the code.\n"
+}
