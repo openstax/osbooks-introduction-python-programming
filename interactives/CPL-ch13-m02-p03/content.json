@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Consider the following example. Which instance attribute(s) does <code class=\"python\" lang=\"python\">dc_1</code> have?\n<pre class=\"python\" lang=\"python\">class SuperClass:\n&nbsp;&nbsp;def __init__(self):\n&nbsp;&nbsp;&nbsp;&nbsp;self.feat_1 = 1\n&nbsp;&nbsp;&nbsp;&nbsp;self.feat_2 = \"\"\n\n&nbsp;&nbsp;def bc_display(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(f\"Superclass: {self.feat_2}\")\n\nclass SubClass(SuperClass):\n&nbsp;&nbsp;def dc_display(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(f\"Subclass: {self.feat_2}\")\n\ndc_1 = SubClass()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">feat_2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "dc_1 is of type SubClass, which is inherited from SuperClass and inherits all SuperClass's instance attributes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">feat_1</code> and <code class=\"python\" lang=\"python\">feat_2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "dc_1 also inherits feat_1 from SuperClass.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "None",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">dc_1</code> inherits <code class=\"python\" lang=\"python\">feat_1</code> and <code class=\"python\" lang=\"python\">feat_2</code> from <code class=\"python\" lang=\"python\">SuperClass</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "435f0270-18c1-487a-a524-d8bcec10b10e",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">dc_1</code> inherits <code class=\"python\" lang=\"python\">feat_1</code> and <code class=\"python\" lang=\"python\">feat_2</code> from <code class=\"python\" lang=\"python\">SuperClass</code>."
+}
