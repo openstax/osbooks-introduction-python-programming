@@ -1,0 +1,19 @@
+{
+  "errata_id": "cac5813e994ab8ac8aabf9f318500a9c25d90a6d59dada4230db16ef96a726e1",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:fcea481d-ff2f-472b-afd5-564e25bcef4a",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:2-7-formatting-code"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00017"
+  ]
+}
