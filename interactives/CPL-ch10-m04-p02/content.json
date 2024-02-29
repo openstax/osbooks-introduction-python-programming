@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of <code class=\"python\" lang=\"python\">(\"orange\", 5)</code> in <code class=\"python\" lang=\"python\">fruit_count.items()</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">SyntaxError</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The key-value pair <code class=\"python\" lang=\"python\">\"orange\": 5</code> exists in the dictionary. What must be the outcome of the conditional statement?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">True</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Dictionary items are returned in a set of tuples after calling <code class=\"python\" lang=\"python\">fruit_count.items()</code>. The statement checks whether the tuple <code class=\"python\" lang=\"python\">(\"orange\", 5)</code> is associated with an item in the dictionary.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">False</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The key <code class=\"python\" lang=\"python\">\"orange\"</code>, with associated value <code class=\"python\" lang=\"python\">5</code>, exists in the dictionary and the return value is <code class=\"python\" lang=\"python\">True</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "60f3330c-b6ac-483a-a7b5-18229a1925e6",
+  "detailedSolution": "The key <code class=\"python\" lang=\"python\">\"orange\"</code>, with associated value <code class=\"python\" lang=\"python\">5</code>, exists in the dictionary and the return value is <code class=\"python\" lang=\"python\">True</code>."
+}
