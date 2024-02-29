@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given <code class=\"python\" lang=\"python\">x = 42</code> and <code class=\"python\" lang=\"python\">y = 0</code>, what is the final value of <code class=\"python\" lang=\"python\">y</code>?\n<pre class=\"python\" lang=\"python\">if x &gt; 44:\n&nbsp;&nbsp;y += 2\nelif x &lt; 50:\n&nbsp;&nbsp;y += 5\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "if and elif are chained, so both branches cannot be taken. Is x > 44 or x &lt; 50 True?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">5</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "42 > 44 is False, so the first branch isn't taken. 42 &lt; 50 is true, so how is y modified?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">7</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">x > 44</code>, <code class=\"python\" lang=\"python\">42 > 44</code>, is <code class=\"python\" lang=\"python\">False</code>, so <code class=\"python\" lang=\"python\">x &lt; 50</code> is evaluated. <code class=\"python\" lang=\"python\">42 &lt; 50</code> is <code class=\"python\" lang=\"python\">True</code>, so <code class=\"python\" lang=\"python\">y = 0 + 5</code>. Only one of the <code class=\"python\" lang=\"python\">if</code> and <code class=\"python\" lang=\"python\">elif</code> branches is taken.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "2a8b4cec-47bf-4e6d-a367-195ad3b8fa8f",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">x &gt; 44</code>, <code class=\"python\" lang=\"python\">42 &gt; 44</code>, is <code class=\"python\" lang=\"python\">False</code>, so <code class=\"python\" lang=\"python\">x &lt; 50</code> is evaluated. <code class=\"python\" lang=\"python\">42 &lt; 50</code> is <code class=\"python\" lang=\"python\">True</code>, so <code class=\"python\" lang=\"python\">y = 0 + 5</code>. Only one of the <code class=\"python\" lang=\"python\">if</code> and <code class=\"python\" lang=\"python\">elif</code> branches is taken."
+}
