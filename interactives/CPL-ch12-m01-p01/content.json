@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How is the problem of moving two rings solved using recursion?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "Move the small ring to the middle tower, move the bigger ring to the target tower, and move the small ring to the target tower.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Recursion is necessary to come up with a systematic solution for 3 towers game.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Move two rings from the source tower to the target tower.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "How is this accomplished step by step?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Cannot be solved with recursion.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The move of the smaller ring, which is a smaller problem, is done twice on the way to solving for the two rings overall. The task of moving all three rings is broken down into smaller tasks of moving one ring at a time.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "900a9638-03f6-41ba-a8d9-314b5c1069c3",
+  "detailedSolution": "The move of the smaller ring, which is a smaller problem, is done twice on the way to solving for the two rings overall. The task of moving all three rings is broken down into smaller tasks of moving one ring at a time."
+}
