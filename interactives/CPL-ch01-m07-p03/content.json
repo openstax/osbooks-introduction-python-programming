@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which comment is formatted correctly?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "0 spaces:<br>\n<code class=\"python\" lang=\"python\">#Get the user input</code>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Having more than one space after the # is unnecessary.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "1 space:<br>\n<code class=\"python\" lang=\"python\"># Get the user input</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Without a space, <code class=\"python\" lang=\"python\">#Get</code> looks more like a hashtag than a comment.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "2 spaces:<br>\n<code class=\"python\" lang=\"python\">#&nbsp; Get the user input</code>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Having one space after the # is the community standard.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5ae649cf-8eb4-4d21-bda6-cdad1cd3f117",
+  "detailedSolution": "Having one space after the # is the community standard."
+}
