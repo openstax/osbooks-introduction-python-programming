@@ -1,0 +1,19 @@
+{
+  "errata_id": "61031db802b4f0037f9cc2df8388d631de24313389c1f965306e8c86127dd2b5",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:24250aa5-986f-47c5-875b-dd7fdbf3901c",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:15-2-numpy"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00110"
+  ]
+}

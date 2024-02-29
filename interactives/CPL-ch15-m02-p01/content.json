@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which of the following creates an <code class=\"python\" lang=\"python\">ndarray</code> object with one row and two columns?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">np.array([2, 3])</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The shape of the <code class=\"python\" lang=\"python\">ndarray</code> is passed as a tuple to the <code class=\"python\" lang=\"python\">np.zeros()</code> function.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">np.zeros(1, 2)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Since <code class=\"python\" lang=\"python\">[2, 3]</code> is a 1 by 2 list, the resulting ndarray is going to be a 1 by 2 array.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">np.zeros((1, 2))</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "To create an <code class=\"python\" lang=\"python\">m</code> by <code class=\"python\" lang=\"python\">n</code> matrix of all zeros, <code class=\"python\" lang=\"python\">np.zeros((m,n))</code> can be used.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "c7281939-70be-42dc-b832-2714a7be51c6",
+  "detailedSolution": "To create an <code class=\"python\" lang=\"python\">m</code> by <code class=\"python\" lang=\"python\">n</code> matrix of all zeros, <code class=\"python\" lang=\"python\">np.zeros((m,n))</code> can be used."
+}
