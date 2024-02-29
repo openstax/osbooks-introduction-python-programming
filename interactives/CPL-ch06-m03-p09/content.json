@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output?\n<pre class=\"python\" lang=\"python\">def update_hour():\n&nbsp;&nbsp;global new_hour\n&nbsp;&nbsp;new_hour = hour\n&nbsp;&nbsp;if is_dst:\n&nbsp;&nbsp;&nbsp;&nbsp;new_hour += 1\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;new_hour -= 1\n\nis_dst = True\nhour = int(input(\"<span class=\"purple-code\">Enter hour:</span> \"))\nupdate_hour()\nprint(\"New hour:\", new_hour)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">New hour: 9</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "new_hour is a global variable that can be accessed outside of update_hour().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">New hour: 10</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "new_hour has the value 10 and can be accessed outside update_hour().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">global</code> keyword can be used to create a global variable from within a function. <code class=\"python\" lang=\"python\">new_hour</code> has global scope and can be accessed outside <code class=\"python\" lang=\"python\">update_hour()</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "00d93fc5-3981-4f4e-80e2-13be7a865fc6",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">global</code> keyword can be used to create a global variable from within a function. <code class=\"python\" lang=\"python\">new_hour</code> has global scope and can be accessed outside <code class=\"python\" lang=\"python\">update_hour()</code>."
+}
