@@ -1,0 +1,19 @@
+{
+  "errata_id": "0e3a6e3cc6da952b43e096c1d9a396c4d8ff77d0e1c7d9e5015411bfb5eb5075",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:6e60ad69-accd-4b81-95ed-73e10f84661e",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:1-5-number-basics"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00006"
+  ]
+}
