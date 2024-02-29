@@ -1,0 +1,20 @@
+{
+  "errata_id": "cd046111846291c9e077c5904d712690a48220d3886a7b334c149428c99f6c83",
+  "attachments": [],
+  "tags": [
+    "type:practice",
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:a0324325-77a8-42d1-a730-3ea568afab76",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:12-2-simple-math-recursion"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00089"
+  ]
+}
