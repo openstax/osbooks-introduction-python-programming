@@ -1,0 +1,19 @@
+{
+  "errata_id": "8817ea8295f35d03919a5e04c6a6f5e73f75ed3a83a7b598573e6c332f87f73c",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:75ea8629-0c7c-48cb-99e8-5c29b9ff15eb",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:2-6-the-math-module"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00016"
+  ]
+}
