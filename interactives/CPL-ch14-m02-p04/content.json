@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<pre class=\"python\" lang=\"python\">outfile = open(\"resources.txt\", 'w')\noutfile.write(\"new content\")</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "nothing",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Until close() is used the state of the file is uncertain.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "The contents of the <i>resources.txt file</i> is overwritten with the line <code class=\"python\" lang=\"python\">\"new content\"</code>.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The open() statement in write mode will overwrite the existing resources.txt file.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "The <i>resources.txt</i> file is overwritten, but the contents of <i>resources.txt</i> are uncertain.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<i>resources.txt</i> is likely empty, but the state of <i>resources.txt</i> is uncertain. To ensure the contents are saved correctly, the <code class=\"python\" lang=\"python\">close()</code> function must be used.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "71e511e8-6e49-4b37-8257-56d6a2bfc3d7",
+  "detailedSolution": "<i>resources.txt</i> is likely empty, but the state of <i>resources.txt</i> is uncertain. To ensure the contents are saved correctly, the <code class=\"python\" lang=\"python\">close()</code> function must be used."
+}
