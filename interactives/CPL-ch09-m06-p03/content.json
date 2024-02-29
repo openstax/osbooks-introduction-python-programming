@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What does <code class=\"python\" lang=\"python\">new_list</code> contain after executing the statement below?\n<pre class=\"python\" lang=\"python\">new_list = [i//3 for i in range(1, 15, 3)]</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">[0.3333333333333333, 1.3333333333333333, 2.3333333333333335, 3.3333333333333335, 4.333333333333333]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The for loop does not step by 1.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">[0, 1, 2, 3, 4]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The for loop starts at 1 and steps by 3, so it begins at 1 and ends at 13. However, the division operation is not regular division.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">for</code> loop starts at 1 and steps by three, so it begins at 1 and ends at 13. Dividing using the <code class=\"python\" lang=\"python\">//</code> operator results in dropping the part after the decimal.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "b1edcc69-ee49-4acd-9691-4c007c071659",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">for</code> loop starts at 1 and steps by three, so it begins at 1 and ends at 13. Dividing using the <code class=\"python\" lang=\"python\">//</code> operator results in dropping the part after the decimal."
+}

@@ -1,0 +1,19 @@
+{
+  "errata_id": "e7fbe61cf2da7cd37047d780adf133eea617b3158fd77da5a62375427acc945f",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:b3d0f91e-08a8-4234-893d-37c173d0cbfc",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:9-5-list-comprehensions"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00071"
+  ]
+}
