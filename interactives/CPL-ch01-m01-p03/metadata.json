@@ -1,0 +1,19 @@
+{
+  "errata_id": "dc1e5a97c5e981b1f55ab7b3ed6653c65218836f64f95b1de11fb227f98bfb16",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:79514b44-ecdc-40de-b29c-164a809bb48b",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:1-1-background"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00002"
+  ]
+}
