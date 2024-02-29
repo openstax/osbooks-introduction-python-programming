@@ -1,0 +1,19 @@
+{
+  "errata_id": "0c3fc08b464eb3a62c61b511a98f8b58c5f42197c6f829a416c63ef3c54ea1be",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:c74899cb-f952-4e99-9961-bf1be5e26e5e",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:14-5-raising-exceptions"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00106"
+  ]
+}
