@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which of the following is a valid chained decision statement?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">if condition_1:\n&nbsp;&nbsp;# Body 1\nelif condition_2:\n&nbsp;&nbsp;# Body 2\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The statement will produce an error because the elif is not chained to a preceding statement. An elif must follow a statement the elif is chained to.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">if condition_1:\n&nbsp;&nbsp;# Body 1\n&nbsp;&nbsp;elif condition_2:\n&nbsp;&nbsp;&nbsp;&nbsp;# Body 2\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The statement will produce an error because the if and elif are not on the same indentation level. The elif must be chained to a statement on the same indentation level.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">elif condition_1:\n&nbsp;&nbsp;# Body 1\nif condition_2:\n&nbsp;&nbsp;# Body 2\n</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">elif</code> must be chained to a preceding statement and at the same indentation level.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "9030d1d4-57be-4c91-93c4-a57f2e40f7d2",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">elif</code> must be chained to a preceding statement and at the same indentation level."
+}
