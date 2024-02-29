@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "If <code class=\"python\" lang=\"python\">s = \"Python!\"</code>, what type of object is <code class=\"python\" lang=\"python\">s[0]</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "character",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The integer 0 is an index into the string s. The result of s[0] is 'P'.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "integer",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Python does not have a character type; 'P' is a string of length 1.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "string",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The result of <code class=\"python\" lang=\"python\">s[0]</code> is <code class=\"python\" lang=\"python\">\"P\"</code>, which is a string of length 1.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "c5915749-a701-486f-99f1-2d18715feca7",
+  "detailedSolution": "The result of <code class=\"python\" lang=\"python\">s[0]</code> is <code class=\"python\" lang=\"python\">\"P\"</code>, which is a string of length 1."
+}
