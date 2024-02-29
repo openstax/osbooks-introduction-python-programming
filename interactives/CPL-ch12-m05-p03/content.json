@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How many calls to the <code class=\"python\" lang=\"python\">binary_search()</code> function occur in the animation?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "3",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "There are 8 total elements in the list. A simple search would need 8 steps but not binary search.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The key 16 is at index 4.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "8",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first call results in <code class=\"python\" lang=\"python\">mid</code> being <code class=\"python\" lang=\"python\">3</code>, next <code class=\"python\" lang=\"python\">mid</code> becomes <code class=\"python\" lang=\"python\">5</code>, and finally, <code class=\"python\" lang=\"python\">mid</code> becomes <code class=\"python\" lang=\"python\">4</code>. The element found at index 4 is equal to the key <code class=\"python\" lang=\"python\">16</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "fa8525c3-4783-4e63-81b2-00cd1fd0b11d",
+  "detailedSolution": "The first call results in <code class=\"python\" lang=\"python\">mid</code> being <code class=\"python\" lang=\"python\">3</code>, next <code class=\"python\" lang=\"python\">mid</code> becomes <code class=\"python\" lang=\"python\">5</code>, and finally, <code class=\"python\" lang=\"python\">mid</code> becomes <code class=\"python\" lang=\"python\">4</code>. The element found at index 4 is equal to the key <code class=\"python\" lang=\"python\">16</code>."
+}
