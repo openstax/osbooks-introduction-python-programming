@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<code class=\"python\" lang=\"python\">Square'</code>s <code class=\"python\" lang=\"python\">__init__()</code> returns and control flow moves to line 17. What is the output?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">3</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Square's side attribute has the value 5. num_sides is a different attribute inherited from Polygon.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">4</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "3 is the default value of num_sides, but a value was passed to Polygon's __init__() on line 7.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">5</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">Rectangle'</code>s <code class=\"python\" lang=\"python\">__init__()</code> always calls <code class=\"python\" lang=\"python\">Polygon'</code>s <code class=\"python\" lang=\"python\">__init__()</code> with <code class=\"python\" lang=\"python\">num_sides=4</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "92570dde-6f56-4837-b73a-d2ef2980e628",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">Rectangle'</code>s <code class=\"python\" lang=\"python\">__init__()</code> always calls <code class=\"python\" lang=\"python\">Polygon'</code>s <code class=\"python\" lang=\"python\">__init__()</code> with <code class=\"python\" lang=\"python\">num_sides=4</code>."
+}
