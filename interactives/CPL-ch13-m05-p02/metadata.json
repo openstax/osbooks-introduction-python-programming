@@ -1,0 +1,19 @@
+{
+  "errata_id": "a4c775eb6745f134ed163790a18b2bc43bf054ce24a503ed96c8f881eb4e365b",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:41d86ead-3948-4dae-8766-cf480c9376c6",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:13-5-multiple-inheritance-and-mixin-classes"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00099"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the value of <code class=\"python\" lang=\"python\">c_inst.c_attr</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "c_attr is C's instance attribute, so c_inst has access to c_attr.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">20</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The argument 2 maps to b_attr in C's __init__().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "An argument is not passed to <code class=\"python\" lang=\"python\">C'</code>s <code class=\"python\" lang=\"python\">__init__()</code> for <code class=\"python\" lang=\"python\">c_attr</code>, so <code class=\"python\" lang=\"python\">c_attr</code> is assigned with the default value, <code class=\"python\" lang=\"python\">20</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e2bfc9ae-71a3-4960-bc13-3371b2523572",
+  "detailedSolution": "An argument is not passed to <code class=\"python\" lang=\"python\">C'</code>s <code class=\"python\" lang=\"python\">__init__()</code> for <code class=\"python\" lang=\"python\">c_attr</code>, so <code class=\"python\" lang=\"python\">c_attr</code> is assigned with the default value, <code class=\"python\" lang=\"python\">20</code>."
+}
