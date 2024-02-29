@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How many calls to the <code class=\"python\" lang=\"python\">binary_search()</code> function occur in the code example when searching <code class=\"python\" lang=\"python\">86</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "There are 14 total elements in the list. A simple search would need 14 steps but not binary search.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "14",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first call results in <code class=\"python\" lang=\"python\">mid</code> being <code class=\"python\" lang=\"python\">(0 + 13) // 2 = 6</code>. The next call has <code class=\"python\" lang=\"python\">mid (7 + 13) // 2 = 10</code>. The next call has <code class=\"python\" lang=\"python\">mid (11 + 13) // 2 = 12</code>. At this point, <code class=\"python\" lang=\"python\">86 &lt; 99</code>, so the final call is to <code class=\"python\" lang=\"python\">mid 11</code>, after which there is nowhere else to go.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "0906e68e-9675-4ed8-b739-37db6ec6309b",
+  "detailedSolution": "The first call results in <code class=\"python\" lang=\"python\">mid</code> being <code class=\"python\" lang=\"python\">(0 + 13) // 2 = 6</code>. The next call has <code class=\"python\" lang=\"python\">mid (7 + 13) // 2 = 10</code>. The next call has <code class=\"python\" lang=\"python\">mid (11 + 13) // 2 = 12</code>. At this point, <code class=\"python\" lang=\"python\">86 &lt; 99</code>, so the final call is to <code class=\"python\" lang=\"python\">mid 11</code>, after which there is nowhere else to go."
+}
