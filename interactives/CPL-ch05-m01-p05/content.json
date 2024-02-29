@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which line is printed as the last line of output?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">value of n after the loop is -1.</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "During the loop's execution, only the statements in the body will be executed. When loop terminates the first statement after the loop will run.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">value of n after the loop is 0.</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop terminates when n = 0, therefore the value of n after the loop's execution is not equal to -1.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">value of n after the loop is 1.</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop's termination condition is <code class=\"python\" lang=\"python\">n = 0</code>; therefore, the value of <code class=\"python\" lang=\"python\">n</code> after the loop equals <code class=\"python\" lang=\"python\">0</code>. The last printed line will be: <code class=\"python\" lang=\"python\">value of n after the loop is 0</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "0e98b11c-a9f6-47f9-a190-5f83104bd22b",
+  "detailedSolution": "The loop's termination condition is <code class=\"python\" lang=\"python\">n = 0</code>; therefore, the value of <code class=\"python\" lang=\"python\">n</code> after the loop equals <code class=\"python\" lang=\"python\">0</code>. The last printed line will be: <code class=\"python\" lang=\"python\">value of n after the loop is 0</code>."
+}
