@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the result of the following code?\n<pre class=\"python\" lang=\"python\">fileobj = open(\"newfile.txt\")\nprint(fileobj)</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Additional programming is required to print the contents of the file opened and associated with the file object.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Information about the object <code class=\"python\" lang=\"python\">fileobj</code> is printed.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The code executes without errors.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "The contents of <i>newfile.txt</i> are printed.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Python interprets this command as the programmer trying to print the object details. The object details are printed. Ex: <code class=\"python\" lang=\"python\">&lt;_io.TextIOWrapper name='newfile.txt' mode='r' encoding='cp1252'&gt;</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "97761986-01f1-4c07-a253-e77695433e5a",
+  "detailedSolution": "Python interprets this command as the programmer trying to print the object details. The object details are printed. Ex: <code class=\"python\" lang=\"python\">&lt;_io.TextIOWrapper name='newfile.txt' mode='r' encoding='cp1252'&gt;</code>."
+}
