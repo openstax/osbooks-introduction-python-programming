@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which conditions complete the code such that if <code class=\"python\" lang=\"python\">x</code> is less than 0, <code class=\"python\" lang=\"python\">Body 1</code> executes, else if <code class=\"python\" lang=\"python\">x</code> equals 0, <code class=\"python\" lang=\"python\">Body 2</code> executes. \n<pre class=\"python\" lang=\"python\">if _________:\n&nbsp;&nbsp;# Body 1\nelif _________:\n&nbsp;&nbsp;# Body 2\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">x &lt; 0</code> <br>\n<code class=\"python\" lang=\"python\">x == 0</code>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "x &lt;= 0 covers both x &lt; 0 and x == 0, which should execute different statements. Also, elif must have a condition.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">x == 0</code> <br>\n<code class=\"python\" lang=\"python\">x &lt; 0</code>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "If x == 0, Body 2 should execute, not Body 1.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">x &lt;= 0</code> <br>\n[no condition]\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "If <code class=\"python\" lang=\"python\">x &lt; 0</code>, <code class=\"python\" lang=\"python\">Body 1</code> executes. Else if <code class=\"python\" lang=\"python\">x == 0</code>, <code class=\"python\" lang=\"python\">Body 2</code> executes.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "95b7f1b0-229a-45bd-9a65-70fc813580a2",
+  "detailedSolution": "If <code class=\"python\" lang=\"python\">x &lt; 0</code>, <code class=\"python\" lang=\"python\">Body 1</code> executes. Else if <code class=\"python\" lang=\"python\">x == 0</code>, <code class=\"python\" lang=\"python\">Body 2</code> executes."
+}
