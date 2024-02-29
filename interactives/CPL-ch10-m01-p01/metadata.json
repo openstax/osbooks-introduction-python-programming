@@ -1,0 +1,19 @@
+{
+  "errata_id": "dd7c210f09cf813273216ffc3abf656a99dbb58243c6804a93b14635e53c7a46",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:ea6e79d4-0776-4fc1-808a-15eb61288af9",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:10-1-dictionary-basics"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00074"
+  ]
+}
