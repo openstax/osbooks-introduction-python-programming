@@ -1,0 +1,19 @@
+{
+  "errata_id": "2d5826dd9e92a8e827d36ed51aa832808b04439126960c60a402f8cf89deb229",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:9bbc37ee-8593-417d-ad47-90e41daaad08",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:4-1-boolean-values"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00028"
+  ]
+}
