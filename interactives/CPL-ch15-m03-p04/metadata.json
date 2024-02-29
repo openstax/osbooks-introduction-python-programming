@@ -1,0 +1,19 @@
+{
+  "errata_id": "f84bde84c276dc0fc6731fbbee352690eed21bade0ad83de40f7cf0823dd1a00",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:9e4622e4-5cb1-4697-bf3e-d58700c8853e",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:15-3-pandas"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00111"
+  ]
+}
