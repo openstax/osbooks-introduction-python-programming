@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Someone named Sophia enters their name when prompted with\n<pre class=\"python\" lang=\"python\">print(\"Please enter your name: \")\nname = input()\n</pre>\n\nWhat is displayed by <code class=\"python\" lang=\"python\">print(\"You entered:\", name)</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">You entered: name</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The print() function automatically puts a space between successive output items. However, the comma that separates output items is not printed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">You entered: Sophia</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The print() function will replace the variable, name, with the input data, Sophia, stored in memory.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">You entered:, Sophia</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">print()</code> function outputs <code class=\"python\" lang=\"python\">\"You entered:\"</code> followed by a space character, followed by the input data, <code class=\"python\" lang=\"python\">Sophia</code>, which is referenced by the variable name.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "2f49e917-4036-46e8-bc0f-4456f0c2068d",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">print()</code> function outputs <code class=\"python\" lang=\"python\">\"You entered:\"</code> followed by a space character, followed by the input data, <code class=\"python\" lang=\"python\">Sophia</code>, which is referenced by the variable name."
+}
