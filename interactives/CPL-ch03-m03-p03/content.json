@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What symbol is used to show a variable's current value?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<span class=\"blue-code\">a</span>n arrow",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A rounded box represents an object in memory, which can be referred to by multiple var<span class=\"blue-code\">ia</span>bles.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<span class=\"blue-code\">a</span> small black box",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A small black box represents the variable in memory, not the variable's value.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<span class=\"blue-code\">a</span> rounded box",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "An arrow show<span class=\"blue-code\">s</span> which object a variable currently refers to.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5395a15d-ff63-41f2-8c66-580a66bf5525",
+  "detailedSolution": "An arrow show<span class=\"blue-code\">s</span> which object a variable currently refers to."
+}
