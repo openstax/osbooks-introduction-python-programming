@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which <code class=\"python\" lang=\"python\">__sub__()</code> definition overloads the - operator for the code below to work?\n<pre class=\"python\" lang=\"python\">class Pair:\n&nbsp;&nbsp;def __init__(self, x=0, y=0):\n&nbsp;&nbsp;&nbsp;&nbsp;self.x = x\n&nbsp;&nbsp;&nbsp;&nbsp;self.y = y\n&nbsp;&nbsp;# Define __sub__()\n\np1 = Pair(10, 2)\np2 = Pair(8, 4)\np3 = p1 - p2\nprint(p3.x, p3.y)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">&nbsp;&nbsp;def __sub__(self):\n&nbsp;&nbsp;&nbsp;&nbsp;return Pair(self.x - other.x, self.y - other.y)\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The return statement creates a tuple, not a Pair object. p3 needs to be a Pair object for the print() call that accesses p3.x and p3.y.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">&nbsp;&nbsp;def __sub__(self, other):\n&nbsp;&nbsp;&nbsp;&nbsp;return self.x - other.x, self.y - other.y\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "- is a binary operator, so __sub__() needs two parameters.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">&nbsp;&nbsp;def __sub__(self, other):\n&nbsp;&nbsp;&nbsp;&nbsp;return Pair(self.x - other.x, self.y - other.y)\n</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "- is a binary operator, so <code class=\"python\" lang=\"python\">__sub__()</code> has two parameters. The parameters' <code class=\"python\" lang=\"python\">x</code> and <code class=\"python\" lang=\"python\">y</code> attributes are subtracted from each other, and the resulting values are made into a new <code class=\"python\" lang=\"python\">Pair</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "7cc05d98-890e-4d46-ba02-6e704d6b82db",
+  "detailedSolution": "- is a binary operator, so <code class=\"python\" lang=\"python\">__sub__()</code> has two parameters. The parameters' <code class=\"python\" lang=\"python\">x</code> and <code class=\"python\" lang=\"python\">y</code> attributes are subtracted from each other, and the resulting values are made into a new <code class=\"python\" lang=\"python\">Pair</code>."
+}
