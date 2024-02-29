@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How many recursive calls are made with <code class=\"python\" lang=\"python\">gcd(24, 30)</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Either one of the parameters does not directly indicate how many calls may be needed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first call begins a recursion because a != b. How many more calls occur?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "24",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first call <code class=\"python\" lang=\"python\">gcd(24, 30)</code> results in <code class=\"python\" lang=\"python\">30 - 24 = 6</code>, so the next call is <code class=\"python\" lang=\"python\">gcd(24, 6)</code>. Thereafter, other calls are <code class=\"python\" lang=\"python\">gcd(18, 6)</code>, <code class=\"python\" lang=\"python\">gcd(12, 6)</code>, and <code class=\"python\" lang=\"python\">gcd (6,6)</code> for a total of four recursive calls after the initial function call.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "04bc8232-abb4-4cd6-b7a7-b1262ca927eb",
+  "detailedSolution": "The first call <code class=\"python\" lang=\"python\">gcd(24, 30)</code> results in <code class=\"python\" lang=\"python\">30 - 24 = 6</code>, so the next call is <code class=\"python\" lang=\"python\">gcd(24, 6)</code>. Thereafter, other calls are <code class=\"python\" lang=\"python\">gcd(18, 6)</code>, <code class=\"python\" lang=\"python\">gcd(12, 6)</code>, and <code class=\"python\" lang=\"python\">gcd (6,6)</code> for a total of four recursive calls after the initial function call."
+}
