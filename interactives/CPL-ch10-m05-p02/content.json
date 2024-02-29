@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How <span class=\"red-code\">can</span> a value be accessed in a nested dictionary in Python?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "by using the key of the outer dictionary",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The key of the inner dictionary cannot be used to index at the first level of the hierarchy. For indexing in two layers (outer and inner dictionaries), the outer key and inner key must be used, respectively.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "by using the key of the inner dictionary",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Using the key of the outer dictionary would return the inner dictionary, not a value in the inner dictionary.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "By using both the keys of the outer and inner dictionaries",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Both outer and inner keys must be used to index into both outer and inner dictionaries, respectively, to obtain an inner value.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "3570ad0f-f791-405b-9247-cd38e98a9f2a",
+  "detailedSolution": "Both outer and inner keys must be used to index into both outer and inner dictionaries, respectively, to obtain an inner value."
+}

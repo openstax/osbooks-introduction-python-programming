@@ -1,0 +1,19 @@
+{
+  "errata_id": "437f96f90d5cb8d95db068f3a90d00d168bbb12e092f652435731fd462a57de0",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:b26cd66f-5745-4b38-9f30-b3d58d32c9df",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:10-5-nested-dictionaries-and-dictionary-comprehension"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00078"
+  ]
+}
