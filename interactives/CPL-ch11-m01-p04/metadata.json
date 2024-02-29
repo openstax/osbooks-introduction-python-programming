@@ -1,0 +1,19 @@
+{
+  "errata_id": "f1f822ace7233e64fda65e7cdb01eb05108e77090249fef1e622aefd43c8b911",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:f7c14d3d-ea71-4a5e-8908-22b33a5721b9",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:11-1-object-oriented-programming-basics"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00081"
+  ]
+}
