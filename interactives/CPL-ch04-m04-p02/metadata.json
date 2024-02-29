@@ -1,0 +1,19 @@
+{
+  "errata_id": "0dbb9b122cd85012ae94499a2fa818d0e8ae9572e69ed73e3f741f373931d641",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:417b27b5-d2db-426a-83c8-6fdf4daa3376",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:4-4-operator-precedence"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00031"
+  ]
+}
