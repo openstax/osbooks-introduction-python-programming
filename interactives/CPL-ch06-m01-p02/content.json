@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How many times is print() called?\n<pre class=\"python\" lang=\"python\">print(\"Please log in\")\nusername = input(\"Username:\")\npassword = input(\"Password:\")\nprint(\"Login successful\")\nprint(\"Welcome,\", username)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Lines 2 and 3 call input(), not print().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "3",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Each instance of print() is a function call. Lines 1, 4, and 5 call print().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "5",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Lines 1, 4, and 5 each call <code class=\"python\" lang=\"python\">print()</code> once. Lines 2 and 3 call a different function, <code class=\"python\" lang=\"python\">input()</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5cb4fa8b-fca5-40ff-8e8e-5dd1f8f46b61",
+  "detailedSolution": "Lines 1, 4, and 5 each call <code class=\"python\" lang=\"python\">print()</code> once. Lines 2 and 3 call a different function, <code class=\"python\" lang=\"python\">input()</code>."
+}
