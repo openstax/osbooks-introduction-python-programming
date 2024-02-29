@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What would be the correct way to represent <code class=\"python\" lang=\"python\">matA</code> in Python?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">[[7, 4, 5], [3, 9, 6], [1, 2, 8]]</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Each column is represented as a list here, which can work, but indexing by row followed by column is more conventional.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">[7, 4, 5\n3, 9, 6\n1, 2, 8]</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A syntax error would result as this is not correct syntax for assigning values to a list.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">[[7, 3, 1], [4, 9, 2], [1, 2, 8]</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Each row of the matrix is represented as a list in the larger list-of-lists, <code class=\"python\" lang=\"python\">matA</code>. <code class=\"python\" lang=\"python\">matA</code> represents the complete matrix.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "6a3643eb-42f5-4395-a6d6-266b80b0d645",
+  "detailedSolution": "Each row of the matrix is represented as a list in the larger list-of-lists, <code class=\"python\" lang=\"python\">matA</code>. <code class=\"python\" lang=\"python\">matA</code> represents the complete matrix."
+}
