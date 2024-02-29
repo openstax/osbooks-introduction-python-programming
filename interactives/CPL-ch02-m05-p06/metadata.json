@@ -1,0 +1,19 @@
+{
+  "errata_id": "2b1517ccc4aa0915c38d6f3b0f0d85a2a794d4d27210281c65ad0be474671180",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:552c7654-2bb3-498f-9635-9624c37d3b79",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:2-5-dividing-integers"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00015"
+  ]
+}
