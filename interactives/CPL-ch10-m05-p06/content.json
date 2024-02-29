@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<p>What is the output of the following dictionary comprehension?</p>\n<pre class=\"python\" lang=\"python\">my_dict = {i: i**2 for i in range(4)}\nprint(my_dict)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">{0: 0, 1: 1, 2: 4, 3: 9}</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">range(4)</code> starts from 0 up to and including 3. There must be another key-value pair with key = 0.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">{0: 0, 1: 1, 2: 4}</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">range(4)</code> starts from 0 up to and including 3. There must be another key-value pair with key = 3.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">{1: 1, 2: 4, 3: 9}</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The dictionary is created from key values from 0 up to and including 3. The associated values are powers of two of the keys.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "dc5b400e-516c-4117-83aa-8200baf1fced",
+  "detailedSolution": "The dictionary is created from key values from 0 up to and including 3. The associated values are powers of two of the keys."
+}
