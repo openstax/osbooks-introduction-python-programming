@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of <code class=\"python\" lang=\"python\">\"school\".index(\"ooo\")</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">3</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "4 is the index of the last occurrence of \"o\" in the string \"school\". Yet, the entire substring \"ooo\" does not exist in the string \"school\". What must be returned by the <code class=\"python\" lang=\"python\">index()</code> function if the substring is not found in the given string?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">4</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The index of the first occurrence of \"o\" is 3, but the entire substring \"ooo\" does not exist in the string \"ooo\". What happens if a substring does not exist in the given string when checking for the index?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">ValueError</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Substring <code class=\"python\" lang=\"python\">\"ooo\"</code> does not exist in the string <code class=\"python\" lang=\"python\">\"ooo\"</code> and hence the <code class=\"python\" lang=\"python\">index()</code> method returns a <code class=\"python\" lang=\"python\">ValueError</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "566b6715-af1d-42ce-929f-c6259ce4431b",
+  "detailedSolution": "Substring <code class=\"python\" lang=\"python\">\"ooo\"</code> does not exist in the string <code class=\"python\" lang=\"python\">\"ooo\"</code> and hence the <code class=\"python\" lang=\"python\">index()</code> method returns a <code class=\"python\" lang=\"python\">ValueError</code>."
+}
