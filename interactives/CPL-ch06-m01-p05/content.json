@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output?\n<pre class=\"python\" lang=\"python\">def print_phone_num():\n&nbsp;&nbsp;print(\"Phone: (\", 864, \")\", 555, \"-\", 0199)\n\nprint(\"User info:\")\nprint_phone_num()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Phone: ( 864 ) 555 - 1000</code> <br>\n<code class=\"python\" lang=\"python\">User info:</code><br>\n<code class=\"python\" lang=\"python\">Phone: ( 864 ) 555 - 1000</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "print_phone_num(), which outputs the phone number, is called after \"User info:\" is output.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">User info:</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The function body does not execute until the function is called. print_phone_num() is called once after \"User info:\" is output.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">User info:</code> <br>\n<code class=\"python\" lang=\"python\">Phone: ( 864 ) 555 - 1000</code>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The main program outputs <code class=\"python\" lang=\"python\">\"User info:\"</code> and then calls <code class=\"python\" lang=\"python\">print_phone_num()</code>, which outputs the phone number.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "79668c11-442c-4530-ab3f-e2a43dd0da51",
+  "detailedSolution": "The main program outputs <code class=\"python\" lang=\"python\">\"User info:\"</code> and then calls <code class=\"python\" lang=\"python\">print_phone_num()</code>, which outputs the phone number."
+}

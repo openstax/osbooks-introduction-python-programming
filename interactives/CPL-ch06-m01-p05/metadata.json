@@ -1,0 +1,19 @@
+{
+  "errata_id": "13bf67f086a72ed74fdf56d93101faafdc1edbadec54ac5abc3b38ec6236be23",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:848f247d-6799-4d6b-9858-f1c796035143",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:6-1-defining-functions"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00044"
+  ]
+}
