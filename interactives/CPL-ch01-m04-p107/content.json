@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code?\n<pre class=\"python\" lang=\"python\">number = \"12\"\nnumber_of_digits = len(number)\nprint(\"Number\", number, \"has\", number_of_digits, \"digits.\")\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Number 12 has 12 digits.</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The value for the <code class=\"python\" lang=\"python\">number_of_digits</code> variable must be printed instead of the variable name.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Number 12 has 2 digits.</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">len()</code> function returns the number of characters in a string. The variable number has 2 characters, therefore, the <code class=\"python\" lang=\"python\">number_of_digits</code> will be 2. What is the printed line?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Number 12 has number_of_digits digits.</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">number_of_digits</code> variable's value is <code class=\"python\" lang=\"python\">2</code>, and as such, the output is <code class=\"python\" lang=\"python\">\"Number 12 has 2 digits.\"</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "57636296-5d2e-4906-9049-c42ca2df656f",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">number_of_digits</code> variable's value is <code class=\"python\" lang=\"python\">2</code>, and as such, the output is <code class=\"python\" lang=\"python\">\"Number 12 has 2 digits.\"</code>."
+}
