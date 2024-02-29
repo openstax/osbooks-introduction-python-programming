@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Assuming that a DataFrame <code class=\"python\" lang=\"python\">df</code> is given, which of the following replaces <code class=\"python\" lang=\"python\">Null</code> values with zeros?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python inline-code\" lang=\"python\">df.fillna(0)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python inline-code\" lang=\"python\">fill()</code> is not a Pandas method. What function replaces Null values?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python inline-code\" lang=\"python\">df.replacena(0)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python inline-code\" lang=\"python\">replacena()</code> is not a Pandas method. What function replaces Null values?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python inline-code\" lang=\"python\">df.fill(0)</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python inline-code\" lang=\"python\">fillna()</code> replaces all <code class=\"python\" lang=\"python\">Null</code> values with the provided value passed as an argument.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "cfd34270-9976-4c2d-8708-00991d4650ce",
+  "detailedSolution": "<code class=\"python inline-code\" lang=\"python\">fillna()</code> replaces all <code class=\"python\" lang=\"python\">Null</code> values with the provided value passed as an argument."
+}

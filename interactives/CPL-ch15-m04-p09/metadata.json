@@ -1,0 +1,19 @@
+{
+  "errata_id": "e4c4a5c900c9eb65908e7be79f1b8416a62ebd82e33fbac59c380bcfd7a92966",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:27d50d39-3230-4745-9bbe-89a6bc677111",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:15-4-exploratory-data-analysis"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00112"
+  ]
+}
