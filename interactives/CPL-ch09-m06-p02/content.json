@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What would be the contents of <code class=\"python\" lang=\"python\">b_list</code> after executing the code below?\n<pre class=\"python\" lang=\"python\">a_list = [1, 2, 3, 4, 5]\nb_list = [i+2 for i in a_list]</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">[1, 2, 3, 4, 5]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The for loop is not based on a range but on the elements of a_list.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">[0, 1, 2, 3, 4]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The elements of a_list are <code class=\"python\" lang=\"python\">[1, 2, 3, 4, 5]</code>. The list comprehension modifies each element in some way before insertion into b_list.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">[3, 4, 5, 6, 7]</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">i+2</code> results in adding 2 to each element of <code class=\"python\" lang=\"python\">a_list</code> to generate <code class=\"python\" lang=\"python\">b_list</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "c13bab26-a362-4d15-99c3-5a3f6bbdfaf1",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">i+2</code> results in adding 2 to each element of <code class=\"python\" lang=\"python\">a_list</code> to generate <code class=\"python\" lang=\"python\">b_list</code>."
+}
