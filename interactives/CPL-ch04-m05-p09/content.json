@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How could the following statements be rewritten as a chained statement?\n<pre class=\"python\" lang=\"python\">if price &lt; 9.99:\n&nbsp;&nbsp;order = 50\nif 9.99 &lt;= price &lt; 19.99:\n&nbsp;&nbsp;order = 30\nif price &gt;= 19.99:\n&nbsp;&nbsp;order = 10\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">if price &lt; 9.99:\n&nbsp;&nbsp;order = 50\nelse:\n&nbsp;&nbsp;order = 30\norder = 10\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "If price > 19.99, order should be assigned with 10, but here order is not assigned with a value.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">if price &lt; 9.99:\n&nbsp;&nbsp;order = 50\nelif price &lt; 19.99:\n&nbsp;&nbsp;order = 30\nelif price == 19.99:\n&nbsp;&nbsp;order = 10\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Regardless of price, order is assigned with 10 after the if-else statement.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">if price &lt; 9.99:\n&nbsp;&nbsp;order = 50\nelif price &lt; 19.99:\n&nbsp;&nbsp;order = 30\nelse:\n&nbsp;&nbsp;order = 10\n</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first branch executes if <code class=\"python\" lang=\"python\">price &lt; 9.99</code>. The second branch executes if <code class=\"python\" lang=\"python\">price &lt; 19.99</code> and the first condition fails: that is, <code class=\"python\" lang=\"python\">price >= 9.99</code>. The third branch executes if the first and second conditions fail: that is, <code class=\"python\" lang=\"python\">price >= 19.99</code>. Chaining can simplify decision statements.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "14a3da9b-2cbe-46af-bb50-06f36650be41",
+  "detailedSolution": "The first branch executes if <code class=\"python\" lang=\"python\">price &lt; 9.99</code>. The second branch executes if <code class=\"python\" lang=\"python\">price &lt; 19.99</code> and the first condition fails: that is, <code class=\"python\" lang=\"python\">price &gt;= 9.99</code>. The third branch executes if the first and second conditions fail: that is, <code class=\"python\" lang=\"python\">price &gt;= 19.99</code>. Chaining can simplify decision statements."
+}
