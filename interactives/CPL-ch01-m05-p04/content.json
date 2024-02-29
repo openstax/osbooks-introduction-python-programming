@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the following lines of code, what is the output of the code?\n<pre class=\"python\" lang=\"python\">c = 0\nc = x - z\nc = c + 1\nprint(c) </pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">1</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "With x = 7 and z = 2, x - z equals 5. The given code asks for calculation of c = c + 1 as well.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">5</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The value of c is modified in line 2, and therefore c will no longer be equal to 0 when we calculate c = c + 1.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">6</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Line 2 of the code evaluates as follows: <code class=\"python\" lang=\"python\">c = x - z = 7 - 2 = 5</code>.  Line 3 increments variable <code class=\"python\" lang=\"python\">c</code> by 1, making the total equal to 6.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "da0bb693-cd00-4961-b170-71af0e01c15b",
+  "detailedSolution": "Line 2 of the code evaluates as follows: <code class=\"python\" lang=\"python\">c = x - z = 7 - 2 = 5</code>. \nLine 3 increments variable <code class=\"python\" lang=\"python\">c</code> by 1, making the total equal to 6."
+}
