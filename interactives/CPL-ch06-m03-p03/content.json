@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which functions can access <code class=\"python\" lang=\"python\">num</code>?\n<pre class=\"python\" lang=\"python\">def print_double():\n&nbsp;&nbsp;num_d = num * 2\n&nbsp;&nbsp;print(num, \"doubled is\", num_d)\n\ndef print_square():\n&nbsp;&nbsp;num_sq = num * num\n&nbsp;&nbsp;print(num, \"squared is\", num_sq)\n\nnum = float(input())\nprint_double()\nprint_square()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">print_double()</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "num can be accessed in print_square() and other functions.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">print_square()</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "num can be accessed in print_double() and other functions.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">print_double()</code> and <code class=\"python\" lang=\"python\">print_square()</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">num</code> is global and can be accessed anywhere in the program, including both <code class=\"python\" lang=\"python\">print_double()</code> and <code class=\"python\" lang=\"python\">print_square()</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "bdf37a5b-9099-4d2c-a0d2-92222b55c265",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">num</code> is global and can be accessed anywhere in the program, including both <code class=\"python\" lang=\"python\">print_double()</code> and <code class=\"python\" lang=\"python\">print_square()</code>."
+}

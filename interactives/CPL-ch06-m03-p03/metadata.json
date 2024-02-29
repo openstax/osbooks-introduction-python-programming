@@ -1,0 +1,19 @@
+{
+  "errata_id": "95c3a38d46c6b59e67d50295e867a37dff4f18987a2b228587c0158faf38522e",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:5f58a98d-8463-4115-be23-8f032fde21be",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:6-3-variable-scope"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00046"
+  ]
+}
