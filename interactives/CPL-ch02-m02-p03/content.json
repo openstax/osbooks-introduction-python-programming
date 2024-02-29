@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the data type of <code class=\"python\" lang=\"python\">x</code> after the following code executes?\n<pre class=\"python\" lang=\"python\">x = 42.0\nx = x * 1\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "float",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Combining a float and an integer produces a float regardless of the calculation's order or resulting value.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "integer",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A calculation with a float and an integer produces a float. <code class=\"python\" lang=\"python\">x</code> is a float, <code class=\"python\" lang=\"python\">42.0</code>, after the code executes.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "2f5f3191-7a60-4da3-83af-55e57f09d2d1",
+  "detailedSolution": "A calculation with a float and an integer produces a float. <code class=\"python\" lang=\"python\">x</code> is a float, <code class=\"python\" lang=\"python\">42.0</code>, after the code executes."
+}
