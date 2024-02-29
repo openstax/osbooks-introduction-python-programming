@@ -1,0 +1,19 @@
+{
+  "errata_id": "7333dba5afac2b484ee571e1458c55b48e7d4eee9ce4482a69994cbc80e154c9",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:9593cb5d-6422-4e2e-ac0c-459cd15d14a9",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:13-4-hierarchical-inheritance"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00098"
+  ]
+}
