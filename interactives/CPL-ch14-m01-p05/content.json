@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the correct way to use the <code class=\"python\" lang=\"python\">readlines()</code> function?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">file_lines = readlines(fileobj)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">readlines()</code> function does not take a file object as an argument.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">file_lines = fileobj.readlines()</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">readlines()</code> function is called on <code class=\"python\" lang=\"python\">fileobj</code>. <code class=\"python\" lang=\"python\">file_lines</code> is the string list <code class=\"python\" lang=\"python\">['Hello world!\\n', 'How are you?\\n']</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "0797719d-8f7c-4f03-a08a-80bf370ddd46",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">readlines()</code> function is called on <code class=\"python\" lang=\"python\">fileobj</code>. <code class=\"python\" lang=\"python\">file_lines</code> is the string list <code class=\"python\" lang=\"python\">['Hello world!\\n', 'How are you?\\n']</code>."
+}
