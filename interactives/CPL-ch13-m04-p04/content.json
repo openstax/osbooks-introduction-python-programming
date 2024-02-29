@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which attributes does <code class=\"python\" lang=\"python\">c_inst</code> have access to?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">a_attr</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "C inherits from A, so c_inst inherits A's attributes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">a_attr</code>, <code class=\"python\" lang=\"python\">c_attr</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "C has an instance attribute specific to the class.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">c_attr</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">c_inst</code> has access to <code class=\"python\" lang=\"python\">C'</code>s instance attribute, <code class=\"python\" lang=\"python\">c_attr</code>, as well the inherited attribute from <code class=\"python\" lang=\"python\">A</code>, <code class=\"python\" lang=\"python\">a_attr</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "d8212797-6cbe-4ce0-8143-0e57db3bb3fe",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">c_inst</code> has access to <code class=\"python\" lang=\"python\">C'</code>s instance attribute, <code class=\"python\" lang=\"python\">c_attr</code>, as well the inherited attribute from <code class=\"python\" lang=\"python\">A</code>, <code class=\"python\" lang=\"python\">a_attr</code>."
+}
