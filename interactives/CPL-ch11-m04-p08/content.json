@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which code appropriately overloads the &lt;= operator?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">&nbsp;&nbsp;def __le__(other):\n&nbsp;&nbsp;&nbsp;&nbsp;return self.amount &lt;= other.amount\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The code reverses the order of the operands in the return statement and returns the incorrect value.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">&nbsp;&nbsp;def __le__(self, other):\n&nbsp;&nbsp;&nbsp;&nbsp;return self.amount &lt;= other.amount\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "&lt;= is a binary operator that has a left and right operand. The definition is missing the parameter self.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">&nbsp;&nbsp;def __le__(self, other):\n&nbsp;&nbsp;&nbsp;&nbsp;return other.amount &lt;= self.amount\n</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">__le__()</code> is the magic method for the &lt;= operator. <code class=\"python\" lang=\"python\">__le__()</code> takes two parameters for the left and right operand, and returns the correct comparison of the two amount values.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "9365ae19-44e8-4344-8168-2bff91d8df89",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">__le__()</code> is the magic method for the &lt;= operator. <code class=\"python\" lang=\"python\">__le__()</code> takes two parameters for the left and right operand, and returns the correct comparison of the two amount values."
+}
