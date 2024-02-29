@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the value of <code class=\"python\" lang=\"python\">b_inst.b_attr</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "B's __init__() has default values for both a_attr and b_attr. B(2) is a valid method call that assigns a_attr with 2.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first parameter (after self) in B's __init__() is a_attr. So a_attr is assigned with 2.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">B(2)</code> resolves to <code class=\"python\" lang=\"python\">B(2</code>, 0), as <code class=\"python\" lang=\"python\">b_attr</code> has a default value of <code class=\"python\" lang=\"python\">0</code>. <code class=\"python\" lang=\"python\">a_attr</code> is assigned with <code class=\"python\" lang=\"python\">2</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "2b0c0e04-3b6c-4b90-969d-87434f5758ad",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">B(2)</code> resolves to <code class=\"python\" lang=\"python\">B(2</code>, 0), as <code class=\"python\" lang=\"python\">b_attr</code> has a default value of <code class=\"python\" lang=\"python\">0</code>. <code class=\"python\" lang=\"python\">a_attr</code> is assigned with <code class=\"python\" lang=\"python\">2</code>."
+}
