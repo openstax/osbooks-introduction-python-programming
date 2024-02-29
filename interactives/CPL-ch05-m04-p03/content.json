@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the final value of i?\n<pre class=\"python\" lang=\"python\">i = 1\ncount = 0\nwhile True:\n&nbsp;&nbsp;if i%2 == 0 or i%3 == 0:\n&nbsp;&nbsp;&nbsp;&nbsp;count += 1\n&nbsp;&nbsp;if count &gt;= 5:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i)\n&nbsp;&nbsp;&nbsp;&nbsp;break\n&nbsp;&nbsp;i += 1\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">5</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The condition for increasing the count is <code class=\"python\" lang=\"python\">(i%2 == 0 or i%3 == 0)</code>. The condition evaluates True for <code class=\"python\" lang=\"python\">i</code> values 2, 3, 4, 6, and 8, before the loop's termination. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">8</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "If <code class=\"python\" lang=\"python\">i = 5</code>, then the condition <code class=\"python\" lang=\"python\">(i%2 == 0 or i%3 == 0)</code> can only be True for <code class=\"python\" lang=\"python\">i =</code> 2, 3, and 4. Hence, the <code class=\"python\" lang=\"python\">count</code> variable's value will be 4 and as a result the condition for the second if statement <code class=\"python\" lang=\"python\">(count >= 5)</code> will not be True for the loop to terminate, resulting in a non-terminating or infinite loop.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">30</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop finds the first five numbers that are divisible by <code class=\"python\" lang=\"python\">2</code> or <code class=\"python\" lang=\"python\">3</code>. These numbers are <code class=\"python\" lang=\"python\">2</code>, <code class=\"python\" lang=\"python\">3</code>, <code class=\"python\" lang=\"python\">4</code>, <code class=\"python\" lang=\"python\">6</code>, and <code class=\"python\" lang=\"python\">8</code>, and thus <code class=\"python\" lang=\"python\">8</code> is the final <code class=\"python\" lang=\"python\">i</code>'s value.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "7950c654-117d-4c45-a16f-de8e87ccd2e3",
+  "detailedSolution": "The loop finds the first five numbers that are divisible by <code class=\"python\" lang=\"python\">2</code> or <code class=\"python\" lang=\"python\">3</code>. These numbers are <code class=\"python\" lang=\"python\">2</code>, <code class=\"python\" lang=\"python\">3</code>, <code class=\"python\" lang=\"python\">4</code>, <code class=\"python\" lang=\"python\">6</code>, and <code class=\"python\" lang=\"python\">8</code>, and thus <code class=\"python\" lang=\"python\">8</code> is the final <code class=\"python\" lang=\"python\">i</code>'s value."
+}
