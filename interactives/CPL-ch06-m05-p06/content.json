@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the updated value of <code class=\"python\" lang=\"python\">bill</code>?\n<pre class=\"python\" lang=\"python\">def tax(total):\n&nbsp;&nbsp;return .06 * total\n\ndef auto_tip(total):\n&nbsp;&nbsp;return .2 * total\n\nbill = 100.0\nbill += tax(bill) + auto_tip(bill)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">26.0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The return values of tax(100) and auto_tip(100) are added to 100 to update the value of bill.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">126.0</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">bill += tax(bill) + auto_tip(bill)</code> evaluates to <code class=\"python\" lang=\"python\">bill += 6.0 + 20.0</code> to <code class=\"python\" lang=\"python\">bill = 100.0 + 6.0 + 20.0</code> to 126.0.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "1b3a0bce-630f-49b1-9ee5-b4ccdd2215e5",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">bill += tax(bill) + auto_tip(bill)</code> evaluates to <code class=\"python\" lang=\"python\">bill += 6.0 + 20.0</code> to <code class=\"python\" lang=\"python\">bill = 100.0 + 6.0 + 20.0</code> to 126.0."
+}
