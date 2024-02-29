@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given <code class=\"python\" lang=\"python\">num_dancers = 49</code>, what is printed?\n<pre class=\"python\" lang=\"python\">if num_dancers &lt; 0:\n&nbsp;&nbsp;print(\"Error: num_dancers is negative\")\nelse:\n&nbsp;&nbsp;if num_dancers % 2 == 1:\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Error: num_dancers is odd\")\n&nbsp;&nbsp;print(num_dancers, \"dancers\")\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error: num_dancers is odd</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "49 % 2 == 1 is True, so the nested if statement executes before the number of dancers is printed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">49 dancers</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The error is printed, and then the program continues after the nested if statement.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error: num_dancers is odd</code><br><code class=\"python\" lang=\"python\">49 dancers</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">num_dancers</code> is positive, so the <code class=\"python\" lang=\"python\">else</code> branch is taken. <code class=\"python\" lang=\"python\">num_dancers</code> is odd, so the error is printed before the program continues after the nested <code class=\"python\" lang=\"python\">if</code> and prints <code class=\"python\" lang=\"python\">num_dancers</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "597b45bc-3db8-4520-97a0-d1f947045b65",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">num_dancers</code> is positive, so the <code class=\"python\" lang=\"python\">else</code> branch is taken. <code class=\"python\" lang=\"python\">num_dancers</code> is odd, so the error is printed before the program continues after the nested <code class=\"python\" lang=\"python\">if</code> and prints <code class=\"python\" lang=\"python\">num_dancers</code>."
+}
