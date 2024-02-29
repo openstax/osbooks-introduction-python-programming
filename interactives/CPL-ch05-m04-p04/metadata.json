@@ -1,0 +1,19 @@
+{
+  "errata_id": "c3a127be985861cab03f4f71028807d3d86981bc3e146a69c172c245317ed5f6",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:9619f27c-b4e7-44f1-bb1a-dc2b90b79e76",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:5-4-break-and-continue"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00040"
+  ]
+}

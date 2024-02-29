@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the following code, how many times does the print statement get executed?\n<pre class=\"python\" lang=\"python\">i = 10\nwhile i &gt;= 0:\n&nbsp;&nbsp;i -= 1\n&nbsp;&nbsp;if i%3 != 0:\n&nbsp;&nbsp;&nbsp;&nbsp;continue\n&nbsp;&nbsp;print(i)\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "3",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When the remainder of <code class=\"python\" lang=\"python\">i</code> divided by 3 is not equal to 0, the continue statement is executed and hence the print statement will not be executed. How many numbers between 0 and 10 are divisible by 3?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The print statement is executed for numbers within the range of 0 and 10 (inclusive) that are divisible by 3. How many numbers meet the described condition?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "11",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The print statement is executed for numbers within the range of 0 and 10 (inclusive) that are divisible by 3. The printed output is:\n<pre class=\"python\" lang=\"python\">\n9\n6\n3\n0\n</pre>\n",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "2836a388-1aff-4b42-9704-3b91fcfcc98d",
+  "detailedSolution": "The print statement is executed for numbers within the range of 0 and 10 (inclusive) that are divisible by 3. The printed output is:\n<pre class=\"python\" lang=\"python\">9\n6\n3\n0\n</pre>\n"
+}
