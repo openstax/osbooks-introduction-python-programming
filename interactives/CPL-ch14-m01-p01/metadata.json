@@ -1,0 +1,19 @@
+{
+  "errata_id": "1eea3e87a884fa89a9dc701e3b67c77df0922e188a456e0ca2d79633bf3b26a1",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:1fb34e14-7748-4e9f-8fd9-e485daa7c33e",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:14-1-reading-from-files"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00102"
+  ]
+}
