@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How many times does the loop execute?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "5",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "7 iterations means <code class=\"python\" lang=\"python\">g</code>'s value will be 1, 2, 3, 5, 8, 13, and 21. The loop expression evaluates g &lt; 20. When g = 21, the loop evaluates to false, and hence the loop will not execute for <code class=\"python\" lang=\"python\">g = 21</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "6",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop runs until g &gt;= 20. The condition will remain true for <code class=\"python\" lang=\"python\">g =</code> 1, 2, 3, 5, 8, and 13. How many iterations would that be?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "7",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop runs six times for values of <code class=\"python\" lang=\"python\">g =</code> <code class=\"python\" lang=\"python\">1</code>, <code class=\"python\" lang=\"python\">2</code>, <code class=\"python\" lang=\"python\">3</code>, <code class=\"python\" lang=\"python\">5</code>, <code class=\"python\" lang=\"python\">8</code>, and <code class=\"python\" lang=\"python\">13</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "93d1af1f-6139-4803-8549-a811432ede76",
+  "detailedSolution": "The loop runs six times for values of <code class=\"python\" lang=\"python\">g =</code> <code class=\"python\" lang=\"python\">1</code>, <code class=\"python\" lang=\"python\">2</code>, <code class=\"python\" lang=\"python\">3</code>, <code class=\"python\" lang=\"python\">5</code>, <code class=\"python\" lang=\"python\">8</code>, and <code class=\"python\" lang=\"python\">13</code>."
+}
