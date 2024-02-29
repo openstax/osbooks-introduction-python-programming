@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Consider the example. What is the output?\n<pre class=\"python\" lang=\"python\">class Polygon:\n&nbsp;&nbsp;def print_type(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Polygon type\")\n\nclass Rectangle(Polygon):\n&nbsp;&nbsp;def print_type(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Rectangle type\")\n\nclass Square(Rectangle):\n&nbsp;&nbsp;def print_type(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Square type\")\n\nsq_1 = Square()\nsq_1.print_type()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Polygon type</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Square overwrites print_type(), which was inherited directly from superclass Rectangle.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Rectangle type</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Polygon's print_type() is overwritten in the subclasses Rectangle and Square.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Square type</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Polymorphism allows <code class=\"python\" lang=\"python\">print_type()</code> to be overridden in subclasses of <code class=\"python\" lang=\"python\">Polygon</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "6441ea8c-5de2-4545-a7bc-e1979430b6bf",
+  "detailedSolution": "Polymorphism allows <code class=\"python\" lang=\"python\">print_type()</code> to be overridden in subclasses of <code class=\"python\" lang=\"python\">Polygon</code>."
+}
