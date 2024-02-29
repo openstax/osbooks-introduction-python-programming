@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What's wrong with the first line of the function definition?\n<pre class=\"python\" lang=\"python\">def water_plant:\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "A docstring should go after the colon.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">def</code> is the keyword used to define a function, followed by the function name and parentheses.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Parentheses should go after <code class=\"python\" lang=\"python\">water_plant</code>.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The docstring is the first line of the indented body under <code class=\"python\" lang=\"python\">def water_plant():</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">def</code> should be <code class=\"python\" lang=\"python\">define</code> before <code class=\"python\" lang=\"python\">water_plant</code>.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The corrected line is <code class=\"python\" lang=\"python\">def water_plant():</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8bb59311-c4c3-4e1f-822f-cc9ecc5e79c5",
+  "detailedSolution": "The corrected line is <code class=\"python\" lang=\"python\">def water_plant():</code>."
+}
