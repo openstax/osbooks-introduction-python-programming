@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which group of classes is hierarchical inheritance appropriate for?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Cat</code>, <code class=\"python\" lang=\"python\">Dog</code>, <code class=\"python\" lang=\"python\">Bird</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "ApplePie could inherit from both Dessert and BakedGood, which is a different type of inheritance.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Employee</code>, <code class=\"python\" lang=\"python\">Developer</code>, <code class=\"python\" lang=\"python\">SalesRep</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "There is no clear superclass that the other two classes would inherit from.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Dessert</code>, <code class=\"python\" lang=\"python\">BakedGood</code>, <code class=\"python\" lang=\"python\">ApplePie</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Employee would be an appropriate superclass for <code class=\"python\" lang=\"python\">Developer</code> and <code class=\"python\" lang=\"python\">SalesRep</code>. <code class=\"python\" lang=\"python\">Developer</code> and <code class=\"python\" lang=\"python\">SalesRep</code> are not directly related.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "09eb66cd-abe9-4e9b-a70e-9e8e803192cb",
+  "detailedSolution": "Employee would be an appropriate superclass for <code class=\"python\" lang=\"python\">Developer</code> and <code class=\"python\" lang=\"python\">SalesRep</code>. <code class=\"python\" lang=\"python\">Developer</code> and <code class=\"python\" lang=\"python\">SalesRep</code> are not directly related."
+}
