@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the following code's output?\n<pre class=\"python\" lang=\"python\">string_val = \"Hello World\"\nfor c in string_val:\n&nbsp;&nbsp;if c == \" \":\n&nbsp;&nbsp;&nbsp;&nbsp;break\n&nbsp;&nbsp;print(c)</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Hello</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop iterates over characters in the <code class=\"python\" lang=\"python\">string_val</code> variable and loop execution terminates as soon as a space character is reached. Hence, the output cannot contain a space character.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">Hello World</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop iterates over characters in the <code class=\"python\" lang=\"python\">string_val</code> variable and until a space character is encountered, prints characters, one in each line. Additionally, print() introduces a newline so the characters will not be printed in the same line.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">H\ne\nl\nl\no</pre>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The code prints all characters before the first occurrence of a space character in separate lines. Hence the output is:\n<pre class=\"python\" lang=\"python\">\nH\ne\nl\nl\no</pre>\n",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "3566a085-4a6a-4213-a265-30bf1d12bee9",
+  "detailedSolution": "The code prints all characters before the first occurrence of a space character in separate lines. Hence the output is:\n<pre class=\"python\" lang=\"python\">H\ne\nl\nl\no</pre>"
+}
