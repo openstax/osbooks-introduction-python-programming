@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Suppose a programmer inherits the <code class=\"python\" lang=\"python\">ContractTax</code> class from class <code class=\"python\" lang=\"python\">Tax</code> and wants to override <code class=\"python\" lang=\"python\">Tax'</code>s <code class=\"python\" lang=\"python\">calc_tax()</code>. What should the programmer do?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "Define another <code class=\"python\" lang=\"python\">calc_tax()</code> method in <code class=\"python\" lang=\"python\">Tax</code>.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Overriding involves defining a subclass method.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Define a <code class=\"python\" lang=\"python\">calc_tax()</code> method in <code class=\"python\" lang=\"python\">ContractTax</code>.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The method definition should be in the subclass, not the superclass.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Define a function that takes a <code class=\"python\" lang=\"python\">ContractTax</code> instance.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Overriding involves defining a subclass method that has the same name as the superclass method.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e0f1da82-210f-4a45-91a3-7a9462d2a643",
+  "detailedSolution": "Overriding involves defining a subclass method that has the same name as the superclass method."
+}
