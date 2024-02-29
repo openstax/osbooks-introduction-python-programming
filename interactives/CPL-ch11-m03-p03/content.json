@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Suppose another <code class=\"python\" lang=\"python\">__init__()</code> definition is added after the first with the header as follows:\n<pre class=\"python\" lang=\"python\">def __init__(self, p_id, bp, tmp, hr, rr)</pre>\nWhat is the impact on the program?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "no change.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The second definition doesn't immediately produce an error, but the definition overwrites __init__().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Second <code class=\"python\" lang=\"python\">__init__()</code> definition produces an error.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The second definition is allowed but overwrites the definition of __init__().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "First two <code class=\"python\" lang=\"python\">__init__()</code> calls produce an error.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The second definition overwrites the first as multiple explicit definitions of <code class=\"python\" lang=\"python\">__init__()</code> aren't allowed. <code class=\"python\" lang=\"python\">__init__()</code> requires all parameters, so the first two <code class=\"python\" lang=\"python\">__init__()</code> calls for <code class=\"python\" lang=\"python\">patient_1</code> and <code class=\"python\" lang=\"python\">patient_2</code> are incorrect.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e5346c9f-5046-4f4e-a34b-195adf27cf93",
+  "detailedSolution": "The second definition overwrites the first as multiple explicit definitions of <code class=\"python\" lang=\"python\">__init__()</code> aren't allowed. <code class=\"python\" lang=\"python\">__init__()</code> requires all parameters, so the first two <code class=\"python\" lang=\"python\">__init__()</code> calls for <code class=\"python\" lang=\"python\">patient_1</code> and <code class=\"python\" lang=\"python\">patient_2</code> are incorrect."
+}
