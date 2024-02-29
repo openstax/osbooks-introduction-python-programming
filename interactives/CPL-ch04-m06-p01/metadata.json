@@ -1,0 +1,19 @@
+{
+  "errata_id": "733256fb1194e1bc319b67fa2dcf850ea41722f7435287967400deaf4d097e37",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:ede0df99-ea83-46b0-9c02-990d3aed1bab",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:4-6-nested-decisions"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00033"
+  ]
+}
