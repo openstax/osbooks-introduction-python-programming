@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the following <code class=\"python\" lang=\"python\">SuperClass</code> and <code class=\"python\" lang=\"python\">SubClass</code>, which of the following can an instance of SuperClass access?\n<pre class=\"python\" lang=\"python\">class SuperClass():\n&nbsp;&nbsp;def func_1(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print('Superclass function')\n\nclass SubClass(SuperClass):\n&nbsp;&nbsp;def func_2(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print('Subclass function')\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">func_1()</code> only",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "SuperClass instances only have access to SuperClass members.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">func_2()</code> only",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "func_2() is a SubClass method. A SuperClass instance cannot access SubClass methods.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">func_1()</code> and <code class=\"python\" lang=\"python\">func_2()</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A <code class=\"python\" lang=\"python\">SuperClass</code> instance has access to <code class=\"python\" lang=\"python\">SuperClass'</code>s <code class=\"python\" lang=\"python\">func_1()</code> but doesn't have access to anything in <code class=\"python\" lang=\"python\">SubClass</code>, including <code class=\"python\" lang=\"python\">func_2()</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "1cc0fb0b-8949-4b8e-a2c8-5d8f173e0e30",
+  "detailedSolution": "A <code class=\"python\" lang=\"python\">SuperClass</code> instance has access to <code class=\"python\" lang=\"python\">SuperClass'</code>s <code class=\"python\" lang=\"python\">func_1()</code> but doesn't have access to anything in <code class=\"python\" lang=\"python\">SubClass</code>, including <code class=\"python\" lang=\"python\">func_2()</code>."
+}
