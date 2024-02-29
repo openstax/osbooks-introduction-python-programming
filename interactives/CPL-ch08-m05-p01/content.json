@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of <code class=\"python\" lang=\"python\">print(\"1*2*3*\".split('*'))</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">[\"1\", \"*\", \"2\", \"*\", \"3\", \"*\"]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">split()</code> function's output is a list of strings, not integer values. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">[\"1\", \"2', \"3\"]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The delimiter is used by the <code class=\"python\" lang=\"python\">split()</code> function to split the string into a list of substrings. The delimiter itself is not going to be part of the substrings.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">[1, 2, 3]</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When <code class=\"python\" lang=\"python\">\"1*2*3*\"</code> is broken into substrings using the <code class=\"python\" lang=\"python\">'*'</code> delimiter, the output is <code class=\"python\" lang=\"python\">[\"1\", \"2\", \"3\"]</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "db690638-d7e7-4f55-acce-bc2e9e178843",
+  "detailedSolution": "When <code class=\"python\" lang=\"python\">\"1*2*3*\"</code> is broken into substrings using the <code class=\"python\" lang=\"python\">'*'</code> delimiter, the output is <code class=\"python\" lang=\"python\">[\"1\", \"2\", \"3\"]</code>."
+}
