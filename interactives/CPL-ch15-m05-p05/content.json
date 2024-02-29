@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is being plotted using the code below?\n<pre class=\"python\" lang=\"python\">import matplotlib.pyplot as plt\n\n# Data\ncategories = ['A', 'B', 'C', 'D']\nvalues = [10, 15, 12, 18]\nplt.bar(categories, values)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "a histogram plot",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A line plot can be created by passing two quantitative variables to the function <code class=\"python\" lang=\"python\">plot()</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "a bar plot",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A histogram plot can be created by passing a quantitative variable to the <code class=\"python\" lang=\"python\">hist()</code> function.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "a line plot",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The given code plots a bar plot with four bars representing the given categories. The height of the bars corresponds to the values stored in the <code class=\"python\" lang=\"python\">values</code> variable.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "df5f1c3f-895b-426f-b052-dce289f5eb08",
+  "detailedSolution": "The given code plots a bar plot with four bars representing the given categories. The height of the bars corresponds to the values stored in the <code class=\"python\" lang=\"python\">values</code> variable."
+}
