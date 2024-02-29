@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "When line 11 executes, execution flow moves to line 5. What does <code class=\"python\" lang=\"python\">self</code> represent on line 5?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "the area of <code class=\"python\" lang=\"python\">room_1</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "self represents an instance of a class, not the class.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "the instance <code class=\"python\" lang=\"python\">room_1</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "room_1's area is the return value of area(). self is a parameter that refers to a specific instance.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "the <code class=\"python\" lang=\"python\">Rectangle</code> class",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">room_1</code> is the instance that called the method <code class=\"python\" lang=\"python\">area()</code>, so <code class=\"python\" lang=\"python\">self</code> represents the specific instance.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "a9d05bff-575a-45cb-84de-357c3575095d",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">room_1</code> is the instance that called the method <code class=\"python\" lang=\"python\">area()</code>, so <code class=\"python\" lang=\"python\">self</code> represents the specific instance."
+}
