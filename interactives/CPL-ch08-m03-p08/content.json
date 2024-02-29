@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of (<code class=\"python\" lang=\"python\">\"weather\".count(\"b\")</code>)?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">count()</code> function's output is an integer value. If the substring does not exist in a string, the output is 0.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">-1</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "In case a substring does not exist in a given string, the count function's output is 0, not -1.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">False</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Zero occurrence of <code class=\"python\" lang=\"python\">\"b\"</code> exists in <code class=\"python\" lang=\"python\">\"weather\"</code>; hence, the output of <code class=\"python\" lang=\"python\">\"weather\".count(\"b\")</code> is <code class=\"python\" lang=\"python\">0</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "4a80c83f-ef78-401b-96fe-548abb4b03ad",
+  "detailedSolution": "Zero occurrence of <code class=\"python\" lang=\"python\">\"b\"</code> exists in <code class=\"python\" lang=\"python\">\"weather\"</code>; hence, the output of <code class=\"python\" lang=\"python\">\"weather\".count(\"b\")</code> is <code class=\"python\" lang=\"python\">0</code>."
+}
