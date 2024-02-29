@@ -1,0 +1,19 @@
+{
+  "errata_id": "6ebe04d301e7703a837b50fb984fafd5c4b714f5f5cdbfce7e7a43fcf504f3f6",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:002fe1d5-24b5-4ea1-93aa-8ba9038a4d03",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:9-2-sorting-and-reversing-lists"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00068"
+  ]
+}
