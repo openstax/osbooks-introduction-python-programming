@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which line is executed first?\n<pre class=\"python line-numbering\" lang=\"python\">def park_greet():\n&nbsp;&nbsp;\"\"\"Output greeting.\"\"\"\n&nbsp;&nbsp;print(\"Welcome. Open sunrise to sunset.\")\n\ncar_count = 1\npark_greet()\nif car_count &gt; 50:\n&nbsp;&nbsp;# Direct to extra parking lot\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Line 3 is the first statement of park_greet(), which is not executed until called. Control flow begins at the main program, which is not indented.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "3",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Execution does not always start at line 1. park_greet() is not executed until called, so control flow begins at the main program, which is not indented.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "5",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Line 5 is the start of the main program, which is not indented. <code class=\"python\" lang=\"python\">park_greet()</code> is called on line 6 and executed.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "334b6184-4ab7-451a-a1cd-eb2bad39faf0",
+  "detailedSolution": "Line 5 is the start of the main program, which is not indented. <code class=\"python\" lang=\"python\">park_greet()</code> is called on line 6 and executed."
+}
