@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What would be the last element of <code class=\"python\" lang=\"python\">board_games</code> after the <code class=\"python\" lang=\"python\">reverse()</code> method has been applied?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">'go'</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "'scrabble' would be the last if <span class=\"blue-code\">board_games </span>if the sort() function is applied.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">'checkers'</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "'checkers' is the last element of <span class=\"blue-code\">board_games</span>. What happens once the list is reversed?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">'scrabble'</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">\"go\"</code> is the first element of <code class=\"python\" lang=\"python\">board_games</code>, so <code class=\"python\" lang=\"python\">\"go\"</code> would be the last element once <code class=\"python\" lang=\"python\">board_games</code> is reversed.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "50102b05-afe1-4bbf-a95e-6998a970679e",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">\"go\"</code> is the first element of <code class=\"python\" lang=\"python\">board_games</code>, so <code class=\"python\" lang=\"python\">\"go\"</code> would be the last element once <code class=\"python\" lang=\"python\">board_games</code> is reversed."
+}
