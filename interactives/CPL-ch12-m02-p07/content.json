@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<pre class=\"python\" lang=\"python\">def rec_fact(n):\n&nbsp;&nbsp;if n &lt; 0:\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"error\")\n&nbsp;&nbsp;elif n == 0:\n&nbsp;&nbsp;&nbsp;&nbsp;return 1\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;return n * rec_fact(n - 1)</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">355687428096000</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "There are 2 base cases in the function, one for n &lt; 0 and one for n == 0. Since n started as a positive number, n will never be less than 0. Therefore, the n == 0 base case is reached and the function completes successfully.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The function never returns a 0 for any value of n.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "no result / infinite computation",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The recursive function begins returning correctly at the base case of <code class=\"python\" lang=\"python\">n == 0</code>. <code class=\"python\" lang=\"python\">0! = 1</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8c621cc1-57f6-4eed-a3d0-5c3512668bc0",
+  "detailedSolution": "The recursive function begins returning correctly at the base case of <code class=\"python\" lang=\"python\">n == 0</code>. <code class=\"python\" lang=\"python\">0! = 1</code>."
+}
