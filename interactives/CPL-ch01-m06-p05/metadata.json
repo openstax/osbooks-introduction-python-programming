@@ -1,0 +1,19 @@
+{
+  "errata_id": "4f5e1f866de578aa1ff5fdec5111e2c9f0e99867cf45d7df75a01feb300f468a",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:29cdb6e6-f3cf-4c63-a8a9-a2991e7eb2c4",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:1-6-error-messages"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00007"
+  ]
+}
