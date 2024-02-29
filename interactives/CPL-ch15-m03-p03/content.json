@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What are the benefits of Pandas over NumPy?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "Pandas provides integration with other libraries.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "NumPy array can be 1-dimensional or multidimensional.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Pandas supports heterogeneous data whereas NumPy supports homogenous numerical data.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "NumPy also provides integration with other data science libraries.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Pandas supports both one-dimensional and two-dimensional data structures.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The Pandas DataFrame can store columns of varying data types, while NumPy only supports numeric data types.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "a55f8cad-b9d2-4aa5-8b2c-e2c054b78167",
+  "detailedSolution": "The Pandas DataFrame can store columns of varying data types, while NumPy only supports numeric data types."
+}
