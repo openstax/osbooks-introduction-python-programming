@@ -1,0 +1,19 @@
+{
+  "errata_id": "a0dca3c7b2e19177d3bdf06abdbeb5ecda327a9ac045f64f0fe914f4c4c66f5a",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:4a5b091e-a556-4c36-a88f-57c577c967a0",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:2-2-type-conversion"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00012"
+  ]
+}
