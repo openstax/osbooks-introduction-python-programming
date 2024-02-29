@@ -1,0 +1,19 @@
+{
+  "errata_id": "50e54951147b9a0f801ec653074e1e38cd58e0778ac4ff027bdfb8a8501ca1ea",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:b64819a7-bf8a-4606-a641-427083724882",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:8-3-searching-testing-strings"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00061"
+  ]
+}

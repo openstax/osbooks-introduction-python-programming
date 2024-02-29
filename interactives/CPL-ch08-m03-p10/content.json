@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of <code class=\"python\" lang=\"python\">\"banana\".find(\"a\")</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">1</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "5 is the index of the last occurrence of \"a\" in the string \"banana\". The <code class=\"python\" lang=\"python\">find()</code> function returns the index of the substring's first occurrence in the given string.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">3</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "3 is the index of the second occurrence of character \"a\" in the string \"banana\". What is the index of the first occurrence of \"a\"?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">5</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">find()</code> method returns the index for the first occurrence of the substring in the given string. The index for the first occurrence of <code class=\"python\" lang=\"python\">\"a\"</code> is 1.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "f5022b40-0140-4ef7-badc-c5617278ed55",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">find()</code> method returns the index for the first occurrence of the substring in the given string. The index for the first occurrence of <code class=\"python\" lang=\"python\">\"a\"</code> is 1."
+}
