@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<pre class=\"python\" lang=\"python\">z = \"cilantro\"\ncompare_result = (z == \"coriander\")\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">True</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Strings are compared by comparing each character's Unicode values. Letters have ascending Unicode values in alphabetical order (and are case sensitive). \"c\" and \"c\" are equal, so \"i\" is compared to \"o\". \"i\" is not equal to \"o\" so False is produced, though cilantro and coriander come from the same plant. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">False</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Strings are compared by comparing each character's Unicode values. Letters have ascending Unicode values in alphabetical order (and are case sensitive). <code class=\"python\" lang=\"python\">\"c\"</code> and <code class=\"python\" lang=\"python\">\"c\"</code> are equal, so <code class=\"python\" lang=\"python\">\"i\"</code> is compared to <code class=\"python\" lang=\"python\">\"o\"</code>. <code class=\"python\" lang=\"python\">\"i\"</code> is not equal to <code class=\"python\" lang=\"python\">\"o\"</code> so <code class=\"python\" lang=\"python\">False</code> is produced, though cilantro and coriander come from the same plant. ",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "0891a5a5-046a-4d46-a102-d246e34946fc",
+  "detailedSolution": "Strings are compared by comparing each character's Unicode values. Letters have ascending Unicode values in alphabetical order (and are case sensitive). <code class=\"python\" lang=\"python\">\"c\"</code> and <code class=\"python\" lang=\"python\">\"c\"</code> are equal, so <code class=\"python\" lang=\"python\">\"i\"</code> is compared to <code class=\"python\" lang=\"python\">\"o\"</code>. <code class=\"python\" lang=\"python\">\"i\"</code> is not equal to <code class=\"python\" lang=\"python\">\"o\"</code> so <code class=\"python\" lang=\"python\">False</code> is produced, though cilantro and coriander come from the same plant. "
+}
