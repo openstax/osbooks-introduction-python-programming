@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which of the following results in selecting the second and fourth rows of the DataFrame?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">df[df.loc[:, \"A\"] % 2 == 0]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">df.loc[\"A\"]</code> is an invalid indexing. To select columns, row index must be specified or the operator <code>:</code> is passed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">df[df[:, \"A\"] % 2 == 0]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">df[:, \"A\"]</code> is an invalid indexing. How do we select all rows in column with label A?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">df[df.loc[\"A\"] % 2 == 0]</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The condition returns all rows where the value in the column with label A is divisible by 2.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "009025be-6946-44ae-829c-a014fc26a5f0",
+  "detailedSolution": "The condition returns all rows where the value in the column with label A is divisible by 2."
+}
