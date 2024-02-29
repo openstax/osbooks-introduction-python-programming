@@ -1,0 +1,19 @@
+{
+  "errata_id": "e21de6d342cfd2d85891a67cb5d83abb11884f396372003f9146723860f7aac3",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:6bb922af-55ba-47da-8c04-f17ca32e32eb",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:13-1-inheritance-basics"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00095"
+  ]
+}
