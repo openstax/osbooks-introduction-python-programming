@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which program prints the following output?\n<pre class=\"python\" lang=\"python\">1 2 3 4\n2 4 6 8\n3 6 9 12\n4 8 12 16\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">i = 1\nwhile i &lt;= 4:\n&nbsp;&nbsp;while j &lt;= 4:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j, end = ' ')\n&nbsp;&nbsp;&nbsp;&nbsp;j += 1\n&nbsp;&nbsp;print()\n&nbsp;&nbsp;i += 1\n</pre>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The given code prints all values in one line. To add a new line every time that the value of <code class=\"python\" lang=\"python\">i</code> changes, a <code class=\"python\" lang=\"python\">print()</code> statement must be added at the end of the loop.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">i = 1\nwhile i &lt;= 4:\n&nbsp;&nbsp;j = 1\n&nbsp;&nbsp;while j &lt;= 4:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j, end = ' ')\n&nbsp;&nbsp;&nbsp;&nbsp;j += 1\n&nbsp;&nbsp;print()\n&nbsp;&nbsp;i += 1\n</pre>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "In the first outer loop's execution <code class=\"python\" lang=\"python\">(i = 1)</code>, <code class=\"python\" lang=\"python\">j</code>'s value becomes 1, 2, 3, and 4. In the second outer loop's execution <code class=\"python\" lang=\"python\">(i = 2)</code>, <code class=\"python\" lang=\"python\">j</code>'s value equals 4 and hence the inner loop does not execute. What should change so the inner loop can be executed again?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">i = 1\nwhile i &lt;= 4:\n&nbsp;&nbsp;j = 1\n&nbsp;&nbsp;while j &lt;= 4:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j, end = ' ')\n&nbsp;&nbsp;&nbsp;&nbsp;j += 1\n&nbsp;&nbsp;i += 1\n</pre>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Each line <code class=\"python\" lang=\"python\">i</code> of the output (<code class=\"python\" lang=\"python\">i = </code><code class=\"python\" lang=\"python\">1</code>, <code class=\"python\" lang=\"python\">2</code>, <code class=\"python\" lang=\"python\">3</code>, and <code class=\"python\" lang=\"python\">4</code>) contains <code class=\"python\" lang=\"python\">i</code> times values <code class=\"python\" lang=\"python\">1</code> through <code class=\"python\" lang=\"python\">4</code>.<br> Hence, the outer loop executes while <code class=\"python\" lang=\"python\">i &lt;= 4</code>, and the inner loop iterates over<code class=\"python\" lang=\"python\">j</code> while <code class=\"python\" lang=\"python\">j</code>'s value is less than or equal to <code class=\"python\" lang=\"python\">4</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "f04b2951-09ad-4bda-9777-eb008a46c02f",
+  "detailedSolution": "Each line <code class=\"python\" lang=\"python\">i</code> of the output (<code class=\"python\" lang=\"python\">i = </code><code class=\"python\" lang=\"python\">1</code>, <code class=\"python\" lang=\"python\">2</code>, <code class=\"python\" lang=\"python\">3</code>, and <code class=\"python\" lang=\"python\">4</code>) contains <code class=\"python\" lang=\"python\">i</code> times values <code class=\"python\" lang=\"python\">1</code> through <code class=\"python\" lang=\"python\">4</code>.<br> Hence, the outer loop executes while <code class=\"python\" lang=\"python\">i &lt;= 4</code>, and the inner loop iterates over<code class=\"python\" lang=\"python\">j</code> while <code class=\"python\" lang=\"python\">j</code>'s value is less than or equal to <code class=\"python\" lang=\"python\">4</code>."
+}

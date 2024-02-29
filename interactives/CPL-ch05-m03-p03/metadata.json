@@ -1,0 +1,19 @@
+{
+  "errata_id": "813c13a48849cc582f7762439e47b811b721fe33007c0edc015fee8d7cc201b6",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:4d842854-98bd-4d88-9dd9-efd1c90406d7",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:5-3-nested-loops"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00039"
+  ]
+}
