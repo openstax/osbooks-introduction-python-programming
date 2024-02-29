@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the best way to print a very long string?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "Break up the string into multiple smaller strings.\n<pre class=\"python\" lang=\"python\">print(\"...\" # first part of string\n\"...\" # next part of string\n\"...\")</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Assigning the string to a variable still results in a very long line of code.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Print the string using multiple print statements.\n<pre class=\"python\" lang=\"python\">print(\"...\") # first part of string\nprint(\"...\") # next part of string\nprint(\"...\")</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "This is one way to print a long string, but is less efficient, because print needs to run multiple times.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Assign the string to a variable and print the variable.\n<pre class=\"python\" lang=\"python\">text = \"...\" # the entire string\nprint(text)\n</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Using one print statement with parentheses joins the lines implicitly and does not increase the number of statements.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "38bb4e22-be5b-47cd-b813-2236039d4494",
+  "detailedSolution": "Using one print statement with parentheses joins the lines implicitly and does not increase the number of statements."
+}
