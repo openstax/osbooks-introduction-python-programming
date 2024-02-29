@@ -1,0 +1,19 @@
+{
+  "errata_id": "0bdd56fceec5e548df8e51ea88877e76b697d30163114da0300a7f78d8eaf79a",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:8fc3afec-61b0-45da-b469-413f4d740cbe",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:14-3-files-in-different-locations-and-working-with-csv-files"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00104"
+  ]
+}
