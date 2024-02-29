@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Suppose the line <code class=\"python\" lang=\"python\">self.cls_id = 5</code> is added to the end of <code class=\"python\" lang=\"python\">__init__()</code>'s definition. What is the new output?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Cafe Coffee Order 5 : 16 oz</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The line does not produce an error but also doesn't produce the desired effect of changing the class attribute, which is printed by print_order().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Cafe Coffee Order 3 : 16 oz</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The new line creates a new instance attribute called cls_id. But print_order() still accesses the class attribute cls_id.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Trying to access a class attribute using an instance is unsafe. In <code class=\"python\" lang=\"python\">__init__()</code>, trying to access the class attribute creates a new instance attribute called <code class=\"python\" lang=\"python\">cls_id</code>. Though possible, programmers should avoid using the same name for class attributes and instance attributes to avoid confusion.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "258d2a71-2e87-44b2-84de-5171aedb48b2",
+  "detailedSolution": "Trying to access a class attribute using an instance is unsafe. In <code class=\"python\" lang=\"python\">__init__()</code>, trying to access the class attribute creates a new instance attribute called <code class=\"python\" lang=\"python\">cls_id</code>. Though possible, programmers should avoid using the same name for class attributes and instance attributes to avoid confusion."
+}
