@@ -1,0 +1,19 @@
+{
+  "errata_id": "091e51833eeeb43733a346b40405488246fb3ed1532a2a480e9d1602ef422fa1",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:6b8e5013-8cbb-4281-82bf-5b9dc723991a",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:11-2-classes-and-instances"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00082"
+  ]
+}
