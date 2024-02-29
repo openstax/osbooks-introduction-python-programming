@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<code class=\"python\" lang=\"python\">fib(9)</code> results in _____.",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">13</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">fib(8)</code> is <code class=\"python\" lang=\"python\">fib(7)</code> + <code class=\"python\" lang=\"python\">fib(6)</code>. <br/><code class=\"python\" lang=\"python\">fib(8)</code> = 13 + 8 = 21. What is <code class=\"python\" lang=\"python\">fib(9)</code>?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">21</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "13 is <code class=\"python\" lang=\"python\">fib(7)</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">34</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">fib(9)</code> = <code class=\"python\" lang=\"python\">fib(8)</code> +<code class=\"python\" lang=\"python\"> fib(7)</code>. <code class=\"python\" lang=\"python\">fib(9)</code> <code class=\"python\" lang=\"python\">= fib(8) + fib(7) = 21 + 13 = 34</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "c36d2a1b-7ef1-431d-bccc-ddb72b804c8e",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">fib(9)</code> = <code class=\"python\" lang=\"python\">fib(8)</code> +<code class=\"python\" lang=\"python\"> fib(7)</code>. <code class=\"python\" lang=\"python\">fib(9)</code> <code class=\"python\" lang=\"python\">= fib(8) + fib(7) = 21 + 13 = 34</code>."
+}
