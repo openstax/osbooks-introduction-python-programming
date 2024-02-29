@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What happens if the code is changed as follows?\n<pre class=\"python\" lang=\"python\">n = 4\nwhile n &gt; 0:\n&nbsp;&nbsp;print(n)\n&nbsp;&nbsp;# Modified line\n&nbsp;&nbsp;n = n + 1\n\nprint(\"value of n after the loop is\", n)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "The code will not run.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The increment in n's value happens in every iteration and therefore, the code will run for more than 5 iterations.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "The code will run for one additional iteration.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The code will execute, but the loop has an error in the logic. When will the loop condition evaluate to False?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "The code will never terminate.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Since the initialization value for <code class=\"python\" lang=\"python\">n</code> equals <code class=\"python\" lang=\"python\">4</code> and the value of <code class=\"python\" lang=\"python\">n</code> is only increasing, the loop condition will always remain true. The loop will never terminate.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5a0c6d43-5e77-4512-9d6d-7761ca998337",
+  "detailedSolution": "Since the initialization value for <code class=\"python\" lang=\"python\">n</code> equals <code class=\"python\" lang=\"python\">4</code> and the value of <code class=\"python\" lang=\"python\">n</code> is only increasing, the loop condition will always remain true. The loop will never terminate."
+}
