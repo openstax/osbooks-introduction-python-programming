@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the code below, which argument maps to the parameter <code class=\"python\" lang=\"python\">other</code> in the call to <code class=\"python\" lang=\"python\">Account.__add__()</code>?\n<pre class=\"python\" lang=\"python\">acct_a = Account(\"Ashe\", 6492)\nacct_b = Account(\"Bevins\", 5210)\n\nacct_ab = acct_a + acct_b\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">acct_a</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "acct_ab is not an argument to __add__() but is assigned with the result of the call.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">acct_b</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "acct_a maps to the parameter self for the addition operation. acct_b maps to __add__'s second parameter.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">acct_ab</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The addition operation maps the left operand, <code class=\"python\" lang=\"python\">acct_a</code>, to the parameter <code class=\"python\" lang=\"python\">self</code> and the right operand, <code class=\"python\" lang=\"python\">acct_b</code>, to the parameter <code class=\"python\" lang=\"python\">other</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "4bce3823-848a-4250-9bcb-de35dd66841f",
+  "detailedSolution": "The addition operation maps the left operand, <code class=\"python\" lang=\"python\">acct_a</code>, to the parameter <code class=\"python\" lang=\"python\">self</code> and the right operand, <code class=\"python\" lang=\"python\">acct_b</code>, to the parameter <code class=\"python\" lang=\"python\">other</code>."
+}
