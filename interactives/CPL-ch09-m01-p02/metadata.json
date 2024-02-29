@@ -1,0 +1,19 @@
+{
+  "errata_id": "ec7cec1932d9322dc6b60734d98cf2fc12cf68abbf2718f5f20be67962293ab7",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:bed99d14-6f77-42b7-bfb9-1f9fb2f93a5c",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:9-1-modifying-and-iterating-lists"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00066"
+  ]
+}
