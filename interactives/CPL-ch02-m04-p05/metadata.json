@@ -1,0 +1,19 @@
+{
+  "errata_id": "6eb5d0be4bfc698e2bbc81f40b0fab754ee5e51b35cee16962e56cbbe7adb064",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:db6d20a8-c640-4ea7-81ab-bea13792a4f0",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:2-4-floating-point-errors"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00014"
+  ]
+}
