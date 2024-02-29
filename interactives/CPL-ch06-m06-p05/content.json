@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which parameters have default values?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">msg</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "name and count have default values but msg does not.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">name</code> and <code class=\"python\" lang=\"python\">count</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "msg is the only parameter defined without a default value.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "all",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">name</code>'s default value is <code class=\"python\" lang=\"python\">\"Friend\"</code>, and <code class=\"python\" lang=\"python\">count</code>'s default value is <code class=\"python\" lang=\"python\">1</code>. <code class=\"python\" lang=\"python\">msg</code> does not have default value.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "3848501e-310f-497a-b7dd-cc2aa5d2b541",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">name</code>'s default value is <code class=\"python\" lang=\"python\">\"Friend\"</code>, and <code class=\"python\" lang=\"python\">count</code>'s default value is <code class=\"python\" lang=\"python\">1</code>. <code class=\"python\" lang=\"python\">msg</code> does not have default value."
+}
