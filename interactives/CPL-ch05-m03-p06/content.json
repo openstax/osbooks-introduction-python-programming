@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which program prints the following output?\n<pre class=\"python\" lang=\"python\">0 1 2 3\n0 2 4 6\n0 3 6 9\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">for i in range(4):\n&nbsp;&nbsp;for j in range(4):\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j, end = ' ')\n&nbsp;&nbsp;print()\n</pre>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The provided code will print 12 values in the output, each in a separate line. To display the output in the shown format, values printed in one inner loop's iteration must be printed in one line.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">for i in range(1, 4):\n&nbsp;&nbsp;for j in range(4):\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j)\n</pre>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "In the given code, <code class=\"python\" lang=\"python\">i</code> = 0, 1, 2, and 3. Hence the first line of printed output will be <code class=\"python\" lang=\"python\">0 0 0 0</code> as <code class=\"python\" lang=\"python\">i = 0</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">for i in range(1, 4):\n&nbsp;&nbsp;for j in range(4):\n&nbsp;&nbsp;&nbsp;&nbsp;print(i * j, end = ' ')\n&nbsp;&nbsp;print()\n</pre>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The printed output displays three rows with each row <code class=\"python\" lang=\"python\">i</code> displaying <code class=\"python\" lang=\"python\">i</code> * values in the range of <code class=\"python\" lang=\"python\">0</code> to <code class=\"python\" lang=\"python\">3</code>. Hence, the code must iterate over row ID in the outer loop, and in each row, iterate over elements' ID in the range of <code class=\"python\" lang=\"python\">0</code> to <code class=\"python\" lang=\"python\">3</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "520b4455-2c43-4b3c-8110-99dbec5c7b12",
+  "detailedSolution": "The printed output displays three rows with each row <code class=\"python\" lang=\"python\">i</code> displaying <code class=\"python\" lang=\"python\">i</code> * values in the range of <code class=\"python\" lang=\"python\">0</code> to <code class=\"python\" lang=\"python\">3</code>. Hence, the code must iterate over row ID in the outer loop, and in each row, iterate over elements' ID in the range of <code class=\"python\" lang=\"python\">0</code> to <code class=\"python\" lang=\"python\">3</code>."
+}
