@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the correct way to modify the element <code class=\"python\" lang=\"python\">\"Tom\"</code> to <code class=\"python\" lang=\"python\">\"Tim\"</code> in the following list?\n<pre class=\"python\">name_list = [\"Carla\", \"Monique\", \"Westin\", \"Tom\"]\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">name_list[-1] = \"Tim\"</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Not valid syntax. A number or expression must be used within the square brackets.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">name_list[4] = \"Tim\"</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">nameList</code> has 4 elements, so the last element in the list is at index 3.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">name_list[end] = \"Tim\"</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The index -1 always refers to the last element of a list. The expression <code class=\"python\" lang=\"python\">len(name_list)-1</code>, which evaluates to <code class=\"python\" lang=\"python\">3</code> and refers to the last element in a list of 4 elements, can also be used in place of -1 here.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "b524ea28-37a1-4503-a028-5b47eddbe6fd",
+  "detailedSolution": "The index -1 always refers to the last element of a list. The expression <code class=\"python\" lang=\"python\">len(name_list)-1</code>, which evaluates to <code class=\"python\" lang=\"python\">3</code> and refers to the last element in a list of 4 elements, can also be used in place of -1 here."
+}
