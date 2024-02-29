@@ -1,0 +1,19 @@
+{
+  "errata_id": "773e90035b3be24262d91c95af69511f1d2981719de4398a9e34ee7f30cbbf1d",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:f5da0c64-192c-4ea1-a46a-ca24595f7c66",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:11-5-using-modules-with-classes"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00085"
+  ]
+}
