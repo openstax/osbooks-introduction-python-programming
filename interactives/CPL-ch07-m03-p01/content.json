@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which line would cause a side effect when imported?\n<pre class=\"python line-numbering\" lang=\"python\">import math\n\nprint(\"Defining sphere function\")\n\ndef sphere(radius):\n&nbsp;&nbsp;\"\"\"Gets the volume of a sphere.\"\"\"\n&nbsp;&nbsp;return 4/3 * math.pi * radius**3\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "line 1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Defining functions is the main purpose of importing a module.\nTherefore, function definitions are generally not side effects.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "line 3",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "This module uses <code class=\"python\" lang=\"python\">math.pi</code> to calculate sphere volume.\nImporting <code class=\"python\" lang=\"python\">math</code> is necessary, not a side effect.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "line 5",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Whenever this module is imported, Python will output <code class=\"python\" lang=\"python\">\"Defining sphere\nfunction\"</code> as a side effect.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "c07dd472-9ad5-45a9-8dff-cf948b5c7843",
+  "detailedSolution": "Whenever this module is imported, Python will output <code class=\"python\" lang=\"python\">\"Defining sphere\nfunction\"</code> as a side effect."
+}
