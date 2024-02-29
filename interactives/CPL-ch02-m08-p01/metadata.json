@@ -1,0 +1,19 @@
+{
+  "errata_id": "56c28bb2c08b6342fc5769e6274d5009cce3674d3f6f67d3eac5d05be2818e82",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:68a103f9-381a-4b80-a169-e06d7ad0b262",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:2-8-python-careers"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00018"
+  ]
+}

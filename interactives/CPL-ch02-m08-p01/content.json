@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which of the following fields use Python to support their work?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "geography",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "In political science, Python is used to gather online data and predict election outcomes.\nBut Python is used in many other fields too.\n",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "health care",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "In health care, Python supports drug discovery, medical imaging, and hospital management.\nBut Python is used in many other fields too.\n",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "political science",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "In geography, Python helps manage, analyze, and visualize very large geographic data sets.\nBut Python is used in many other fields too.\n",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "all of the above",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Python is one of the most-used programming languages in the world, especially in fields outside of CS and IT.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "53d500d1-181a-40ed-9dbc-3d950391bbdf",
+  "detailedSolution": "Python is one of the most-used programming languages in the world, especially in fields outside of CS and IT."
+}
