@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Suppose the following is added to the code above:\n<pre class=\"python\" lang=\"python\">is_dessert = 0\nprint(type(is_dessert))\n</pre>\nWhat is the output?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">&lt;class 'bool'&gt;</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Python allows for and performs implicit type conversion, even if the programmer did not intend to.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">&lt;class 'int'&gt;</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "is_dessert was of type bool, but assigning the value 0 results in implicit type conversion.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Assigning a bool with an <code class=\"python\" lang=\"python\">int</code> results in implicit type conversion. The type conversion can cause issues later in the code if the programmer assumes <code class=\"python\" lang=\"python\">is_dessert</code> is still a Boolean.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "dc5c535b-b69f-42ef-b140-edf66b90da07",
+  "detailedSolution": "Assigning a bool with an <code class=\"python\" lang=\"python\">int</code> results in implicit type conversion. The type conversion can cause issues later in the code if the programmer assumes <code class=\"python\" lang=\"python\">is_dessert</code> is still a Boolean."
+}
