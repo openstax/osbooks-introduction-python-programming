@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of (<code class=\"python\" lang=\"python\">\"a\" in \"an umbrella\"</code>)? ",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">in</code> operator's output is a boolean value and is True if the substring exists in the string. While True is equivalent to 1, the output is True.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">False</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "\"a\" is a substring of \"an umbrella\".",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">True</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">in</code> operator checks whether a substring exists in another string and if so, returns True. The <code class=\"python\" lang=\"python\">in</code> operator does not count the number of occurrences of the substring.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">1</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Since <code class=\"python\" lang=\"python\">\"a\"</code> is a substring of <code class=\"python\" lang=\"python\">\"an umbrella\"</code>, the output of <code class=\"python\" lang=\"python\">\"a\"</code> in <code class=\"python\" lang=\"python\">\"an umbrella\"</code> is <code class=\"python\" lang=\"python\">True</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "4aed8560-7ca9-4f5d-8d7b-6b8f8d8c25d1",
+  "detailedSolution": "Since <code class=\"python\" lang=\"python\">\"a\"</code> is a substring of <code class=\"python\" lang=\"python\">\"an umbrella\"</code>, the output of <code class=\"python\" lang=\"python\">\"a\"</code> in <code class=\"python\" lang=\"python\">\"an umbrella\"</code> is <code class=\"python\" lang=\"python\">True</code>."
+}
