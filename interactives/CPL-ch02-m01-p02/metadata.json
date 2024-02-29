@@ -1,0 +1,19 @@
+{
+  "errata_id": "3433667411481d7403103b6015f933adf4d9107a7d5b5a35bbbbce2f5efcdaa7",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:98ffa5ed-ae0d-45d8-8eb7-c08b7753122c",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:2-1-the-python-shell"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00011"
+  ]
+}
