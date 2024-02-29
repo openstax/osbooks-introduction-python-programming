@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is a nested dictionary in Python?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "A dictionary that contains only integers as keys and values.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "While a list may contain multiple values, the definition of nested dictionary requires two dictionaries to be nested in one another.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "A dictionary that contains another dictionary as a value.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A dictionary must contain a dictionary as a value <span class=\"red-code\">, not a string</span> to be called a nested dictionary.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "A dictionary that contains only strings as keys and values.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A nested dictionary is a dictionary that contains another dictionary as a value. Nested dictionary is a way to represent hierarchical data and does not depend on a specific key or value type.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "A dictionary that contains only lists as keys and values.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A nested dictionary contains another dictionary.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "39c42801-ed2b-4c72-81a6-0faa6bfde26e",
+  "detailedSolution": "A nested dictionary contains another dictionary."
+}
