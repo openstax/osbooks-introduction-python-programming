@@ -1,0 +1,19 @@
+{
+  "errata_id": "ec3cac8bbcb45c586f3ee11a297519b14bf16a315fdf3b874c0948e9951ffe8f",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:68b65d0a-f2ef-4310-a763-5db9e128e6fc",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:10-2-dictionary-creation"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00075"
+  ]
+}
