@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "The following <i>volume.py</i> module causes a side effect.\n<pre class=\"python\" lang=\"python\">import math\n\ndef sphere(radius):\n&nbsp;&nbsp;\"\"\"Gets the volume of a sphere.\"\"\"\n&nbsp;&nbsp;return 4/3 * math.pi * radius**3\n\nfor r in range(10000000):\n&nbsp;&nbsp;volume = sphere(r)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "true",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Even though nothing is printed, calling the sphere function ten million\ntimes causes a delay in the main program.\n",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "false",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Even though nothing is printed, calling the sphere function ten million\ntimes causes a delay in the main program.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "9b2ad67a-6542-4f5c-ad03-fc8427c96868",
+  "detailedSolution": "Even though nothing is printed, calling the sphere function ten million\ntimes causes a delay in the main program."
+}
