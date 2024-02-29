@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of <code class=\"python\" lang=\"python\">greeting(count=0, msg=\"Hello\")</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Hello Friend</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "msg=\"Hello\", name=\"Friend\", and count=0, so the call is valid. Under what condition does the for loop execute?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "nothing",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "count is 0, so the function executes but does not print anything.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">msg=\"Hello\"</code>, <code class=\"python\" lang=\"python\">name=\"Friend\"</code>, and <code class=\"python\" lang=\"python\">count=0</code>, so the call is valid. The function executes but doesn't enter the <code class=\"python\" lang=\"python\">for</code> loop because <code class=\"python\" lang=\"python\">count=0</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "49741565-1a6e-4ab0-8189-a32148562130",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">msg=\"Hello\"</code>, <code class=\"python\" lang=\"python\">name=\"Friend\"</code>, and <code class=\"python\" lang=\"python\">count=0</code>, so the call is valid. The function executes but doesn't enter the <code class=\"python\" lang=\"python\">for</code> loop because <code class=\"python\" lang=\"python\">count=0</code>."
+}
