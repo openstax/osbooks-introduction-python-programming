@@ -1,0 +1,19 @@
+{
+  "errata_id": "fa8bce717fc043ec307643acb3899d17ee1835aec527d9145417a46963ebb9a4",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:cd1387f8-b52b-4727-85fb-45eac43f3d6e",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:12-5-using-recursion-to-solve-problems"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00092"
+  ]
+}
