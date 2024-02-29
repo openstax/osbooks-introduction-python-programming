@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output?\n<pre class=\"python\" lang=\"python\">def park_greet():\n&nbsp;&nbsp;\"\"\"Output greeting.\"\"\"\n&nbsp;&nbsp;print(\"Welcome to the park\")\nprint(\"Open sunrise to sunset\")\n\npark_greet()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Welcome to the park</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "print(\"Open ...\") is executed first, since the statement is unindented. Then park_greet(), which contains print(\"Welcome ...\"), is called.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Welcome to the park</code> <br>\n<code class=\"python\" lang=\"python\">Open sunrise to sunset</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "\"Open sunrise to sunset\" is not a part of park_greet() and is printed first. Then \"Welcome to the park\" is printed by park_greet().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Open sunrise to sunset</code> <br>\n<code class=\"python\" lang=\"python\">Welcome to the park</code>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The program has an indentation mistake. <code class=\"python\" lang=\"python\">print(\"Open ...\")</code> is unindented, so the statement is not a part of <code class=\"python\" lang=\"python\">park_greet()</code> and is executed first. Then, <code class=\"python\" lang=\"python\">park_greet()</code> is called, and <code class=\"python\" lang=\"python\">print(\"Welcome ...\")</code> is executed.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "15cf415e-1966-4f37-bc98-5c1852db3553",
+  "detailedSolution": "The program has an indentation mistake. <code class=\"python\" lang=\"python\">print(\"Open ...\")</code> is unindented, so the statement is not a part of <code class=\"python\" lang=\"python\">park_greet()</code> and is executed first. Then, <code class=\"python\" lang=\"python\">park_greet()</code> is called, and <code class=\"python\" lang=\"python\">print(\"Welcome ...\")</code> is executed."
+}
