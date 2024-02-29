@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which option modifies the value for the key <code class=\"python\" lang=\"python\">\"Coconut soup\"</code> to <code class=\"python\" lang=\"python\">\"$11\"</code> while keeping other items the same?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">food = {\"\"Coconut soup\": \"$15\"\"}</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The new value for the key <code class=\"python\" lang=\"python\">\"coconut soup\"</code>is <code class=\"python\" lang=\"python\">\"$11\"</code>, not <code class=\"python\" lang=\"python\">11</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">food[\"Coconut soup\"] = 11</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Reassigning the value of the <code class=\"python\" lang=\"python\">food</code> dictionary to <code class=\"python\" lang=\"python\">{\"\"Coconut soup\": \"$15\"\"}</code> erases the content of the dictionary and replaces the content with only one item.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">food[\"Coconut soup\"] = \"$11\"</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When accessing a dictionary key and assigning a new value, the associated value for the key will be updated.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5cbcbb4f-dcb3-4a63-b308-a74a5d7b587e",
+  "detailedSolution": "When accessing a dictionary key and assigning a new value, the associated value for the key will be updated."
+}

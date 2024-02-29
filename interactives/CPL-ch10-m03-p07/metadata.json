@@ -1,0 +1,19 @@
+{
+  "errata_id": "3c051ba7ab7155a71fdc7f7d96935eaa297646266f3085da135bc1511101d904",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:3bcf5fc2-ddff-44bb-83aa-9eeb891c17ab",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:10-3-dictionary-operations"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00076"
+  ]
+}
