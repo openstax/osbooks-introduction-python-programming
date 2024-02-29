@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the following code, how many times does the print statement get executed?\n<pre class=\"python\" lang=\"python\">i = 1\nwhile True:\n&nbsp;&nbsp;if i%3 == 0 and i%5 == 0:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i)\n&nbsp;&nbsp;&nbsp;&nbsp;break\n&nbsp;&nbsp;i += 1</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "0",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">while</code> loop is executed 15 times until the condition <code class=\"python\" lang=\"python\">(i%3 == 0 and i%5 == 0)</code> is met for <code class=\"python\" lang=\"python\">i = 15</code>. But, for each iteration of the loop the print statement is not executed as the condition evaluates to True for the first time when <code class=\"python\" lang=\"python\">i = 15</code>. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop's condition is True, and hence the loop does not terminate until the print and then the break statements are executed. The loop does not terminate without executing what's in the <code class=\"python\" lang=\"python\">if</code> statement at least once. How many times does the <code class=\"python\" lang=\"python\">if</code> statement get executed?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "15",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "As soon as the <code class=\"python\" lang=\"python\">print</code> statement is executed, the <code class=\"python\" lang=\"python\">break</code> statement causes the loop's termination. Also, for <code class=\"python\" lang=\"python\">i = 15</code>, the condition <code class=\"python\" lang=\"python\">(i%3 == 0 and i%5 == 0)</code> is met, and hence the print statement will be executed exactly once.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "fe993dbd-de0c-45cb-be9d-30dc43a7b674",
+  "detailedSolution": "As soon as the <code class=\"python\" lang=\"python\">print</code> statement is executed, the <code class=\"python\" lang=\"python\">break</code> statement causes the loop's termination. Also, for <code class=\"python\" lang=\"python\">i = 15</code>, the condition <code class=\"python\" lang=\"python\">(i%3 == 0 and i%5 == 0)</code> is met, and hence the print statement will be executed exactly once."
+}
