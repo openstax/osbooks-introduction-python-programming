@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Where can an <code class=\"python\" lang=\"python\">elif</code> statement be added?<pre class=\"python\" lang=\"python\">_1_\nif condition:\n&nbsp;&nbsp;# Body\n&nbsp;&nbsp;_2_\nelif condition:\n&nbsp;&nbsp;# Body\n_3_\nelse:\n&nbsp;&nbsp;# Body\n_4_\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "An else statement is always the last statement in the decision.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "2",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "An elif must be at the same indentation level as the statement the elif is chained to.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "3",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "An elif cannot precede the if statement the elif is chained to.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "4",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "An <code class=\"python\" lang=\"python\">elif</code> can be chained to another <code class=\"python\" lang=\"python\">elif</code> to form a longer chained decision.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "6e28bea9-da50-4bb2-bead-d3a2298175c6",
+  "detailedSolution": "An <code class=\"python\" lang=\"python\">elif</code> can be chained to another <code class=\"python\" lang=\"python\">elif</code> to form a longer chained decision."
+}
