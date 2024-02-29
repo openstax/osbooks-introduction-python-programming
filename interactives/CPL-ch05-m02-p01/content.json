@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the program's output?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">7</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The initialization value for the count variable equals 0, and the value increments by one in each loop's iteration.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">8</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The variable <code class=\"python\" lang=\"python\">str_var</code> contains 1 space. Spaces are considered characters. Spaces are treated the same as other characters and so need to be counted.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">9</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Eight characters exist in the <code class=\"python\" lang=\"python\">str_var</code>. Iterating over all characters and incrementing the value of <code class=\"python\" lang=\"python\">count</code> variable at each iteration results in the <code class=\"python\" lang=\"python\">count's</code> value of <code class=\"python\" lang=\"python\">8</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "35b4d939-7201-4aa9-acdc-840f5c7394e6",
+  "detailedSolution": "Eight characters exist in the <code class=\"python\" lang=\"python\">str_var</code>. Iterating over all characters and incrementing the value of <code class=\"python\" lang=\"python\">count</code> variable at each iteration results in the <code class=\"python\" lang=\"python\">count's</code> value of <code class=\"python\" lang=\"python\">8</code>."
+}
