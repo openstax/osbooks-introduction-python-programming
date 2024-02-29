@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Suppose the line <code class=\"python\" lang=\"python\">CoffeeOrder.loc = 'Caffeine Cafe'</code> is added before <code class=\"python\" lang=\"python\">order_3.print_order()</code>. What is the new output?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Caffeine Cafe Order 3 : 16 oz</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Class attributes can be changed after initialization. A class attribute is shared by all instances, so the output changes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Cafe Coffee Order 3 : 16 oz</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "All instances share class attributes, so a change to loc affects all instances.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">order_1</code>, <code class=\"python\" lang=\"python\">order_2</code>, and <code class=\"python\" lang=\"python\">order_3</code> all share the class attribute <code class=\"python\" lang=\"python\">CoffeeOrder.loc</code>. Changing <code class=\"python\" lang=\"python\">loc</code> affects all instances, so <code class=\"python\" lang=\"python\">Caffeine Cafe</code> is printed as the location.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "6f4c50ce-d242-4f2c-b74e-1d42ea62f73c",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">order_1</code>, <code class=\"python\" lang=\"python\">order_2</code>, and <code class=\"python\" lang=\"python\">order_3</code> all share the class attribute <code class=\"python\" lang=\"python\">CoffeeOrder.loc</code>. Changing <code class=\"python\" lang=\"python\">loc</code> affects all instances, so <code class=\"python\" lang=\"python\">Caffeine Cafe</code> is printed as the location."
+}
