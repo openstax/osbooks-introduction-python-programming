@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "The <code class=\"python\" lang=\"python\">range()</code> function can also be used to iterate a list-of-lists. Which code prints each number in <code class=\"python\" lang=\"python\">my_list</code> starting from <code class=\"python\" lang=\"python\">7</code>, then <code class=\"python\" lang=\"python\">4</code>, and so on, ending with <code class=\"python\" lang=\"python\">-5</code>, using counting <code class=\"python\" lang=\"python\">for</code> loops?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">for column_index in range(0, len(my_list[0])):\n&nbsp;&nbsp;for row_index in range (0, len(my_list)):\n&nbsp;&nbsp;&nbsp;&nbsp;print(my_list[row_index][column_index])\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The outer for loop runs for 3 iterations because there are 3 elements in the list-of-lists. The inner for loop runs for 3 iterations, but each row actually has 4 elements. Thus, the numbers 12, 16, and -5 will not be printed. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">for row_index in range(0, len(my_list)):\n&nbsp;&nbsp;for column_index in range (0, len(my_list)):\n&nbsp;&nbsp;&nbsp;&nbsp;print(my_list[row_index][column_index])\n&nbsp;&nbsp;print()\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The outer for loop runs for 4 iterations. The inner for loop runs for 3 iterations. But numbers are printed in a different order.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">for row_index in range(0, len(my_list)):\n&nbsp;&nbsp;for column_index in range (0, len(my_list[0])):\n&nbsp;&nbsp;&nbsp;&nbsp;print(my_list[row_index][column_index])\n</pre>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The outer <code class=\"python\" lang=\"python\">for</code> loop runs for three iterations because there are three elements in the list-of-lists. The inner <code class=\"python\" lang=\"python\">for</code> loop iterates through each element of each row using the length of each row.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "6825dd9e-b2ad-4a4a-a953-1f232ab6d8ac",
+  "detailedSolution": "The outer <code class=\"python\" lang=\"python\">for</code> loop runs for three iterations because there are three elements in the list-of-lists. The inner <code class=\"python\" lang=\"python\">for</code> loop iterates through each element of each row using the length of each row."
+}
