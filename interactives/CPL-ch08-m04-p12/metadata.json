@@ -1,0 +1,19 @@
+{
+  "errata_id": "593de722fc37e055244c3768f84650e6d4321de3b8e534c897d48a35a855589f",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:bd1b0229-5966-4f27-91a2-9e1750cf8a14",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:8-4-string-formatting"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00062"
+  ]
+}
