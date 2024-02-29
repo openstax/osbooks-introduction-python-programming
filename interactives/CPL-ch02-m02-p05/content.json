@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How could line 3 be changed to improve the program overall?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "Use <code class=\"python\" lang=\"python\">float()</code> instead of <code class=\"python\" lang=\"python\">int()</code>.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Adding str() around int() doesn't change the calculation or output. Will enough pizza be ordered if the calculation produces a fractional part?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Add <code class=\"python\" lang=\"python\">1</code> to the result of <code class=\"python\" lang=\"python\">int()</code>.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A pizza order should be a whole number, but a fractional part is still important. For a calculation of 7.5, should 7 or 8 pizzas be ordered?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Add <code class=\"python\" lang=\"python\">str()</code> around <code class=\"python\" lang=\"python\">int()</code>.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">int()</code> removes any fractional part. Many calculations will produce a fractional part. Ex: 46 people with 3.0 slices per person will need 138 slices or <span class=\"blue-code\">17.25</span> pizzas. <code class=\"python\" lang=\"python\">int(17.25)</code> is <code class=\"python\" lang=\"python\">17</code>, so adding <code class=\"python\" lang=\"python\">1</code> produces <code class=\"python\" lang=\"python\">18</code> pizzas, a better estimate to ensure enough pizza is ordered.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "53091abd-3477-4e73-98e3-b6a956162302",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">int()</code> removes any fractional part. Many calculations will produce a fractional part. Ex: 46 people with 3.0 slices per person will need 138 slices or <span class=\"blue-code\">17.25</span> pizzas. <code class=\"python\" lang=\"python\">int(17.25)</code> is <code class=\"python\" lang=\"python\">17</code>, so adding <code class=\"python\" lang=\"python\">1</code> produces <code class=\"python\" lang=\"python\">18</code> pizzas, a better estimate to ensure enough pizza is ordered."
+}
