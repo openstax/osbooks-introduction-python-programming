@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the return value of <code class=\"python\" lang=\"python\">cube(5)</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">60</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "5 cubed is 125, but the definition of <code class=\"python\" lang=\"python\">cube()</code> is <code>6 * side**2</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">125</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "6 * 5*2 is 60, but the expression <code class=\"python\" lang=\"python\"> * side**2</code> means \"6 times side squared\".",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">150</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">rea.cube(5)</code> is <code class=\"python\" lang=\"python\">6 * 5**2</code>, which is <code class=\"python\" lang=\"python\">6 * 25</code>, which is <code class=\"python\" lang=\"python\">150</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "7a5ede0c-794d-45ed-9197-a35a0c4475d6",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">area.cube(5)</code> is <code class=\"python\" lang=\"python\">6 * 5**2</code>, which is <code class=\"python\" lang=\"python\">6 * 25</code>, which is <code class=\"python\" lang=\"python\">150</code>."
+}
