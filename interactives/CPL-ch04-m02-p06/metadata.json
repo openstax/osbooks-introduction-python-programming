@@ -1,0 +1,19 @@
+{
+  "errata_id": "0e85af96e2501c7c173d18df8620f7fa86aa0d4215e543918c1537276710d163",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:ecbe8204-3681-4d42-94ec-dd584ff93fbc",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:4-2-if-else-statements"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00029"
+  ]
+}

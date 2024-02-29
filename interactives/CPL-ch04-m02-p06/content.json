@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the following code, the <code class=\"python\" lang=\"python\">else</code> branch is taken for which range of <code class=\"python\" lang=\"python\">x</code>?\n<pre class=\"python\" lang=\"python\">if x &gt;= 15:\n&nbsp;&nbsp;# Do something\nelse:\n&nbsp;&nbsp;# Do something else\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">x &gt;= 15</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Although x &lt; 15 does not meet the if condition, when x is 15 the if branch is taken.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">x &lt;= 15</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The else branch is for values of x not in the range x >= 15.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">x &lt; 15</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">if</code> branch is taken when <code class=\"python\" lang=\"python\">x >= 15</code>, so the <code class=\"python\" lang=\"python\">else</code> branch is taken when <code class=\"python\" lang=\"python\">x</code> is not greater than or equal to <code class=\"python\" lang=\"python\">15</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "734f8011-68ac-4ee1-a802-373286b8e5e1",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">if</code> branch is taken when <code class=\"python\" lang=\"python\">x &gt;= 15</code>, so the <code class=\"python\" lang=\"python\">else</code> branch is taken when <code class=\"python\" lang=\"python\">x</code> is not greater than or equal to <code class=\"python\" lang=\"python\">15</code>."
+}
