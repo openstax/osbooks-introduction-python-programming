@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Consider the final program in the example above. What is the value of <code class=\"python\" lang=\"python\">my_tuple</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">(0.693, 0.414, 3.142)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The final program fixed the error by commenting out the line that changed the tuple. A line of code was added that creates a new tuple and assigns my_tuple with the new tuple's value. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">(0.693, 1.414, 3.142)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "my_tuple is initially assigned with the tuple, (0.693, 0.414, 3.142). Then my_tuple is assigned with a new tuple.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">my_tuple</code> is initially assigned with the tuple <code class=\"python\" lang=\"python\">(0.693, 0.414, 3.142)</code>. Then <code class=\"python\" lang=\"python\">my_tuple</code> is assigned with the new tuple, <code class=\"python\" lang=\"python\">(0.693, 1.414, 3.142)</code>, to correct a mistake with the second element.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "992e0f38-538e-4f65-be2b-3611388eec6c",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">my_tuple</code> is initially assigned with the tuple <code class=\"python\" lang=\"python\">(0.693, 0.414, 3.142)</code>. Then <code class=\"python\" lang=\"python\">my_tuple</code> is assigned with the new tuple, <code class=\"python\" lang=\"python\">(0.693, 1.414, 3.142)</code>, to correct a mistake with the second element."
+}
