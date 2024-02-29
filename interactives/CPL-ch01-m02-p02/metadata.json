@@ -1,0 +1,19 @@
+{
+  "errata_id": "1d2da1e7c1350f25de915e75d5efe8231554c2cc410f6e5212d2a3525a97b836",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:0de1cd72-7923-4ddb-8334-1a0a18ea1344",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:1-2-input-output"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00003"
+  ]
+}
