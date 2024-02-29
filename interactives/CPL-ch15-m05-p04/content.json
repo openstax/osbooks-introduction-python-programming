@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the following code, which of the function calls is appropriate in showing association between <code class=\"python\" lang=\"python\">x</code> and <code class=\"python\" lang=\"python\">y</code>?\n<pre class=\"python\" lang=\"python\">import matplotlib.pyplot as plt\n\n# Data\nx = [1, 2, 3, 4, 5]\ny = [10, 15, 12, 18, 20]\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">plt.boxplot(x)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">plt.hist(y)</code> visualizes the distribution of the variable <code class=\"python\" lang=\"python\">y</code> and does not visualize the relationship between the two variables <code class=\"python\" lang=\"python\">x</code> and <code class=\"python\" lang=\"python\">y</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">plt.hist(y)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">plt.boxplot(x)</code> visualizes the distribution of the variable <code class=\"python\" lang=\"python\">x</code> and does not visualize the relationship between the two variables <code class=\"python\" lang=\"python\">x</code> and <code>y</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">plt.scatter(x, y)</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The function call <code class=\"python\" lang=\"python\">plt.scatter(x, y)</code> creates a scatter plot based on the data stored in the variables <code class=\"python\" lang=\"python\">x</code> and <code class=\"python\" lang=\"python\">y</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "b9becd95-0d2e-4712-9da0-2de7df8dd0c5",
+  "detailedSolution": "The function call <code class=\"python\" lang=\"python\">plt.scatter(x, y)</code> creates a scatter plot based on the data stored in the variables <code class=\"python\" lang=\"python\">x</code> and <code class=\"python\" lang=\"python\">y</code>."
+}
