@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the following code's output?\n<pre class=\"python\" lang=\"python\">for i in range(5):\n&nbsp;&nbsp;if i &lt; 5:\n&nbsp;&nbsp;&nbsp;&nbsp;continue\n&nbsp;&nbsp;print(i, end = \" \")</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "no output",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">range(n)</code> function generates a sequence of integer values between 0 to 5, and not including 5. Hence, 5 cannot be a printed value.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "1 2 3 4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop iterates over <code class=\"python\" lang=\"python\">i</code> values between 0 and 5. The condition within the loop does not allow the print statement to execute if <code class=\"python\" lang=\"python\">i < 5</code>. What values are iterated on and meet the condition of <code class=\"python\" lang=\"python\">i >= 5</code>?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "1 2 3 4 5",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop iterates over values in the range of 0 to 5. But, the condition within the loop skips the remainder of the loop if <code class=\"python\" lang=\"python\">i < 5</code>. Hence, no output will be printed.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "c870d29f-b4f7-4d36-b08b-65428802a505",
+  "detailedSolution": "The loop iterates over values in the range of 0 to 5. But, the condition within the loop skips the remainder of the loop if <code class=\"python\" lang=\"python\">i &lt; 5</code>. Hence, no output will be printed."
+}
