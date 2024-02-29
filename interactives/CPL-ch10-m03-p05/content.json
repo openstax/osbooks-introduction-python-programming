@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of <code class=\"python\" lang=\"python\">print(numbers.values())</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">[1, 2, 3]</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">numbers.values()</code> returns the dictionary values and the return type is <code class=\"python\" lang=\"python\">dict_values</code>, not <code class=\"python\" lang=\"python\">dict_keys</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">dict_keys([1, 2, 3])</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The return type of <code class=\"python\" lang=\"python\">values()</code> function is not a list and printing the returned value will also not be a list.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">dict_values([1, 2, 3])</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The values in the numbers dictionary are <code class=\"python\" lang=\"python\">1</code>, <code class=\"python\" lang=\"python\">2</code>, and <code class=\"python\" lang=\"python\">3</code>. When printing <code class=\"python\" lang=\"python\">numbers.values()</code>, <code class=\"python\" lang=\"python\">dict_values([1, 2, 3])</code> is printed.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "2279f5a3-7762-4858-8c6c-4ba6bea06b47",
+  "detailedSolution": "The values in the numbers dictionary are <code class=\"python\" lang=\"python\">1</code>, <code class=\"python\" lang=\"python\">2</code>, and <code class=\"python\" lang=\"python\">3</code>. When printing <code class=\"python\" lang=\"python\">numbers.values()</code>, <code class=\"python\" lang=\"python\">dict_values([1, 2, 3])</code> is printed."
+}
