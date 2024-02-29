@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "The following <i>greeting.py</i> module causes a side effect.\n<pre class=\"python\" lang=\"python\">name = input(\"What is your name? \")\nprint(f\"Nice to meet you, {name}!\")\nlive = input(\"Where do you live? \")\nprint(f\"{live} is a great place.\")\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "true",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "All code is at the top level, and no functions are defined.\nImporting this module would run all code as a side effect.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "false",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "All code is at the top level, and no functions are defined.\nImporting this module would run all code as a side effect.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "57e89848-5b3d-4302-9b20-cbc9a8e29614",
+  "detailedSolution": "All code is at the top level, and no functions are defined.\nImporting this module would run all code as a side effect."
+}
