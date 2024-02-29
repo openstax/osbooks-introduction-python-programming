@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Consider the example above. Darcy tries to enter when the capacity is 3000. For what values of <code class=\"python\" lang=\"python\">hrs_to_close</code> will Darcy to be able to enter?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">hrs_to close &gt; 1.0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "3000 > 3000 is False. False and True is False. False and False is False. So no value of hrs_to_close will allow Darcy to enter.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "no such value",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">3000 > 3000</code> is <code class=\"python\" lang=\"python\">False</code>. False and True is <code class=\"python\" lang=\"python\">False</code>. <code class=\"python\" lang=\"python\">False and False</code> is <code class=\"python\" lang=\"python\">False</code>. So no value of <code class=\"python\" lang=\"python\">hrs_to_close</code> will allow Darcy to enter.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "b0abb718-a53f-4842-be14-885884219fdd",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">3000 &gt; 3000</code> is <code class=\"python\" lang=\"python\">False</code>. False and True is <code class=\"python\" lang=\"python\">False</code>. <code class=\"python\" lang=\"python\">False and False</code> is <code class=\"python\" lang=\"python\">False</code>. So no value of <code class=\"python\" lang=\"python\">hrs_to_close</code> will allow Darcy to enter."
+}
