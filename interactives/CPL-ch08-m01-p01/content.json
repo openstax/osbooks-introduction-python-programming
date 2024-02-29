@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of (<code class=\"python\" lang=\"python\">\"aaa\" &lt; \"aab\"</code>)?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">True</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The two strings are compared one character at a time from left to right. The first two characters in both strings are the same, but what is the result of comparing the third characters?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">False</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Since <code class=\"python\" lang=\"python\">a</code>'s ASCII value is less than <code class=\"python\" lang=\"python\">b</code>'s ASCII value, the output for <code class=\"python\" lang=\"python\">\"aaa\" &lt; \"aab\"</code> is True.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e841e217-12f1-433f-a9b2-25e8f793d2cc",
+  "detailedSolution": "Since <code class=\"python\" lang=\"python\">a</code>'s ASCII value is less than <code class=\"python\" lang=\"python\">b</code>'s ASCII value, the output for <code class=\"python\" lang=\"python\">\"aaa\" &lt; \"aab\"</code> is True."
+}

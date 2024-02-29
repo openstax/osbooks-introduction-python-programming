@@ -1,0 +1,19 @@
+{
+  "errata_id": "19f4052b91b1181ccd881cab78d8f2f7ffbc30f60d206c24d61434987549c8f6",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:b9171442-810b-4b6b-8e17-5c99a136e941",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:8-1-string-operations"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00059"
+  ]
+}
