@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given <code class=\"python\" lang=\"python\">attendees = 350</code>, what is the final value of <code class=\"python\" lang=\"python\">rooms</code>?\n<pre class=\"python\" lang=\"python\">rooms = 1\nif attendees &gt;= 100:\n&nbsp;&nbsp;rooms += 3\nif attendees &lt;= 200:\n&nbsp;&nbsp;rooms += 7\nelif attendees &lt;= 400:\n&nbsp;&nbsp;rooms += 14\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">4</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "350 >= 100 is True, so rooms = 1 + 3 = 4. Then the if-elif is evaluated and rooms += 14 executes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">15</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "350 >= 100 is True so rooms = 1 + 3 = 4. The next if statement is not chained. 350 &lt;= 200 is False and 350 &lt;= 400 is True, so rooms += 14.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">18</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">if</code> and <code class=\"python\" lang=\"python\">if-elif</code> statements are not chained. The first <code class=\"python\" lang=\"python\">if</code> evaluates to <code class=\"python\" lang=\"python\">True</code> and executes. Then the <code class=\"python\" lang=\"python\">if-elif</code> is evaluated and the <code class=\"python\" lang=\"python\">elif</code> branch executes.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "635048cd-9a2f-4ab8-9c75-ab88bc749ef3",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">if</code> and <code class=\"python\" lang=\"python\">if-elif</code> statements are not chained. The first <code class=\"python\" lang=\"python\">if</code> evaluates to <code class=\"python\" lang=\"python\">True</code> and executes. Then the <code class=\"python\" lang=\"python\">if-elif</code> is evaluated and the <code class=\"python\" lang=\"python\">elif</code> branch executes."
+}
