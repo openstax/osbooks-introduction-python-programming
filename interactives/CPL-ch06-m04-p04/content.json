@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What would happen if <code class=\"python\" lang=\"python\">username</code> was changed to <code class=\"python\" lang=\"python\">name</code> on lines 4 and 5?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "same output",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Arguments and parameters are allowed to have the same names, but tracking scope may become difficult.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "error/wrong output",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The program would run correctly. Arguments and parameters can have the same name, and a local variable called <code class=\"python\" lang=\"python\">name</code> would still be created in <code class=\"python\" lang=\"python\">print_welcome()</code>. Scope can be confusing with variables of the same name.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "a94c91c3-341f-4c82-ad40-7da1d8f1c23d",
+  "detailedSolution": "The program would run correctly. Arguments and parameters can have the same name, and a local variable called <code class=\"python\" lang=\"python\">name</code> would still be created in <code class=\"python\" lang=\"python\">print_welcome()</code>. Scope can be confusing with variables of the same name."
+}
