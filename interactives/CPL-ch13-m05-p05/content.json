@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "The programmer edits the code as follows. How can the program be improved?\n<pre class=\"python\" lang=\"python\">class Plant:\n&nbsp;&nbsp;def photosynth(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Photosynthesizing\")\n\nclass Rose(Plant):\n&nbsp;&nbsp;pass\n\nclass Pitcher(Plant):\n&nbsp;&nbsp;def eat(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Eating\")\n\nclass VenusFlyTrap(Plant)\n&nbsp;&nbsp;def eat(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Eating\")\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "Move <code class=\"python\" lang=\"python\">photosynth()</code> into <code class=\"python\" lang=\"python\">Rose</code>.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Pitcher and VenusFlyTrap also need the photosynth() method.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Remove redundancy of <code class=\"python\" lang=\"python\">eat()</code>.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">eat()</code> can be moved into a mixin class included in <code class=\"python\" lang=\"python\">Pitcher'</code>s and <code class=\"python\" lang=\"python\">VenusFlyTrap'</code>s inheritance list.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "ff434f68-b0cb-4bda-a658-6cfa52758a7f",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">eat()</code> can be moved into a mixin class included in <code class=\"python\" lang=\"python\">Pitcher'</code>s and <code class=\"python\" lang=\"python\">VenusFlyTrap'</code>s inheritance list."
+}
