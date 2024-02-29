@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code?\n<pre class=\"python\" lang=\"python\">i = 1\n\nwhile i &lt;= 2:\n&nbsp;&nbsp;j = 1\n&nbsp;&nbsp;while j &lt;= 3:\n&nbsp;&nbsp;&nbsp;&nbsp;print('*', end = '')\n&nbsp;&nbsp;&nbsp;&nbsp;j += 1\n&nbsp;&nbsp;print()\n&nbsp;&nbsp;i += 1\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">******\n</pre>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The print statement in the inner loop does not print a new line and all <code class=\"python\" lang=\"python\">'*'</code> characters are printed in one line for an inner loop's full execution. Since the inner loop executes for <code class=\"python\" lang=\"python\">j =</code> 1, 2, and 3, each output line must have three <code class=\"python\" lang=\"python\">'*'</code> characters. How many lines of output does the code print?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">***\n***\n</pre>\n",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "At the end of each outer loop's iteration, a new line is printed. Since the outer loop executes twice, the output must have two lines.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">**\n**\n**\n</pre>\n",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Each inner loop's full execution prints three \"*\" characters, and the outer loop executes twice.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "777f2d32-cc2a-4f06-802b-c277afad7ef3",
+  "detailedSolution": "Each inner loop's full execution prints three \"*\" characters, and the outer loop executes twice."
+}
