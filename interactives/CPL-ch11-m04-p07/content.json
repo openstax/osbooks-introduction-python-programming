@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How many operators are overloaded?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "3",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The class definition has 5 magic methods, but 3 are overloading operators.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "__init__() and __str__() are magic methods but do not represent operators that are overloaded. __lt__(), __gt__(), and __eq__() are overloaded.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "5",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "&lt;, &gt;, and == are overloaded with <code class=\"python\" lang=\"python\">__lt__()</code>, <code class=\"python\" lang=\"python\">__gt__()</code>, and <code class=\"python\" lang=\"python\">__eq__()</code>, respectively.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "230a470a-c1c9-4e08-b87a-3e35bb29a44d",
+  "detailedSolution": "&lt;, &gt;, and == are overloaded with <code class=\"python\" lang=\"python\">__lt__()</code>, <code class=\"python\" lang=\"python\">__gt__()</code>, and <code class=\"python\" lang=\"python\">__eq__()</code>, respectively."
+}
