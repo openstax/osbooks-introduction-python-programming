@@ -1,0 +1,19 @@
+{
+  "errata_id": "b04558b9c75df59177b537a3f7a33762eb5d685990ac3c63f0d924c5dd69f258",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:92a8058e-94c4-4254-ae14-7699bd8961bc",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:8-5-splitting-joining-strings"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00063"
+  ]
+}
