@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given <code class=\"python\" lang=\"python\">x = 18</code>, is <code class=\"python\" lang=\"python\">x</code> in the correct range?\n<pre class=\"python\" lang=\"python\">if not(x &gt; 15 and x &lt; 20):\n&nbsp;&nbsp;# x in correct range\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "yes",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "not(18 > 15 and 18 &lt; 20) evaluates to not(True and True), then not(True), and finally False.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "no",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">not(18 > 15 and 18 &lt; 20)</code> evaluates to <code class=\"python\" lang=\"python\">not(True and True)</code>, then <code class=\"python\" lang=\"python\">not(True)</code>, and finally, <code class=\"python\" lang=\"python\">False</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "95e52fae-029e-49e3-b774-3b3cd1ab63fc",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">not(18 &gt; 15 and 18 &lt; 20)</code> evaluates to <code class=\"python\" lang=\"python\">not(True and True)</code>, then <code class=\"python\" lang=\"python\">not(True)</code>, and finally, <code class=\"python\" lang=\"python\">False</code>."
+}
