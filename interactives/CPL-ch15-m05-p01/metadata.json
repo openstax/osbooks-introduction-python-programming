@@ -1,0 +1,19 @@
+{
+  "errata_id": "15d8f73136d482e8ff979b3ac11b7e3a09b2cea66fa9275bdc86187ee53d1d28",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:08eaa76b-00b3-41e7-9668-0df2643be8fb",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:15-5-data-visualization"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00113"
+  ]
+}
