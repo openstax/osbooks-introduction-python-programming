@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "The programmer edits the code to create a mixin class containing <code class=\"python\" lang=\"python\">eat()</code>. Which class name, replacing <code class=\"python\" lang=\"python\">X</code>, is most appropriate for the mixin?\n<pre class=\"python\" lang=\"python\">class Plant:\n&nbsp;&nbsp;def photosynth(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Photosynthesizing\")\n\nclass X:\n&nbsp;&nbsp;def eat(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Eating\")\n\nclass Rose(Plant):\n&nbsp;&nbsp;pass\n\nclass Pitcher(Plant, X):\n&nbsp;&nbsp;pass\n\nclass VenusFlyTrap(Plant, X)\n&nbsp;&nbsp;pass\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">CarnivClass</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Adding \"Mixin\" to the end of a class name helps the class stand out.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">CarnivMixin</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Good practice is to have a mixin class name end in <code class=\"python\" lang=\"python\">\"Mixin\"</code> to identify the class's purpose. The final implementation is:\n<pre class=\"python\" lang=\"python\">\nclass Plant:\n&#160;&#160;def photosynth(self):\n&#160;&#160;&#160;&#160;print(\"Photosynthesizing\")\n\nclass CarnivMixin:\n&#160;&#160;def eat(self):\n&#160;&#160;&#160;&#160;print(\"Eating\")\n\nclass Rose(Plant):\n&#160;&#160;pass\n\nclass Pitcher(Plant, CarnivMixin):\n&#160;&#160;pass\n\nclass VenusFlyTrap(Plant, CarnivMixin)\n&#160;&#160;pass\n</pre>",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8a60b2c6-1041-47f4-9ab2-9e597a870432",
+  "detailedSolution": "Good practice is to have a mixin class name end in <code class=\"python\" lang=\"python\">\"Mixin\"</code> to identify the class's purpose. The final implementation is:\n<pre class=\"python\" lang=\"python\">class Plant:\n&nbsp;&nbsp;def photosynth(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Photosynthesizing\")\n\nclass CarnivMixin:\n&nbsp;&nbsp;def eat(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Eating\")\n\nclass Rose(Plant):\n&nbsp;&nbsp;pass\n\nclass Pitcher(Plant, CarnivMixin):\n&nbsp;&nbsp;pass\n\nclass VenusFlyTrap(Plant, CarnivMixin)\n&nbsp;&nbsp;pass\n</pre>"
+}
