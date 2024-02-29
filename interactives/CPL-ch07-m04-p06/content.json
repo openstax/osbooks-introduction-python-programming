@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What symbol indicates that a function is not intended to be called by other modules?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "underscore (<code class=\"python\" lang=\"python\">_</code>)",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A colon is required, for every function, at the end of a <code class=\"python\" lang=\"python\">def</code> statement.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "number sign (<code class=\"python\" lang=\"python\">#</code>)",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "In Python, # is used for comments. In HTML, # is used for hexadecimal color codes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "colon (<code class=\"python\" lang=\"python\">:</code>)",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Function names that begin with an underscore are intended to be used only within the current module.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "9f097b86-1ee0-4127-90c2-1b9390a292fb",
+  "detailedSolution": "Function names that begin with an underscore are intended to be used only within the current module."
+}
