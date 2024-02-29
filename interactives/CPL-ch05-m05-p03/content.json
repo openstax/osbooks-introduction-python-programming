@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output?\n<pre class=\"python\" lang=\"python\">numbers = [1, 2, 2, 6]\nfor i in numbers:\n&nbsp;&nbsp;if i &gt;= 5:\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"Not all numbers are less than 5.\")\n&nbsp;&nbsp;&nbsp;&nbsp;break\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;print(i)\n&nbsp;&nbsp;&nbsp;&nbsp;continue\nelse:\n&nbsp;&nbsp;print(\"all numbers are less than 5.\")</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">1\n2\n2\n6\nNot all numbers are less than 5.\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When <code class=\"python\" lang=\"python\">i = 6</code>, the<code class=\"python\" lang=\"python\"> if</code> condition evaluates as true and \"Not all numbers are less than 5.\" is printed. Does the loop's execution terminate at this point?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">1\n2\n2\nNot all numbers are less than 5.\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When <code class=\"python\" lang=\"python\">i = 6</code>, the <code class=\"python\" lang=\"python\">if</code> condition evaluates as true and \"Not all numbers are less than 5.\" is printed. Yet, the integer value 6 is not printed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">1\n2\n2\n6\nall numbers are less than 5.\n</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop iterates over all integer values in the list. If a value is less than <code class=\"python\" lang=\"python\">5</code>, the value will be printed, and if the value is greater than <code class=\"python\" lang=\"python\">5</code>, the code prints \"<code class=\"python\" lang=\"python\">Not all numbers are less than 5.</code>\" and the code's execution terminates.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "f6f945d6-c0f4-47ed-ab51-0a5d3f423ecf",
+  "detailedSolution": "The loop iterates over all integer values in the list. If a value is less than <code class=\"python\" lang=\"python\">5</code>, the value will be printed, and if the value is greater than <code class=\"python\" lang=\"python\">5</code>, the code prints \"<code class=\"python\" lang=\"python\">Not all numbers are less than 5.</code>\" and the code's execution terminates."
+}
