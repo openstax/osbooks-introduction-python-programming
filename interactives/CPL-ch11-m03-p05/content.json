@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Why is <code class=\"python\" lang=\"python\">change()</code> an instance method?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "can change attributes",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Other method types and functions outside of classes can have multiple parameters. Note that change()'s first parameter refers to an instance of the class.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "has multiple parameters",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Another method type, class methods, can change class attributes. Note that change()'s first parameter refers to an instance of the class.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "can change an instance",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "An instance method's first parameter indicates the method can change an instance. <code class=\"python\" lang=\"python\">change()</code> allows a change in whether a coffee order has milk or sugar.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "2cb5bc30-eeb0-426f-84ad-92a2eca6d24e",
+  "detailedSolution": "An instance method's first parameter indicates the method can change an instance. <code class=\"python\" lang=\"python\">change()</code> allows a change in whether a coffee order has milk or sugar."
+}
