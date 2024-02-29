@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which is the error in the program that attempts to override <code class=\"python\" lang=\"python\">calc_tax()</code> for <code class=\"python\" lang=\"python\">ContractTaxDE</code>?\n<pre class=\"python\" lang=\"python\">class Tax:\n&nbsp;&nbsp;def calc_tax(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print('Calculating tax')\n\nclass ContractTax(Tax):\n&nbsp;&nbsp;def calc_tax(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print('Calculating contract tax')\n\nclass ContractTaxDE(ContractTax):\n&nbsp;&nbsp;def calc_tax():\n&nbsp;&nbsp;&nbsp;&nbsp;print('Calculating German contract tax')\n\nmy_tax = ContractTaxDE()\nmy_tax.calc_tax()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">ContractTaxDE</code> must inherit from <code class=\"python\" lang=\"python\">Tax</code>, not <code class=\"python\" lang=\"python\">ContractTax</code>.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A method can be overridden across multiple levels of inheritance.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">ContractTaxDE's</code> definition of <code class=\"python\" lang=\"python\">calc_tax()</code> is missing a parameter.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "ContractTaxDE can inherit from ContractTax and still override calc_tax(). calc_tax() is inherited from superclass ContractTax.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">ContractTaxDE</code> can't override <code class=\"python\" lang=\"python\">calc_tax()</code> since <code class=\"python\" lang=\"python\">ContractTax</code> already has.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The self parameter is missing from the overridden method's definition.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e3707791-1cc1-4a60-970f-36e350425b8e",
+  "detailedSolution": "The self parameter is missing from the overridden method's definition."
+}
