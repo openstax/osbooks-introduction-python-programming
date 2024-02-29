@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given the following code, how many times does the inner loop execute?\n<pre class=\"python\" lang=\"python\">for i in range(3):\n&nbsp;&nbsp;for j in range(4):\n&nbsp;&nbsp;&nbsp;&nbsp;print(i, ' ', j)\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The range function is exclusive of the upper bound range, meaning that <code class=\"python\" lang=\"python\">i</code> = 0, 1, and 2, and <code class=\"python\" lang=\"python\">j</code> = 0, 1, 2, and 3.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "12",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "To calculate the number of times a loop executes, the number of times that the loop expression is evaluated must be counted. The inner loop in the given example executes for all combinations of <code class=\"python\" lang=\"python\">i</code> = 0, 1, and 2, and <code class=\"python\" lang=\"python\">j</code> = 0, 1, 2, and 3. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "20",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The inner loop is evaluated four times (<code class=\"python\" lang=\"python\">j = 0</code>, <code class=\"python\" lang=\"python\">1</code>, <code class=\"python\" lang=\"python\">2</code>, and <code class=\"python\" lang=\"python\">3</code>) for every <code class=\"python\" lang=\"python\">i</code>'s value set by the outer loop. In the given example <code class=\"python\" lang=\"python\">i = 0</code>, <code class=\"python\" lang=\"python\">1</code>, and <code class=\"python\" lang=\"python\">2</code>; hence, the total number of times the inner loop executes is <code class=\"python\" lang=\"python\">3 * 4 = 12</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "1dc334d2-0a51-4106-a953-1aaa04535cc6",
+  "detailedSolution": "The inner loop is evaluated four times (<code class=\"python\" lang=\"python\">j = 0</code>, <code class=\"python\" lang=\"python\">1</code>, <code class=\"python\" lang=\"python\">2</code>, and <code class=\"python\" lang=\"python\">3</code>) for every <code class=\"python\" lang=\"python\">i</code>'s value set by the outer loop. In the given example <code class=\"python\" lang=\"python\">i = 0</code>, <code class=\"python\" lang=\"python\">1</code>, and <code class=\"python\" lang=\"python\">2</code>; hence, the total number of times the inner loop executes is <code class=\"python\" lang=\"python\">3 * 4 = 12</code>."
+}
