@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "The following program doesn't override <code class=\"python\" lang=\"python\">calc_tax()</code>. Why?\n<pre class=\"python\" lang=\"python\">class Tax:\n&nbsp;&nbsp;def calc_tax(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print('Calculating tax')\n&nbsp;&nbsp;&nbsp;&nbsp;total = 0 # To replace with calculation\n&nbsp;&nbsp;&nbsp;&nbsp;return total\n\nclass ContractTax:\n&nbsp;&nbsp;def calc_tax(self):\n&nbsp;&nbsp;&nbsp;&nbsp;print('Calculating contract tax')\n&nbsp;&nbsp;&nbsp;&nbsp;total = 0 # To replace with calculation\n&nbsp;&nbsp;&nbsp;&nbsp;return total\n\nmy_tax = ContractTax()\nmy_tax.calc_tax()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "An overridden method cannot return a value.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A superclass doesn't need to specify that a method can be overridden. A subclass can override any inherited method.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Tax</code> doesn't specify <code class=\"python\" lang=\"python\">calc_tax()</code> can be overridden.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Overridden methods can return values and have multiple parameters.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">ContractTax</code> isn't inherited from <code class=\"python\" lang=\"python\">Tax</code>.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The class definition doesn't indicate inheritance. The definition should be <code>class ContractTax(Tax):</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "9a598361-f2cc-4d1f-8e2b-c886b8ae759a",
+  "detailedSolution": "The class definition doesn't indicate inheritance. The definition should be <code>class ContractTax(Tax):</code>."
+}
