@@ -1,0 +1,20 @@
+{
+  "errata_id": "339f15487b954e04555f8228f2a604ded1a46d3bb111bc139941fbb1839fff84",
+  "attachments": [],
+  "tags": [
+    "type:practice",
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:f60a5f74-d8c0-4637-beea-f5b3aca54605",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:1-4-string-basics"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00005"
+  ]
+}
