@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "The next line executes. Which line does control flow move to next?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "2",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Control flow has moved to the superclass of Rectangle.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "6",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "super().__init__(4) calls the __init__() of Rectangle's superclass.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "14",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code>super()</code>.<code>__init__(4)</code> calls the <code>__init__()</code> of <code>Rectangle'</code>s superclass, <code>Polygon</code>. Control moves to line 3, and <code>num_sides</code> is initialized with <code>4</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "6aaaeab1-541e-44d3-905b-48e785d1f1b5",
+  "detailedSolution": "<code>super()</code>.<code>__init__(4)</code> calls the <code>__init__()</code> of <code>Rectangle'</code>s superclass, <code>Polygon</code>. Control moves to line 3, and <code>num_sides</code> is initialized with <code>4</code>."
+}

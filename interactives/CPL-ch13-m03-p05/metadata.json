@@ -1,0 +1,19 @@
+{
+  "errata_id": "47a0a884b7efdae0d82719d3377c63a9b1e29f7f87e20ddd25d31a461b11c128",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:3e82dd71-2e77-4c98-8556-6e4e368c9bab",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:13-3-methods"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00097"
+  ]
+}
