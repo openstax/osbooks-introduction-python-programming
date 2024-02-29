@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Control flow moves to line 9, and <code class=\"python\" lang=\"python\">park_greet()</code> is called. Which line does control flow move to next?\n<pre class=\"python line-numbering\" lang=\"python\">def extra_lot():\n&nbsp;&nbsp;# Function definition\n\ndef park_greet():\n&nbsp;&nbsp;\"\"\"Output greeting.\"\"\"\n&nbsp;&nbsp;print(\"Welcome. Open sunrise to sunset.\")\n\ncar_count = 1\npark_greet()\nif car_count &gt; 50:\n&nbsp;&nbsp;extra_lot()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Control flow does not continue to line 10 until after park_greet() is executed. Control flow moves to where park_greet() is defined",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "extra_lot() is defined at line 1, but park_greet() is called. So control flow moves to where park_greet() is defined.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "10",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Control flow moves to where <code class=\"python\" lang=\"python\">park_greet()</code> is defined, at line 4.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "be2bc8a1-f312-475d-aedd-788c0990f4de",
+  "detailedSolution": "Control flow moves to where <code class=\"python\" lang=\"python\">park_greet()</code> is defined, at line 4."
+}
