@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How many recursive calls are made with <code class=\"python\" lang=\"python\">gcd(13, 23)</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Either one of the parameters does not directly indicate how many calls may be needed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "8",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first call begins a recursion because a != b. How many more calls occur?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "13",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first call <code class=\"python\" lang=\"python\">gcd(13, 23)</code> results in <code class=\"python\" lang=\"python\">23 - 13 = 10</code>, so the next call is <code class=\"python\" lang=\"python\">gcd(13, 10)</code>. Thereafter, other calls are <code class=\"python\" lang=\"python\">gcd(10, 3)</code>, <code class=\"python\" lang=\"python\">gcd(7, 3)</code>, <code class=\"python\" lang=\"python\">gcd (4,3)</code>, <code class=\"python\" lang=\"python\">gcd(3,2)</code>, <code class=\"python\" lang=\"python\">gcd(2,1)</code>, and <code class=\"python\" lang=\"python\">gcd(1,1)</code> for a total of eight calls.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8e793fe2-0c10-47d2-aa39-a2b0ff1afb7c",
+  "detailedSolution": "The first call <code class=\"python\" lang=\"python\">gcd(13, 23)</code> results in <code class=\"python\" lang=\"python\">23 - 13 = 10</code>, so the next call is <code class=\"python\" lang=\"python\">gcd(13, 10)</code>. Thereafter, other calls are <code class=\"python\" lang=\"python\">gcd(10, 3)</code>, <code class=\"python\" lang=\"python\">gcd(7, 3)</code>, <code class=\"python\" lang=\"python\">gcd (4,3)</code>, <code class=\"python\" lang=\"python\">gcd(3,2)</code>, <code class=\"python\" lang=\"python\">gcd(2,1)</code>, and <code class=\"python\" lang=\"python\">gcd(1,1)</code> for a total of eight calls."
+}
