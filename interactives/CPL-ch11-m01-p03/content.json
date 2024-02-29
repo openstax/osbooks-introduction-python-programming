@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Consider the example above. Suppose the venue has to be changed due to inclement weather. How should a programmer change the website object to allow changes to the <code class=\"python\" lang=\"python\">Venue</code> field?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "Add a procedure to change the field.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Direct changes are discouraged, but a procedure can allow appropriate access.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Allow users direct access to the field.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Direct access to an object's field should be restricted. A procedure should be used to make changes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "No valid way to allow changes to the field.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "A procedure, such as <code class=\"python\" lang=\"python\">Change venue</code>, can make changes to the field and protect the field from inappropriate access.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "f9922e29-9ab1-429f-9046-11cdca19d4f5",
+  "detailedSolution": "A procedure, such as <code class=\"python\" lang=\"python\">Change venue</code>, can make changes to the field and protect the field from inappropriate access."
+}
