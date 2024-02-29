@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Suppose the line <code class=\"python\" lang=\"python\">order_1.cup_size = 8</code> is added before <code class=\"python\" lang=\"python\">order_3.print_order()</code>. What is the new output?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Cafe Coffee Order 3 : 8 oz</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "order_1 can change the value of instance attributes, but the change doesn't affect other instances' instance attributes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Cafe Coffee Order 3 : 16 oz</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The new line only changes order_1.cup_size and does not affect order_2 and order_3's instance attributes.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Changing <code class=\"python\" lang=\"python\">order_1.cup_size</code> does not affect <code class=\"python\" lang=\"python\">order_3.cup_size. order_1.cup_size</code> changes to <code class=\"python\" lang=\"python\">8</code> and <code class=\"python\" lang=\"python\">order_3.cup_size</code> is still <code class=\"python\" lang=\"python\">16</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "895fd9d5-1f75-4292-88e3-d5a72d17ebea",
+  "detailedSolution": "Changing <code class=\"python\" lang=\"python\">order_1.cup_size</code> does not affect <code class=\"python\" lang=\"python\">order_3.cup_size. order_1.cup_size</code> changes to <code class=\"python\" lang=\"python\">8</code> and <code class=\"python\" lang=\"python\">order_3.cup_size</code> is still <code class=\"python\" lang=\"python\">16</code>."
+}
