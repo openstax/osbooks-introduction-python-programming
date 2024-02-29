@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Fill in the blank to execute <code class=\"python\" lang=\"python\">Body 2</code> when <code class=\"python\" lang=\"python\">condition_1</code> is false and <code class=\"python\" lang=\"python\">condition_2</code> is true.\n<pre class=\"python\" lang=\"python\">if condition_1:\n&nbsp;&nbsp;# Body 1\n__ condition_2:\n&nbsp;&nbsp;# Body 2\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">if</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Using else here will produce an error. An else can't have a condition.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">elif</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Using if here allows Body 2 to execute regardless of condition_1 being True or False.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">else</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">elif</code> will evaluate <code class=\"python\" lang=\"python\">condition_2</code> if <code class=\"python\" lang=\"python\">condition_1</code> is <code class=\"python\" lang=\"python\">False</code> and execute <code class=\"python\" lang=\"python\">Body 2</code> if <code class=\"python\" lang=\"python\">condition_2</code> is <code class=\"python\" lang=\"python\">True</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "80321584-3b68-4556-a330-7480308a154b",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">elif</code> will evaluate <code class=\"python\" lang=\"python\">condition_2</code> if <code class=\"python\" lang=\"python\">condition_1</code> is <code class=\"python\" lang=\"python\">False</code> and execute <code class=\"python\" lang=\"python\">Body 2</code> if <code class=\"python\" lang=\"python\">condition_2</code> is <code class=\"python\" lang=\"python\">True</code>."
+}

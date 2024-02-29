@@ -1,0 +1,19 @@
+{
+  "errata_id": "d0b7065c52254e36d1b497ab8e4990ee0d1140e4ff8b66ba1e5980168de86d73",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:ed38c860-c4aa-430c-a340-b4cccf1df153",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:4-5-chained-decisions"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00032"
+  ]
+}
