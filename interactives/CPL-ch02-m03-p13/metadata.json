@@ -1,0 +1,19 @@
+{
+  "errata_id": "70b0da51ee970fb948066ef34d3afbb3a4e7766eeeac975f6fe159db268c631f",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:1d302bc8-f35e-44c8-a300-97b2f0e5bc0e",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:2-3-mixed-data-types"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00013"
+  ]
+}
