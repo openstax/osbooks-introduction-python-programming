@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output?\n<pre class=\"python\" lang=\"python\">n = 16\nexp = 0\ni = n\nwhile i &gt; 1:\n&nbsp;&nbsp;if n%2 == 0:\n&nbsp;&nbsp;&nbsp;&nbsp;i = i/2\n&nbsp;&nbsp;&nbsp;&nbsp;exp += 1\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;break\nelse:\n&nbsp;&nbsp;print(n,\"is 2 to the\", exp)</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">16 is 2 to the 3</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop executes with i = 16, 8, 4, and 2, and will never enter the <code class=\"python\" lang=\"python\">else</code> statement in the loop. Hence, the loop exits normally and the <code class=\"python\" lang=\"python\">else</code> statement after the loop will execute.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">16 is 2 to the 4</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">i</code> is initialized to 16 and the <code class=\"python\" lang=\"python\">while</code> loop executes with i = 16, 8, 4, and 2. What is variable <code class=\"python\" lang=\"python\">exp</code>'s value at the end of the loop's execution?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "no output",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The variable <code class=\"python\" lang=\"python\">i</code> is initialized to <code class=\"python\" lang=\"python\">16</code>, and the <code class=\"python\" lang=\"python\">while</code> loop executes with <code class=\"python\" lang=\"python\">i = 16</code>, <code class=\"python\" lang=\"python\">8</code>, <code class=\"python\" lang=\"python\">4</code>, and <code class=\"python\" lang=\"python\">2</code>. In each loop's iteration, the variable <code>exp</code>'s value is incremented by 1. Hence, at the end of the loop, <code class=\"python\" lang=\"python\">exp = 4</code>. Since the loop terminates without interruption, the <code class=\"python\" lang=\"python\">else</code> statement after the loop is executed and prints <code class=\"python\" lang=\"python\">16 is 2 to the 4</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "9b3194b3-357b-4184-92c9-a824275fc038",
+  "detailedSolution": "The variable <code class=\"python\" lang=\"python\">i</code> is initialized to <code class=\"python\" lang=\"python\">16</code>, and the <code class=\"python\" lang=\"python\">while</code> loop executes with <code class=\"python\" lang=\"python\">i = 16</code>, <code class=\"python\" lang=\"python\">8</code>, <code class=\"python\" lang=\"python\">4</code>, and <code class=\"python\" lang=\"python\">2</code>. In each loop's iteration, the variable <code>exp</code>'s value is incremented by 1. Hence, at the end of the loop, <code class=\"python\" lang=\"python\">exp = 4</code>. Since the loop terminates without interruption, the <code class=\"python\" lang=\"python\">else</code> statement after the loop is executed and prints <code class=\"python\" lang=\"python\">16 is 2 to the 4</code>."
+}
