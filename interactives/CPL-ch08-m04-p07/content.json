@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code?\n<pre class=\"python\" lang=\"python\">template = \"{name:12}\"\nformatted_name = template.format(name = \"Alice\")\nprint(len(formatted_name))\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">5</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">print()</code> function prints <code class=\"python\" lang=\"python\">len(formatted_name))</code> and not the variable's value.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">12</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The string template specifies the minimum length for the <code class=\"python\" lang=\"python\">name</code> field to be 12, hence, the length of the <code class=\"python\" lang=\"python\">formatted_name</code> variable is 12. What is the code's output?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">\"Alice\"</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The template specifies the minimum length for the <code class=\"python\" lang=\"python\">name</code> field to be 12, so  <code class=\"python\" lang=\"python\">len(formatted_name)</code> is <code class=\"python\" lang=\"python\">12</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8827b5c9-2eef-416d-b855-f84b264fa81e",
+  "detailedSolution": "The template specifies the minimum length for the <code class=\"python\" lang=\"python\">name</code> field to be 12, so  <code class=\"python\" lang=\"python\">len(formatted_name)</code> is <code class=\"python\" lang=\"python\">12</code>."
+}
