@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<pre class=\"python\" lang=\"python\">def rec_fact(n):\n&nbsp;&nbsp;if n &lt; 0:\n&nbsp;&nbsp;&nbsp;&nbsp;return -1\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;return n * rec_fact(n - 1)</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">355687428096000</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The correct base case is not included in the function, however there is a different value of n at which the recursion begins returning.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The correct base case to stop the function if a positive number is the initial parameter value is not included so the function continues to execute until n == -1, at which case -1 is returned. 0 would have been returned from the previous call, thereby zeroing out all computations.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "no result / infinite computation",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The base case of <code class=\"python\" lang=\"python\">n == 1</code> is not used in the function. When <code class=\"python\" lang=\"python\">n</code> is <code class=\"python\" lang=\"python\">0</code>, the overall multiplication becomes <code class=\"python\" lang=\"python\">0</code>. The recursion begins returning once the <code class=\"python\" lang=\"python\">n &lt; 0</code> base case is reached, initially returning <code class=\"python\" lang=\"python\">-1</code>. But the previous recursive call would return <code class=\"python\" lang=\"python\">0</code>, thereby zeroing out all computations and leaving an overall result of <code class=\"python\" lang=\"python\">0</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "bfdcb593-0706-40d7-8a14-e84b9aeed366",
+  "detailedSolution": "The base case of <code class=\"python\" lang=\"python\">n == 1</code> is not used in the function. When <code class=\"python\" lang=\"python\">n</code> is <code class=\"python\" lang=\"python\">0</code>, the overall multiplication becomes <code class=\"python\" lang=\"python\">0</code>. The recursion begins returning once the <code class=\"python\" lang=\"python\">n &lt; 0</code> base case is reached, initially returning <code class=\"python\" lang=\"python\">-1</code>. But the previous recursive call would return <code class=\"python\" lang=\"python\">0</code>, thereby zeroing out all computations and leaving an overall result of <code class=\"python\" lang=\"python\">0</code>."
+}
