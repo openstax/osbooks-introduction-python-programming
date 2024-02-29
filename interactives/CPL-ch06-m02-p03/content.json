@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Control flow moves to line 12, and <code class=\"python\" lang=\"python\">extra_lot()</code> is called. Which line does control flow move to after line 3 is executed?\n<pre class=\"python line-numbering\" lang=\"python\">def extra_lot():\n&nbsp;&nbsp;\"\"\"Output extra parking lot info.\"\"\"\n&nbsp;&nbsp;print(\"Take the second right to park.\")\n\ndef park_greet():\n&nbsp;&nbsp;\"\"\"Output greeting.\"\"\"\n&nbsp;&nbsp;print(\"Welcome. Open sunrise to sunset.\")\n\ncar_count = 1\npark_greet()\nif car_count &gt; 50:\n&nbsp;&nbsp;extra_lot()\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "5",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "After extra_lot() has been executed, control flow moves back to where the function was called, not the start of the program.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "8",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "After line 3 is executed, control flow does not continue to the next line because extra_lot() has completed. Control flow returns to the line that called extra_lot().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "12",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Control flow returns to the line that called the function. Line 12 contains the function call to <code class=\"python\" lang=\"python\">extra_lot()</code>, so control flow returns to line 12.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "022103e7-ac42-4b60-9e1a-5c6d7cc090dc",
+  "detailedSolution": "Control flow returns to the line that called the function. Line 12 contains the function call to <code class=\"python\" lang=\"python\">extra_lot()</code>, so control flow returns to line 12."
+}
