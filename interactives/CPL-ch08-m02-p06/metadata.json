@@ -1,0 +1,19 @@
+{
+  "errata_id": "6cfc50e764b67a71357d930866b609467d308a309bcb67e3f447e74a116be8b8",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:b543b4c4-3a7a-46e9-b00c-d7d1b3d57d6b",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:8-2-string-slicing"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00060"
+  ]
+}
