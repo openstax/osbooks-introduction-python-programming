@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which of the following best describes the objects assigned?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "two float objects",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The program assigns only two objects, as shown in the memory diagram.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "two int objects, one float object",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The object 10, assigned to rating and score, is an int, not a float.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "one int object, one float object",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The program assigns the int object <code class=\"python\" lang=\"python\">10</code> and the float object <code class=\"python\" lang=\"python\">9.7</code>, as shown in the memory diagram.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "243a2cb8-1911-49de-aaa6-dfaaba2ebf2c",
+  "detailedSolution": "The program assigns the int object <code class=\"python\" lang=\"python\">10</code> and the float object <code class=\"python\" lang=\"python\">9.7</code>, as shown in the memory diagram."
+}
