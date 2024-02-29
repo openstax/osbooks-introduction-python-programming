@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the first stage of any data science life cycle?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "data visualization",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Data cleanup is part of the data exploration stage which is the second stage of the life-cycle.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "data cleanup",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Data visualization is part of the data exploration stage which is the second stage of the life-cycle. Data visualization can also be used in the final stage of the project for reporting insights.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "data acquisition",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Data acquisition is the first stage of the data science life cycle. Data can be collected by the data scientist or gathered previously and provided to the data scientist.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "106e7b02-60f4-4b2f-b9f3-959af3612b9e",
+  "detailedSolution": "Data acquisition is the first stage of the data science life cycle. Data can be collected by the data scientist or gathered previously and provided to the data scientist."
+}

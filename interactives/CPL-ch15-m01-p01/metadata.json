@@ -1,0 +1,19 @@
+{
+  "errata_id": "f743ff2550755b35a2e4f19bd130873c4c213152eb267f410d1244f4b04dfc8a",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:65da2c04-f409-4086-8c13-38f0dd0cc903",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:15-1-introduction-to-data-science"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00109"
+  ]
+}
