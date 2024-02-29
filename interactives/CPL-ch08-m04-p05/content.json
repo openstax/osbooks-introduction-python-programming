@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of <code class=\"python\" lang=\"python\">print(\"Hey {name}!\".format(\"Bengio\"))</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Hey name!</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The string value <code class=\"python\" lang=\"python\">\"Bengio\"</code> is passed to the <code class=\"python\" lang=\"python\">format()</code> function without the name key. Python will not be able to locate the string value corresponding to the key <code class=\"python\" lang=\"python\">'name'</code> and results in an error.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">KeyError</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">name</code> replacement field must be replaced with the value passed to the format function. The <code class=\"python\" lang=\"python\">name</code> is not a string literal but is the key identifier for the named replacement field.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Hey Bengio!</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Since the string template uses a named argument, inputs are only accepted through the corresponding keys. Hence, the code generates <code class=\"python\" lang=\"python\">KeyError: 'name'</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "1c66425c-8445-4f29-8732-2b8aaed8c99f",
+  "detailedSolution": "Since the string template uses a named argument, inputs are only accepted through the corresponding keys. Hence, the code generates <code class=\"python\" lang=\"python\">KeyError: 'name'</code>."
+}
