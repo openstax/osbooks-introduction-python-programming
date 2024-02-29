@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which escape sequence prints a backslash (\\) to the screen?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "\\\\",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The backslash (\\) that indicates an escape sequence must be within the enclosing quotes of the string.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "\\\"\\\"",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "An escape sequence must be enclosed with single (') or double (\") quotes like any string.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "\"\\\\\"",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<span class=\"red-code\">Both backslashes (\\) are within the enclosed quotes, so this is a valid string. The first backslash (\\) identifies this as an escape sequence, and the second indicates that the action is to print a backslash (\\)</span>. Note that '\\\\' will also print a backslash (\\) to the screen.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8d557478-6c83-4f50-8898-37db6bec820a",
+  "detailedSolution": "<span class=\"red-code\">Both backslashes (\\) are within the enclosed quotes, so this is a valid string. The first backslash (\\) identifies this as an escape sequence, and the second indicates that the action is to print a backslash (\\)</span>. Note that '\\\\' will also print a backslash (\\) to the screen."
+}
