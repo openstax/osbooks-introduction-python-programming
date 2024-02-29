@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code?\n<pre class=\"python\" lang=\"python\">count = 0\nfor c in \"abca\":\n&nbsp;&nbsp;if c == \"a\":\n&nbsp;&nbsp;&nbsp;&nbsp;count += 1\nprint(count)</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The count variable increases each time character \"a\" is observed. How many \"a\"'s exist in \"abca\"?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">1</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The count's initial value is 0. But, the loop increments count's value by 1 each time that \"a\" is observed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">2</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The given code iterates over characters in string <code class=\"python\" lang=\"python\">\"abca\"</code>, and each time character <code class=\"python\" lang=\"python\">\"a\"</code> is observed, a counter variable is increased by 1. Since <code class=\"python\" lang=\"python\">\"a\"</code> appears twice in <code class=\"python\" lang=\"python\">\"abca\"</code>, the output will be <code class=\"python\" lang=\"python\">2</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "43f0327e-f39b-435b-81cf-aa7927fa4747",
+  "detailedSolution": "The given code iterates over characters in string <code class=\"python\" lang=\"python\">\"abca\"</code>, and each time character <code class=\"python\" lang=\"python\">\"a\"</code> is observed, a counter variable is increased by 1. Since <code class=\"python\" lang=\"python\">\"a\"</code> appears twice in <code class=\"python\" lang=\"python\">\"abca\"</code>, the output will be <code class=\"python\" lang=\"python\">2</code>."
+}
