@@ -1,0 +1,20 @@
+{
+  "errata_id": "2f518ca1b3691dd0fd8d775e44ca25fce16e05f03ed6a2bd3cd0c2f0893c4554",
+  "attachments": [],
+  "tags": [
+    "type:practice",
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:c5106a78-d261-4abb-977c-bb6736c698bd",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:12-3-recursion-with-strings-and-lists"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00090"
+  ]
+}
