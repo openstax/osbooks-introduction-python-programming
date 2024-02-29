@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "If the points were changed from floats to integers, how many statements would need to be changed in the original and revised programs respectively?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "3, 1",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The original program repeats four input statements for a total of 12 statements to read in pairs of points. The revised program has four input statements that are reused with function calls.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "4, 4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The original code reads in three pairs of points, and each point has an x and y coordinate. So 3*4 changes would be needed. The revised has code reads in each pair in a loop, so only 2*2 changes would be needed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "12, 4",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Each calculation uses four statements to read in the x,y values of a pair of points. The original program performs three calculations by repeating code for a total of 12 input statements. The revised program performs three calculations by executing the four input statements multiple times with function calls.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e9d3407a-8f80-4734-aff8-d8b3dd634715",
+  "detailedSolution": "Each calculation uses four statements to read in the x,y values of a pair of points. The original program performs three calculations by repeating code for a total of 12 input statements. The revised program performs three calculations by executing the four input statements multiple times with function calls."
+}
