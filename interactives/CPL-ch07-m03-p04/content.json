@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output when <b>running</b> the following <i>test.py</i> module?\n<pre class=\"python\" lang=\"python\">import math\n\nprint(math.__name__)\nprint(__name__)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<pre class=\"python\" lang=\"python\">&gt;math\ntest\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The test module was run, so the <code class=\"python\" lang=\"python\">__name__</code> of math is <code class=\"python\" lang=\"python\">\"math\"</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">__main__\ntest\n</pre>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The test module was run, so the <code class=\"python\" lang=\"python\">__name__</code> of test is <code class=\"python\" lang=\"python\">\"__main__\"</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<pre class=\"python\" lang=\"python\">math\n__main__\n</pre>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The variable <code class=\"python\" lang=\"python\">__name__</code> is the module's name, unless the module was\nrun as the main program. In that case, <code class=\"python\" lang=\"python\">__name__</code> is <code class=\"python\" lang=\"python\">\"__main__\"</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "a825eab2-35e3-436f-871d-a9fe4728e319",
+  "detailedSolution": "The variable <code class=\"python\" lang=\"python\">__name__</code> is the module's name, unless the module was\nrun as the main program. In that case, <code class=\"python\" lang=\"python\">__name__</code> is <code class=\"python\" lang=\"python\">\"__main__\"</code>."
+}
