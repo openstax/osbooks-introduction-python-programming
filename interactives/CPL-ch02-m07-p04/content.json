@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which expression is formatted properly?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">b**2 - 4*a*c</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The spacing of <code class=\"python\" lang=\"python\">4*a * c</code> is inconsistent. Both of the <code class=\"python\" lang=\"python\">*</code> operators should have the same spacing. Furthermore, <code class=\"python\" lang=\"python\">-</code> and <code class=\"python\" lang=\"python\">*</code> should have different spacing.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">b ** 2 - 4 * a * c</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The spacing looks consistent, but the order of operations is difficult to read. PEP 8 recommends removing spaces around operators with higher precedence.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">b**2 - 4*a * c</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The expressions <code class=\"python\" lang=\"python\">b**2</code> and <code class=\"python\" lang=\"python\">4*a*c</code> are evaluated first. Adding space around the <code>-</code> operator makes the order of operations more readable.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5ddd0eb5-d060-47ed-9d17-9c80047b5355",
+  "detailedSolution": "The expressions <code class=\"python\" lang=\"python\">b**2</code> and <code class=\"python\" lang=\"python\">4*a*c</code> are evaluated first. Adding space around the <code>-</code> operator makes the order of operations more readable."
+}
