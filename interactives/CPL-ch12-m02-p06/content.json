@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<pre class=\"python\" lang=\"python\">def rec_fact(n):\n&nbsp;&nbsp;if n &lt; 0:\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"error\")\n&nbsp;&nbsp;elif n == 0:\n&nbsp;&nbsp;&nbsp;&nbsp;return n\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;return n * rec_fact(n - 1)</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">355687428096000</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The base case of n == 1 is not used in the function, however a different base case is used.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "17! is 355687428096000. The recursive function as written will not return the correct result.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "no result / infinite computation",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "This definition of <code class=\"python\" lang=\"python\">rec_fact()</code> uses a base case of <code class=\"python\" lang=\"python\">n == 0</code>, which works because, just like <code class=\"python\" lang=\"python\">1!</code>, <code class=\"python\" lang=\"python\">0! = 1</code>. However, the base case of <code class=\"python\" lang=\"python\">n == 0</code> returns <code class=\"python\" lang=\"python\">n</code>, which at this stage is <code class=\"python\" lang=\"python\">0</code>, and therefore zeroes out the rest of the computation.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "18c850a5-9493-4a44-a571-6b2a15000e3e",
+  "detailedSolution": "This definition of <code class=\"python\" lang=\"python\">rec_fact()</code> uses a base case of <code class=\"python\" lang=\"python\">n == 0</code>, which works because, just like <code class=\"python\" lang=\"python\">1!</code>, <code class=\"python\" lang=\"python\">0! = 1</code>. However, the base case of <code class=\"python\" lang=\"python\">n == 0</code> returns <code class=\"python\" lang=\"python\">n</code>, which at this stage is <code class=\"python\" lang=\"python\">0</code>, and therefore zeroes out the rest of the computation."
+}
