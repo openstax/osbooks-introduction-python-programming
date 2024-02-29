@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which line will cause an error?\n<pre class=\"python line-numbering\" lang=\"python\">def hello():\n&nbsp;&nbsp;print(\"Hello!\")\n\ndef hello(name):\n&nbsp;&nbsp;print(\"Hello,\", name)\n\nhello()\nhello(\"Chris\")\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "line 4",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The most recent definition of hello() requires one argument,\nso this line would not cause an error.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "line 7",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Redefining a function does not cause an error.\nThe hello() function now requires a name argument.\n",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "line 8",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The most recent definition of <code class=\"python\" lang=\"python\">hello()</code> requires one argument,\nso this line would result in an error.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "9cdf52c6-e84a-4a55-b54b-6c06c9ecdcbe",
+  "detailedSolution": "The most recent definition of <code class=\"python\" lang=\"python\">hello()</code> requires one argument,\nso this line would result in an error."
+}
