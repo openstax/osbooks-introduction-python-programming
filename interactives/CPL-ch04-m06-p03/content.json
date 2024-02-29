@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given <code class=\"python\" lang=\"python\">x = 256</code>, <code class=\"python\" lang=\"python\">y = 513</code>, and <code class=\"python\" lang=\"python\">max = 512</code>, which of the following will execute?\n<pre class=\"python\" lang=\"python\">if x == y:\n&nbsp;&nbsp;# Body 1\nelif x &lt; y:\n&nbsp;&nbsp;# Body 2\n&nbsp;&nbsp;if y &gt;= max:\n&nbsp;&nbsp;&nbsp;&nbsp;# Body 3\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;# Body 4\nelse:\n&nbsp;&nbsp;# Body 5\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Body 2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The elif branch is taken, so the else branch, containing Body 5, is not taken.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Body 2</code>, <code class=\"python\" lang=\"python\">Body 3</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "256 == 513 is False and 256 &lt; 513 is True, so the elif branch is taken. 513 >= 512 is True too.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Body 2</code>, <code class=\"python\" lang=\"python\">Body 5</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">256 == 513</code> is <code class=\"python\" lang=\"python\">False</code>, and <code class=\"python\" lang=\"python\">256 &lt; 513</code> is <code class=\"python\" lang=\"python\">True</code>, so the <code class=\"python\" lang=\"python\">elif</code> branch is taken and <code class=\"python\" lang=\"python\">Body 2</code> executes. <code class=\"python\" lang=\"python\">513 >= 512</code> is <code class=\"python\" lang=\"python\">True</code>, so <code class=\"python\" lang=\"python\">Body 3</code> executes.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "95ed09ef-28ab-495f-8115-da6001c34958",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">256 == 513</code> is <code class=\"python\" lang=\"python\">False</code>, and <code class=\"python\" lang=\"python\">256 &lt; 513</code> is <code class=\"python\" lang=\"python\">True</code>, so the <code class=\"python\" lang=\"python\">elif</code> branch is taken and <code class=\"python\" lang=\"python\">Body 2</code> executes. <code class=\"python\" lang=\"python\">513 &gt;= 512</code> is <code class=\"python\" lang=\"python\">True</code>, so <code class=\"python\" lang=\"python\">Body 3</code> executes."
+}
