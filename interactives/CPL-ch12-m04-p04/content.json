@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the GCD of 15 and 35?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "15",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The first recursive call reduces 35 to 20 because 35 - 15 = 20. What happens after subsequent recursive calls?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "20",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "15 is the smaller of the numbers but not the GCD.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "5",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">5 * 3 = 15</code> and <code class=\"python\" lang=\"python\">5 * 7 = 35</code>, so <code class=\"python\" lang=\"python\">5</code> is a the greatest common divisor of <code class=\"python\" lang=\"python\">15</code> and <code class=\"python\" lang=\"python\">35</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8b1e7f6f-50ac-441b-b496-2262f7058ea6",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">5 * 3 = 15</code> and <code class=\"python\" lang=\"python\">5 * 7 = 35</code>, so <code class=\"python\" lang=\"python\">5</code> is a the greatest common divisor of <code class=\"python\" lang=\"python\">15</code> and <code class=\"python\" lang=\"python\">35</code>."
+}
