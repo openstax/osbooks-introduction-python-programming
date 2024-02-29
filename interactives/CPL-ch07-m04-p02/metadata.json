@@ -1,0 +1,19 @@
+{
+  "errata_id": "1ecf6ed9c078bee9800cb60741e5dfa6cc9ae47bf080203604c33f872654f089",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:6040713f-46fb-47ec-a918-f3d1187d15d9",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:7-4-the-help-function"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00055"
+  ]
+}
