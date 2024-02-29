@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output?\n<pre class=\"python\" lang=\"python\">def update_hour():\n&nbsp;&nbsp;tmp = hour\n&nbsp;&nbsp;if is_dst:\n&nbsp;&nbsp;&nbsp;&nbsp;tmp += 1\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;tmp -= 1\n\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", hour)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">New hour: 9</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "tmp is a local variable in update_hour(). hour is a global variable. Neither variable is accessed out of scope.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">New hour: 10</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The global variable hour is in the print statement but not edited in update_hour().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The global variable hour is not edited in <code class=\"python\" lang=\"python\">update_hour()</code>. <code class=\"python\" lang=\"python\">tmp</code> is the local variable edited. <code class=\"python\" lang=\"python\">tmp</code> is discarded after <code class=\"python\" lang=\"python\">update_hour()</code> finishes.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "56a28882-6f63-4e8b-b135-dcb736f00d26",
+  "detailedSolution": "The global variable hour is not edited in <code class=\"python\" lang=\"python\">update_hour()</code>. <code class=\"python\" lang=\"python\">tmp</code> is the local variable edited. <code class=\"python\" lang=\"python\">tmp</code> is discarded after <code class=\"python\" lang=\"python\">update_hour()</code> finishes."
+}
