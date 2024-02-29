@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code?\n<pre class=\"python\" lang=\"python\">template = \"{greeting:&gt;6}\"\nformatted_greeting = template.format(greeting = \"Hello\")\nprint(formatted_greeting[0])\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">H</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">print()</code> function prints the first character of the <code class=\"python\" lang=\"python\">formatted_greeting</code> variable and not the variable.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">\" Hello\"</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The alignment and length specification creates a right-aligned string of length 6. What is the value of <code class=\"python\" lang=\"python\">formatted_greeting</code> variable?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "Space character",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The alignment and the field length specifications format the <code class=\"python\" lang=\"python\">greeting</code> field to be six characters in length and right-aligned. Therefore, the variable <code class=\"python\" lang=\"python\">formatted_greeting</code> will take value <code class=\"python\" lang=\"python\">\" Hello\"</code>, and character 0 of the string is a space character.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "46a06600-54cb-471f-aff7-b6ec1b55c0b1",
+  "detailedSolution": "The alignment and the field length specifications format the <code class=\"python\" lang=\"python\">greeting</code> field to be six characters in length and right-aligned. Therefore, the variable <code class=\"python\" lang=\"python\">formatted_greeting</code> will take value <code class=\"python\" lang=\"python\">\" Hello\"</code>, and character 0 of the string is a space character."
+}
