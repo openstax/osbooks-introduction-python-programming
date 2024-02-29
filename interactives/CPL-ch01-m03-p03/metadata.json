@@ -1,0 +1,19 @@
+{
+  "errata_id": "fec5002b35d0b84da5cb7f0ece14ed46fc61ae877c449e92b2f83da53e687e0e",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:b420edbd-6d6c-4928-a0f0-9b7c99c3a542",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:1-3-variables"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00004"
+  ]
+}
