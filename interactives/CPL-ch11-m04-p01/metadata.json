@@ -1,0 +1,19 @@
+{
+  "errata_id": "171012c9a16ba9158fb7346114456e749ff67ae83747af444ea7f5bc7c6c5ebe",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:63ac6d28-80f6-4159-90c7-fbcb4c4b0583",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:11-4-overloading-operators"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00084"
+  ]
+}
