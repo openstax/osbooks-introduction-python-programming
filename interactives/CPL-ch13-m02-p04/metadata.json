@@ -1,0 +1,19 @@
+{
+  "errata_id": "3bfd3f42dcbe7c6c8eb0ffdb9dd9cb30a7f7646a015ab5762871922f71fc27d2",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:1a772c61-afd3-4c25-b0b7-b7d62f120b8b",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:13-2-attribute-access"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00096"
+  ]
+}
