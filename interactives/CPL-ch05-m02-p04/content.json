@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What are the arguments to the <code class=\"python\" lang=\"python\">range()</code> function for the increasing sequence of every 3rd integer from 10 to 22 (inclusive of both ends)?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">range(10, 23, 3)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When the step size is negative, the generated sequence will be decreasing. The question asks for an increasing sequence between 10 and 22.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">range(10, 22, 3)</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">range(start, end, step)</code> is inclusive of start and exclusive of end. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">range(22, 10, -3)</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The output will be an increasing sequence between <code class=\"python\" lang=\"python\">10</code> and <code class=\"python\" lang=\"python\">22</code> (inclusive of both): <code class=\"python\" lang=\"python\">10</code>, <code class=\"python\" lang=\"python\">13</code>, <code class=\"python\" lang=\"python\">16</code>, <code class=\"python\" lang=\"python\">19</code>, and <code class=\"python\" lang=\"python\">22</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "43b1cdd8-f0a3-425d-82e3-5b8a23027006",
+  "detailedSolution": "The output will be an increasing sequence between <code class=\"python\" lang=\"python\">10</code> and <code class=\"python\" lang=\"python\">22</code> (inclusive of both): <code class=\"python\" lang=\"python\">10</code>, <code class=\"python\" lang=\"python\">13</code>, <code class=\"python\" lang=\"python\">16</code>, <code class=\"python\" lang=\"python\">19</code>, and <code class=\"python\" lang=\"python\">22</code>."
+}
