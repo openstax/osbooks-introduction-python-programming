@@ -1,0 +1,19 @@
+{
+  "errata_id": "6511cce89df7760d2d535bed5cf4b902f8bbb8e332230643c1cf6282c348c68e",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:95fe65ca-6bcd-4fe7-ba49-cbbf8c9acc52",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:9-3-common-list-operations"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00069"
+  ]
+}

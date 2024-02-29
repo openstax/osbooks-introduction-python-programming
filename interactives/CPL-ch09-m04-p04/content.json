@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code?\n<pre class=\"python\" lang=\"python\">my_list = [1, 2, 3]\nlist2 = my_list\nlist2[0] = 13\nprint(sum(my_list))</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">6</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">list2</code> refers to the same list as <code class=\"python\" lang=\"python\">my_list</code> so any changes made to list2 also reflect on <code class=\"python\" lang=\"python\">my_list</code>. But 13 is the maximum value in the list.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">13</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The initial summation of <code class=\"python\" lang=\"python\">my_list</code> is 6. Have any values in the list changed?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">18</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">list2</code> refers to the same list as <code class=\"python\" lang=\"python\">my_list</code>, so any changes made to <code class=\"python\" lang=\"python\">list2</code> also reflect on <code class=\"python\" lang=\"python\">my_list</code>. 18 is the summation of the values in the list.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5d21200b-7082-4278-b36c-0cfe7589abd3",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">list2</code> refers to the same list as <code class=\"python\" lang=\"python\">my_list</code>, so any changes made to <code class=\"python\" lang=\"python\">list2</code> also reflect on <code class=\"python\" lang=\"python\">my_list</code>. 18 is the summation of the values in the list."
+}
