@@ -1,0 +1,19 @@
+{
+  "errata_id": "8851c67618c28364b27855046968312b5009a962dbfeccb9415c4c402c753502",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:f237378c-74f5-4502-b6c2-2ba1e7f421ed",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:7-5-finding-modules"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00056"
+  ]
+}
