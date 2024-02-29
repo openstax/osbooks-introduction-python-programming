@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given <code class=\"python\" lang=\"python\">hour = 12</code>, what is printed?\n<pre class=\"python\" lang=\"python\">if hour &lt; 8:\n&nbsp;&nbsp;print(\"Too early\")\nelif hour &lt; 12:\n&nbsp;&nbsp;print(\"Good morning\")\nelif hour &lt; 13:\n&nbsp;&nbsp;print(\"Lunchtime\")\nelif hour &lt; 17:\n&nbsp;&nbsp;print(\"Good afternoon\")\nelse:\n&nbsp;&nbsp;print(\"Too late\")\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Good morning</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Another condition is true and executes before the else. 12 &lt; 8 is False, 12 &lt; 12 is False, and 12 &lt; 13 is ...?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Lunchtime</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Another condition is true and executes before elif hour &lt; 17. 12 &lt; 8 is False, 12 &lt; 12 is False, and 12 &lt; 13 is ...?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Good afternoon</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "12 &lt; 8 is False and 12 &lt; 12 is False. 12 &lt; 13 is True, so what is printed?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Too late</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The third branch executes if <code class=\"python\" lang=\"python\">hour &lt; 8 and hour &lt; 12</code> is <code class=\"python\" lang=\"python\">False</code> and <code class=\"python\" lang=\"python\">hour &lt; 13</code> is <code class=\"python\" lang=\"python\">True</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e19d98b9-4045-47fe-a2ad-7b92756324c9",
+  "detailedSolution": "The third branch executes if <code class=\"python\" lang=\"python\">hour &lt; 8 and hour &lt; 12</code> is <code class=\"python\" lang=\"python\">False</code> and <code class=\"python\" lang=\"python\">hour &lt; 13</code> is <code class=\"python\" lang=\"python\">True</code>."
+}
