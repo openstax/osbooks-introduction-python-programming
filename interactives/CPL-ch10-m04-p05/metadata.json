@@ -1,0 +1,19 @@
+{
+  "errata_id": "5cefbbba6532c5607af4174bc7ae52bb64a1d0fdba178ef7eb27638051f9d885",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:b3025492-7435-4640-a01f-cc27e9483575",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:10-4-conditionals-and-looping-in-dictionaries"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00077"
+  ]
+}

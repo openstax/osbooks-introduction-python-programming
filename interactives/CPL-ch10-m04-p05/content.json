@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code?\n<pre class=\"python\" lang=\"python\">fruit_count = {\"apple\": 2, \"orange\": 5, \"banana\": 1}\nfor key in fruit_count.keys():\n&nbsp;&nbsp;print(key, end = \" \")</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">apple orange banana </code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop iterates over only the keys and prints keys in one line. What is the output of the code if keys are being printed?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">2 5 1</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop iterates over only the keys, and not values. What is the output of the code if keys are being printed?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">(\"apple\", 2) (\"orange\", 5) (\"banana\", 1)</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The loop iterates over the keys <code class=\"python\" lang=\"python\">\"apple\"</code>, <code class=\"python\" lang=\"python\">\"orange\"</code>, and <code class=\"python\" lang=\"python\">\"banana\"</code>, and prints the keys space-separated.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "638e0741-9b1c-4859-96b0-a5473ea268ad",
+  "detailedSolution": "The loop iterates over the keys <code class=\"python\" lang=\"python\">\"apple\"</code>, <code class=\"python\" lang=\"python\">\"orange\"</code>, and <code class=\"python\" lang=\"python\">\"banana\"</code>, and prints the keys space-separated."
+}
