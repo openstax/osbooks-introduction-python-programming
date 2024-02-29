@@ -1,0 +1,73 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given <code class=\"python\" lang=\"python\">a = 9</code> and <code class=\"python\" lang=\"python\">b = 10</code>, does the test pass?\n<pre class=\"python\" lang=\"python\">if (a%2 == 0 and b%2 == 1) or (a%2 == 1 and b%2 == 0):\n&nbsp;&nbsp;# Test passed\nelse:\n&nbsp;&nbsp;# Test failed\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "yes",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "(9%2==0 and 10%2 ==1) evaluates to (False and False), which is (False). (9%2 == 1 and 10%2 == 0) evaluates to (True and True), which is (True). (False) or (True) is True. The if statement checks if the numbers form an even-odd or odd-even pair.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "no",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">(9%2==0 and 10%2 ==1)</code> evaluates to <code class=\"python\" lang=\"python\">(False and False)</code>, which is <code class=\"python\" lang=\"python\">False</code>. <code class=\"python\" lang=\"python\">(9%2 == 1 and 10%2 == 0)</code> evaluates to <code class=\"python\" lang=\"python\">(True and True)</code>, which is <code class=\"python\" lang=\"python\">True</code>. <code class=\"python\" lang=\"python\">False or True</code> is <code class=\"python\" lang=\"python\">True</code>. The <code class=\"python\" lang=\"python\">if</code> statement checks whether the numbers form an even-odd or odd-even pair.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "60ba038b-e599-4958-a200-904f70954e62",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">(9%2==0 and 10%2 ==1)</code> evaluates to <code class=\"python\" lang=\"python\">(False and False)</code>, which is <code class=\"python\" lang=\"python\">False</code>. <code class=\"python\" lang=\"python\">(9%2 == 1 and 10%2 == 0)</code> evaluates to <code class=\"python\" lang=\"python\">(True and True)</code>, which is <code class=\"python\" lang=\"python\">True</code>. <code class=\"python\" lang=\"python\">False or True</code> is <code class=\"python\" lang=\"python\">True</code>. The <code class=\"python\" lang=\"python\">if</code> statement checks whether the numbers form an even-odd or odd-even pair."
+}
