@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output?<br>\n<pre class=\"python\" lang=\"python\">def update_hour():\n&nbsp;&nbsp;new_hour = hour\n&nbsp;&nbsp;if is_dst:\n&nbsp;&nbsp;&nbsp;&nbsp;new_hour += 1\n&nbsp;&nbsp;else:\n&nbsp;&nbsp;&nbsp;&nbsp;new_hour -= 1\n\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", new_hour)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">New hour: 9</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "new_hour has the value of 10 in update_hour(), but the value is discarded after update_hour() finishes. new_hour is out of scope in the print statement.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">New hour: 10</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "hour has the value 9 but is not being printed. new_hour has the value 10 but is out of scope in the print statement.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">new_hour</code> is a local variable that the print statement tries to access after <code class=\"python\" lang=\"python\">update_hour()</code> finishes. <code class=\"python\" lang=\"python\">new_hour</code> is out of scope, so an error is produced.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "f0fe5dd9-f107-4af1-8fbf-9a35c2fdbc3c",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">new_hour</code> is a local variable that the print statement tries to access after <code class=\"python\" lang=\"python\">update_hour()</code> finishes. <code class=\"python\" lang=\"python\">new_hour</code> is out of scope, so an error is produced."
+}
