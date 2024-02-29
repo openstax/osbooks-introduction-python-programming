@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the return value for <code class=\"python\" lang=\"python\">len(\"Hi Ali\")</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">len()</code> function counts and returns the total number of characters in a string. All characters (including delimiters such as \",\" or \" \") must be counted when calculating the length of the string.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">5</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">len()</code> function returns the total number of characters in a string. Whitespace characters do not split the string into multiple parts.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">6</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">len()</code> function returns the number of characters in the string. 6 characters exist in <code>\"Hi Ali\"</code> which are \"H\", \"i\", \" \", \"A\", \"l\", and \"i\".",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e52b296b-2f18-4187-8a6d-21399a080bd0",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">len()</code> function returns the number of characters in the string. 6 characters exist in <code class=\"python\" lang=\"python\">\"Hi Ali\"</code> which are \"H\", \"i\", \" \", \"A\", \"l\", and \"i\"."
+}
