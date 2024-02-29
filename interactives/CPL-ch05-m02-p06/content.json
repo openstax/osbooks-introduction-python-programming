@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the sequence generated from <code class=\"python\" lang=\"python\">range(-1, -2, -1)</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">1</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">range()</code> function generates a sequence beginning from the starting integer, -1, and until the end of the sequence, -2. Hence, the output must include -1 and cannot include -2.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">-1, -2</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">range()</code> function is inclusive of the start,-1, and exclusive of the end, -2. Hence, the output cannot include -2.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">-2</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">range()</code> function generates a descending sequence, beginning from <code class=\"python\" lang=\"python\">-1</code> until <code class=\"python\" lang=\"python\">-2</code>. Hence, the output is <code class=\"python\" lang=\"python\">-1</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "f3475a63-55e7-4ae8-a860-93147aa0b153",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">range()</code> function generates a descending sequence, beginning from <code class=\"python\" lang=\"python\">-1</code> until <code class=\"python\" lang=\"python\">-2</code>. Hence, the output is <code class=\"python\" lang=\"python\">-1</code>."
+}

@@ -1,0 +1,19 @@
+{
+  "errata_id": "e75ade491999bb7575f6c90ff960af43731d2fb78767f58c8d5d85e200099e91",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:1509d237-74a8-492e-b622-57153373b516",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:5-2-for-loop"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00038"
+  ]
+}
