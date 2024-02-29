@@ -1,0 +1,19 @@
+{
+  "errata_id": "be7123fa2e12fc0f45d8f1459fd478ab1373ec2783157353177509fcf9651a01",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:c06f4427-5353-4333-abbb-4b327f2a1ec8",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:14-2-writing-to-files"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00103"
+  ]
+}
