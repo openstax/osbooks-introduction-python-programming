@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the output of the following code?\n<pre class=\"python\" lang=\"python\">my_list = [1, 2, 3]\nlist2 = my_list.copy()\nlist2[0] = 13\nprint(max(my_list))</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">3</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "18 is the summation of the items in <code class=\"python\" lang=\"python\">list2</code> not the maximum.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">13</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">list2</code> is initially a copy of <code class=\"python\" lang=\"python\">my_list</code>. The first element of <code class=\"python\" lang=\"python\">list2</code> is changed to 13, which is also the maximum of <code class=\"python\" lang=\"python\">list2</code>. However, <code class=\"python\" lang=\"python\">my_list</code> remains unchanged.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">18</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "3 is the maximum value in the list <code class=\"python\" lang=\"python\">my_list</code>. Line 3 changes the value of the first element in <code class=\"python\" lang=\"python\">list2</code>.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8e5f949d-0355-4378-b8b0-28784638b666",
+  "detailedSolution": "3 is the maximum value in the list <code class=\"python\" lang=\"python\">my_list</code>. Line 3 changes the value of the first element in <code class=\"python\" lang=\"python\">list2</code>."
+}
