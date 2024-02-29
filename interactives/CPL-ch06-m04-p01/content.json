@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which is an argument?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">name</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "name is defined with print_welcome() and is not passed to a function.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">username</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "name is defined with print_welcome(), so name is a parameter. username is passed on line 5's call to print_welcome().",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">name</code> and <code class=\"python\" lang=\"python\">username</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">username</code> is the argument passed to <code class=\"python\" lang=\"python\">print_welcome()</code>. <code class=\"python\" lang=\"python\">name</code> is <code class=\"python\" lang=\"python\">print_welcome()</code>'s parameter that is assigned with <code class=\"python\" lang=\"python\">username</code>'s value.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "09d8d3a6-3b53-465a-98fc-627134701a81",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">username</code> is the argument passed to <code class=\"python\" lang=\"python\">print_welcome()</code>. <code class=\"python\" lang=\"python\">name</code> is <code class=\"python\" lang=\"python\">print_welcome()</code>'s parameter that is assigned with <code class=\"python\" lang=\"python\">username</code>'s value."
+}
