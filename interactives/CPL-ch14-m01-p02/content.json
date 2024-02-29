@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Suppose that there is no file named <i>input.txt</i>. What is the result of trying to execute <code class=\"python\" lang=\"python\">open(\"input.txt\")</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The open() function as written would not create a file.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "nothing",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The file doesn't exist but something will still happen if the line of code is executed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "\"input.txt\" file is created.",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The file must exist in the same folder as the Python file in order for the file to be opened.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "a4b4c0c5-1da0-4e21-b7ef-99cdda8c86ff",
+  "detailedSolution": "The file must exist in the same folder as the Python file in order for the file to be opened."
+}
