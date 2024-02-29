@@ -1,0 +1,19 @@
+{
+  "errata_id": "86ced86bc52bfb3b35f26e8199fcb42b68d2cd16934336f9042dc6ca50a1ab78",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:d19246f9-6a62-4353-9d1e-b6b4620c5012",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:6-2-control-flow"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00045"
+  ]
+}
