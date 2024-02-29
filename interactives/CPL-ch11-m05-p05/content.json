@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which code creates a name collision?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">character = 'Ranger'</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Python is case-sensitive so capitalization results in a different variable name. Game_char does not cause a name collision with game_char, but too similar variable names should be changed to avoid confusion.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Game_char = 'Ranger'</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "character is not defined in the program, since the alias game_char refers to the module. character can be assigned with a string, and game_char can still be used to access the module.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">game_char = 'Ranger'</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "<code class=\"python\" lang=\"python\">game_char</code> referred to the imported module, but assigning <code class=\"python\" lang=\"python\">game_char</code> replaces the imported module with the string <code class=\"python\" lang=\"python\">'Ranger'</code>. <code class=\"python\" lang=\"python\">game_char</code> can no longer be used to access classes.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "1db5ff70-a586-43df-8ea4-16f6a5b6dfca",
+  "detailedSolution": "<code class=\"python\" lang=\"python\">game_char</code> referred to the imported module, but assigning <code class=\"python\" lang=\"python\">game_char</code> replaces the imported module with the string <code class=\"python\" lang=\"python\">'Ranger'</code>. <code class=\"python\" lang=\"python\">game_char</code> can no longer be used to access classes."
+}
