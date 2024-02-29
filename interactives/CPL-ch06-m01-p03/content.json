@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "How many function calls are there?\n<pre class=\"python\" lang=\"python\"># Use float() to convert input for area calculation\nwidth = float(input(\"Enter width:\"))\nheight = float(input(\"Enter height:\"))\nprint(\"Area is\", width*height)\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "3",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Line 1 is not executed. Lines 2 and 3 have two function calls each, and line 3 has one function call.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "5",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Three total functions are called: float(), input(), and print(). But float() and input() are called twice.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "6",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Line 1 is a comment that is not executed. Lines 2 and 3 each call <code class=\"python\" lang=\"python\">float()</code> and <code class=\"python\" lang=\"python\">input()</code>. Line 3 calls <code class=\"python\" lang=\"python\">print()</code> for a total of five function calls.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "bdee76ed-382a-48c4-8a96-91ef02ab3f09",
+  "detailedSolution": "Line 1 is a comment that is not executed. Lines 2 and 3 each call <code class=\"python\" lang=\"python\">float()</code> and <code class=\"python\" lang=\"python\">input()</code>. Line 3 calls <code class=\"python\" lang=\"python\">print()</code> for a total of five function calls."
+}
