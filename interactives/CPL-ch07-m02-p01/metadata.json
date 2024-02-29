@@ -1,0 +1,19 @@
+{
+  "errata_id": "e3459fcf533a7dde611b567fc0b491b240fd3481240d0a1d509fa2d8808d109b",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:d270a690-61c0-40a7-9fa4-fbfa7113e389",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:7-2-importing-names"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00053"
+  ]
+}
