@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is printed if the code is changed as follows?\n<pre class=\"python\" lang=\"python\">str_var = \"A string\"\n\ncount = 0\nfor c in str_var:\n&nbsp;&nbsp;count += 1\n&nbsp;&nbsp;# New line\n&nbsp;&nbsp;print(c, end = '*')\n\nprint(count)\n</pre>\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">A string*</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "White space characters like space are considered as characters and need to be printed.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">A*s*t*r*i*n*g*</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The variable <code class=\"python\" lang=\"python\">c</code> will be assigned to all individual characters within the <code class=\"python\" lang=\"python\">str_var</code>. The print statement prints the variable <code class=\"python\" lang=\"python\">c</code> and a * character in each iteration. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">A* *s*t*r*i*n*g*</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The added line prints each character that is looped on (character <code class=\"python\" lang=\"python\"c</code>), and prints an additional * after the character.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "8c1d8b85-7333-407a-b92d-f9ba3f930a9c",
+  "detailedSolution": "The added line prints each character that is looped on (character <code class=\"python\" lang=\"python\">c</code>), and prints an additional * after the character."
+}
