@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Given input <code class=\"python\" lang=\"python\">10</code>, what is the final value of <code class=\"python\" lang=\"python\">positive_num</code>?\n<pre class=\"python\" lang=\"python\">positive_num = int(input(\"Enter a positive number:\"))\nif positive_num &lt; 0:\n&nbsp;&nbsp;print(\"Negative input set to 0\")\npositive_num = 0\n</pre>",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">10</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Lines 3 and 4 are supposed to be in the body, but only line 3 is indented. The body is not empty though, so the program does not produce an error.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">0</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Line 4 is meant to be in the body but isn't indented. positive_num = 0 is executed even though 10 &lt; 0 is False.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Line 4 is not indented, so <code class=\"python\" lang=\"python\">positive_num</code> is always assigned with <code class=\"python\" lang=\"python\">0</code>. The positive input value is lost.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "0a371aed-2cba-42d1-8cac-936877a5a34b",
+  "detailedSolution": "Line 4 is not indented, so <code class=\"python\" lang=\"python\">positive_num</code> is always assigned with <code class=\"python\" lang=\"python\">0</code>. The positive input value is lost."
+}
