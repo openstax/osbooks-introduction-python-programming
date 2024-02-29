@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the length of the string <code class=\"python\" lang=\"python\">\"sss\".join([\"1\",\"2\"])</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "2",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The separator <code class=\"python\" lang=\"python\">\"sss\"</code> is only going to be placed in between elements. No separator is needed at the end of the string.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "5",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The separator string will be added in between the two elements. What is the length of the string made up of strings <code class=\"python\" lang=\"python\">\"1\"</code>, <code class=\"python\" lang=\"python\">\"sss\"</code>, and <code class=\"python\" lang=\"python\">\"2\"</code>?",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "8",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The output of <code class=\"python\" lang=\"python\">\"sss\".join([\"1\",\"2\"])</code> is <code class=\"python\" lang=\"python\">\"1sss2\"</code>, which has a length of 5.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "bc0895f5-b826-4ff1-9eaf-5446f29b810d",
+  "detailedSolution": "The output of <code class=\"python\" lang=\"python\">\"sss\".join([\"1\",\"2\"])</code> is <code class=\"python\" lang=\"python\">\"1sss2\"</code>, which has a length of 5."
+}
