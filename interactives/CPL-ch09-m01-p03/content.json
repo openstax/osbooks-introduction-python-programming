@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which operation can be used to remove an element from the end of a list?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "only <code class=\"python\" lang=\"python\">pop()</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">remove()</code> operation with the last element as a parameter can be used to remove the last element but remove() is not the only way.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "only <code class=\"python\" lang=\"python\">remove()</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Pop can be used to remove an element from the end of a list but <code class=\"python\" lang=\"python\">pop()</code> is not the only way. ",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "either <code class=\"python\" lang=\"python\">pop()</code> or <code class=\"python\" lang=\"python\">remove()</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "Both <code class=\"python\" lang=\"python\">pop()</code> and <code class=\"python\" lang=\"python\">remove()</code> can be used to remove the last element of a list. <code class=\"python\" lang=\"python\">pop()</code> automatically removes the last element, whereas <code class=\"python\" lang=\"python\">remove()</code> requires the last element be specified.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "6a852ed5-c7da-41bd-9a1c-16df360a4ac9",
+  "detailedSolution": "Both <code class=\"python\" lang=\"python\">pop()</code> and <code class=\"python\" lang=\"python\">remove()</code> can be used to remove the last element of a list. <code class=\"python\" lang=\"python\">pop()</code> automatically removes the last element, whereas <code class=\"python\" lang=\"python\">remove()</code> requires the last element be specified."
+}
