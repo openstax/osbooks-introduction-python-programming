@@ -1,0 +1,19 @@
+{
+  "errata_id": "5dd0ec95d6b50384afbb80f954a1e9ded65f5636cedf6525b4b0c91ec545bcef",
+  "attachments": [],
+  "tags": [
+    "book:stax-pyth",
+    "assignment-type:reading",
+    "context-cnxmod:a26181ec-84d5-4729-bd51-7ee5b1047f90",
+    "book-slug:introduction-python-programming",
+    "module-slug:introduction-python-programming:5-1-while-loop"
+  ],
+  "books": [
+    {
+      "name": "stax-pyth"
+    }
+  ],
+  "context": [
+    "m00037"
+  ]
+}

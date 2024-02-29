@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is the variable <code class=\"python\" lang=\"python\">g</code>'s value when the while loop condition evaluates to <code class=\"python\" lang=\"python\">False</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "<code class=\"python\" lang=\"python\">13</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The value 20 is not a Fibonacci number, and therefore cannot be a value that is assigned to the variable <code class=\"python\" lang=\"python\">g</code>.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">20</code>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "When <code class=\"python\" lang=\"python\">g = 13</code> the condition of <code class=\"python\" lang=\"python\">g < 20</code> evaluates to True because 13 is less than 20.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">21</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "21 is the first Fibonacci number larger than 20, and for <code class=\"python\" lang=\"python\">g = 21</code>, the condition will evaluate to <code class=\"python\" lang=\"python\">False</code> for the first time.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "7bb7aa7e-1753-4a94-89f9-ffe0909faeae",
+  "detailedSolution": "21 is the first Fibonacci number larger than 20, and for <code class=\"python\" lang=\"python\">g = 21</code>, the condition will evaluate to <code class=\"python\" lang=\"python\">False</code> for the first time."
+}
