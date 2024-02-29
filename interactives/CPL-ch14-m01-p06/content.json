@@ -1,0 +1,82 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "What is printed as a result of executing <code class=\"python\" lang=\"python\">print(fileobj.readline())</code>?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": false,
+  "answers": [
+    {
+      "text": "The first line of <i>input.txt</i> is printed.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "There is no error for the given line of code provided fileobj is associated with a file.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "The contents of the file <i>input.txt</i> are printed.",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The readline() function does not print the entire file contents.",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<code class=\"python\" lang=\"python\">Error</code>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "The <code class=\"python\" lang=\"python\">readline()</code> function reads the next line of a file. Since <code class=\"python\" lang=\"python\">readline()</code> is called right after opening the file the first line is read. The resulting string <code class=\"python\" lang=\"python\">\"Hello world!\"</code> is printed. Note that <code class=\"python\" lang=\"python\">readline()</code> includes the <code class=\"python\" lang=\"python\">'\\n'</code> character so the print will include an additional newline.",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "b28b5b3f-023e-46a0-be7e-c5ed31d8917d",
+  "detailedSolution": "The <code class=\"python\" lang=\"python\">readline()</code> function reads the next line of a file. Since <code class=\"python\" lang=\"python\">readline()</code> is called right after opening the file the first line is read. The resulting string <code class=\"python\" lang=\"python\">\"Hello world!\"</code> is printed. Note that <code class=\"python\" lang=\"python\">readline()</code> includes the <code class=\"python\" lang=\"python\">'\\n'</code> character so the print will include an additional newline."
+}
