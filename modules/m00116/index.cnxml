@@ -66,7 +66,7 @@
     </section>
     <section id="sect-00011">
     <title>Programming practice exercises</title>
-    <para id="para-00017">Each section ends with 1 or 2 practice programs. This book includes an integrated programming environment, known as the "OpenStax Python code runner," which allows readers to write programs directly in the browser. The code runner requires the reader to pre-enter any input before running a program.</para>
+    <para id="para-00017">Each section ends with 1 or 2 practice programs. This book includes an integrated programming environment, known as the "OpenStax Python Code Runner," which allows readers to write programs directly in the browser. The code runner requires the reader to pre-enter any input before running a program.</para>
     <figure class="unnumbered" id="fig-00001">
       <media alt="A screenshot shows a Try It box titled &quot;Favorite song&quot;. Instructions are provided, followed by a box to input code and run the program.">
       <image mime-type="image/jpg" src="../../media/OSX_CPL_Preface_CodeRun.jpg"/>
