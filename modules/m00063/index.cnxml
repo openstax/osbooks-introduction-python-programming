@@ -27,17 +27,17 @@
     <title>Examples of string delimiters and split() method</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch08-m05-p01"/></para>
+    <para id="para-00003"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch08-m05-p01"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00002">
     <problem id="prob-00002">
-    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch08-m05-p02"/></para>
+    <para id="para-00004"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch08-m05-p02"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch08-m05-p03"/></para>
+    <para id="para-00005"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch08-m05-p03"/></para>
     </problem>
     </exercise>
     </note>
@@ -55,17 +55,17 @@
     <title>Applying join() method on list of string values</title>
     <exercise id="exer-00004">
     <problem id="prob-00004">
-    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch08-m05-p04"/></para>
+    <para id="para-00007"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch08-m05-p04"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch08-m05-p05"/></para>
+    <para id="para-00008"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch08-m05-p05"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00006">
     <problem id="prob-00006">
-    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch08-m05-p06"/></para>
+    <para id="para-00009"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch08-m05-p06"/></para>
     </problem>
     </exercise>
     </note>

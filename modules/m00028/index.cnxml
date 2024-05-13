@@ -36,32 +36,32 @@
     </code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch04-m01-p01"/></para>
+    <para id="para-00004"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p01"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00002">
     <problem id="prob-00002">
-    <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch04-m01-p02"/></para>
+    <para id="para-00005"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p02"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch04-m01-p03"/></para>
+    <para id="para-00006"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p03"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00004">
     <problem id="prob-00004">
-    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch04-m01-p04"/></para>
+    <para id="para-00007"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p04"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch04-m01-p05"/></para>
+    <para id="para-00008"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p05"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00006">
     <problem id="prob-00006">
-    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch04-m01-p06"/></para>
+    <para id="para-00009"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p06"/></para>
     </problem>
     </exercise>
     </note>
@@ -84,27 +84,27 @@
     <title>Converting numeric types and strings to Booleans</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
-    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch04-m01-p07"/></para>
+    <para id="para-00012"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p07"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00008">
     <problem id="prob-00008">
-    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch04-m01-p08"/></para>
+    <para id="para-00013"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p08"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00009">
     <problem id="prob-00009">
-    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch04-m01-p09"/></para>
+    <para id="para-00014"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p09"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00010">
     <problem id="prob-00010">
-    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch04-m01-p10"/></para>
+    <para id="para-00015"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p10"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00011">
     <problem id="prob-00011">
-    <para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch04-m01-p11"/></para>
+    <para id="para-00016"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p11"/></para>
     </problem>
     </exercise>
     </note>
@@ -113,17 +113,17 @@
     <para id="para-00017">Given <code class="python inline-code" lang="python">is_on = True</code>, what is the value of each expression?</para>
     <exercise id="exer-00012">
     <problem id="prob-00012">
-    <para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch04-m01-p12"/></para>
+    <para id="para-00018"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p12"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00013">
     <problem id="prob-00013">
-    <para id="para-00019"><link class="os-embed" url="#exercise/CPL-ch04-m01-p13"/></para>
+    <para id="para-00019"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p13"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00014">
     <problem id="prob-00014">
-    <para id="para-00020"><link class="os-embed" url="#exercise/CPL-ch04-m01-p14"/></para>
+    <para id="para-00020"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p14"/></para>
     </problem>
     </exercise>
     </note>
@@ -151,32 +151,32 @@
     <para id="para-00023">For each new variable, what is the value of <code class="python inline-code" lang="python">compare_result</code>?</para>
     <exercise id="exer-00015">
     <problem id="prob-00015">
-    <para id="para-00024"><link class="os-embed" url="#exercise/CPL-ch04-m01-p15"/></para>
+    <para id="para-00024"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p15"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00016">
     <problem id="prob-00016">
-    <para id="para-00025"><link class="os-embed" url="#exercise/CPL-ch04-m01-p16"/></para>
+    <para id="para-00025"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p16"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00017">
     <problem id="prob-00017">
-    <para id="para-00026"><link class="os-embed" url="#exercise/CPL-ch04-m01-p17"/></para>
+    <para id="para-00026"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p17"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00018">
     <problem id="prob-00018">
-    <para id="para-00027"><link class="os-embed" url="#exercise/CPL-ch04-m01-p18"/></para>
+    <para id="para-00027"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p18"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00019">
     <problem id="prob-00019">
-    <para id="para-00028"><link class="os-embed" url="#exercise/CPL-ch04-m01-p19"/></para>
+    <para id="para-00028"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p19"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00020">
     <problem id="prob-00020">
-    <para id="para-00029"><link class="os-embed" url="#exercise/CPL-ch04-m01-p20"/></para>
+    <para id="para-00029"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m01-p20"/></para>
     </problem>
     </exercise>
     </note>

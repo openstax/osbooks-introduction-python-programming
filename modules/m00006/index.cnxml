@@ -28,17 +28,17 @@
 <para id="para-00002">Assume that <code class="python inline-code" lang="python">x = 1</code>, <code class="python inline-code" lang="python">y = 2.0</code>, and <code class="python inline-code" lang="python">s = "32"</code>.</para>
 <exercise id="exer-00001">
 <problem id="prob-00001">
-<para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch01-m05-p01"/></para>
+<para id="para-00003"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p01"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00002">
 <problem id="prob-00002">
-<para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch01-m05-p02"/></para>
+<para id="para-00004"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p02"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00003">
 <problem id="prob-00003">
-<para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch01-m05-p03"/></para>
+<para id="para-00005"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p03"/></para>
 </problem>
 </exercise>
 </note>
@@ -64,27 +64,27 @@
 <para id="para-00008">Assume that <code class="python inline-code" lang="python">x = 7</code>, <code class="python inline-code" lang="python">y = 20</code>, and <code class="python inline-code" lang="python">z = 2</code>.</para>
 <exercise id="exer-00004">
 <problem id="prob-00004">
-<para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch01-m05-p04"/></para>
+<para id="para-00009"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p04"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00005">
 <problem id="prob-00005">
-<para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch01-m05-p05"/></para>
+<para id="para-00010"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p05"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00006">
 <problem id="prob-00006">
-<para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch01-m05-p06"/></para>
+<para id="para-00011"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p06"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00007">
 <problem id="prob-00007">
-<para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch01-m05-p07"/></para>
+<para id="para-00012"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p07"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00008">
 <problem id="prob-00008">
-<para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch01-m05-p08"/></para>
+<para id="para-00013"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p08"/></para>
 </problem>
 </exercise>
 </note>
@@ -148,22 +148,22 @@
 <title>Multiple arithmetic operators</title>
 <exercise id="exer-00009">
 <problem id="prob-00009">
-<para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch01-m05-p09"/></para>
+<para id="para-00015"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p09"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00010">
 <problem id="prob-00010">
-<para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch01-m05-p10"/></para>
+<para id="para-00016"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p10"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00011">
 <problem id="prob-00011">
-<para id="para-00017"><link class="os-embed" url="#exercise/CPL-ch01-m05-p11"/></para>
+<para id="para-00017"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p11"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00012">
 <problem id="prob-00012">
-<para id="para-00018"><link class="os-embed" url="#exercise/CPL-ch01-m05-p12"/></para>
+<para id="para-00018"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m05-p12"/></para>
 </problem>
 </exercise>
 </note>

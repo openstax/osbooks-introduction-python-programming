@@ -53,17 +53,17 @@
     <title>Modifying lists</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch09-m01-p01"/></para>
+    <para id="para-00006"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch09-m01-p01"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00002">
     <problem id="prob-00002">
-    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch09-m01-p02"/></para>
+    <para id="para-00007"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch09-m01-p02"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch09-m01-p03"/></para>
+    <para id="para-00008"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch09-m01-p03"/></para>
     </problem>
     </exercise>
     </note>
@@ -83,17 +83,17 @@
     <code class="python" lang="python">my_list = [2, 3, 5, 7, 9]</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
-    <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch09-m01-p04"/></para>
+    <para id="para-00011"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch09-m01-p04"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch09-m01-p05"/></para>
+    <para id="para-00012"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch09-m01-p05"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00006">
     <problem id="prob-00006">
-    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch09-m01-p06"/></para>
+    <para id="para-00013"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch09-m01-p06"/></para>
     </problem>
     </exercise>
     </note>

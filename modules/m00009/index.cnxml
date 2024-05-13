@@ -30,17 +30,17 @@
 <title>Python history</title>
 <exercise id="exer-00001">
 <problem id="prob-00001">
-<para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch01-m08-p01"/></para>
+<para id="para-00006"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m08-p01"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00002">
 <problem id="prob-00002">
-<para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch01-m08-p02"/></para>
+<para id="para-00007"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m08-p02"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00003">
 <problem id="prob-00003">
-<para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch01-m08-p03"/></para>
+<para id="para-00008"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m08-p03"/></para>
 </problem>
 </exercise>
 </note>
@@ -71,17 +71,17 @@
 <title>Python popularity</title>
 <exercise id="exer-00004">
 <problem id="prob-00004">
-<para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch01-m08-p04"/></para>
+<para id="para-00014"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m08-p04"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00005">
 <problem id="prob-00005">
-<para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch01-m08-p05"/></para>
+<para id="para-00015"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m08-p05"/></para>
 </problem>
 </exercise>
 <exercise id="exer-00006">
 <problem id="prob-00006">
-<para id="para-00016"><link class="os-embed" url="#exercise/CPL-ch01-m08-p06"/></para>
+<para id="para-00016"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch01-m08-p06"/></para>
 </problem>
 </exercise>
 </note>

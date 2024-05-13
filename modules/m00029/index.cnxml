@@ -34,27 +34,27 @@
     <title>Using if statements</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00006"><link class="os-embed" url="#exercise/CPL-ch04-m02-p01"/></para>
+    <para id="para-00006"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m02-p01"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00002">
     <problem id="prob-00002">
-    <para id="para-00007"><link class="os-embed" url="#exercise/CPL-ch04-m02-p02"/></para>
+    <para id="para-00007"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m02-p02"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch04-m02-p03"/></para>
+    <para id="para-00008"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m02-p03"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00004">
     <problem id="prob-00004">
-    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch04-m02-p04"/></para>
+    <para id="para-00009"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m02-p04"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch04-m02-p05"/></para>
+    <para id="para-00010"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m02-p05"/></para>
     </problem>
     </exercise>
     </note>
@@ -84,17 +84,17 @@
     <title>Exploring if-else statements</title>
     <exercise id="exer-00006">
     <problem id="prob-00006">
-    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch04-m02-p06"/></para>
+    <para id="para-00013"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m02-p06"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00007">
     <problem id="prob-00007">
-    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch04-m02-p07"/></para>
+    <para id="para-00014"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m02-p07"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00008">
     <problem id="prob-00008">
-    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch04-m02-p08"/></para>
+    <para id="para-00015"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch04-m02-p08"/></para>
     </problem>
     </exercise>
     </note>

@@ -72,12 +72,12 @@ OverflowError: (34, 'Numerical result out of range')
     <para id="para-00007">For each situation, which error occurs?</para>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch02-m04-p01"/></para>
+    <para id="para-00008"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch02-m04-p01"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00002">
     <problem id="prob-00002">
-    <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch02-m04-p02"/></para>
+    <para id="para-00009"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch02-m04-p02"/></para>
     </problem>
     </exercise>
     </note>
@@ -100,22 +100,22 @@ OverflowError: (34, 'Numerical result out of range')
     <title>Examples of round() function</title>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch02-m04-p03"/></para>
+    <para id="para-00012"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch02-m04-p03"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00004">
     <problem id="prob-00004">
-    <para id="para-00013"><link class="os-embed" url="#exercise/CPL-ch02-m04-p04"/></para>
+    <para id="para-00013"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch02-m04-p04"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00014"><link class="os-embed" url="#exercise/CPL-ch02-m04-p05"/></para>
+    <para id="para-00014"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch02-m04-p05"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00006">
     <problem id="prob-00006">
-    <para id="para-00015"><link class="os-embed" url="#exercise/CPL-ch02-m04-p06"/></para>
+    <para id="para-00015"><link class="os-embed" url="{INTERACTIVES_ROOT}/CPL-ch02-m04-p06"/></para>
     </problem>
     </exercise>
     </note>
