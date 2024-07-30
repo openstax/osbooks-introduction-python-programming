@@ -121,7 +121,7 @@
     <title>Frost poem</title>
     <para id="para-00013">Write a program that uses multiple <code class="python inline-code" lang="python">print()</code> statements to output the following poem by <link url="https://openstax.org/r/100robertfrost">Robert Frost</link>. Each <code class="python inline-code" lang="python">print()</code> statement should correspond to one line of output.</para>
     <para id="para-00014"><emphasis effect="italics">Tip:</emphasis> You don't need to write the entire program all at once. Try writing the first <code class="python inline-code" lang="python">print()</code> statement, and then click the Run button. Then write the next <code class="python inline-code" lang="python">print()</code> statement, and click the Run button again. Continue writing and testing the code incrementally until you finish the program.</para>
-    <code class="python" lang="python">
+    <code>
     I shall be telling this with a sigh
     Somewhere ages and ages hence:
     Two roads diverged in a wood, and I--
@@ -135,12 +135,12 @@
     <note class="practice-program" id="note-00007">
     <title>Name and likes</title>
     <para id="para-00015">Write a program that asks the following two questions (example input in bold):</para>
-    <code class="python" lang="python">
+    <code>
     What is your name? <emphasis effect="bold">Shakira</emphasis>
     What do you like? <emphasis effect="bold">singing</emphasis>
     </code>
     <para id="para-00016">Output a blank line after reading the input. Then output the following message based on the input:</para>
-    <code class="python" lang="python">
+    <code>
     <emphasis effect="bold">Shakira</emphasis> likes <emphasis effect="bold">singing</emphasis>
     </code>
     <media alt="name_likes_program">

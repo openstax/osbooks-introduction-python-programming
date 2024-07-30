@@ -99,11 +99,10 @@ public class Hello {
 <list id="list-00002">
 <item>Many of the programs in this chapter expect input from the user. Enter your name in the Input box below the code. Run the program again, and see what changes.</item>
 <item>Copy the following lines to the end of the program:
-<code class="python" lang="python">
-print("What is your favorite song?")
-song = input()
-print("Cool! I like", song, "too.")
-</code></item>
+<para id="para-00018"><code class="python" lang="python">print("What is your favorite song?")<newline/>
+song = input()<newline/>
+print("Cool! I like", song, "too.")<newline/>
+</code></para></item>
 <item>The modified program reads two lines of input: <code class="python inline-code" lang="python">name</code> and <code class="python inline-code" lang="python">song</code>. Add your favorite song to the Input box below your name, and run the program again.</item>
 </list>
 <para id="para-00017">The next section of the book will explain how <code class="python inline-code" lang="python">print()</code> and <code class="python inline-code" lang="python">input()</code> work. Feel free to experiment with this code until you are ready to move on.</para>

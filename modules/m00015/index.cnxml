@@ -108,12 +108,12 @@
     <title>Change machine</title>
     <para id="para-00019">Self-checkout aisles are becoming increasingly popular at grocery stores. Customers scan their own items, and a computer determines the total purchase amount. Customers who pay in cash insert dollar bills, and a machine automatically dispenses change in coins.</para>
     <para id="para-00020">That's where this program comes into the story. Your task is to calculate how many of each coin to dispense. Your program should use the following prompts (user input in bold):</para>
-    <code class="python" lang="python">
+    <code>
     Total amount? <emphasis effect="bold">18.76</emphasis>
     Cash payment? <emphasis effect="bold">20</emphasis>
     </code>
     <para id="para-00021">You may assume that the cash paid will always be a whole number (representing dollar bills) that is greater than or equal to the total amount. The program should calculate and output the amount of change due and how many dollars, quarters, dimes, nickels, and pennies should be dispensed:</para>
-    <code class="python" lang="python">
+    <code>
     Change Due $1.24
     
      Dollars: 1
