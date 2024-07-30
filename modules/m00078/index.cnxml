@@ -102,8 +102,7 @@ Maryam Samimi</code>
     <note id="note-00002">
     <title>Syntax for dictionary comprehension</title>
     <code class="python" lang="python">
-    {key_expression: value_expression for element in iterable}
-    </code>
+    {key_expression: value_expression for element in iterable}</code>
     </note>
     <note class="guided-slides" id="note-00003">
     <title>Squares of numbers</title>
@@ -149,8 +148,7 @@ Maryam Samimi</code>
       1003: {"name": "Charlie", "department": "Engineering", "salary": 80000},
       1004: {"name": "Dave", "department": "Marketing", "salary": 60000},
       1005: {"name": "Eve", "department": "Sales", "salary": 55000}
-    }
-    </code>
+    }</code>
     <code class="python" lang="python">
     Resulting dictionary:
     
@@ -160,8 +158,7 @@ Maryam Samimi</code>
     "Sales": {1002: {"name": "Bob", "salary": 50000}, 1005: {"name": "Eve", 
     "salary": 55000}},
     "Marketing": {1004: {"name": "Dave", "salary": 60000}}
-    }
-    </code>
+    }</code>
     <media alt="restructuring_the_company_data_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_06_08_Restructuring-the-company-data.html"/>
     </media>

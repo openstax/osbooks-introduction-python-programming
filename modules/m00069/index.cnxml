@@ -42,16 +42,14 @@
     print(min(city_list))
 
     # sum() only works for a list of numbers
-    print(sum(num_list))
-    </code>
+    print(sum(num_list))</code>
     <para id="para-00004">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     999
     Sacramento
     -5
     Austin
-    1135
-    </code>
+    1135</code>
     </example>
     <note class="learning-questions" id="note-00001">
     <title>List operations</title>

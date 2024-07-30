@@ -37,15 +37,13 @@
     #update the value of the 4th element to 7
     numList[3] = 7<newline/>
     #The list lists the first 5 prime numbers
-    print(numList)
-    </code>
+    print(numList)</code>
     <para id="para-00005">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     [2, 3, 5, 9, 11]
     5
     9
-    [2, 3, 5, 7, 11]
-    </code>
+    [2, 3, 5, 7, 11]</code>
     </example>
     <note class="learning-questions" id="note-00001">
     <title>List indexes and the len() function</title>
@@ -107,9 +105,8 @@
     <note class="practice-program" id="note-00005">
     <title>More complex searching</title>
     <para id="para-00015">Write a program that counts the number of times 23 is found in the list. And prints each index where 23 was found. Your output should look as shown below.</para>
-    <code class="python" lang="python">
-    3 instances of 23 found at: [2, 7, 12]
-    </code>
+    <code>
+    3 instances of 23 found at: [2, 7, 12]</code>
     <media alt="more_complex_searching_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch9/CodeRunner_09_02_03_More-complex-searching.html"/>
     </media>

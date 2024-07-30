@@ -37,8 +37,7 @@
         print(self.name, 'is a ', self.age, 'yr old', self.breed)
     
     pet_1 = Cat()
-    pet_2 = Cat()
-    </code>
+    pet_2 = Cat()</code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00005"><link class="os-embed" url="#exercise/CPL-ch11-m02-p01"/></para>
@@ -88,8 +87,7 @@
     room_3 = Rectangle()
     room_3.length = 12
     room_3.width = 14
-    print("Room 3's area:", room_3.area())
-    </code>
+    print("Room 3's area:", room_3.area())</code>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch11-m02-p05"/></para>
@@ -170,18 +168,16 @@
     <item><code class="python inline-code" lang="python">print_info()</code>: prints ticket information (provided in template)</item>
     </list>
     <para id="para-00025">Given input:</para>
-    <code class="python" lang="python">
+    <code>
     2121
     KEF
     D22B
     11:45
     12B
-    Jules Laurent
-    </code>
+    Jules Laurent</code>
     <para id="para-00026">The output is:</para>
     <code>
-    Passenger Jules Laurent departs on flight # 2121 at 11:45 from KEF D22B in seat 12B
-    </code>
+    Passenger Jules Laurent departs on flight # 2121 at 11:45 from KEF D22B in seat 12B</code>
     <media alt="creating_a_class_for_an_airline_s_flight_tickets_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_03_01_Creating-a-class-for-an-airline_s-flight-tickets.html"/>
     </media>
@@ -206,7 +202,7 @@
     <item><code class="python inline-code" lang="python">print_info()</code>: prints book information (provided in template)</item>
     </list>
     <para id="para-00031">Given input:</para>
-    <code class="python" lang="python">
+    <code>
     Lord of the Bracelets
     Blake R. R. Brown
     1999
@@ -214,10 +210,9 @@
     A Match of Thrones
     Terry R. R. Thomas
     2020
-    761
-    </code>
+    761</code>
     <para id="para-00032">The output is:</para>
-    <code class="python" lang="python">
+    <code>
     Lord of the Bracelets by Blake R. R. Brown published by Fantasy Tomes
     in 1999 with 423 pages
     A Match of Thrones by Terry R. R. Thomas published by Fantasy Tomes

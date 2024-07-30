@@ -30,12 +30,10 @@
 
     # Add items to a list, as squares of numbers starting at 0 and ending at 9.
     for i in range(10):
-      squares_list.append(i*i)
-    </code>
+      squares_list.append(i*i)</code>
     <para id="para-00008">Creating a list of squares using the list comprehension.</para>
     <code class="python" lang="python">
-    square_list = [i*i for i in range(10)]
-    </code>
+    square_list = [i*i for i in range(10)]</code>
     <para id="para-00009">The expression <code class="python inline-code" lang="python">i*i</code> is applied for each value of the <code class="python inline-code" lang="python">loop_variable</code> <code class="python inline-code" lang="python">i</code>.</para>
     </example>
     <example id="exam-00002">
@@ -49,15 +47,13 @@
     # Inserting the word "fish" attached to each word in words_list
     poem_lines = [w + " fish" for w in words_list]
     for line in poem_lines:
-      print(line)
-    </code>
+      print(line)</code>
     <para id="para-00011">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     one fish
     two fish
     red fish
-    blue fish
-    </code>
+    blue fish</code>
     </example>
     <note class="learning-questions" id="note-00001">
     <title>List comprehensions</title>

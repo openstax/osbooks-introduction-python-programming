@@ -145,11 +145,9 @@ key_2:{key21:value21, key22:value22}
     <para id="para-00003">Given a list, create a dictionary with two keys, <code class="python inline-code" lang="python">"even"</code> and <code class="python inline-code" lang="python">"odd"</code>. The values associated with each key must be the list of corresponding even and odd values in the given list.</para>
     <code class="python" lang="python">
     Input:
-    input_list = [3, 5, 6, 1]
-    </code>
-    <code class="python" lang="python">
-    Prints {"even": [6], "odd":[3, 5, 1]}
-    </code>
+    input_list = [3, 5, 6, 1]</code>
+    <code>
+    Prints {"even": [6], "odd":[3, 5, 1]}</code>
     <media alt="even_and_odd_values_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_07_09_Even-and-odd-values.html"/>
     </media>

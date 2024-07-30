@@ -53,12 +53,10 @@
     <code class="python" lang="python">
     time_string = "13:46"
     minutes = time_string[3:5]
-    print(minutes)
-    </code>
+    print(minutes)</code>
     <para id="para-00009">The above code's output is:</para>
-    <code class="python" lang="python">
-    46
-    </code>
+    <code>
+    46</code>
     </example>
     <example id="exam-00002">
     <title>Getting the hour</title>
@@ -66,12 +64,10 @@
     <code class="python" lang="python">
     time_string = "14:50"
     hour = time_string[:2]
-    print(hour)
-    </code>
+    print(hour)</code>
     <para id="para-00011">The above code's output is:</para>
-    <code class="python" lang="python">
-    14
-    </code>
+    <code>
+    14</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Getting a substring using string slicing</title>
@@ -135,11 +131,10 @@
     <code class="python" lang="python">
     Input:
     string_variable = "great"
-    indices = [0, 1]
-    </code>
-    <code class="python" lang="python">
-    prints eat
-    </code>
+    indices = [0, 1]</code>
+    <code>
+    Prints: 
+    eat</code>
     <media alt="editing_the_string_at_specified_locations_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_03_04_Editing-the-string-at-specified-locations.html"/>
     </media>

@@ -96,8 +96,7 @@
     if condition:
       # Body
 
-    # Statements after
-    </code></entry>
+    # Statements after</code></entry>
     </row>
     <row>
     <entry><para id="para-00024"><code class="python inline-code" lang="python">else</code> statement</para></entry>
@@ -109,8 +108,7 @@
     else:
       # Body
 
-    # Statements after
-    </code></entry>
+    # Statements after</code></entry>
     </row>
     <row>
     <entry><para id="para-00025"><code class="python inline-code" lang="python">elif</code> statement</para></entry>
@@ -124,8 +122,7 @@
     else:
       # Body
 
-    # Statements after
-    </code></entry>
+    # Statements after</code></entry>
     </row>
     <row>
     <entry><para id="para-00026">Nested <code class="python inline-code" lang="python">if</code> statement</para></entry>
@@ -143,8 +140,7 @@
       else:
         # Body
     
-    # Statements after
-    </code></entry>
+    # Statements after</code></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Conditional expression</emphasis></entry>

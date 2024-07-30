@@ -30,8 +30,7 @@
     def greeting(msg, name, count):
       i = 0
       for i in range(0, count):
-        print(msg, name)
-    </code>
+        print(msg, name)</code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch06-m06-p01"/></para>
@@ -71,8 +70,7 @@
     def greeting(msg, name="Friend", count=1):
       i = 0
       for i in range(0, count):
-        print(msg, name)
-    </code>
+        print(msg, name)</code>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00011"><link class="os-embed" url="#exercise/CPL-ch06-m06-p05"/></para>
@@ -105,12 +103,10 @@
     </list></para>
     <para id="para-00016">Given:</para>
     <code class="python" lang="python">
-    donate(10, "gg")
-    </code>
+    donate(10, "gg")</code>
     <para id="para-00017">The output is:</para>
-    <code class="python" lang="python">
-    Anonymous donated 10 credits: gg
-    </code>
+    <code>
+    Anonymous donated 10 credits: gg</code>
     <para id="para-00018">Write function calls that use the default values along with positional and keyword arguments.</para>
     <media alt="stream_donations_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_07_10_Stream-donations.html"/>

@@ -30,8 +30,7 @@
     if game == 2 and players > 6:
     &#160;&#160;print("Too many players")
     if game == 2 and (3 &lt;= players &lt;= 6):
-    &#160;&#160;print("Ready to start")
-    </code>
+    &#160;&#160;print("Ready to start")</code>
     <para id="para-00004">The programmer realizes the code is redundant. What if the programmer could decide the game ID first and then make a decision about players? Nesting allows a decision statement to be inside another decision statement, and is indicated by an indentation level.</para>
     <para id="para-00005">An improved program:</para>
     <code class="python" lang="python">
@@ -49,8 +48,7 @@
     &#160;&#160;&#160;&#160;print("Too many players")
     &#160;&#160;else:
     &#160;&#160;&#160;&#160;print("Ready to start")
-    # Test game IDs 3-end
-    </code>
+    # Test game IDs 3-end</code>
     <note class="guided-slides" id="note-00001">
     <title>Example: Poisonous plant identification</title>
     <media alt="plant_identification_slides">
@@ -98,11 +96,11 @@
     <item>3: Mushroom risotto</item>
     </list>
     <para id="para-00013">Ex: If the input is:<newline/>
-    <code class="python inline-code" lang="python">lunch</code> <newline/>
-    <code class="python inline-code" lang="python">3</code> <newline/>
+    <code>lunch <newline/>
+    3</code>
     </para>
     <para id="para-00014">The output is:<newline/>
-    <code class="python inline-code" lang="python">Your order: Butternut squash soup</code></para>
+    <code>Your order: Butternut squash soup</code></para>
     <media alt="programming_practice_-Meal-orders_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_07_07_Programming-practice_-Meal-orders.html"/>
     </media>

@@ -66,8 +66,7 @@
 
     def sphere(radius):
         """Gets the surface area of a sphere."""
-        return 4 * math.pi * radius**2
-    </code>
+        return 4 * math.pi * radius**2</code>
     </example>
     <note class="learning-questions" id="note-00001">
     <title>Defining a module</title>
@@ -95,13 +94,11 @@
     import area
     
     print("Area of a basketball court:", area.rectangle(94, 50))
-    print("Area of a circus ring:", area.circle(21))
-    </code>
+    print("Area of a circus ring:", area.circle(21))</code>
     <para id="para-00007">The output is:</para>
-    <code class="python" lang="python">
+    <code>
     Area of a basketball court: 4700
-    Area of a circus ring: 1385.4423602330987
-    </code>
+    Area of a circus ring: 1385.4423602330987</code>
     <note class="guided-slides" id="note-00002">
     <title>Importing area in a Python shell</title>
     <media alt="importing_area_slides">
@@ -154,12 +151,11 @@
     <note class="practice-program" id="note-00005">
     <title>European vacation</title>
     <para id="para-00014">Write a program that uses the <code class="python inline-code" lang="python">conversion</code> module from the previous exercise to complete a short story. The program's output should match the following example (input in bold):</para>
-    <code class="python" lang="python">
-    How fast were you driving? 180
+    <code>
+    How fast were you driving? <emphasis effect="bold">180</emphasis>
     Woah, that's like 112 mph!
-    What was the temperature? 35
-    That's 95 degrees Fahrenheit!
-    </code>
+    What was the temperature? <emphasis effect="bold">35</emphasis>
+    That's 95 degrees Fahrenheit!</code>
     <para id="para-00015">Notice this exercise requires two files:</para>
     <list list-type="enumerated" id="list-00003">
     <item><emphasis effect="italics">european.py</emphasis>, the main program. Input and output statements are provided as a starting point. Edit the lines with TODO comments to use the conversion module.</item>

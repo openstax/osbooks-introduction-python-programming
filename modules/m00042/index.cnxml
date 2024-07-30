@@ -50,8 +50,7 @@
     while expression:
       # loop body
 
-    # statements after the loop
-    </code></entry>
+    # statements after the loop</code></entry>
     </row>
     <row>
     <entry><para id="para-00010"><code class="python inline-code" lang="python">for</code> loop</para></entry>
@@ -60,8 +59,7 @@
     for loop_variable in container:
       # loop body
 
-    # statements after the loop
-    </code></entry>
+    # statements after the loop</code></entry>
     </row>
     <row>
     <entry><para id="para-00011">Nested <code class="python inline-code" lang="python">while</code> loop</para></entry>
@@ -72,8 +70,7 @@
         # inner loop body
       # outer loop body (2)
 
-    # statements after the loop
-    </code></entry>
+    # statements after the loop</code></entry>
     </row>
     <row>
     <entry><para id="para-00012"><code class="python inline-code" lang="python">break</code> statement</para></entry>
@@ -85,8 +82,7 @@
         break
       # remaining body of loop
 
-    # statements after the loop
-    </code></entry>
+    # statements after the loop</code></entry>
     </row>
     <row>
     <entry><para id="para-00013"><code class="python inline-code" lang="python">continue</code> statement</para></entry>
@@ -98,8 +94,7 @@
         continue
       # remaining body of loop
 
-    # statements after the loop
-    </code></entry>
+    # statements after the loop</code></entry>
     </row>
     <row>
     <entry><para id="para-00014">Loop <code class="python inline-code" lang="python">else</code> statement</para></entry>
@@ -113,8 +108,7 @@
     else:
       # loop else statement
     
-    # statements after the loop
-    </code></entry>
+    # statements after the loop</code></entry>
     </row>
     </tbody>
     </tgroup>
@@ -125,14 +119,13 @@
     <para id="para-00003">Write a program that takes in a positive integer number (<code class="python inline-code" lang="python">N</code>) and prints out the first <code class="python inline-code" lang="python">N</code> prime numbers on separate lines.</para>
      <para id="para-00005">Note: A prime number is a number that is not divisible by any positive number larger than 1. To check whether a <code class="python inline-code" lang="python">number</code> is prime, the condition of <code class="python inline-code" lang="python">number % i != 0</code> can be checked for <code class="python inline-code" lang="python">i</code> greater than <code class="python inline-code" lang="python">1</code> and less than <code class="python inline-code" lang="python">number</code>.</para>
     <para id="para-00004">Ex: if <code class="python inline-code" lang="python">N = 6</code>, the output is:</para>
-    <code class="python" lang="python">
+    <code>
     2
     3
     5
     7
     11
-    13
-    </code>
+    13</code>
     <media alt="prime_numbers_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_07_10_Prime-numbers.html"/>
     </media>

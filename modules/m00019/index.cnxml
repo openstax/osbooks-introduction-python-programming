@@ -102,8 +102,7 @@
     &#160;&#160;5.859375 teaspoons sugar
     &#160;&#160;9.765625 cups all-purpose flour
     &#160;&#160;7.8125 cups sourdough starter
-    &#160;&#160;1.953125 cups lukewarm water
-    </code>
+    &#160;&#160;1.953125 cups lukewarm water</code>
     <para id="para-00005">In the above output, <code class="python inline-code" lang="python">bread_weight</code> is 16.0 ounces, <code class="python inline-code" lang="python">serving_size</code> is 2.5 ounces, and <code class="python inline-code" lang="python">num_guests</code> is 25 people. Use these three variables to calculate the number of loaves needed.</para>
     <para id="para-00006">Make sure your output matches the above example exactly. Notice that each line of the ingredients begins with two spaces.</para>
     <media alt="baking_bread_program">
@@ -117,16 +116,14 @@
     <code class="python" lang="python">
     Enter bill amount: <emphasis effect="bold">43.21</emphasis>
     Percentage to tip: <emphasis effect="bold">18</emphasis>
-    Number of people: <emphasis effect="bold">2</emphasis>
-    </code>
+    Number of people: <emphasis effect="bold">2</emphasis></code>
     <para id="para-00009">Then calculate the tip amount and total amount for the bill, based on the user input. Output the results using this format:</para>
     <code class="python" lang="python">
     Tip amount: $7.78
     Total amount: $50.99
     
     Tip per person: $3.89
-    Total per person: $25.49
-    </code>
+    Total per person: $25.49</code>
     <para id="para-00010">Your program should output all dollar amounts rounded to two decimal places. The output should be exactly six lines, as shown above. Notice the blank line before each section of the output. Notice also the space before but not after the dollar sign.</para>
     <media alt="tip_calculator_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch2/CodeRunner_02_10_15_Tip-calculator.html"/>

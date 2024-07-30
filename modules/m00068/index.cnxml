@@ -70,15 +70,13 @@
 
     # Sort the list
     dance_list.sort()
-    print(dance_list)
-    </code>
+    print(dance_list)</code>
     <para id="para-00008">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     [38, 92, 23, 16]
     [16, 23, 38, 92]
     ["Dabke", "Flamenco", "Hopak", "Kathak", "Salsa", "Ballet", "Stepping"]
-    ["Ballet", "Dabke", "Flamenco", "Hopak", "Kathak", "Salsa", "Stepping"]
-    </code>
+    ["Ballet", "Dabke", "Flamenco", "Hopak", "Kathak", "Salsa", "Stepping"]</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>sort() and reverse() methods</title>

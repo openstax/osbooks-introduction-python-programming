@@ -24,8 +24,7 @@
       score += 10
     # Wrong:
     if 70 &lt;= score &lt; 85:
-      score += 5
-    </code>
+      score += 5</code>
     <para id="para-00004">Chaining decision statements with <code class="python inline-code" lang="python">elif</code> allows the programmer to check for multiple conditions. An <term id="term-00001">elif</term> (short for else if) statement checks a condition when the prior decision statement's condition is false. An <code class="python inline-code" lang="python">elif</code> statement is part of a chain and must follow an <code class="python inline-code" lang="python">if</code> (or <code class="python inline-code" lang="python">elif</code>) statement.</para>
     <para id="para-00021"><code class="python inline-code" lang="python">if-elif</code> statement template:</para>
     <code class="python" lang="python">
@@ -36,8 +35,7 @@
     elif condition:
       # Body
     
-    # Statements after
-    </code>
+    # Statements after</code>
     <note class="guided-slides" id="note-00001">
     <title>Example: Livestream features</title>
     <media alt="livestream_slides">
@@ -137,13 +135,11 @@
     </list>
     <para id="para-00018">Assume the input is within the visible light spectrum, 380-750 inclusive.</para>
     <para id="para-00019">Given input:</para>
-    <code class="python" lang="python">
-    550
-    </code>
+    <code>
+    550</code>
     <para id="para-00020">The output is:</para>
-    <code class="python" lang="python">
-    Green
-    </code>
+    <code>
+    Green</code>
     <media alt="color_wavelengths_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_06_07_Color-wavelengths.html"/>
     </media>

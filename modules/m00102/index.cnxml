@@ -54,12 +54,11 @@
     <example id="exam-00001">
     <title>Using read() and readlines()</title>
     <para id="para-00008">A file called <emphasis effect="italics">input.txt</emphasis> has the following contents:</para>
-    <code class="python" lang="python">
+    <code>
     12
     55
     5
-    91
-    </code>
+    91</code>
     <code class="python" lang="python">
     """Demonstrating read() and readlines()"""
 
@@ -89,18 +88,16 @@
     print(str_list[2])
 
     # Always close the file once done using the file
-    infile2.close()
-    </code>
+    infile2.close()</code>
     <para id="para-00009">The code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     Result of using read():
     12
     55
     5
     91
     Result of using readlines() printing the third item in the string list:
-    5
-    </code>
+    5</code>
     </example>
     <note class="guided-slides" id="note-00003">
     <title>read() and readline()</title>
@@ -112,10 +109,9 @@
     <title>Reading files</title>
     <para id="para-00010">Suppose <code class="python inline-code" lang="python">fileobj = open("input.txt")</code> has already been executed for each question below.</para>
     <para id="para-00011"><emphasis effect="italics">input.txt</emphasis>:</para>
-    <code class="python" lang="python">
+    <code>
     Hello world!
-    How are you?
-    </code>
+    How are you?</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch14-m01-p04"/></para>
@@ -145,14 +141,13 @@
     <title>Reading from a file line by line</title>
     <para id="para-00016">The file <emphasis effect="italics">input.txt</emphasis> is shown. The file represents a set of integers. Line 1 of the file specifies how many integers follow. Write a program that reads from this file and determines the average of the numbers following the first line.</para>
     <para id="para-00017"><emphasis effect="italics">input.txt</emphasis></para>
-    <code class="python" lang="python">
+    <code>
     n: 5
     25
     13
     4
     6
-    19
-    </code>
+    19</code>
     <media alt="reading_from_a_file_line_by_line_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_02_02_Reading-from-a-file-line-by-line.html"/>
     </media>

@@ -227,16 +227,14 @@ print(acct_a == acct_b)</code>
     <item>Add durations together.</item>
     </list>
     <para id="para-00017">Given input:</para>
-    <code class="python" lang="python">
+    <code>
     walk
     5
     run
-    30
-    </code>
+    30</code>
     <para id="para-00018">The output is:</para>
-    <code class="python" lang="python">
-    walk and run: 35 minutes
-    </code>
+    <code>
+    walk and run: 35 minutes</code>
     <media alt="combining_exercise_logs_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch11/CodeRunner_11_05_04_Combining-exercise-logs.html"/>
     </media>

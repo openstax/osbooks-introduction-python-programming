@@ -53,13 +53,11 @@
     # Call binary search function
     print(binary_search(in_list, 0, len(in_list)-1, 48)) # Key exists at index 8
 
-    print(binary_search(in_list, 0, len(in_list)-1, 86)) # Key does not exist
-    </code>
+    print(binary_search(in_list, 0, len(in_list)-1, 86)) # Key does not exist</code>
     <para id="para-00005">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     8
-    Not found
-    </code>
+    Not found</code>
     </example>
     <note class="guided-slides" id="note-00001">
     <title>Binary search</title>
@@ -121,10 +119,9 @@
 
     # Test code
     print("Solution for 3 rings:")
-    three_towers(3, 't1', 't3', 't2') # t1, t2, t3 are the towers
-    </code>
+    three_towers(3, 't1', 't3', 't2') # t1, t2, t3 are the towers</code>
     <para id="para-00012">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     Solution for 3 rings:
     Move ring 1 from tower t1 to tower t3
     Move ring 2 from tower t1 to tower t2
@@ -132,8 +129,7 @@
     Move ring 3 from tower t1 to tower t3
     Move ring 1 from tower t2 to tower t1
     Move ring 2 from tower t2 to tower t3
-    Move ring 1 from tower t1 to tower t3
-    </code>
+    Move ring 1 from tower t1 to tower t3</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Solving Three Towers</title>
@@ -154,7 +150,7 @@
     <title>Coin combinations</title>
     <para id="para-00015">Write a recursive function <code class="python inline-code" lang="python">print_H_T()</code> that produces all possible combinations of heads (<code class="python inline-code" lang="python">"H"</code>) and tails (<code class="python inline-code" lang="python">"T"</code>) for a given number of coin tosses.</para>
     <para id="para-00016">Ex: For three coins, the program should print the output shown below.</para>
-    <code class="python" lang="python">
+    <code>
     HHH
     HHT
     HTH
@@ -162,8 +158,7 @@
     THH
     THT
     TTH
-    TTT
-    </code>
+    TTT</code>
     <media alt="coin_combinations_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_06_06_Coin-combinations.html"/>
     </media>
@@ -172,9 +167,8 @@
     <title>Generate random coin toss</title>
     <para id="para-00017">Write a recursive function combi_H_T() that given a certain number of coin tosses generates a sequence of heads ('H') and tails ('T') generated at random.</para>
     <para id="para-00018">Ex: For 5 coin tosses the program may print the output shown below.</para>
-    <code class="python" lang="python">
-    HTTTH
-    </code>
+    <code>
+    HTTTH</code>
     <media alt="generate_random_coin_toss_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch12/CodeRunner_12_06_07_Generate-random-coin-toss.html"/>
     </media>

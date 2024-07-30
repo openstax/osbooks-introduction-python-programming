@@ -90,13 +90,11 @@
     <code class="python" lang="python">
     Current hour (0-23)? <emphasis effect="bold">13</emphasis>
     Current minute (0-59)? <emphasis effect="bold">25</emphasis>
-    Trip time (in minutes)? <emphasis effect="bold">340</emphasis>
-    </code>
+    Trip time (in minutes)? <emphasis effect="bold">340</emphasis></code>
     <para id="para-00015">In this example, the current time is 13:25 (1:25pm). The trip time is 340 minutes (5 hours and 40 minutes). 340 minutes after 13:25 is 19:05 (7:05pm). Your program should output the result in this format:</para>
     <code class="python" lang="python">
     Arrival hour is 19
-    Arrival minute is 5
-    </code>
+    Arrival minute is 5</code>
     <para id="para-00016">The arrival hour must be between 0 and 23. Ex: Adding 120 minutes to 23:00 should be 1:00, not 25:00. The arrival minute must be between 0 and 59. Ex: Adding 20 minutes to 8:55 should be 9:15, not 8:75.</para>
     <para id="para-00017">Hint: Multiply the current hour by 60 to convert hours to minutes. Then, calculate the arrival time, in total minutes, as an integer.</para>
     <para id="para-00018">Your code must not use Python keywords from later chapters, such as <code class="python inline-code" lang="python">if</code> or <code class="python inline-code" lang="python">while</code>. The solution requires only addition, multiplication, division, and modulo.</para>
@@ -110,8 +108,7 @@
     <para id="para-00020">That's where this program comes into the story. Your task is to calculate how many of each coin to dispense. Your program should use the following prompts (user input in bold):</para>
     <code>
     Total amount? <emphasis effect="bold">18.76</emphasis>
-    Cash payment? <emphasis effect="bold">20</emphasis>
-    </code>
+    Cash payment? <emphasis effect="bold">20</emphasis></code>
     <para id="para-00021">You may assume that the cash paid will always be a whole number (representing dollar bills) that is greater than or equal to the total amount. The program should calculate and output the amount of change due and how many dollars, quarters, dimes, nickels, and pennies should be dispensed:</para>
     <code>
     Change Due $1.24
@@ -120,8 +117,7 @@
     Quarters: 0
        Dimes: 2
      Nickels: 0
-     Pennies: 4
-    </code>
+     Pennies: 4</code>
     <para id="para-00022">Hint: Calculate the total change, in cents, as an integer. Use the <code class="python inline-code" lang="python">round()</code> function to avoid floating-point errors.</para>
     <para id="para-00023">Your code must not use Python keywords from later chapters, such as <code class="python inline-code" lang="python">if</code> or <code class="python inline-code" lang="python">while</code>. The solution requires only subtraction, multiplication, division, and modulo.</para>
     <media alt="change_machine_program">

@@ -53,8 +53,7 @@
         # SuperClass attributes and methods
     
     class SubClass(SuperClass):
-        # SubClass attributes and methods
-    </code>
+        # SubClass attributes and methods</code>
     <note class="guided-slides" id="note-00003">
     <title>Using inheritance to create subclasses</title>
     <media alt="inheritance_subclasses_slides">

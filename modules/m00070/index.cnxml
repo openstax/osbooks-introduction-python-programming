@@ -107,14 +107,12 @@
     for row in list1:
       for num in row:
         print(num, end=" ")
-      print()
-    </code>
+      print()</code>
     <para id="para-00012">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     1 2 3
     1 4 9
-    1 8 27
-    </code>
+    1 8 27</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Iterating a list-of-lists</title>

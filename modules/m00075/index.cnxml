@@ -53,17 +53,14 @@
     <item>Creating a dictionary from a list of tuples.
     <code display="block" class="python" lang="python">
     my_list = [("apple", 2), ("banana", 3), ("orange", 4)]
-    my_dict = dict(my_list)
-    </code></item>
+    my_dict = dict(my_list)</code></item>
     <item>Creating a dictionary using keyword arguments.
     <code display="block" class="python" lang="python">
-    my_dict = dict(apple=2, banana=3, orange=4)
-    </code></item>
+    my_dict = dict(apple=2, banana=3, orange=4)</code></item>
     <item>Creating a dictionary from another dictionary.
     <code display="block" class="python" lang="python">
     old_dict = {"apple": 2, "banana": 3, "orange": 4}
-    new_dict = dict(old_dict)
-    </code></item>
+    new_dict = dict(old_dict)</code></item>
     </list>
     <note class="guided-slides" id="note-00003">
     <title>dict() for dictionary initialization</title>

@@ -39,9 +39,8 @@
     # Test code
     print(fib(7))</code>
     <para id="para-00006">The above code's output is:</para>
-    <code class="python" lang="python">
-    13
-    </code>
+    <code>
+    13</code>
     </example>
     <note class="guided-slides" id="note-00001">
     <title>Recursive Fibonacci function</title>
@@ -86,12 +85,10 @@
         return gcd(a - b, a)
 
     # Test code
-    print(gcd(24, 30))
-    </code>
+    print(gcd(24, 30))</code>
     <para id="para-00012">The above code's output is:</para>
-    <code class="python" lang="python">
-    6
-    </code>
+    <code>
+    6</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>GCD</title>

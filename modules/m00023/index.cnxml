@@ -98,8 +98,7 @@
     >>> type(rating)
     &lt;class 'str'>
     >>> id(rating)
-    140690967388272
-    </code>
+    140690967388272</code>
     <para id="para-00016">One might incorrectly think that the rating variable's type or identity changes. However, the only thing that changes is which object the rating variable refers to.</para>
     </note>
     </section>
@@ -113,8 +112,7 @@
     b = 2
     c = b
     b = a
-    a = c
-    </code></item>
+    a = c</code></item>
     <item>Run the code on <link url="https://openstax.org/r/100pythruncode">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
     <list list-type="bulleted" id="list-00004">
@@ -133,8 +131,7 @@
     price = 1.99
     lower = min(length, price)
     product = name
-    name = name * 2
-    </code></item>
+    name = name * 2</code></item>
     <item>Run the code on <link url="https://openstax.org/r/100pythruncode">Python Tutor</link> to check your answer.</item>
     <item>Based on your diagram, answer these questions:
     <list list-type="bulleted" id="list-00006">

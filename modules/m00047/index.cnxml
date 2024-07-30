@@ -31,8 +31,7 @@
       print(f"Welcome {name}!")
 
     username = int(input("Enter new username: "))
-    print_welcome(username)
-    </code>
+    print_welcome(username)</code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch06-m04-p01"/></para>
@@ -69,8 +68,7 @@
     num_2 = 3
     print_div(num_1, num_2) # Prints "6/3 = 2.0"
     print_div(num_2, num_1) # Prints "3/6 = 0.5"
-    print_div(num_1) # Error: Missing argument: op_2
-    </code>
+    print_div(num_1) # Error: Missing argument: op_2</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Multiple arguments and parameters</title>
@@ -84,8 +82,7 @@
     p1_y =int(input("Enter point 1's y: "))
     p2_x =int(input("Enter point 2's x: "))
     p2_y =int(input("Enter point 2's y: "))
-    calc_distance(p1_x, p1_y, p2_x, p2_y)
-    </code>
+    calc_distance(p1_x, p1_y, p2_x, p2_y)</code>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch06-m04-p05"/></para>
@@ -129,8 +126,7 @@
     # Convert from Fahrenheit to Celsius.
     convert_temps(wknd_temps, metric)
     for temp in wknd_temps:
-      print(f"{temp:.2f}{deg_sign}{metric}", end=" ")
-    </code>
+      print(f"{temp:.2f}{deg_sign}{metric}", end=" ")</code>
     <para id="para-00016">The output is <code class="python inline-code" lang="python">9.44°F 10.56°F 6.67°F</code>. <code class="python inline-code" lang="python">type</code> was changed to <code class="python inline-code" lang="python">"C"</code> in the function but didn't keep the change outside of the function. Why is the list argument change kept and not the string argument change? (Hint: A list is mutable. A string is immutable.)</para>
     </example>
     <note class="guided-slides" id="note-00004">
@@ -168,14 +164,12 @@
     <title>Printing right triangle area</title>
     <para id="para-00021">Write a function, <code class="python inline-code" lang="python">print_area()</code>, that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where b is the base and h is the height.</para>
     <para id="para-00022">Given input:</para>
-    <code class="python" lang="python">
+    <code>
     3
-    4
-    </code>
+    4</code>
     <para id="para-00023">The output is:</para>
-    <code class="python" lang="python">
-    Triangle area: 6.0
-    </code>
+    <code>
+    Triangle area: 6.0</code>
     <media alt="printing_right_triangle_area_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_05_06_Printing-right-triangle-area.html"/>
     </media>
@@ -185,16 +179,14 @@
     <para id="para-00024">Write a function, <code class="python inline-code" lang="python">print_scores()</code>, that takes in a list of test scores and a number representing how many points to add. For each score, print the original score and the sum of the score and bonus. Make sure not to change the list.</para>
     <para id="para-00025">Given function call:</para>
     <code class="python" lang="python">
-    print_scores([67, 68, 72, 71, 69], 10)
-    </code>
+    print_scores([67, 68, 72, 71, 69], 10)</code>
     <para id="para-00026">The output is:</para>
-    <code class="python" lang="python">
+    <code>
     67 would be updated to 77
     68 would be updated to 78
     72 would be updated to 82
     71 would be updated to 81
-    69 would be updated to 79
-    </code>
+    69 would be updated to 79</code>
     <media alt="curving_scores_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_05_07_Curving-scores.html"/>
     </media>

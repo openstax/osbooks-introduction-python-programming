@@ -207,23 +207,22 @@
     <item><link url="https://openstax.org/r/100timedeltaex">Examples of Usage: timedelta</link></item>
     </list>
     <para id="para-00017">Write a program that creates a <code class="python inline-code" lang="python">date</code> object representing your birthday. Then get a <code class="python inline-code" lang="python">date</code> object representing today's date (the date the program is run). Calculate the difference between the two dates, and output the results in the following format:</para>
-    <code class="python" lang="python">
+    <code>
     Your birth date: 2005-03-14
     Today's date is: 2023-06-01
 
     You were born 6653 days ago
     (that is 574819200 seconds)
 
-    You are about 18 years old
-    </code>
+    You are about 18 years old</code>
     <media alt="happy_birthday_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_06_07_Happy-birthday.html"/>
     </media>
     </note>
     <note class="practice-program" id="note-00005">
     <title>More exact age</title>
-    <para id="para-00018">The <code class="python inline-code" lang="python">datetime</code> module does not provide a built-in way to display a person's exact age. Ex: The following program calculates an exact age (in years and days) using floor division and modulo. The output is: <code class="python inline-code" lang="python">You are 15 years and 4 days old</code>.</para>
-    <code class="python" lang="python">
+    <para id="para-00018">The <code class="python inline-code" lang="python">datetime</code> module does not provide a built-in way to display a person's exact age. Ex: The following program calculates an exact age (in years and days) using floor division and modulo. The output is: <code>You are 15 years and 4 days old</code>.</para>
+    <code>
     from datetime import date
 
     birth = date(2005, 3, 14)
@@ -232,15 +231,13 @@
     
     years = delta.days // 365
     days = delta.days % 365
-    print("You are", years, "years and", days, "days old")
-    </code>
+    print("You are", years, "years and", days, "days old")</code>
     <para id="para-00019">Notice how leap years are included in the calculation. February 29th occurs four times between <code class="python inline-code" lang="python">birth</code> and <code class="python inline-code" lang="python">today</code>. Therefore, the user is not only 15 years old, but 15 years and 4 days old.</para>
     <para id="para-00020">Many commonly used modules from PyPI, including <code class="python inline-code" lang="python">arrow</code>, are installed in the Python shell at <link url="https://openstax.org/r/100pythonshell">python.org/shell</link>. Open the Python shell and type the following lines:</para>
     <code class="python" lang="python">
     import arrow
     birth = arrow.get(2005, 3, 14)
-    birth.humanize()
-    </code>
+    birth.humanize()</code>
     <para id="para-00021">Refer to the <link url="https://openstax.org/r/100humanize">humanize()</link> examples from the <code class="python inline-code" lang="python">arrow</code> module documentation. In the Python shell, figure out how to display the number of years and days since <code class="python inline-code" lang="python">birth</code> using <emphasis effect="italics">one line of code</emphasis>. Then display the number of years, months, and days since <code class="python inline-code" lang="python">birth</code>. Finally, use the <code class="python inline-code" lang="python">print()</code> function to output the results in this format: <code class="python inline-code" lang="python">You are 18 years 4 months and 7 days old</code>.</para>
     <para id="para-00022">As time permits, experiment with other functions provided by the <code class="python inline-code" lang="python">arrow</code> module.</para>
     </note>

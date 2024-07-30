@@ -80,10 +80,9 @@
     print()
     mem_13.display()
     print()
-    mem_15.display()
-    </code>
+    mem_15.display()</code>
     <para id="para-00006">The code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     Current choir member
     Part: Alto
 
@@ -92,8 +91,7 @@
 
     Current choir member
     Part: Soprano
-    Division: Soprano 1
-    </code>
+    Division: Soprano 1</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Implementing hierarchical inheritance</title>
@@ -120,8 +118,7 @@
     
     b_inst = B(2)
     c_inst = C(c_attr=4)
-    d_inst = D(6, 7)
-    </code>
+    d_inst = D(6, 7)</code>
     <exercise id="exer-00003">
     <problem id="prob-00003">
     <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch13-m04-p03"/></para>
@@ -149,10 +146,9 @@
     <item><code class="python inline-code" lang="python">String</code> inherits from <code class="python inline-code" lang="python">Instrument</code> and has instance attribute <code class="python inline-code" lang="python">num_strings</code>, with default value of 4.</item>
     </list>
     <para id="para-00012">The output should match:</para>
-    <code class="python" lang="python">
+    <code>
     This flute belongs to unknown and is made of silver
-    This cello belongs to Bea and has 4 strings
-    </code>
+    This cello belongs to Bea and has 4 strings</code>
     <media alt="overriding_methods_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_05_06_Overriding-methods.html"/>
     </media>

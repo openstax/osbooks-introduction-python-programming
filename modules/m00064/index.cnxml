@@ -73,8 +73,7 @@
     <entry><para id="para-00013"><code class="python inline-code" lang="python">in</code> operator in a <code class="python inline-code" lang="python">for</code> loop</para></entry>
     <entry><code class="python" lang="python">
     for character in string:
-      # loop body
-    </code></entry>
+      # loop body</code></entry>
     </row>
     </tbody>
     </tgroup>

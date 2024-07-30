@@ -126,8 +126,7 @@
     Somewhere ages and ages hence:
     Two roads diverged in a wood, and I--
     I took the one less traveled by,
-    And that has made all the difference.
-    </code>
+    And that has made all the difference.</code>
     <media alt="frost_poem_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_02_Frost-poem.html"/>
     </media>
@@ -137,12 +136,10 @@
     <para id="para-00015">Write a program that asks the following two questions (example input in bold):</para>
     <code>
     What is your name? <emphasis effect="bold">Shakira</emphasis>
-    What do you like? <emphasis effect="bold">singing</emphasis>
-    </code>
+    What do you like? <emphasis effect="bold">singing</emphasis></code>
     <para id="para-00016">Output a blank line after reading the input. Then output the following message based on the input:</para>
     <code>
-    <emphasis effect="bold">Shakira</emphasis> likes <emphasis effect="bold">singing</emphasis>
-    </code>
+    <emphasis effect="bold">Shakira</emphasis> likes <emphasis effect="bold">singing</emphasis></code>
     <media alt="name_likes_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch1/CodeRunner_01_03_03_Name-likes.html"/>
     </media>

@@ -109,12 +109,10 @@
       list_csv.append(cells)
     
     # Print result
-    print(list_csv)
-    </code>
+    print(list_csv)</code>
     <para id="para-00013">The code's output is:</para>
-    <code class="python" lang="python">
-    [['Title', ' Author', ' Pages'], ['1984', ' George Orwell', ' 268'], ['Jane Eyre', ' Charlotte Bronte', ' 532'], ['Walden', ' Henry David Thoreau', ' 156'], ['Moby Dick', ' Herman Melville', ' 538']]
-    </code>
+    <code>
+    [['Title', ' Author', ' Pages'], ['1984', ' George Orwell', ' 268'], ['Jane Eyre', ' Charlotte Bronte', ' 532'], ['Walden', ' Henry David Thoreau', ' 156'], ['Moby Dick', ' Herman Melville', ' 538']]</code>
     </example>
     <note class="learning-questions" id="note-00002">
     <title>File types and CSV files</title>

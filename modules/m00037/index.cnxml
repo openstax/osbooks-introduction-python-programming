@@ -42,8 +42,7 @@
       # Calculating the next Fibonacci number and updating the last two sequence numbers
       temp = f
       f = g
-      g = temp + g
-    </code>
+      g = temp + g</code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch05-m01-p01"/></para>
@@ -75,8 +74,7 @@
       if counter % 2 == 1:
         print(counter)
       # Counting up and increasing counter's value by 1 in each iteration
-      counter += 1
-    </code>
+      counter += 1</code>
     </example>
     <note class="guided-slides" id="note-00003">
     <title>Counting with while loop</title>
@@ -93,8 +91,7 @@
     &#160;&#160;print(n)
     &#160;&#160;n = n - 1
     
-    print("value of n after the loop is", n)
-    </code>
+    print("value of n after the loop is", n)</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch05-m01-p04"/></para>

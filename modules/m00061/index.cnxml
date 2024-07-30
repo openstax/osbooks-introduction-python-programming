@@ -138,12 +138,10 @@
     <code class="python" lang="python">
     time_string = "The time is 12:50"
     index = time_string.index(":")
-    print(time_string[index+1:index+3])
-    </code>
+    print(time_string[index+1:index+3])</code>
     <para id="para-00020">The above code's output is:</para>
-    <code class="python" lang="python">
-    50
-    </code>
+    <code>
+    50</code>
     </example>
     <note class="learning-questions" id="note-00009">
     <title>Using index() to locate a substring</title>
@@ -168,14 +166,12 @@
     <note class="practice-program" id="note-00010">
     <title>Finding all spaces</title>
     <para id="para-00024">Write a program that, given a string, counts the number of space characters in the string. Also, print the given string with all spaces removed.</para>
-    <code class="python" lang="python">
-    Input: "This is great"
-    </code>
-    <code class="python" lang="python">
-    prints:
+    <code>
+    Input: "This is great"</code>
+    <code>
+    Prints:
     2
-    Thisisgreat
-    </code>
+    Thisisgreat</code>
     <media alt="finding_all_spaces_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_04_05_Finding-all-spaces.html"/>
     </media>

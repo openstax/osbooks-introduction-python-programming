@@ -76,8 +76,7 @@
         print(f"Proficient in {self.lang_xp}")
     
     emp_1 = Employee()
-    dev_1 = Developer()
-    </code>
+    dev_1 = Developer()</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00008"><link class="os-embed" url="#exercise/CPL-ch13-m02-p04"/></para>
@@ -104,9 +103,8 @@
     <item><code class="python inline-code" lang="python">display(self)</code>: prints a cupcake's ingredients and frosting</item>
     </list>
     <para id="para-00012">Then call the <code class="python inline-code" lang="python">display()</code> method on a new <code class="python inline-code" lang="python">Cupcake</code> object. The output should match:</para>
-    <code class="python" lang="python">
-    Made with ["butter", "sugar", "eggs", "flour"] and topped with buttercream frosting
-    </code>
+    <code>
+    Made with ["butter", "sugar", "eggs", "flour"] and topped with buttercream frosting</code>
     <media alt="creating_a_subclass_with_an_instance_attribute_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_03_03_Creating-a-subclass-with-an-instance-attribute.html"/>
     </media>

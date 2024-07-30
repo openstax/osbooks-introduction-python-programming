@@ -85,8 +85,7 @@
       60  &lt;
       61  =
       62  >
-      63  ?     
-    </code></entry>
+      63  ?</code></entry>
     <entry>
       <code class="python" lang="python">
         64  @        
@@ -120,8 +119,7 @@
         92  \
         93  ]
         94  ^
-        95  _     
-    </code></entry>
+        95  _</code></entry>
     <entry>
     <code class="python" lang="python">
       96  `
@@ -155,8 +153,7 @@
      124  |
      125  }
      126  ~
-     127  (delete)     
-    </code></entry>
+     127  (delete)</code></entry>
     </row>
     </tbody>
 </tgroup>
@@ -256,8 +253,7 @@
     <code class="python" lang="python">
     "To me programming is more than an important practical art.
     It is also a gigantic undertaking in the foundations of knowledge."
-    	-- Grace Hopper
-    </code>
+    	-- Grace Hopper</code>
     <media alt="hopper_quote_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_01_Hopper-quote.html"/>
     </media>
@@ -267,13 +263,11 @@
     <para id="para-00018">During the Roman Empire, Julius Caesar (100–44 BCE) used a simple technique to encrypt private messages. Each letter of the message was replaced with the third next letter of the alphabet. Ex: If the message was CAT, the C became F, the A became D, and the T became W, resulting in the message FDW. This technique is known as a shift cipher because each letter is shifted by some amount. In Caesar's case, the amount was three, but other amounts (besides 0) would work too.</para>
     <para id="para-00019">Write a program that prompts the user to input the following two values (example input in bold):</para>
     <code>
-    Enter a 3-letter word: <code class="inline-code"><emphasis effect="bold">CAT</emphasis></code>
-    Shift by how many letters? <code class="inline-code"><emphasis effect="bold">3</emphasis></code>
-    </code>
+    Enter a 3-letter word: <emphasis effect="bold">CAT</emphasis>
+    Shift by how many letters? <emphasis effect="bold">3</emphasis></code>
     <para id="para-00020">The program should then shift each letter of the word by the desired amount. Based on the example above, the output would be:</para>
-    <code class="python" lang="python">
-    The secret message is: FDW
-    </code>
+    <code>
+    The secret message is: FDW</code>
     <para id="para-00021">Hint: Use the <code class="python inline-code" lang="python">ord()</code> function to convert each letter to an integer, add the shift amount to each integer, use the <code class="python inline-code" lang="python">chr()</code> function to convert each integer to a character, and concatenate the resulting characters.</para>
     <media alt="shift_cipher_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_02_Shift-cipher.html"/>

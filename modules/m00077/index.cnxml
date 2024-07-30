@@ -156,8 +156,7 @@ print(2014 in movies.values())
     for key in dictionary: # Loop expression
       # Statements to execute in the loop
 
-    # Statements to execute after the loop
-    </code>
+    # Statements to execute after the loop</code>
     </note>
 
     <example id="exam-00002">
@@ -281,12 +280,10 @@ for value in zip_codes.values():
     <para id="para-00011">Given a string value, calculate and print the number of occurrences of all characters using a dictionary.</para>
     <code class="python" lang="python">
     Input:
-    string_value = "This is a string"
-    </code>
+    string_value = "This is a string"</code>
     <code class="python" lang="python">
     Prints {"T": 1, "h": 1, "i": 3, "s": 3, " ": 3, "a": 1, "t": 1, "r": 1, "n": 1, 
-    "g": 1}
-    </code>
+    "g": 1}</code>
     <media alt="character_count_in_a_string_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_05_05_Character-count-in-a-string.html"/>
     </media>
@@ -296,11 +293,9 @@ for value in zip_codes.values():
     <para id="para-00012">Given a <code class="python inline-code" lang="python">fruit_count</code> dictionary that contains information about fruits and the count of each fruit, calculate the total number of fruits across all fruit types.</para>
     <code class="python" lang="python">
     Input:
-    fruit_count = {"banana": 2, "orange": 5, "peach": 5}
-    </code>
-    <code class="python" lang="python">
-    Prints 12
-    </code>
+    fruit_count = {"banana": 2, "orange": 5, "peach": 5}</code>
+    <code>
+    Prints 12</code>
     <media alt="calculate_the_total_number_of_fruits_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_05_06_Calculate-the-total-number-of-fruits.html"/>
     </media>

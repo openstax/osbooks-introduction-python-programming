@@ -107,13 +107,11 @@
     print(x.lower())
 
     # The upper() method converts a string to all uppercase characters
-    print(x.upper())
-    </code>
+    print(x.upper())</code>
     <para id="para-00008">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     apples
-    APPLES
-    </code>
+    APPLES</code>
     </example>
     <note class="learning-questions" id="note-00002">
     <title>Using lower() and upper()</title>

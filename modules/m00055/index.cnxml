@@ -99,8 +99,7 @@
     def darken(color):
       """Decreases the red, green, and blue values of a color by 32 each."""
       r, g, b = torgb(color)
-      return tohex(r-32, g-32, b-32)
-    </code>
+      return tohex(r-32, g-32, b-32)</code>
     <note class="learning-questions" id="note-00003">
     <title>The colors module</title>
     <exercise id="exer-00004">
@@ -159,8 +158,7 @@
       YELLOW = '#FFFF00'
 
     FILE
-      /home/student/Desktop/colors.py
-    </code>
+      /home/student/Desktop/colors.py</code>
     </example>
     <note class="learning-questions" id="note-00004">
     <title>The help() function</title>

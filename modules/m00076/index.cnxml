@@ -29,8 +29,7 @@
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     print(my_dict["banana"]) # Prints: 3
     print(my_dict.get("apple")) # Prints: 2
-    print(my_dict.get("pineapple", -1)) # Prints: -1
-    </code>
+    print(my_dict.get("pineapple", -1)) # Prints: -1</code>
     <note class="guided-slides" id="note-00001">
     <title>Accessing dictionary items</title>
     <media alt="accessing_dictionary_slides">
@@ -69,15 +68,13 @@
     print(dictionary_object.keys())
     print(list(dictionary_object.keys()))
     print(dictionary_object.values())
-    print(dictionary_object.items())
-    </code>
+    print(dictionary_object.items())</code>
     <para id="para-00010">The above code's output is:</para>
     <code class="python" lang="python">
     dict_keys(["a", "b", "c"])
     ["a", "b", "c"]
     dict_values([97, 98, 99])
-    dict_items([("a", 97), ("b", 98), ("c", 99)])
-    </code>
+    dict_items([("a", 97), ("b", 98), ("c", 99)])</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Dictionary keys and values</title>
@@ -108,14 +105,12 @@
     <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict["pineapple"] = 1
-    print(my_dict) # Prints: {"apple": 2, "banana": 3, "orange": 4, "pineapple": 1}
-    </code></item>
+    print(my_dict) # Prints: {"apple": 2, "banana": 3, "orange": 4, "pineapple": 1}</code></item>
     <item><code class="python inline-code" lang="python">update()</code> method: the <code class="python inline-code" lang="python">update()</code> method can be called with additional key-value pairs to update the dictionary content.
     <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict.update({"pineapple": 1, "cherry": 0})
-    print(my_dict) # Prints: {"apple": 2, "banana": 3, "orange": 4, "pineapple": 1, "cherry": 0}
-    </code></item>
+    print(my_dict) # Prints: {"apple": 2, "banana": 3, "orange": 4, "pineapple": 1, "cherry": 0}</code></item>
     </list>
     <para id="para-00017">To modify a dictionary item, the two approaches above can be used on an existing dictionary key along with the updated value. Ex:</para>
     <list id="list-00004">
@@ -123,14 +118,12 @@
     <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict["apple"] = 1
-    print(my_dict) # Prints: {"apple": 1, "banana": 3, "orange": 4}
-    </code></item>
+    print(my_dict) # Prints: {"apple": 1, "banana": 3, "orange": 4}</code></item>
     <item><code class="python inline-code" lang="python">update()</code> method:
     <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     my_dict.update({"apple": 1})
-    print(my_dict) # Prints: {"apple": 1, "banana": 3, "orange": 4}
-    </code></item>
+    print(my_dict) # Prints: {"apple": 1, "banana": 3, "orange": 4}</code></item>
     </list>
     <para id="para-00018">Items can be deleted from a dictionary using the <code class="python inline-code" lang="python">del</code> keyword or the <code class="python inline-code" lang="python">pop()</code> method.</para>
     <list id="list-00005">
@@ -138,15 +131,13 @@
     <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     del my_dict["orange"]
-    print(my_dict) # Prints: {"apple": 2, "banana": 3}
-    </code></item>
+    print(my_dict) # Prints: {"apple": 2, "banana": 3}</code></item>
     <item><code class="python inline-code" lang="python">pop()</code> method:
     <code display="block" class="python" lang="python">
     my_dict = {"apple": 2, "banana": 3, "orange": 4}
     deleted_value = my_dict.pop("banana")
     print(deleted_value) # Prints: 3
-    print(my_dict) # Output: {"apple": 2, "orange": 4}}
-    </code></item>
+    print(my_dict) # Output: {"apple": 2, "orange": 4}</code></item>
     </list>
     <note class="guided-slides" id="note-00004">
     <title>Modifying dictionary items</title>
@@ -187,9 +178,8 @@
     <item>Delete key <code class="python inline-code" lang="python">"Volt"</code> and the associated value.</item>
     <item>Print the dictionary content.</item>
     </list>
-    <code class="python" lang="python">
-    Prints {"Mustang": 2}
-    </code>
+    <code>
+    Prints {"Mustang": 2}</code>
     <media alt="create_a_dictionary_of_cars_step_by_step_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_04_03_Create-a-dictionary-of-cars-step-by-step.html"/>
     </media>
@@ -199,11 +189,9 @@
     <para id="para-00024">Given a string value, calculate and print the number of unique characters using a dictionary.</para>
     <code class="python" lang="python">
     Input:
-    string_value = "This is a string"
-    </code>
-    <code class="python" lang="python">
-    Prints 10
-    </code>
+    string_value = "This is a string"</code>
+    <code>
+    Prints 10</code>
     <media alt="the_number_of_unique_characters_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch10/CodeRunner_10_04_04_The-number-of-unique-characters.html"/>
     </media>

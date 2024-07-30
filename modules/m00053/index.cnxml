@@ -18,13 +18,11 @@
     <title>The from keyword</title>
     <para id="para-00002">Specific functions in a module can be imported using the <code class="python inline-code" lang="python">from</code> keyword:</para>
     <code class="python" lang="python">
-    from area import triangle, cylinder
-    </code>
+    from area import triangle, cylinder</code>
     <para id="para-00003">These functions can be called directly, without referring to the module:</para>
     <code class="python" lang="python">
     print(triangle(1, 2))
-    print(cylinder(3, 4))
-    </code>
+    print(cylinder(3, 4))</code>
     <note id="note-00001">
     <title>Exploring further</title>
     <para id="para-00004">As shown below, the <code class="python inline-code" lang="python">from</code> keyword can lead to confusing names.</para>
@@ -63,8 +61,7 @@
     def cube(x):    # Name collision (replaces the imported function)
       return x ** 3
     
-    print(cube(2)) # Calls the local cube() function, not area.cube()
-    </code>
+    print(cube(2)) # Calls the local cube() function, not area.cube()</code>
     <para id="para-00009">A programmer might not realize the <code class="python inline-code" lang="python">cube</code> function is defined twice because no error occurs when running the program. Name collisions are not considered errors and often lead to unexpected behavior.</para>
     <para id="para-00016">Care should be taken to avoid name collisions. Selecting specific functions from a module to import reduces the memory footprint; however, importing a complete module can help to avoid collisions because a <emphasis effect="italics">module.name</emphasis> format would be used. This is a tradeoff the programmer must consider.</para>
     <note class="guided-slides" id="note-00004">
@@ -107,12 +104,11 @@
     <note class="practice-program" id="note-00008">
     <title>Party favors</title>
     <para id="para-00015">The following program does not run correctly because of name collisions. Fix the program by modifying import statements, function calls, and variable assignments. The output should be:</para>
-    <code class="python" lang="python">
+    <code>
     Bouncy ball area: 13
     Bouncy ball volume: 4
     Cone hat area: 227
-    Cone hat volume: 209
-    </code>
+    Cone hat volume: 209</code>
     <media alt="party_favors_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch7/CodeRunner_07_03_04_Party-favors.html"/>
     </media>

@@ -34,15 +34,13 @@
     &#160;&#160;&#160;&#160;print(hour, ":", minute)
     &#160;&#160;&#160;&#160;minute += 30
     &#160;&#160;hour += 1
-    &#160;&#160;minute = 0
-    </code>
+    &#160;&#160;minute = 0</code>
     <para id="para-00004">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     8 : 0
     8 : 30
     9 : 0
-    9 : 30
-    </code>
+    9 : 30</code>
     </example>
     <note class="learning-questions" id="note-00002">
     <title>Nested while loop question set</title>
@@ -102,8 +100,7 @@
     &#160;&#160;&#160;&#160;print (i, end = " ")
     &#160;&#160;&#160;&#160;i += 2
     &#160;&#160;i = 0
-    &#160;&#160;print()
-    </code>
+    &#160;&#160;print()</code>
     </note>
     </section>
  
@@ -136,8 +133,7 @@
     ++++
     +++
     ++
-    +
-    </code>
+    +</code>
     
     <media alt="printing_two_triangles_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch5/CodeRunner_05_04_06_Printing-two-triangles.html"/>

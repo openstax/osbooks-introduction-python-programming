@@ -26,27 +26,24 @@
     <example id="exam-00001">
     <title>Typo in a file</title>
     <para id="para-00004">A file named food_order.txt has the following contents:</para>
-    <code class="python" lang="python">
+    <code>
     5 sandwiches
     4 chips
     1 pickle
-    soft drinks
-    </code>
+    soft drinks</code>
     <para id="para-00005">The following program expects each line of the file to begin with an integer:</para>
     <code class="python" lang="python">
     for line in open("food_order.txt"):
         space = line.index(" ")
         qty = int(line[:space])
         item = line[space+1:-1]
-        print(qty, item)
-    </code>
+        print(qty, item)</code>
     <para id="para-00006">Unfortunately, the line <code class="python inline-code" lang="python">"soft drinks"</code> does not begin with an integer. As a result, the program terminates and displays an error message:</para>
     <code class="python" lang="python">
     Traceback (most recent call last):
       File "food_order.py", line 3
         qty = int(line[:space])
-    ValueError: invalid literal for int() with base 10: 'soft'
-    </code>
+    ValueError: invalid literal for int() with base 10: 'soft'</code>
     </example>
     <note class="learning-questions" id="note-00001">
     <title>Common exceptions</title>
@@ -87,20 +84,17 @@
         print(name, "has", count, "lines")
     except FileNotFoundError:
         print("File not found:", name)
-    print("Have a nice day!")
-    </code>
+    print("Have a nice day!")</code>
     <para id="para-00014">When running this program with the input <emphasis effect="italics">try_open.py</emphasis>, the name of the program file, the output is:</para>
-    <code class="python" lang="python">
+    <code>
     Enter a filename: try_open.py
     try_open.py has 9 lines
-    Have a nice day!
-    </code>
+    Have a nice day!</code>
     <para id="para-00015">If the filename does not exist, a <code class="python inline-code" lang="python">FileNotFoundError</code> is raised on line 3. The program then jumps to the <code class="python inline-code" lang="python">except</code> clause on line 7 and continues to run. The resulting output is:</para>
-    <code class="python" lang="python">
+    <code>
     Enter a filename: try_open.txt
     File not found: try_open.txt
-    Have a nice day!
-    </code>
+    Have a nice day!</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Predicting output with exceptions</title>
@@ -132,14 +126,13 @@
     <item>Otherwise, the string does not represent a number.</item>
     </list>
     <para id="para-00021">Implement the <code class="python inline-code" lang="python">get_type()</code> function using this approach. The provided main block calls <code class="python inline-code" lang="python">get_type()</code> for each word in a file. <code class="python inline-code" lang="python">get_type()</code> should return either <code class="python inline-code" lang="python">"int"</code>, <code class="python inline-code" lang="python">"float"</code>, or <code class="python inline-code" lang="python">"str"</code>, based on the word. The output for the provided data.txt is:</para>
-    <code class="python" lang="python">
+    <code>
     str: Hello
     int: 100
     str: times!
     float: 3.14159
     str: is
-    str: pi.
-    </code>
+    str: pi.</code>
     <media alt="type_analyzer_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_05_06_Type-analyzer.html"/>
     </media>
@@ -147,24 +140,22 @@
     <note class="practice-program" id="note-00005">
     <title>United countries</title>
     <para id="para-00022">Write a program that prompts the user to input a word and a filename. The program should print each line of the file that contains the word. Here is an example run of the program (user input in bold):</para>
-    <code class="python" lang="python">
+    <code>
     Enter a word: <emphasis effect="bold">United</emphasis>
     Enter a filename: <emphasis effect="bold">countries.csv</emphasis>
     United Arab Emirates,9890402,83600,118
     United Kingdom,67886011,241930,281
-    United States of America,331002651,9147420,36
-    </code>
+    United States of America,331002651,9147420,36</code>
     <para id="para-00023">This example uses a file named countries.csv based on the <link url="https://openstax.org/r/100countries">alphabetical list of countries</link> from Worldometer. Each line of the file includes a country's name, population, land area, and population density, separated by commas.</para>
     <para id="para-00024">The user might incorrectly type the filename (Ex: <!--<kbd>--><emphasis effect="italics">countries.txt</emphasis><!--</kbd>--> instead of <!--<kbd>--><emphasis effect="italics">countries.csv</emphasis><!--</kbd>-->). Your program should output an error message if the file is not found, and keep prompting the user to input a filename until the file is found:</para>
-    <code class="python" lang="python">
+    <code>
     ...
     Enter a filename: <emphasis effect="bold">countries</emphasis>
     File not found: countries
     Enter a filename: <emphasis effect="bold">countries.txt</emphasis>
     File not found: countries.txt
     Enter a filename: <emphasis effect="bold">countries.csv</emphasis>
-    ...
-    </code>
+    ...</code>
     <para id="para-00025">Hint: Try to open the file specified by the user. A <code class="python inline-code" lang="python">FileNotFoundError</code> is raised if the filename is invalid.</para>
     <media alt="united_countries_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_05_07_United-countries.html"/>

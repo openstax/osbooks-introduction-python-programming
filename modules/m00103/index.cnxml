@@ -111,10 +111,9 @@
     infile = open("output.txt")
     print("\nRead the modified file:\n")
     print(infile.read())
-    infile.close()
-    </code>
+    infile.close()</code>
     <para id="para-00011">The code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     Read the original file:
 
     Writing to a new file.
@@ -125,8 +124,7 @@
     Writing to a new file.
     Second line.
     Adding to the file.
-    Adding another line.
-    </code>
+    Adding another line.</code>
     </example>
     <note class="guided-slides" id="note-00002">
     <title>write() and close()</title>

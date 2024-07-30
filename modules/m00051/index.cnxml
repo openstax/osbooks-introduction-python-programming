@@ -21,8 +21,7 @@
       print("Hello!")
     
     def bye():
-      print("Goodbye!")
-    </code>
+      print("Goodbye!")</code>
     <para id="para-00003">Technically, every program in this book is a module. But not every module is designed to run like a program. Running <emphasis effect="italics">greetings.py</emphasis> as a program would accomplish very little. Two functions would be defined, but the functions would never be called. These functions are intended to be called in other modules.</para>
     </content>
 </document>

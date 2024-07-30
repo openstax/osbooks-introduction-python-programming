@@ -23,8 +23,7 @@
     for i in range(len(user_string)):
     &#160;&#160;if user_string[i] == 'a':
     &#160;&#160;&#160;&#160;print("Found at index:", i)
-    &#160;&#160;&#160;&#160;break
-    </code>
+    &#160;&#160;&#160;&#160;break</code>
     <note class="guided-slides" id="note-00001">
     <title>Break statement in a while loop</title>
     <media alt="while_break_slides">
@@ -40,8 +39,7 @@
     &#160;&#160;if counter &gt;= 10:
     &#160;&#160;&#160;&#160;break
     &#160;&#160;print(counter)
-    &#160;&#160;counter += 1
-    </code>
+    &#160;&#160;counter += 1</code>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Using a break statement</title>

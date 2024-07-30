@@ -62,8 +62,7 @@
         self.XP = XP
         ...
       def add_xp(self, num):
-        ...
-    </code>
+        ...</code>
     <para id="para-00010"><emphasis effect="italics">main.py</emphasis></para>
     <code class="python" lang="python">
     import character as c
@@ -72,8 +71,7 @@
     bard_XP = c.XP(0)
     bard_XP.add_xp(300)
     bard_level.level_up()
-    ...
-    </code>
+    ...</code>
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Using an alias</title>

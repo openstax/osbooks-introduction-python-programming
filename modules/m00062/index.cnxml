@@ -23,11 +23,10 @@
     <para id="para-00003"><term id="term-00002">Replacement fields</term> are used to define a pattern for creating multiple string values that comply with a given format. The example below shows two string values that use the same template for making requests to different individuals for taking different courses.</para>
     <example id="exam-00001">
     <title>String values from the same template</title>
-    <code class="python" lang="python">
+    <code>
     Dear John, I'd like to take a programming course with Prof. Potter.
 
-    Dear Kishwar, I'd like to take a math course with Prof. Robinson.
-    </code>
+    Dear Kishwar, I'd like to take a math course with Prof. Robinson.</code>
     </example>
 
     <para id="para-00004">In the example above, replacement fields are 1) the name of the individual the request is being made to, 2) title of the course, and 3) the name of the instructor. To create a template, replacement fields can be added with <code class="python inline-code" lang="python">{}</code> to show a placeholder for user input. The <term id="term-00003">format()</term> method is used to pass inputs for replacement fields in a string template.</para>
@@ -39,14 +38,12 @@
 
     print(s)
     print(s.format("John", "programming", "Potter"))
-    print(s.format("Kishwar", "math", "Robinson"))
-    </code>
+    print(s.format("Kishwar", "math", "Robinson"))</code>
     <para id="para-00006">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     Dear {}, I'd like to take a {} course with Prof. {}.
     Dear John, I'd like to take a programming course with Prof. Potter.
-    Dear Kishwar, I'd like to take a math course with Prof. Robinson.
-    </code>
+    Dear Kishwar, I'd like to take a math course with Prof. Robinson.</code>
     </example>
     <note class="learning-questions" id="note-00002">
     <title>String template and formatting</title>
@@ -78,14 +75,12 @@
 
     print(s)
     print(s.format(season = "summer", temperature = "hot"))
-    print(s.format(season = "winter", temperature = "cold"))
-    </code>
+    print(s.format(season = "winter", temperature = "cold"))</code>
     <para id="para-00012">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     Weather in {season} is {temperature}.
     Weather in summer is hot.
-    Weather in winter is cold.
-    </code>
+    Weather in winter is cold.</code>
     </example>
     <note id="note-00003">
     <title>Multiple use of a named argument</title>
@@ -95,14 +90,12 @@
 
     print(s)
     print(s.format(season = "summer", temperature = "hot"))
-    print(s.format(temperature = "cold", season = "winter"))
-    </code>
+    print(s.format(temperature = "cold", season = "winter"))</code>
     <para id="para-00014">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     Weather in {season} is {temperature}; very very {temperature}.
     Weather in summer is hot; very very hot.
-    Weather in winter is cold; very very cold.
-    </code>
+    Weather in winter is cold; very very cold.</code>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Named replacement field examples</title>
@@ -135,13 +128,11 @@
     template2 = "{0} {1}"
 
     print(template1.format("very", "cold"))
-    print(template2.format("very", "hot"))
-    </code>
+    print(template2.format("very", "hot"))</code>
     <para id="para-00021">The above code's output is:</para>
-    <code class="python" lang="python">
+    <code>
     very very cold
-    very hot
-    </code>
+    very hot</code>
     </example>
     </section>
     <section id="sect-00006">
@@ -150,13 +141,12 @@
     <example id="exam-00005">
       <title>A formatted table of a class roster</title>
     <para id="para-00035">A formatted table of a class roster</para>
-    <code class="python" lang="python">
+    <code>
     Student Name              Major          Grade
     ----------------------------------------------
     Manoj Sara          Computer Science        A-
     Gabriel Wang     Electrical Engineering      A
-    Alex Narayanan       Social Sciences        A+
-    </code>
+    Alex Narayanan       Social Sciences        A+</code>
     </example>
 
     <para id="para-00023">In the example above, the table is formatted into three columns. The first column takes up 15 characters and is left-aligned. The second column uses 25 characters and is center-aligned, and the last column uses two characters and is right aligned. Alignment and length format specifications controls are used to create the formatted table.</para>
@@ -302,14 +292,12 @@
     <note class="practice-program" id="note-00007">
     <title>Formatting a list of numbers</title>
     <para id="para-00034">Given a list of numbers (floating-point or integer), print numbers with two decimal place precision and at least six characters.</para>
-    <code class="python" lang="python">
-    Input: [12.5, 2]
-    </code>
-    <code class="python" lang="python">
+    <code>
+    Input: [12.5, 2]</code>
+    <code>
     Prints: 012.50
     
-    002:00
-    </code>
+    002:00</code>
     <media alt="formatting_a_list_of_numbers_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch8/CodeRunner_08_05_06_Formatting-a-list-of-numbers.html"/>
     </media>

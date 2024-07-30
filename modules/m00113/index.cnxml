@@ -370,8 +370,7 @@ plt.show()</code></entry>
     plt.ylabel("Inflation")
 
     # Display the chart
-    plt.show()
-    </code></entry>
+    plt.show()</code></entry>
     <entry><media display="inline" alt="Line plot example">
     <image mime-type="image/jpeg" src="../../media/Python_15_5_image2.png"/>
     </media></entry>

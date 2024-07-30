@@ -106,15 +106,13 @@
     <para id="para-00015">Write a function, <code class="python inline-code" lang="python">concessions()</code>, that prints the food and drink options at a cinema.</para>
     <para id="para-00016">Given:</para>
     <code class="python" lang="python">
-    concessions()
-    </code>
+    concessions()</code>
     <para id="para-00017">The output is:</para>
     <code class="python" lang="python">
     Food/Drink Options:
     Popcorn: $8-10
     Candy: $3-5
-    Soft drink: $5-7
-    </code>
+    Soft drink: $5-7</code>
     <media alt="cinema_concession_stand_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_02_01_Cinema-concession-stand.html"/>
     </media>
@@ -123,20 +121,18 @@
     <title>Terms and conditions prompt</title>
     <para id="para-00018">Write a function, <code class="python inline-code" lang="python">terms()</code>, that asks the user to accept the terms and conditions, reads in <code class="python inline-code" lang="python">Y/N</code>, and outputs a response. In the main program, read in the number of users and call <code class="python inline-code" lang="python">terms()</code> for each user.</para>
     <para id="para-00019">Given inputs <code class="python inline-code" lang="python">1</code> and <code class="python inline-code" lang="python">"Y"</code>, the output is:</para>
-    <code class="python" lang="python">
+    <code>
     Do you accept the terms and conditions?
     Y
-    Thank you for accepting.
-    </code>
+    Thank you for accepting.</code>
     <para id="para-00020">Given inputs <code class="python inline-code" lang="python">2</code>, <code class="python inline-code" lang="python">"N"</code>, and <code class="python inline-code" lang="python">"Y"</code>, the output is:</para>
-    <code class="python" lang="python">
+    <code>
     Do you accept the terms and conditions?
     N
     Have a good day.
     Do you accept the terms and conditions?
     Y
-    Thank you for accepting.
-    </code>
+    Thank you for accepting.</code>
     <media alt="terms_and_conditions_prompt_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_02_02_Terms-and-conditions-prompt.html"/>
     </media>

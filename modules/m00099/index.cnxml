@@ -43,8 +43,7 @@
         self.c_attr = c_attr
 
     b_inst = B(2)
-    c_inst = C(1, 2)
-    </code>
+    c_inst = C(1, 2)</code>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00004"><link class="os-embed" url="#exercise/CPL-ch13-m05-p01"/></para>
@@ -98,8 +97,7 @@
       pass
     
     class VenusFlyTrap(Plant):
-      pass
-    </code>
+      pass</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch13-m05-p04"/></para>
@@ -127,11 +125,10 @@
     <item>Has one method, <code class="python inline-code" lang="python">process_online()</code>, which prints <code class="python inline-code" lang="python">"Connecting to server"</code> and is called by <code class="python inline-code" lang="python">FoodFast'</code>s <code class="python inline-code" lang="python">process_order()</code>.</item>
     </list>
     <para id="para-00016">The output should match:</para>
-    <code class="python" lang="python">
+    <code>
     Processing meal order
     Connecting to server
-    Enjoy your FoodFast order
-    </code>
+    Enjoy your FoodFast order</code>
     <media alt="fixing_the_diamond_problem_with--a_mixin_class_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch13/CodeRunner_13_06_07_Fixing-the-diamond-problem-with--a-mixin-class.html"/>
     </media>

@@ -43,8 +43,7 @@
         p1 = Pizza("L")
         print(p1)
         p2 = Pizza("Z")
-        print(p2)
-    </code>
+        print(p2)</code>
     <code class="python" lang="python">
     Large pizza for $9.99
     Traceback (most recent call last):
@@ -52,8 +51,7 @@
         p2 = Pizza("Z")
       File "pizza.py", line 12, in __init__
         raise ValueError(f"Unknown size '{size}'")
-    ValueError: Unknown size 'Z'
-    </code>
+    ValueError: Unknown size 'Z'</code>
     <para id="para-00004">Raising an exception in a constructor prevents an invalid object from being constructed. In the example, <code class="python inline-code" lang="python">p1</code> is constructed but <code class="python inline-code" lang="python">p2</code> is not constructed.</para>
     </example>
     <note class="learning-questions" id="note-00001">
@@ -96,12 +94,11 @@
     <para id="para-00013">Implement the <code class="python inline-code" lang="python">lookup()</code> function. This function tries to find a key in the dictionary that matches the search term. A key matches if the search term is a substring of the key, ignoring case. Ex: The key <code class="python inline-code" lang="python">"banana"</code> matches the search term <code class="python inline-code" lang="python">"NANA"</code>.</para>
     <para id="para-00014">If no matching keys are found, <code class="python inline-code" lang="python">lookup()</code> should raise a <code class="python inline-code" lang="python">KeyError</code> with the message <code class="python inline-code" lang="python">"search term not found"</code>. If multiple matches are found, <code class="python inline-code" lang="python">lookup()</code> should raise a <code class="python inline-code" lang="python">KeyError</code> with the message <code class="python inline-code" lang="python">"multiple keys found"</code>. Otherwise, <code class="python inline-code" lang="python">lookup()</code> should return both the key and the value for the matching item in the dictionary.</para>
     <para id="para-00015">Given the books.csv file, the output should be:</para>
-    <code class="python" lang="python">
+    <code>
     Found: ('Pride and Prejudice', 9780141439518)
     Found: ('The Hobbit', 9780547928227)
     Error: search term not found
-    Error: multiple keys found
-    </code>
+    Error: multiple keys found</code>
     <media alt="looking_up_keys_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch14/CodeRunner_14_06_09_Looking-up-keys.html"/>
     </media>
