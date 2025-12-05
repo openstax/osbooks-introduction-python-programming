@@ -66,7 +66,7 @@
     <para id="para-00007">Multiple inheritance should be implemented with care. The <term id="term-00002">diamond problem</term> occurs when a class inherits from multiple classes that share a common superclass. Ex: <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code> both inherit from <code class="python inline-code" lang="python">Food</code>, and <code class="python inline-code" lang="python">ApplePie</code> inherits from <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code>.</para>
     <figure id="fig-00001">
     <title/>
-    <media alt="">
+    <media alt="A conceptual diagram illustrating a classification hierarchy. 'ApplePie' is shown as a subtype of both 'Dessert' and 'BakedGood', which in turn are both subtypes of 'Food'.">
     <image mime-type="image/jpg" src="../../media/Python_13_05_001.png"/>
     </media>
     <caption><emphasis effect="bold">The diamond problem. </emphasis>If both <code class="python inline-code" lang="python">Dessert</code> and <code class="python inline-code" lang="python">BakedGood</code> override a <code class="python inline-code" lang="python">Food</code> method, the overridden <code class="python inline-code" lang="python">Food</code> method that <code class="python inline-code" lang="python">ApplePie</code> inherits is ambiguous. Thus, diamond shaped inheritance should be avoided.</caption>
