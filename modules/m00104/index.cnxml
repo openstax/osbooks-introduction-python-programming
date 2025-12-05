@@ -81,7 +81,7 @@
     <para id="para-00012">Comma separated value (CSV, <emphasis effect="italics">.csv</emphasis>) files are often used for storing tabular data. These files store cells of information as Unicode separated by commas. CSV files can be read using methods learned thus far, as seen in the example below.</para>
     <figure id="fig-00001">
     <title/>
-    <media alt="">
+    <media alt="A CSV file displayed in both spreadsheet software, showing data in rows and cells, and a text editor, illustrating its raw comma-separated value format.">
     <image mime-type="image/jpg" src="../../media/Python_14_3_image1.png"/>
     </media>
     <caption><emphasis effect="bold">CSV files.</emphasis> A CSV file is simply a text file with rows separated by newline <code class="python inline-code" lang="python">\n</code> characters and cells separated by commas. </caption>
@@ -137,7 +137,7 @@
     <para id="para-00017">Files such as Word documents (<emphasis effect="italics">.docx</emphasis>) and PDF documents (<emphasis effect="italics">.pdf</emphasis>), image formats such as Portable Network Graphics (PNG, <emphasis effect="italics">.png</emphasis>) and Joint Photographic Experts Group (JPEG, <emphasis effect="italics">.jpeg</emphasis> or <emphasis effect="italics">.jpg</emphasis>) as well as many other file types are encoded differently.</para>
     <para id="para-00018">Some types of non-Unicode files can be read using specialized libraries that support the reading and writing of different file types.</para>
     <para id="para-00019"><link url="https://openstax.org/r/100readthedocs">PyPDF</link> is a popular library that can be used to extract information from PDF files.</para>
-    <para id="para-00020"><link url="https://openstax.org/r/100software">BeautifulSoup</link> can be used to extract information from XML and HTML files. XML and HTML files usually contain unicode with structure provided through the use of angled &lt;> bracket tags.</para>
+    <para id="para-00020"><link url="https://openstax.org/r/100software">BeautifulSoup</link> can be used to extract information from XML and HTML files. XML and HTML files usually contain unicode with structure provided through the use of angled &lt;&gt; bracket tags.</para>
     <para id="para-00021"><link url="https://openstax.org/r/100readwrtedocx">python-docx</link> can be used to read and write DOCX files.</para>
     <para id="para-00022">Additionally, <link url="https://openstax.org/r/100csvlibrary">csv</link> is a built-in library that can be used to extract information from CSV files.</para>
     </note>
