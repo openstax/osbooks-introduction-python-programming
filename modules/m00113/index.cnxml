@@ -304,7 +304,7 @@ plt.ylabel("Values")
 
 # Display the chart
 plt.show()</code></entry>
-<entry><media display="inline" alt="Box plot example">
+<entry><media display="inline" alt="A box plot titled 'Box Plot of Random Values' illustrates data distribution. The median is near -1, the box covers values from -4 to 2, whiskers extend from -12 to 7, and two outliers are visible above 10.">
 <image mime-type="image/jpeg" src="../../media/Python_15_05_004.jpg"/>
 </media>
 </entry>
