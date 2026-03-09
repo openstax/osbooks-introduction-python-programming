@@ -45,12 +45,12 @@
     </section>
     <section id="sect-00003">
     <title>Using aliases</title>
-    <para id="para-00007"><term id="term-00001">Aliasing</term> allows the programmer to use an alternative name for imported items. Ex: <code class="python inline-code" lang="python">import triangle as tri</code> allows the program to refer to the triangle module as tri. Aliasing is useful to avoid name collisions but should be used carefully to avoid confusion.</para>
+    <para id="para-00007"><term id="term-00001">Aliasing</term> allows the programmer to use an alternative name for imported items. Ex: <code class="python inline-code" data-lang="python">import triangle as tri</code> allows the program to refer to the triangle module as tri. Aliasing is useful to avoid name collisions but should be used carefully to avoid confusion.</para>
     <example id="exam-00001">
       <title>Using aliasing to import character</title>
     
     <para id="para-00009"><emphasis effect="italics">character.py</emphasis></para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     class Level:
       def __init__(self, level=1):
         self.level = level
@@ -64,7 +64,7 @@
       def add_xp(self, num):
         ...</code>
     <para id="para-00010"><emphasis effect="italics">main.py</emphasis></para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     import character as c
     
     bard_level = c.Level(1)
@@ -75,7 +75,7 @@
     </example>
     <note class="learning-questions" id="note-00003">
     <title>Using an alias</title>
-    <para id="para-00011">Consider the example above. Suppose a program imports the character module using <code class="python inline-code" lang="python">import character as game_char</code>.</para>
+    <para id="para-00011">Consider the example above. Suppose a program imports the character module using <code class="python inline-code" data-lang="python">import character as game_char</code>.</para>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch11-m05-p04"/></para>

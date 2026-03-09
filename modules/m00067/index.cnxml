@@ -24,7 +24,7 @@
     <example id="exam-00001">
     <title>List indexes and len() function</title>
     <para id="para-00004">The following code demonstrates the use of list indexes and the <code class="python inline-code">len()</code> function. Line 6 shows the use of the <code class="python inline-code">len()</code> function to get the length of the list. Line 10 shows how to access an element using an index. Line 14 shows how to modify a list element using an index.</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     #Setup a list of numbers
     numList = [2, 3, 5, 9, 11]
     print(numList)<newline/>

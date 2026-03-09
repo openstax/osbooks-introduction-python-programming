@@ -42,7 +42,7 @@
     <para id="para-00005">Multiple classes can inherit from a single class by simply including the superclass name in each subclass definition.</para>
     <example id="exam-00001">
     <title>Choir members</title>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     class ChoirMember:
       def display(self):
         print("Current choir member")
@@ -96,7 +96,7 @@
     <note class="learning-questions" id="note-00003">
     <title>Implementing hierarchical inheritance</title>
     <para id="para-00007">Consider the program:</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     class A:
       def __init__(self, a_attr=0):
         self.a_attr = a_attr
@@ -139,11 +139,11 @@
     
     <note class="practice-program" id="note-00004">
     <title>Overriding methods</title>
-    <para id="para-00011">Define three classes: <code class="python inline-code" lang="python">Instrument</code>, <code class="python inline-code" lang="python">Woodwind</code>, and <code class="python inline-code" lang="python">String</code>.</para>
+    <para id="para-00011">Define three classes: <code class="python inline-code" data-lang="python">Instrument</code>, <code class="python inline-code" data-lang="python">Woodwind</code>, and <code class="python inline-code" data-lang="python">String</code>.</para>
     <list id="list-00002">
-    <item><code class="python inline-code" lang="python">Instrument</code> has instance attribute <code class="python inline-code" lang="python">owner</code>, with default value of "unknown".</item>
-    <item><code class="python inline-code" lang="python">Woodwind</code> inherits from <code class="python inline-code" lang="python">Instrument</code> and has instance attribute <code class="python inline-code" lang="python">material</code> with default value of "wood".</item>
-    <item><code class="python inline-code" lang="python">String</code> inherits from <code class="python inline-code" lang="python">Instrument</code> and has instance attribute <code class="python inline-code" lang="python">num_strings</code>, with default value of 4.</item>
+    <item><code class="python inline-code" data-lang="python">Instrument</code> has instance attribute <code class="python inline-code" data-lang="python">owner</code>, with default value of "unknown".</item>
+    <item><code class="python inline-code" data-lang="python">Woodwind</code> inherits from <code class="python inline-code" data-lang="python">Instrument</code> and has instance attribute <code class="python inline-code" data-lang="python">material</code> with default value of "wood".</item>
+    <item><code class="python inline-code" data-lang="python">String</code> inherits from <code class="python inline-code" data-lang="python">Instrument</code> and has instance attribute <code class="python inline-code" data-lang="python">num_strings</code>, with default value of 4.</item>
     </list>
     <para id="para-00012">The output should match:</para>
     <code>

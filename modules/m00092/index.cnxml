@@ -21,7 +21,7 @@
     <para id="para-00004">A binary search begins by checking the middle element of the list. If the search key is found, the algorithm returns the matching location (base case). Otherwise, the search is repeated on approximately half the list. If the key is greater than the middle element, then the key must be on the right half, and vice versa. The process continues by checking the middle element of the remaining half of the list.</para>
     <example id="exam-00001">
     <title>Binary search</title>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     """ Binary Search """
 
     def binary_search(search_list, low, high, key):
@@ -95,7 +95,7 @@
     <example id="exam-00002">
     <title>Solving N towers</title>
     <para id="para-00011">The solution to Three Towers is simple with recursion. In the code below, rings are numbered from the top down. The smallest ring is 1, the next ring is 2, and when solving for three rings, the bottom ring is 3.</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     """ Solving the towers problem recursively """
 
     def three_towers(N, source_tower, dest_tower, temp_tower):
@@ -148,7 +148,7 @@
     
     <note class="practice-program" id="note-00004">
     <title>Coin combinations</title>
-    <para id="para-00015">Write a recursive function <code class="python inline-code" lang="python">print_H_T()</code> that produces all possible combinations of heads (<code class="python inline-code" lang="python">"H"</code>) and tails (<code class="python inline-code" lang="python">"T"</code>) for a given number of coin tosses.</para>
+    <para id="para-00015">Write a recursive function <code class="python inline-code" data-lang="python">print_H_T()</code> that produces all possible combinations of heads (<code class="python inline-code" data-lang="python">"H"</code>) and tails (<code class="python inline-code" data-lang="python">"T"</code>) for a given number of coin tosses.</para>
     <para id="para-00016">Ex: For three coins, the program should print the output shown below.</para>
     <code>
     HHH

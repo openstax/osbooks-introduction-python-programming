@@ -10,14 +10,14 @@
     <title/>
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
-    <item>Booleans represent a value of <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.</item>
-    <item>Comparison operators compare values and produce <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.</item>
-    <item>Logical operators take condition operand(s) and produce <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.</item>
+    <item>Booleans represent a value of <code class="python inline-code" data-lang="python">True</code> or <code class="python inline-code" data-lang="python">False</code>.</item>
+    <item>Comparison operators compare values and produce <code class="python inline-code" data-lang="python">True</code> or <code class="python inline-code" data-lang="python">False</code>.</item>
+    <item>Logical operators take condition operand(s) and produce <code class="python inline-code" data-lang="python">True</code> or <code class="python inline-code" data-lang="python">False</code>.</item>
     <item>Operators are evaluated in order according to precedence and associativity.</item>
-    <item>Conditions are expressions that evaluate to <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.</item>
+    <item>Conditions are expressions that evaluate to <code class="python inline-code" data-lang="python">True</code> or <code class="python inline-code" data-lang="python">False</code>.</item>
     <item>Decision statements allow different paths of execution (branches) through code based on conditions.</item>
     <item>Decision statements can be nested inside other decision statements.</item>
-    <item>Conditional expressions are single-line versions of <code class="python inline-code" lang="python">if-else</code> statements.</item>
+    <item>Conditional expressions are single-line versions of <code class="python inline-code" data-lang="python">if-else</code> statements.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write programs that evaluate conditions and execute code statements accordingly with the correct order of operations. The programming practice below ties together most topics presented in the chapter.</para>
     <table summary=" " id="table-00001">
@@ -31,66 +31,66 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python inline-code" lang="python">bool(x)</code></entry>
-    <entry><para id="para-00022">Converts <code class="python inline-code" lang="python">x</code> to a Boolean value, either <code class="python inline-code" lang="python">True</code> or <code class="python inline-code" lang="python">False</code>.</para></entry>
+    <entry><code class="python inline-code" data-lang="python">bool(x)</code></entry>
+    <entry><para id="para-00022">Converts <code class="python inline-code" data-lang="python">x</code> to a Boolean value, either <code class="python inline-code" data-lang="python">True</code> or <code class="python inline-code" data-lang="python">False</code>.</para></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Operator</emphasis></entry>
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><para id="para-00003"><code class="python inline-code" lang="python">x == y</code><newline/>
+    <entry><para id="para-00003"><code class="python inline-code" data-lang="python">x == y</code><newline/>
     (Equality)</para></entry>
-    <entry><para id="para-00004">Compares the values of <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> and returns <code class="python inline-code" lang="python">True</code> if the values are equal and <code class="python inline-code" lang="python">False</code> otherwise.
-    Ex: <code class="python inline-code" lang="python">10 == 10</code> is <code class="python inline-code" lang="python">True</code>.</para></entry>
+    <entry><para id="para-00004">Compares the values of <code class="python inline-code" data-lang="python">x</code> and <code class="python inline-code" data-lang="python">y</code> and returns <code class="python inline-code" data-lang="python">True</code> if the values are equal and <code class="python inline-code" data-lang="python">False</code> otherwise.
+    Ex: <code class="python inline-code" data-lang="python">10 == 10</code> is <code class="python inline-code" data-lang="python">True</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00005"><code class="python inline-code" lang="python">x != y</code><newline/>
+    <entry><para id="para-00005"><code class="python inline-code" data-lang="python">x != y</code><newline/>
     (Inequality)</para></entry>
-    <entry><para id="para-00006">Compares the values of <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> and returns <code class="python inline-code" lang="python">True</code> if the values are inequal and <code class="python inline-code" lang="python">False</code> otherwise. Ex: <code class="python inline-code" lang="python">7 != 4</code> is <code class="python inline-code" lang="python">True</code>.</para></entry>
+    <entry><para id="para-00006">Compares the values of <code class="python inline-code" data-lang="python">x</code> and <code class="python inline-code" data-lang="python">y</code> and returns <code class="python inline-code" data-lang="python">True</code> if the values are inequal and <code class="python inline-code" data-lang="python">False</code> otherwise. Ex: <code class="python inline-code" data-lang="python">7 != 4</code> is <code class="python inline-code" data-lang="python">True</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00007"><code class="python inline-code" lang="python">x > y</code><newline/>
+    <entry><para id="para-00007"><code class="python inline-code" data-lang="python">x > y</code><newline/>
     (Greater than)</para></entry>
-    <entry><para id="para-00008">Compares the values of <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> and returns <code class="python inline-code" lang="python">True</code> if the <code class="python inline-code" lang="python">x</code> is greater than <code class="python inline-code" lang="python">y</code> and <code class="python inline-code" lang="python">False</code> otherwise. Ex: <code class="python inline-code" lang="python">9 > 3</code> is <code class="python inline-code" lang="python">True</code>.</para></entry>
+    <entry><para id="para-00008">Compares the values of <code class="python inline-code" data-lang="python">x</code> and <code class="python inline-code" data-lang="python">y</code> and returns <code class="python inline-code" data-lang="python">True</code> if the <code class="python inline-code" data-lang="python">x</code> is greater than <code class="python inline-code" data-lang="python">y</code> and <code class="python inline-code" data-lang="python">False</code> otherwise. Ex: <code class="python inline-code" data-lang="python">9 > 3</code> is <code class="python inline-code" data-lang="python">True</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00009"><code class="python inline-code" lang="python">x &lt; y</code><newline/>
+    <entry><para id="para-00009"><code class="python inline-code" data-lang="python">x &lt; y</code><newline/>
     (Less than)</para></entry>
-    <entry><para id="para-00010">Compares the values of <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> and returns <code class="python inline-code" lang="python">True</code> if the <code class="python inline-code" lang="python">x</code> is less than <code class="python inline-code" lang="python">y</code> and <code class="python inline-code" lang="python">False</code> otherwise. Ex: <code class="python inline-code" lang="python">9 &lt; 8</code> is <code class="python inline-code" lang="python">False</code>.</para></entry>
+    <entry><para id="para-00010">Compares the values of <code class="python inline-code" data-lang="python">x</code> and <code class="python inline-code" data-lang="python">y</code> and returns <code class="python inline-code" data-lang="python">True</code> if the <code class="python inline-code" data-lang="python">x</code> is less than <code class="python inline-code" data-lang="python">y</code> and <code class="python inline-code" data-lang="python">False</code> otherwise. Ex: <code class="python inline-code" data-lang="python">9 &lt; 8</code> is <code class="python inline-code" data-lang="python">False</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00011"><code class="python inline-code" lang="python">x >= y</code><newline/>
+    <entry><para id="para-00011"><code class="python inline-code" data-lang="python">x >= y</code><newline/>
     (Greater than or equal)</para></entry>
-    <entry><para id="para-00012">Compares the values of <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> and returns <code class="python inline-code" lang="python">True</code> if the <code class="python inline-code" lang="python">x</code> is greater than or equal to <code class="python inline-code" lang="python">y</code> and <code class="python inline-code" lang="python">False</code> otherwise. Ex: <code class="python inline-code" lang="python">2 >= 2</code> is <code class="python inline-code" lang="python">True</code>.</para></entry>
+    <entry><para id="para-00012">Compares the values of <code class="python inline-code" data-lang="python">x</code> and <code class="python inline-code" data-lang="python">y</code> and returns <code class="python inline-code" data-lang="python">True</code> if the <code class="python inline-code" data-lang="python">x</code> is greater than or equal to <code class="python inline-code" data-lang="python">y</code> and <code class="python inline-code" data-lang="python">False</code> otherwise. Ex: <code class="python inline-code" data-lang="python">2 >= 2</code> is <code class="python inline-code" data-lang="python">True</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00013"><code class="python inline-code" lang="python">x &lt;= y</code><newline/>
+    <entry><para id="para-00013"><code class="python inline-code" data-lang="python">x &lt;= y</code><newline/>
     (Less than or equal)</para></entry>
-    <entry><para id="para-00014">Compares the values of <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> and returns <code class="python inline-code" lang="python">True</code> if the <code class="python inline-code" lang="python">x</code> is less than or equal to <code class="python inline-code" lang="python">y</code> and <code class="python inline-code" lang="python">False</code> otherwise. Ex: <code class="python inline-code" lang="python">8 &lt;= 7</code> is <code class="python inline-code" lang="python">False</code>.</para></entry>
+    <entry><para id="para-00014">Compares the values of <code class="python inline-code" data-lang="python">x</code> and <code class="python inline-code" data-lang="python">y</code> and returns <code class="python inline-code" data-lang="python">True</code> if the <code class="python inline-code" data-lang="python">x</code> is less than or equal to <code class="python inline-code" data-lang="python">y</code> and <code class="python inline-code" data-lang="python">False</code> otherwise. Ex: <code class="python inline-code" data-lang="python">8 &lt;= 7</code> is <code class="python inline-code" data-lang="python">False</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00015"><code class="python inline-code" lang="python">x and y</code><newline/>
+    <entry><para id="para-00015"><code class="python inline-code" data-lang="python">x and y</code><newline/>
     (Logical)</para></entry>
-    <entry><para id="para-00016">Evaluates the Boolean values of <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> and returns <code class="python inline-code" lang="python">True</code> if both are true. Ex: <code class="python inline-code" lang="python">True and False</code> is <code class="python inline-code" lang="python">False</code>.</para></entry>
+    <entry><para id="para-00016">Evaluates the Boolean values of <code class="python inline-code" data-lang="python">x</code> and <code class="python inline-code" data-lang="python">y</code> and returns <code class="python inline-code" data-lang="python">True</code> if both are true. Ex: <code class="python inline-code" data-lang="python">True and False</code> is <code class="python inline-code" data-lang="python">False</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00017"><code class="python inline-code" lang="python">x or y</code><newline/>
+    <entry><para id="para-00017"><code class="python inline-code" data-lang="python">x or y</code><newline/>
     (Logical)</para></entry>
-    <entry><para id="para-00018">Evaluates the Boolean values of <code class="python inline-code" lang="python">x</code> and <code class="python inline-code" lang="python">y</code> and returns <code class="python inline-code" lang="python">True</code> if either is true. Ex: <code class="python inline-code" lang="python">True or False</code> is <code class="python inline-code" lang="python">True</code>.</para></entry>
+    <entry><para id="para-00018">Evaluates the Boolean values of <code class="python inline-code" data-lang="python">x</code> and <code class="python inline-code" data-lang="python">y</code> and returns <code class="python inline-code" data-lang="python">True</code> if either is true. Ex: <code class="python inline-code" data-lang="python">True or False</code> is <code class="python inline-code" data-lang="python">True</code>.</para></entry>
     </row>
     <row>
-    <entry><para id="para-00019"><code class="python inline-code" lang="python">not x</code><newline/>
+    <entry><para id="para-00019"><code class="python inline-code" data-lang="python">not x</code><newline/>
     (Logical)</para></entry>
-    <entry><para id="para-00020">Evaluates the Boolean value of <code class="python inline-code" lang="python">x</code> and returns <code class="python inline-code" lang="python">True</code> if the value is false and <code class="python inline-code" lang="python">False</code> if the value is true. Ex: <code class="python inline-code" lang="python">not True</code> is <code class="python inline-code" lang="python">False</code>.</para></entry>
+    <entry><para id="para-00020">Evaluates the Boolean value of <code class="python inline-code" data-lang="python">x</code> and returns <code class="python inline-code" data-lang="python">True</code> if the value is false and <code class="python inline-code" data-lang="python">False</code> if the value is true. Ex: <code class="python inline-code" data-lang="python">not True</code> is <code class="python inline-code" data-lang="python">False</code>.</para></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Decision statement</emphasis></entry>
     <entry><emphasis effect="bold">Description</emphasis></entry>
     </row>
     <row>
-    <entry><para id="para-00023"><code class="python inline-code" lang="python">if</code> statement</para></entry>
-    <entry><code class="python" lang="python">
+    <entry><para id="para-00023"><code class="python inline-code" data-lang="python">if</code> statement</para></entry>
+    <entry><code class="python" data-lang="python">
     # Statements before
 
     if condition:
@@ -99,8 +99,8 @@
     # Statements after</code></entry>
     </row>
     <row>
-    <entry><para id="para-00024"><code class="python inline-code" lang="python">else</code> statement</para></entry>
-    <entry><code class="python" lang="python">
+    <entry><para id="para-00024"><code class="python inline-code" data-lang="python">else</code> statement</para></entry>
+    <entry><code class="python" data-lang="python">
     # Statements before
 
     if condition:
@@ -111,8 +111,8 @@
     # Statements after</code></entry>
     </row>
     <row>
-    <entry><para id="para-00025"><code class="python inline-code" lang="python">elif</code> statement</para></entry>
-    <entry><code class="python" lang="python">
+    <entry><para id="para-00025"><code class="python inline-code" data-lang="python">elif</code> statement</para></entry>
+    <entry><code class="python" data-lang="python">
     # Statements before
 
     if condition:
@@ -125,8 +125,8 @@
     # Statements after</code></entry>
     </row>
     <row>
-    <entry><para id="para-00026">Nested <code class="python inline-code" lang="python">if</code> statement</para></entry>
-    <entry><code class="python" lang="python">
+    <entry><para id="para-00026">Nested <code class="python inline-code" data-lang="python">if</code> statement</para></entry>
+    <entry><code class="python" data-lang="python">
     # Statements before
 
     if condition:
@@ -144,7 +144,7 @@
     </row>
     <row>
     <entry><emphasis effect="bold">Conditional expression</emphasis></entry>
-    <entry><para id="para-00021"><code class="python inline-code" lang="python">expression_if_true if condition else expression_if_false</code></para></entry>
+    <entry><para id="para-00021"><code class="python inline-code" data-lang="python">expression_if_true if condition else expression_if_false</code></para></entry>
     </row>
     </tbody>
     </tgroup>

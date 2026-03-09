@@ -25,7 +25,7 @@
 </note>
 <note class="learning-questions" id="note-00002">
 <title>Integers, floats, and strings</title>
-<para id="para-00002">Assume that <code class="python inline-code" lang="python">x = 1</code>, <code class="python inline-code" lang="python">y = 2.0</code>, and <code class="python inline-code" lang="python">s = "32"</code>.</para>
+<para id="para-00002">Assume that <code class="python inline-code" data-lang="python">x = 1</code>, <code class="python inline-code" data-lang="python">y = 2.0</code>, and <code class="python inline-code" data-lang="python">s = "32"</code>.</para>
 <exercise id="exer-00001">
 <problem id="prob-00001">
 <para id="para-00003"><link class="os-embed" url="#exercise/CPL-ch01-m05-p01"/></para>
@@ -61,7 +61,7 @@
 </note>
 <note class="learning-questions" id="note-00004">
 <title>Applying arithmetic operators</title>
-<para id="para-00008">Assume that <code class="python inline-code" lang="python">x = 7</code>, <code class="python inline-code" lang="python">y = 20</code>, and <code class="python inline-code" lang="python">z = 2</code>.</para>
+<para id="para-00008">Assume that <code class="python inline-code" data-lang="python">x = 7</code>, <code class="python inline-code" data-lang="python">y = 20</code>, and <code class="python inline-code" data-lang="python">z = 2</code>.</para>
 <exercise id="exer-00004">
 <problem id="prob-00004">
 <para id="para-00009"><link class="os-embed" url="#exercise/CPL-ch01-m05-p04"/></para>
@@ -91,7 +91,7 @@
 </section>
 <section id="sect-00004">
 <title>Operator precedence</title>
-<para id="para-00014">When a calculation has multiple operators, each operator is evaluated in order of <term id="term-00002">precedence</term>. Ex: <code class="python inline-code" lang="python">1 + 2 * 3</code> is <code class="python inline-code" lang="python">7</code> because multiplication takes precedence over addition. However, <code class="python inline-code" lang="python">(1 + 2) * 3</code> is <code class="python inline-code" lang="python">9</code> because parentheses take precedence over multiplication.</para>
+<para id="para-00014">When a calculation has multiple operators, each operator is evaluated in order of <term id="term-00002">precedence</term>. Ex: <code class="python inline-code" data-lang="python">1 + 2 * 3</code> is <code class="python inline-code" data-lang="python">7</code> because multiplication takes precedence over addition. However, <code class="python inline-code" data-lang="python">(1 + 2) * 3</code> is <code class="python inline-code" data-lang="python">9</code> because parentheses take precedence over multiplication.</para>
 <table summary=" " id="table-00001">
 <title>Operator precedence from highest to lowest.</title>
 <tgroup cols="4">
@@ -105,34 +105,34 @@
 </thead>
 <tbody>
 <row>
-<entry><para id="para-00022"><code class="python inline-code" lang="python">()</code></para></entry>
+<entry><para id="para-00022"><code class="python inline-code" data-lang="python">()</code></para></entry>
 <entry>Parentheses</entry>
-<entry><para id="para-00023"><code class="python inline-code" lang="python">(1 + 2) * 3</code></para></entry>
-<entry><para id="para-00024"><code class="python inline-code" lang="python">9</code></para></entry>
+<entry><para id="para-00023"><code class="python inline-code" data-lang="python">(1 + 2) * 3</code></para></entry>
+<entry><para id="para-00024"><code class="python inline-code" data-lang="python">9</code></para></entry>
 </row>
 <row>
-<entry><para id="para-00025"><code class="python inline-code" lang="python">**</code></para></entry>
+<entry><para id="para-00025"><code class="python inline-code" data-lang="python">**</code></para></entry>
 <entry>Exponentiation</entry>
-<entry><para id="para-00026"><code class="python inline-code" lang="python">2 ** 4</code></para></entry>
-<entry><para id="para-00027"><code class="python inline-code" lang="python">16</code></para></entry>
+<entry><para id="para-00026"><code class="python inline-code" data-lang="python">2 ** 4</code></para></entry>
+<entry><para id="para-00027"><code class="python inline-code" data-lang="python">16</code></para></entry>
 </row>
 <row>
-<entry><para id="para-00028"><code class="python inline-code" lang="python">+</code>, <code class="python inline-code" lang="python">-</code></para></entry>
+<entry><para id="para-00028"><code class="python inline-code" data-lang="python">+</code>, <code class="python inline-code" data-lang="python">-</code></para></entry>
 <entry>Positive, negative</entry>
-<entry><para id="para-00029"><code class="python inline-code" lang="python">-math.pi</code></para></entry>
-<entry><para id="para-00030"><code class="python inline-code" lang="python">-3.14159</code></para></entry>
+<entry><para id="para-00029"><code class="python inline-code" data-lang="python">-math.pi</code></para></entry>
+<entry><para id="para-00030"><code class="python inline-code" data-lang="python">-3.14159</code></para></entry>
 </row>
 <row>
-<entry><para id="para-00031"><code class="python inline-code" lang="python">*</code>, <code class="python inline-code" lang="python">/</code></para></entry>
+<entry><para id="para-00031"><code class="python inline-code" data-lang="python">*</code>, <code class="python inline-code" data-lang="python">/</code></para></entry>
 <entry>Multiplication, division</entry>
-<entry><para id="para-00032"><code class="python inline-code" lang="python">2 * 3</code></para></entry>
-<entry><para id="para-00033"><code class="python inline-code" lang="python">6</code></para></entry>
+<entry><para id="para-00032"><code class="python inline-code" data-lang="python">2 * 3</code></para></entry>
+<entry><para id="para-00033"><code class="python inline-code" data-lang="python">6</code></para></entry>
 </row>
 <row>
-<entry><para id="para-00034"><code class="python inline-code" lang="python">+</code>, <code class="python inline-code" lang="python">-</code></para></entry>
+<entry><para id="para-00034"><code class="python inline-code" data-lang="python">+</code>, <code class="python inline-code" data-lang="python">-</code></para></entry>
 <entry>Addition, subtraction</entry>
-<entry><para id="para-00035"><code class="python inline-code" lang="python">1 + 2</code></para></entry>
-<entry><para id="para-00036"><code class="python inline-code" lang="python">3</code></para></entry>
+<entry><para id="para-00035"><code class="python inline-code" data-lang="python">1 + 2</code></para></entry>
+<entry><para id="para-00036"><code class="python inline-code" data-lang="python">3</code></para></entry>
 </row>
 </tbody>
 </tgroup>
@@ -173,9 +173,9 @@
 <title>Values and types</title>
 <para id="para-00019">Write a Python computer program that:
 <list list-type="enumerated" id="list-00003">
-<item>Defines an integer variable named <code class="python inline-code" lang="python">'int_a'</code> and assigns <code class="python inline-code" lang="python">'int_a'</code> with the value <code class="python inline-code" lang="python">10</code>.</item>
-<item>Defines a floating-point variable named <code class="python inline-code" lang="python">'float_a'</code> and assigns <code class="python inline-code" lang="python">'float_a'</code> with the value <code class="python inline-code" lang="python">10.0</code>.</item>
-<item>Defines a string variable named <code class="python inline-code" lang="python">'string_a'</code> and assigns <code class="python inline-code" lang="python">'string_a'</code> with the string value <code class="python inline-code" lang="python">"10"</code>.</item>
+<item>Defines an integer variable named <code class="python inline-code" data-lang="python">'int_a'</code> and assigns <code class="python inline-code" data-lang="python">'int_a'</code> with the value <code class="python inline-code" data-lang="python">10</code>.</item>
+<item>Defines a floating-point variable named <code class="python inline-code" data-lang="python">'float_a'</code> and assigns <code class="python inline-code" data-lang="python">'float_a'</code> with the value <code class="python inline-code" data-lang="python">10.0</code>.</item>
+<item>Defines a string variable named <code class="python inline-code" data-lang="python">'string_a'</code> and assigns <code class="python inline-code" data-lang="python">'string_a'</code> with the string value <code class="python inline-code" data-lang="python">"10"</code>.</item>
 <item>Prints the value of each of the three variables along with their type.</item>
 </list></para>
 <media alt="values_and_types_program">
@@ -186,10 +186,10 @@
 <title>Meters to feet</title>
 <para id="para-00020">Write a Python computer program that:
 <list list-type="enumerated" id="list-00004">
-<item>Assigns the integer value <code class="python inline-code" lang="python">10</code> to a variable, <code class="python inline-code" lang="python">meters</code>.</item>
-<item>Assigns the floating-point value <code class="python inline-code" lang="python">3.28</code> to a variable, <code class="python inline-code" lang="python">meter2feet</code>.</item>
-<item>Calculates 10 meters in feet by multiplying <code class="python inline-code" lang="python">meter</code> by <code class="python inline-code" lang="python">meter2feet</code>. Store the result in a variable, <code class="python inline-code" lang="python">feet</code>.</item>
-<item>Prints the content of variable <code class="python inline-code" lang="python">feet</code> in the output.</item>
+<item>Assigns the integer value <code class="python inline-code" data-lang="python">10</code> to a variable, <code class="python inline-code" data-lang="python">meters</code>.</item>
+<item>Assigns the floating-point value <code class="python inline-code" data-lang="python">3.28</code> to a variable, <code class="python inline-code" data-lang="python">meter2feet</code>.</item>
+<item>Calculates 10 meters in feet by multiplying <code class="python inline-code" data-lang="python">meter</code> by <code class="python inline-code" data-lang="python">meter2feet</code>. Store the result in a variable, <code class="python inline-code" data-lang="python">feet</code>.</item>
+<item>Prints the content of variable <code class="python inline-code" data-lang="python">feet</code> in the output.</item>
 </list></para>
 <media alt="meters_to_feet_program">
 <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch1/CodeRunner_01_06_08_Meters-to-feet.html"/>

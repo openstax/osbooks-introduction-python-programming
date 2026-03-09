@@ -10,13 +10,13 @@
   <title>Learning objectives</title>
   <para id="para-00001">By the end of this section you should be able to</para>
   <list id="list-00001">
-  <item>Create and implement <code class="python inline-code" lang="python">__init__()</code> with multiple parameters including default parameter values.</item>
+  <item>Create and implement <code class="python inline-code" data-lang="python">__init__()</code> with multiple parameters including default parameter values.</item>
   <item>Describe what information an instance method has access to and can modify.</item>
   </list>
   </section>
   <section id="sect-00002">
   <title>More about __init__()</title>
-  <para id="para-00002">In Python, <code class="python inline-code" lang="python">__init__()</code> is the special method that creates instances. <code class="python inline-code" lang="python">__init__()</code> must have the calling instance, <code class="python inline-code" lang="python">self</code>, as the first parameter and can have any number of other parameters with or without default parameter values.</para>
+  <para id="para-00002">In Python, <code class="python inline-code" data-lang="python">__init__()</code> is the special method that creates instances. <code class="python inline-code" data-lang="python">__init__()</code> must have the calling instance, <code class="python inline-code" data-lang="python">self</code>, as the first parameter and can have any number of other parameters with or without default parameter values.</para>
   <note class="guided-slides" id="note-00001">
   <title>Creating patient vital signs instances</title>
   <media alt="creating_instances_slides">
@@ -48,7 +48,7 @@
   <para id="para-00007">An <term id="term-00001">instance method</term> is used to access and modify instance attributes as well as class attributes. All methods shown so far, and most methods defined in a class definition, are instance methods.</para>
   <example id="exam-00001">
   <title>Instance methods are often used to get and set instance information</title>
-  <code class="python" lang="python">
+  <code class="python" data-lang="python">
   class ProductionCar:
     def __init__(self, make, model, year, max_mph = 0.0):
       self.make = make
@@ -71,7 +71,7 @@
   <note class="learning-questions" id="note-00003">
   <title>CoffeeOrder instance methods</title>
   <para id="para-00008">Consider the example below:</para>
-  <code class="python" lang="python">
+  <code class="python" data-lang="python">
   class CoffeeOrder:
     loc = 'Cafe Coffee'
     cls_id = 1
@@ -118,7 +118,7 @@
   
   <note class="practice-program" id="note-00004">
   <title>Creating a class for vending machines</title>
-  <para id="para-00012">Write a class, <code class="python inline-code" lang="python">VendingMachine</code>, as described below. Default values follow the attributes. Ex: <code class="python inline-code" lang="python">count'</code>s default value is <code class="python inline-code" lang="python">0</code>. Create a vending machine using a value read from input and call instance methods.</para>
+  <para id="para-00012">Write a class, <code class="python inline-code" data-lang="python">VendingMachine</code>, as described below. Default values follow the attributes. Ex: <code class="python inline-code" data-lang="python">count'</code>s default value is <code class="python inline-code" data-lang="python">0</code>. Create a vending machine using a value read from input and call instance methods.</para>
   <para id="para-00013">Instance attributes:</para>
   <list id="list-00002">
   <item>count: 0</item>
@@ -126,18 +126,18 @@
   </list>
   <para id="para-00014">Methods:</para>
   <list id="list-00003">
-  <item><code class="python inline-code" lang="python">__init__(num)</code>: initializes count and max with <code class="python inline-code" lang="python">num</code> parameter</item>
-  <item><code class="python inline-code" lang="python">refill()</code>: assigns <code class="python inline-code" lang="python">count</code> with <code class="python inline-code" lang="python">max'</code>s value and prints <code class="python inline-code" lang="python">"Refilled"</code></item>
-  <item><code class="python inline-code" lang="python">sell(order)</code>: assigns <code class="python inline-code" lang="python">count</code> with the value of <code class="python inline-code" lang="python">count</code> minus <code class="python inline-code" lang="python">order</code> and prints <code class="python inline-code" lang="python">"Sold: [order]"</code></item>
-  <item><code class="python inline-code" lang="python">print_stock()</code>: prints <code class="python inline-code" lang="python">"Current stock: [count]"</code></item>
+  <item><code class="python inline-code" data-lang="python">__init__(num)</code>: initializes count and max with <code class="python inline-code" data-lang="python">num</code> parameter</item>
+  <item><code class="python inline-code" data-lang="python">refill()</code>: assigns <code class="python inline-code" data-lang="python">count</code> with <code class="python inline-code" data-lang="python">max'</code>s value and prints <code class="python inline-code" data-lang="python">"Refilled"</code></item>
+  <item><code class="python inline-code" data-lang="python">sell(order)</code>: assigns <code class="python inline-code" data-lang="python">count</code> with the value of <code class="python inline-code" data-lang="python">count</code> minus <code class="python inline-code" data-lang="python">order</code> and prints <code class="python inline-code" data-lang="python">"Sold: [order]"</code></item>
+  <item><code class="python inline-code" data-lang="python">print_stock()</code>: prints <code class="python inline-code" data-lang="python">"Current stock: [count]"</code></item>
   </list>
   <para id="para-00015">Given input:</para>
-  <code class="python" lang="python">
+  <code class="python" data-lang="python">
   100
   25
   </code>
   <para id="para-00016">The output is:</para>
-  <code class="python" lang="python">
+  <code class="python" data-lang="python">
   Current stock: 100
   Sold: 25
   Current stock: 75

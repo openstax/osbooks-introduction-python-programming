@@ -27,52 +27,52 @@
     </thead>
     <tbody>
       <row>
-      <entry><code class="python" lang="python">ord(c)</code></entry>
+      <entry><code class="python" data-lang="python">ord(c)</code></entry>
       <entry>Gets an integer representing the Unicode code point of a character.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">chr(i)</code></entry>
+      <entry><code class="python" data-lang="python">chr(i)</code></entry>
       <entry>Converts a Unicode code point (integer) into a One-character string.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">'\n'</code></entry>
+      <entry><code class="python" data-lang="python">'\n'</code></entry>
       <entry>Escape sequence for the newline character.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">'\t'</code></entry>
+      <entry><code class="python" data-lang="python">'\t'</code></entry>
       <entry>Escape sequence for the tab character.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">f"{number:.02d}"</code></entry>
+      <entry><code class="python" data-lang="python">f"{number:.02d}"</code></entry>
       <entry>Creates a string by formatting an integer to be at least two digits.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">f"{number:.2f}"</code></entry>
+      <entry><code class="python" data-lang="python">f"{number:.2f}"</code></entry>
       <entry>Creates a string by formatting a float to have two decimal places.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">id(object)</code></entry>
+      <entry><code class="python" data-lang="python">id(object)</code></entry>
       <entry>Gets the identity (memory location) of an object.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">type(object)</code></entry>
+      <entry><code class="python" data-lang="python">type(object)</code></entry>
       <entry>Gets the type (class name) of an object.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">my_list = ["a", "b", "c"]</code></entry>
+      <entry><code class="python" data-lang="python">my_list = ["a", "b", "c"]</code></entry>
       <entry>Creates a list of three strings.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">my_tuple = ("a", "b", "c")</code></entry>
+      <entry><code class="python" data-lang="python">my_tuple = ("a", "b", "c")</code></entry>
       <entry>Creates a tuple of three strings.</entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">my_list[0]</code></entry>
-      <entry><para id="para-00002">Gets the first element <code class="python inline-code" lang="python">("a")</code> of <code class="python inline-code" lang="python">my_tuple</code>.</para></entry>
+      <entry><code class="python" data-lang="python">my_list[0]</code></entry>
+      <entry><para id="para-00002">Gets the first element <code class="python inline-code" data-lang="python">("a")</code> of <code class="python inline-code" data-lang="python">my_tuple</code>.</para></entry>
       </row>
       <row>
-      <entry><code class="python" lang="python">my_tuple[-1]</code></entry>
-      <entry><para id="para-00003">Gets the last element <code class="python inline-code" lang="python">("c")</code> of <code class="python inline-code" lang="python">my_tuple</code>.</para></entry>
+      <entry><code class="python" data-lang="python">my_tuple[-1]</code></entry>
+      <entry><para id="para-00003">Gets the last element <code class="python inline-code" data-lang="python">("c")</code> of <code class="python inline-code" data-lang="python">my_tuple</code>.</para></entry>
       </row>
       </tbody>
     </tgroup>

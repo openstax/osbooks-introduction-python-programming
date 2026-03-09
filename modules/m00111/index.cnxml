@@ -27,7 +27,7 @@
     <item>Data processing functionality: Pandas provides various functionalities for data processing, such as data selection, filtering, slicing, sorting, merging, joining, and reshaping.</item>
     <item>Integration with other libraries: Pandas integrates well with other Python libraries, such as NumPy. The integration capability allows for data exchange between different data analysis and visualization tools.</item>
     </list>
-    <para id="para-00003">The conventional alias for importing Pandas is <code class="python inline-code" lang="python">pd</code>. In other words, Pandas is imported as <code class="python inline-code" lang="python">import pandas as pd</code>. Examples of DataFrame and Series objects are shown below.</para>
+    <para id="para-00003">The conventional alias for importing Pandas is <code class="python inline-code" data-lang="python">pd</code>. In other words, Pandas is imported as <code class="python inline-code" data-lang="python">import pandas as pd</code>. Examples of DataFrame and Series objects are shown below.</para>
     <table summary=" " id="table-00001">
     <title/>
     <tgroup cols="2">
@@ -118,7 +118,7 @@
 <tbody>
 <row>
 <entry>DataFrame from a dictionary</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 import pandas as pd
 
 # Create a dictionary of columns
@@ -167,11 +167,11 @@ df</code></entry>
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image2.png"/>
     </media>-->
 </entry>
-<entry><para id="para-00005">The <code class="python inline-code" lang="python">pd.DataFrame()</code> function takes in a dictionary and converts it into a DataFrame. Dictionary keys will be column labels and values are stored in respective columns.</para></entry>
+<entry><para id="para-00005">The <code class="python inline-code" data-lang="python">pd.DataFrame()</code> function takes in a dictionary and converts it into a DataFrame. Dictionary keys will be column labels and values are stored in respective columns.</para></entry>
 </row>
 <row>
 <entry>DataFrame from a list</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 import pandas as pd
 
 # Create a list of rows
@@ -223,11 +223,11 @@ df</code></entry>
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image2.png"/>
     </media>-->
 </entry>
-<entry><para id="para-00006">The <code class="python inline-code" lang="python">pd.DataFrame()</code> function takes in a list containing the records in different rows of a DataFrame, along with a list of column labels, and creates a DataFrame with the given rows and column labels.</para></entry>
+<entry><para id="para-00006">The <code class="python inline-code" data-lang="python">pd.DataFrame()</code> function takes in a list containing the records in different rows of a DataFrame, along with a list of column labels, and creates a DataFrame with the given rows and column labels.</para></entry>
 </row>
 <row>
 <entry>DataFrame from a NumPy array</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 import numpy as np
 import pandas as pd
 
@@ -281,11 +281,11 @@ df</code></entry>
     <image mime-type="image/jpeg" src="../../media/Python_15_3_image4.png"/>
     </media>-->
 </entry>
-<entry><para id="para-00007">A NumPy array, along with column labels, are passed to the <code class="python inline-code" lang="python">pd.DataFrame()</code> function to create a DataFrame object.</para></entry>
+<entry><para id="para-00007">A NumPy array, along with column labels, are passed to the <code class="python inline-code" data-lang="python">pd.DataFrame()</code> function to create a DataFrame object.</para></entry>
 </row>
 <row>
 <entry>DataFrame from a CSV file</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 import pandas as pd
 
 # Read the CSV file into a DataFrame
@@ -294,11 +294,11 @@ df = pd.read_csv("data.csv")
 # Display the DataFrame
 df</code></entry>
 <entry>The content of the CSV file will be printed in a tabular format.</entry>
-<entry><para id="para-00008">The <code class="python inline-code" lang="python">pd.read_csv()</code> function reads a CSV file into a DataFrame and organizes the content in a tabular format.</para></entry>
+<entry><para id="para-00008">The <code class="python inline-code" data-lang="python">pd.read_csv()</code> function reads a CSV file into a DataFrame and organizes the content in a tabular format.</para></entry>
 </row>
 <row>
 <entry>DataFrame from a Excel file</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 import pandas as pd
 
 # Read the Excel file into a DataFrame
@@ -307,7 +307,7 @@ df = pd.read_excel("data.xlsx")
 # Display the DataFrame
 df</code></entry>
 <entry>The content of the Excel file will be printed in a tabular format.</entry>
-<entry><para id="para-00009">The <code class="python inline-code" lang="python">pd.read_excel()</code> function reads an Excel file into a DataFrame and organizes the content in a tabular format.</para></entry>
+<entry><para id="para-00009">The <code class="python inline-code" data-lang="python">pd.read_excel()</code> function reads an Excel file into a DataFrame and organizes the content in a tabular format.</para></entry>
 </row>
 </tbody>
 </tgroup>
@@ -334,7 +334,7 @@ df</code></entry>
     <section id="sect-00004">
     <title>Pandas for data manipulation and analysis</title>
     <para id="para-00013">The Pandas library provides functions and techniques to explore, manipulate, and gain insights from the data. Key DataFrame functions that analyze this code are described in the following table.</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     import pandas as pd
     import numpy as np
     
@@ -420,9 +420,9 @@ df</code></entry>
 </thead>
 <tbody>
 <row>
-<entry><para id="para-00014"><code class="python inline-code" lang="python">head(n)</code></para></entry>
-<entry><para id="para-00015">Returns the first <code class="python inline-code" lang="python">n</code> rows. If a value is not passed, the first 5 rows will be shown.</para></entry>
-<entry><code class="python" lang="python">df.head(4)</code></entry>
+<entry><para id="para-00014"><code class="python inline-code" data-lang="python">head(n)</code></para></entry>
+<entry><para id="para-00015">Returns the first <code class="python inline-code" data-lang="python">n</code> rows. If a value is not passed, the first 5 rows will be shown.</para></entry>
+<entry><code class="python" data-lang="python">df.head(4)</code></entry>
 <entry>
 <table class="unnumbered" summary=" " id="table-00107">
 <title/>
@@ -470,9 +470,9 @@ df</code></entry>
 </entry>
 </row>
 <row>
-<entry><para id="para-00016"><code class="python inline-code" lang="python">tail(n)</code></para></entry>
-<entry><para id="para-00027">Returns the last <code class="python inline-code" lang="python">n</code> rows. If a value is not passed, the last 5 rows will be shown.</para></entry>
-<entry><code class="python" lang="python">df.tail(3)</code></entry>
+<entry><para id="para-00016"><code class="python inline-code" data-lang="python">tail(n)</code></para></entry>
+<entry><para id="para-00027">Returns the last <code class="python inline-code" data-lang="python">n</code> rows. If a value is not passed, the last 5 rows will be shown.</para></entry>
+<entry><code class="python" data-lang="python">df.tail(3)</code></entry>
 <entry>
 <table class="unnumbered" summary=" " id="table-00108">
 <title/>
@@ -514,11 +514,11 @@ df</code></entry>
 </entry>
 </row>
 <row>
-<entry><para id="para-00017"><code class="python inline-code" lang="python">info()</code></para></entry>
+<entry><para id="para-00017"><code class="python inline-code" data-lang="python">info()</code></para></entry>
 <entry>Provides a summary of the DataFrame, including the column names, data types, and the number of non-null values. The function also returns the DataFrame's memory usage.</entry>
-<entry><code class="python" lang="python">df.info()</code></entry>
+<entry><code class="python" data-lang="python">df.info()</code></entry>
 <entry>
-<code class="python" lang="python">
+<code class="python" data-lang="python">
 &lt;class 'pandas.core.frame.DataFrame'>
 RangeIndex: 6 entries, 0 to 5
 Data columns (total 4 columns):
@@ -537,9 +537,9 @@ memory usage: 320.0+ bytes
 </entry>
 </row>
 <row>
-<entry><para id="para-00018"><code class="python inline-code" lang="python">describe()</code></para></entry>
+<entry><para id="para-00018"><code class="python inline-code" data-lang="python">describe()</code></para></entry>
 <entry>Generates the column count, mean, standard deviation, minimum, maximum, and quartiles.</entry>
-<entry><code class="python" lang="python">df.describe()</code></entry>
+<entry><code class="python" data-lang="python">df.describe()</code></entry>
 <entry>
 <table class="unnumbered" summary=" " id="table-00109">
 <title/>
@@ -593,10 +593,10 @@ memory usage: 320.0+ bytes
 </entry>
 </row>
 <row>
-<entry><para id="para-00019"><code class="python inline-code" lang="python">value_counts()</code></para></entry>
+<entry><para id="para-00019"><code class="python inline-code" data-lang="python">value_counts()</code></para></entry>
 <entry>Counts the occurrences of unique values in a column when a column is passed as an argument and presents them in descending order.</entry>
-<entry><code class="python" lang="python">df.value_counts \('Season')</code></entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">df.value_counts \('Season')</code></entry>
+<entry><code class="python" data-lang="python">
 Season
 Fall  2
 Summer  2
@@ -605,10 +605,10 @@ dtype: int64
 </code></entry>
 </row>
 <row>
-<entry><para id="para-00020"><code class="python inline-code" lang="python">unique()</code></para></entry>
+<entry><para id="para-00020"><code class="python inline-code" data-lang="python">unique()</code></para></entry>
 <entry>Returns an array of unique values in a column when called on a column.</entry>
-<entry><code class="python" lang="python">df['Season'] \.unique()</code></entry>
-<entry><code class="python" lang="python">​​['Summer' 'Fall' 'Winter']</code></entry>
+<entry><code class="python" data-lang="python">df['Season'] \.unique()</code></entry>
+<entry><code class="python" data-lang="python">​​['Summer' 'Fall' 'Winter']</code></entry>
 </row>
 </tbody>
 </tgroup>

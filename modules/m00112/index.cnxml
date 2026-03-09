@@ -13,8 +13,8 @@
     <item>Describe exploratory data analysis.</item>
     <item>Inspect DataFrame entries through appropriate indexing.</item>
     <item>Use filtering and slicing to obtain a subset of a DataFrame.</item>
-    <item>Identify <code class="python inline-code" lang="python">Null</code> values in a DataFrame.</item>
-    <item>Remove or replace <code class="python inline-code" lang="python">Null</code> values in a DataFrame.</item>
+    <item>Identify <code class="python inline-code" data-lang="python">Null</code> values in a DataFrame.</item>
+    <item>Remove or replace <code class="python inline-code" data-lang="python">Null</code> values in a DataFrame.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -22,8 +22,8 @@
     <para id="para-00002"><term id="term-00001">Exploratory Data Analysis (EDA)</term> is the task of analyzing data to gain insights, identify patterns, and understand the underlying structure of the data. During EDA, data scientists visually and statistically examine data to uncover relationships, anomalies, and trends, and to generate hypotheses for further analysis. The main goal of EDA is to become familiar with the data and assess the quality of the data. Once data are understood and cleaned, data scientists may perform feature creation and hypothesis formation. A <term id="term-00002">feature</term> is an individual variable or attribute that is calculated from the raw data in the dataset.</para>
     <para id="para-00003"><term id="term-00003">Data indexing</term> can be used to select and access specific rows and columns. Data indexing is essential in examining a dataset. In Pandas, two types of indexing methods exist:</para>
     <list id="list-00002">
-    <item>Label-based indexing using <code class="python inline-code" lang="python">loc[]</code>: <term id="term-00004">loc[]</term> allows you to access data in a DataFrame using row/column labels. Ex: <code class="python inline-code" lang="python">df.loc[row_label, column_label]</code> returns specific data at the intersection of <code class="python inline-code" lang="python">row_label</code> and <code class="python inline-code" lang="python">column_label</code>.</item>
-    <item>Integer-based indexing using <code class="python inline-code" lang="python">iloc[]</code>: <term id="term-00005">iloc[]</term> allows you to access data in a DataFrame using integer-based indexes. Integer indexes can be passed to retrieve specific data. Ex: <code class="python inline-code" lang="python">df.iloc[row_index, column_index]</code> returns specific data at the index <code class="python inline-code" lang="python">row_index</code> and <code class="python inline-code" lang="python">column_index</code>.</item>
+    <item>Label-based indexing using <code class="python inline-code" data-lang="python">loc[]</code>: <term id="term-00004">loc[]</term> allows you to access data in a DataFrame using row/column labels. Ex: <code class="python inline-code" data-lang="python">df.loc[row_label, column_label]</code> returns specific data at the intersection of <code class="python inline-code" data-lang="python">row_label</code> and <code class="python inline-code" data-lang="python">column_label</code>.</item>
+    <item>Integer-based indexing using <code class="python inline-code" data-lang="python">iloc[]</code>: <term id="term-00005">iloc[]</term> allows you to access data in a DataFrame using integer-based indexes. Integer indexes can be passed to retrieve specific data. Ex: <code class="python inline-code" data-lang="python">df.iloc[row_index, column_index]</code> returns specific data at the index <code class="python inline-code" data-lang="python">row_index</code> and <code class="python inline-code" data-lang="python">column_index</code>.</item>
     </list>
     <note class="guided-slides" id="note-00001">
     <title>Indexing a DataFrame</title>
@@ -34,7 +34,7 @@
     <note class="learning-questions" id="note-00002">
     <title>DataFrame indexing</title>
     <para id="para-00004">Given the following code, respond to the questions below.</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     import pandas as pd
 
     # Create sample data
@@ -66,11 +66,11 @@
     <title>Data slicing and filtering</title>
     <para id="para-00008">Data slicing and filtering involve selecting specific subsets of data based on certain conditions or index/label ranges. <term id="term-00006">Data slicing</term> refers to selecting a subset of rows and/or columns from a DataFrame. Slicing can be performed using ranges, lists, or Boolean conditions. </para>
     <list id="list-00003">
-    <item>Slicing using ranges: Ex: <code class="python inline-code" lang="python">df.loc[start_row:end_row, start_column:end_column]</code> selects rows and columns within the specified ranges.</item>
-    <item>Slicing using a list: Ex: <code class="python inline-code" lang="python">df.loc[[label1, label2, ...], :]</code> selects rows that are in the list <code class="python inline-code" lang="python">[label1, label2, ...]</code> and includes all columns since all columns are selected by the colon operator.</item>
-    <item>Slicing based on a condition: <code class="python inline-code" lang="python">df[condition]</code> selects only the rows that meet the given <code class="python inline-code" lang="python">condition</code>.</item>
+    <item>Slicing using ranges: Ex: <code class="python inline-code" data-lang="python">df.loc[start_row:end_row, start_column:end_column]</code> selects rows and columns within the specified ranges.</item>
+    <item>Slicing using a list: Ex: <code class="python inline-code" data-lang="python">df.loc[[label1, label2, ...], :]</code> selects rows that are in the list <code class="python inline-code" data-lang="python">[label1, label2, ...]</code> and includes all columns since all columns are selected by the colon operator.</item>
+    <item>Slicing based on a condition: <code class="python inline-code" data-lang="python">df[condition]</code> selects only the rows that meet the given <code class="python inline-code" data-lang="python">condition</code>.</item>
     </list>
-    <para id="para-00009"><term id="term-00007">Data filtering</term> involves selecting rows or columns based on certain conditions. Ex: In the expression <code class="python inline-code" lang="python">df[df['column_name'] > threshold]</code>, the DataFrame <code class="python inline-code" lang="python">df</code> is filtered using the selection operator (<code class="python inline-code" lang="python">[]</code>) and the condition(<code class="python inline-code" lang="python">df['column_name'] > threshold</code>) that is passed. All entries in the DataFrame <code class="python inline-code" lang="python">df</code> where the corresponding value in the DataFrame is <code class="python inline-code" lang="python">True</code> will be returned.</para>
+    <para id="para-00009"><term id="term-00007">Data filtering</term> involves selecting rows or columns based on certain conditions. Ex: In the expression <code class="python inline-code" data-lang="python">df[df['column_name'] > threshold]</code>, the DataFrame <code class="python inline-code" data-lang="python">df</code> is filtered using the selection operator (<code class="python inline-code" data-lang="python">[]</code>) and the condition(<code class="python inline-code" data-lang="python">df['column_name'] > threshold</code>) that is passed. All entries in the DataFrame <code class="python inline-code" data-lang="python">df</code> where the corresponding value in the DataFrame is <code class="python inline-code" data-lang="python">True</code> will be returned.</para>
     <note class="guided-slides" id="note-00003">
     <title>Indexing on a flight dataset</title>
     <media alt="indexing_flight_dataset_slides">
@@ -80,7 +80,7 @@
     <note class="learning-questions" id="note-00004">
     <title>DataFrame slicing and filtering</title>
     <para id="para-00010">Given the following code, respond to the questions.</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     import pandas as pd
 
     # Create sample data
@@ -117,12 +117,12 @@
     <title>Handling missing data</title>
     <para id="para-00015">Missing values in a dataset can occur when data are not available or are not recorded properly. Identifying and removing missing values is an important step in data cleaning and preprocessing. A data scientist should consider ethical considerations throughout the EDA process, especially when handling missing data. They might consider answering questions such as "Why are the data missing?", "Whose data are missing?", and "Considering the missing data, is the dataset still a representative sample of the population under study?". The functions below are useful in understanding and analyzing missing data.</para>
     <list id="list-00004">
-    <item><code class="python inline-code" lang="python">isnull()</code>: The <code class="python inline-code" lang="python">isnull()</code> function can be used to identify Null entries in a DataFrame. The return value of the function is a Boolean DataFrame, with the same dimensions as the original DataFrame with <code class="python inline-code" lang="python">True</code> values where missing values exist.</item>
-    <item><code class="python inline-code" lang="python">dropna()</code>: The <code class="python inline-code" lang="python">dropna()</code> function can be used to drop rows with <code class="python inline-code" lang="python">Null</code> values.</item>
-    <item><code class="python inline-code" lang="python">fillna()</code>: The <code class="python inline-code" lang="python">fillna()</code> function can be used to replace <code class="python inline-code" lang="python">Null</code> values with a provided substitute value. Ex: <code class="python inline-code" lang="python">df.fillna(df.mean())</code> replaces all <code class="python inline-code" lang="python">Null</code> values with the average value of the specific column.</item>
+    <item><code class="python inline-code" data-lang="python">isnull()</code>: The <code class="python inline-code" data-lang="python">isnull()</code> function can be used to identify Null entries in a DataFrame. The return value of the function is a Boolean DataFrame, with the same dimensions as the original DataFrame with <code class="python inline-code" data-lang="python">True</code> values where missing values exist.</item>
+    <item><code class="python inline-code" data-lang="python">dropna()</code>: The <code class="python inline-code" data-lang="python">dropna()</code> function can be used to drop rows with <code class="python inline-code" data-lang="python">Null</code> values.</item>
+    <item><code class="python inline-code" data-lang="python">fillna()</code>: The <code class="python inline-code" data-lang="python">fillna()</code> function can be used to replace <code class="python inline-code" data-lang="python">Null</code> values with a provided substitute value. Ex: <code class="python inline-code" data-lang="python">df.fillna(df.mean())</code> replaces all <code class="python inline-code" data-lang="python">Null</code> values with the average value of the specific column.</item>
     </list>
-    <para id="para-00016">To define a <code class="python inline-code" lang="python">Null</code> value in a DataFrame, you can use the <code class="python inline-code" lang="python">np.nan</code> value from the NumPy library. Functions that aid in identifying and removing null entries are described in the table below the following code.</para>
-    <code class="python" lang="python">
+    <para id="para-00016">To define a <code class="python inline-code" data-lang="python">Null</code> value in a DataFrame, you can use the <code class="python inline-code" data-lang="python">np.nan</code> value from the NumPy library. Functions that aid in identifying and removing null entries are described in the table below the following code.</para>
+    <code class="python" data-lang="python">
     import pandas as pd
     import numpy as np
 
@@ -197,8 +197,8 @@
 </thead>
 <tbody>
 <row>
-<entry><code class="python" lang="python">isnull()</code></entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">isnull()</code></entry>
+<entry><code class="python" data-lang="python">
 df.isnull()
 </code></entry>
 <entry>
@@ -250,11 +250,11 @@ df.isnull()
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image2.png"/>
     </media>-->
 </entry>
-<entry><para id="para-00017">The <code class="python inline-code" lang="python">df.isnull()</code> function returns a Boolean array with Boolean values representing whether each entry is <code class="python inline-code" lang="python">Null</code>.</para></entry>
+<entry><para id="para-00017">The <code class="python inline-code" data-lang="python">df.isnull()</code> function returns a Boolean array with Boolean values representing whether each entry is <code class="python inline-code" data-lang="python">Null</code>.</para></entry>
 </row>
 <row>
-<entry><code class="python" lang="python">fillna()</code></entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">fillna()</code></entry>
+<entry><code class="python" data-lang="python">
 df["Column 2"] =\
 df["Column 2"].fillna(df["Column 2"]
   .mean())</code></entry>
@@ -306,11 +306,11 @@ df["Column 2"].fillna(df["Column 2"]
     <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image1.png"/></media>-->
 </entry>
-<entry><para id="para-00018"><code class="python inline-code" lang="python">Null</code> values in <code class="python inline-code" lang="python">Column 2</code> are replaced with the mean of non-<code class="python inline-code" lang="python">Null</code> values in the column.</para></entry>
+<entry><para id="para-00018"><code class="python inline-code" data-lang="python">Null</code> values in <code class="python inline-code" data-lang="python">Column 2</code> are replaced with the mean of non-<code class="python inline-code" data-lang="python">Null</code> values in the column.</para></entry>
 </row>
 <row>
-<entry><code class="python" lang="python">dropna()</code></entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">dropna()</code></entry>
+<entry><code class="python" data-lang="python">
 # Applied after the run 
 # of the previous row
 df = df.dropna()</code></entry>
@@ -350,7 +350,7 @@ df = df.dropna()</code></entry>
     <!--<media display="inline" alt="The content of the dataframe df is shown.">
     <image mime-type="image/jpeg" src="../../media/Python_15_4_image3.png"/></media>-->
 </entry>
-<entry><para id="para-00024">All rows containing a <code class="python inline-code" lang="python">Null</code> value are removed from the DataFrame.</para></entry>
+<entry><para id="para-00024">All rows containing a <code class="python inline-code" data-lang="python">Null</code> value are removed from the DataFrame.</para></entry>
 </row>
 </tbody>
 </tgroup>

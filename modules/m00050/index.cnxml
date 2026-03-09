@@ -18,7 +18,7 @@
     <item>Function calls can use keyword arguments to map values using parameter names in any order.</item>
     <item>Functions can define default parameter values to allow for optional arguments in function calls.</item>
     <item>Python uses a pass-by-object-reference system to assign parameters with the object values referenced by the arguments.</item>
-    <item>Functions can use <code class="python inline-code" lang="python">return</code> statements to return values back to the calling code.</item>
+    <item>Functions can use <code class="python inline-code" data-lang="python">return</code> statements to return values back to the calling code.</item>
     </list>
     <para id="para-00002">At this point, you should be able to write functions that have any number of parameters and return a value, and programs that call functions using keyword arguments and optional arguments.</para>
 <table summary=" " id="table-00001">
@@ -33,7 +33,7 @@
 <tbody>
 <row>
 <entry>Function definition</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 def function_name():
   """Docstring"""
   # Function body
@@ -41,14 +41,14 @@ def function_name():
 </row>
 <row>
 <entry>Parameter</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 def function_name(parameter_1):
   # Function body
 </code></entry>
 </row>
 <row>
 <entry>Argument</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 def function_name(parameter_1):
   # Function body
     
@@ -57,7 +57,7 @@ function_name(argument_1)
 </row>
 <row>
 <entry>Return statement</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 def function_name():
   # Function body
   return result # Returns the value of result to the caller
@@ -65,7 +65,7 @@ def function_name():
 </row>
 <row>
 <entry>Variables (scope)</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 def function_name(parameter_1):
   # Function body
   local_var = parameter_1 * 5
@@ -76,7 +76,7 @@ global_var = function_name(arg_1)
 </row>
 <row>
 <entry>Keyword arguments</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 def function_name(parameter_1, parameter_2):
   # Function body
     
@@ -85,7 +85,7 @@ function_name(parameter_2 = 5, parameter_1 = 2)
 </row>
 <row>
 <entry>Default parameter value</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 def function_name(parameter_1 = 100):
   # Function body
 </code></entry>

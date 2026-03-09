@@ -11,7 +11,7 @@
     <para id="para-00001">By the end of this section you should be able to</para>
     <list id="list-00001">
     <item>Understand the concept of sorting.</item>
-    <item>Use built-in <code class="python inline-code" lang="python">sort()</code> and <code class="python inline-code" lang="python">reverse()</code> methods.</item>
+    <item>Use built-in <code class="python inline-code" data-lang="python">sort()</code> and <code class="python inline-code" data-lang="python">reverse()</code> methods.</item>
     </list>
     </section>
     <section id="sect-00002">
@@ -44,15 +44,15 @@
     </note>
     </section>
     <section id="sect-00003">
-    <title>Using <code class="python inline-code" lang="python">sort()</code> and <code class="python inline-code" lang="python">reverse()</code></title>
+    <title>Using <code class="python inline-code" data-lang="python">sort()</code> and <code class="python inline-code" data-lang="python">reverse()</code></title>
     <para id="para-00007">Python provides methods for arranging elements in a list.
     <list id="list-00002">
-    <item>The <code class="python inline-code" lang="python">sort()</code> method arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters, leading to unexpected results. Ex: <code class="python inline-code" lang="python">"A"</code> is ordered before <code class="python inline-code" lang="python">"a"</code> in ascending order but so is <code class="python inline-code" lang="python">"G"</code>; thus, <code class="python inline-code" lang="python">"Gail"</code> comes before <code class="python inline-code" lang="python">"apple"</code>.</item>
-    <item>The <code class="python inline-code" lang="python">reverse()</code> method reverses the elements in a list.</item>
+    <item>The <code class="python inline-code" data-lang="python">sort()</code> method arranges the elements of a list in ascending order. For strings, ASCII values are used and uppercase characters come before lowercase characters, leading to unexpected results. Ex: <code class="python inline-code" data-lang="python">"A"</code> is ordered before <code class="python inline-code" data-lang="python">"a"</code> in ascending order but so is <code class="python inline-code" data-lang="python">"G"</code>; thus, <code class="python inline-code" data-lang="python">"Gail"</code> comes before <code class="python inline-code" data-lang="python">"apple"</code>.</item>
+    <item>The <code class="python inline-code" data-lang="python">reverse()</code> method reverses the elements in a list.</item>
     </list></para>
     <example id="exam-00001">
     <title>Sorting and reversing lists</title>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     # Setup a list of numbers
     num_list = [38, 92, 23, 16]
     print(num_list)
@@ -81,7 +81,7 @@
     <note class="learning-questions" id="note-00003">
     <title>sort() and reverse() methods</title>
     <para id="para-00009">Use the following list for the questions below.</para>
-    <code class="python" lang="python">board_games = ["go", "chess", "scrabble", "checkers"]</code>
+    <code class="python" data-lang="python">board_games = ["go", "chess", "scrabble", "checkers"]</code>
     <exercise id="exer-00004">
     <problem id="prob-00004">
     <para id="para-00010"><link class="os-embed" url="#exercise/CPL-ch09-m03-p04"/></para>

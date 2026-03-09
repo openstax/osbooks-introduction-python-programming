@@ -30,7 +30,7 @@
 <tbody>
 <row>
 <entry>
-<code class="python" lang="python">
+<code class="python" data-lang="python">
 company_org_chart = {
   "Marketing": {
     "ID234": "Jane Smith"
@@ -62,11 +62,11 @@ company_org_chart = {
 <tbody>
 <row>
 <entry>
-<code class="python" lang="python">
+<code class="python" data-lang="python">
 print(company_org_chart["Sales"]["ID122"])
 print(company_org_chart["Engineering"]["ID321"])
 </code>
-<code class="python" lang="python">
+<code class="python" data-lang="python">
 David Lee
 Maryam Samimi</code>
 </entry>
@@ -101,7 +101,7 @@ Maryam Samimi</code>
     <para id="para-00007">Here is a general syntax for dictionary comprehension:</para>
     <note id="note-00002">
     <title>Syntax for dictionary comprehension</title>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     {key_expression: value_expression for element in iterable}</code>
     </note>
     <note class="guided-slides" id="note-00003">
@@ -139,8 +139,8 @@ Maryam Samimi</code>
     </note>
     <note class="practice-program" id="note-00006">
     <title>Restructuring the company data</title>
-    <para id="para-00012">Suppose you have a dictionary that contains information about employees at a company. Each employee is identified by an ID number, and their information includes their name, department, and salary. You want to create a nested dictionary that groups employees by department so that you can easily see the names and salaries of all employees in each department. Write a Python program that when given a dictionary, <code class="python inline-code" lang="python">employees</code>, outputs a nested dictionary, <code class="python inline-code" lang="python">dept_employees</code>, which groups employees by department.</para>
-    <code class="python" lang="python">
+    <para id="para-00012">Suppose you have a dictionary that contains information about employees at a company. Each employee is identified by an ID number, and their information includes their name, department, and salary. You want to create a nested dictionary that groups employees by department so that you can easily see the names and salaries of all employees in each department. Write a Python program that when given a dictionary, <code class="python inline-code" data-lang="python">employees</code>, outputs a nested dictionary, <code class="python inline-code" data-lang="python">dept_employees</code>, which groups employees by department.</para>
+    <code class="python" data-lang="python">
     Input:
     employees = {
       1001: {"name": "Alice", "department": "Engineering", "salary": 75000},
@@ -149,7 +149,7 @@ Maryam Samimi</code>
       1004: {"name": "Dave", "department": "Marketing", "salary": 60000},
       1005: {"name": "Eve", "department": "Sales", "salary": 55000}
     }</code>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     Resulting dictionary:
     
     {

@@ -72,7 +72,7 @@
     </section>
     <section id="sect-00004">
     <title>Using local and global variables together</title>
-    <para id="para-00010">Python allows global and local variables to have the same name, which can lead to unexpected program behavior. A function treats a variable edited within the function as a local variable unless told otherwise. To edit a global variable inside a function, the variable must be declared with the <code class="python inline-code" lang="python">global</code> keyword.</para>
+    <para id="para-00010">Python allows global and local variables to have the same name, which can lead to unexpected program behavior. A function treats a variable edited within the function as a local variable unless told otherwise. To edit a global variable inside a function, the variable must be declared with the <code class="python inline-code" data-lang="python">global</code> keyword.</para>
     <note class="guided-slides" id="note-00005">
     <title>Editing global variables in a program with a function</title>
     <media alt="editing_global_variables_slides">
@@ -81,7 +81,7 @@
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Using both local and global variables</title>
-    <para id="para-00011">Consider the following variations on the example program with the input <code class="python inline-code" lang="python">9</code>.</para>
+    <para id="para-00011">Consider the following variations on the example program with the input <code class="python inline-code" data-lang="python">9</code>.</para>
     <exercise id="exer-00007">
     <problem id="prob-00007">
     <para id="para-00012"><link class="os-embed" url="#exercise/CPL-ch06-m03-p07"/></para>
@@ -105,20 +105,20 @@
    
     <note class="practice-program" id="note-00008">
     <title>Battle royale game launch</title>
-    <para id="para-00016">Write a program that reads in a selected game mode and calls one of two functions to launch the game. If the input is <code class="python inline-code" lang="python">"br"</code>, call <code class="python inline-code" lang="python">battle_royale()</code>. Otherwise, call <code class="python inline-code" lang="python">practice()</code>.</para>
-    <para id="para-00017"><code class="python inline-code" lang="python">battle_royale()</code>:</para>
+    <para id="para-00016">Write a program that reads in a selected game mode and calls one of two functions to launch the game. If the input is <code class="python inline-code" data-lang="python">"br"</code>, call <code class="python inline-code" data-lang="python">battle_royale()</code>. Otherwise, call <code class="python inline-code" data-lang="python">practice()</code>.</para>
+    <para id="para-00017"><code class="python inline-code" data-lang="python">battle_royale()</code>:</para>
     <list id="list-00002">
     <item>Reads in the number of players.</item>
     <item>Computes the number of teammates still needed. A full team is 3 players.</item>
-    <item>Calls the function <code class="python inline-code" lang="python">find_teammates()</code> with the calculated number.</item>
-    <item>Prints <code class="python inline-code" lang="python">"Match starting . . ."</code>.</item>
+    <item>Calls the function <code class="python inline-code" data-lang="python">find_teammates()</code> with the calculated number.</item>
+    <item>Prints <code class="python inline-code" data-lang="python">"Match starting . . ."</code>.</item>
     </list>
-    <para id="para-00018"><code class="python inline-code" lang="python">practice()</code>:</para>
+    <para id="para-00018"><code class="python inline-code" data-lang="python">practice()</code>:</para>
     <list id="list-00003">
     <item>Reads in a string representing the desired map.</item>
-    <item>Prints <code class="python inline-code" lang="python">"Launching practice on [desired map]"</code>.</item>
+    <item>Prints <code class="python inline-code" data-lang="python">"Launching practice on [desired map]"</code>.</item>
     </list>
-    <para id="para-00019">Note: <code class="python inline-code" lang="python">find_teammates()</code> is provided and does not need to be edited.</para>
+    <para id="para-00019">Note: <code class="python inline-code" data-lang="python">find_teammates()</code> is provided and does not need to be edited.</para>
     <para id="para-00020">Given input:</para>
     <code >
     br

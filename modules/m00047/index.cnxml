@@ -26,7 +26,7 @@
     <note class="learning-questions" id="note-00002">
     <title>Arguments and parameters</title>
     <para id="para-00003">Consider the following:</para>
-    <code class="python line-numbering" lang="python">
+    <code class="python line-numbering" data-lang="python">
     def print_welcome(name):
       print(f"Welcome {name}!")
 
@@ -59,7 +59,7 @@
     <para id="para-00008">Functions can have multiple parameters. Ex: A function uses two parameters, length and width, to compute the square footage of a room. Function calls must use the correct order and number of arguments to avoid undesired behavior and errors (unless using optional or keyword arguments as discussed later).</para>
     <example id="exam-00001">
     <title>Using multiple arguments in a function call</title>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     def print_div(op_1, op_2):
       """ Prints division operation """
       print(f"{op_1}/{op_2} = {op_1/op_2}")
@@ -73,7 +73,7 @@
     <note class="learning-questions" id="note-00003">
     <title>Multiple arguments and parameters</title>
     <para id="para-00009">Consider the following:</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     def calc_distance(x1, y1, x2, y2):
       dist = math.sqrt((x2-x1)**2 + (y2-y1)**2)
       print(dist)
@@ -106,8 +106,8 @@
     <para id="para-00014">Programmers should be cautious of modifying function arguments as these side effects can make programs difficult to debug and maintain.</para>
     <example id="exam-00002">
     <title>Converting temperatures</title>
-    <para id="para-00015">What are the values of <code class="python inline-code" lang="python">weekend_temps</code> and <code class="python inline-code" lang="python">type</code> after <code class="python inline-code" lang="python">convert_temps()</code> finishes?</para>
-    <code class="python" lang="python">
+    <para id="para-00015">What are the values of <code class="python inline-code" data-lang="python">weekend_temps</code> and <code class="python inline-code" data-lang="python">type</code> after <code class="python inline-code" data-lang="python">convert_temps()</code> finishes?</para>
+    <code class="python" data-lang="python">
     def convert_temps(temps, unit):
       if unit == "F":
         for i in range(len(temps)):
@@ -127,7 +127,7 @@
     convert_temps(wknd_temps, metric)
     for temp in wknd_temps:
       print(f"{temp:.2f}{deg_sign}{metric}", end=" ")</code>
-    <para id="para-00016">The output is <code class="python inline-code" lang="python">9.44°F 10.56°F 6.67°F</code>. <code class="python inline-code" lang="python">type</code> was changed to <code class="python inline-code" lang="python">"C"</code> in the function but didn't keep the change outside of the function. Why is the list argument change kept and not the string argument change? (Hint: A list is mutable. A string is immutable.)</para>
+    <para id="para-00016">The output is <code class="python inline-code" data-lang="python">9.44°F 10.56°F 6.67°F</code>. <code class="python inline-code" data-lang="python">type</code> was changed to <code class="python inline-code" data-lang="python">"C"</code> in the function but didn't keep the change outside of the function. Why is the list argument change kept and not the string argument change? (Hint: A list is mutable. A string is immutable.)</para>
     </example>
     <note class="guided-slides" id="note-00004">
     <title>Exploring a faulty function</title>
@@ -162,7 +162,7 @@
    
     <note class="practice-program" id="note-00006">
     <title>Printing right triangle area</title>
-    <para id="para-00021">Write a function, <code class="python inline-code" lang="python">print_area()</code>, that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where b is the base and h is the height.</para>
+    <para id="para-00021">Write a function, <code class="python inline-code" data-lang="python">print_area()</code>, that takes in the base and height of a right triangle and prints the triangle's area. The area of a right triangle is <m:math><m:mrow><m:mfrac><m:mrow><m:mi>b</m:mi><m:mi>h</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, where b is the base and h is the height.</para>
     <para id="para-00022">Given input:</para>
     <code>
     3
@@ -176,9 +176,9 @@
     </note>
     <note class="practice-program" id="note-00007">
     <title>Curving scores</title>
-    <para id="para-00024">Write a function, <code class="python inline-code" lang="python">print_scores()</code>, that takes in a list of test scores and a number representing how many points to add. For each score, print the original score and the sum of the score and bonus. Make sure not to change the list.</para>
+    <para id="para-00024">Write a function, <code class="python inline-code" data-lang="python">print_scores()</code>, that takes in a list of test scores and a number representing how many points to add. For each score, print the original score and the sum of the score and bonus. Make sure not to change the list.</para>
     <para id="para-00025">Given function call:</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     print_scores([67, 68, 72, 71, 69], 10)</code>
     <para id="para-00026">The output is:</para>
     <code>

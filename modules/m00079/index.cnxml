@@ -9,14 +9,14 @@
     <para id="para-00001">Highlights from this chapter include:</para>
     <list id="list-00001">
     <item>A dictionary in Python is a container object including key-value pairs.</item>
-    <item>The <code class="python inline-code" lang="python">dict</code> type implements a dictionary in Python.</item>
+    <item>The <code class="python inline-code" data-lang="python">dict</code> type implements a dictionary in Python.</item>
     <item>A dictionary cannot have duplicate keys. </item>
     <item>A dictionary is a mutable object but keys in the dictionary must be immutable objects.</item>
-    <item>A dictionary can be created using curly braces or the <code class="python inline-code" lang="python">dict()</code> method.</item>
-    <item>Values in the dictionary can be obtained through square bracket notation or the <code class="python inline-code" lang="python">get()</code> method.</item>
-    <item>Dictionary items, keys, and values can be obtained using <code class="python inline-code" lang="python">items()</code>, <code class="python inline-code" lang="python">keys()</code>, and <code class="python inline-code" lang="python">values()</code> methods, respectively.</item>
-    <item>Existing items can be modified or new items can be added to a dictionary using square brackets notation or the <code class="python inline-code" lang="python">update()</code> method.</item>
-    <item>Items can be removed from a dictionary using the <code class="python inline-code" lang="python">del</code> keyword or the <code class="python inline-code" lang="python">pop()</code> method.</item>
+    <item>A dictionary can be created using curly braces or the <code class="python inline-code" data-lang="python">dict()</code> method.</item>
+    <item>Values in the dictionary can be obtained through square bracket notation or the <code class="python inline-code" data-lang="python">get()</code> method.</item>
+    <item>Dictionary items, keys, and values can be obtained using <code class="python inline-code" data-lang="python">items()</code>, <code class="python inline-code" data-lang="python">keys()</code>, and <code class="python inline-code" data-lang="python">values()</code> methods, respectively.</item>
+    <item>Existing items can be modified or new items can be added to a dictionary using square brackets notation or the <code class="python inline-code" data-lang="python">update()</code> method.</item>
+    <item>Items can be removed from a dictionary using the <code class="python inline-code" data-lang="python">del</code> keyword or the <code class="python inline-code" data-lang="python">pop()</code> method.</item>
     <item>Conditional statements can be used with a dictionary to check if the dictionary contains specific keys, values, or key-value pairs.</item>
     <item>Looping on a dictionary can be done by iterating over keys, values, or items.</item>
     <item>Nested dictionaries are dictionaries that are stored as values within another dictionary.</item>
@@ -35,13 +35,13 @@
 <tbody>
 <row>
 <entry>Dictionary creation using curly braces</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 my_dict = {key1:value1, key2:value2}
 </code></entry>
 </row>
 <row>
-<entry><para id="para-00101">Dictionary creation using the <code class="python inline-code" lang="python">dict()</code> method</para></entry>
-<entry><code class="python" lang="python">
+<entry><para id="para-00101">Dictionary creation using the <code class="python inline-code" data-lang="python">dict()</code> method</para></entry>
+<entry><code class="python" data-lang="python">
 # Using a list
 my_list = [(key1, value1), (key2, value2)]
 my_dict = dict(my_list)
@@ -56,7 +56,7 @@ new_dict = dict(old_dict)
 </row>
 <row>
 <entry>Accessing dictionary items</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 my_dict = {key1: value1, key2: value2}
 
 # Accessing item using square bracket notation
@@ -68,25 +68,25 @@ my_dict.get(key1)
 </row>
 <row>
 <entry>Accessing all dictionary items</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 my_dict.items()
 </code></entry>
 </row>
 <row>
 <entry>Accessing all dictionary keys</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 my_dict.keys()
 </code></entry>
 </row>
 <row>
 <entry>Accessing all dictionary values</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 my_dict.values()
 </code></entry>
 </row>
 <row>
 <entry>Adding a new key-value pair or updating an existing key-value pair</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 my_dict = {key1: value1, key2: value2}
 
 # Updating an item using square bracket notation
@@ -102,7 +102,7 @@ my_dict.update({key3: value3})
 </row>
 <row>
 <entry>Deleting a key-value pair from a dictionary</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 my_dict = {key1: value1, key2: value2}
 
 # Using del keyword
@@ -114,7 +114,7 @@ deleted_value = my_dict.pop(key1)
 </row>
 <row>
 <entry>Iterating over a dictionary</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 for key in dictionary: # Loop expression
   # Statements to execute in the loop
 
@@ -123,7 +123,7 @@ for key in dictionary: # Loop expression
 </row>
 <row>
 <entry>Nested dictionaries</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 {
 key_1:{key11:value11, key12:value12},
 key_2:{key21:value21, key22:value22}
@@ -132,7 +132,7 @@ key_2:{key21:value21, key22:value22}
 </row>
 <row>
 <entry>Dictionary comprehension</entry>
-<entry><code class="python" lang="python">
+<entry><code class="python" data-lang="python">
 {key_expression: value_expression for element in iterable}
 </code></entry>
 </row>
@@ -142,8 +142,8 @@ key_2:{key21:value21, key22:value22}
     
     <note class="practice-program" id="note-00001">
     <title>Even and odd values</title>
-    <para id="para-00003">Given a list, create a dictionary with two keys, <code class="python inline-code" lang="python">"even"</code> and <code class="python inline-code" lang="python">"odd"</code>. The values associated with each key must be the list of corresponding even and odd values in the given list.</para>
-    <code class="python" lang="python">
+    <para id="para-00003">Given a list, create a dictionary with two keys, <code class="python inline-code" data-lang="python">"even"</code> and <code class="python inline-code" data-lang="python">"odd"</code>. The values associated with each key must be the list of corresponding even and odd values in the given list.</para>
+    <code class="python" data-lang="python">
     Input:
     input_list = [3, 5, 6, 1]</code>
     <code>

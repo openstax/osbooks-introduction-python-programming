@@ -17,7 +17,7 @@
     </section>
     <section id="sect-00002">
     <title>Precedence</title>
-    <para id="para-00002">When an expression has multiple operators, which operator is evaluated first? Precedence rules provide the priority level of operators. Operators with the highest precedence execute first. Ex: <code class="python inline-code" lang="python">1 + 2 * 3</code> is <code class="python inline-code" lang="python">7</code> because multiplication takes precedence over addition. However, <code class="python inline-code" lang="python">(1 + 2) * 3</code> is <code class="python inline-code" lang="python">9</code> because parentheses take precedence over multiplication.</para>
+    <para id="para-00002">When an expression has multiple operators, which operator is evaluated first? Precedence rules provide the priority level of operators. Operators with the highest precedence execute first. Ex: <code class="python inline-code" data-lang="python">1 + 2 * 3</code> is <code class="python inline-code" data-lang="python">7</code> because multiplication takes precedence over addition. However, <code class="python inline-code" data-lang="python">(1 + 2) * 3</code> is <code class="python inline-code" data-lang="python">9</code> because parentheses take precedence over multiplication.</para>
     <table summary=" " id="table-00001">
     <title>Operator precedence from highest to lowest.</title>
     <tgroup cols="2">
@@ -50,15 +50,15 @@
     </row>
     <row>
     <entry>not</entry>
-    <entry><para id="para-00018">Logical <code class="python inline-code" lang="python">not</code> operator</para></entry>
+    <entry><para id="para-00018">Logical <code class="python inline-code" data-lang="python">not</code> operator</para></entry>
     </row>
     <row>
     <entry>and</entry>
-    <entry><para id="para-00019">Logical <code class="python inline-code" lang="python">and</code> operator</para></entry>
+    <entry><para id="para-00019">Logical <code class="python inline-code" data-lang="python">and</code> operator</para></entry>
     </row>
     <row>
     <entry>or</entry>
-    <entry><para id="para-00020">Logical <code class="python inline-code" lang="python">or</code> operator</para></entry>
+    <entry><para id="para-00020">Logical <code class="python inline-code" data-lang="python">or</code> operator</para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -91,8 +91,8 @@
     </section>
     <section id="sect-00003">
     <title>Associativity</title>
-    <para id="para-00007">What if operators beside each other have the same level of precedence? Associativity determines the order of operations when precedence is the same. Ex: <code class="python inline-code" lang="python">8 / 4 * 3</code> is evaluated as <code class="python inline-code" lang="python">(8/4) * 3</code> rather than <code class="python inline-code" lang="python">8 / (4*3)</code> because multiplication and division are left associative. Most operators are left associative and are evaluated from left to right. Exponentiation is the main exception (noted above) and is right associative: that is, evaluated from right to left. Ex: <code class="python inline-code" lang="python">2 ** 3 ** 4</code> is evaluated as <code class="python inline-code" lang="python">2 ** (3**4)</code>.</para>
-    <para id="para-00008">When comparison operators are chained, the expression is converted into the equivalent combination of comparisons and evaluated from left to right. Ex. <code class="python inline-code" lang="python">10 &lt; x &lt;= 20</code> is evaluated as <code class="python inline-code" lang="python">10 &lt; x</code> and <code class="python inline-code" lang="python">x &lt;= 20</code>.</para>
+    <para id="para-00007">What if operators beside each other have the same level of precedence? Associativity determines the order of operations when precedence is the same. Ex: <code class="python inline-code" data-lang="python">8 / 4 * 3</code> is evaluated as <code class="python inline-code" data-lang="python">(8/4) * 3</code> rather than <code class="python inline-code" data-lang="python">8 / (4*3)</code> because multiplication and division are left associative. Most operators are left associative and are evaluated from left to right. Exponentiation is the main exception (noted above) and is right associative: that is, evaluated from right to left. Ex: <code class="python inline-code" data-lang="python">2 ** 3 ** 4</code> is evaluated as <code class="python inline-code" data-lang="python">2 ** (3**4)</code>.</para>
+    <para id="para-00008">When comparison operators are chained, the expression is converted into the equivalent combination of comparisons and evaluated from left to right. Ex. <code class="python inline-code" data-lang="python">10 &lt; x &lt;= 20</code> is evaluated as <code class="python inline-code" data-lang="python">10 &lt; x</code> and <code class="python inline-code" data-lang="python">x &lt;= 20</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Operation precedence</title>
     <media alt="operation_precedence_slides">
@@ -151,18 +151,18 @@
     <para id="para-00017">The PEP 8 style guide recommends consistent spacing around operators to avoid extraneous and confusing whitespace.</para>
     <list id="list-00002">
     <item>Avoid multiple spaces and an unequal amount of whitespace around operators with two operands.<newline/>
-    Avoid: <code class="python inline-code" lang="python">x= y * 44</code><newline/>
-    Better: <code class="python inline-code" lang="python">x = y * 44</code></item>
+    Avoid: <code class="python inline-code" data-lang="python">x= y * 44</code><newline/>
+    Better: <code class="python inline-code" data-lang="python">x = y * 44</code></item>
     <item>Avoid spaces immediately inside parentheses.<newline/>
-    Avoid: <code class="python inline-code" lang="python">x = ( 4 * y )</code><newline/>
-    Better: <code class="python inline-code" lang="python">x = (4 * y)</code></item>
+    Avoid: <code class="python inline-code" data-lang="python">x = ( 4 * y )</code><newline/>
+    Better: <code class="python inline-code" data-lang="python">x = (4 * y)</code></item>
     <item>Surround the following operators with one space: assignment, augment assignment, comparison, Boolean.<newline/>
-    Avoid: <code class="python inline-code" lang="python">x= y&lt;44</code><newline/>
-    Better: <code class="python inline-code" lang="python">x = y &lt; 44</code></item>
+    Avoid: <code class="python inline-code" data-lang="python">x= y&lt;44</code><newline/>
+    Better: <code class="python inline-code" data-lang="python">x = y &lt; 44</code></item>
     <item>Consider adding whitespace around operators with lower priority.<newline/>
     Avoid:
-    <code class="python inline-code" lang="python">x = 5 * z+20</code><newline/>
-    Better: <code class="python inline-code" lang="python">x = 5*z + 20</code></item>
+    <code class="python inline-code" data-lang="python">x = 5 * z+20</code><newline/>
+    Better: <code class="python inline-code" data-lang="python">x = 5*z + 20</code></item>
     </list>
     </note>
     </section>

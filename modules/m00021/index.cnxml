@@ -45,15 +45,15 @@
     </section>
     <section id="sect-00003">
     <title>Unicode</title>
-    <para id="para-00006">Python uses <term id="term-00001">Unicode</term>, the international standard for representing text on computers. Unicode defines a unique number, called a <term id="term-00002">code point</term>, for each possible character. Ex: <code class="python inline-code" lang="python">"P"</code> has the code point 80, and <code class="python inline-code" lang="python">"!"</code> has the code point 33.</para>
-    <para id="para-00007">The built-in <code class="python inline-code" lang="python">ord()</code> function converts a character to a code point. Ex: <code class="python inline-code" lang="python">ord("P")</code> returns the integer 80. Similarly, the built-in <code class="python inline-code" lang="python">chr()</code> function converts a code point to a character. Ex: <code class="python inline-code" lang="python">chr(33)</code> returns the string <code class="python inline-code" lang="python">"!"</code>.</para>
+    <para id="para-00006">Python uses <term id="term-00001">Unicode</term>, the international standard for representing text on computers. Unicode defines a unique number, called a <term id="term-00002">code point</term>, for each possible character. Ex: <code class="python inline-code" data-lang="python">"P"</code> has the code point 80, and <code class="python inline-code" data-lang="python">"!"</code> has the code point 33.</para>
+    <para id="para-00007">The built-in <code class="python inline-code" data-lang="python">ord()</code> function converts a character to a code point. Ex: <code class="python inline-code" data-lang="python">ord("P")</code> returns the integer 80. Similarly, the built-in <code class="python inline-code" data-lang="python">chr()</code> function converts a code point to a character. Ex: <code class="python inline-code" data-lang="python">chr(33)</code> returns the string <code class="python inline-code" data-lang="python">"!"</code>.</para>
     <para id="para-00008">Unicode is an extension of <term id="term-00003">ASCII</term>, the American Standard Code for Information Interchange. Originally, ASCII defined only 128 code points, enough to support the English language. Unicode defines over one million code points and supports most of the world's written languages.</para>
     <table summary=" " id="table-00001">
     <title>Character values.</title>
     <tgroup cols="3">
     <tbody>
     <row>
-    <entry><code class="python" lang="python">
+    <entry><code class="python" data-lang="python">
       32  (space)  
       33  !
       34  "
@@ -87,7 +87,7 @@
       62  >
       63  ?</code></entry>
     <entry>
-      <code class="python" lang="python">
+      <code class="python" data-lang="python">
         64  @        
         65  A
         66  B
@@ -121,7 +121,7 @@
         94  ^
         95  _</code></entry>
     <entry>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
       96  `
       97  a
       98  b
@@ -194,34 +194,34 @@
     </thead>
     <tbody>
     <row>
-    <entry><code class="python" lang="python">\n</code></entry>
+    <entry><code class="python" data-lang="python">\n</code></entry>
     <entry>A newline character that indicates the end of a line of text.</entry>
-    <entry><code class="python" lang="python">print("Escape\nsequence!")</code></entry>
-    <entry><para id="para-00022"><code class="python" lang="python">Escape</code><newline/><code class="python" lang="python">sequence!</code></para></entry>
+    <entry><code class="python" data-lang="python">print("Escape\nsequence!")</code></entry>
+    <entry><para id="para-00022"><code class="python" data-lang="python">Escape</code><newline/><code class="python" data-lang="python">sequence!</code></para></entry>
     </row>
     <row>
-    <entry><code class="python" lang="python">\t</code></entry>
+    <entry><code class="python" data-lang="python">\t</code></entry>
     <entry>A tab character; useful for indenting paragraphs or aligning text on multiple lines.</entry>
-    <entry><code class="python" lang="python">print("Escape\tsequence!")</code></entry>
-    <entry><code class="python" lang="python">Escape    sequence!</code></entry>
+    <entry><code class="python" data-lang="python">print("Escape\tsequence!")</code></entry>
+    <entry><code class="python" data-lang="python">Escape    sequence!</code></entry>
     </row>
     <row>
-    <entry><code class="python" lang="python">\'</code></entry>
+    <entry><code class="python" data-lang="python">\'</code></entry>
     <entry>A single quote; an alternative to enclosing the string in double quotes.</entry>
-    <entry><code class="python" lang="python">print('I\'ll try my best!')</code></entry>
-    <entry><code class="python" lang="python">I'll try my best</code></entry>
+    <entry><code class="python" data-lang="python">print('I\'ll try my best!')</code></entry>
+    <entry><code class="python" data-lang="python">I'll try my best</code></entry>
     </row>
     <row>
-    <entry><code class="python" lang="python">\"</code></entry>
+    <entry><code class="python" data-lang="python">\"</code></entry>
     <entry>A double quote; an alternative to enclosing the string in single quotes.</entry>
-    <entry><code class="python" lang="python">print("I heard you said \"Yes\"")</code></entry>
-    <entry><code class="python" lang="python">I heard you said "Yes"</code></entry>
+    <entry><code class="python" data-lang="python">print("I heard you said \"Yes\"")</code></entry>
+    <entry><code class="python" data-lang="python">I heard you said "Yes"</code></entry>
     </row>
     <row>
-    <entry><code class="python" lang="python">\\</code></entry>
+    <entry><code class="python" data-lang="python">\\</code></entry>
     <entry>A backslash character.</entry>
-    <entry><code class="python" lang="python">print("This prints a \\")</code></entry>
-    <entry><code class="python" lang="python">This prints a \</code></entry>
+    <entry><code class="python" data-lang="python">print("This prints a \\")</code></entry>
+    <entry><code class="python" data-lang="python">This prints a \</code></entry>
     </row>
     </tbody>
     </tgroup>
@@ -250,7 +250,7 @@
     <title>Hopper quote</title>
     <para id="para-00016"><link url="https://openstax.org/r/100gracehopper">Grace Hopper</link> (1906–1992) was a famous computer scientist (and rear admiral in the US Navy!) who came up with the idea of machine-independent programming languages. She envisioned a programming language based on English and made many contributions that paved the way for modern programming languages, including Python.</para>
     <para id="para-00017">Write a program that prints the following text, including the quotation marks. Your program may not use single quotes (') anywhere in the code. The last line must be indented with a tab character.</para>
-    <code class="python" lang="python">
+    <code class="python" data-lang="python">
     "To me programming is more than an important practical art.
     It is also a gigantic undertaking in the foundations of knowledge."
     	-- Grace Hopper</code>
@@ -268,7 +268,7 @@
     <para id="para-00020">The program should then shift each letter of the word by the desired amount. Based on the example above, the output would be:</para>
     <code>
     The secret message is: FDW</code>
-    <para id="para-00021">Hint: Use the <code class="python inline-code" lang="python">ord()</code> function to convert each letter to an integer, add the shift amount to each integer, use the <code class="python inline-code" lang="python">chr()</code> function to convert each integer to a character, and concatenate the resulting characters.</para>
+    <para id="para-00021">Hint: Use the <code class="python inline-code" data-lang="python">ord()</code> function to convert each letter to an integer, add the shift amount to each integer, use the <code class="python inline-code" data-lang="python">chr()</code> function to convert each integer to a character, and concatenate the resulting characters.</para>
     <media alt="shift_cipher_program">
     <iframe width="660" height="371.4" src="../../media/interactive/coderunner/ch3/CodeRunner_03_02_02_Shift-cipher.html"/>
     </media>
