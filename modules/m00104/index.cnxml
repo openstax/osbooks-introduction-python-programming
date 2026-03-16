@@ -26,7 +26,7 @@
     <row>
     <entry>Operating System</entry>
     <entry>File location</entry>
-    <entry><para id="para-00101"><code class="python inline-code" data-lang="python">open()</code> function example</para></entry>
+    <entry><para id="para-00101"><code class="inline-code">open()</code> function example</para></entry>
     </row>
     </thead>
     <tbody>
