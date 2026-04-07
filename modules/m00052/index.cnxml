@@ -101,9 +101,7 @@
     Area of a circus ring: 1385.4423602330987</code>
     <note class="guided-slides" id="note-00002">
     <title>Importing area in a Python shell</title>
-    <media alt="importing_area_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/importing-area"/>
-    </media>
+    <para id="para-00016"><link url="https://www.openstax.org/r/importing-area">Importing area; ch 7, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Importing a module</title>

@@ -19,9 +19,7 @@
     <para id="para-00002">A string is a sequence of zero or more characters. Each character has an index that refers to the character's position. Indexes are numbered from left to right, starting at 0. Indexes are also numbered from right to left, starting at -1.</para>
     <note class="guided-slides" id="note-00001">
     <title>String indexes</title>
-    <media alt="string_indexes_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/string-indexes"/>
-    </media>
+    <para id="para-00023"><link url="https://www.openstax.org/r/string-indexes">String indexes; ch 3, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>String indexes</title>

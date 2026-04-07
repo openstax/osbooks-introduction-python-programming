@@ -75,9 +75,7 @@
     <para id="para-00008">The <code class="python inline-code" data-lang="python">copy()</code> method is used to create a copy of a list.</para>
     <note class="guided-slides" id="note-00002">
     <title>Copying a list</title>
-    <media alt="copying_list_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/copying-list"/>
-    </media>
+    <para id="para-00013"><link url="https://www.openstax.org/r/copying-list">Copying a list; ch 9, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Copying a list</title>

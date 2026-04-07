@@ -56,9 +56,7 @@
     </table>
     <note class="guided-slides" id="note-00001">
     <title>Displaying output to the user</title>
-    <media alt="displaying_output_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/displaying-output"/>
-    </media>
+    <para id="para-00017"><link url="https://www.openstax.org/r/displaying-output">1 3 1  Displaying output to the user</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>The print() function</title>
@@ -93,9 +91,7 @@
     </list>
     <note class="guided-slides" id="note-00004">
     <title>Obtaining input from the user</title>
-    <media alt="obtaining_input_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/obtaining-input"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/obtaining-input">Displaying output to the user; ch 1, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>The input() function</title>

@@ -38,9 +38,7 @@
     # Statements after</code>
     <note class="guided-slides" id="note-00001">
     <title>Example: Livestream features</title>
-    <media alt="livestream_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/livestream"/>
-    </media>
+    <para id="para-00022"><link url="https://www.openstax.org/r/livestream">Example: Livestream features; ch 4, video 12</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using elif</title>
@@ -76,9 +74,7 @@
     <para id="para-00010">Elifs can be chained with an <code class="python inline-code" data-lang="python">if-else</code> statement to create a more complex decision statement. Ex: A program shows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or two) places. Else if the piece is a bishop, show diagonal moves. Else if . . . (finish for the rest of the pieces).</para>
     <note class="guided-slides" id="note-00003">
     <title>Example: Possible chess moves</title>
-    <media alt="chess_moves_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/chess-moves"/>
-    </media>
+    <para id="para-00023"><link url="https://www.openstax.org/r/chess-moves">Example: Possible chess moves; ch 4, video 13</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Using elif within if-elif-else statements</title>

@@ -34,9 +34,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello")
 <para id="para-00006">Learning to read error messages carefully is an important skill. The amount of technical jargon can be overwhelming at first. But this information can be very helpful.</para>
 <note class="guided-slides" id="note-00001">
 <title>Incorrect variable name</title>
-<media alt="incorrect_variable_name_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/incorrect-variable-name"/>
-</media>
+<para id="para-00018"><link url="https://www.openstax.org/r/incorrect-variable-name">Incorrect variable name; ch 1, video 11</link></para>
 </note>
 <note class="learning-questions" id="note-00002">
 <title>Parts of an error</title>

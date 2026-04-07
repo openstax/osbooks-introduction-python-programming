@@ -22,9 +22,7 @@
 <para id="para-00005">Python's first release, known as Version 0.9.0, appeared in 1991, about six years after C++ and four years before Java. van Rossum's decisions to make the language simple yet advanced, suitable for everyday tasks, and freely available online contributed to Python's long-term success.</para>
 <note class="guided-slides" id="note-00001">
 <title>Key decisions</title>
-<media alt="comments_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/key-decisions"/>
-</media>
+<para id="para-00017"><link url="https://www.openstax.org/r/key-decisions">Key decisions; ch 1, video 14</link></para>
 </note>
 <note class="learning-questions" id="note-00002">
 <title>Python history</title>

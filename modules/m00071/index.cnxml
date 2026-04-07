@@ -81,9 +81,7 @@
     <para id="para-00017">In a filter list comprehension, an element is added into <code class="python inline-code" data-lang="python">list_name</code> only if the condition is met.</para>
     <note class="guided-slides" id="note-00002">
     <title>Filtering a list</title>
-    <media alt="filtering_list_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/filtering-list"/>
-    </media>
+    <para id="para-00024"><link url="https://www.openstax.org/r/filtering-list">Filtering a list; ch 9, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Filtering using list comprehensions</title>

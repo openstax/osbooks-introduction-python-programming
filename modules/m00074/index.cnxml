@@ -20,9 +20,7 @@
     <para id="para-00002">A <term id="term-00001">dictionary</term> in Python is a container object including key-value pairs. An example of a <term id="term-00002">key-value</term> item is a word in an English dictionary with its corresponding definition.</para>
     <note class="guided-slides" id="note-00001">
     <title>Dictionaries</title>
-    <media alt="dictionaries_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/dictionaries"/>
-    </media>
+    <para id="para-00013"><link url="https://www.openstax.org/r/dictionaries">Dictionaries; ch 10, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Dictionary basics</title>
@@ -49,9 +47,7 @@
     <para id="para-00007">The <term id="term-00003">dict</term> type implements a dictionary in Python. Since a dictionary object is used to look up values using keys, a dictionary object cannot hold duplicate key values.</para>
     <note class="guided-slides" id="note-00003">
     <title>Dictionary properties</title>
-    <media alt="dictionary_properties_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/dictionary-properties"/>
-    </media>
+    <para id="para-00014"><link url="https://www.openstax.org/r/dictionary-properties">Dictionary properties; ch 10, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Dictionary type and properties</title>

@@ -71,9 +71,7 @@ data_13: ('Aimee Perry', 96, [94, 100, 97, 93])
     <para id="para-00006">How do tuples compare to lists? Tuples are ordered and allow duplicates, like lists, but have different mutability. An <term id="term-00002">immutable</term> object cannot be modified after creation. A <term id="term-00003">mutable</term> object can be modified after creation. Tuples are immutable, whereas lists are mutable.</para>
     <note class="guided-slides" id="note-00002">
     <title>Mutability of a tuple vs. a list</title>
-    <media alt="mutability_tuple_list_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/mutability-tuple-list"/>
-    </media>
+    <para id="para-00015"><link url="https://www.openstax.org/r/mutability-tuple-list">Mutability of a tuple vs. a list; ch 3, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Using tuples</title>

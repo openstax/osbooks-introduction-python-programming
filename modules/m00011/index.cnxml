@@ -21,9 +21,7 @@
     <para id="para-00004">Most development environments include a Python shell for experimenting with code interactively. A <term id="term-00002">shell</term>, also called a console or terminal, is a program that allows direct interaction with an interpreter. The interpreter usually runs an entire program all at once. But the interpreter can run one line of code at a time within a Python shell.</para>
     <note class="guided-slides" id="note-00001">
     <title>Running a Python shell</title>
-    <media alt="python_shell_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/python-shell"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/python-shell">Running a Python shell; ch 2, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using a Python shell</title>
@@ -57,9 +55,7 @@
     <para id="para-00010">Most shells maintain a history of every line of code the user types. Pressing the up or down arrow key on the keyboard displays the history. The <emphasis effect="bold">up arrow</emphasis> displays the previous line; the <emphasis effect="bold">down arrow</emphasis> displays the next line. That way, the user can repeat a line without having to type the line again.</para>
     <note class="guided-slides" id="note-00003">
     <title>Correcting a typo</title>
-    <media alt="correcting_typo_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/correcting-typo"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/correcting-typo">Correcting a typo; ch 2, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Using the arrow keys</title>

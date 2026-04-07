@@ -28,22 +28,22 @@
 <entry><code class="python" data-lang="python">
 numbers = [2, 5, 7, 11, 12]
 for i in numbers:
-&#160;&#160;if i == 10:
-&#160;&#160;&#160;&#160;print("Found 10!")
-&#160;&#160;&#160;&#160;break
+  if i == 10:
+    print("Found 10!")
+    break
 else:
-&#160;&#160;print("10 is not in the list.")
+  print("10 is not in the list.")
 </code>
 </entry>
 <entry><code class="python" data-lang="python">
 numbers = [2, 5, 7, 11, 12]
 seen = False
 for i in numbers:
-&#160;&#160;if i == 10:
-&#160;&#160;&#160;&#160;print("Found 10!")
-&#160;&#160;&#160;&#160;seen = True
+  if i == 10:
+    print("Found 10!")
+    seen = True
 if seen == False:
-&#160;&#160;print("10 is not in the list.")
+  print("10 is not in the list.")
 </code>
 </entry>
 </row>
@@ -53,9 +53,7 @@ if seen == False:
     </example>
     <note class="guided-slides" id="note-00001">
     <title>Loop else template</title>
-    <media alt="loop_else_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/loop-else"/>
-    </media>
+    <para id="para-00009"><link url="https://www.openstax.org/r/loop-else">Loop else template; ch 5, video 8</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Loop else practices</title>

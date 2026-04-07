@@ -19,9 +19,7 @@
     <para id="para-00002">Modules define functions and constants to be used in other programs. When importing a module, <emphasis effect="italics">all</emphasis> code in the module is run from top to bottom. If a module is not designed carefully, unintended code might run as a side effect. The unintended code is generally at the top level, outside of function definitions.</para>
     <note class="guided-slides" id="note-00001">
     <title>Sphere test code</title>
-    <media alt="sphere_test_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/sphere-test"/>
-    </media>
+    <para id="para-00014"><link url="https://www.openstax.org/r/sphere-test">Sphere test code; ch 7, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Side effects</title>
@@ -47,9 +45,7 @@
     <para id="para-00006">Python modules often include the statement <code class="python inline-code" data-lang="python">if __name__ == "__main__"</code> to prevent side effects. This statement is true when the module is run as a program and false when the module is imported.</para>
     <note class="guided-slides" id="note-00003">
     <title>The main module</title>
-    <media alt="main_module_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/main-module"/>
-    </media>
+    <para id="para-00015"><link url="https://www.openstax.org/r/main-module">The main module; ch 7, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Using __name__</title>

@@ -26,9 +26,7 @@
     </list>
     <note class="guided-slides" id="note-00001">
     <title>Creating an ndarray object</title>
-    <media alt="dictionary_object_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/dictionary-object"/>
-    </media>
+    <para id="para-00010"><link url="https://www.openstax.org/r/dictionary-object">More creating a dictionary object; ch 15, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>NumPy library</title>
@@ -59,9 +57,7 @@
     </list>
     <note class="guided-slides" id="note-00003">
     <title>NumPy array operations</title>
-    <media alt="numPy_operations_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/NumPy-operations"/>
-    </media>
+    <para id="para-00012"><link url="https://www.openstax.org/r/NumPy-operations">NumPy array operations; ch 15, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>NumPy operations</title>

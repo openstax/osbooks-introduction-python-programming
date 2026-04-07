@@ -65,9 +65,7 @@
     </table>
     <note class="guided-slides" id="note-00001">
     <title>Operator precedence</title>
-    <media alt="operator_precedence_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/operator-precedence"/>
-    </media>
+    <para id="para-00021"><link url="https://www.openstax.org/r/operator-precedence">Operator precedence; ch 4, video 9</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Precedence rules</title>
@@ -95,9 +93,7 @@
     <para id="para-00008">When comparison operators are chained, the expression is converted into the equivalent combination of comparisons and evaluated from left to right. Ex. <code class="python inline-code" data-lang="python">10 &lt; x &lt;= 20</code> is evaluated as <code class="python inline-code" data-lang="python">10 &lt; x</code> and <code class="python inline-code" data-lang="python">x &lt;= 20</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Operation precedence</title>
-    <media alt="operation_precedence_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/operation-precedence"/>
-    </media>
+    <para id="para-00022"><link url="https://www.openstax.org/r/operation-precedence">Operation precedence; ch 4, video 10</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Associativity</title>
@@ -124,9 +120,7 @@
     <para id="para-00013">Operator precedence rules can be hard to remember. Parentheses not only assert a different order of operations but also reduce confusion.</para>
     <note class="guided-slides" id="note-00005">
     <title>Using parentheses</title>
-    <media alt="using_parentheses_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/using-parentheses"/>
-    </media>
+    <para id="para-00023"><link url="https://www.openstax.org/r/using-parentheses">Using parenthesis; ch 4, video 11</link></para>
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Using parentheses</title>

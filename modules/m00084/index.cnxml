@@ -19,9 +19,7 @@
     <para id="para-00002"><term id="term-00001">Magic methods</term> are special methods that perform actions for users, typically out of view of users. Magic methods are also called dunder methods, since the methods must start and end with double underscores (__). Ex: <code class="python inline-code" data-lang="python">__init__()</code> is a magic method used alongside <code class="python inline-code" data-lang="python">__new__()</code> to create a new instance and initialize attributes with a simple line like <code class="python inline-code" data-lang="python">eng = Engineer()</code>. A programmer can explicitly define a magic method in a user-defined class to customize the method's behavior.</para>
     <note class="guided-slides" id="note-00001">
     <title>Customizing __str__() in a user-defined class, Engineer</title>
-    <media alt="customizing_str_user_defined_class_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/customizing-str-user-defined-class"/>
-    </media>
+    <para id="para-00021"><link url="https://www.openstax.org/r/customizing-str-user-defined-class">Customizing _str_() in a user-defined class, Engineer; ch 11, video 8</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Magic methods</title>
@@ -47,9 +45,7 @@
     <para id="para-00006"><term id="term-00002">Operator overloading</term> refers to customizing the function of a built-in operator. Arithmetic operators are commonly overloaded to allow for easy changes to instances of user-defined classes.</para>
     <note class="guided-slides" id="note-00003">
     <title>Overloading __add__() for a user-defined class, Account</title>
-    <media alt="overloading_add_user_defined_class_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/overloading-add-user-defined-class"/>
-    </media>
+    <para id="para-00022"><link url="https://www.openstax.org/r/overloading-add-user-defined-class">Overloading _add_() for a user-defined class, Account; ch 11, video 9</link></para>
     </note>
     <table summary=" " id="table-00001">
     <title>Arithmetic operators and magic methods.</title>

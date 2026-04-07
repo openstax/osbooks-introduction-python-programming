@@ -20,9 +20,7 @@
     <para id="para-00003">When execution reaches a function call, control flow moves to where the function is defined and executes the function statements. Then, control flow moves back to where the function was called and continues the sequence.</para>
     <note class="guided-slides" id="note-00001">
     <title>Calling a brunch menu function</title>
-    <media alt="brunch_menu_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/brunch-menu"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/brunch-menu">Calling a brunch menu function; ch 6, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Following the control flow</title>
@@ -53,9 +51,7 @@
     <para id="para-00008">Functions frequently call other functions to keep the modularity of each function performing one task. Ex: A function that calculates an order total may call a function that calculates sales tax. When a function called from another function finishes execution, control flow returns to the calling function.</para>
     <note class="guided-slides" id="note-00003">
     <title>Example: Book club email messages</title>
-    <media alt="email_messages_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/email-messages"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/email-messages">Example: Book club email messages; ch 6, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Functions calling functions</title>
@@ -103,8 +99,8 @@
     <code class="python" data-lang="python">
     Liam's Laundry
     7a - 11p
-    &#160;Open washers: 50
-    &#160;Open dryers: 40</code>
+     Open washers: 50
+     Open dryers: 40</code>
     <media alt="laundromat_information_program">
     <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch6/CodeRunner_06_03_04_Laundromat-information.html"/>
     </media>

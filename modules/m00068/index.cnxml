@@ -20,9 +20,7 @@
     <para id="para-00003">Sorting can work on numerical or non-numerical data. When ordering text, dictionary order is used. Ex: "bat" comes before "cat" because "b" comes before "c".</para>
     <note class="guided-slides" id="note-00001">
     <title>Sorting</title>
-    <media alt="sorting_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/sorting"/>
-    </media>
+    <para id="para-00014"><link url="https://www.openstax.org/r/sorting">Sorting; ch 9, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Sorting</title>

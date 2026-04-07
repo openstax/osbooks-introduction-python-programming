@@ -20,9 +20,7 @@
     <para id="para-00003">Multiple classes can be grouped in a module. For good organization, classes should be grouped in a module only if the grouping enables module reuse, as a key benefit of modules is reusability.</para>
     <note class="guided-slides" id="note-00001">
     <title>Importing classes from files</title>
-    <media alt="importing_classes_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/importing-classes"/>
-    </media>
+    <para id="para-00008"><link url="https://www.openstax.org/r/importing-classes">Importing classes from files; ch 11, video 10</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Importing classes</title>

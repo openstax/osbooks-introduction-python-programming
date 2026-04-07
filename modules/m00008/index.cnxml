@@ -70,9 +70,7 @@ item2 = input("Item #2: ")
 </list>
 <note class="guided-slides" id="note-00002">
 <title>Comments in a program</title>
-<media alt="comments_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/comments"/>
-</media>
+<para id="para-00004"><link url="https://www.openstax.org/r/comments">Comments in a program; ch 1, video 12</link></para>
 </note>
 <note class="learning-questions" id="note-00003">
 <title>Code quality</title>
@@ -99,9 +97,7 @@ item2 = input("Item #2: ")
 <para id="para-00014">Documentation can be long, so docstrings are generally written as multi-line strings <code class="python inline-code" data-lang="python">(""")</code>. Common elements of a docstring include a one-line summary, a blank line, and a longer description.</para>
 <note class="guided-slides" id="note-00004">
 <title>Vacations docstring</title>
-<media alt="docstring_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/docstring"/>
-</media>
+<para id="para-00020"><link url="https://www.openstax.org/r/docstring">Vacations docstring; ch 1, video 13</link></para>
 </note>
 <note class="learning-questions" id="note-00005">
 <title>Documentation</title>

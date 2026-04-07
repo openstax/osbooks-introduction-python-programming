@@ -19,9 +19,7 @@
     <para id="para-00002">A <term id="term-00001">formatted string literal</term> (or <term id="term-00002">f-string</term>) is a string literal that is prefixed with <code class="python inline-code" data-lang="python">"f"</code> or <code class="python inline-code" data-lang="python">"F"</code>. A <term id="term-00003">replacement field</term> is an expression in curly braces (<code class="python inline-code" data-lang="python">{}</code>) inside an f-string. Ex: The string <code class="python inline-code" data-lang="python">f"Good morning, {first} {last}!"</code> has two replacement fields: one for a first name, and one for a last name. F-strings provide a convenient way to combine multiple values into one string.</para>
     <note class="guided-slides" id="note-00001">
     <title>Printing an f-string</title>
-    <media alt="printing_f_string_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/printing-f-string"/>
-    </media>
+    <para id="para-00016"><link url="https://www.openstax.org/r/printing-f-string">Printing an f-string; ch 3, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Basic f-strings</title>

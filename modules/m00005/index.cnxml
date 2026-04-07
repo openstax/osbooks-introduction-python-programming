@@ -83,9 +83,7 @@
   
   <note class="guided-slides" id="note-00102">
     <title>Using len() to get the length of a string</title>
-    <media alt="get_the_length_of_a_string">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/length-of-string"/>
-    </media>
+    <para id="para-00012"><link url="https://www.openstax.org/r/length-of-string">Using len() to get the length of a string; ch 1, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00103">
     <title>Applying len() function to string values</title>
@@ -112,9 +110,7 @@
 <para id="para-00007">Concatenation is an operation that combines two or more strings sequentially with the concatenation operator (+). Ex: <code class="python" data-lang="python">"A"</code> + <code class="python" data-lang="python">"part"</code> produces the string <code class="python" data-lang="python">"Apart"</code>.</para>
 <note class="guided-slides" id="note-00002">
 <title>Concatenating multiple strings</title>
-<media alt="concatenating_strings_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/concatenating-strings"/>
-</media>
+<para id="para-00013"><link url="https://www.openstax.org/r/concatenating-strings">Concatenating multiple strings; ch 1, video 7</link></para>
 </note>
 <note class="learning-questions" id="note-00003">
 <title>String concatenation</title>

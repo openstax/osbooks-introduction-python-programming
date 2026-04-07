@@ -19,9 +19,7 @@
 <para id="para-00001">Python supports two basic number formats, integer and floating-point. An integer represents a whole number, and a floating-point format represents a decimal number. The format a language uses to represent data is called a <term id="term-00101">data type</term>. In addition to integer and floating-point types, programming languages typically have a string type for representing text.</para>
 <note class="guided-slides" id="note-00001">
 <title>Integer and floating-point</title>
-<media alt="integer-and-floating-point_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/integer-and-floating-point"/>
-</media>
+<para id="para-00037"><link url="https://www.openstax.org/r/integer-and-floating-point">Integer and floating point; ch 1, video 8</link></para>
 </note>
 <note class="learning-questions" id="note-00002">
 <title>Integers, floats, and strings</title>
@@ -55,9 +53,7 @@
 </list></para>
 <note class="guided-slides" id="note-00003">
 <title>Examples of arithmetic operators</title>
-<media alt="arithmetic_operators_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/arithmetic-operators"/>
-</media>
+<para id="para-00038"><link url="https://www.openstax.org/r/arithmetic-operators">Examples of arithmetic operators; ch 1, video 9</link></para>
 </note>
 <note class="learning-questions" id="note-00004">
 <title>Applying arithmetic operators</title>
@@ -140,9 +136,7 @@
 </table>
 <note class="guided-slides" id="note-00005">
 <title>Order of operations in an arithmetic expression</title>
-<media alt="order_of_operations_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/order-of-operations"/>
-</media>
+<para id="para-00039"><link url="https://www.openstax.org/r/order-of-operations">Order of operations in an arithmetic expression; ch 1, video 10</link></para>
 </note>
 <note class="learning-questions" id="note-00006">
 <title>Multiple arithmetic operators</title>

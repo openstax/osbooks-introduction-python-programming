@@ -21,14 +21,12 @@
     <code class="python" data-lang="python">
     user_string = "This is a string."
     for i in range(len(user_string)):
-    &#160;&#160;if user_string[i] == 'a':
-    &#160;&#160;&#160;&#160;print("Found at index:", i)
-    &#160;&#160;&#160;&#160;break</code>
+      if user_string[i] == 'a':
+        print("Found at index:", i)
+        break</code>
     <note class="guided-slides" id="note-00001">
     <title>Break statement in a while loop</title>
-    <media alt="while_break_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/while-break"/>
-    </media>
+    <para id="para-00009"><link url="https://www.openstax.org/r/while-break">Break statement in a while loop; ch 5, video 6</link></para>
     </note>
     <note id="note-00002">
     <title>Infinite loop</title>
@@ -36,10 +34,10 @@
     <code class="python" data-lang="python">
     counter = 1
     while True:
-    &#160;&#160;if counter &gt;= 10:
-    &#160;&#160;&#160;&#160;break
-    &#160;&#160;print(counter)
-    &#160;&#160;counter += 1</code>
+      if counter >= 10:
+        break
+      print(counter)
+      counter += 1</code>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Using a break statement</title>
@@ -65,9 +63,7 @@
     <para id="para-00008">A <term id="term-00003">continue</term> statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely. A <code class="python inline-code" data-lang="python">continue</code> statement can be used in a <code class="python inline-code" data-lang="python">for</code> or a <code class="python inline-code" data-lang="python">while</code> loop. After the <code class="python inline-code" data-lang="python">continue</code> statement's execution, the loop expression will be evaluated again and the loop will continue from the loop's expression. A <code class="python inline-code" data-lang="python">continue</code> statement facilitates the loop's control and readability.</para>
         <note class="guided-slides" id="note-00004">
     <title>Continue statement in a while loop</title>
-    <media alt="while_control_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/while-control"/>
-    </media>
+    <para id="para-00012"><link url="https://www.openstax.org/r/while-control">Control statement in a while loop; ch 5, video 7</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Using a continue statement</title>

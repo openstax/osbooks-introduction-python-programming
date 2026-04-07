@@ -20,9 +20,7 @@
     <para id="para-00002"><term id="term-00001">Multiple inheritance</term> is a type of inheritance in which one class inherits from multiple classes. A class inherited from multiple classes has all superclasses listed in the class definition inheritance list. Ex: <code class="python inline-code" data-lang="python">class SubClass(SuperClass_1, SuperClass_2)</code>.</para>
     <note class="guided-slides" id="note-00001">
     <title>Multiple inheritance organization</title>
-    <media alt="multiple_inheritance_organization_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/multiple-inheritance-organization"/>
-    </media>
+    <para id="para-00017"><link url="https://www.openstax.org/r/multiple-inheritance-organization">Multiple inheritance organization; ch 13, video 8</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Implementing multiple inheritance</title>

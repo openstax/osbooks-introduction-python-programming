@@ -24,9 +24,7 @@
     <para id="para-00003">Note: The <code class="python inline-code" data-lang="python">%</code> operator is traditionally pronounced "mod" (short for "modulo"). Ex: When reading <code class="python inline-code" data-lang="python">7 % 4</code> out loud, a programmer would say "seven mod four."</para>
     <note class="guided-slides" id="note-00001">
     <title>Quotient and remainder</title>
-    <media alt="quotient_remainder_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/quotient-remainder"/>
-    </media>
+    <para id="para-00025"><link url="https://www.openstax.org/r/quotient-remainder">Quotient and remainder; ch 2, video 8</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Division and modulo</title>
@@ -64,9 +62,7 @@
     <para id="para-00010">Programs often use floor division and modulo together. If one line of code floor divides by <code class="python inline-code" data-lang="python">m</code>, the next line will likely modulo by <code class="python inline-code" data-lang="python">m</code>. The unit <code class="python inline-code" data-lang="python">m</code> by which an amount is divided is called the <term id="term-00004">modulus</term>. Ex: When converting centimeters to meters, the modulus is 100.</para>
     <note class="guided-slides" id="note-00003">
     <title>Money and time</title>
-    <media alt="money_time_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/money-time"/>
-    </media>
+    <para id="para-00026"><link url="https://www.openstax.org/r/money-time">Money and time; ch 2, video 9</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Unit conversions</title>

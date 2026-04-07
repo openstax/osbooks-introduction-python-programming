@@ -21,9 +21,7 @@
     <para id="para-00003">Recursion can be used to identify whether a given word is a palindrome.</para>
     <note class="guided-slides" id="note-00001">
     <title>Identifying a palindrome</title>
-    <media alt="identifying_palindrome_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/identifying-palindrome"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/identifying-palindrome">Identifying a palindrome; ch 12, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Recursion with strings</title>
@@ -51,9 +49,7 @@
     <para id="para-00009">The <code class="python inline-code" data-lang="python">count()</code> function returns a count of the number of items in a list that match the given item, and returns <code class="python inline-code" data-lang="python">0</code> otherwise. Ex: For <code class="python inline-code" data-lang="python">list_num = [1, 3, 3, 4]</code>, <code class="python inline-code" data-lang="python">list_num.count(3)</code> returns <code class="python inline-code" data-lang="python">2</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Checking list permutations</title>
-    <media alt="checking_list_permutations_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/checking-list-permutations"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/checking-list-permutations">Checking list permutations; ch 12, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>List permutations</title>

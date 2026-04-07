@@ -20,9 +20,7 @@
     <para id="para-00002">Throughout the book, functions have been called to perform tasks. Ex: <code class="python inline-code" data-lang="python">print()</code> prints values, and <code class="python inline-code" data-lang="python">sqrt()</code> calculates the square root. A <term id="term-00001">function</term> is a named, reusable block of code that performs a task when called.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Simple math program</title>
-    <media alt="simple_math_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/simple-math"/>
-    </media>
+    <para id="para-00021"><link url="https://www.openstax.org/r/simple-math">Example: Simple math program; ch 6, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Identifying function calls</title>
@@ -45,12 +43,10 @@
     </section>
     <section id="sect-00003">
     <title>Defining a function</title>
-    <para id="para-00006">A function is defined using the <term id="term-00002">def</term> keyword. The first line contains <code class="python inline-code" data-lang="python">def</code> followed by the function name (in snake case), parentheses (with any parameters&#8212;discussed later), and a colon. The indented body begins with a documentation string describing the function's task and contains the function statements. A function must be defined before the function is called.</para>
+    <para id="para-00006">A function is defined using the <term id="term-00002">def</term> keyword. The first line contains <code class="python inline-code" data-lang="python">def</code> followed by the function name (in snake case), parentheses (with any parameters—discussed later), and a colon. The indented body begins with a documentation string describing the function's task and contains the function statements. A function must be defined before the function is called.</para>
     <note class="guided-slides" id="note-00003">
     <title>Example: Welcome message function</title>
-    <media alt="welcome_message_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/welcome-message"/>
-    </media>
+    <para id="para-00022"><link url="https://www.openstax.org/r/welcome-message">Example: Welcome message function; ch 6, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Defining functions</title>
@@ -81,9 +77,7 @@
     <para id="para-00011">A function promotes modularity by putting code statements related to a single task in a separate group. The body of a function can be executed repeatedly with multiple function calls, so a function promotes reusability. Modular, reusable code is easier to modify and is shareable among programmers to avoid reinventing the wheel.</para>
     <note class="guided-slides" id="note-00005">
     <title>Improving a program with a function</title>
-    <media alt="improving_with_functions_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/improving-with-functions"/>
-    </media>
+    <para id="para-00023"><link url="https://www.openstax.org/r/improving-with-functions">Improving a program with a function; ch 6, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Improving programs with functions</title>

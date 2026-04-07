@@ -106,9 +106,7 @@ Maryam Samimi</code>
     </note>
     <note class="guided-slides" id="note-00003">
     <title>Squares of numbers</title>
-    <media alt="squares_of_numbers_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/squares-of-numbers"/>
-    </media>
+    <para id="para-00013"><link url="https://www.openstax.org/r/squares-of-numbers">Squares of numbers; ch 10, video 8</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Dictionary comprehension</title>

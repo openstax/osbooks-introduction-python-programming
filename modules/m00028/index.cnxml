@@ -22,9 +22,7 @@
     <para id="para-00002">People often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza? Ex: True or false: I like pineapple on pizza. The response is a Boolean value, meaning the value is either true or false. The <term id="term-00001">bool</term> data type, standing for Boolean, represents a binary value of either true or false. <code class="python inline-code" data-lang="python">true</code> and <code class="python inline-code" data-lang="python">false</code> are keywords, and capitalization is required.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Crosswalk sign</title>
-    <media alt="crosswalk_sign_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/crosswalk-sign"/>
-    </media>
+    <para id="para-00031"><link url="https://www.openstax.org/r/crosswalk-sign">Example: Crosswalk sign; ch 4, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using Boolean variables</title>
@@ -75,9 +73,7 @@
     </list></para>
     <note class="guided-slides" id="note-00003">
     <title>Converting integers, floats, and strings using bool()</title>
-    <media alt="converting_using_bool_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/converting-using-bool"/>
-    </media>
+    <para id="para-00035"><link url="https://www.openstax.org/r/converting-using-bool">Converting integers, floats, and strings using bool(); ch 4, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Converting numeric types and strings to Booleans</title>
@@ -141,9 +137,7 @@
     </list></para>
     <note class="guided-slides" id="note-00006">
     <title>Example: Rolling a d20 in a tabletop game</title>
-    <media alt="rolling_d20_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/rolling-d20"/>
-    </media>
+    <para id="para-00036"><link url="https://www.openstax.org/r/rolling-d20">Example: Rolling a d20 in a tabletop game; ch 4, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00007">
     <title>Comparing values</title>
@@ -192,7 +186,7 @@
     </section>
     <note class="practice-program" id="note-00010">
       <title>Friday Boolean</title>
-      <para id="para-00032">"It's Friday, I'm in love" &#8212;from "Friday I'm in Love," a song released by the Cure in 1992.</para>
+      <para id="para-00032">"It's Friday, I'm in love" —from "Friday I'm in Love," a song released by the Cure in 1992.</para>
       <para id="para-00033">Write a program that reads in the day of the week. Assign the Boolean variable, <code class="python inline-code" data-lang="python">in_love</code>, with the result of whether the day is Friday or not.</para>
       <media alt="programming_practice_-Friday_boolean_program">
       <iframe width="660" height="371.4" src="../../media/interactive//coderunner/ch4/CodeRunner_04_02_01_Programming-practice_-Friday-boolean.html"/>

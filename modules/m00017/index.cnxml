@@ -123,9 +123,7 @@
     <para id="para-00014">For convenience, Python automatically concatenates multiple strings. The <code class="python inline-code" data-lang="python">+</code> operator is not required in this situation.</para>
     <note class="guided-slides" id="note-00003">
     <title>String concatenation</title>
-    <media alt="string_concat_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/string-concat"/>
-    </media>
+    <para id="para-00013"><link url="https://www.openstax.org/r/string-concat">String concatenation; ch 2, video 11</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>String literal concatenation</title>

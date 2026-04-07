@@ -22,9 +22,7 @@
     <para id="para-00002">The <term id="term-00001">in</term> Boolean operator can be used to check if a string contains another string. <code class="python inline-code" data-lang="python">in</code> returns <code class="python inline-code" data-lang="python">True</code> if the first string exists in the second string, <code class="python inline-code" data-lang="python">False</code> otherwise.</para>
     <note class="guided-slides" id="note-00001">
     <title>What is in the phrase?</title>
-    <media alt="what_in_phrase_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/what-in-phrase"/>
-    </media>
+    <para id="para-00025"><link url="https://www.openstax.org/r/what-in-phrase">What is the phrase?; ch 8, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using in operator to find substrings</title>
@@ -50,9 +48,7 @@
     <para id="para-00006">The <code class="python inline-code" data-lang="python">in</code> operator can be used to iterate over characters in a string using a <code class="python inline-code" data-lang="python">for</code> loop. In each <code class="python inline-code" data-lang="python">for</code> loop iteration, one character is read and will be the loop variable for that iteration.</para>
     <note class="guided-slides" id="note-00003">
     <title>for loop using in operator</title>
-    <media alt="for_loop_in_operator_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/for-loop-in-operator"/>
-    </media>
+    <para id="para-00026"><link url="https://www.openstax.org/r/for-loop-in-operator">For loop using in operator; ch 8, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Using in operator within for loop</title>
@@ -78,9 +74,7 @@
     <para id="para-00010">The <term id="term-00002">count()</term> method counts the number of occurrences of a substring in a given string. If the given substring does not exist in the given string, the value <code class="python inline-code" data-lang="python">0</code> is returned.</para>
     <note class="guided-slides" id="note-00005">
     <title>Counting the number of occurrences of a substring</title>
-    <media alt="counting_substrings_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/counting-substrings"/>
-    </media>
+    <para id="para-00027"><link url="https://www.openstax.org/r/counting-substrings">Counting the number of occurrences of a substring; ch 8, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Using count() to count the number of substrings</title>
@@ -106,9 +100,7 @@
     <para id="para-00014">The <term id="term-00003">find()</term> method returns the index of the first occurrence of a substring in a given string. If the substring does not exist in the given string, the value of <code class="python inline-code" data-lang="python">-1</code> is returned.</para>
     <note class="guided-slides" id="note-00007">
     <title>Finding the first index of a substring</title>
-    <media alt="finding_substring_index_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/finding-substring-index"/>
-    </media>
+    <para id="para-00028"><link url="https://www.openstax.org/r/finding-substring-index">Finding the first index of a substring; ch 8, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00008">
     <title>Using find() to locate a substring</title>

@@ -22,9 +22,7 @@
     <para id="para-00004">Ex: A table can be stored as a two-dimensional list-of-lists, where each row of data is a list in the list-of-lists.</para>
     <note class="guided-slides" id="note-00001">
     <title>List-of-lists</title>
-    <media alt="list_of_lists_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/list-of-lists"/>
-    </media>
+    <para id="para-00020"><link url="https://www.openstax.org/r/list-of-lists">List-of-lists; ch 9, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Lists</title>

@@ -19,9 +19,7 @@
     <para id="para-00002">Common operations update a variable such that the variable's data type needs to be changed. Ex: A GPS first assigns <code class="python inline-code" data-lang="python">distance</code> with <code class="python inline-code" data-lang="python">250</code>, an integer. After a wrong turn, the GPS assigns <code class="python inline-code" data-lang="python">distance</code> with <code class="python inline-code" data-lang="python">252.5</code>, a float. The Python interpreter uses <term id="term-00001">implicit type conversion</term> to automatically convert one data type to another. Once <code class="python inline-code" data-lang="python">distance</code> is assigned with <code class="python inline-code" data-lang="python">252.5</code>, the interpreter will convert <code class="python inline-code" data-lang="python">distance</code> from an integer to a float without the programmer needing to specify the conversion.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Book ratings</title>
-    <media alt="book_ratings_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/book-ratings"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/book-ratings">Example: Book ratings; ch 2, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Implicit type conversion in practice</title>
@@ -53,9 +51,7 @@
     </list>
     <note class="guided-slides" id="note-00003">
     <title>Example: Ordering pizza</title>
-    <media alt="ordering_pizza_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/ordering-pizza"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/ordering-pizza">Example: Ordering pizza; ch 2, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Example: Ordering pizza</title>

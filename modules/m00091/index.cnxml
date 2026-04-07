@@ -44,9 +44,7 @@
     </example>
     <note class="guided-slides" id="note-00001">
     <title>Recursive Fibonacci function</title>
-    <media alt="recursive_fibonacci_function_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/recursive-Fibonacci-function"/>
-    </media>
+    <para id="para-00022"><link url="https://www.openstax.org/r/recursive-Fibonacci-function">Recursive Fibonacci function; ch 12, video 7</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Fibonacci numbers</title>

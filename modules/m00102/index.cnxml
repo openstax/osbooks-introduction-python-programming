@@ -20,9 +20,7 @@
     <para id="para-00003">Python supports the opening of a file using the <term id="term-00001"><code class="python inline-code" data-lang="python">open()</code></term> function.</para>
     <note class="guided-slides" id="note-00001">
     <title>Opening a file</title>
-    <media alt="opening_a_file_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/opening-a-file"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/opening-a-file">Opening a file; ch 14, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Opening files</title>
@@ -101,9 +99,7 @@
     </example>
     <note class="guided-slides" id="note-00003">
     <title>read() and readline()</title>
-    <media alt="read_and_readline_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/read-and-readline"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/read-and-readline">read() and readline(); ch 14, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Reading files</title>

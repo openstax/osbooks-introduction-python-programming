@@ -19,9 +19,7 @@
   <para id="para-00002">In Python, <code class="python inline-code" data-lang="python">__init__()</code> is the special method that creates instances. <code class="python inline-code" data-lang="python">__init__()</code> must have the calling instance, <code class="python inline-code" data-lang="python">self</code>, as the first parameter and can have any number of other parameters with or without default parameter values.</para>
   <note class="guided-slides" id="note-00001">
   <title>Creating patient vital signs instances</title>
-  <media alt="creating_instances_slides">
-  <iframe width="660" height="371.4" src="https://www.openstax.org/r/creating-instances"/>
-  </media>
+  <para id="para-00017"><link url="https://www.openstax.org/r/creating-instances">Creating patient vital signs instances; ch 11, video 7</link></para>
   </note>
   <note class="learning-questions" id="note-00002">
   <title>Defining and using __init__() with parameters</title>

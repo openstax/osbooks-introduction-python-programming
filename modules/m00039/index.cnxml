@@ -19,9 +19,7 @@
     <para id="para-00002">A <term id="term-00001">nested loop</term> has one or more loops within the body of another loop. The two loops are referred to as <term id="term-00002">outer loop</term> and <term id="term-00003">inner loop</term>. The outer loop controls the number of the inner loop's full execution. More than one inner loop can exist in a nested loop.</para>
     <note class="guided-slides" id="note-00001">
     <title>Nested while loops</title>
-    <media alt="nested_while_loops_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/nested-while-loops"/>
-    </media>
+    <para id="para-00016"><link url="https://www.openstax.org/r/nested-while-loops">Nested while loops; ch 5, video 5</link></para>
     </note>
     <example id="exam-00001">
     <title>Available appointments</title>
@@ -30,11 +28,11 @@
     hour = 8
     minute = 0
     while hour &lt;= 9:
-    &#160;&#160;while minute &lt;= 59:
-    &#160;&#160;&#160;&#160;print(hour, ":", minute)
-    &#160;&#160;&#160;&#160;minute += 30
-    &#160;&#160;hour += 1
-    &#160;&#160;minute = 0</code>
+      while minute &lt;= 59:
+        print(hour, ":", minute)
+        minute += 30
+      hour += 1
+      minute = 0</code>
     <para id="para-00004">The above code's output is:</para>
     <code>
     8 : 0
@@ -66,9 +64,7 @@
     <para id="para-00008">A nested <code class="python inline-code" data-lang="python">for</code> loop can be implemented and used in the same way as a nested <code class="python inline-code" data-lang="python">while</code> loop. A <code class="python inline-code" data-lang="python">for</code> loop is a preferable option in cases where a loop is used for counting purposes using a <code class="python inline-code" data-lang="python">range()</code> function, or when iterating over a container object, including nested situations. Ex: ​​Iterating over multiple course rosters. The outer loop iterates over different courses, and the inner loop iterates over the names in each course roster.</para>
     <note class="guided-slides" id="note-00003">
     <title>Nested for loops</title>
-    <media alt="nested_for_loops_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/nested-for-loops"/>
-    </media>
+    <para id="para-00017"><link url="https://www.openstax.org/r/nested-for-loops">Nested for loops; ch 5, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Nested loop practices</title>
@@ -96,11 +92,11 @@
     
     i = 0
     for n in numbers:
-    &#160;&#160;while i &lt; n:
-    &#160;&#160;&#160;&#160;print (i, end = " ")
-    &#160;&#160;&#160;&#160;i += 2
-    &#160;&#160;i = 0
-    &#160;&#160;print()</code>
+      while i &lt; n:
+        print (i, end = " ")
+        i += 2
+      i = 0
+      print()</code>
     </note>
     </section>
  

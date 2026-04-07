@@ -71,9 +71,7 @@
     <para id="para-00009">An iterative for loop can be used to iterate through a list. Alternatively, lists can be iterated using list indexes with a counting for loop. The animation below shows both ways of iterating a list.</para>
     <note class="guided-slides" id="note-00002">
     <title>Using len() to get the length of a list</title>
-    <media alt="len_function_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/len-function"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/len-function">Using len() to get the length of a list; ch 9, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Iterating lists</title>

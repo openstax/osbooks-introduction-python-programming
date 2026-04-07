@@ -19,9 +19,7 @@
     <para id="para-00002">What if a programmer wants to write a function that prints the contents of a list? Good practice is to pass values directly to a function rather than relying on global variables. A function <term id="term-00001">argument</term> is a value passed as input during a function call. A function <term id="term-00002">parameter</term> is a variable representing the input in the function definition. Note: The terms "argument" and "parameter" are sometimes used interchangeably in conversation and documentation.</para>
     <note class="guided-slides" id="note-00001">
     <title>Global and local variables in a program with a function</title>
-    <media alt="more_global_and_local_variables_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/more-global-and-local-variables"/>
-    </media>
+    <para id="para-00027"><link url="https://www.openstax.org/r/more-global-and-local-variables">More global and local variables in a program with a function; ch 6, video 9</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Arguments and parameters</title>
@@ -131,9 +129,7 @@
     </example>
     <note class="guided-slides" id="note-00004">
     <title>Exploring a faulty function</title>
-    <media alt="faulty_function_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/faulty-function"/>
-    </media>
+    <para id="para-00028"><link url="https://www.openstax.org/r/faulty-function">Exploring a faulty function; ch 6, video 10</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Mutability and function arguments</title>

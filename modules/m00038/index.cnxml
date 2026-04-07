@@ -19,9 +19,7 @@
     <para id="para-00002">In Python, a <term id="term-00001">container</term> can be a range of numbers, a string of characters, or a list of values. To access objects within a container, an iterative loop can be designed to retrieve objects one at a time. A <term id="term-00002">for loop</term> iterates over all elements in a container. Ex: Iterating over a class roster and printing students' names.</para>
     <note class="guided-slides" id="note-00001">
     <title>For loop example for iterating over a container object</title>
-    <media alt="for_loop_iterating_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/for-loop-iterating"/>
-    </media>
+    <para id="para-00037"><link url="https://www.openstax.org/r/for-loop-iterating">For loop example for iterating over a container object; ch 5, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>For loop over a string container</title>

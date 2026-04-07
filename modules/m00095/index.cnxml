@@ -21,9 +21,7 @@
     <para id="para-00003">Is-a relationships can be confused with has-a relationships. A has-a relationship exists between a class that contains another class. Ex: An employee has a company-issued laptop. Note: The laptop is not an employee.</para>
     <note class="guided-slides" id="note-00001">
     <title>is-a relationship between Employee and Developer</title>
-    <media alt="is_a_relationship_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/is-a-relationship"/>
-    </media>
+    <para id="para-00017"><link url="https://www.openstax.org/r/is-a-relationship">Is-a relationship between Employee and Developer; ch 13, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Relationships between classes</title>
@@ -56,9 +54,7 @@
         # SubClass attributes and methods</code>
     <note class="guided-slides" id="note-00003">
     <title>Using inheritance to create subclasses</title>
-    <media alt="inheritance_subclasses_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/inheritance-subclasses"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/inheritance-subclasses">Using inheritance to create subclasses; ch 13, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Creating subclasses</title>

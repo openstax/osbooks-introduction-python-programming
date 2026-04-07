@@ -32,9 +32,7 @@
     print(my_dict.get("pineapple", -1)) # Prints: -1</code>
     <note class="guided-slides" id="note-00001">
     <title>Accessing dictionary items</title>
-    <media alt="accessing_dictionary_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/accessing-dictionary"/>
-    </media>
+    <para id="para-00025"><link url="https://www.openstax.org/r/accessing-dictionary">Accessing dictionary items; ch 10, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Dictionary items</title>
@@ -141,9 +139,7 @@
     </list>
     <note class="guided-slides" id="note-00004">
     <title>Modifying dictionary items</title>
-    <media alt="modifying_dictionary_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/modifying-dictionary"/>
-    </media>
+    <para id="para-00026"><link url="https://www.openstax.org/r/modifying-dictionary">Modifying dictionary items; ch 10, video 7</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Modifying a dictionary</title>

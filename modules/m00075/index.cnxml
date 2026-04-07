@@ -23,9 +23,7 @@
     <para id="para-00003">A dictionary object can also be created with initial key-value pairs enclosed in curly braces. Ex: <code class="python inline-code" data-lang="python">my_dict = {"pizza": 2, "pasta": 3, "drink": 4}</code> creates a dictionary object <code class="python inline-code" data-lang="python">my_dict</code>. A key and associated value are separated by a colon, and key-value pairs are separated by commas.</para>
     <note class="guided-slides" id="note-00001">
     <title>Creating a dictionary object</title>
-    <media alt="creating_dictionary_object_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/creating-dictionary-object"/>
-    </media>
+    <para id="para-00012"><link url="https://www.openstax.org/r/creating-dictionary-object">Creating a dictionary object; ch 10, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Creating dictionary exercises</title>
@@ -64,9 +62,7 @@
     </list>
     <note class="guided-slides" id="note-00003">
     <title>dict() for dictionary initialization</title>
-    <media alt="dict_initialization_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/dict-initialization"/>
-    </media>
+    <para id="para-00013"><link url="https://www.openstax.org/r/dict-initialization">dict()for dictionary initialization; ch 10, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>dict() function for dictionary creation</title>

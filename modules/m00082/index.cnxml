@@ -20,9 +20,7 @@
     <para id="para-00003">In a Python program, a <term id="term-00001">class</term> defines a type of object with attributes (fields) and methods (procedures). A class is a blueprint for creating objects. Individual objects created of the class type are called <term id="term-00002">instances</term>.</para>
     <note class="guided-slides" id="note-00001">
     <title>Representing a coffee order with a class</title>
-    <media alt="representing_with_class_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/representing-with-class"/>
-    </media>
+    <para id="para-00033"><link url="https://www.openstax.org/r/representing-with-class">Representing a coffee order with a class; ch 11, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Classes and instances</title>
@@ -65,9 +63,7 @@
     <para id="para-00009"><code class="python inline-code" data-lang="python">___init___()</code> is a special method that is called every time a new instance of a class is created. <term id="term-00003">self</term> refers to the instance of a class and is used in class methods to access the specific instance that called the method. <code class="python inline-code" data-lang="python">__init__()</code> uses <code class="python inline-code" data-lang="python">self</code> to define and initialize the instance's attributes.</para>
     <note class="guided-slides" id="note-00003">
     <title>Creating multiple coffee orders and changing attributes</title>
-    <media alt="creating_changing_attributes_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/creating-changing-attributes"/>
-    </media>
+    <para id="para-00034"><link url="https://www.openstax.org/r/creating-changing-attributes">Creating multiple coffee orders and changing attributes; ch 11, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>instances and __init__()</title>
@@ -115,9 +111,7 @@
     <para id="para-00015">The attributes shown so far have been instance attributes. An <term id="term-00004">instance attribute</term> is a variable that is unique to each instance of a class and is accessed using the format <code class="python inline-code" data-lang="python">instance_name.attribute_name</code>. Another type of attribute, a <term id="term-00005">class attribute</term>, belongs to the class and is shared by all class instances. Class attributes are accessed using the format <code class="python inline-code" data-lang="python">class_name.attribute_name</code>.</para>
     <note class="guided-slides" id="note-00005">
     <title>Using class attributes for shared coffee order information</title>
-    <media alt="using_class_attributes_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/using-class-attributes"/>
-    </media>
+    <para id="para-00035"><link url="https://www.openstax.org/r/using-class-attributes">Using class attributes for shared coffee order information; ch 11, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Instances and class attributes</title>

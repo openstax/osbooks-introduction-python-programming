@@ -19,9 +19,7 @@
     <para id="para-00002">When a function finishes, the function returns and provides a result to the calling code. A <term id="term-00001">return statement</term> finishes the function execution and can specify a value to return to the function's caller. Functions introduced so far have not had a <code class="python inline-code" data-lang="python">return</code> statement, which is the same as returning <code class="python inline-code" data-lang="python">None</code>, representing no value.</para>
     <note class="guided-slides" id="note-00001">
     <title>Returning a value from a function</title>
-    <media alt="returning_value_from_function_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/returning-value-from-function"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/returning-value-from-function">Returning a value from a function; ch 6, video 11</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using return statements</title>
@@ -94,9 +92,7 @@ Car 2's mpg is -1
     <para id="para-00010">Functions are objects that evaluate to values, so function calls can be used in expressions. A function call can be combined with other function calls, variables, and literals as long as the return value is compatible with the operation.</para>
     <note class="guided-slides" id="note-00004">
     <title>Using function calls in expressions</title>
-    <media alt="function_calls_in_expressions_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/function-calls-in-expressions"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/function-calls-in-expressions">Using function calls in expression; ch 6, video 12</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Using function values</title>

@@ -28,9 +28,7 @@
     <para id="para-00005">Python lists allow programmers to change the contents of the list in various ways.</para>
     <note class="guided-slides" id="note-00001">
     <title>Lists</title>
-    <media alt="lists_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/lists"/>
-    </media>
+    <para id="para-00016"><link url="https://www.openstax.org/r/lists">Lists: ch 3, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Lists</title>

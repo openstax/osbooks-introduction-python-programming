@@ -23,9 +23,7 @@
     </list>
     <note class="guided-slides" id="note-00001">
     <title>While loop</title>
-    <media alt="while_loop_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/while-loop"/>
-    </media>
+    <para id="para-00015"><link url="https://www.openstax.org/r/while-loop">While loop; ch 5, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>While loop example</title>
@@ -78,9 +76,7 @@
     </example>
     <note class="guided-slides" id="note-00003">
     <title>Counting with while loop</title>
-    <media alt="counting_with_while_loop_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/counting-with-while-loop"/>
-    </media>
+    <para id="para-00016"><link url="https://www.openstax.org/r/counting-with-while-loop">Counting with while loop; ch 5, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>while loop counting examples</title>
@@ -88,8 +84,8 @@
     <code class="python" data-lang="python">
     n = 4
     while n > 0:
-    &#160;&#160;print(n)
-    &#160;&#160;n = n - 1
+      print(n)
+      n = n - 1
     
     print("value of n after the loop is", n)</code>
     <exercise id="exer-00004">

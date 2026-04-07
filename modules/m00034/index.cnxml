@@ -25,9 +25,7 @@
     <para id="para-00005">Note: Conditional expressions have the lowest precedence of all Python operations.</para> 
     <note class="guided-slides" id="note-00001">
     <title>Example: Version check</title>
-    <media alt="version_check_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/version-check"/>
-    </media>
+    <para id="para-00014"><link url="https://www.openstax.org/r/version-check">Example: Version check; ch 4, video 15</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using conditional expressions</title>

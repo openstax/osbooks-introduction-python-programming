@@ -18,7 +18,7 @@
     </section>
     <section id="sect-00002">
     <title>Logical operator: and</title>
-    <para id="para-00002">Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that <code class="python inline-code" data-lang="python">hour &#62;= 9</code> and <code class="python inline-code" data-lang="python">hour &#60; 17</code>. A <term id="term-00001">logical operator</term> takes condition operand(s) and produces <code class="python inline-code" data-lang="python">True</code> or <code class="python inline-code" data-lang="python">False</code>.</para>
+    <para id="para-00002">Decisions are often based on multiple conditions. Ex: A program printing if a business is open may check that <code class="python inline-code" data-lang="python">hour >= 9</code> and <code class="python inline-code" data-lang="python">hour &lt; 17</code>. A <term id="term-00001">logical operator</term> takes condition operand(s) and produces <code class="python inline-code" data-lang="python">True</code> or <code class="python inline-code" data-lang="python">False</code>.</para>
     <para id="para-00003">Python has three logical operators: <emphasis effect="italics">and</emphasis>, <emphasis effect="italics">or</emphasis>, and <emphasis effect="italics">not</emphasis>. The <term id="term-00002">and</term> operator takes two condition operands and returns <code class="python inline-code" data-lang="python">True</code> if both conditions are true.</para>
     <table summary=" " id="table-00001">
     <title>Truth table: p and q.</title>
@@ -56,9 +56,7 @@
     </table>
     <note class="guided-slides" id="note-00001">
     <title>Example: Museum entry</title>
-    <media alt="museum_entry_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/museum-entry"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/museum-entry">Example: Museum entry; ch 4, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using the and operator</title>
@@ -123,9 +121,7 @@
     </table>
     <note class="guided-slides" id="note-00003">
     <title>Example: Streaming prompt</title>
-    <media alt="streaming_prompt_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/streaming-prompt"/>
-    </media>
+    <para id="para-00020"><link url="https://www.openstax.org/r/streaming-prompt">Example: Streaming prompt; ch 4, video 7</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Using the or operator</title>
@@ -173,9 +169,7 @@
     </table>
     <note class="guided-slides" id="note-00005">
     <title>Example: Diving warning</title>
-    <media alt="diving_warning_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/diving-warning"/>
-    </media>
+    <para id="para-00021"><link url="https://www.openstax.org/r/diving-warning">Example: Diving warning; ch 4, video 8</link></para>
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Using the not operator</title>

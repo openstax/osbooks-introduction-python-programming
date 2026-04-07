@@ -22,9 +22,7 @@
     <para id="para-00004">The <code class="python inline-code" data-lang="python">if</code> statement's body must be grouped together and have one level of indentation. The PEP 8 style guide recommends four spaces per indentation level. The Python interpreter will produce an error if the body is empty.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example: Quantity check</title>
-    <media alt="quantity_check_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/quantity-check"/>
-    </media>
+    <para id="para-00021"><link url="https://www.openstax.org/r/quantity-check">Example: Quantity check; ch 4, video 4</link></para>
     </note>
     <note id="note-00002">
     <title>Using boolean variables</title>
@@ -75,9 +73,7 @@
     # Statements after</code>
     <note class="guided-slides" id="note-00004">
     <title>Example: Trivia question</title>
-    <media alt="trivia_question_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/trivia-question"/>
-    </media>
+    <para id="para-00022"><link url="https://www.openstax.org/r/trivia-question">Example: Trivia question; ch 4, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Exploring if-else statements</title>

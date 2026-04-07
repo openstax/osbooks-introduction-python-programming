@@ -21,9 +21,7 @@
     <para id="para-00004">Red, green, and blue values range from 0 to 255 (or 00 to FF in hexadecimal). Lower values specify darker colors, and higher values specify lighter colors. Ex: <code class="python inline-code" data-lang="python">#008000</code> is the color <code class="python inline-code" data-lang="python">Green</code>, and <code class="python inline-code" data-lang="python">#00FF00</code> is the color <code class="python inline-code" data-lang="python">Lime</code>.</para>
     <note class="guided-slides" id="note-00001">
     <title>HTML color codes</title>
-    <media alt="HTML_color_codes_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/HTML-color-codes"/>
-    </media>
+    <para id="para-00023"><link url="https://www.openstax.org/r/HTML-color-codes">HTML color codes; ch 7, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>HTML color codes</title>

@@ -24,9 +24,7 @@
     <para id="para-00006">Thus, the factorial of <code class="python inline-code" data-lang="python">n</code> depends upon the value of the factorial at <code class="python inline-code" data-lang="python">n - 1</code>. The factorial of <code class="python inline-code" data-lang="python">n</code> can be found by repeating the factorial of <code class="python inline-code" data-lang="python">n - 1</code> until <code class="python inline-code" data-lang="python">(n - 1)! = 1!</code> (we know that <code class="python inline-code" data-lang="python">1! = 1</code>). This result can be used to build the overall solution as seen in the animation below.</para>
     <note class="guided-slides" id="note-00001">
     <title>Finding the factorial of 5</title>
-    <media alt="finding_factorial_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/finding-factorial"/>
-    </media>
+    <para id="para-00026"><link url="https://www.openstax.org/r/finding-factorial">Finding the factorial of 12.3.1; ch 12, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Recognizing recursion</title>
@@ -62,9 +60,7 @@
     <para id="para-00016">Note: <code class="python inline-code" data-lang="python">0!</code> is defined to be <code class="python inline-code" data-lang="python">1</code>; therefore, <code class="python inline-code" data-lang="python">n == 0</code> is a second base case for <code class="python inline-code" data-lang="python">factorial()</code>. When <code class="python inline-code" data-lang="python">n &lt; 1</code>, an error is returned.</para>
     <note class="guided-slides" id="note-00003">
     <title>Factorial using recursion</title>
-    <media alt="factorial_recursion_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/factorial-recursion"/>
-    </media>
+    <para id="para-00027"><link url="https://www.openstax.org/r/factorial-recursion">Factorial using recursion; ch 12, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Programming recursion</title>

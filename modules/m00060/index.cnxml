@@ -21,9 +21,7 @@
     <para id="para-00003">Negative indexing can also be used to refer to characters from right to left starting at -1. For a string variable <code class="python inline-code" data-lang="python">s</code>, the left-most character is indexed <code class="python inline-code" data-lang="python">-len(s)</code> and the right-most character is indexed -1. Ex: The length of the string <code class="python inline-code" data-lang="python">"flower"</code> is 6, so the index of the first character with negative indexing is -6.</para>
     <note class="guided-slides" id="note-00001">
     <title>String indexing</title>
-    <media alt="string_indexing_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/string-indexing"/>
-    </media>
+    <para id="para-00021"><link url="https://www.openstax.org/r/string-indexing">String indexing; ch 8, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Accessing characters in a string using indexing</title>
@@ -93,9 +91,7 @@
     <para id="para-00015">String objects are <term id="term-00002">immutable</term> meaning that string objects cannot be modified or changed once created. Once a string object is created, the string's contents cannot be altered by directly modifying individual characters or elements within the string. Instead, to make changes to a string, a new string object with the desired changes is created, leaving the original string unchanged.</para>
     <note class="guided-slides" id="note-00004">
     <title>Strings are immutable</title>
-    <media alt="strings_are_immutable_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/strings-are-immutable"/>
-    </media>
+    <para id="para-00022"><link url="https://www.openstax.org/r/strings-are-immutable">Strings are immutable; ch 8, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Modifying string content</title>

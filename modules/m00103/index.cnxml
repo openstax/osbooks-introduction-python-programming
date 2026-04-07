@@ -128,9 +128,7 @@
     </example>
     <note class="guided-slides" id="note-00002">
     <title>write() and close()</title>
-    <media alt="write_and_close_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/write-and-close"/>
-    </media>
+    <para id="para-00019"><link url="https://www.openstax.org/r/write-and-close">write() and close(); ch 14, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>Writing to files</title>

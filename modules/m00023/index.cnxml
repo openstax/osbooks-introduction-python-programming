@@ -19,9 +19,7 @@
     <para id="para-00002">In Python, every variable refers to an object. The assignment statement <code class="python inline-code" data-lang="python">message = "Hello"</code> makes the variable <code class="python inline-code" data-lang="python">message</code> refer to the object <code class="python inline-code" data-lang="python">"Hello"</code>. Multiple variables may refer to the same object. Ex: <code class="python inline-code" data-lang="python">greeting = message</code> makes <code class="python inline-code" data-lang="python">greeting</code> refer to the same object as <code class="python inline-code" data-lang="python">message</code>. A <term id="term-00001">memory diagram</term> shows the relationship between variables and objects.</para>
     <note class="guided-slides" id="note-00001">
     <title>Example memory diagram</title>
-    <media alt="memory_diagram_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/memory-diagram"/>
-    </media>
+    <para id="para-00017"><link url="https://www.openstax.org/r/memory-diagram">Example memory diagram; ch 3, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Variables and objects</title>
@@ -63,9 +61,7 @@
     </list>
     <note class="guided-slides" id="note-00004">
     <title>Identity, type, and value</title>
-    <media alt="identity_type_value_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/identity-type-value"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/identity-type-value">Identity, type, and value; ch 3, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>id() and type()</title>
@@ -89,12 +85,12 @@
     <title>Exploring further</title>
     <para id="para-00015">As shown in a memory diagram, variables and objects are two separate ideas. Calling a function like <code class="python inline-code" data-lang="python">id()</code> or <code class="python inline-code" data-lang="python">type()</code> returns information about an object, not a variable. In fact, a variable doesn't have an identity or a type, as shown in this example:</para>
     <code class="python" data-lang="python">
-    >>> rating = 10&#160;&#160;# Integer object somewhere in memory.
+    >>> rating = 10  # Integer object somewhere in memory.
     >>> type(rating)
     &lt;class 'int'>
     >>> id(rating)
     9793344
-    >>> rating = "ten"&#160;&#160;# String object somewhere else in memory.
+    >>> rating = "ten"  # String object somewhere else in memory.
     >>> type(rating)
     &lt;class 'str'>
     >>> id(rating)

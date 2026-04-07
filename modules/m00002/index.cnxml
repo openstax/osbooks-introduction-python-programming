@@ -22,9 +22,7 @@ No prior background in computer science is necessary to read this book. Many dif
 This book will focus on general purpose programs that typically run "behind the scenes."</para>
 <note class="guided-slides" id="note-00001">
 <title>Online music streaming</title>
-<media alt="music_streaming_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/music-streaming"/>
-</media>
+<para id="para-00019"><link url="https://www.openstax.org/r/music-streaming">Online music streaming; ch 1, video 1</link></para>
 </note>
 <note class="learning-questions" id="note-00002">
 <title>Computers and programs</title>
@@ -75,9 +73,7 @@ public class Hello {
 </example>
 <note class="guided-slides" id="note-00004">
 <title>Counting lines in a file</title>
-<media alt="counting_lines_slides">
-<iframe width="660" height="371.4" src="https://www.openstax.org/r/counting-lines"/>
-</media>
+<para id="para-00020"><link url="https://www.openstax.org/r/counting-lines">Counting lines in a file; ch 1, video 2</link></para>
 </note>
 <note class="learning-questions" id="note-00005">
 <title>Python vs Java syntax</title>

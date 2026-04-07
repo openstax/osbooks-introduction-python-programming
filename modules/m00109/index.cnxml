@@ -21,9 +21,7 @@
     <para id="para-00002"><term id="term-00001">Data science</term> is a multidisciplinary field that combines collecting, processing, and analyzing large volumes of data to extract insights and drive informed decision-making. The <term id="term-00002">data science life cycle</term> is the framework followed by data scientists to complete a data science project. The data science life cycle is an iterative process that starts with data acquisition, followed by data exploration. The data acquisition stage may involve obtaining data from a source or collecting data through surveys and other means of data collection that are domain-specific. During the data exploration stage, data scientists will ensure that the data are in the right format for the data analysis stage through data cleanup and they may also visualize the data for further inspection. Once the data are cleaned, data scientists can perform data analysis, which is shared with stakeholders using reports and presentations. The <term id="term-00003">data analysis</term> stage involves using data to generate insights or make a predictive model. Data science is increasingly being adopted in many different fields, such as healthcare, economics, education, and social sciences, to name a few. The animation below demonstrates different stages of the data science life cycle.</para>
     <note class="guided-slides" id="note-00001">
     <title>Data science life cycle</title>
-    <media alt="data_science_life_cycle_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/data-science-life-cycle"/>
-    </media>
+    <para id="para-00010"><link url="https://www.openstax.org/r/data-science-life-cycle">Data science life-cycle; ch 15, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>What is data science?</title>
@@ -57,9 +55,7 @@
     </list>
     <note class="guided-slides" id="note-00003">
     <title>Google Colaboratory ecosystem</title>
-    <media alt="google_colab_eco_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/google-colab-eco"/>
-    </media>
+    <para id="para-00013"><link url="https://www.openstax.org/r/google-colab-eco">Google colab ecosystem; ch 15, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Data science tools and software</title>

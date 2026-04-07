@@ -19,9 +19,7 @@
     <para id="para-00002">A variable's <term id="term-00001">scope</term> is the part of a program where the variable can be accessed. A variable created outside of a function has <term id="term-00002">global scope</term> and can be accessed anywhere in the program. A Python program begins in global scope, and the global scope lasts for the entire program execution.</para>
     <note class="guided-slides" id="note-00001">
     <title>Global variables in a program with a function</title>
-    <media alt="global_variables_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/global-variables"/>
-    </media>
+    <para id="para-00024"><link url="https://www.openstax.org/r/global-variables">Global variables in a program with a function; ch 6, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Global variables</title>
@@ -47,9 +45,7 @@
     <para id="para-00006">A variable created within a function has <term id="term-00003">local scope</term> and only exists within the function. A local variable cannot be accessed outside of the function in which the variable was created. After a function finishes executing, the function's local variables no longer exist.</para>
     <note class="guided-slides" id="note-00003">
     <title>Global and local variables in a program with a function</title>
-    <media alt="global_and_local_variables_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/global-and-local-variables"/>
-    </media>
+    <para id="para-00025"><link url="https://www.openstax.org/r/global-and-local-variables">Global and local variables in a program with a function; ch 6, video 7</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Local variables</title>
@@ -75,9 +71,7 @@
     <para id="para-00010">Python allows global and local variables to have the same name, which can lead to unexpected program behavior. A function treats a variable edited within the function as a local variable unless told otherwise. To edit a global variable inside a function, the variable must be declared with the <code class="python inline-code" data-lang="python">global</code> keyword.</para>
     <note class="guided-slides" id="note-00005">
     <title>Editing global variables in a program with a function</title>
-    <media alt="editing_global_variables_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/editing-global-variables"/>
-    </media>
+    <para id="para-00026"><link url="https://www.openstax.org/r/editing-global-variables">Editing global variables in a program with a function; ch 6, video 8</link></para>
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Using both local and global variables</title>
@@ -120,7 +114,7 @@
     </list>
     <para id="para-00019">Note: <code class="python inline-code" data-lang="python">find_teammates()</code> is provided and does not need to be edited.</para>
     <para id="para-00020">Given input:</para>
-    <code >
+    <code>
     br
     1</code>
     <para id="para-00021">The output is:</para>

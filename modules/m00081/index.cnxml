@@ -19,9 +19,7 @@
     <para id="para-00001"><term id="term-00001">Object-oriented programming</term> (OOP) is a style of programming that groups related fields, or data members, and procedures into objects. Real-world entities are modeled as individual objects that interact with each other. Ex: A social media account can follow other accounts, and accounts can send messages to each other. An account can be modeled as an object in a program.</para>
     <note class="guided-slides" id="note-00001">
     <title>Using objects to model social media</title>
-    <media alt="model_social_media_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/model-social-media"/>
-    </media>
+    <para id="para-00011"><link url="https://www.openstax.org/r/model-social-media">Using objects to model social media; ch 11, video 1</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>OOP</title>
@@ -42,9 +40,7 @@
     <para id="para-00004"><term id="term-00002">Encapsulation</term> is a key concept in OOP that involves wrapping data and procedures that operate on that data into a single unit. Access to the unit's data is restricted to prevent other units from directly modifying the data. Ex: A ticket website manages all transactions for a concert, keeping track of tickets sold and tickets still available to avoid accidental overbooking.</para>
     <note class="guided-slides" id="note-00003">
     <title>Encapsulating concert ticket information</title>
-    <media alt="encapsulating_info_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/encapsulating-info"/>
-    </media>
+    <para id="para-00012"><link url="https://www.openstax.org/r/encapsulating-info">Encapsulating concert ticket information; ch 11, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Encapsulation</title>
@@ -65,9 +61,7 @@
     <para id="para-00007"><term id="term-00003">Abstraction</term> is a key concept in OOP in which a unit's inner workings are hidden from users and other units that don't need to know the inner workings. Ex: A driver doesn't usually need to know their car engine's exact, numerical temperature. So the car has a gauge to display whether the engine temperature is within an appropriate range.</para>
     <note class="guided-slides" id="note-00005">
     <title>Abstracting data in a countdown calculator</title>
-    <media alt="abstracting_data_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/abstracting-data"/>
-    </media>
+    <para id="para-00013"><link url="https://www.openstax.org/r/abstracting-data">Abstracting data in a countdown calculator; ch 11, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00006">
     <title>Abstraction</title>

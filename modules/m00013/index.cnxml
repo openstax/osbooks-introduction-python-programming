@@ -26,9 +26,7 @@
     <para id="para-00003">Combining an integer and a float produces a float. A float is by default printed with at least one figure after the decimal point and has as many figures as needed to represent the value. Note: Division using the <code class="python inline-code" data-lang="python">/</code> operator always produces a float.</para>
     <note class="guided-slides" id="note-00001">
     <title>Operations combining integers and floats</title>
-    <media alt="combining_int_float_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/combining-int-float"/>
-    </media>
+    <para id="para-00023"><link url="https://www.openstax.org/r/combining-int-float">Operations combining integers and floats; ch 2, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Operations combining integers and floats</title>
@@ -75,9 +73,7 @@
     <para id="para-00012">The * operator also serves as the repetition operator, which accepts a string operand and an integer operand and repeats the string. Ex: <code class="python inline-code" data-lang="python">"banjo" * 3</code> produces <code class="python inline-code" data-lang="python">"banjobanjobanjo"</code>.</para>
     <note class="guided-slides" id="note-00003">
     <title>Adding a string and an integer</title>
-    <media alt="adding_str_int_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/adding-str-int"/>
-    </media>
+    <para id="para-00024"><link url="https://www.openstax.org/r/adding-str-int">Adding a string and an integer; ch 2, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Operations combining numeric types and strings</title>

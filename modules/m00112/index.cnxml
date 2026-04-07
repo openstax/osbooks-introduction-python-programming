@@ -27,9 +27,7 @@
     </list>
     <note class="guided-slides" id="note-00001">
     <title>Indexing a DataFrame</title>
-    <media alt="indexing_DataFrame_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/indexing-DataFrame"/>
-    </media>
+    <para id="para-00025"><link url="https://www.openstax.org/r/indexing-DataFrame">Indexing a DataFrame; ch 15, video 5</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>DataFrame indexing</title>
@@ -73,9 +71,7 @@
     <para id="para-00009"><term id="term-00007">Data filtering</term> involves selecting rows or columns based on certain conditions. Ex: In the expression <code class="python inline-code" data-lang="python">df[df['column_name'] > threshold]</code>, the DataFrame <code class="python inline-code" data-lang="python">df</code> is filtered using the selection operator (<code class="python inline-code" data-lang="python">[]</code>) and the condition(<code class="python inline-code" data-lang="python">df['column_name'] > threshold</code>) that is passed. All entries in the DataFrame <code class="python inline-code" data-lang="python">df</code> where the corresponding value in the DataFrame is <code class="python inline-code" data-lang="python">True</code> will be returned.</para>
     <note class="guided-slides" id="note-00003">
     <title>Indexing on a flight dataset</title>
-    <media alt="indexing_flight_dataset_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/indexing-flight-dataset"/>
-    </media>
+    <para id="para-00026"><link url="https://www.openstax.org/r/indexing-flight-dataset">Indexing on a flight dataset; ch 15, video 6</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>DataFrame slicing and filtering</title>

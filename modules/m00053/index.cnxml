@@ -29,9 +29,7 @@
     </note>
     <note class="guided-slides" id="note-00002">
     <title>Importing functions</title>
-    <media alt="importing_functions_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/importing-functions"/>
-    </media>
+    <para id="para-00017"><link url="https://www.openstax.org/r/importing-functions">Importing functions; ch 7, video 2</link></para>
     </note>
     <note class="learning-questions" id="note-00003">
     <title>The from keyword</title>
@@ -66,9 +64,7 @@
     <para id="para-00016">Care should be taken to avoid name collisions. Selecting specific functions from a module to import reduces the memory footprint; however, importing a complete module can help to avoid collisions because a <emphasis effect="italics">module.name</emphasis> format would be used. This is a tradeoff the programmer must consider.</para>
     <note class="guided-slides" id="note-00004">
     <title>Module and function names</title>
-    <media alt="module_function_names_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/module-function-names"/>
-    </media>
+    <para id="para-00018"><link url="https://www.openstax.org/r/module-function-names">Module and function names; ch 7, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00005">
     <title>Name collisions</title>

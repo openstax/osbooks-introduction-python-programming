@@ -19,9 +19,7 @@
     <para id="para-00002">Subclasses have access to the attributes inherited from the superclass. When the subclass's <code class="python inline-code" data-lang="python">__init__()</code> isn't explicitly defined, the superclass's <code class="python inline-code" data-lang="python">__init__()</code> method is called. Accessing both types of attributes uses the same syntax.</para>
     <note class="guided-slides" id="note-00001">
     <title>Defining a simple subclass</title>
-    <media alt="simple_subclass_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/simple-subclass"/>
-    </media>
+    <para id="para-00013"><link url="https://www.openstax.org/r/simple-subclass">Defining a simple subclass; ch 13, video 3</link></para>
     </note>
     <note class="learning-questions" id="note-00002">
     <title>Using simple subclasses</title>
@@ -47,9 +45,7 @@
     <para id="para-00006">A programmer often wants a subclass to have new instance attributes as well as those inherited from the superclass. Explicitly defining a subclass's <code class="python inline-code" data-lang="python">__init__()</code> involves defining instance attributes and assigning instance attributes inherited from the superclass.</para>
     <note class="guided-slides" id="note-00003">
     <title>Defining __init__() in a subclass</title>
-    <media alt="init_in_a_subclass_slides">
-    <iframe width="660" height="371.4" src="https://www.openstax.org/r/init-in-a-subclass"/>
-    </media>
+    <para id="para-00014"><link url="https://www.openstax.org/r/init-in-a-subclass">Defining _init_() in a subclass; ch 13, video 4</link></para>
     </note>
     <note class="learning-questions" id="note-00004">
     <title>Accessing a subclass's attributes</title>
